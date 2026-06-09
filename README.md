@@ -5,6 +5,8 @@ A curated list of the **best high-performance**, **free-tier AI models** you can
 By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API keys directly into coding tools like **VS Code extensions, terminal assistants, or code editors**. It doesn't even require a **credit card** for the best models!
 
 > **Last updated:** June 2026 — Free model listings change often. Verify on the provider's console.
+>
+> If a model hits a rate limit, just switch to the next one with your own API Provider or different API Providers — free tiers rotate, there's always a backup.
 
 ## 📋 Contents
 
@@ -75,7 +77,7 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 ---
 
 ### 🌐 [Google Gemini](https://aistudio.google.com) Models
-Google's infrastructure is built to hold a **massive amount of information** at once. Choose Gemini when you need an AI that can **swallow your entire project folder whole** without running out of room or cutting files short.
+Google's infrastructure is built to hold a **massive amount of information** at once. Choose Gemini when you need an AI that can **swallow your entire project folder whole** without running out of room or cutting files short. Beware, since **Rate Limits** are common here.
 
 | Free Model | Star Rating | The honest opinion on how it handles your work |
 | :--- | :--- | :--- |
