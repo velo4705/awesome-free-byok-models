@@ -39,7 +39,7 @@ If you are signing up for free accounts to get API keys, these are the **three b
 
 ## 🏆 The Top 10 Recommended Free Models
 
-The absolute best free models available right now, ranked by how well they handle **daily coding tasks**. This does **NOT** include the BEST Vision Models.
+The absolute best free models available right now, ranked by how well they handle **daily coding tasks**. This does **NOT** include the BEST Vision Models since All models are made for Text Completions.
 
 | Rank | Model Name | Host Provider | The Simple Reason to Choose It |
 | :--- | :--- | :--- | :--- |
@@ -103,11 +103,19 @@ NVIDIA's NIM (NVIDIA Inference Microservice) catalog is famous for hosting a **m
 | Free Model | Star Rating | The honest opinion on how it handles your work |
 | :--- | :--- | :--- |
 | `mistralai/mistral-large-3-675b-instruct-2512` | ⭐⭐⭐⭐⭐ | **BEST.** An absolute monster of an open-weight model. Because it is backed by hundreds of billions of parameters, it effortlessly handles massive multi-file projects, structural engineering, and deep logic bugs without flinching. |
+| `mistralai/mistral-nemotron` | ⭐⭐⭐⭐☆ | Mistral's Nemotron variant. Fast responses with clean, well-structured outputs for general development and daily coding tasks. |
+| `nvidia/llama-3.3-nemotron-super-49b-v1` | ⭐⭐⭐⭐☆ | NVIDIA's 49B Nemotron Super. Balanced speed and reasoning depth for multi-turn developer workflows. |
+| `qwen/qwen3.5-397b-a17b` | ⭐⭐⭐⭐☆ | Massive 397B Mixture-of-Experts architecture. Deep reasoning capability but noticeably higher latency (2.5s+) compared to smaller models. |
+| `moonshotai/kimi-k2.6` | ⭐⭐⭐⭐☆ | Moonshot's Kimi agentic model on NVIDIA infra. Optimized for long-horizon coding and repository-level task orchestration. |
+| `openai/gpt-oss-120b` | ⭐⭐⭐⭐☆ | **For All Tasks.** The same 117B MoE flagship that dominates on Groq. Responds reliably on NVIDIA NIM with clean, efficient output — a strong alternative when Groq rate limits hit. |
+| `nvidia/llama-3.3-nemotron-super-49b-v1.5` | ⭐⭐⭐⭐☆ | Updated iteration of the 49B Nemotron Super. Responsive and well-tuned for multi-turn developer workflows, competitive with the v1 release. |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning` | ⭐⭐⭐⭐☆ | **REASONING.** A 30B MoE reasoning engine. Brings solid logical depth for architectural analysis and complex debugging across multi-file projects. |
+| `openai/gpt-oss-20b` | ⭐⭐⭐⭐☆ | **SOLID COMPANION.** The 20B variant of OpenAI's open-weight model. Impressive coding chops for its size — fast, reliable, and consistent for standard development work. |
 | `qwen/qwen3-next-80b-a3b-instruct` | ⭐⭐⭐⭐☆ | **CODE COMPLETION ONLY.** A phenomenal 4-star option. It handles complex logical loops beautifully and brings high structural accuracy to code layout, though it occasionally expects a highly structured prompt to give its best output. |
 | `meta/llama-3.3-70b-instruct` | ⭐⭐⭐⭐☆ | A highly polished, incredibly stable choice for general daily development. It provides beautiful instruction following and clean script structures, only trailing the massive Mistral flagship on deep, specialized architectural logic. |
-| `mistralai/mistral-medium-3.5-128b` | ⭐⭐⭐⭐☆ | A wonderful sweet spot for complex programming tasks. It types fast, catches edge cases beautifully, and brings a highly intuitive approach to structural software refactoring loops. |
 | `google/gemma-3n-e4b-it` | ⭐⭐⭐⭐☆ | **CODE COMPLETION ONLY.** An incredibly responsive, specialized next-gen engine that drafts dense, high-quality code structures beautifully but lacks the broader versatility needed for long conversational context. |
 | `mistralai/mistral-small-4-119b-2603` | ⭐⭐⭐⭐☆ | A massive parameter pool that bridges the gap between medium models and giants. It is highly capable for code tracking, though its latency can feel slightly heavy compared to tighter architectures. |
+| `microsoft/phi-4-mini-instruct` | ⭐⭐⭐☆☆ | **LIGHT SCRIPTING ONLY.** Microsoft's compact Phi model. Blazing fast (0.41s) for quick syntax checks and terminal commands, but lacks depth for architectural reasoning. |
 | `nvidia/nemotron-3-super-120b-a12b` | ⭐⭐⭐☆☆ | **TEXT ONLY.** Incredible raw size that makes it great for heavy natural language processing and massive text transformations, but it tends to be overly chatty and less direct when writing clean code syntax. |
 | `meta/llama-3.1-70b-instruct` | ⭐⭐⭐☆☆ | A classic workhorse that gets the job done, but it feels distinctly slower and slightly less polished on tricky instructions compared to the newer Llama 3.3 variant. |
 | `meta/llama-4-maverick-17b-128e-instruct` | ⭐⭐⭐☆☆ | A decent mixture-of-experts model for quick scripting edits, though it has a noticeable tendency to overthink simple commands or get slightly repetitive with formatting conventions. |
@@ -115,15 +123,19 @@ NVIDIA's NIM (NVIDIA Inference Microservice) catalog is famous for hosting a **m
 | `google/gemma-3n-e2b-it` | ⭐⭐⭐☆☆ | A fast, lightweight slice of the Gemma ecosystem. Perfect for rapid terminal help or basic single-line translations, but lacks the deep reasoning depth of its larger sibling. |
 | `mistralai/mixtral-8x7b-instruct-v0.1` | ⭐⭐⭐☆☆ | A classic mixture-of-experts model. It responds reliably, but it has a habit of over-explaining the context of its answers instead of just dropping the clean code block you asked for. |
 | `meta/llama-3.2-11b-vision-instruct` | ⭐⭐⭐☆☆ | **VISION ONLY.** Excellent if you need to pass it an image of a UI mockup, a graph, or a schematic diagram to explain, but its pure text logic is standard for its size. |
+| `meta/llama-3.2-90b-vision-instruct` | ⭐⭐⭐☆☆ | **VISION ONLY.** The 90B variant with strong visual reasoning for diagrams and UI analysis. Standard text-only logic for its scale — stick to vision tasks. |
 | `meta/llama-3.1-8b-instruct` | ⭐⭐⭐☆☆ | **LIGHT SCRIPTING ONLY.** A blazing fast, lightweight tool that is excellent for immediate terminal lookups, regex fixes, or tiny syntax tweaks. |
-| `meta/llama-3.2-3b-instruct` | ⭐⭐☆☆☆ | **LIGHT SCRIPTING ONLY.** Highly responsive for basic text formatting and simple terminal syntax, but it gets overwhelmed quickly if you pass it long, multi-line error logs. |
+| `nvidia/nvidia-nemotron-nano-9b-v2` | ⭐⭐⭐☆☆ | **LIGHT SCRIPTING ONLY.** Compact 9B nano model. Fast for terminal commands and syntax checks, but lacks the depth for multi-file project work. |
+| `nvidia/nemotron-3-nano-30b-a3b` | ⭐⭐⭐☆☆ | A 30B Mixture-of-Experts base model. Capable of handling moderate coding tasks but lacks the reasoning specialization of its "omni" sibling. |
+| `stepfun-ai/step-3.5-flash` | ⭐⭐⭐☆☆ | StepFun's flash-optimized model. Fast and responsive for lightweight coding and quick terminal queries. |
+| `stepfun-ai/step-3.7-flash` | ⭐⭐⭐☆☆ | Updated StepFun flash variant. Slightly improved over 3.5 with cleaner output formatting on standard coding prompts. |
+| `bytedance/seed-oss-36b-instruct` | ⭐⭐⭐☆☆ | ByteDance's 36B Seed instruct model. Handles general coding tasks competently — a solid mid-tier option on NIM's free tier. |
 | `sarvamai/sarvam-m` | ⭐⭐⭐☆☆ | **INDIC TRANSLATION ONLY.** A highly unique hybrid-reasoning model optimized heavily for Indian language contexts and regional localization tasks. Skip it for standard English repositories as its logical core is tuned differently. |
 | `stockmark/stockmark-2-100b-instruct` | ⭐⭐⭐☆☆ | **JAPANESE TRANSLATION ONLY.** A massive, specialized 100B powerhouse built strictly for business intelligence and data extraction in Japanese. It will completely fall out of its depth if forced into a standard system programming environment. |
+| `meta/llama-3.2-3b-instruct` | ⭐⭐☆☆☆ | **LIGHT SCRIPTING ONLY.** Highly responsive for basic text formatting and simple terminal syntax, but it gets overwhelmed quickly if you pass it long, multi-line error logs. |
 | `upstage/solar-10.7b-instruct` | ⭐⭐☆☆☆ | A legacy architecture that was great for its time, but it trails modern small models on instruction following and frequently cuts text short under length pressure. |
-| `mistralai/mistral-7b-instruct-v0.3` | ⭐⭐☆☆☆ | Very fast, but prone to structural formatting mistakes and conversation drops if you attempt to use it for multi-turn developer loops. |
 | `nvidia/nemotron-nano-12b-v2-vl` | ⭐⭐☆☆☆ | A compact vision-language model. Handy for basic edge computing tasks, but far too small to handle complex, heavy coding operations. |
 | `nvidia/nemotron-mini-4b-instruct` | ⭐⭐☆☆☆ | A tiny model that responds incredibly fast, but its reasoning window is far too shallow to understand complex programming parameters. |
-| `meta/llama-3.2-1b-instruct` | ⭐⭐☆☆☆ | Extremely lightweight, meaning it runs fast but struggles significantly with logical coherence if the prompt contains anything beyond basic language commands. |
 | `nvidia/llama-3.1-nemotron-nano-8b-v1` | ⭐⭐☆☆☆ | Tends to be hyper-verbose and wraps answers in unnecessary conversational fluff, which slows down your actual workflow. |
 | `nvidia/llama-3.1-nemotron-nano-vl-8b-v1` | ⭐⭐☆☆☆ | A small vision variant that is highly responsive for image categorization, but lacks the core logical strength for heavy code-refactoring tasks. |
 | `nvidia/ising-calibration-1-35b-a3b` | ⭐⭐☆☆☆ | **QUANTUM CALIBRATION ONLY.** A purpose-built, highly technical vision-language model trained exclusively to analyze quantum computing processor plots. Completely useless for standard software coding or writing basic scripts. |
@@ -135,6 +147,7 @@ NVIDIA's NIM (NVIDIA Inference Microservice) catalog is famous for hosting a **m
 | `meta/llama-guard-4-12b` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** A dedicated safety evaluation layer used to detect toxic inputs. Completely useless as an active development assistant. |
 | `nvidia/nemotron-3-content-safety` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** An evaluation filter meant to scan for violations. It will only return backend validation tags. |
 | `nvidia/nemotron-content-safety-reasoning-4b` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** A compact safety filtering model that evaluates prompt integrity. Will not assist with structural engineering or scripting tasks. |
+| `nvidia/nemotron-3.5-content-safety` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** Updated content safety guard. Same classification-only behavior — returns safety labels, not code. |
 
 ---
 
@@ -144,9 +157,10 @@ Mistral AI is highly regarded in the **open-weights and developer communities** 
 | Free Model | Star Rating | The honest opinion on how it handles your work |
 | :--- | :--- | :--- |
 | `mistral-large-latest` / `mistral-large-2512` | ⭐⭐⭐⭐⭐ | **BEST.** Mistral's absolute crown jewel flagship engine. Top-tier multi-lingual reasoning, deep system architecture capabilities, and flawless focus across massive files. |
-| `mistral-large-2411` | ⭐⭐⭐⭐⭐ | **PREVIOUS FLAGSHIP.** The previous generation production flagship baseline. Still highly reliable for complex logic, but lacks the speed and updated context window efficiency of `2512`. |
-| `pixtral-large-latest` / `pixtral-large-2411` / `mistral-large-pixtral-2411` | ⭐⭐⭐⭐⭐ | **BEST (VISION).** Elite visual cross-referencing engine. Seamlessly ties programming logic together with image blueprints, complex charts, or heavy front-end UI mockups. |
 | `codestral-latest` / `codestral-2508` | ⭐⭐⭐⭐☆ | **CODE COMPLETION ONLY.** Built from the ground up for programmers. Flies through auto-completions and single-file inline edits across dozens of languages. |
+| `mistral-code-latest` | ⭐⭐⭐⭐☆ | **CODE COMPLETION ONLY.** Dedicated code generation engine. Fast, precise completions across dozens of programming languages for inline editing workflows. |
+| `mistral-code-fim-latest` | ⭐⭐⭐⭐☆ | **CODE COMPLETION ONLY.** Fill-in-Middle specialist. Designed for smart inline insertion within existing code blocks and contextual completions. |
+| `mistral-code-agent-latest` | ⭐⭐⭐⭐☆ | **AGENT ROUTING ONLY.** Code-focused agent model optimized for tool use, structured JSON outputs, and autonomous multi-step coding workflows. |
 | `mistral-medium-3.5` / `mistral-medium-3-5` | ⭐⭐⭐⭐☆ | Exceptional balance of price-to-performance. Highly responsive reasoning loops for structural software layouts, just missing 5 stars due to niche edge-case gaps. |
 | `mistral-medium-3` | ⭐⭐⭐⭐☆ | Trusted, incredibly stable version of the Medium line. Keeps a rigid handle on instructions and delivers clean boilerplate code without empty chatter. |
 | `mistral-medium-2604` | ⭐⭐⭐⭐☆ | A responsive iteration within the Medium family. Predictable execution flow and excellent at breaking down tricky structural bugs. |
@@ -157,13 +171,15 @@ Mistral AI is highly regarded in the **open-weights and developer communities** 
 | `mistral-small-latest` / `mistral-small-2603` | ⭐⭐⭐⭐☆ | Incredible lightweight architecture. Handles multi-turn logic with surprising depth and a punchy, direct tone that fits background execution perfectly. |
 | `mistral-small-2506` | ⭐⭐⭐⭐☆ | An earlier snapshot of the Small ecosystem. Keeps syntax errors to a minimum but trails behind `2603` on processing velocity. |
 | `devstral-latest` / `devstral-2512` | ⭐⭐⭐☆☆ | **AGENT ROUTING ONLY.** Tailored strictly for programmatic tool use and structured JSON schemas rather than standard conversational chat. |
-| `devstral-small-2507` | ⭐⭐⭐☆☆ | **AGENT ROUTING ONLY.** A stripped-back iteration for lightweight background task processing. Lacks the formatting balance for direct frontend work. |
 | `ministral-14b-latest` / `ministral-14b-2512` | ⭐⭐⭐☆☆ | Nimble, edge-focused model. Remarkably capable of handling direct coding questions for its tight memory footprint. |
 | `open-mistral-nemo` / `open-mistral-nemo-2407` | ⭐⭐⭐☆☆ | Classic community workhorse. Fast and flexible for low-complexity text filtering, but struggles on deep algorithmic logic. |
 | `mistral-vibe-cli-fast` | ⭐⭐⭐☆☆ | **TERMINAL HELPER.** Built to fire off blistering, immediate single-turn replies for terminal flags or shell configuration checks. |
 | `mistral-vibe-cli-latest` | ⭐⭐⭐☆☆ | **TERMINAL HELPER.** Standard CLI automation snapshot that favors explicit sentence explanations when breaking down commands. |
 | `mistral-vibe-cli-with-tools` | ⭐⭐⭐☆☆ | **TERMINAL HELPER.** Version optimized to drop conversational prefixes entirely and focus strictly on returning raw executable bash tokens. |
 | `magistral-small-latest` | ⭐⭐⭐☆☆ | Experimental variant block. Good for stylistic parsing tests, but consistency slips behind official production branches on strict syntax rules. |
+| `magistral-small-2509` | ⭐⭐⭐☆☆ | Experimental Magistral variant. Responsive for basic queries but less consistent than official production branches on strict formatting. |
+| `magistral-medium-latest` | ⭐⭐⭐☆☆ | Experimental Magistral medium. Handles expanded reasoning tasks but can drift slightly on strict syntax enforcement. |
+| `magistral-medium-2509` | ⭐⭐⭐☆☆ | Experimental Magistral snapshot. Capable for general-purpose queries but lacks the polish of official Medium releases. |
 | `ministral-8b-latest` / `ministral-8b-2512` | ⭐⭐⭐☆☆ | **LIGHT SCRIPTING.** Fast option for minor string manipulations and terminal setup queries. Frequently leans into text descriptions over pure raw code. |
 | `voxtral-small-latest` / `voxtral-small-2507` | ⭐⭐☆☆☆ | **AUDIO LOGIC ONLY.** Pinned voice-to-text layer model optimized for speech translation. Entirely unsuited for parsing complex software files. |
 | `ministral-3b-latest` / `ministral-3b-2512` | ⭐⭐☆☆☆ | **LIGHT SCRIPTING.** Micro footprint that initializes instantly. Good for spelling transformations but completely loses coherence on deep runtime errors. |
