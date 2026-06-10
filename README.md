@@ -33,7 +33,7 @@ If you are signing up for free accounts to get API keys, these are the **three b
 | :--- | :--- | :--- |
 | **Groq** | Speedy Accurate | Code prints out on your screen instantly. If you hate waiting for an AI to finish typing, this is your go-to. |
 | **Fireworks AI** | Reasoning | Built to run massive, smart models incredibly smoothly without slowing down. |
-| **Google Gemini** | Varied Projects | Can read an entire folder of files at once without forgetting context or running out of room. |
+| **Google Gemini** | Quick Tasks | Great for rapid single-file edits and terminal commands, but free tier rate limits make large project sessions difficult. |
 
 ---
 
@@ -45,12 +45,12 @@ The absolute best free models available right now, ranked by how well they handl
 | :--- | :--- | :--- | :--- |
 | **1** 🏆 | `openai/gpt-oss-120b` | **Groq** | **For All Tasks.** It writes incredibly clean code, rarely makes formatting mistakes, and responds almost instantly. |
 | **2** 🥈 | `deepseek-v4-pro` | **Fireworks AI** | **For Deep Reasoning.** Perfect for when you need to plan a big new feature from scratch or rewrite complex, messy logic. |
-| **3** 🥉 | `gemini-3.5-flash` | **Google Gemini** | **For Varied Projects.** Choose this when you need the AI to read a massive list of files all at once without cutting them short. |
-| **4** | `qwen/qwen3-32b` | **Groq** | **For Speed.** It takes a brief second to "think" before it starts, but then it dumps code into your editor at lightning speed. |
+| **3** 🥉 | `qwen/qwen3-32b` | **Groq** | **For Speed.** It takes a brief second to "think" before it starts, but then it dumps code into your editor at lightning speed. |
+| **4** | `models/gemini-3.1-flash-lite` | **Google Gemini** | Ultra-efficient for high-volume agentic triaging. |
 | **5** | `Deepseek-V3.2` | **SambaNova** | Precision reasoning for system-level architecture. |
-| **6** | `models/gemini-3.1-flash-lite` | **Google Gemini** | Ultra-efficient for high-volume agentic triaging. |
-| **7** | `mistralai/mistral-large-3-675b-instruct-2512` | **NVIDIA NIM** | Production-grade power for complex enterprise workflows. |
-| **8** | `qwen/qwen3-next-80b-a3b-instruct` | **NVIDIA NIM** | Balanced reasoning for general-purpose expert tasks. |
+| **6** | `mistralai/mistral-large-3-675b-instruct-2512` | **NVIDIA NIM** | Production-grade power for complex enterprise workflows. |
+| **7** | `qwen/qwen3-next-80b-a3b-instruct` | **NVIDIA NIM** | Balanced reasoning for general-purpose expert tasks. |
+| **8** | `accounts/fireworks/models/kimi-k2p6` | **Fireworks AI** | **For Agentic Coding.** Multimodal agentic model optimized for long-horizon tasks, swarm-based execution, and massive context windows — backed by 3.6M TPM free tier. |
 | **9** | `mistral-large-2512` | **Mistral AI** | Strict adherence to complex instructions and system prompts. |
 | **10** | `codestral-latest` | **Mistral AI** | Deeply specialized in polyglot programming and syntax structure. |
 
@@ -68,27 +68,32 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 | `openai/gpt-oss-120b` | ⭐⭐⭐⭐⭐ | **BEST.** This is the undisputed champion of the list. It feels completely seamless to use because it rarely gets confused by tricky code logic, never hits frustrating rate-limit walls, and types so fast you barely have time to read along. |
 | `qwen/qwen3-32b` | ⭐⭐⭐⭐☆ | **CODE COMPLETION ONLY.** A phenomenal option if you are writing complex code blocks. The only catch is that it insists on "thinking out loud" for a brief moment before it types, which can feel slightly laggy if you just want a quick answer. |
 | `llama-3.3-70b-versatile` | ⭐⭐⭐⭐☆ | **GENERAL CHAT ONLY.** Incredibly dependable for standard developer conversations and brainstorming. It is a stubborn rule-follower that does exactly what you ask, though it lacks that extra specialized edge for high-level programming loops. |
+| `openai/gpt-oss-20b` | ⭐⭐⭐⭐☆ | **SOLID COMPANION.** A highly capable, mid-sized model that shares the same excellent coding DNA as its 120b big brother. It lacks the massive reasoning depth needed for highly complex systems programming, but it is lightning-fast for standard tasks. |
 | `meta-llama/llama-4-scout-17b-16e-instruct` | ⭐⭐⭐☆☆ | **TEXT ONLY.** It handles medium-sized tasks well enough, but it has a habit of overthinking simple prompts. It tends to get overly wordy and chatty when a direct, simple response would have been much better. |
 | `groq/compound` | ⭐⭐⭐☆☆ | Great for a quick, single-turn question when you are stuck in the terminal, but it simply doesn't have the memory or the brainpower to track a project that involves multiple files. |
 | `llama-3.1-8b-instant` | ⭐⭐⭐☆☆ | Fun to use for tiny, rapid-fire edits because it responds like a lightning bolt. However, if you ask it to write a long script, it often gets tired toward the end and cuts off final characters or punctuation. |
+| `groq/compound-mini` | ⭐⭐☆☆☆ | **TERMINAL QUICK PICKS.** A stripped-down version of the standard compound model. It is incredibly lightweight and fast, but it is purely meant for single-sentence syntax checks or basic bash command lookups. |
+| `openai/gpt-oss-safeguard-20b` | ⭐⭐☆☆☆ | **OVERLY CAUTIOUS.** While it has the core architecture to be a good developer assistant, its built-in safety filters make it incredibly paranoid. It will frequently refuse to generate standard code blocks if it suspects a security risk. |
 | `allam-2-7b` | ⭐⭐☆☆☆ | **TRANSLATION ONLY.** Fantastic if you are doing specific language translation work, but it is completely out of its depth here. Try to use it for coding, and it will quickly lose track of what you are building. |
-| `meta-llama/llama-prompt-guard-2` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** Do not let the "Llama" name fool you— this is a behind-the-scenes security tool, not a coding buddy. Asking it a standard question will just get you back a random string of numbers. |
+| `meta-llama/llama-prompt-guard-2-86m` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY (LARGE).** Do not let the "Llama" name fool you—this is a behind-the-scenes injection detection tool, not a coding buddy. Asking it a standard question will just get you back a random decimal string. |
+| `meta-llama/llama-prompt-guard-2-22m` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY (MINI).** Even smaller than the 86m version, this model exists purely to analyze inputs for malicious prompt attacks instantly. It cannot converse, write logic, or follow standard user instructions. |
 
 ---
 
 ### 🌐 [Google Gemini](https://aistudio.google.com) Models
-Google's infrastructure is built to hold a **massive amount of information** at once. Choose Gemini when you need an AI that can **swallow your entire project folder whole** without running out of room or cutting files short. Beware, since **Rate Limits** are common here.
+Gemini offers large context windows on paper, but the free tier's **tight rate limits** (as low as 20 RPD on some models) make sustained multi-file coding impractical. Use Gemini for quick, targeted tasks and single-file edits — not marathon sessions.
 
 | Free Model | Star Rating | The honest opinion on how it handles your work |
 | :--- | :--- | :--- |
-| `models/gemini-3.5-flash` | ⭐⭐⭐⭐⭐ | **BEST.** The ultimate choice for deep repository mapping and heavy coding loops. It brings elite, stable reasoning and a massive memory window, tracking multi-step agent tasks completely flawlessly. |
+| `models/gemini-3.1-flash-lite` | ⭐⭐⭐⭐⭐ | **BEST.** The new baseline. Lightning-fast with responsive, no-fuss outputs. Handles daily coding, terminal commands, and single-file edits without the overhead of larger models. |
+| `models/gemini-3.1-flash-lite-preview` | ⭐⭐⭐⭐☆ | A preview snapshot of the BEST model. Nearly identical speed and quality, but being experimental means its behavior can shift when Google updates it behind the scenes. |
+| `models/gemini-3-flash-preview` | ⭐⭐⭐⭐☆ | Outstanding intelligence for a preview model. It handles deep reasoning and large contexts beautifully, but because it is an experimental playground model, the way it responds can randomly shift when Google tweaks it behind the scenes. |
 | `models/gemma-4-31b-it` | ⭐⭐⭐⭐☆ | A highly responsive and incredibly smart model. The only catch is that it occasionally "overthinks" simple instructions—instead of just giving you the direct answer, it might type out its internal rule-checking steps first. |
-| `models/gemini-3-flash-preview` | ⭐⭐⭐⭐☆ | Outstanding intelligence for a preview model. It is almost as capable as the stable 3.5 version, but because it is an experimental playground model, the way it responds can randomly shift when Google tweaks it behind the scenes. |
-| `models/gemini-3.1-flash-lite` | ⭐⭐⭐⭐☆ | **LIGHT SCRIPTING ONLY.** A beautifully fast, cost-efficient workhorse. It lacks the deep reasoning needed to fix sprawling, multi-file bugs, but it is flawless for rapid-fire terminal commands and single-file edits. |
+| `models/gemma-4-26b-a4b-it` | ⭐⭐⭐⭐☆ | A compact Gemma variant with solid reasoning depth. Slightly slower to respond than its 31b sibling, but delivers clean, structured outputs for general development tasks. |
 | `models/gemini-2.5-flash` | ⭐⭐⭐☆☆ | A solid, reliable backup option that handles standard context sizes perfectly. It only slips to 3 stars because the newer Gemini 3 series leaves it in the dust when it comes to tracking complex coding logic. |
-| `models/gemini-robotics-er-1.6-preview` | ⭐⭐☆☆☆ | A fascinating experimental model built for physical task automation and robotics logic. While it technically works for text, using it for daily coding is a waste of time since it isn't optimized for programming syntax. |
+| `models/gemini-flash-lite-latest` | ⭐⭐⭐☆☆ | **LIGHT SCRIPTING ONLY.** An incredibly fast, bare-bones lite variant. Perfect for rapid terminal lookups and quick syntax checks, but lacks the depth for multi-file project work. |
 | `models/gemini-2.5-flash-lite` | ⭐⭐☆☆☆ | **LIGHT SCRIPTING ONLY.** It is incredibly fast and lightweight for basic tasks, but its older reasoning core means it gets confused easily if you paste in a long list of complex terminal errors. |
-| `models/gemini-flash-latest` | ⭐⭐☆☆☆ | Points directly to an older, legacy version of the Flash engine. It responds quickly, but it makes significantly more formatting mistakes and small typos compared to the modern 3.x line. |
+| `models/gemini-robotics-er-1.6-preview` | ⭐⭐☆☆☆ | A fascinating experimental model built for physical task automation and robotics logic. While it technically works for text, using it for daily coding is a waste of time since it isn't optimized for programming syntax. |
 
 ---
 
