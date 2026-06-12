@@ -1,12 +1,13 @@
 # Awesome Free BYOK Models 🚀
 
+> ⏰ **Last Verified: June 12, 2026** - All Models are Verified from their API Providers.
+
 A curated list of the **best high-performance**, **free-tier AI models** you can use to **supercharge your coding setup** without paying for expensive monthly subscriptions.
 
 By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API keys directly into coding tools like **VS Code extensions, terminal assistants, or code editors**. It doesn't even require a **credit card** for the best models!
 
-> **Last updated:** June 2026 — Free model listings change often. Verify on the provider's console.
->
-> If a model hits a rate limit, just switch to the next one with your own API Provider or different API Providers — free tiers rotate, there's always a backup.
+> 💡 **Pro tip:** Free tiers rotate often. If a model hits rate limits, switch to another — there's always a backup in this list. 
+> **Always verify** current quotas on the provider's console before building workflows.
 
 ## 📋 Contents
 
@@ -15,9 +16,7 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 - [📂 Individual Provider Showcases](#the-deep-dive-individual-provider-showcases)
   - [⚡ Groq](#groq-api-models)
   - [🌐 Google Gemini](#google-gemini-models)
-  - [💚 NVIDIA NIM](#nvidia-nim-models)
   - [🍊 Mistral AI](#mistral-ai-models)
-  - [🎆 Fireworks AI](#fireworks-ai-models)
   - [🌀 SambaNova AI](#sambanova-ai-models)
   - [🧠 Cerebras AI](#cerebras-ai-models)
 - [CONTRIBUTING](#contributing)
@@ -32,27 +31,27 @@ If you are signing up for free accounts to get API keys, these are the **three b
 | Provider | The Simple Vibe | Why It Matters For You |
 | :--- | :--- | :--- |
 | **Groq** | Speedy Accurate | Code prints out on your screen instantly. If you hate waiting for an AI to finish typing, this is your go-to. |
-| **Fireworks AI** | Reasoning | Built to run massive, smart models incredibly smoothly without slowing down. |
-| **Google Gemini** | Quick Tasks | Great for rapid single-file edits and terminal commands, but free tier rate limits make large project sessions difficult. |
+| **SambaNova** | Hardware Speed | Proprietary RDU architecture removes traditional GPU bottlenecks, delivering incredibly high throughput for massive models. |
+| **Mistral AI** | Clean & Efficient | Builds models that punch above their weight class with exceptionally clean instruction following and compact, efficient execution profiles. |
 
 ---
 
 ## 🏆 The Top 10 Recommended Free Models
 
-The absolute best free models available right now, ranked by how well they handle **daily coding tasks**. This does **NOT** include the BEST Vision Models since All models are made for Text Completions.
+The absolute best free models available right now, ranked by how well they handle **daily coding tasks**. This does **NOT** include vision models — all models here are for text completions.
 
 | Rank | Model Name | Host Provider | The Simple Reason to Choose It |
 | :--- | :--- | :--- | :--- |
-| **1** 🏆 | `openai/gpt-oss-120b` | **Groq** | **For All Tasks.** It writes incredibly clean code, rarely makes formatting mistakes, and responds almost instantly. |
-| **2** 🥈 | `deepseek-v4-pro` | **Fireworks AI** | **For Deep Reasoning.** Perfect for when you need to plan a big new feature from scratch or rewrite complex, messy logic. |
-| **3** 🥉 | `qwen/qwen3-32b` | **Groq** | **For Speed.** It takes a brief second to "think" before it starts, but then it dumps code into your editor at lightning speed. |
-| **4** | `models/gemini-3.1-flash-lite` | **Google Gemini** | Ultra-efficient for high-volume agentic triaging. |
-| **5** | `Deepseek-V3.2` | **SambaNova** | Precision reasoning for system-level architecture. |
-| **6** | `mistralai/mistral-large-3-675b-instruct-2512` | **NVIDIA NIM** | Production-grade power for complex enterprise workflows. |
-| **7** | `qwen/qwen3-next-80b-a3b-instruct` | **NVIDIA NIM** | Balanced reasoning for general-purpose expert tasks. |
-| **8** | `accounts/fireworks/models/kimi-k2p6` | **Fireworks AI** | **For Agentic Coding.** Multimodal agentic model optimized for long-horizon tasks, swarm-based execution, and massive context windows — backed by 3.6M TPM free tier. |
-| **9** | `mistral-large-2512` | **Mistral AI** | Strict adherence to complex instructions and system prompts. |
-| **10** | `codestral-latest` | **Mistral AI** | Deeply specialized in polyglot programming and syntax structure. |
+| **1** 🏆 | `openai/gpt-oss-120b` | **Groq** | **For All Tasks.** The undisputed champion. Writes incredibly clean code, never hits rate-limit walls, and responds almost instantly. |
+| **2** 🥈 | `DeepSeek-V3.1` | **SambaNova** | **For Agentic Pipelines.** A massive hybrid mixture model on SambaNova's RDU architecture — blazing-fast inference with elite reasoning, optimized as a background planner for multi-step agent actions. |
+| **3** 🥉 | `qwen/qwen3-32b` | **Groq** | **For Code.** Phenomenal code generation that dumps into your editor at lightning speed. The `<think>` preamble is a minor trade-off for its coding depth. |
+| **4** | `DeepSeek-V3.2` | **SambaNova** | **For Deep Reasoning.** The pinnacle of hardware-optimized reasoning on SambaNova's infrastructure — near-instant token speeds with elite multi-file architectural analysis. |
+| **5** | `mistral-code-agent-latest` | **Mistral AI** | **For Agentic Coding.** Purpose-built for autonomous agents with native tool use, structured JSON outputs, and multi-step coding workflows. |
+| **6** | `models/gemini-3.1-flash-lite` | **Google Gemini** | **For Quick Tasks.** Lightning-fast with ~500 RPD free tier — the only Gemini model with enough quota for sustained agentic triaging. |
+| **7** | `mistral-large-2512` | **Mistral AI** | **For Instruction Following.** Top-tier multilingual reasoning with strict adherence to complex system prompts and massive file contexts. |
+| **8** | `gpt-oss-120b` | **Cerebras** | **For Speed.** The same 117B MoE champion running on Cerebras' wafer-scale engine — sub-second responses for rapid-fire coding loops. |
+| **9** | `zai-glm-4.7` | **Cerebras** | **For Large Context.** 131K context window optimized for long-horizon agentic coding — handles massive project contexts at blazing Cerebras speeds. |
+| **10** | `codestral-latest` | **Mistral AI** | **For Code Completions.** Built from the ground up for programming — flies through auto-completions and single-file inline edits across dozens of languages. |
 
 ---
 
@@ -81,73 +80,20 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 ---
 
 ### 🌐 [Google Gemini](https://aistudio.google.com) Models
-Gemini offers large context windows on paper, but the free tier's **tight rate limits** (as low as 20 RPD on some models) make sustained multi-file coding impractical. Use Gemini for quick, targeted tasks and single-file edits — not marathon sessions.
+Gemini offers large context windows on paper, but the free tier's **rate limits vary by model** — Flash-lite variants enjoy ~500 RPD, while standard models can be as low as 20 RPD. Use Gemini for quick, targeted tasks and single-file edits — not marathon sessions.
 
 | Free Model | Star Rating | The honest opinion on how it handles your work |
 | :--- | :--- | :--- |
-| `models/gemini-3.1-flash-lite` | ⭐⭐⭐⭐⭐ | **BEST.** The new baseline. Lightning-fast with responsive, no-fuss outputs. Handles daily coding, terminal commands, and single-file edits without the overhead of larger models. |
-| `models/gemini-3.1-flash-lite-preview` | ⭐⭐⭐⭐☆ | A preview snapshot of the BEST model. Nearly identical speed and quality, but being experimental means its behavior can shift when Google updates it behind the scenes. |
-| `models/gemini-3-flash-preview` | ⭐⭐⭐⭐☆ | Outstanding intelligence for a preview model. It handles deep reasoning and large contexts beautifully, but because it is an experimental playground model, the way it responds can randomly shift when Google tweaks it behind the scenes. |
+| `models/gemini-3.1-flash-lite` | ⭐⭐⭐⭐⭐ | **BEST.** The new baseline. Lightning-fast with responsive, no-fuss outputs. Handles daily coding, terminal commands, and single-file edits comfortably thanks to ~500 RPD on the free tier. |
 | `models/gemma-4-31b-it` | ⭐⭐⭐⭐☆ | A highly responsive and incredibly smart model. The only catch is that it occasionally "overthinks" simple instructions—instead of just giving you the direct answer, it might type out its internal rule-checking steps first. |
 | `models/gemma-4-26b-a4b-it` | ⭐⭐⭐⭐☆ | A compact Gemma variant with solid reasoning depth. Slightly slower to respond than its 31b sibling, but delivers clean, structured outputs for general development tasks. |
+| `models/gemini-3.5-flash` / `models/gemini-flash-latest` | ⭐⭐⭐☆☆ | Next-generation flash model with improved reasoning over prior flash variants. Fast responses and strong coding capability, but standard flash rate limits (~20 RPD) prevent sustained agentic use. |
+| `models/gemini-3.1-flash-lite-preview` | ⭐⭐⭐☆☆ | A preview snapshot of the BEST model. Nearly identical speed and quality, but being experimental means its behavior can shift when Google updates it behind the scenes, making it unreliable for consistent agentic use despite ~500 RPD. |
+| `models/gemini-3-flash-preview` | ⭐⭐⭐☆☆ | Outstanding intelligence for a preview model. It handles deep reasoning and large contexts beautifully, but because it is an experimental playground model with tight rate limits (as low as 20 RPD), it's impractical for sustained agentic use. |
 | `models/gemini-2.5-flash` | ⭐⭐⭐☆☆ | A solid, reliable backup option that handles standard context sizes perfectly. It only slips to 3 stars because the newer Gemini 3 series leaves it in the dust when it comes to tracking complex coding logic. |
 | `models/gemini-flash-lite-latest` | ⭐⭐⭐☆☆ | **LIGHT SCRIPTING ONLY.** An incredibly fast, bare-bones lite variant. Perfect for rapid terminal lookups and quick syntax checks, but lacks the depth for multi-file project work. |
 | `models/gemini-2.5-flash-lite` | ⭐⭐☆☆☆ | **LIGHT SCRIPTING ONLY.** It is incredibly fast and lightweight for basic tasks, but its older reasoning core means it gets confused easily if you paste in a long list of complex terminal errors. |
 | `models/gemini-robotics-er-1.6-preview` | ⭐⭐☆☆☆ | A fascinating experimental model built for physical task automation and robotics logic. While it technically works for text, using it for daily coding is a waste of time since it isn't optimized for programming syntax. |
-
----
-
-### 💚 [NVIDIA NIM](https://build.nvidia.com/explore/discover) Models
-NVIDIA's NIM (NVIDIA Inference Microservice) catalog is famous for hosting a **massive, enterprise-grade fleet of hyper-optimized models** directly on their premier cloud accelerators. If you want access to specialized niche giants, experimental reasoning hybrids, or localized heavyweights that rarely show up on standard free tiers, this is where you look.
-
-| Free Model | Star Rating | The honest opinion on how it handles your work |
-| :--- | :--- | :--- |
-| `mistralai/mistral-large-3-675b-instruct-2512` | ⭐⭐⭐⭐⭐ | **BEST.** An absolute monster of an open-weight model. Because it is backed by hundreds of billions of parameters, it effortlessly handles massive multi-file projects, structural engineering, and deep logic bugs without flinching. |
-| `mistralai/mistral-nemotron` | ⭐⭐⭐⭐☆ | Mistral's Nemotron variant. Fast responses with clean, well-structured outputs for general development and daily coding tasks. |
-| `nvidia/llama-3.3-nemotron-super-49b-v1` | ⭐⭐⭐⭐☆ | NVIDIA's 49B Nemotron Super. Balanced speed and reasoning depth for multi-turn developer workflows. |
-| `qwen/qwen3.5-397b-a17b` | ⭐⭐⭐⭐☆ | Massive 397B Mixture-of-Experts architecture. Deep reasoning capability but noticeably higher latency (2.5s+) compared to smaller models. |
-| `moonshotai/kimi-k2.6` | ⭐⭐⭐⭐☆ | Moonshot's Kimi agentic model on NVIDIA infra. Optimized for long-horizon coding and repository-level task orchestration. |
-| `openai/gpt-oss-120b` | ⭐⭐⭐⭐☆ | **For All Tasks.** The same 117B MoE flagship that dominates on Groq. Responds reliably on NVIDIA NIM with clean, efficient output — a strong alternative when Groq rate limits hit. |
-| `nvidia/llama-3.3-nemotron-super-49b-v1.5` | ⭐⭐⭐⭐☆ | Updated iteration of the 49B Nemotron Super. Responsive and well-tuned for multi-turn developer workflows, competitive with the v1 release. |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning` | ⭐⭐⭐⭐☆ | **REASONING.** A 30B MoE reasoning engine. Brings solid logical depth for architectural analysis and complex debugging across multi-file projects. |
-| `openai/gpt-oss-20b` | ⭐⭐⭐⭐☆ | **SOLID COMPANION.** The 20B variant of OpenAI's open-weight model. Impressive coding chops for its size — fast, reliable, and consistent for standard development work. |
-| `qwen/qwen3-next-80b-a3b-instruct` | ⭐⭐⭐⭐☆ | **CODE COMPLETION ONLY.** A phenomenal 4-star option. It handles complex logical loops beautifully and brings high structural accuracy to code layout, though it occasionally expects a highly structured prompt to give its best output. |
-| `meta/llama-3.3-70b-instruct` | ⭐⭐⭐⭐☆ | A highly polished, incredibly stable choice for general daily development. It provides beautiful instruction following and clean script structures, only trailing the massive Mistral flagship on deep, specialized architectural logic. |
-| `google/gemma-3n-e4b-it` | ⭐⭐⭐⭐☆ | **CODE COMPLETION ONLY.** An incredibly responsive, specialized next-gen engine that drafts dense, high-quality code structures beautifully but lacks the broader versatility needed for long conversational context. |
-| `mistralai/mistral-small-4-119b-2603` | ⭐⭐⭐⭐☆ | A massive parameter pool that bridges the gap between medium models and giants. It is highly capable for code tracking, though its latency can feel slightly heavy compared to tighter architectures. |
-| `microsoft/phi-4-mini-instruct` | ⭐⭐⭐☆☆ | **LIGHT SCRIPTING ONLY.** Microsoft's compact Phi model. Blazing fast (0.41s) for quick syntax checks and terminal commands, but lacks depth for architectural reasoning. |
-| `nvidia/nemotron-3-super-120b-a12b` | ⭐⭐⭐☆☆ | **TEXT ONLY.** Incredible raw size that makes it great for heavy natural language processing and massive text transformations, but it tends to be overly chatty and less direct when writing clean code syntax. |
-| `meta/llama-3.1-70b-instruct` | ⭐⭐⭐☆☆ | A classic workhorse that gets the job done, but it feels distinctly slower and slightly less polished on tricky instructions compared to the newer Llama 3.3 variant. |
-| `meta/llama-4-maverick-17b-128e-instruct` | ⭐⭐⭐☆☆ | A decent mixture-of-experts model for quick scripting edits, though it has a noticeable tendency to overthink simple commands or get slightly repetitive with formatting conventions. |
-| `mistralai/ministral-14b-instruct-2512` | ⭐⭐⭐☆☆ | A solid, nimble engine for medium tasks. It handles localized scripting well but will drop context if you try to paste massive logs or expect it to track multiple project files. |
-| `google/gemma-3n-e2b-it` | ⭐⭐⭐☆☆ | A fast, lightweight slice of the Gemma ecosystem. Perfect for rapid terminal help or basic single-line translations, but lacks the deep reasoning depth of its larger sibling. |
-| `mistralai/mixtral-8x7b-instruct-v0.1` | ⭐⭐⭐☆☆ | A classic mixture-of-experts model. It responds reliably, but it has a habit of over-explaining the context of its answers instead of just dropping the clean code block you asked for. |
-| `meta/llama-3.2-11b-vision-instruct` | ⭐⭐⭐☆☆ | **VISION ONLY.** Excellent if you need to pass it an image of a UI mockup, a graph, or a schematic diagram to explain, but its pure text logic is standard for its size. |
-| `meta/llama-3.2-90b-vision-instruct` | ⭐⭐⭐☆☆ | **VISION ONLY.** The 90B variant with strong visual reasoning for diagrams and UI analysis. Standard text-only logic for its scale — stick to vision tasks. |
-| `meta/llama-3.1-8b-instruct` | ⭐⭐⭐☆☆ | **LIGHT SCRIPTING ONLY.** A blazing fast, lightweight tool that is excellent for immediate terminal lookups, regex fixes, or tiny syntax tweaks. |
-| `nvidia/nvidia-nemotron-nano-9b-v2` | ⭐⭐⭐☆☆ | **LIGHT SCRIPTING ONLY.** Compact 9B nano model. Fast for terminal commands and syntax checks, but lacks the depth for multi-file project work. |
-| `nvidia/nemotron-3-nano-30b-a3b` | ⭐⭐⭐☆☆ | A 30B Mixture-of-Experts base model. Capable of handling moderate coding tasks but lacks the reasoning specialization of its "omni" sibling. |
-| `stepfun-ai/step-3.5-flash` | ⭐⭐⭐☆☆ | StepFun's flash-optimized model. Fast and responsive for lightweight coding and quick terminal queries. |
-| `stepfun-ai/step-3.7-flash` | ⭐⭐⭐☆☆ | Updated StepFun flash variant. Slightly improved over 3.5 with cleaner output formatting on standard coding prompts. |
-| `bytedance/seed-oss-36b-instruct` | ⭐⭐⭐☆☆ | ByteDance's 36B Seed instruct model. Handles general coding tasks competently — a solid mid-tier option on NIM's free tier. |
-| `sarvamai/sarvam-m` | ⭐⭐⭐☆☆ | **INDIC TRANSLATION ONLY.** A highly unique hybrid-reasoning model optimized heavily for Indian language contexts and regional localization tasks. Skip it for standard English repositories as its logical core is tuned differently. |
-| `stockmark/stockmark-2-100b-instruct` | ⭐⭐⭐☆☆ | **JAPANESE TRANSLATION ONLY.** A massive, specialized 100B powerhouse built strictly for business intelligence and data extraction in Japanese. It will completely fall out of its depth if forced into a standard system programming environment. |
-| `meta/llama-3.2-3b-instruct` | ⭐⭐☆☆☆ | **LIGHT SCRIPTING ONLY.** Highly responsive for basic text formatting and simple terminal syntax, but it gets overwhelmed quickly if you pass it long, multi-line error logs. |
-| `upstage/solar-10.7b-instruct` | ⭐⭐☆☆☆ | A legacy architecture that was great for its time, but it trails modern small models on instruction following and frequently cuts text short under length pressure. |
-| `nvidia/nemotron-nano-12b-v2-vl` | ⭐⭐☆☆☆ | A compact vision-language model. Handy for basic edge computing tasks, but far too small to handle complex, heavy coding operations. |
-| `nvidia/nemotron-mini-4b-instruct` | ⭐⭐☆☆☆ | A tiny model that responds incredibly fast, but its reasoning window is far too shallow to understand complex programming parameters. |
-| `nvidia/llama-3.1-nemotron-nano-8b-v1` | ⭐⭐☆☆☆ | Tends to be hyper-verbose and wraps answers in unnecessary conversational fluff, which slows down your actual workflow. |
-| `nvidia/llama-3.1-nemotron-nano-vl-8b-v1` | ⭐⭐☆☆☆ | A small vision variant that is highly responsive for image categorization, but lacks the core logical strength for heavy code-refactoring tasks. |
-| `nvidia/ising-calibration-1-35b-a3b` | ⭐⭐☆☆☆ | **QUANTUM CALIBRATION ONLY.** A purpose-built, highly technical vision-language model trained exclusively to analyze quantum computing processor plots. Completely useless for standard software coding or writing basic scripts. |
-| `nvidia/riva-translate-4b-instruct-v1.1` | ⭐⭐☆☆☆ | **TRANSLATION ONLY.** Purpose-built for localized conversational translation and speech pipelines. It will return garbage or literal text requests if forced to interpret code syntax. |
-| `nvidia/gliner-pii` | ⭐☆☆☆☆ | **DATA EXTRACTION ONLY.** A specialized entity-recognition model trained strictly to pull personal identifiable information out of raw text. It will only return structured JSON tags. |
-| `nvidia/llama-3.1-nemoguard-8b-topic-control` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** This is an internal algorithmic guardrail meant to check whether an incoming prompt stays on-topic. Passing actual code scripts into it will just yield back a flat, unhelpful "on-topic" or "off-topic" classification flag. |
-| `nvidia/llama-3.1-nemoguard-8b-content-safety` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** A strict input-filtering tool designed to classify text safety. It returns structured safety status fields rather than text generation. |
-| `nvidia/llama-3.1-nemotron-safety-guard-8b-v3` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** A backend guardrail optimized to analyze prompts for risk. Passing an open-ended programming question will simply return a safety verification string. |
-| `meta/llama-guard-4-12b` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** A dedicated safety evaluation layer used to detect toxic inputs. Completely useless as an active development assistant. |
-| `nvidia/nemotron-3-content-safety` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** An evaluation filter meant to scan for violations. It will only return backend validation tags. |
-| `nvidia/nemotron-content-safety-reasoning-4b` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** A compact safety filtering model that evaluates prompt integrity. Will not assist with structural engineering or scripting tasks. |
-| `nvidia/nemotron-3.5-content-safety` | ⭐☆☆☆☆ | **SECURITY MONITORING ONLY.** Updated content safety guard. Same classification-only behavior — returns safety labels, not code. |
 
 ---
 
@@ -160,16 +106,16 @@ Mistral AI is highly regarded in the **open-weights and developer communities** 
 | `codestral-latest` / `codestral-2508` | ⭐⭐⭐⭐☆ | **CODE COMPLETION ONLY.** Built from the ground up for programmers. Flies through auto-completions and single-file inline edits across dozens of languages. |
 | `mistral-code-latest` | ⭐⭐⭐⭐☆ | **CODE COMPLETION ONLY.** Dedicated code generation engine. Fast, precise completions across dozens of programming languages for inline editing workflows. |
 | `mistral-code-fim-latest` | ⭐⭐⭐⭐☆ | **CODE COMPLETION ONLY.** Fill-in-Middle specialist. Designed for smart inline insertion within existing code blocks and contextual completions. |
-| `mistral-code-agent-latest` | ⭐⭐⭐⭐☆ | **AGENT ROUTING ONLY.** Code-focused agent model optimized for tool use, structured JSON outputs, and autonomous multi-step coding workflows. |
+| `mistral-code-agent-latest` | ⭐⭐⭐⭐⭐ | **BEST FOR AGENTS.** Purpose-built for autonomous agents with native tool use, structured JSON outputs, and multi-step coding workflows. |
 | `mistral-medium-3.5` / `mistral-medium-3-5` | ⭐⭐⭐⭐☆ | Exceptional balance of price-to-performance. Highly responsive reasoning loops for structural software layouts, just missing 5 stars due to niche edge-case gaps. |
 | `mistral-medium-3` | ⭐⭐⭐⭐☆ | Trusted, incredibly stable version of the Medium line. Keeps a rigid handle on instructions and delivers clean boilerplate code without empty chatter. |
 | `mistral-medium-2604` | ⭐⭐⭐⭐☆ | A responsive iteration within the Medium family. Predictable execution flow and excellent at breaking down tricky structural bugs. |
 | `devstral-medium-latest` / `devstral-medium-2507` | ⭐⭐⭐⭐☆ | **AGENT ROUTING ONLY.** Specialized, highly streamlined Medium variation optimized specifically to function inside automated developer continuous task loops. |
 | `mistral-medium-latest` / `mistral-medium` | ⭐⭐⭐⭐☆ | The classic production model. Very dependable for everyday scripting queries and general developer workflows. |
-| `mistral-medium-2508` | ⭐⭐⭐⭐☆ | Older point-release of the Medium framework. Outputs direct string text cleanly, though it lacks the optimization pass of the 3.x series. |
-| `mistral-medium-2505` | ⭐⭐⭐⭐☆ | Early build snapshot of Medium. Tends to use full-sentence prefix framing and has slightly slower throughput. |
 | `mistral-small-latest` / `mistral-small-2603` | ⭐⭐⭐⭐☆ | Incredible lightweight architecture. Handles multi-turn logic with surprising depth and a punchy, direct tone that fits background execution perfectly. |
-| `mistral-small-2506` | ⭐⭐⭐⭐☆ | An earlier snapshot of the Small ecosystem. Keeps syntax errors to a minimum but trails behind `2603` on processing velocity. |
+| `mistral-medium-2508` | ⭐⭐⭐☆☆ | Older point-release of the Medium framework. Outputs direct string text cleanly, though it lacks the optimization pass of the 3.x series. |
+| `mistral-medium-2505` | ⭐⭐⭐☆☆ | Early build snapshot of Medium. Tends to use full-sentence prefix framing and has slightly slower throughput. |
+| `mistral-small-2506` | ⭐⭐⭐☆☆ | An earlier snapshot of the Small ecosystem. Keeps syntax errors to a minimum but trails behind `2603` on processing velocity. |
 | `devstral-latest` / `devstral-2512` | ⭐⭐⭐☆☆ | **AGENT ROUTING ONLY.** Tailored strictly for programmatic tool use and structured JSON schemas rather than standard conversational chat. |
 | `ministral-14b-latest` / `ministral-14b-2512` | ⭐⭐⭐☆☆ | Nimble, edge-focused model. Remarkably capable of handling direct coding questions for its tight memory footprint. |
 | `open-mistral-nemo` / `open-mistral-nemo-2407` | ⭐⭐⭐☆☆ | Classic community workhorse. Fast and flexible for low-complexity text filtering, but struggles on deep algorithmic logic. |
@@ -185,25 +131,11 @@ Mistral AI is highly regarded in the **open-weights and developer communities** 
 | `ministral-3b-latest` / `ministral-3b-2512` | ⭐⭐☆☆☆ | **LIGHT SCRIPTING.** Micro footprint that initializes instantly. Good for spelling transformations but completely loses coherence on deep runtime errors. |
 | `mistral-tiny-latest` / `mistral-tiny-2407` | ⭐⭐☆☆☆ | Legacy tiny build block. Decent processing speed for simple text replacement, but struggles heavily under modern coding paradigms. |
 | `voxtral-mini-latest` / `voxtral-mini-2507` | ⭐⭐☆☆☆ | **AUDIO LOGIC ONLY.** Highly specialized micro audio engine that tends to truncate standard text outputs early because it anticipates audio streaming input. |
-| `mistral-medium-c21211-r0-75` | ⭐⭐☆☆☆ | Unpolished internal baseline test branch. Fast, but highly prone to syntax formatting failures and loops. |
-
----
-
-### 🎆 [Fireworks AI](https://fireworks.ai) Models
-Fireworks AI is an **ultra-fast, developer-focused inference platform** built by the original team behind PyTorch. It skips the friendly consumer wrappers and focuses entirely on **raw performance—serving top-tier open-weight models** over optimized shared infrastructure with blazing speed, massive concurrent throughput, and low latency for agentic workflows.
-
-| Free Model | Star Rating | The honest opinion on how it handles your work |
-| :--- | :--- | :--- |
-| `accounts/fireworks/models/deepseek-v4-pro` | ⭐⭐⭐⭐⭐ | **BEST.** A massive 1.6-trillion parameter Mixture-of-Experts (MoE) flagship engine. Boasting an immense context window, it provides elite reasoning for parsing complex systems, heavy backend architectures, and deep logic errors. |
-| `accounts/fireworks/models/kimi-k2p6` | ⭐⭐⭐⭐⭐ | **BEST.** Moonshot's updated 1-trillion parameter native multimodal agentic model. Highly optimized for long-horizon coding tasks, swarm-based execution, and massive context windows, running noticeably faster than its predecessor. |
-| `accounts/fireworks/models/glm-5p1` | ⭐⭐⭐⭐☆ | Zhipu's flagship 754-billion parameter agentic model. It handles multi-step complex problem-solving, repository tool usage, and full file-based refactoring cycles with great reliability. |
-| `accounts/fireworks/models/kimi-k2p5` | ⭐⭐⭐☆☆ | The previous generation Kimi snapshot. While it retains the strong core context window capacity, its execution speeds and throughput processing lag behind the newer `k2p6` architecture. |
-| `accounts/fireworks/models/gpt-oss-120b` | ⭐⭐☆☆☆ | **CODE COMPLETION ONLY.** OpenAI's open-weight 117-billion parameter MoE model. While it responds with incredibly low latency, it frequently skips conversational structural context entirely or drops outputs under fast streaming loops. |
 
 ---
 
 ### 🌀 [SambaNova AI](https://cloud.sambanova.ai) Models
-SambaNova AI is a **hardware-driven inference provider** utilizing proprietary Reconfigurable Dataflow Units (RDUs) rather than standard GPUs. By running open-weight frameworks natively on dataflow architectures, they remove the **traditional hardware-decode bottleneck**. This setup provides incredibly high tokens-per-second throughput and low multi-turn response times, making it a natural choice for rapid, agentic continuous-task pipelines.
+SambaNova AI is a **hardware-driven inference provider** utilizing proprietary Reconfigurable Dataflow Units (RDUs) rather than standard GPUs. By running open-weight frameworks natively on dataflow architectures, they remove the **traditional hardware-decode bottleneck**. This setup provides incredibly high tokens-per-second throughput and low multi-turn response times, making it a natural choice for rapid, agentic continuous-task pipelines. The free tier offers generous rate limits suitable for sustained agentic use.
 
 | Free Model | Star Rating | The honest opinion on how it handles your work |
 | :--- | :--- | :--- |
@@ -211,8 +143,7 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 | `DeepSeek-V3.1` | ⭐⭐⭐⭐⭐ | **BEST.** An incredibly fast, massive hybrid mixture model. Running in non-thinking mode over SambaNova's RDU pipelines, it functions as a premium, highly responsive background planner for code-routing and multi-step agent actions. |
 | `Meta-Llama-3.3-70B-Instruct` | ⭐⭐⭐⭐☆ | The traditional benchmark engine. It interprets dense, multi-variable project constraints with high structural reliability, only trailing the newer architectures slightly on processing heavy visual context. |
 | `gemma-4-31B-it` | ⭐⭐⭐⭐☆ | Google's newest instruction-tuned model block. Strikes a masterclass balance between low parameter footprint and high-level structural syntax mastery, blazing through system boilerplates. |
-| `Llama-4-Maverick-17B-128E-Instruct` | ⭐⭐⭐☆☆ | Meta's native 128-expert MoE architecture. It delivers lightning-quick single-turn responses, though its overall code attention span can narrow slightly when processing heavy file structures under tight loops. |
-| `gemma-3-12b-it` | ⭐⭐⭐☆☆ | A highly efficient lightweight variant. Outstanding for instant syntax filtering, terminal configurations, and simple text transformations, but it will stumble if forced into complex backend logic layers. |
+| `gpt-oss-120b` | ⭐⭐⭐☆☆ | The same 117B MoE flagship that dominates on Groq. Available on SambaNova but with noticeably higher latency (~3.5s) compared to its sub-second performance on Groq. |
 
 ---
 
@@ -221,8 +152,8 @@ Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, which int
 
 | Free Model | Star Rating | The honest opinion on how it handles your work |
 | :--- | :--- | :--- |
-| `gpt-oss-120b` | ⭐⭐⭐☆☆ | **SPEED ONLY.** Operates on a wafer-scale architecture that delivers ~1,000+ tokens per second. It is highly prone to streaming synchronization errors where it drops data or returns `""` because the client-side parsing cannot keep pace with the massive throughput. |
-| `zai-glm-4.7` | ⭐⭐⭐☆☆ | A 131K context window model optimized for rapid agentic coding. It handles modular code snippets efficiently, but is sensitive to oversized prompts which trigger API validation failures, often resulting in dropped execution context under high request volumes. |
+| `gpt-oss-120b` | ⭐⭐⭐⭐☆ | **For All Tasks.** The same 117B MoE flagship that dominates on Groq. Delivers sub-second responses on Cerebras' wafer-scale architecture with solid reliability across standard developer workflows. |
+| `zai-glm-4.7` | ⭐⭐⭐⭐☆ | A 131K context window model optimized for rapid agentic coding. Handles modular code snippets efficiently at blazing speeds — ideal for large-context agent loops and multi-file reasoning tasks. |
 
 ---
 
