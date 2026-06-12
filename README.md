@@ -1,5 +1,9 @@
 # Awesome Free BYOK Models 🚀
 
+[![Last Verified](https://img.shields.io/badge/Last%20Verified-June%202026-orange)]()
+[![License](https://img.shields.io/badge/license-CC0--1.0-blue)](LICENSE.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
+
 > ⏰ **Last Verified: June 12, 2026** - All Models are Verified from their API Providers.
 
 A curated list of the **best high-performance**, **free-tier AI models** you can use to **supercharge your coding setup** without paying for expensive monthly subscriptions.
@@ -19,6 +23,10 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
   - [🍊 Mistral AI](#mistral-ai-models)
   - [🌀 SambaNova AI](#sambanova-ai-models)
   - [🧠 Cerebras AI](#cerebras-ai-models)
+  - [🟢 Cohere AI](#cohere-ai-models)
+  - [🐙 GitHub Models](#github-models-models)
+  - [🔮 MorphLLM](#morphllm-models)
+  - [☁️ Cloudflare Workers AI](#cloudflare-workers-ai-models)
 - [CONTRIBUTING](#contributing)
 - [LICENSE](#license)
 
@@ -154,6 +162,68 @@ Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, which int
 | :--- | :--- | :--- |
 | `gpt-oss-120b` | ⭐⭐⭐⭐☆ | **For All Tasks.** The same 117B MoE flagship that dominates on Groq. Delivers sub-second responses on Cerebras' wafer-scale architecture with solid reliability across standard developer workflows. |
 | `zai-glm-4.7` | ⭐⭐⭐⭐☆ | A 131K context window model optimized for rapid agentic coding. Handles modular code snippets efficiently at blazing speeds — ideal for large-context agent loops and multi-file reasoning tasks. |
+
+---
+
+### 🟢 [Cohere AI](https://dashboard.cohere.com) Models
+Cohere focuses on enterprise-grade NLP with their Command model family — built for RAG, tool use, and coding workflows. Their free API tier offers replenishable credits, and nearly every model delivers sub-second responses.
+
+| Free Model | Star Rating | The honest opinion on how it handles your work |
+| :--- | :--- | :--- |
+| `command-a-03-2025` | ⭐⭐⭐⭐⭐ | **BEST.** Cohere's flagship model. Blazing fast (0.51s) with clean, direct command execution — ideal for agentic tool-use pipelines and structured outputs. |
+| `command-r-plus-08-2024` | ⭐⭐⭐⭐☆ | High-capability reasoning engine. Reliable for complex multi-step logic and architectural analysis with strong output quality. |
+| `command-r-08-2024` | ⭐⭐⭐⭐☆ | Fast general-purpose workhorse (0.51s). Handles scripting, terminal commands, and single-file edits with consistent formatting. |
+| `c4ai-aya-vision-32b` | ⭐⭐⭐⭐☆ | 32B vision-language model at 0.55s. Handles both code and visual context — useful for UI-to-code workflows. |
+| `command-a-vision-07-2025` | ⭐⭐⭐⭐☆ | Vision variant of Command A (0.51s). Process screenshots and diagrams alongside code without switching contexts. |
+| `command-r7b-12-2024` | ⭐⭐⭐⭐☆ | Compact 7B at 0.53s. Great for rapid-fire completions with minimal overhead and consistent output. |
+| `command-r7b-arabic-02-2025` | ⭐⭐⭐⭐☆ | Arabic-optimized 7B variant (0.52s). Clean responses for Arabic technical documentation and bilingual codebases. |
+| `command-a-translate-08-2025` | ⭐⭐⭐☆☆ | Translation-optimized model (0.55s). Works for code but specialized for multilingual text, limiting general coding utility. |
+| `command-a-reasoning-08-2025` | ⭐⭐⭐☆☆ | Reasoning-focused variant (0.64s). Minimal outputs suit internal chain-of-thought, but lack of direct answers hurts in agentic use. |
+| `c4ai-aya-expanse-32b` | ⭐⭐⭐☆☆ | 32B multilingual model (0.67s) that over-answers — "READY. Is there anything else I can" adds noise in prompt chains. |
+| `command-a-plus-05-2026` | ⭐⭐☆☆☆ | Plus-tier variant with empty responses (0.51s). Unreliable output makes it risky for agentic pipelines despite the speed. |
+
+---
+
+### 🐙 [GitHub Models](https://github.com/marketplace/models) Models
+GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and others using your existing GitHub account — no new signup needed. Free tier quotas are modest (request-based limits), making it best for prototyping and personal projects.
+
+| Free Model | Star Rating | The honest opinion on how it handles your work |
+| :--- | :--- | :--- |
+| `gpt-4o-mini` | ⭐⭐⭐⭐☆ | **BEST.** OpenAI's compact flagship. Clean responses and broad language support — the safest pick on GitHub Models for everyday coding. |
+| `Meta-Llama-3.1-405B-Instruct` | ⭐⭐⭐⭐☆ | A 405B giant with clean output. Exceptional reasoning depth for system design and architectural analysis at zero cost. |
+| `gpt-4o` | ⭐⭐⭐☆☆ | Full OpenAI flagship but adds unnecessary markdown to simple outputs ("The word is **READY**"). Excellent intelligence, but verbosity clutters agent pipelines. |
+| `Meta-Llama-3.1-8B-Instruct` | ⭐⭐⭐☆☆ | Fast 8B model but verbose for its size class ("The word is: READY"). Decent for bash command lookups and syntax checks. |
+
+---
+
+### 🔮 [MorphLLM](https://morphllm.com) Models
+MorphLLM hosts a diverse catalog of open-weight models (Qwen, DeepSeek, MiniMax, Morph) optimized for competitive inference speeds. They offer unusually large models (up to 397B) through a standard API — useful when you need massive model scale without massive latency.
+
+| Free Model | Star Rating | The honest opinion on how it handles your work |
+| :--- | :--- | :--- |
+| `morph-v3-large` | ⭐⭐⭐⭐⭐ | **BEST.** The fastest clean responder (0.87s). Delivers direct output with zero preamble — ideal for tight agentic loops. |
+| `morph-qwen36-27b` | ⭐⭐⭐⭐☆ | Fast 27B Qwen variant (1.2s) with clean response. Solid everyday coding companion with good multilingual support. |
+| `morph-dsv4flash` | ⭐⭐⭐⭐☆ | DeepSeek-based flash model (1.25s). Lightweight and responsive for rapid code completions. |
+| `morph-qwen35-397b` | ⭐⭐⭐⭐☆ | A 397B parameter model at 1.38s — remarkably fast for its scale. Use it when you need massive reasoning without paying for a cluster. |
+| `morph-minimax27-230b` | ⭐⭐⭐☆☆ | Large 230B model (2.14s) with a `<think>` preamble. The reasoning layer helps complex logic but wastes cycles on simple requests. |
+| `morph-v3-fast` | ⭐⭐⭐☆☆ | Fast (1.03s) but echoes the instruction back instead of executing — adds unnecessary tokens in pipeline contexts. |
+| `morph-compactor` | ⭐⭐⭐☆☆ | Same instruction-echoing pattern as v3-fast (1.01s). Useful for prompt confirmation, wasteful otherwise. |
+| `morph-warp-grep-v2.1` | ⭐⭐⭐☆☆ | Slower (2.34s) with a search-focused architecture. Better suited for log analysis and grep-style lookups than general coding. |
+| `auto` | ⭐⭐☆☆☆ | Slowest (4.3s) and echoes instructions back. Too sluggish for real-time coding — use the other MorphLLM models instead. |
+
+---
+
+### ☁️ [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) Models
+Cloudflare Workers AI runs models on Cloudflare's global edge network using serverless GPUs. The free tier is generous (10,000 requests/day for most models) with near-zero latency from edge locations worldwide.
+
+> ⚠️ **Format gotcha:** Unlike OpenAI-compatible providers, Cloudflare uses `"prompt"` (a plain string), not `"messages"`. Send `{"prompt": "your text"}` — most tools default to `"messages"` and hit errors. Use a direct `curl` call or a proxy to bridge the format.
+
+| Free Model | Star Rating | The honest opinion on how it handles your work |
+| :--- | :--- | :--- |
+| `@cf/meta/llama-3.1-70b-instruct` | ⭐⭐⭐⭐⭐ | **BEST.** A 70B Llama at 0.81s on the edge — remarkably fast for its size. Clean, direct outputs make it viable for both quick lookups and deep reasoning anywhere in the world. |
+| `@cf/meta/llama-3.1-8b-instruct` | ⭐⭐⭐⭐☆ | Reliable 8B at 0.52s. Strong balance of speed and general coding capability — a solid daily driver on Cloudflare's edge. |
+| `@cf/meta/llama-3.2-3b-instruct` | ⭐⭐⭐⭐☆ | The absolute fastest responder on this list at 0.4s. Perfect for ultra-low-latency syntax checks and rapid-fire completions where raw speed matters most. |
+| `@cf/mistral/mistral-7b-instruct-v0.1` | ⭐⭐⭐☆☆ | Older Mistral 7B v0.1 (1.36s). Tends to over-explain ("The word 'READY' is spelled as") — functional but trails behind current-gen models in conciseness. |
 
 ---
 
