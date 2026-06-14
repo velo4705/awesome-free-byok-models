@@ -46,9 +46,9 @@ If you are signing up for free accounts to get API keys, these are the **three b
 
 | Provider | The Simple Vibe | Why It Matters For You |
 | :--- | :--- | :--- |
-| **Groq** | Speedy Accurate | Code prints out on your screen instantly. If you hate waiting for an AI to finish typing, this is your go-to. |
-| **SambaNova** | Hardware Speed | Proprietary RDU architecture removes traditional GPU bottlenecks, delivering incredibly high throughput for massive models. |
-| **Mistral AI** | Clean & Efficient | Builds models that punch above their weight class with exceptionally clean instruction following and compact, efficient execution profiles. |
+| **Ollama Cloud** | Uncapped & Reliable | Time-based compute allocation with no daily request cap — the only provider where you can code all day without counting requests. Home to the #1 ranked free model. |
+| **SambaNova** | No TPM Walls | Zero token-per-minute caps and state-of-the-art RDU hardware. Pass entire repositories without getting locked out — two of the Top 5 run here. |
+| **Google Gemini** | Infinite Battery | 1,500 free requests per day on flash-lite with a massive context window. Lighter on reasoning but unstoppable for continuous background tasks. |
 
 ---
 
@@ -57,18 +57,18 @@ If you are signing up for free accounts to get API keys, these are the **three b
 
 The absolute best free models available right now, ranked by how well they handle **daily coding tasks** and **projects that require a working model**. This does **NOT** include vision models — all models here are only for text-out models.
 
-| Rank | Model Name | Host Provider | Free Tier Quota | The Simple Reason to Choose It |
-| :--- | :--- | :--- | :--- | :--- |
-| **1** 🏆 | `openai/gpt-oss-120b` | **Groq** | 14,400 RPD / 18,000 TPM | **For All Tasks.** The undisputed champion. Writes incredibly clean code, never hits rate-limit walls, and responds almost instantly. |
-| **2** 🥈 | `DeepSeek-V3.1` | **SambaNova** | 20 RPM + credits | **For Agentic Pipelines.** A massive hybrid mixture model on SambaNova's RDU architecture — blazing-fast inference with elite reasoning, optimized as a background planner for multi-step agent actions. |
-| **3** 🥉 | `qwen/qwen3-32b` | **Groq** | 14,400 RPD / 18,000 TPM | **For Code.** Phenomenal code generation that dumps into your editor at lightning speed. The `<think>` preamble is a minor trade-off for its coding depth. |
-| **4** | `DeepSeek-V3.2` | **SambaNova** | 20 RPM + credits | **For Deep Reasoning.** The pinnacle of hardware-optimized reasoning on SambaNova's infrastructure — near-instant token speeds with elite multi-file architectural analysis. |
-| **5** | `mistral-code-agent-latest` | **Mistral AI** | 30 RPM + daily credits | **For Agentic Coding.** Purpose-built for autonomous agents with native tool use, structured JSON outputs, and multi-step coding workflows. |
-| **6** | `models/gemini-3.1-flash-lite` | **Google Gemini** | 15 RPM / 500 RPD | **For Quick Tasks.** Lightning-fast with ~500 RPD free tier — the only Gemini model with enough quota for sustained agentic triaging. |
-| **7** | `mistral-large-2512` | **Mistral AI** | 30 RPM + daily credits | **For Instruction Following.** Top-tier multilingual reasoning with strict adherence to complex system prompts and massive file contexts. |
-| **8** | `gpt-oss-120b` | **Cerebras** | 5 RPM + credits | **For Speed.** The same 117B MoE champion running on Cerebras' wafer-scale engine — sub-second responses for rapid-fire coding loops. |
-| **9** | `zai-glm-4.7` | **Cerebras** | 5 RPM + credits | **For Large Context.** 131K context window optimized for long-horizon agentic coding — handles massive project contexts at blazing Cerebras speeds. |
-| **10** | `codestral-latest` | **Mistral AI** | 30 RPM + daily credits | **For Code Completions.** Built from the ground up for programming — flies through auto-completions and single-file inline edits across dozens of languages. |
+| Rank | Model Name | Host Provider | The Simple Reason to Choose It |
+| :--- | :--- | :--- | :--- |
+| **1** 🏆 | `qwen3-coder-next` | **Ollama Cloud** | Scores over 70% on SWE-bench Verified. Native 256K context with sandbox reinforcement learning — if it writes broken code, it reads your terminal logs and fixes its own bugs. Uncapped usage via time-based compute allocation. The best overall assistant for daily coding. |
+| **2** 🥈 | `DeepSeek-V3.2` | **SambaNova** | Streams at 200+ tokens/sec on SambaNova's RDUs with no TPM cap — you can pass entire repositories without getting locked out. Purpose-built for speed and agentic tool use. The rapid repo architect. |
+| **3** 🥉 | `models/gemini-3.1-flash-lite` | **Google Gemini** | 1,500 free daily requests with a massive context window. Lighter on deep reasoning, but unstoppable for background triaging, test iterations, and log file analysis all day. The infinite workhorse. |
+| **4** | `DeepSeek-V3.1` | **SambaNova** | The 671B flagship — unmatched structural planning and algorithm generation. Slower token generation than V3.2 and drains your 10M daily token pool faster, but indispensable for architecture-level decisions. |
+| **5** | `qwen3-235b` | **LLM7.IO** | Native support for 119 programming languages at 128 RPM with a 5M daily token pool. Elite reasoning depth for cross-language refactoring. |
+| **6** | `mistral-code-agent-latest` | **Mistral AI** | Purpose-built for multi-step agent actions with reliable tool-calling and structured JSON outputs. Mistral's 50k TPM shared pool limits it to single-file scope in practice. |
+| **7** | `openai/gpt-oss-120b` | **Groq** | Elite algorithmic reasoning, but Groq's 18k TPM cap is a trap — one multi-file prompt triggers a 429. Use it sparingly for targeted debugging of the hardest bugs. |
+| **8** | `qwen/qwen3-32b` | **Groq** | Dumps clean code into your IDE at blazing speed. Same 18k TPM handcuffs as rank 7 — ideal for short snippets, unusable for sustained sessions. |
+| **9** | `mistral-large-2512` | **Mistral AI** | Excellent instruction following for complex multi-turn text tasks. Lacks the code-specific architecture and sandbox training of the specialized coders above it. |
+| **10** | `codestral-latest` | **Mistral AI** | Exceptional multi-language completion engine. Best kept strictly for single-file, line-by-line edits due to Mistral's shared 50k TPM pool. |
 
 ---
 
@@ -80,6 +80,8 @@ These tables break down the notable free models available **(Capped at 20 Best F
 <a id="aion-labs-models"></a>
 ### ✅ [AION Labs](https://www.aionlabs.ai) Models (5)
 AION Labs provides storytelling-optimized models through an OpenAI-compatible API. The free tier offers 20,000 tokens/day and 15 RPM with no credit card required — a solid option if you need a daily token allowance for lightweight coding and creative tasks.
+
+**Free Tier Quota:** 15 RPM / 500 RPD / 5,000,000 TPD
 
 **Base URL:** `https://api.aionlabs.ai/v1`
 
@@ -94,6 +96,8 @@ AION Labs provides storytelling-optimized models through an OpenAI-compatible AP
 <a id="auriko-models"></a>
 ### ⚡ [Auriko](https://www.auriko.ai) Models (166)
 Auriko is a unified API gateway providing access to 100+ models from top providers (OpenAI, Anthropic, DeepSeek, Google, xAI, Moonshot, and more) through a single OpenAI-compatible endpoint. The free tier offers 1,000 Platform RPM and 10,000 BYOK requests/month with zero inference markup — no credit card required. Access to every model on the platform at provider cost.
+
+**Free Tier Quota:** 20 to 60 RPM / 5,000 RPD / 200,000 TPM / 5,000,000 TPD
 
 At the time of testing, Auriko AI has **166 Models**... so we made the Top 20 of Auriko's Best Models.
 
@@ -127,6 +131,8 @@ At the time of testing, Auriko AI has **166 Models**... so we made the Top 20 of
 ### 🧠 [Cerebras AI](https://cloud.cerebras.ai) Models (2)
 Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, integrating memory, compute, and interconnects onto a single silicon wafer — solving the "memory wall" that throttles inference speed. The free tier offers replenishable credits with industry-leading throughput (2,500+ tokens/second).
 
+**Free Tier Quota:** 5 RPM / 250 RPD / 30,000 TPM
+
 **Base URL:** `https://api.cerebras.ai/v1`
 
 | Free Model | Star Rating | How that Model handles your work |
@@ -138,6 +144,8 @@ Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, integrati
 <a id="cloudflare-workers-ai-models"></a>
 ### ☁️ [Cloudflare Workers AI](https://dash.cloudflare.com) Models (25)
 Cloudflare Workers AI runs models on Cloudflare's global edge network using serverless GPUs. The free tier offers 10,000 requests/day shared across all models with near-zero latency from edge locations worldwide.
+
+**Free Tier Quota:** 150 to 1,500 RPM / 100,000 RPD / 13,000 TPD
 
 At the time of testing, Cloudflare Workers AI has **25 Models**... so we made the Top 20 of Cloudflare Workers' Best Models.
 
@@ -173,6 +181,8 @@ At the time of testing, Cloudflare Workers AI has **25 Models**... so we made th
 ### 🟢 [Cohere AI](https://dashboard.cohere.com) Models (11)
 Cohere focuses on enterprise-grade NLP with their Command model family — built for RAG, tool use, and coding workflows. The free API tier offers replenishable credits with daily resets, and nearly every model delivers sub-second responses.
 
+**Free Tier Quota:** 20 RPM / 1,000 API calls per month
+
 **Base URL:** `https://api.cohere.com/v2`
 
 | Free Model | Star Rating | How that Model handles your work |
@@ -194,6 +204,8 @@ Cohere focuses on enterprise-grade NLP with their Command model family — built
 ### 🐙 [GitHub Models](https://github.com/marketplace/models) Models (4)
 GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and others using your existing GitHub account — no new signup needed. Free tier quotas are modest (request-based limits), making it best for prototyping and personal projects.
 
+**Free Tier Quota:** 10 to 15 RPM / 50 to 150 RPD
+
 **Base URL:** `https://models.inference.ai.azure.com`
 
 | Free Model | Star Rating | How that Model handles your work |
@@ -207,6 +219,8 @@ GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and
 <a id="google-gemini-models"></a>
 ### 🌐 [Google Gemini](https://aistudio.google.com) Models (11)
 Gemini offers large context windows on paper, but the free tier's **rate limits vary by model** — Flash-lite variants enjoy ~500 RPD, while standard models can be as low as 20 RPD. Use Gemini for quick, targeted tasks and single-file edits — not marathon sessions.
+
+**Free Tier Quota:** 15–30 RPM / 1,500 RPD / 1M TPM / Uncapped TPD
 
 **Base URL:** `https://generativelanguage.googleapis.com/v1beta`
 
@@ -227,6 +241,8 @@ Gemini offers large context windows on paper, but the free tier's **rate limits 
 <a id="groq-api-models"></a>
 ### ⚡ [Groq API](https://console.groq.com) Models (12)
 Groq is famous for providing the **absolute lowest streaming latency** in the API market, outrunning traditional cloud providers by a massive margin. The free tier offers 30 RPM with replenishable daily credits — no credit card needed. If you want a setup where your terminal files patch instantly without the typical spinning wheel delay, this is your go-to.
+
+**Free Tier Quota:** 30 RPM / 14,400 RPD / 18,000 TPM
 
 **Base URL:** `https://api.groq.com/openai/v1`
 
@@ -249,6 +265,8 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 <a id="hugging-face-inference-api-models"></a>
 ### 🤗 [Hugging Face Inference API](https://huggingface.co/inference-api) Models (~80)
 Hugging Face's free Inference API gives you access to thousands of community-hosted models with OpenAI-compatible endpoints. The free tier offers replenishable credits with daily resets. With models ranging from 3B to 1T parameters, this is the most diverse single provider on the list.
+
+**Free Tier Quota:** 10 RPM / 1,000 RPD / 5,000,000 TPD
 
 At the time of testing, Hugging Face has **approximately 80 Models**... so we made the Top 20 of Hugging Face's Best Models.
 
@@ -282,6 +300,8 @@ At the time of testing, Hugging Face has **approximately 80 Models**... so we ma
 ### 🏎️ [Kilo Code](https://app.kilo.ai) Models (12)
 Kilo Code is a coding-agent platform that proxies free models from OpenRouter, NVIDIA, Poolside, and others through a single API key. The free tier offers generous replenishable credits with no hard daily cap — a solid Swiss-army-knife provider that gives you access to a diverse model pool (nano to 550B) through one endpoint.
 
+**Free Tier Quota:** 5 RPM / 200 RPD
+
 **Base URL:** `https://api.kilo.ai/api/gateway`
 
 | Free Model | Star Rating | How that Model handles your work |
@@ -304,6 +324,8 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 ### 🪐 [LLM7.IO](https://llm7.io) Models (4)
 LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp server with OpenAI-compatible endpoints. The free tier offers replenishable credits with no daily hard cap — a solid option if you want to test heavyweight models (up to 235B) on a simple API without commitment.
 
+**Free Tier Quota:** 128 RPM / ~7,200 RPD / 5M TPD (Free Token Users Only)
+
 **Base URL:** `https://api.llm7.io/v1`
 
 | Free Model | Star Rating | How that Model handles your work |
@@ -317,6 +339,8 @@ LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp 
 <a id="mistral-ai-models"></a>
 ### 🍊 [Mistral AI](https://console.mistral.ai) Models (42)
 Mistral AI is highly regarded for building models that punch far above their **parameter weight class**, with exceptionally clean instruction following and compact execution. The free tier offers replenishable credits with generous RPM limits. 
+
+**Free Tier Quota:** ~2–30 RPM / 50,000 TPM shared pool
 
 At the time of testing, Mistral has **42 Models** (with Aliases)... So we made the Top 20 of the Best Mistral AI Models (again, with Aliases).
 
@@ -349,6 +373,8 @@ At the time of testing, Mistral has **42 Models** (with Aliases)... So we made t
 ### 🎭 [Mixlayer](https://www.mixlayer.com) Models (1)
 Mixlayer is an inference platform for open-source AI models with an OpenAI-compatible API. The free tier offers `qwen/qwen3.5-4b-free` for prototyping with rate limits — no credit card required for the free model. A focused Qwen 3.5/3.6 catalog with tool calling and reasoning support.
 
+**Free Tier Quota:** 20 RPM / Can be rate-limited (daily usages)
+
 **Base URL:** `https://models.mixlayer.ai/v1`
 
 | Free Model | Star Rating | How that Model handles your work |
@@ -359,6 +385,8 @@ Mixlayer is an inference platform for open-source AI models with an OpenAI-compa
 <a id="morphllm-models"></a>
 ### 🔮 [MorphLLM](https://morphllm.com) Models (9)
 MorphLLM hosts a diverse catalog of open-weight models (Qwen, DeepSeek, MiniMax, Morph) optimized for competitive inference speeds. The free tier offers replenishable credits — useful when you need massive model scale (up to 397B) without requiring a credit card.
+
+**Free Tier Quota:** 5 RPM / 50,000 Input TPM / 20,000 Output TPM
 
 **Base URL:** `https://api.morphllm.com/v1`
 
@@ -378,6 +406,8 @@ MorphLLM hosts a diverse catalog of open-weight models (Qwen, DeepSeek, MiniMax,
 <a id="ollama-cloud-models"></a>
 ### 🦙 [Ollama Cloud](https://ollama.com) Models (26)
 Ollama Cloud is a cloud-hosted inference service running Ollama behind the scenes, offering a vast model registry without the need to run locally. The free tier provides replenishable credits with generous rate limits — most models respond cleanly and quickly, making it one of the strongest free providers for coding.
+
+**Free Tier Quota:** 1 Instance / Uncapped RPD / Free Compute Units
 
 At the time of testing, Ollama Cloud has **26 Models**... so we made the Top 20 of Ollama Cloud's best Models.
 
@@ -409,7 +439,9 @@ At the time of testing, Ollama Cloud has **26 Models**... so we made the Top 20 
 
 <a id="openrouter-models"></a>
 ### 🌐 [OpenRouter](https://openrouter.ai) Models (15)
-OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) — no credit card required. A great backup when other providers are rate-limited.
+OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often in a specific time period — no credit card required. A great backup when other providers are rate-limited.
+
+**Free Tier Quota:** 20 RPM / 50 RPD
 
 **Base URL:** `https://openrouter.ai/api/v1`
 
@@ -436,6 +468,8 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 <a id="pollinations-ai-models"></a>
 ### 🎨 [Pollinations AI](https://pollinations.ai) Models (38)
 Pollinations AI is a free, no-signup inference provider serving a wide variety of models — from OpenAI and Grok to Qwen, Perplexity, and niche music/safety models. No API key needed, no account required — the only truly zero-friction provider on this list.
+
+**Free Tier Quota:** 60 RPM / Unlimited RPD For Secret Keys; 8 RPM / 11,500 RPD For Publishable Keys
 
 At the time of testing, Pollinations AI has **38 Models**... so we made the Top 20 of Pollinations AI's Best Models.
 
@@ -468,6 +502,8 @@ At the time of testing, Pollinations AI has **38 Models**... so we made the Top 
 <a id="sambanova-ai-models"></a>
 ### 🌀 [SambaNova AI](https://cloud.sambanova.ai) Models (5)
 SambaNova AI is a **hardware-driven inference provider** utilizing proprietary Reconfigurable Dataflow Units (RDUs) rather than standard GPUs, removing the traditional hardware-decode bottleneck for incredibly high throughput. The free tier offers generous replenishable credits with rate limits suitable for sustained agentic use.
+
+**Free Tier Quota:** 20 RPM / 1,000 RPD / Uncapped TPM / 10M TPD
 
 **Base URL:** `https://api.sambanova.ai/v1`
 
