@@ -1,10 +1,10 @@
 # Awesome Free BYOK Models 🚀
 
 [![License](https://img.shields.io/badge/license-CC0--1.0-white)](LICENSE.md)
-[![API Provider Count](https://img.shields.io/badge/providers-16-8A2BE2)]()
+[![API Provider Count](https://img.shields.io/badge/providers-18-8A2BE2)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 
-> ⏰ **Last Verified: June 13, 2026** - All Models are Verified from their API Providers.
+> ⏰ **Last Verified: June 14, 2026** - All Models are Verified from their API Providers.
 
 A curated list of the **best high-performance**, **free-tier AI models** you can use to **supercharge your coding setup** without paying for expensive monthly subscriptions nor being "woke up" from a Trial Credit Expiry.
 
@@ -18,6 +18,8 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 - [🏢 The Best 3 API Providers](#the-best-3-api-providers)
 - [🏆 The Top 10 Recommended Free Models](#the-top-10-recommended-free-models)
 - [📂 Individual Provider Showcases](#the-deep-dive-individual-provider-showcases)
+  - [✅ AION Labs](#aion-labs-models)
+  - [⚡ Auriko](#auriko-models)
   - [🧠 Cerebras AI](#cerebras-ai-models)
   - [☁️ Cloudflare Workers AI](#cloudflare-workers-ai-models)
   - [🟢 Cohere AI](#cohere-ai-models)
@@ -28,10 +30,10 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
   - [🏎️ Kilo Code](#kilo-code-models)
   - [🪐 LLM7.IO](#llm7io-models)
   - [🍊 Mistral AI](#mistral-ai-models)
+  - [🎭 Mixlayer](#mixlayer-models)
   - [🔮 MorphLLM](#morphllm-models)
   - [🦙 Ollama Cloud](#ollama-cloud-models)
   - [🌐 OpenRouter](#openrouter-models)
-  - [🏢 OVHcloud](#ovhcloud-models)
   - [🎨 Pollinations AI](#pollinations-ai-models)
   - [🌀 SambaNova AI](#sambanova-ai-models)
 - [CONTRIBUTING](#contributing)
@@ -53,20 +55,20 @@ If you are signing up for free accounts to get API keys, these are the **three b
 <a id="the-top-10-recommended-free-models"></a>
 ## 🏆 The Top 10 Recommended Free Models
 
-The absolute best free models available right now, ranked by how well they handle **daily coding tasks**. This does **NOT** include vision models — all models here are for text completions.
+The absolute best free models available right now, ranked by how well they handle **daily coding tasks** and **projects that require a working model**. This does **NOT** include vision models — all models here are only for text-out models.
 
-| Rank | Model Name | Host Provider | The Simple Reason to Choose It |
-| :--- | :--- | :--- | :--- |
-| **1** 🏆 | `openai/gpt-oss-120b` | **Groq** | **For All Tasks.** The undisputed champion. Writes incredibly clean code, never hits rate-limit walls, and responds almost instantly. |
-| **2** 🥈 | `DeepSeek-V3.1` | **SambaNova** | **For Agentic Pipelines.** A massive hybrid mixture model on SambaNova's RDU architecture — blazing-fast inference with elite reasoning, optimized as a background planner for multi-step agent actions. |
-| **3** 🥉 | `qwen/qwen3-32b` | **Groq** | **For Code.** Phenomenal code generation that dumps into your editor at lightning speed. The `<think>` preamble is a minor trade-off for its coding depth. |
-| **4** | `DeepSeek-V3.2` | **SambaNova** | **For Deep Reasoning.** The pinnacle of hardware-optimized reasoning on SambaNova's infrastructure — near-instant token speeds with elite multi-file architectural analysis. |
-| **5** | `mistral-code-agent-latest` | **Mistral AI** | **For Agentic Coding.** Purpose-built for autonomous agents with native tool use, structured JSON outputs, and multi-step coding workflows. |
-| **6** | `models/gemini-3.1-flash-lite` | **Google Gemini** | **For Quick Tasks.** Lightning-fast with ~500 RPD free tier — the only Gemini model with enough quota for sustained agentic triaging. |
-| **7** | `mistral-large-2512` | **Mistral AI** | **For Instruction Following.** Top-tier multilingual reasoning with strict adherence to complex system prompts and massive file contexts. |
-| **8** | `gpt-oss-120b` | **Cerebras** | **For Speed.** The same 117B MoE champion running on Cerebras' wafer-scale engine — sub-second responses for rapid-fire coding loops. |
-| **9** | `zai-glm-4.7` | **Cerebras** | **For Large Context.** 131K context window optimized for long-horizon agentic coding — handles massive project contexts at blazing Cerebras speeds. |
-| **10** | `codestral-latest` | **Mistral AI** | **For Code Completions.** Built from the ground up for programming — flies through auto-completions and single-file inline edits across dozens of languages. |
+| Rank | Model Name | Host Provider | Free Tier Quota | The Simple Reason to Choose It |
+| :--- | :--- | :--- | :--- | :--- |
+| **1** 🏆 | `openai/gpt-oss-120b` | **Groq** | 14,400 RPD / 18,000 TPM | **For All Tasks.** The undisputed champion. Writes incredibly clean code, never hits rate-limit walls, and responds almost instantly. |
+| **2** 🥈 | `DeepSeek-V3.1` | **SambaNova** | 20 RPM + credits | **For Agentic Pipelines.** A massive hybrid mixture model on SambaNova's RDU architecture — blazing-fast inference with elite reasoning, optimized as a background planner for multi-step agent actions. |
+| **3** 🥉 | `qwen/qwen3-32b` | **Groq** | 14,400 RPD / 18,000 TPM | **For Code.** Phenomenal code generation that dumps into your editor at lightning speed. The `<think>` preamble is a minor trade-off for its coding depth. |
+| **4** | `DeepSeek-V3.2` | **SambaNova** | 20 RPM + credits | **For Deep Reasoning.** The pinnacle of hardware-optimized reasoning on SambaNova's infrastructure — near-instant token speeds with elite multi-file architectural analysis. |
+| **5** | `mistral-code-agent-latest` | **Mistral AI** | 30 RPM + daily credits | **For Agentic Coding.** Purpose-built for autonomous agents with native tool use, structured JSON outputs, and multi-step coding workflows. |
+| **6** | `models/gemini-3.1-flash-lite` | **Google Gemini** | 15 RPM / 500 RPD | **For Quick Tasks.** Lightning-fast with ~500 RPD free tier — the only Gemini model with enough quota for sustained agentic triaging. |
+| **7** | `mistral-large-2512` | **Mistral AI** | 30 RPM + daily credits | **For Instruction Following.** Top-tier multilingual reasoning with strict adherence to complex system prompts and massive file contexts. |
+| **8** | `gpt-oss-120b` | **Cerebras** | 5 RPM + credits | **For Speed.** The same 117B MoE champion running on Cerebras' wafer-scale engine — sub-second responses for rapid-fire coding loops. |
+| **9** | `zai-glm-4.7` | **Cerebras** | 5 RPM + credits | **For Large Context.** 131K context window optimized for long-horizon agentic coding — handles massive project contexts at blazing Cerebras speeds. |
+| **10** | `codestral-latest` | **Mistral AI** | 30 RPM + daily credits | **For Code Completions.** Built from the ground up for programming — flies through auto-completions and single-file inline edits across dozens of languages. |
 
 ---
 
@@ -74,6 +76,52 @@ The absolute best free models available right now, ranked by how well they handl
 ## 📂 The Deep-Dive: Individual Provider Showcases
 
 These tables break down the notable free models available **(Capped at 20 Best Free Models)** within each provider's ecosystem. Ratings are based on how well they handle **real-world development** demands like typing speed, following instructions, and not getting confused by **large projects**, all by a point of view to the Provider's Quota, Rate Limits, and Context Windows.
+
+<a id="aion-labs-models"></a>
+### ✅ [AION Labs](https://www.aionlabs.ai) Models (5)
+AION Labs provides storytelling-optimized models through an OpenAI-compatible API. The free tier offers 20,000 tokens/day and 15 RPM with no credit card required — a solid option if you need a daily token allowance for lightweight coding and creative tasks.
+
+**Base URL:** `https://api.aionlabs.ai/v1`
+
+| Free Model | Star Rating | How that Model handles your work |
+| :--- | :--- | :--- |
+| `aion-labs/aion-2.5` | ⭐⭐⭐⭐⭐ | **BEST.** Handles general tasks with clean, direct output and no thinking preamble. Feels surprisingly smooth for a storytelling-optimized model — the best pick on AION Labs. |
+| `aion-labs/aion-2.0` | ⭐⭐⭐⭐☆ | Delivers the same clean output as 2.5 but with slightly more latency between turns. Still a reliable option for everyday use without preamble noise. |
+| `aion-labs/aion-rp-llama-3.1-8b` | ⭐⭐⭐⭐☆ | Responds faster than any other AION model. Handles lightweight tasks instantly, but the 8B cap limits depth on complex coding or multi-file reasoning. |
+| `aion-labs/aion-1.0-mini` | ⭐⭐⭐☆☆ | Coding/reasoning specialist (distilled DeepSeek-R1) but wraps every response in a `<think>` preamble. Sunset June 20, 2026 — replaced by the cleaner aion-2.0. |
+| `aion-labs/aion-1.0` | ⭐⭐⭐☆☆ | Thinking preamble adds friction to every interaction. Sunset June 20, 2026 — reach for aion-2.0 instead for the same quality without the chatter. |
+
+<a id="auriko-models"></a>
+### ⚡ [Auriko](https://www.auriko.ai) Models (166)
+Auriko is a unified API gateway providing access to 100+ models from top providers (OpenAI, Anthropic, DeepSeek, Google, xAI, Moonshot, and more) through a single OpenAI-compatible endpoint. The free tier offers 1,000 Platform RPM and 10,000 BYOK requests/month with zero inference markup — no credit card required. Access to every model on the platform at provider cost.
+
+At the time of testing, Auriko AI has **166 Models**... so we made the Top 20 of Auriko's Best Models.
+
+**Base URL:** `https://api.auriko.ai/v1`
+
+| Free Model | Star Rating | How that Model handles your work |
+| :--- | :--- | :--- |
+| `o3-2025-04-16` | ⭐⭐⭐⭐⭐ | **BEST.** Top-tier reasoning model — handles multi-file architecture and complex debugging with zero preamble. The strongest coding pick on Auriko for the hardest problems. |
+| `claude-opus-4-7` | ⭐⭐⭐⭐⭐ | The fastest Claude Opus variant — handles deep reasoning and code generation with Anthropic's signature precision. No preamble, just direct answers. |
+| `deepseek-v3.2` | ⭐⭐⭐⭐⭐ | Elite reasoning workhorse trusted across every provider. Delivers clean output for multi-file analysis and agentic planning without extra chatter. |
+| `gpt-5-2025-08-07` | ⭐⭐⭐⭐⭐ | OpenAI's GPT-5 flagship — handles every coding task with zero preamble. Elite intelligence without any friction. |
+| `gpt-4.1-2025-04-14` | ⭐⭐⭐⭐⭐ | Blazing fast with strong general coding capability. A top-tier daily driver that responds instantly with clean output. |
+| `claude-sonnet-4-20250514` | ⭐⭐⭐⭐☆ | Latest Sonnet — balances speed and depth well. Handles complex instructions reliably with clean response. |
+| `deepseek-v4-flash` | ⭐⭐⭐⭐☆ | Latest DeepSeek flash variant — strong reasoning depth with fast inference. |
+| `o4-mini-2025-04-16` | ⭐⭐⭐⭐☆ | Latest reasoning model from OpenAI — compact but capable. Handles logic-heavy tasks cleanly. |
+| `qwen-3-coder-480b-a35b-instruct` | ⭐⭐⭐⭐☆ | Purpose-built 480B code model — tackles the hardest debugging sessions. The dedicated coder on Auriko. |
+| `gpt-5.2-2025-12-11` | ⭐⭐⭐⭐☆ | Latest GPT-5 point release. Fast and reliable across every task. |
+| `gpt-5-chat-latest` | ⭐⭐⭐⭐☆ | The chat-optimized GPT-5 variant. Handles conversational coding naturally. |
+| `gpt-5.4-2026-03-05` | ⭐⭐⭐⭐☆ | Latest GPT generation. Strong general intelligence with clean, direct output. |
+| `claude-sonnet-4-6` | ⭐⭐⭐⭐☆ | Latest Sonnet 4.6 — handles creative coding and complex prompts with Anthropic's clear response style. |
+| `gpt-5.3-chat-latest` | ⭐⭐⭐⭐☆ | Latest chat-optimized GPT. Clean responses for everyday coding. |
+| `gpt-5.1-chat-latest` | ⭐⭐⭐⭐☆ | Handles general tasks with zero preamble. Reliable daily driver. |
+| `gpt-5.4-mini-2026-03-17` | ⭐⭐⭐⭐☆ | Compact GPT-5.4 — handles lightweight tasks efficiently without sacrificing response quality. |
+| `gpt-5-mini-2025-08-07` | ⭐⭐⭐⭐☆ | GPT-5 compact variant with clean output. Great for high-volume simple tasks where cost matters. |
+| `gpt-5.4-nano-2026-03-17` | ⭐⭐⭐⭐☆ | The nano tier — blazing fast. Handles syntax checks and quick edits almost instantly. |
+| `groq-4.20-0309-non-reasoning` | ⭐⭐⭐⭐☆ | xAI's fastest — clean, direct output for rapid-fire coding loops where speed is everything. |
+| `o3-mini-2025-01-31` | ⭐⭐⭐☆☆ | Older reasoning model — still capable with clean output, but trails newer o3/o4 variants on complex architecture analysis. |
+
 
 <a id="cerebras-ai-models"></a>
 ### 🧠 [Cerebras AI](https://cloud.cerebras.ai) Models (2)
@@ -227,7 +275,7 @@ At the time of testing, Hugging Face has **approximately 80 Models**... so we ma
 | `openai/gpt-oss-120b` | ⭐⭐⭐⭐☆ | Proven across every provider — reliable as ever with clean output. You know exactly what you're getting every single time. |
 | `MiniMaxAI/MiniMax-M3` | ⭐⭐⭐⭐☆ | The fastest responder on Hugging Face alongside GPT-OSS. You get answers before you finish typing — clean and efficient. |
 | `zai-org/GLM-4.7` | ⭐⭐⭐⭐☆ | Handles high-volume work without slowing down. Optimized for throughput — you can hammer it all day and it keeps responding. |
-| `Qwen/Qwen3.6-35B-A3B` | ⭐⭐⭐⭐☆ | Feels like the most efficient model on the list. You get modern Qwen quality with minimal latency — perfect for rapid iteration. |
+| `Qwen/Qwen3.6-35B-A3B` | ⭐⭐⭐⭐☆ | Feels like the most efficient model on the list. You get modern Qwen quality — perfect for rapid iteration. |
 
 
 <a id="kilo-code-models"></a>
@@ -267,7 +315,7 @@ LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp 
 
 
 <a id="mistral-ai-models"></a>
-### 🍊 [Mistral AI](https://console.mistral.ai) Models (28)
+### 🍊 [Mistral AI](https://console.mistral.ai) Models (42)
 Mistral AI is highly regarded for building models that punch far above their **parameter weight class**, with exceptionally clean instruction following and compact execution. The free tier offers replenishable credits with generous RPM limits. 
 
 At the time of testing, Mistral has **42 Models** (with Aliases)... So we made the Top 20 of the Best Mistral AI Models (again, with Aliases).
@@ -296,6 +344,16 @@ At the time of testing, Mistral has **42 Models** (with Aliases)... So we made t
 | `mistral-vibe-cli-fast` | ⭐⭐⭐☆☆ | **TERMINAL HELPER.** Built to fire off blistering, immediate single-turn replies for terminal flags or shell configuration checks. |
 | `mistral-vibe-cli-latest` | ⭐⭐⭐☆☆ | **TERMINAL HELPER.** Standard CLI automation snapshot that favors explicit sentence explanations when breaking down commands. |
 | `mistral-vibe-cli-with-tools` | ⭐⭐⭐☆☆ | **TERMINAL HELPER.** Version optimized to drop conversational prefixes entirely and focus strictly on returning raw executable bash tokens. |
+
+<a id="mixlayer-models"></a>
+### 🎭 [Mixlayer](https://www.mixlayer.com) Models (1)
+Mixlayer is an inference platform for open-source AI models with an OpenAI-compatible API. The free tier offers `qwen/qwen3.5-4b-free` for prototyping with rate limits — no credit card required for the free model. A focused Qwen 3.5/3.6 catalog with tool calling and reasoning support.
+
+**Base URL:** `https://models.mixlayer.ai/v1`
+
+| Free Model | Star Rating | How that Model handles your work |
+| :--- | :--- | :--- |
+| `qwen/qwen3.5-4b-free` | ⭐⭐⭐⭐⭐ | **BEST.** The only free model on Mixlayer — handles prototyping and lightweight tasks at blazing speed. Clean, direct output with no preamble. Rate-limited but perfect for daily coding without spending a cent. |
 
 
 <a id="morphllm-models"></a>
@@ -358,7 +416,7 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | Free Model | Star Rating | How that Model handles your work |
 | :--- | :--- | :--- |
 | `openai/gpt-oss-120b:free` | ⭐⭐⭐⭐⭐ | **BEST.** Handles every coding task reliably the same way across every provider. Feels familiar and trustworthy because the quality never wavers — still the strongest coding option on OpenRouter. |
-| `google/gemma-4-26b-a4b-it:free` | ⭐⭐⭐⭐⭐ | Handles complex instructions with clean, cutting-edge output. You can rely on it for direct answers without preamble noise. |
+
 | `google/gemma-4-31b-it:free` | ⭐⭐⭐⭐⭐ | Handles deeper reasoning problems with the extra parameter headroom. Feels like a natural upgrade from the 26B when you need to think through harder problems. |
 | `nex-agi/nex-n2-pro:free` | ⭐⭐⭐⭐⭐ | Handles general coding tasks with surprising strength. Feels like a dark horse — you can rely on it when you need a fresh perspective on a problem. |
 | `openai/gpt-oss-20b:free` | ⭐⭐⭐⭐⭐ | Handles everyday coding tasks without wasting compute. Feels like the practical sibling of the 120B — you can rely on it for quick, solid results. |
@@ -371,29 +429,8 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | `nvidia/nemotron-nano-9b-v2:free` | ⭐⭐⭐⭐☆ | Handles fallback duties reliably when other models are unavailable. Feels lightweight and dependable — you can rely on it to keep you unblocked. |
 | `liquid/lfm-2.5-1.2b-thinking:free` | ⭐⭐⭐☆☆ | Handles thinking tasks but adds noisy preamble. Feels cluttered compared to the instruct version — better to rely on the cleaner alternative for straightforward work. |
 | `nvidia/nemotron-3-super-120b-a12b:free` | ⭐⭐⭐☆☆ | Handles large-scale queries but adds verbose preamble that gets in the way. Feels impractical for agents — the parameter count doesn't help when the output is cluttered. |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | ⭐⭐⭐☆☆ | Raw 550B power is there, but you'll spend as much time scrolling past preamble as reading the actual answer. The constant prefix noise makes it frustrating for agentic use despite the massive parameter count. |
 | `nvidia/nemotron-3.5-content-safety:free` | ⭐⭐☆☆☆ | **SAFETY MONITOR ONLY.** Handles content safety classification with a single purpose. You can rely on it for filtering agent outputs, but don't expect coding capability — use it for safety checks only. |
-
-
-<a id="ovhcloud-models"></a>
-### 🏢 [OVHcloud](https://endpoints.ai.cloud.ovh.net) Models (12)
-OVHcloud is a European cloud provider offering free access to open-weight models through its AI Endpoints platform. The free tier provides replenishable credits with daily resets — no credit card required. The best choice for GDPR-sensitive projects thanks to European-hosted infrastructure.
-
-**Base URL:** `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1`
-
-| Free Model | Star Rating | How that Model handles your work |
-| :--- | :--- | :--- |
-| `Qwen3-Coder-30B-A3B-Instruct` | ⭐⭐⭐⭐⭐ | **BEST.** Handles every coding task with direct, polished output. You can rely on it as the obvious first pick on OVHcloud — it just works and stays out of your way. |
-| `Meta-Llama-3_3-70B-Instruct` | ⭐⭐⭐⭐⭐ | Handles complex reasoning without getting confused. Feels fast and dependable for any task — clean, well-structured responses every time. |
-| `Mistral-Nemo-Instruct-2407` | ⭐⭐⭐⭐⭐ | Handles everyday tasks with a light touch — feels responsive and never over-engineers the response. A solid balance of speed and quality. |
-| `Qwen2.5-VL-72B-Instruct` | ⭐⭐⭐⭐⭐ | Handles code and images without skipping a beat. You can switch between text and visual tasks without friction — zero preamble, straight to the answer. |
-| `Llama-3.1-8B-Instruct` | ⭐⭐⭐⭐⭐ | Handles quick syntax checks and lightweight tasks with zero friction. Feels snappy when you just need a fast answer — no waiting around. |
-| `Qwen3.5-397B-A17B` | ⭐⭐⭐⭐☆ | Handles complex, large-scale tasks with surprising depth. You can rely on it for hard problems — the extra thinking pays off in thorough responses. |
-| `gpt-oss-120b` | ⭐⭐⭐⭐☆ | Handles serious coding sessions without cutting corners. Feels like a reliable workhorse — you can trust it with complex code across multiple files. |
-| `gpt-oss-20b` | ⭐⭐⭐⭐☆ | Handles daily coding chores quickly — feels lighter and more responsive than the bigger models. Great for when you want speed over firepower. |
-| `Qwen3.6-27B` | ⭐⭐⭐⭐☆ | Handles modern tasks with a clean, up-to-date feel. You can rely on it as a solid mid-range pick that keeps pace with current needs. |
-| `Qwen3.5-9B` | ⭐⭐⭐⭐☆ | Handles straightforward tasks without ceremony. Feels like a good lightweight backup — does what you ask without extras. |
-| `Mistral-Small-3.2-24B-Instruct-2506` | ⭐⭐⭐☆☆ | Starts every response with unnecessary preamble — makes you wait for the actual answer. Feels bloated compared to faster Mistral options. |
-| `Mistral-7B-Instruct-v0.3` | ⭐⭐⭐☆☆ | Feels dated — explains things you never asked about. You have to wade through extra words to reach the useful part. |
 
 
 <a id="pollinations-ai-models"></a>
