@@ -413,7 +413,7 @@ MorphLLM hosts a diverse catalog of open-weight models (Qwen, DeepSeek, MiniMax,
 
 Ollama Cloud is a cloud-hosted inference service running Ollama behind the scenes, offering a vast model registry without the need to run locally. The free tier provides replenishable credits with generous rate limits — most models respond cleanly and quickly, making it one of the strongest free providers for coding. Ollama Cloud currently has 26 models verified — the top 20 are listed below.
 
-**Free Tier Quota:** 1 Instance / Uncapped RPD / Free Compute Units
+**Free Tier Quota:** 1 Instance / 5-Hour Session Usage / 7-day Weekly Usage
 
 **Base URL:** `https://api.ollama.com`
 
