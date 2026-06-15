@@ -1,96 +1,92 @@
 # Contributing to awesome-free-byok-models
 
-Thanks for your interest in helping keep this list high-quality! This repository is a curated, verified testbed for free API endpoints. Because we prioritize reliability, we have a specific process for contributions.
+Contributions are welcome as long as the endpoint works. This list only exists because people test things before adding them — please do the same.
 
 ## How to Contribute
 
-1. **Verify first:** Test your endpoint personally to ensure it meets our standards.
-2. **Open an Issue:** If you are unsure if a model meets our quality bar, open a "Vetting Issue" first.
-3. **Submit a PR:** Once confirmed, fork the repository, update the relevant table in `README.md`, and submit your PR.
+1. **Test the model yourself** before opening anything.
+2. **Open an Issue** if you are not sure whether a model fits.
+3. **Submit a PR** once you have confirmed it works.
 
-## Verification Checklist
+## Before You Submit
 
-Before adding a model or provider, ensure it passes all three checks below. To make the process easier, we recommend writing a small script that **discovers models from the provider's registry API** and tests them all in one pass — this is what we do internally. 
+### 1. Make Sure It Is Actually Free
 
-We recommend storing your API key in a **`.env` file** to keep it out of version control.
+No credit card required. No trial credits that run out. No "join the waitlist." The endpoint should work every day without paying.
 
-### ✅ 1. Truly Free — Not paywalled or trial-gated
-No credit cards, no "trial-only" credits, and no "waitlist-to-access" when signing up. 
+**Pass:** The model responds without asking for money.
 
-It should also be **Replenishable** (Resets every day/week/month) and doesn't offer "one-time free offers".
+**Fail:** You get `402 Payment Required`, `403 Forbidden`, or a message telling you to upgrade.
 
-**Pass:** Model responds without asking for payment.
-**Fail:** Returns `402 Payment Required`, `403 Forbidden`, or requires upgrading to use.
+### 2. Test 3 Times in a Row
 
-### ✅ 2. Stability — 3 consecutive requests must succeed
-Send the **same `"State the word READY."` prompt 3 times in a row**. All 3 must return valid responses.
+Send the same `"State the word READY."` prompt 3 times. All 3 must come back with a valid response.
 
-**Pass:** All 3 runs return `"READY"` or equivalent valid output within reasonable time.  
-**Fail:** Any request times out, returns `404`, `5xx`, or drops the connection.
+**Pass:** All 3 return `"READY"` or something useful within a reasonable time.
 
-> ⚡ A single request could be luck. 3 in a row proves the endpoint is stable enough for real use.
+**Fail:** Any one of them times out, returns `404`, `5xx`, or drops the connection.
 
-### 🔍 How we verify internally
-We don't maintain a hardcoded model list. Instead, our test suite:
-1. **Fetches all model IDs** from the provider's `GET /v1/models` registry.
-2. **Tests every model** with the same `"State the word READY."` prompt in parallel. Non-Chat models (embeddings, rerankers, etc.) will likely fail from this prompt.
-3. **Results split into three groups:**
-   - ✅ **Passed** — responded with valid output. Ignored in retries.
-   - ❌ **Failed permanently** — returned `402`, `403`, `404`, `503` or similar. Ignored in retries.
-   - 🔄 **Retryable** — returned `429` or connection exception. These move to the retry pass.
-4. **Retries** only the 🔄 group up to **3 extra passes** with exponential backoff (1s → 2s → 4s delay). Each pass narrows the set as models start working. Any model still failing after all retries is flagged as rate-limited.
-5. **Re-run the full process** after waiting a minute to confirm at least 3 consecutive successful rounds pass for all stable models.
+A single `"READY"` could be luck. Three in a row means the endpoint is stable enough to use.
 
-This catches dead endpoints, renamed models, and quota changes automatically. You can replicate this approach with any language that supports HTTP requests.
+### 3. Use a Standard API Format
 
-### ✅ 3. Compatibility — Standard API format
-The model must accept standard OpenAI-compatible chat completion payloads or provide a documented REST API.
+The model must accept OpenAI-compatible chat completion payloads or have a documented REST API.
 
-**Pass:** Same prompt format and headers work across models within the provider.  
-**Fail:** Requires custom SDKs, proprietary formats, or non-standard auth to function.
+**Pass:** Same prompt format and headers work across models from the same provider.
 
-## Formatting Guidelines
+**Fail:** Requires a custom SDK or proprietary format just to send a message.
 
-### Adding to the Recommended Models Table
-Use this exact table format to maintain consistency:
+## How We Test Internally
 
-```markdown
+We do not maintain a hardcoded list of models. Instead:
+
+1. Fetch all model IDs from the provider's `GET /v1/models` endpoint.
+2. Test every model with the same `"State the word READY."` prompt in parallel. Non-chat models (embeddings, rerankers, etc.) will fail this prompt — that is expected.
+3. Split results into three buckets:
+   - **Passed** — responded with valid output. Done.
+   - **Failed permanently** — returned `402`, `403`, `404`, `503`, or similar. Done.
+   - **Retryable** — returned `429` or a connection error. These go to the retry pass.
+4. Retry the retryable group up to 5 more times with exponential backoff (1s → 2s → 4s delay). Each pass narrows the set as models start working. Any model still failing after all retries is rate-limited.
+5. Re-run the whole thing after a minute to confirm at least 3 consecutive successful rounds pass for every stable model.
+
+This catches dead endpoints, renamed models, and quota changes automatically.
+
+## Formatting
+
+### Top 10 Table
+
+```
 | Rank | Model Name | Host Provider | The Simple Reason to Choose It |
 | :--- | :--- | :--- | :--- |
-| **X** | `model-id` | **Provider** | Brief, punchy description of utility. |
-
+| **X** | `model-id` | **Provider** | Brief, punchy description. |
 ```
 
-### Adding to the Model Performance Table
-
-Use this exact table format for detailed model ratings for a specific category-type model:
-
-```markdown
-| Free Model | Star Rating | The honest opinion on how it handles your work |
-| :--- | :--- | :--- |
-| `model-id` | ⭐⭐⭐⭐⭐ | **TITLE.** Detailed honest opinion on performance/reliability. |
+### Per-Provider Table
 
 ```
+| Free Model | Star Rating | Best For | Speed | Opinion |
+| :--- | :--- | :--- | :--- | :--- |
+| `model-id` | ★★★★★ | `Code` | `Fast` | One punchy sentence. |
+```
 
-## Contribution Quality Standards
+## Quality Standards
 
-* **Accuracy:** If an endpoint starts returning `429` errors or shedding payloads, please submit a PR to remove it or note its degraded status.
-* **Transparency:** Clearly distinguish between "Burst Compute" and "Production Grade" models.
-* **Direct Links:** Always link directly to official documentation or model hubs. No redirect chains.
-* **PR Scope:** Keep pull requests focused. Do not mix model additions with documentation fixes.
+- If an endpoint starts returning `429` errors, submit a PR to remove it or note its degraded status.
+- Be clear about the difference between burst compute and production-grade models.
+- Link directly to official docs. No redirect chains.
+- Keep PRs focused. Do not mix model additions with documentation fixes.
 
 ## Pull Request Template
 
-When submitting, please include this in your PR description:
-
-```markdown
-## Testing Context
-- **Provider:** 
-- **Model ID:**
-- **Stability Check:** (e.g., "3/3 requests returned READY")
+Include this in your PR description:
 
 ```
+## Testing Context
+- **Provider:**
+- **Model ID:**
+- **Stability Check:** (e.g., "3/3 requests returned READY")
+```
 
-## Thank You!
+## Thank You
 
-Your contributions directly prevent the community from wasting time on broken or "bait-and-switch" API endpoints. We appreciate your rigor.
+Every contribution helps keep this list from filling up with broken endpoints.
