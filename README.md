@@ -306,20 +306,20 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 
 **Base URL:** `https://api.kilo.ai/api/gateway`
 
-| Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                          |
-| :--------------------------------------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------- |
-| `openrouter/owl-alpha`                               | ★★★★★       | `Agent`     | `Fast`     | Zero preamble, straight answers. The safest pick on Kilo Code.                   |
-| `nex-agi/nex-n2-pro:free`                            | ★★★★★       | `Agent`     | `Fast`     | Responds immediately without wasting tokens on filler.                           |
-| `kilo-auto/small`                                    | ★★★★★       | `General`   | `Fast`     | Kilo's own routing picks the right model — the no-brainer choice.                |
-| `poolside/laguna-xs.2:free`                          | ★★★★☆       | `Code`      | `Blazing`  | Built for inline edits — stays out of your way and finishes before you blink.    |
-| `poolside/laguna-m.1:free`                           | ★★★★☆       | `Code`      | `Blazing`  | More headroom than XS for trickier edits. Still fast and focused.                |
-| `stepfun/step-3.7-flash:free`                        | ★★★★☆       | `General`   | `Fast`     | Dependable and drama-free. Perfect for everyday edits.                           |
-| `kilo-auto/free`                                     | ★★★★☆       | `Fallback`  | `Moderate` | Kilo's fallback router — always lands on something functional.                   |
-| `openrouter/free`                                    | ★★★★☆       | `Fallback`  | `Moderate` | Routes through OpenRouter's free pool — a good backup when others are tapped.    |
-| `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★☆☆       | `Reasoning` | `Slow`     | 550B of raw ability buried under preamble — the power is real but hard to reach. |
-| `nvidia/nemotron-3-super-120b-a12b:free`             | ★★★☆☆       | `Reasoning` | `Slow`     | Deep reasoning buried under verbal overhead.                                     |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★☆☆       | `Reasoning` | `Moderate` | Great for logic debugging, frustrating when you just want a quick answer.        |
-| `nvidia/nemotron-3.5-content-safety:free`            | ★★☆☆☆       | `Safety`    | `Fast`     | Returns safety scores, not code — useful as a filter, useless as an assistant.   |
+| Free Model                                            | Star Rating  | Best For     | Speed       | Opinion                                                                           |
+| :---------------------------------------------------- | :----------- | :----------- | :---------- | :-------------------------------------------------------------------------------- |
+| `openrouter/owl-alpha`                                | ★★★★★        | `Agent`      | `Fast`      | Zero preamble, straight answers. The safest pick on Kilo Code.                    |
+| `nex-agi/nex-n2-pro:free`                             | ★★★★★        | `Agent`      | `Fast`      | Responds immediately without wasting tokens on filler.                            |
+| `kilo-auto/small`                                     | ★★★★★        | `General`    | `Fast`      | Kilo's own routing picks the right model — the no-brainer choice.                 |
+| `poolside/laguna-xs.2:free`                           | ★★★★☆        | `Code`       | `Blazing`   | Built for inline edits — stays out of your way and finishes before you blink.     |
+| `poolside/laguna-m.1:free`                            | ★★★★☆        | `Code`       | `Blazing`   | More headroom than XS for trickier edits. Still fast and focused.                 |
+| `stepfun/step-3.7-flash:free`                         | ★★★★☆        | `General`    | `Fast`      | Dependable and drama-free. Perfect for everyday edits.                            |
+| `kilo-auto/free`                                      | ★★★★☆        | `Fallback`   | `Moderate`  | Kilo's fallback router — always lands on something functional.                    |
+| `openrouter/free`                                     | ★★★★☆        | `Fallback`   | `Moderate`  | Routes through OpenRouter's free pool — a good backup when others are tapped.     |
+| `nvidia/nemotron-3-ultra-550b-a55b:free`              | ★★★☆☆        | `Reasoning`  | `Slow`      | 550B of raw ability buried under preamble — the power is real but hard to reach.  |
+| `nvidia/nemotron-3-super-120b-a12b:free`              | ★★★☆☆        | `Reasoning`  | `Slow`      | Deep reasoning buried under verbal overhead.                                      |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free`  | ★★★☆☆        | `Reasoning`  | `Moderate`  | Great for logic debugging, frustrating when you just want a quick answer.         |
+| `nvidia/nemotron-3.5-content-safety:free`             | ★★☆☆☆        | `Safety`     | `Fast`      | Returns safety scores, not code — useful as a filter, useless as an assistant.    |
 
 <a id="llm7io-models"></a>
 
@@ -444,31 +444,27 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 
 ### [OpenRouter](https://openrouter.ai) Models
 
-OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often in a specific time period — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 17 models verified.
+OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often in a specific time period — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 13 models verified.
 
 **Free Tier Quota:** 20 RPM / 50 RPD
 
 **Base URL:** `https://openrouter.ai/api/v1`
 
-| Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                                   |
-| :--------------------------------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------- |
-| `openai/gpt-oss-120b:free`                           | ★★★★★       | `General`   | `Blazing`  | The same reliable gpt-oss every provider carries. The safest five-star bet on OpenRouter. |
-| `google/gemma-4-31b-it:free`                         | ★★★★★       | `General`   | `Fast`     | Extra headroom over the 26B without sacrificing speed.                                    |
-| `nex-agi/nex-n2-pro:free`                            | ★★★★★       | `General`   | `Fast`     | Genuine dark horse. Strength that catches you off guard.                                  |
-| `openai/gpt-oss-20b:free`                            | ★★★★★       | `Code`      | `Fast`     | Same reliable output as the 120B but lighter. The everyday driver.                        |
-| `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★★       | `Vision`    | `Fast`     | Does text and vision in one call without the bloat.                                       |
-| `liquid/lfm-2.5-1.2b-instruct:free`                  | ★★★★★       | `General`   | `Blazing`  | The smallest model that actually answers usefully. Insane response times.                 |
-| `poolside/laguna-m.1:free`                           | ★★★★☆       | `Code`      | `Fast`     | Built by devs for devs. Inline completions that feel like they read your mind.            |
-| `poolside/laguna-xs.2:free`                          | ★★★★☆       | `Code`      | `Blazing`  | Snappier than M.1, slightly less depth. Perfect for fast suggestions.                     |
-| `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | `General`   | `Fast`     | Only wakes up the circuits it needs. Fast, efficient answers.                             |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | `Reasoning` | `Moderate` | Shows its work step by step. Useful for verification, noisy for quick answers.            |
-| `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | `Fallback`  | `Fast`     | Reliable fallback that punches above its 9B weight.                                       |
-| `meta-llama/llama-3.3-70b-instruct:free`             | ★★★★☆       | `General`   | `Fast`     | Solid all-rounder. Follows complex instructions with reliable precision.                  |
-| `qwen/qwen3-next-80b-a3b-instruct:free`              | ★★★★☆       | `Code`      | `Fast`     | Strong Qwen variant. Clean output with good reasoning depth for its size.                 |
-| `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★☆☆       | `Reasoning` | `Slow`     | A thinking variant that can't stop narrating. Cleaner alternatives exist.                 |
-| `nvidia/nemotron-3-super-120b-a12b:free`             | ★★★☆☆       | `Reasoning` | `Moderate` | 120B under the hood, but you'll fight through a preamble every time.                      |
-| `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★☆☆       | `Reasoning` | `Slow`     | 550B of raw power buried under preamble noise. Frustrating for interactive use.           |
-| `nvidia/nemotron-3.5-content-safety:free`            | ★★☆☆☆       | `Safety`    | `Fast`     | Returns safety scores. Use it to filter agent outputs, not write code.                    |
+| Free Model                                            | Star Rating  | Best For     | Speed       | Opinion                                                                                    |
+| :---------------------------------------------------- | :----------- | :----------- | :---------- | :----------------------------------------------------------------------------------------- |
+| `openai/gpt-oss-120b:free`                            | ★★★★★        | `General`    | `Blazing`   | The same reliable gpt-oss every provider carries. The safest five-star bet on OpenRouter.  |
+| `google/gemma-4-31b-it:free`                          | ★★★★★        | `General`    | `Fast`      | Extra headroom over the 26B without sacrificing speed.                                     |
+| `nex-agi/nex-n2-pro:free`                             | ★★★★★        | `General`    | `Fast`      | Genuine dark horse. Strength that catches you off guard.                                   |
+| `openai/gpt-oss-20b:free`                             | ★★★★★        | `Code`       | `Fast`      | Same reliable output as the 120B but lighter. The everyday driver.                         |
+| `nvidia/nemotron-nano-12b-v2-vl:free`                 | ★★★★★        | `Vision`     | `Fast`      | Does text and vision in one call without the bloat.                                        |
+| `liquid/lfm-2.5-1.2b-instruct:free`                   | ★★★★★        | `General`    | `Blazing`   | The smallest model that actually answers usefully. Insane response times.                  |
+| `google/gemma-4-26b-a4b-it:free`                      | ★★★★☆        | `General`    | `Fast`      | Same clean Gemma 4 quality in a smaller package. Slightly less headroom than the 31B.      |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free`  | ★★★★☆        | `Reasoning`  | `Moderate`  | Shows its work step by step. Useful for verification, noisy for quick answers.             |
+| `nvidia/nemotron-nano-9b-v2:free`                     | ★★★★☆        | `Fallback`   | `Fast`      | Reliable fallback that punches above its 9B weight.                                        |
+| `liquid/lfm-2.5-1.2b-thinking:free`                   | ★★★☆☆        | `Reasoning`  | `Slow`      | A thinking variant that can't stop narrating. Cleaner alternatives exist.                  |
+| `nvidia/nemotron-3-super-120b-a12b:free`              | ★★★☆☆        | `Reasoning`  | `Moderate`  | 120B under the hood, but you'll fight through a preamble every time.                       |
+| `nvidia/nemotron-3-ultra-550b-a55b:free`              | ★★★☆☆        | `Reasoning`  | `Slow`      | 550B of raw power buried under preamble noise. Frustrating for interactive use.            |
+| `nvidia/nemotron-3.5-content-safety:free`             | ★★☆☆☆        | `Safety`     | `Fast`      | Returns safety scores. Use it to filter agent outputs, not write code.                     |
 
 <a id="pollinations-ai-models"></a>
 
