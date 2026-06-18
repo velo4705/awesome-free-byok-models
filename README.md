@@ -1,6 +1,6 @@
 # Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> **Last Verified: June 18, 2026** - All models tested live across 18 providers.
+> **Last Verified: June 18, 2026** - All models tested live across 19 providers.
 
 A curated list of the **best high-performance**, **free-tier AI models** you can use to **supercharge your coding setup** without paying for expensive monthly subscriptions or getting locked out by trial credit expiry.
 
@@ -29,6 +29,7 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
   - [Mixlayer Models](#mixlayer-models)
   - [MorphLLM Models](#morphllm-models)
   - [Ollama Cloud Models](#ollama-cloud-models)
+  - [OpenCode Zen Models](#opencode-zen-models)
   - [OpenRouter Models](#openrouter-models)
   - [Pollinations AI Models](#pollinations-ai-models)
   - [SambaNova AI Models](#sambanova-ai-models)
@@ -50,18 +51,18 @@ If you are signing up for free accounts to get API keys, these are the **three b
 
 The absolute best free models available right now, ranked by how well they handle **daily coding tasks** and **projects that require a working model**. This does **NOT** include vision models — all models here are text-only.
 
-| Rank              | Model                                    | Host Provider                  | The Simple Reason to Choose It                                                                                                                                                                                                                                                                                                      |
-| :---------------- | :--------------------------------------- | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1**             | `qwen3-coder-next`                       | **Ollama Cloud**               | Scores over 70% on SWE-bench Verified. Native 256K context with sandbox reinforcement learning — if it writes broken code, it reads your terminal logs and fixes its own bugs. Uncapped usage via time-based compute allocation. The best overall assistant for daily coding.                                                       |
-| **2**             | `models/gemini-3.1-flash-lite`           | **Google Gemini**              | 1,500 free daily requests with a massive context window. Lighter on deep reasoning, but unstoppable for background triaging, test iterations, and log file analysis all day. The infinite workhorse.                                                                                                                                |
-| **3**             | `qwen3-235b`                             | **LLM7.IO**                    | Native support for 119 programming languages at 128 RPM with a 5M daily token pool. Elite reasoning depth for cross-language refactoring.                                                                                                                                                                                           |
-| **4**             | `qwen-coder`                             | **Pollinations AI**            | Stays focused on code without rambling. You can hammer it all day with 60 RPM and unlimited requests — it answers directly every time.                                                                                                                                                                                              |
-| **5**             | `mistral-code-agent-latest`              | **Mistral AI**                 | Purpose-built for multi-step agent actions with reliable tool-calling and structured JSON outputs. Mistral's 50k TPM shared pool limits it to single-file scope in practice.                                                                                                                                                        |
-| **6**             | `openai/gpt-oss-120b`                    | **Groq API**                   | Elite algorithmic reasoning, but Groq's 18k TPM cap is a trap — one multi-file prompt triggers a 429. Use it sparingly for targeted debugging of the hardest bugs.                                                                                                                                                                  |
-| **7**             | `qwen/qwen3-32b`                         | **Groq API**                   | Dumps clean code into your IDE at blazing speed. Same 18k TPM handcuffs as rank 6 — ideal for short snippets, unusable for sustained sessions.                                                                                                                                                                                      |
-| **8**             | `DeepSeek-V3.1`                          | **SambaNova AI**               | The 671B flagship — unmatched structural planning and algorithm generation, but crippled by 20 RPD and 200k TPD caps. A single comprehensive prompt drains your entire 24-hour token allowance on your first call.                                                                                                                  |
-| **9**             | `mistral-large-2512`                     | **Mistral AI**                 | Excellent instruction following for complex multi-turn text tasks. Lacks the code-specific architecture and sandbox training of the specialized coders above it.                                                                                                                                                                    |
-| **10**            | `codestral-latest`                       | **Mistral AI**                 | Exceptional multi-language completion engine. Best kept strictly for single-file, line-by-line edits due to Mistral's shared 50k TPM pool.                                                                                                                                                                                          |
+|  Rank    |  Model                           |  Host Provider         |  The Simple Reason to Choose It                                                                                                                                                                                                                                                  |
+| :------- | :------------------------------- | :--------------------- | : ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|  **1**   |  `qwen3-coder-next`              |  **Ollama Cloud**      |  Scores over 70% on SWE-bench Verified. Native 256K context with sandbox reinforcement learning — if it writes broken code, it reads your terminal logs and fixes its own bugs. Uncapped usage via time-based compute allocation. The best overall assistant for daily coding.   |
+|  **2**   |  `models/gemini-3.1-flash-lite`  |  **Google Gemini**     |  1,500 free daily requests with a massive context window. Lighter on deep reasoning, but unstoppable for background triaging, test iterations, and log file analysis all day. The infinite workhorse.                                                                            |
+|  **3**   |  `qwen3-235b`                    |  **LLM7.IO**           |  Native support for 119 programming languages at 128 RPM with a 5M daily token pool. Elite reasoning depth for cross-language refactoring.                                                                                                                                       |
+|  **4**   |  `qwen-coder`                    |  **Pollinations AI**   |  Stays focused on code without rambling. You can hammer it all day with 60 RPM and unlimited requests — it answers directly every time.                                                                                                                                          |
+|  **5**   |  `deepseek-v4-flash-free`        |  **OpenCode Zen**      |  The strongest model on OpenCode Zen for coding with 30 RPM, 500 RPD, and 1M TPD — a quota profile that outlasts everything below this rank. Handles multi-turn context tracking smoothly at rapid generation speeds.                                                            |
+|  **6**   |  `mistral-code-agent-latest`     |  **Mistral AI**        |  Purpose-built for multi-step agent actions with reliable tool-calling and structured JSON outputs. Mistral's 50k TPM shared pool limits it to single-file scope in practice.                                                                                                    |
+|  **7**   |  `openai/gpt-oss-120b`           |  **Groq API**          |  Elite algorithmic reasoning, but Groq's 18k TPM cap is a trap — one multi-file prompt triggers a 429. Use it sparingly for targeted debugging of the hardest bugs.                                                                                                              |
+|  **8**   |  `qwen/qwen3-32b`                |  **Groq API**          |  Dumps clean code into your IDE at blazing speed. Same 18k TPM handcuffs as rank 7 — ideal for short snippets, unusable for sustained sessions.                                                                                                                                  |
+|  **9**   |  `DeepSeek-V3.1`                 |  **SambaNova AI**      |  The 671B flagship — unmatched structural planning and algorithm generation, but crippled by 20 RPD and 200k TPD caps. A single comprehensive prompt drains your entire 24-hour token allowance on your first call.                                                              |
+|  **10**  |  `codestral-latest`              |  **LLM7.IO**           |  Exceptional multi-language completion engine with 128 RPM and 5M TPD — far more generous quota than Mistral's shared pool. Best kept for single-file, line-by-line edits.                                                                                                      |
 
 ---
 
@@ -87,9 +88,9 @@ AION Labs provides storytelling-optimized models through an OpenAI-compatible AP
 
 ### [Auriko](https://www.auriko.ai) Models
 
-Auriko is a unified API gateway providing access to 100+ models from top providers (OpenAI, Anthropic, DeepSeek, Google, xAI, Moonshot, and more) through a single OpenAI-compatible endpoint. The free tier offers 1,000 Platform RPM and 10,000 BYOK requests/month with zero inference markup — no credit card required. Access to every model on the platform at provider cost. Auriko currently has 166 models verified — 29 are ★★★★☆ or above.
+Auriko is a unified API gateway providing access to 100+ models from top providers (OpenAI, Anthropic, DeepSeek, Google, xAI, Moonshot, and more) through a single OpenAI-compatible endpoint. The free tier offers 1,000 Platform RPM and 500 BYOK RPM with a 1M token monthly cap and zero inference markup — no credit card required. Access to every model on the platform at provider cost. Auriko currently has 166 models verified — 29 are ★★★★☆ or above.
 
-**Free Tier Quota:** 20 to 60 RPM / 5,000 RPD / 200,000 TPM / 5,000,000 TPD
+**Free Tier Quota:** 500 RPM (BYOK) / 1,000 RPM (Platform) / 1,000,000 tokens/month (BYOK)
 
 **Base URL:** `https://api.auriko.ai/v1`
 
@@ -100,7 +101,7 @@ Auriko is a unified API gateway providing access to 100+ models from top provide
 | `claude-opus-4-7`                              | ★★★★★       | `Code`      | `Blazing`  | Fastest Claude Opus variant. Deep reasoning and code generation with zero preamble.                         |
 | `claude-opus-4-6`                              | ★★★★★       | `Code`      | `Blazing`  | Slightly older Opus but still elite — handles complex architecture with zero preamble.                      |
 | `deepseek-v3.2`                                | ★★★★★       | `Reasoning` | `Fast`     | Elite reasoning workhorse trusted across every provider. Clean output for multi-file analysis.              |
-| `deepseek-v3.1`                                | ★★★★★       | `Reasoning` | `Fast`     | Slightly faster than V3.2 with the same elite reasoning depth.                                              |
+| `deepseek-v3.1`                                | ★★★★★       | `Reasoning` | `Fast`     | The best provider for V3.1 — 5,000 RPD and 5M TPD with zero quota stress. Elite reasoning at blazing speed. |
 | `qwen-3-coder-480b-a35b-instruct`              | ★★★★★       | `Code`      | `Moderate` | Purpose-built 480B code model — tackles the hardest debugging sessions.                                     |
 | `qwen-3-coder-30b-a3b-instruct`                | ★★★★★       | `Code`      | `Fast`     | Focused 30B coder from Qwen — efficient and responsive for everyday coding.                                 |
 | `qwen-3-235b-a22b-instruct-2507-fp8`           | ★★★★★       | `General`   | `Fast`     | 235B at FP8 precision. Elite reasoning without the full-weight latency.                                     |
@@ -255,9 +256,9 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 
 ### [Hugging Face Inference API](https://huggingface.co/inference-api) Models
 
-Hugging Face's free Inference API gives you access to thousands of community-hosted models with OpenAI-compatible endpoints. The free tier offers replenishable credits with daily resets. With models ranging from 3B to 1T parameters, this is the most diverse single provider on the list. Hugging Face currently has approximately 80 models verified — 27 are ★★★★☆ or above.
+Hugging Face's free Inference API gives you access to thousands of community-hosted models with OpenAI-compatible endpoints. The free tier offers $0.10/month in credits — enough for light experimentation, not sustained coding. The real strength is model diversity: 19 ★★★★★ models ranging from 3B to 1T parameters. Hugging Face currently has approximately 80 models verified — 27 are ★★★★☆ or above.
 
-**Free Tier Quota:** 10 RPM / 1,000 RPD / 5,000,000 TPD
+**Free Tier Quota:** $0.10/month credits (~650K tokens)
 
 **Base URL:** `https://router.huggingface.co/v1`
 
@@ -273,7 +274,7 @@ Hugging Face's free Inference API gives you access to thousands of community-hos
 | `meta-llama/Llama-3.1-70B-Instruct`                  | ★★★★★       | `General`   | `Fast`     | The workhorse that keeps delivering under heavy use.                                               |
 | `nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4`     | ★★★★★       | `Reasoning` | `Moderate` | Clean, precise output on every turn — feels too big to be free.                                    |
 | `deepseek-ai/DeepSeek-V3.2`                          | ★★★★★       | `Reasoning` | `Fast`     | Multi-file architecture work where it never loses the thread.                                      |
-| `deepseek-ai/DeepSeek-V3.1`                          | ★★★★★       | `Reasoning` | `Fast`     | Slightly faster than V3.2 with the same elite reasoning depth.                                     |
+| `deepseek-ai/DeepSeek-V3.1`                          | ★★★★★       | `Reasoning` | `Fast`     | Solid alternative to Auriko for V3.1 — 1,000 RPD with the same elite quality.                      |
 | `deepcogito/cogito-671b-v2.1`                        | ★★★★★       | `Reasoning` | `Slow`     | An unfair advantage. The sheer reasoning depth is shocking.                                        |
 | `google/gemma-4-26B-A4B-it`                          | ★★★★★       | `General`   | `Fast`     | Responds faster than its size suggests with clean, direct output.                                  |
 | `Qwen/Qwen2.5-72B-Instruct`                          | ★★★★★       | `Fallback`  | `Fast`     | A reliable fallback that handles most coding tasks competently.                                    |
@@ -337,32 +338,32 @@ Mistral AI is highly regarded for building models that punch far above their **p
 
 **Base URL:** `https://api.mistral.ai/v1`
 
-| Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                                           |
-| :--------------------------------------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------------ |
-| `mistral-large-latest` / `mistral-large-2512`        | ★★★★★       | `Reasoning` | `Fast`     | Crown jewel flagship. Top-tier multi-lingual reasoning and flawless focus across massive files.   |
-| `mistral-code-agent-latest`                          | ★★★★★       | `Agent`     | `Fast`     | **BEST FOR AGENTS.** Purpose-built for autonomous agents with native tool use.                    |
-| `codestral-latest` / `codestral-2508`                | ★★★★☆       | `Code`      | `Fast`     | **CODE COMPLETION ONLY.** Built for programmers. Flies through auto-completions and inline edits. |
-| `mistral-code-latest`                                | ★★★★☆       | `Code`      | `Fast`     | **CODE COMPLETION ONLY.** Fast, precise completions across dozens of languages.                   |
-| `mistral-code-fim-latest`                            | ★★★★☆       | `Code`      | `Fast`     | **CODE COMPLETION ONLY.** Fill-in-Middle specialist for smart inline insertion.                   |
-| `mistral-medium-3.5` / `mistral-medium-3-5`          | ★★★★☆       | `General`   | `Fast`     | Exceptional price-to-performance. Highly responsive for structural software layouts.              |
-| `mistral-medium-3`                                   | ★★★★☆       | `General`   | `Fast`     | Trusted, stable Medium line. Clean boilerplate code without empty chatter.                        |
-| `mistral-medium-2604`                                | ★★★★☆       | `General`   | `Fast`     | Responsive Medium iteration with predictable execution and strong structural debugging.           |
-| `devstral-medium-latest`                             | ★★★★☆       | `Agent`     | `Moderate` | **AGENT ROUTING ONLY.** Streamlined Medium optimized for automated developer task loops.          |
-| `mistral-medium-latest` / `mistral-medium`           | ★★★★☆       | `General`   | `Fast`     | The classic production model. Dependable for everyday scripting.                                  |
-| `mistral-small-latest` / `mistral-small-2603`        | ★★★★☆       | `General`   | `Blazing`  | Incredible lightweight architecture. Punchy, direct tone with surprising depth.                   |
-| `magistral-small-latest` / `magistral-small-2509`    | ★★★★☆       | `General`   | `Fast`     | New Mistral line. Clean responses with solid depth. A pleasant surprise.                          |
-| `magistral-medium-latest` / `magistral-medium-2509`  | ★★★★☆       | `Reasoning` | `Fast`     | Medium-tier Magistral. Strong reasoning with clean, structured output.                            |
-| `devstral-latest` / `devstral-2512`                  | ★★★☆☆       | `Agent`     | `Moderate` | **AGENT ROUTING ONLY.** Tailored for programmatic tool use.                                       |
-| `ministral-14b-latest` / `ministral-14b-2512`        | ★★★☆☆       | `General`   | `Fast`     | Nimble, edge-focused model. Remarkably capable for its tight memory footprint.                    |
-| `ministral-8b-latest` / `ministral-8b-2512`          | ★★★☆☆       | `General`   | `Fast`     | 8B ministral. Nimble and responsive for lightweight coding tasks.                                 |
-| `mistral-medium-2505`                                | ★★★☆☆       | `Fallback`  | `Slow`     | Early Medium build. Tends to use full-sentence prefix framing.                                    |
-| `mistral-medium-2508`                                | ★★★☆☆       | `Fallback`  | `Moderate` | Older Medium point-release. Clean output but lacks the 3.x optimization pass.                     |
-| `mistral-small-2506`                                 | ★★★☆☆       | `Fallback`  | `Moderate` | Earlier Small snapshot. Trails 2603 on speed.                                                     |
-| `mistral-tiny-latest` / `mistral-tiny-2407`          | ★★★☆☆       | `Fallback`  | `Blazing`  | Fastest Mistral model. Perfect for syntax checks and terminal one-liners.                         |
-| `mistral-vibe-cli-fast`                              | ★★★☆☆       | `Agent`     | `Blazing`  | **TERMINAL HELPER.** Blistering single-turn replies for terminal flags.                           |
-| `mistral-vibe-cli-latest`                            | ★★★☆☆       | `Agent`     | `Moderate` | **TERMINAL HELPER.** Favors explicit sentence explanations when breaking down commands.           |
-| `mistral-vibe-cli-with-tools`                        | ★★★☆☆       | `Agent`     | `Fast`     | **TERMINAL HELPER.** Returns raw executable bash tokens with zero conversational prefix.          |
-| `open-mistral-nemo` / `open-mistral-nemo-2407`       | ★★★☆☆       | `Fallback`  | `Fast`     | Fast and flexible for low-complexity text filtering.                                              |
+| Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                                                            |
+| :--------------------------------------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------------                  |
+| `mistral-code-agent-latest`                          | ★★★★★       | `Agent`     | `Fast`     | **BEST FOR AGENTS.** Purpose-built for autonomous agents with native tool use.                                     |
+| `codestral-latest` / `codestral-2508`                | ★★★★☆       | `Code`      | `Fast`     | **CODE COMPLETION ONLY.** Built for programmers. Flies through auto-completions and inline edits.                  |
+| `mistral-large-latest` / `mistral-large-2512`        | ★★★★☆       | `Reasoning` | `Fast`     | Strong multi-lingual reasoning but lacks code-specific architecture. The 50k TPM shared pool limits sustained use. |
+| `mistral-code-latest`                                | ★★★★☆       | `Code`      | `Fast`     | **CODE COMPLETION ONLY.** Fast, precise completions across dozens of languages.                                    |
+| `mistral-code-fim-latest`                            | ★★★★☆       | `Code`      | `Fast`     | **CODE COMPLETION ONLY.** Fill-in-Middle specialist for smart inline insertion.                                    |
+| `mistral-medium-3.5` / `mistral-medium-3-5`          | ★★★★☆       | `General`   | `Fast`     | Exceptional price-to-performance. Highly responsive for structural software layouts.                               |
+| `mistral-medium-3`                                   | ★★★★☆       | `General`   | `Fast`     | Trusted, stable Medium line. Clean boilerplate code without empty chatter.                                         |
+| `mistral-medium-2604`                                | ★★★★☆       | `General`   | `Fast`     | Responsive Medium iteration with predictable execution and strong structural debugging.                            |
+| `devstral-medium-latest`                             | ★★★★☆       | `Agent`     | `Moderate` | **AGENT ROUTING ONLY.** Streamlined Medium optimized for automated developer task loops.                           |
+| `mistral-medium-latest` / `mistral-medium`           | ★★★★☆       | `General`   | `Fast`     | The classic production model. Dependable for everyday scripting.                                                   |
+| `mistral-small-latest` / `mistral-small-2603`        | ★★★★☆       | `General`   | `Blazing`  | Incredible lightweight architecture. Punchy, direct tone with surprising depth.                                    |
+| `magistral-small-latest` / `magistral-small-2509`    | ★★★★☆       | `General`   | `Fast`     | New Mistral line. Clean responses with solid depth. A pleasant surprise.                                           |
+| `magistral-medium-latest` / `magistral-medium-2509`  | ★★★★☆       | `Reasoning` | `Fast`     | Medium-tier Magistral. Strong reasoning with clean, structured output.                                             |
+| `devstral-latest` / `devstral-2512`                  | ★★★☆☆       | `Agent`     | `Moderate` | **AGENT ROUTING ONLY.** Tailored for programmatic tool use.                                                        |
+| `ministral-14b-latest` / `ministral-14b-2512`        | ★★★☆☆       | `General`   | `Fast`     | Nimble, edge-focused model. Remarkably capable for its tight memory footprint.                                     |
+| `ministral-8b-latest` / `ministral-8b-2512`          | ★★★☆☆       | `General`   | `Fast`     | 8B ministral. Nimble and responsive for lightweight coding tasks.                                                  |
+| `mistral-medium-2505`                                | ★★★☆☆       | `Fallback`  | `Slow`     | Early Medium build. Tends to use full-sentence prefix framing.                                                     |
+| `mistral-medium-2508`                                | ★★★☆☆       | `Fallback`  | `Moderate` | Older Medium point-release. Clean output but lacks the 3.x optimization pass.                                      |
+| `mistral-small-2506`                                 | ★★★☆☆       | `Fallback`  | `Moderate` | Earlier Small snapshot. Trails 2603 on speed.                                                                      |
+| `mistral-tiny-latest` / `mistral-tiny-2407`          | ★★★☆☆       | `Fallback`  | `Blazing`  | Fastest Mistral model. Perfect for syntax checks and terminal one-liners.                                          |
+| `mistral-vibe-cli-fast`                              | ★★★☆☆       | `Agent`     | `Blazing`  | **TERMINAL HELPER.** Blistering single-turn replies for terminal flags.                                            |
+| `mistral-vibe-cli-latest`                            | ★★★☆☆       | `Agent`     | `Moderate` | **TERMINAL HELPER.** Favors explicit sentence explanations when breaking down commands.                            |
+| `mistral-vibe-cli-with-tools`                        | ★★★☆☆       | `Agent`     | `Fast`     | **TERMINAL HELPER.** Returns raw executable bash tokens with zero conversational prefix.                           |
+| `open-mistral-nemo` / `open-mistral-nemo-2407`       | ★★★☆☆       | `Fallback`  | `Fast`     | Fast and flexible for low-complexity text filtering.                                                               |
 
 
 ### [Mixlayer](https://www.mixlayer.com) Models
@@ -429,6 +430,23 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 | `ministral-3:8b`         | ★★★☆☆       | `General`   | `Fast`     | 8B ministral variant. Reliable for quick edits and syntax checks.                                          |
 | `minimax-m2.1`           | ★★★☆☆       | `General`   | `Slow`     | Earlier MiniMax release. Empty clean output but noticeably slower than m2.5.                               |
 | `nemotron-3-super`       | ★★★☆☆       | `Reasoning` | `Slow`     | Deep reasoning with significant latency. Capable but you'll wait for every answer.                         |
+
+
+### [OpenCode Zen](https://opencode.ai/zen) Models
+
+OpenCode Zen is a curated set of AI models tested and optimized for coding agents by the OpenCode team. The free tier offers 5 models at zero cost through an OpenAI-compatible API — no credit card required for free models (requires adding billing details for API key).
+
+**Free Tier Quota:** 30 RPM / 500 RPD / 1,000,000 TPD
+
+**Base URL:** `https://opencode.ai/zen/v1`
+
+| Free Model                    | Star Rating | Best For      | Speed      | Opinion                                                                                                                                                |
+| :---------------------------- | :---------- | :------------ | :--------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `deepseek-v4-flash-free`      | ★★★★★       | `Code`        | `Fast`     | The strongest model on OpenCode Zen for coding. Handles multi-turn context tracking smoothly with rapid generation speeds.                             |
+| `nemotron-3-ultra-free`       | ★★★★★       | `Code Review` | `Fast`     | Exceptional for code review and syntax linting — pedantic and precise when catching edge cases. Slightly clumsy at generating large template blocks.   |
+| `big-pickle`                  | ★★★★☆       | `Fallback`    | `Fast`     | A strong, versatile fallback with rotating capabilities. Handles standard single-file scripting reliably.                                              |
+| `mimo-v2.5-free`              | ★★★★☆       | `Code`        | `Moderate` | Lightweight model best kept for small tasks where brief patches matter more than deep logic.                                                           |
+| `north-mini-code-free`        | ★★★★☆       | `Fallback`    | `Blazing`  | Micro-scale utility model suited for inline autocomplete or basic regex conversions.                                                                   |
 
 
 ### [OpenRouter](https://openrouter.ai) Models
@@ -501,7 +519,7 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 
 | Free Model                    | Star Rating | Best For    | Speed      | Opinion                                                                                                                                          |
 | :---------------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `DeepSeek-V3.1`               | ★★★★★       | `Agent`     | `Blazing`  | Massive hybrid mixture model. Premium, highly responsive background planner for code-routing and multi-step agent actions.                       |
+| `DeepSeek-V3.1`               | ★★★★★       | `Agent`     | `Blazing`  | Production-grade flagship with elite reasoning at blazing speeds. The 20 RPD cap limits sustained use — better quota on Auriko or Hugging Face.  |
 | `DeepSeek-V3.2`               | ★★★★☆       | `Reasoning` | `Blazing`  | **Preview** — Blazing fast on RDUs but requires $5 signup credit that does not replenish. Use while it lasts.                                    |
 | `Meta-Llama-3.3-70B-Instruct` | ★★★★☆       | `General`   | `Fast`     | The traditional benchmark engine. Interprets dense, multi-variable project constraints with high structural reliability.                         |
 | `gemma-4-31B-it`              | ★★★☆☆       | `General`   | `Blazing`  | **Preview** — Google's newest runs fast but dies with the $5 credit. Stops working once the bonus is drained.                                    |
