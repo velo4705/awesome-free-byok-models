@@ -1,6 +1,6 @@
 # Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> **Last Verified: June 17, 2026** - All models tested live across 18 providers.
+> **Last Verified: June 18, 2026** - All models tested live across 18 providers.
 
 A curated list of the **best high-performance**, **free-tier AI models** you can use to **supercharge your coding setup** without paying for expensive monthly subscriptions or getting locked out by trial credit expiry.
 
@@ -73,7 +73,7 @@ These tables break down notable free models from each provider's ecosystem, **ca
 
 ### [AION Labs](https://www.aionlabs.ai) Models
 
-AION Labs provides storytelling-optimized models through an OpenAI-compatible API. The free tier offers 20,000 tokens/day and 15 RPM with no credit card required — a solid option if you need a daily token allowance for lightweight coding and creative tasks. AION Labs currently has 5 models verified.
+AION Labs provides storytelling-optimized models through an OpenAI-compatible API. The free tier offers 20,000 tokens/day and 15 RPM with no credit card required — a solid option if you need a daily token allowance for lightweight coding and creative tasks. AION Labs currently has 2 models verified.
 
 **Free Tier Quota:** 15 RPM / 500 RPD / 5,000,000 TPD
 
@@ -82,10 +82,7 @@ AION Labs provides storytelling-optimized models through an OpenAI-compatible AP
 | Free Model                       | Star Rating | Best For    | Speed     | Opinion                                                                                      |
 | :------------------------------- | :---------- | :---------- | :-------- | :------------------------------------------------------------------------------------------- |
 | `aion-labs/aion-2.5`             | ★★★★★       | `Code`      | `Fast`    | Clean, direct output with no preamble. The top pick on AION Labs.                            |
-| `aion-labs/aion-2.0`             | ★★★★☆       | `Code`      | `Fast`    | Same clean output as 2.5 with slightly more latency. A reliable everyday option.             |
 | `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | `Fallback`  | `Blazing` | Fastest AION model. Handles lightweight tasks instantly, but 8B cap limits depth.            |
-| `aion-labs/aion-1.0-mini`        | ★★★☆☆       | `Reasoning` | `Fast`    | Reasoning specialist (distilled DeepSeek-R1) with `<think>` preamble. Sunsets June 20, 2026. |
-| `aion-labs/aion-1.0`             | ★★★☆☆       | `General`   | `Fast`    | Thinking preamble adds friction. Sunsets June 20, 2026 — use aion-2.0 instead.               |
 
 
 ### [Auriko](https://www.auriko.ai) Models
@@ -216,7 +213,7 @@ GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and
 
 ### [Google Gemini](https://aistudio.google.com) Models
 
-Gemini offers large context windows on paper, but the free tier's **rate limits vary by model** — Flash-lite variants enjoy ~500 RPD, while standard models can be as low as 20 RPD. Use Gemini for quick, targeted tasks and single-file edits — not marathon sessions. Google Gemini currently has 9 models verified.
+Gemini offers large context windows on paper, but the free tier's **rate limits vary by model** — Flash-lite variants enjoy ~500 RPD, while standard models can be as low as 20 RPD. Use Gemini for quick, targeted tasks and single-file edits — not marathon sessions. Google Gemini currently has 8 models verified.
 
 **Free Tier Quota:** 15–30 RPM / 1,500 RPD / 1M TPM / Uncapped TPD
 
@@ -237,7 +234,7 @@ Gemini offers large context windows on paper, but the free tier's **rate limits 
 
 ### [Groq API](https://console.groq.com) Models
 
-Groq is famous for providing the **absolute lowest streaming latency** in the API market, outrunning traditional cloud providers by a massive margin. The free tier offers 30 RPM with replenishable daily credits — no credit card needed. If you want a setup where your terminal files patch instantly without the typical spinning wheel delay, this is your go-to. Groq API currently has 7 models verified.
+Groq is famous for providing the **absolute lowest streaming latency** in the API market, outrunning traditional cloud providers by a massive margin. The free tier offers 30 RPM with replenishable daily credits — no credit card needed. If you want a setup where your terminal files patch instantly without the typical spinning wheel delay, this is your go-to. Groq API currently has 8 models verified.
 
 **Free Tier Quota:** 30 RPM / 14,400 RPD / 18,000 TPM
 
@@ -249,6 +246,7 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 | `qwen/qwen3-32b`                            | ★★★★☆       | `Code`     | `Moderate` | Phenomenal for complex code blocks. Briefly thinks out loud before responding.                                                        |
 | `llama-3.3-70b-versatile`                   | ★★★★☆       | `Chat`     | `Fast`     | Dependable for developer conversations and brainstorming.                                                                             |
 | `openai/gpt-oss-20b`                        | ★★★★☆       | `Code`     | `Blazing`  | Same coding DNA as the 120b. Lightning-fast for standard tasks.                                                                       |
+| `qwen/qwen3.6-27b`                          | ★★★★☆       | `Code`     | `Blazing`  | Fast 27B Qwen 3.6. Brief `<think>` preamble but clean output and blazing speed.                                                       |
 | `meta-llama/llama-4-scout-17b-16e-instruct` | ★★★☆☆       | `Chat`     | `Fast`     | Handles medium tasks. Overthinks simple prompts.                                                                                      |
 | `groq/compound`                             | ★★★☆☆       | `General`  | `Fast`     | Great for single-turn terminal questions. Lacks depth for multi-file projects.                                                        |
 | `llama-3.1-8b-instant`                      | ★★★☆☆       | `Code`     | `Blazing`  | Fun for tiny, rapid-fire edits — tends to cut off on long scripts.                                                                    |
@@ -382,7 +380,7 @@ Mixlayer is an inference platform for open-source AI models with an OpenAI-compa
 
 ### [MorphLLM](https://morphllm.com) Models
 
-MorphLLM hosts a diverse catalog of open-weight models (Qwen, DeepSeek, MiniMax, Morph) optimized for competitive inference speeds. The free tier offers replenishable credits — useful when you need massive model scale (up to 397B) without requiring a credit card. MorphLLM currently has 8 models verified.
+MorphLLM hosts a diverse catalog of open-weight models (Qwen, DeepSeek, MiniMax, Morph) optimized for competitive inference speeds. The free tier offers replenishable credits — useful when you need massive model scale (up to 397B) without requiring a credit card. MorphLLM currently has 9 models verified.
 
 **Free Tier Quota:** 5 RPM / 50,000 Input TPM / 20,000 Output TPM
 
@@ -395,6 +393,7 @@ MorphLLM hosts a diverse catalog of open-weight models (Qwen, DeepSeek, MiniMax,
 | `morph-dsv4flash`      | ★★★★☆       | `Code`      | `Fast`     | DeepSeek-based flash model. Lightweight and responsive for rapid code completions.                      |
 | `morph-qwen35-397b`    | ★★★★☆       | `Reasoning` | `Fast`     | 397B parameter model — remarkably fast for its scale. Massive reasoning without paying for a cluster.   |
 | `morph-minimax27-230b` | ★★★☆☆       | `Reasoning` | `Moderate` | Large 230B model with a `<think>` preamble. Helps complex logic but wastes cycles on simple requests.   |
+| `morph-minimax3-428b`  | ★★★☆☆       | `Fallback`  | `Moderate` | Massive 428B free model. Empty on READY but responds to real prompts. Inconsistent but huge free scale. |
 | `morph-v3-fast`        | ★★★☆☆       | `Fallback`  | `Fast`     | Fast but echoes the instruction back instead of executing.                                              |
 | `morph-compactor`      | ★★★☆☆       | `Fallback`  | `Moderate` | Same instruction-echoing pattern as v3-fast.                                                            |
 | `morph-warp-grep-v2.1` | ★★★☆☆       | `General`   | `Slow`     | Slower with a search-focused architecture. Better for log analysis.                                     |
@@ -471,22 +470,22 @@ Pollinations AI is a free, no-signup inference provider serving a wide variety o
 | `gpt-5.4-mini`        | ★★★★★       | `General`   | `Blazing`  | Snappy to the point of feeling instant.                                       |
 | `gemma`               | ★★★★★       | `General`   | `Fast`     | Punches above its weight class. Follows complex instructions with precision.  |
 | `grok`                | ★★★★★       | `Chat`      | `Fast`     | Surprisingly polished at code. Switches between chat and coding effortlessly. |
-| `grok-4.3`            | ★★★★★       | `General`   | `Fast`     | Tighter than base Grok. Fewer surprises, more consistency.                    |
+| `grok-4-20-reasoning` | ★★★★★       | `General`   | `Fast`     | Tighter than base Grok. Fewer surprises, more consistency.                    |
 | `perplexity`          | ★★★★★       | `General`   | `Moderate` | Research-backed answers to coding questions.                                  |
 | `nova-fast`           | ★★★★★       | `Code`      | `Blazing`  | For rapid-fire coding loops where waiting isn't an option.                    |
 | `llama`               | ★★★★★       | `General`   | `Fast`     | The workhorse. No-nonsense output, zero chatter.                              |
 | `qwen-vision`         | ★★★★★       | `Vision`    | `Fast`     | Clean multimodal responses. Screenshots and code mix without the rambling.    |
 | `qwen-vision-pro`     | ★★★★★       | `Vision`    | `Fast`     | Polished vision experience. Sharper answers for text and images.              |
 | `openai-fast`         | ★★★★☆       | `General`   | `Blazing`  | Built for speed. Quick tasks handled instantly.                               |
-| `gpt-5.5`             | ★★★★☆       | `General`   | `Fast`     | Reliable daily coding, though outputs sometimes need a second try.            |
-| `kimi-k2.7-code`      | ★★★★☆       | `Code`      | `Fast`     | Strong on code — use it for programming-specific work.                        |
-| `minimax-m3`          | ★★★★☆       | `General`   | `Fast`     | Solid and frictionless for everyday tasks.                                    |
+| `gpt-5.4`             | ★★★★☆       | `General`   | `Fast`     | Reliable daily coding, though outputs sometimes need a second try.            |
+| `kimi-code`           | ★★★★☆       | `Code`      | `Fast`     | Strong on code — use it for programming-specific work.                        |
+| `minimax-m2.7`        | ★★★★☆       | `General`   | `Fast`     | Solid and frictionless for everyday tasks.                                    |
 | `step-3.5-flash`      | ★★★★☆       | `General`   | `Fast`     | Keeps pace with daily edits and scripts.                                      |
 | `qwen-large`          | ★★★★☆       | `General`   | `Moderate` | More parameters, more context. Slightly less direct but more headroom.        |
 | `step-flash`          | ★★★★☆       | `Fallback`  | `Fast`     | Dependable fallback — keeps quality up when main model hits limits.           |
 | `nova`                | ★★★★☆       | `Agent`     | `Fast`     | Clean output for agent pipelines. Straightforward coding without noise.       |
 | `mistral`             | ★★★★☆       | `General`   | `Fast`     | Clean Mistral responses without the full API quota drain.                     |
-| `mistral-4`           | ★★★★☆       | `General`   | `Fast`     | Newer Mistral iteration. Crisp output with strong instruction following.      |
+| `mistral-large`       | ★★★★☆       | `General`   | `Fast`     | Strong Mistral flagship. Crisp output with strong instruction following.      |
 | `grok-large`          | ★★★★☆       | `General`   | `Fast`     | Extra Grok headroom for heavier reasoning tasks.                              |
 | `perplexity-fast`     | ★★★☆☆       | `General`   | `Blazing`  | Research-backed answers at the speed of light.                                |
 | `midijourney-large`   | ★★★☆☆       | `General`   | `Fast`     | Clean empty responses for frictionless automation.                            |
