@@ -1,6 +1,6 @@
 # Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> **Last Verified: June 19, 2026** - All models tested live across 22 providers.
+> **Last Verified: June 19, 2026** - All models tested live across 25 providers.
 
 A curated list of the **best high-performance**, **free-tier AI models** you can use to **supercharge your coding setup** without paying for expensive monthly subscriptions or getting locked out by trial credit expiry.
 
@@ -15,6 +15,7 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 * [The Top 10 Recommended Free Models](#the-top-10-recommended-free-models)
 * [The Deep-Dive: Individual Provider Showcases](#the-deep-dive-individual-provider-showcases)
   * [AION Labs Models](#aion-labs-models)
+  * [AnyAPI AI Models](#anyapi-ai-models)
   * [Auriko Models](#auriko-models)
   * [Cerebras AI Models](#cerebras-ai-models)
   * [Cloudflare Workers AI Models](#cloudflare-workers-ai-models)
@@ -32,10 +33,12 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
   * [Ollama Cloud Models](#ollama-cloud-models)
   * [OpenCode Zen Models](#opencode-zen-models)
   * [OpenRouter Models](#openrouter-models)
+  * [Routeway AI Models](#routeway-ai-models)
   * [Pollinations AI Models](#pollinations-ai-models)
   * [Poolside Models](#poolside-models)
   * [SambaNova AI Models](#sambanova-ai-models)
   * [SiliconFlow Models](#siliconflow-models)
+  * [Z.AI (Zhipu AI) Models](#zai-zhipu-ai-models)
 
 ## The Best 3 API Providers
 
@@ -84,6 +87,25 @@ AION Labs provides storytelling-optimized models through an OpenAI-compatible AP
 | :------------------------------- | :---------- | :---------- | :-------- | :------------------------------------------------------------------------------------------- |
 | `aion-labs/aion-2.5`             | ★★★★★       | `Code`      | `Fast`    | Clean, direct output with no preamble. The top pick on AION Labs.                            |
 | `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | `Fallback`  | `Blazing` | Fastest AION model. Handles lightweight tasks instantly, but 8B cap limits depth.            |
+
+### [AnyAPI AI](https://anyapi.ai) Models
+
+AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, Cohere, and more through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with access to free and basic models — no credit card required. AnyAPI currently has 10 models verified — 8 are ★★★★☆ or above.
+
+**Free Tier Quota:** 100,000 tokens/day / No Credit Card
+
+**Base URL:** `https://api.anyapi.ai/v1`
+
+| Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                                          |
+| :--------------------------------------------------  | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------- |
+| `poolside/laguna-m.1:free`                           | ★★★★★       | `Code`      | `Fast`     | Same elite 225B Poolside coding flagship. Clean output with zero preamble noise.                 |
+| `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★★       | `Vision`    | `Fast`     | Handles text and vision in one call. Strong general coding with multimodal flexibility.          |
+| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | `General`   | `Fast`     | Google's compact 26B Gemma. Clean, structured output for daily coding.                           |
+| `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | `General`   | `Fast`     | Efficient 30B MoE — clean responses with no preamble.                                            |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | `Reasoning` | `Moderate` | Shows step-by-step reasoning. Useful for verification, verbose for quick answers.                |
+| `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | `Fallback`  | `Fast`     | Reliable NVIDIA nano. Punches above its 9B weight for quick edits.                               |
+| `openrouter/fusion`                                  | ★★★★☆       | `General`   | `Moderate` | OpenRouter's multi-model fusion — aggregates outputs for balanced responses.                     |
+| `poolside/laguna-xs.2:free`                          | ★★★★☆       | `Code`      | `Blazing`  | Poolside's 33B coder. Sub-second responses for inline completions.                               |
 
 ### [Auriko](https://www.auriko.ai) Models
 
@@ -496,6 +518,23 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | `cohere/north-mini-code:free`                        | ★★★★☆       | `Code`      | `Blazing`  | Efficient coding model from Cohere. Lightweight enough for rapid iteration loops.         |
 | `meta-llama/llama-3.3-70b-instruct:free`             | ★★★★☆       | `General`   | `Fast`     | The reliable 70B baseline. Safe fallback when smaller models start to hallucinate.        |
 
+### [Routeway AI](https://routeway.ai) Models
+
+Routeway is a unified API gateway offering free models through a `:free` model suffix — a pattern shared with OpenRouter and Kilo Code. Models are drawn from Stepfun, NVIDIA, Poolside, Meta, and others, all accessed through a single OpenAI-compatible endpoint with no credit card required. The tight 5 RPM cap makes Routeway a fallback hub rather than a daily driver. Routeway currently has 6 models verified — all at ★★★★☆ or above.
+
+**Free Tier Quota:** 5 RPM / 200 RPD / 300,000 TPD
+
+**Base URL:** `https://api.routeway.ai/v1`
+
+| Free Model                          | Star Rating | Best For    | Speed      | Opinion                                                                                          |
+| :---------------------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------- |
+| `poolside/laguna-m.1:free`          | ★★★★★       | `Code`      | `Fast`     | Same elite Poolside 225B coding model — best pick on Routeway. Fast and focused.                 |
+| `step-3.5-flash:free`               | ★★★★☆       | `Agentic`   | `Moderate` | Stepfun's 11B active-param agentic powerhouse. Proven quality at 74.4% SWE-bench.                |
+| `nemotron-3-nano-30b-a3b:free`      | ★★★★☆       | `General`   | `Fast`     | NVIDIA's efficient 30B MoE — clean responses with no preamble.                                   |
+| `laguna-xs.2:free`                  | ★★★★☆       | `Code`      | `Blazing`  | Poolside's 33B coder. Sub-second response time for inline completions.                           |
+| `nemotron-nano-9b-v2:free`          | ★★★★☆       | `Fallback`  | `Fast`     | Reliable NVIDIA nano — punches above its 9B weight for quick edits.                              |
+| `llama-3.3-70b-instruct:free`       | ★★★★☆       | `General`   | `Fast`     | The 70B workhorse. Complex instruction following without drama.                                  |
+
 ### [Pollinations AI](https://pollinations.ai) Models
 
 Pollinations AI is a free, no-signup inference provider serving a wide variety of models — from OpenAI and Grok to Qwen, Perplexity, and niche music/safety models. No API key needed, no account required — the only truly zero-friction provider on this list. Pollinations AI currently has 38 models verified — 25 are ★★★☆☆ or above.
@@ -592,6 +631,19 @@ SiliconFlow is a high-performance inference platform hosting 200+ open-weight mo
 | `google/gemma-4-31B-it`             | ★★★☆☆       | `General`   | `Fast`     | Google's 31B dense — only 52.0% SWE-bench. Decent generalist but well behind other models here for coding.           |
 | `Qwen/Qwen2.5-72B-Instruct`         | ★★★☆☆       | `Fallback`  | `Fast`     | Proven workhorse from 2024 — now outdated for coding tasks. Fallback choice only.                                    |
 | `Qwen/Qwen3.6-27B`                  | ★★★☆☆       | `General`   | `Blazing`  | Fast 27B Qwen 3.6 — good for quick edits, shallow for complex architecture.                                          |
+
+### [Z.AI (Zhipu AI)](https://z.ai) Models
+
+Zhipu AI is a Chinese AI company developing the GLM family of foundation models. The free tier offers two flash-variant models with a concurrency limit of 1 request at a time and unlimited daily tokens — practical for lightweight scripting and quick edits, but the single-concurrent cap makes sustained coding sessions impractical. Z.AI currently has 2 models verified.
+
+**Free Tier Quota:** 1 Concurrent Request / Uncapped TPD
+
+**Base URL:** `https://api.z.ai/api/paas/v4`
+
+| Free Model               | Star Rating | Best For    | Speed      | Opinion                                                                                     |
+| :----------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------ |
+| `glm-4.7-flash`          | ★★★★☆       | `General`   | `Blazing`  | Newer and noticeably sharper than 4.5-flash. Strong for a flash variant.                    |
+| `glm-4.5-flash`          | ★★★☆☆       | `Fallback`  | `Blazing`  | Older flash variant. Handles basic tasks but shows its age on complex logic.                |
 
 ---
 
