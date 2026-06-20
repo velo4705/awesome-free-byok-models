@@ -2,7 +2,7 @@
 
 > **Last Verified: June 20, 2026** - All models tested live across 24 providers.
 
-A curated list of the **best high-performance**, **free-tier AI models** you can use to **supercharge your coding setup** without paying for expensive monthly subscriptions or getting locked out by trial credit expiry.
+Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and BYOK agents.
 
 By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API keys directly into coding tools like **VS Code extensions, terminal assistants, or code editors**, or use them in your **coding projects**. It doesn't even require a **credit card** for the best models!
 
