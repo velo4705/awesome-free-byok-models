@@ -1,6 +1,6 @@
 # Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> **Last Verified: June 20, 2026** - All models tested live across 24 providers.
+> **Last Verified: June 21, 2026** - All models tested live across 24 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and BYOK agents.
 
@@ -13,31 +13,7 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 
 - [The Best 3 API Providers](#the-best-3-api-providers)
 - [The Top 10 Recommended Free Models](#the-top-10-recommended-free-models)
-- [The Deep-Dive: Individual Provider Showcases](#the-deep-dive-individual-provider-showcases)
-  - [AION Labs Models](#aion-labs-models)
-  - [AnyAPI AI Models](#anyapi-ai-models)
-  - [Auriko Models](#auriko-models)
-  - [Cerebras AI Models](#cerebras-ai-models)
-  - [Cloudflare Workers AI Models](#cloudflare-workers-ai-models)
-  - [Cohere AI Models](#cohere-ai-models)
-  - [GitHub Models](#github-models)
-  - [Google Gemini Models](#google-gemini-models)
-  - [Groq API Models](#groq-api-models)
-  - [Hugging Face Inference API Models](#hugging-face-inference-api-models)
-  - [Kilo Code Models](#kilo-code-models)
-  - [LLM7.IO Models](#llm7io-models)
-  - [Mistral AI Models](#mistral-ai-models)
-  - [Mixlayer Models](#mixlayer-models)
-  - [NVIDIA NIM Models](#nvidia-nim-models)
-  - [Ollama Cloud Models](#ollama-cloud-models)
-  - [OpenCode Zen Models](#opencode-zen-models)
-  - [OpenRouter Models](#openrouter-models)
-  - [Routeway AI Models](#routeway-ai-models)
-  - [Pollinations AI Models](#pollinations-ai-models)
-  - [Poolside Models](#poolside-models)
-  - [SambaNova AI Models](#sambanova-ai-models)
-  - [SiliconFlow Models](#siliconflow-models)
-  - [Z.AI (Zhipu AI) Models](#zai-zhipu-ai-models)
+- [Provider Showcases](#provider-showcases)
 
 ## The Best 3 API Providers
 
@@ -70,7 +46,7 @@ The absolute best free models available right now, ranked by how well they handl
 
 ---
 
-## The Deep-Dive: Individual Provider Showcases
+## Provider Showcases
 
 These tables break down notable free models from each provider's ecosystem, **capped at ★★★☆☆ or above for providers and ★★★★☆ or above for hubs**. Ratings are based on how well they handle real-world development demands — typing speed, instruction following, and large projects — evaluated against each provider's quota, rate limits, and context windows.
 
@@ -323,7 +299,7 @@ Hugging Face's free Inference API gives you access to thousands of community-hos
 
 ### [Kilo Code](https://app.kilo.ai) Models
 
-Kilo Code is a coding-agent platform that proxies free models from OpenRouter, NVIDIA, Poolside, and others through a single API key. The free tier offers generous replenishable credits with no hard daily cap — a solid Swiss-army-knife provider that gives you access to a diverse model pool (nano to 550B) through one endpoint. Kilo Code currently has 12 models verified.
+Kilo Code is a coding-agent platform that proxies free models from OpenRouter, NVIDIA, Poolside, and others through a single API key. The free tier offers generous replenishable credits with no hard daily cap — a solid Swiss-army-knife provider that gives you access to a diverse model pool through one endpoint. Kilo Code currently has 12 models verified.
 
 **Free Tier Quota:** 5 RPM / 200 RPD
 
@@ -333,7 +309,6 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 | :--------------------------------------------------- | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------- |
 | `kilo-auto/small`                                    | ★★★★★       | `General`   | `Fast`     | Kilo's own routing picks the right model — the no-brainer choice.                 |
 | `nex-agi/nex-n2-pro:free`                            | ★★★★★       | `Agent`     | `Fast`     | Responds immediately without wasting tokens on filler.                            |
-| `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★★       | `General`   | `Moderate` | The 550B nemotron flagship — raw horsepower for the hardest prompts.              |
 | `openrouter/owl-alpha`                               | ★★★★★       | `Agent`     | `Fast`     | Zero preamble, straight answers. The safest pick on Kilo Code.                    |
 | `cohere/north-mini-code:free`                        | ★★★★☆       | `Code`      | `Blazing`  | Efficient coding model from Cohere. Lightweight enough for rapid iteration loops. |
 | `kilo-auto/free`                                     | ★★★★☆       | `Fallback`  | `Moderate` | Kilo's fallback router — always lands on something functional.                    |
@@ -504,16 +479,17 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | `google/gemma-4-31b-it:free`                         | ★★★★★       | `General`   | `Fast`     | Extra headroom over the 26B without sacrificing speed.                                    |
 | `nex-agi/nex-n2-pro:free`                            | ★★★★★       | `General`   | `Fast`     | Genuine dark horse. Strength that catches you off guard.                                  |
 | `openai/gpt-oss-20b:free`                            | ★★★★★       | `Code`      | `Fast`     | Same reliable output as the 120B but lighter. The everyday driver.                        |
+| `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★★       | `General`   | `Moderate` | The 550B nemotron flagship — raw horsepower for the hardest prompts on OpenRouter.        |
 | `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★★       | `Vision`    | `Fast`     | Does text and vision in one call without the bloat.                                       |
 | `liquid/lfm-2.5-1.2b-instruct:free`                  | ★★★★★       | `General`   | `Blazing`  | The smallest model that actually answers usefully. Insane response times.                 |
+| `cohere/north-mini-code:free`                        | ★★★★☆       | `Code`      | `Blazing`  | Efficient coding model from Cohere. Lightweight enough for rapid iteration loops.         |
+| `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | `Reasoning` | `Moderate` | Tiny 1.2B that thinks aloud. Good for logic, verbose for quick code edits.                |
+| `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | `General`   | `Fast`     | Efficient 30B MoE — clean responses with no preamble for lightweight daily tasks.         |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | `Reasoning` | `Moderate` | Shows its work step by step. Useful for verification, noisy for quick answers.            |
+| `nvidia/nemotron-3-super-120b-a12b:free`             | ★★★★☆       | `General`   | `Fast`     | Strong 120B mid-range. Steps in when the 30Bs need more headroom.                         |
+| `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | `Fallback`  | `Fast`     | Reliable fallback that punches above its 9B weight.                                       |
 | `poolside/laguna-m.1:free`                           | ★★★★☆       | `Code`      | `Fast`     | Built by devs for devs. Inline completions that feel like they read your mind.            |
 | `poolside/laguna-xs.2:free`                          | ★★★★☆       | `Code`      | `Blazing`  | Snappier than M.1, slightly less depth. Perfect for fast suggestions.                     |
-| `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | `Reasoning` | `Moderate` | Tiny 1.2B that thinks aloud. Good for logic, verbose for quick code edits.                |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | `Reasoning` | `Moderate` | Shows its work step by step. Useful for verification, noisy for quick answers.            |
-| `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | `Fallback`  | `Fast`     | Reliable fallback that punches above its 9B weight.                                       |
-| `nvidia/nemotron-3-super-120b-a12b:free`             | ★★★★☆       | `General`   | `Fast`     | Strong 120B mid-range. Steps in when the 30Bs need more headroom.                         |
-| `cohere/north-mini-code:free`                        | ★★★★☆       | `Code`      | `Blazing`  | Efficient coding model from Cohere. Lightweight enough for rapid iteration loops.         |
-| `meta-llama/llama-3.3-70b-instruct:free`             | ★★★★☆       | `General`   | `Fast`     | The reliable 70B baseline. Safe fallback when smaller models start to hallucinate.        |
 
 ### [Routeway AI](https://routeway.ai) Models
 
