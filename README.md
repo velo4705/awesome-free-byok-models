@@ -1,6 +1,6 @@
 # Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> **Last Verified: June 22, 2026** - All models tested live across 25 providers.
+> **Last Verified: June 22, 2026** - All models tested live across 30 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and BYOK agents.
 
@@ -284,6 +284,22 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 | `groq/compound`                             | ★★★☆☆       | `General` | `Fast`     | Great for single-turn terminal questions. Lacks depth for multi-file projects.                   |
 | `llama-3.1-8b-instant`                      | ★★★☆☆       | `Code`    | `Blazing`  | Fun for tiny, rapid-fire edits — tends to cut off on long scripts.                               |
 
+### [HelixMind](https://helixmind.online) Models
+
+HelixMind is a lightweight inference hub offering a small set of free models from Meta, OpenAI, Mistral, and DeepSeek through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 50 requests per day — the tightest cap on this list, strictly for occasional queries and quick tests. No credit card required. HelixMind currently has 5 models verified — all at ★★★★☆ or above.
+
+**Free Tier Quota:** 3 RPM / 50 RPD
+
+**Base URL:** `https://helixmind.online/v1`
+
+| Free Model             | Star Rating | Best For    | Speed     | Opinion                                                                                            |
+| :--------------------- | :---------- | :---------- | :-------- | :------------------------------------------------------------------------------------------------- |
+| `deepseek-v3.2`        | ★★★★☆       | `Reasoning` | `Fast`    | 73.1% SWE-bench. The best model on HelixMind — make each of your 50 daily requests count.          |
+| `llama-4-maverick`     | ★★★★☆       | `General`   | `Blazing` | Meta's 17B MoE. Fast and responsive for quick edits within the tight daily limit.                  |
+| `gpt-oss-20b`          | ★★★★☆       | `Code`      | `Fast`    | Reliable light flagship. Best value for the restrictive 50 RPD — efficient token usage.            |
+| `llama-4-scout`        | ★★★★☆       | `General`   | `Fast`    | Meta's scout variant. Solid fallback when Maverick is rate-limited.                                |
+| `mistral-large-latest` | ★★★★☆       | `General`   | `Slow`    | Mistral's 123B flagship with strong reasoning, but 27s latency makes it impractical for daily use. |
+
 ### [Hugging Face Inference API](https://huggingface.co/inference-api) Models
 
 Hugging Face's free Inference API gives you access to thousands of community-hosted models with OpenAI-compatible endpoints. The free tier offers $0.10/month in credits — enough for light experimentation, not sustained coding. The real strength is model diversity: 19 ★★★★★ models ranging from 3B to 1T parameters. Hugging Face currently has approximately 80 models verified — 27 are ★★★★☆ or above.
@@ -358,6 +374,32 @@ LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp 
 | `codestral-latest`  | ★★★★☆       | `Code`    | `Fast`     | Strongest coding option here after Qwen. Adds a brief preamble but completions are solid.      |
 | `mistral-small-3.2` | ★★★☆☆       | `General` | `Moderate` | Adequate for chat and scripting, but the verbose preamble kills the flow.                      |
 
+### [MNN AI](https://mnnai.ru) Models
+
+MNN AI is a credit-based inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Meta, Mistral, Moonshot, Stepfun, and more through an OpenAI-compatible endpoint. The free tier provides 10 RPM with $1 in monthly credits — replenishable each month, but the dollar cap limits heavy usage. Best suited for light daily coding and targeted queries. No credit card required. MNN AI currently has roughly 25 verified coding-relevant models — all at ★★★★☆ or above.
+
+**Free Tier Quota:** 10 RPM / $1 Monthly Credits
+
+**Base URL:** `https://api2.mnnai.ru/v1`
+
+| Free Model           | Star Rating | Best For    | Speed      | Opinion                                                                                      |
+| :------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------- |
+| `gpt-5.3-chat`       | ★★★★★       | `General`   | `Fast`     | Latest GPT chat variant with polished output. Top pick on MNN for daily coding tasks.        |
+| `deepseek-v4-flash`  | ★★★★★       | `Reasoning` | `Blazing`  | Elite flash variant with 79.0% SWE-bench. Blazing speed for the hardest reasoning prompts.   |
+| `qwen-3.5-397b-a17b` | ★★★★★       | `General`   | `Moderate` | 397B MoE flagship — 76.4% SWE-bench. Immense capacity for complex multi-file architecture.   |
+| `qwen-3-235b-a22b`   | ★★★★★       | `General`   | `Fast`     | 235B Qwen3 flagship — deep multi-file reasoning at competitive speed.                        |
+| `gpt-oss-120b`       | ★★★★★       | `General`   | `Blazing`  | The same reliable 120B flagship. Sub-second responses that stretch your $1 credit further.   |
+| `gpt-5.2`            | ★★★★★       | `General`   | `Fast`     | Proven GPT generation model. Clean, direct output with no preamble noise.                    |
+| `gpt-4.1`            | ★★★★☆       | `General`   | `Fast`     | Reliable workhorse — handles daily coding with consistent, structured output.                |
+| `gpt-4o`             | ★★★★☆       | `General`   | `Fast`     | Proven workhorse. Efficient token usage helps stretch the $1 monthly credit cap.             |
+| `qwen-3-coder-plus`  | ★★★★☆       | `Code`      | `Fast`     | Qwen's coding-specialized variant. Clean code output with strong instruction following.      |
+| `gpt-oss-20b`        | ★★★★☆       | `Code`      | `Blazing`  | Same reliable DNA as the 120B, lighter and faster. Best value for the monthly credit budget. |
+| `gemini-3.5-flash`   | ★★★★☆       | `General`   | `Fast`     | Google's latest flash variant — capable reasoning at efficient token cost.                   |
+| `gemma-4-31b-it`     | ★★★★☆       | `General`   | `Fast`     | Google's 31B dense model. Strong generalist for daily coding without overhead.               |
+| `llama-4-maverick`   | ★★★★☆       | `General`   | `Blazing`  | Meta's latest 17B MoE. Responsive and reliable for lightweight coding tasks.                 |
+| `kimi-k2.5`          | ★★★★☆       | `Reasoning` | `Fast`     | Moonshot's strong reasoning model. Solid for complex multi-step analysis.                    |
+| `step-3.5-flash`     | ★★★★☆       | `Agentic`   | `Blazing`  | Agentic powerhouse — 74.4% SWE-bench. Tiny 11B active params punch far above weight.         |
+
 ### [Mistral AI](https://console.mistral.ai) Models
 
 Mistral AI is highly regarded for building models that punch far above their **parameter weight class**, with exceptionally clean instruction following and compact execution. The free tier offers replenishable credits with generous RPM limits. Mistral AI currently has 42 models verified (with aliases) — 24 are ★★★☆☆ or above.
@@ -404,6 +446,48 @@ Mixlayer is an inference platform for open-source AI models with an OpenAI-compa
 | Free Model             | Star Rating | Best For  | Speed     | Opinion                                                                                                                              |
 | :--------------------- | :---------- | :-------- | :-------- | :----------------------------------------------------------------------------------------------------------------------------------- |
 | `qwen/qwen3.5-4b-free` | ★★★★★       | `General` | `Blazing` | The only free model on Mixlayer — handles prototyping and lightweight tasks at blazing speed. Clean, direct output with no preamble. |
+
+### [Naga AI](https://naga.ac) Models
+
+Naga AI is a lightweight inference hub offering a small set of free models from NVIDIA and Meta through an OpenAI-compatible endpoint. The free tier provides 10 RPM with 100 requests per day — a very tight cap that limits it to occasional queries and quick debugging. No credit card required. Naga AI currently has 3 models verified — all at ★★★★☆ or above.
+
+**Free Tier Quota:** 10 RPM / 100 RPD
+
+**Base URL:** `https://api.naga.ac/v1`
+
+| Free Model                            | Star Rating | Best For  | Speed     | Opinion                                                                                      |
+| :------------------------------------ | :---------- | :-------- | :-------- | :------------------------------------------------------------------------------------------- |
+| `nemotron-3-super-120b-a12b:free`     | ★★★★☆       | `General` | `Fast`    | Strong 120B mid-range from NVIDIA. Steps in when smaller models need more headroom.          |
+| `llama-3.3-70b-instruct:free`         | ★★★★☆       | `General` | `Fast`    | The traditional benchmark engine. Reliable, well-rounded output for daily coding.            |
+| `llama-4-scout-17b-16e-instruct:free` | ★★★★☆       | `General` | `Blazing` | Meta's latest 17B MoE scout — fast and responsive, but the 100 RPD cap limits sustained use. |
+
+### [Navy API](https://api.navy) Models
+
+Navy API is a high-volume inference hub offering an extensive catalog of models from OpenAI, DeepSeek, Grok, Google, Mistral, Cohere, Meta, and more through an OpenAI-compatible endpoint. The free tier provides 20 RPM with 250,000 daily tokens — enough throughput for serious coding sessions. No credit card required. Navy API currently has roughly 60 verified coding-relevant models — all at ★★★★☆ or above.
+
+**Free Tier Quota:** 20 RPM / 250,000 TPD
+
+**Base URL:** `https://api.navy/v1`
+
+| Free Model             | Star Rating | Best For    | Speed      | Opinion                                                                                          |
+| :--------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------- |
+| `gpt-5.4`              | ★★★★★       | `General`   | `Fast`     | Latest GPT flagship — frontier reasoning with clean, direct output. Top-tier daily driver.       |
+| `deepseek-v4-flash`    | ★★★★★       | `Reasoning` | `Blazing`  | Elite flash variant with 79.0% SWE-bench. Blazing speed with no daily cap on Navy.               |
+| `deepseek-v4-pro`      | ★★★★★       | `Reasoning` | `Fast`     | Pro variant of V4 — 80.6% SWE-bench. Extra headroom over Flash for the hardest prompts.          |
+| `qwen3.5-397b-a17b`    | ★★★★★       | `General`   | `Moderate` | 397B MoE flagship — 76.4% SWE-bench. Immense capacity for complex multi-file architecture.       |
+| `gpt-oss-120b`         | ★★★★★       | `General`   | `Blazing`  | The same reliable 120B flagship. Clean output across every coding task at sub-second speed.      |
+| `grok-4.20-reasoning`  | ★★★★★       | `Reasoning` | `Moderate` | xAI's strongest reasoning model. Deep chain-of-thought for the hardest logic problems.           |
+| `gpt-5.3-chat-latest`  | ★★★★★       | `General`   | `Fast`     | Latest GPT chat variant. Strong all-rounder for both coding and conversation.                    |
+| `gpt-5.2`              | ★★★★★       | `General`   | `Fast`     | Proven GPT generation model. Reliable output without preamble noise.                             |
+| `gpt-4.1`              | ★★★★☆       | `General`   | `Fast`     | Reliable workhorse — handles daily coding with consistent, structured output.                    |
+| `deepseek-v3.2`        | ★★★★☆       | `Reasoning` | `Fast`     | 73.1% SWE-bench. Refined V3 release with clean reasoning and strong coding capability.           |
+| `codestral-latest`     | ★★★★☆       | `Code`      | `Blazing`  | Mistral's coding specialist — fast completions with strong multi-file awareness.                 |
+| `command-a-plus`       | ★★★★☆       | `General`   | `Fast`     | Cohere's flagship — clean instruction following with solid coding chops.                         |
+| `gpt-5.4-nano`         | ★★★★☆       | `Code`      | `Blazing`  | Lightning-fast GPT variant. Ideal for quick edits and inline completions.                        |
+| `mistral-large-latest` | ★★★★☆       | `General`   | `Fast`     | Mistral's 123B flagship — strong reasoning with exceptionally clean instruction following.       |
+| `gemma-4-31b-it`       | ★★★★☆       | `General`   | `Fast`     | Google's 31B dense model. Strong generalist for daily coding without the overhead.               |
+| `kimi-k2.6`            | ★★★★☆       | `Reasoning` | `Fast`     | 1T multimodal MoE from Moonshot. Strong long-horizon reasoning for complex projects.             |
+| `gpt-oss-20b`          | ★★★★☆       | `Code`      | `Blazing`  | Same reliable DNA as the 120B in a lighter package. Lightning-fast responses for everyday tasks. |
 
 ### [NVIDIA NIM](https://build.nvidia.com) Models
 
@@ -599,6 +683,32 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 | `Meta-Llama-3.3-70B-Instruct` | ★★★★☆       | `General`   | `Fast`     | The traditional benchmark engine. Interprets dense, multi-variable project constraints with high structural reliability.                        |
 | `gemma-4-31B-it`              | ★★★☆☆       | `General`   | `Blazing`  | **Preview** — Google's newest runs fast but dies with the $5 credit. Stops working once the bonus is drained.                                   |
 | `gpt-oss-120b`                | ★★★☆☆       | `Fallback`  | `Moderate` | The same 117B MoE flagship that dominates on Groq. Available on SambaNova but with noticeably higher latency (~3.5s).                           |
+
+### [Void AI](https://voidai.app) Models
+
+Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Moonshot, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 100 RPM with 125,000 daily credits — the highest RPM of any hub on this list, ideal for high-throughput coding sessions. No credit card required. Void AI currently has roughly 30 verified coding-relevant models — all at ★★★★☆ or above.
+
+**Free Tier Quota:** 100 RPM / 125,000 Daily Credits
+
+**Base URL:** `https://api.voidai.app/v1`
+
+| Free Model                       | Star Rating | Best For    | Speed      | Opinion                                                                                          |
+| :------------------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------- |
+| `gpt-5.5`                        | ★★★★★       | `General`   | `Fast`     | Latest GPT release — frontier reasoning at high speed. Top pick on Void AI for daily coding.     |
+| `gpt-5.4`                        | ★★★★★       | `General`   | `Fast`     | Flagship GPT with polished output. Elite general coding at 100 RPM — the best quota in class.    |
+| `deepseek-v4-flash`              | ★★★★★       | `Reasoning` | `Blazing`  | Elite flash variant with 79.0% SWE-bench. Blazing speed paired with Void's 100 RPM is unmatched. |
+| `qwen3-coder-480b-a35b-instruct` | ★★★★★       | `Code`      | `Moderate` | Massive 480B coder with 35B active params. Elite architecture-level reasoning for big projects.  |
+| `qwen3-235b-a22b-instruct`       | ★★★★★       | `General`   | `Fast`     | 235B Qwen3 flagship — native 119-language support with deep multi-file reasoning.                |
+| `gpt-oss-120b`                   | ★★★★★       | `General`   | `Blazing`  | The same reliable 120B flagship. Sub-second responses at 100 RPM make this a daily driver.       |
+| `gpt-5.3-chat-latest`            | ★★★★★       | `General`   | `Fast`     | Latest GPT chat variant. Strong all-rounder for coding and conversation alike.                   |
+| `gpt-5-codex`                    | ★★★★☆       | `Code`      | `Blazing`  | GPT codex variant — purpose-built for code generation at blazing speed.                          |
+| `gpt-5.3-codex`                  | ★★★★☆       | `Code`      | `Fast`     | Latest codex variant. Clean, direct code output with strong multi-file awareness.                |
+| `gpt-4o`                         | ★★★★☆       | `General`   | `Fast`     | Proven workhorse. Handles daily coding with consistent, structured output.                       |
+| `deepseek-v3.2`                  | ★★★★☆       | `Reasoning` | `Fast`     | 73.1% SWE-bench. Refined V3 release — reliable reasoning for complex coding tasks.               |
+| `gemini-3.1-flash-lite`          | ★★★★☆       | `General`   | `Fast`     | Google's efficient flash-lite. Steady throughput for background tasks at 100 RPM.                |
+| `gpt-oss-20b`                    | ★★★★☆       | `Code`      | `Blazing`  | Same reliable DNA as the 120B, lighter and faster. Perfect for rapid iteration loops.            |
+| `kimi-k2.6`                      | ★★★★☆       | `Reasoning` | `Fast`     | 1T multimodal MoE. Strong long-horizon reasoning for complex multi-step analysis.                |
+| `umbra`                          | ★★★★☆       | `General`   | `Blazing`  | Mystery model with sub-second responses. Surprisingly capable for its speed — a solid wildcard.  |
 
 ### [Z.AI (Zhipu AI)](https://z.ai) Models
 
