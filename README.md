@@ -1,6 +1,6 @@
 # Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> **Last Verified: June 22, 2026** - All models tested live across 30 providers.
+> **Last Verified: June 22, 2026** - All models tested live across 31 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and BYOK agents.
 
@@ -231,6 +231,32 @@ Cohere focuses on enterprise-grade NLP with their Command model family — built
 | `command-a-translate-08-2025` | ★★★☆☆       | `Fallback`  | `Fast`     | Translation-optimized model. Works for code but limited general coding utility.                              |
 | `command-a-reasoning-08-2025` | ★★★☆☆       | `Reasoning` | `Moderate` | Reasoning-focused variant. Minimal outputs suit internal chain-of-thought.                                   |
 | `c4ai-aya-expanse-32b`        | ★★★☆☆       | `General`   | `Moderate` | 32B multilingual model that over-answers — adds noise in prompt chains.                                      |
+
+### [ElectronHub](https://electronhub.ai) Models
+
+ElectronHub is a credit-based inference hub offering an enormous catalog of models from OpenAI, Google, Meta, Mistral, Cohere, DeepSeek, Qwen, Microsoft, and more through an OpenAI-compatible endpoint. The free tier provides 5 RPM with $0.25 in weekly credits — replenishes every week, but the dollar cap limits heavy usage. Best for targeted queries and efficient coding. No credit card required. ElectronHub currently has roughly 55 verified coding-relevant models — all at ★★★★☆ or above.
+
+**Free Tier Quota:** 5 RPM / $0.25 Weekly Credits
+
+**Base URL:** `https://api.electronhub.ai/v1`
+
+| Free Model                           | Star Rating | Best For    | Speed      | Opinion                                                                                         |
+| :----------------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------------- |
+| `gpt-oss-120b`                       | ★★★★★       | `General`   | `Blazing`  | The same reliable 120B flagship. Sub-second responses stretch your $0.25 weekly credit further. |
+| `mistral-large-3-675b-instruct-2512` | ★★★★★       | `General`   | `Blazing`  | Mistral's 675B monster — elite reasoning at sub-second speed. Best model on ElectronHub.        |
+| `nemotron-3-ultra-550b-a55b`         | ★★★★★       | `General`   | `Moderate` | NVIDIA's 550B flagship. Raw horsepower for the hardest prompts when credits allow.              |
+| `gpt-4.1`                            | ★★★★☆       | `General`   | `Fast`     | Reliable workhorse — handles daily coding with consistent, efficient output.                    |
+| `gpt-4o`                             | ★★★★☆       | `General`   | `Fast`     | Proven workhorse. Efficient token usage helps stretch your weekly credit budget.                |
+| `gpt-oss-20b`                        | ★★★★☆       | `Code`      | `Blazing`  | Same reliable DNA as the 120B, lighter and faster. Best value for the weekly credit cap.        |
+| `gpt-5.1-codex-mini`                 | ★★★★☆       | `Code`      | `Fast`     | Purpose-built codex variant. Clean code generation with efficient token consumption.            |
+| `codestral-latest`                   | ★★★★☆       | `Code`      | `Blazing`  | Mistral's coding specialist. Fast completions with strong multi-file awareness.                 |
+| `mistral-large-latest`               | ★★★★☆       | `General`   | `Fast`     | Mistral's 123B flagship. Strong reasoning with clean instruction following.                     |
+| `gemini-2.5-flash`                   | ★★★★☆       | `General`   | `Fast`     | Google's reliable flash model. Steady throughput for background coding tasks.                   |
+| `llama-3.3-70b-instruct`             | ★★★★☆       | `General`   | `Blazing`  | Meta's benchmark engine. Fast and reliable for daily coding within the weekly budget.           |
+| `o3-mini`                            | ★★★★☆       | `Reasoning` | `Moderate` | OpenAI's reasoning specialist. Strong chain-of-thought for complex debugging sessions.          |
+| `phi-4`                              | ★★★★☆       | `General`   | `Blazing`  | Microsoft's compact 14B — punches above its weight. Efficient and responsive for quick tasks.   |
+| `qwen-2.5-coder-32b-instruct`        | ★★★★☆       | `Code`      | `Blazing`  | Qwen's coding specialist. Strong code generation at sub-second speed with efficient token use.  |
+| `step-3.5-flash`                     | ★★★★☆       | `Agentic`   | `Blazing`  | Agentic powerhouse — 74.4% SWE-bench. Tiny 11B active params deliver shocking value.            |
 
 ### [GitHub Models](https://github.com/marketplace/models)
 
