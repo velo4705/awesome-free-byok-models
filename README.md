@@ -1,6 +1,6 @@
 # Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> **Last Verified: June 21, 2026** - All models tested live across 24 providers.
+> **Last Verified: June 22, 2026** - All models tested live across 25 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and BYOK agents.
 
@@ -11,38 +11,38 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 
 ## Contents
 
-- [The Best 3 API Providers](#the-best-3-api-providers)
-- [The Top 10 Recommended Free Models](#the-top-10-recommended-free-models)
+- [The Best API Providers](#the-best-api-providers)
+- [Top Free Models](#top-free-models)
 - [Provider Showcases](#provider-showcases)
 
-## The Best 3 API Providers
+## The Best API Providers
 
-If you are signing up for free accounts to get API keys, these are the **three best platforms** to look at first.
+If you are signing up for free accounts to get API keys, these are the **top platforms** to look at first.
 
 | Provider          | The Simple Vibe     | Why It Matters For You                                                                                                                                              |
 | :---------------- | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Ollama Cloud**  | Uncapped & Reliable | Time-based compute allocation with no daily request cap — the only provider where you can code all day without counting requests. Home to the #1 ranked free model. |
 | **Google Gemini** | Infinite Battery    | 1,500 free requests per day on flash-lite with a massive context window. Lighter on reasoning but unstoppable for continuous background tasks.                      |
-| **SiliconFlow**   | Highest Throughput  | 1,000 RPM base rate — highest free tier on this list. Hosts the #3 ranked model with 50,000 TPM and unlimited TPD after identity verification.                      |
+| **LLM7.IO**       | Heavy Lifter        | 128 RPM with 5M daily tokens and replenishable credits — hosts the #3 ranked model. No hard daily cap, ideal for sustained coding sessions.                         |
 
 ---
 
-## The Top 10 Recommended Free Models
+## Top Free Models
 
 The absolute best free models available right now, ranked by how well they handle **daily coding tasks** and **projects that require a working model**. This does **NOT** include vision models — all models here are text-only.
 
-| Rank   | Model                           | Host Provider       | The Simple Reason to Choose It                                                                                                                                                                                                                                                |
-| :----- | :------------------------------ | :------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1**  | `qwen3-coder-next`              | **Ollama Cloud**    | Scores over 70% on SWE-bench Verified. Native 256K context with sandbox reinforcement learning — if it writes broken code, it reads your terminal logs and fixes its own bugs. Uncapped usage via time-based compute allocation. The best overall assistant for daily coding. |
-| **2**  | `models/gemini-3.1-flash-lite`  | **Google Gemini**   | 1,500 free daily requests with a massive context window. Lighter on deep reasoning, but unstoppable for background triaging, test iterations, and log file analysis all day. The infinite workhorse.                                                                          |
-| **3**  | `deepseek-ai/DeepSeek-V4-Flash` | **SiliconFlow**     | Flagship flash variant with 79.0% SWE-bench and 1,000 RPM — the highest free rate limit on this list. Elite reasoning at blazing speed with no daily cap. The best value for unrestricted coding.                                                                             |
-| **4**  | `qwen3-235b`                    | **LLM7.IO**         | Native support for 119 programming languages at 128 RPM with a 5M daily token pool. Elite reasoning depth for cross-language refactoring.                                                                                                                                     |
-| **5**  | `qwen-coder`                    | **Pollinations AI** | Stays focused on code without rambling. You can hammer it all day with 60 RPM and unlimited requests — it answers directly every time.                                                                                                                                        |
-| **6**  | `deepseek-v4-flash-free`        | **OpenCode Zen**    | The strongest model on OpenCode Zen for coding with 30 RPM, 500 RPD, and 1M TPD — a quota profile that outlasts everything below this rank. Handles multi-turn context tracking smoothly at rapid generation speeds.                                                          |
-| **7**  | `mistral-code-agent-latest`     | **Mistral AI**      | Purpose-built for multi-step agent actions with reliable tool-calling and structured JSON outputs. Mistral's 50k TPM shared pool limits it to single-file scope in practice.                                                                                                  |
-| **8**  | `openai/gpt-oss-120b`           | **Groq API**        | Elite algorithmic reasoning, but Groq's 18k TPM cap is a trap — one multi-file prompt triggers a 429. Use it sparingly for targeted debugging of the hardest bugs.                                                                                                            |
-| **9**  | `qwen/qwen3-32b`                | **Groq API**        | Dumps clean code into your IDE at blazing speed. Same 18k TPM handcuffs as rank 8 — ideal for short snippets, unusable for sustained sessions.                                                                                                                                |
-| **10** | `DeepSeek-V3.1`                 | **SambaNova AI**    | The 671B flagship — unmatched structural planning and algorithm generation, but crippled by 20 RPD and 200k TPD caps. A single comprehensive prompt drains your entire 24-hour token allowance on your first call.                                                            |
+| Rank   | Model                          | Host Provider       | The Simple Reason to Choose It                                                                                                                                                                                                                                                |
+| :----- | :----------------------------- | :------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1**  | `qwen3-coder-next`             | **Ollama Cloud**    | Scores over 70% on SWE-bench Verified. Native 256K context with sandbox reinforcement learning — if it writes broken code, it reads your terminal logs and fixes its own bugs. Uncapped usage via time-based compute allocation. The best overall assistant for daily coding. |
+| **2**  | `models/gemini-3.1-flash-lite` | **Google Gemini**   | 1,500 free daily requests with a massive context window. Lighter on deep reasoning, but unstoppable for background triaging, test iterations, and log file analysis all day. The infinite workhorse.                                                                          |
+| **3**  | `qwen3-235b`                   | **LLM7.IO**         | Native support for 119 programming languages at 128 RPM with a 5M daily token pool. Elite reasoning depth for cross-language refactoring.                                                                                                                                     |
+| **4**  | `qwen-coder`                   | **Pollinations AI** | Stays focused on code without rambling. You can hammer it all day with 60 RPM and unlimited requests — it answers directly every time.                                                                                                                                        |
+| **5**  | `deepseek-v4-flash-free`       | **OpenCode Zen**    | The strongest model on OpenCode Zen for coding with 30 RPM, 500 RPD, and 1M TPD — a quota profile that outlasts everything below this rank. Handles multi-turn context tracking smoothly at rapid generation speeds.                                                          |
+| **6**  | `mistral-code-agent-latest`    | **Mistral AI**      | Purpose-built for multi-step agent actions with reliable tool-calling and structured JSON outputs. Mistral's 50k TPM shared pool limits it to single-file scope in practice.                                                                                                  |
+| **7**  | `openai/gpt-oss-120b`          | **Groq API**        | Elite algorithmic reasoning, but Groq's 18k TPM cap is a trap — one multi-file prompt triggers a 429. Use it sparingly for targeted debugging of the hardest bugs.                                                                                                            |
+| **8**  | `qwen/qwen3-32b`               | **Groq API**        | Dumps clean code into your IDE at blazing speed. Same 18k TPM handcuffs as rank 7 — ideal for short snippets, unusable for sustained sessions.                                                                                                                                |
+| **9**  | `DeepSeek-V3.1`                | **SambaNova AI**    | The 671B flagship — unmatched structural planning and algorithm generation, but crippled by 20 RPD and 200k TPD caps. A single comprehensive prompt drains your entire 24-hour token allowance on your first call.                                                            |
+| **10** | `codestral-latest`             | **LLM7.IO**         | Strongest Mistral-based coding model with 128 RPM and a 5M daily token pool. Fast, clean completions — solid backup when Qwen is busy.                                                                                                                                        |
 
 ---
 
@@ -63,6 +63,19 @@ AION Labs provides storytelling-optimized models through an OpenAI-compatible AP
 | `aion-labs/aion-2.5`             | ★★★★★       | `Code`     | `Fast`    | Clean, direct output with no preamble. The top pick on AION Labs.                 |
 | `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | `Fallback` | `Blazing` | Fastest AION model. Handles lightweight tasks instantly, but 8B cap limits depth. |
 
+### [Agnes AI](https://www.agnes.ai) Models
+
+Agnes AI offers flash-tier models with generous daily limits but slow inference speed. The free tier provides 1,000 requests per day at 20 RPM — enough volume for background jobs, but ~7s latency makes interactive use frustrating. No credit card required. Agnes AI currently has 2 models verified.
+
+**Free Tier Quota:** 20 RPM / 1,000 RPD
+
+**Base URL:** `https://api.agnes.ai/v1`
+
+| Free Model        | Star Rating | Best For   | Speed  | Opinion                                                                                          |
+| :---------------- | :---------- | :--------- | :----- | :----------------------------------------------------------------------------------------------- |
+| `agnes-2.0-flash` | ★★★☆☆       | `General`  | `Slow` | Latest flash variant with decent reasoning. The 7s latency is the main bottleneck for daily use. |
+| `agnes-1.5-flash` | ★★★☆☆       | `Fallback` | `Slow` | Older flash model — works but well behind current frontier models in both speed and quality.     |
+
 ### [AnyAPI AI](https://anyapi.ai) Models
 
 AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, Cohere, and more through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with access to free and basic models — no credit card required. AnyAPI currently has 10 models verified — 8 are ★★★★☆ or above.
@@ -81,6 +94,18 @@ AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Ant
 | `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | `Fallback`  | `Fast`     | Reliable NVIDIA nano. Punches above its 9B weight for quick edits.                      |
 | `openrouter/fusion`                                  | ★★★★☆       | `General`   | `Moderate` | OpenRouter's multi-model fusion — aggregates outputs for balanced responses.            |
 | `poolside/laguna-xs.2:free`                          | ★★★★☆       | `Code`      | `Blazing`  | Poolside's 33B coder. Sub-second responses for inline completions.                      |
+
+### [API Airforce](https://www.apiairforce.com) Models
+
+API Airforce is a lightweight inference provider with a single model offering — a free DeepSeek V3.2 variant. The free tier gives you 1,000 requests per day at 1 RPM, suitable for occasional queries and quick debugging. No identity verification required. API Airforce currently has 1 model verified.
+
+**Free Tier Quota:** 1 RPM / 1,000 RPD
+
+**Base URL:** `https://api.apiairforce.com/v1`
+
+| Free Model           | Star Rating | Best For   | Speed      | Opinion                                                                                                      |
+| :------------------- | :---------- | :--------- | :--------- | :----------------------------------------------------------------------------------------------------------- |
+| `deepseek-v3.2-free` | ★★★☆☆       | `Fallback` | `Moderate` | DeepSeek V3.2 at no cost — strong reasoning but 1 RPM limits it to occasional queries, not sustained coding. |
 
 ### [Auriko](https://www.auriko.ai) Models
 
@@ -299,7 +324,7 @@ Hugging Face's free Inference API gives you access to thousands of community-hos
 
 ### [Kilo Code](https://app.kilo.ai) Models
 
-Kilo Code is a coding-agent platform that proxies free models from OpenRouter, NVIDIA, Poolside, and others through a single API key. The free tier offers generous replenishable credits with no hard daily cap — a solid Swiss-army-knife provider that gives you access to a diverse model pool through one endpoint. Kilo Code currently has 12 models verified.
+Kilo Code is a coding-agent platform that proxies free models from OpenRouter, NVIDIA, Poolside, and others through a single API key. The free tier offers generous replenishable credits with no hard daily cap — a solid Swiss-army-knife provider that gives you access to a diverse model pool through one endpoint. Kilo Code currently has 11 models verified.
 
 **Free Tier Quota:** 5 RPM / 200 RPD
 
@@ -308,7 +333,7 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 | Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                           |
 | :--------------------------------------------------- | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------- |
 | `kilo-auto/small`                                    | ★★★★★       | `General`   | `Fast`     | Kilo's own routing picks the right model — the no-brainer choice.                 |
-| `nex-agi/nex-n2-pro:free`                            | ★★★★★       | `Agent`     | `Fast`     | Responds immediately without wasting tokens on filler.                            |
+| `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★★       | `General`   | `Moderate` | The 550B nemotron flagship — raw horsepower for the hardest prompts on Kilo Code. |
 | `openrouter/owl-alpha`                               | ★★★★★       | `Agent`     | `Fast`     | Zero preamble, straight answers. The safest pick on Kilo Code.                    |
 | `cohere/north-mini-code:free`                        | ★★★★☆       | `Code`      | `Blazing`  | Efficient coding model from Cohere. Lightweight enough for rapid iteration loops. |
 | `kilo-auto/free`                                     | ★★★★☆       | `Fallback`  | `Moderate` | Kilo's fallback router — always lands on something functional.                    |
@@ -467,7 +492,7 @@ OpenCode Zen is a curated set of AI models tested and optimized for coding agent
 
 ### [OpenRouter](https://openrouter.ai) Models
 
-OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 14 models verified — all at ★★★★☆ or above.
+OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 16 models verified — all at ★★★★☆ or above.
 
 **Free Tier Quota:** 20 RPM / 50 RPD
 
@@ -483,6 +508,7 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★★       | `Vision`    | `Fast`     | Does text and vision in one call without the bloat.                                       |
 | `liquid/lfm-2.5-1.2b-instruct:free`                  | ★★★★★       | `General`   | `Blazing`  | The smallest model that actually answers usefully. Insane response times.                 |
 | `cohere/north-mini-code:free`                        | ★★★★☆       | `Code`      | `Blazing`  | Efficient coding model from Cohere. Lightweight enough for rapid iteration loops.         |
+| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | `General`   | `Fast`     | Google's compact 26B Gemma. Clean output for daily coding at a generous weight tier.      |
 | `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | `Reasoning` | `Moderate` | Tiny 1.2B that thinks aloud. Good for logic, verbose for quick code edits.                |
 | `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | `General`   | `Fast`     | Efficient 30B MoE — clean responses with no preamble for lightweight daily tasks.         |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | `Reasoning` | `Moderate` | Shows its work step by step. Useful for verification, noisy for quick answers.            |
@@ -573,47 +599,6 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 | `Meta-Llama-3.3-70B-Instruct` | ★★★★☆       | `General`   | `Fast`     | The traditional benchmark engine. Interprets dense, multi-variable project constraints with high structural reliability.                        |
 | `gemma-4-31B-it`              | ★★★☆☆       | `General`   | `Blazing`  | **Preview** — Google's newest runs fast but dies with the $5 credit. Stops working once the bonus is drained.                                   |
 | `gpt-oss-120b`                | ★★★☆☆       | `Fallback`  | `Moderate` | The same 117B MoE flagship that dominates on Groq. Available on SambaNova but with noticeably higher latency (~3.5s).                           |
-
-### [SiliconFlow](https://cloud.siliconflow.com) Models
-
-SiliconFlow is a high-performance inference platform hosting 200+ open-weight models with a strong focus on Asian-market models (Qwen, GLM, Kimi, MiniMax, DeepSeek). The free tier offers permanently free access to most models with generous L0 rate limits after identity verification — 1,000 RPM is the highest base rate of any free provider on this list. No credit card required. SiliconFlow currently has 46 models verified — 26 are ★★★★☆ or above.
-
-**Free Tier Quota:** 1,000 RPM / 50 RPD (unverified) to 1,000 RPD (verified) / 50,000 TPM / Unlimited TPD
-
-**Base URL:** `https://api.siliconflow.com/v1`
-
-| Free Model                             | Star Rating | Best For    | Speed      | Opinion                                                                                                              |
-| :------------------------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------------------------------- |
-| `deepseek-ai/DeepSeek-V4-Flash`        | ★★★★★       | `Reasoning` | `Blazing`  | Latest DeepSeek flash variant. Elite reasoning at blazing speed — 79.0% SWE-bench, 91.6% LiveCodeBench.              |
-| `deepseek-ai/DeepSeek-V4-Pro`          | ★★★★★       | `Reasoning` | `Fast`     | Pro variant of V4 — 80.6% SWE-bench, 93.5% LiveCodeBench. Frontier-class reasoning with extra headroom over Flash.   |
-| `MiniMaxAI/MiniMax-M3`                 | ★★★★★       | `General`   | `Blazing`  | Latest MiniMax flagship — 80.5% SWE-bench Verified. Genuine frontier-class coding with blazing response times.       |
-| `nex-agi/Nex-N2-Pro`                   | ★★★★★       | `General`   | `Fast`     | Post-trained on Qwen3.5-397B — 80.8% SWE-bench Verified. Elite agentic coding that keeps pace with GPT-5.5.          |
-| `Qwen/Qwen3.5-397B-A17B`               | ★★★★★       | `General`   | `Moderate` | 397B flagship — 76.4% SWE-bench, 83.6% LiveCodeBench. Immense capacity for the hardest prompts.                      |
-| `ByteDance-Seed/Seed-OSS-36B-Instruct` | ★★★★☆       | `General`   | `Fast`     | ByteDance's open-weight 36B — clean instruction following with solid coding capability.                              |
-| `deepseek-ai/DeepSeek-R1`              | ★★★★☆       | `Reasoning` | `Moderate` | Reasoning specialist with visible chain-of-thought — excellent for math/logic but 49.2% SWE-bench limits coding.     |
-| `deepseek-ai/DeepSeek-V3.1`            | ★★★★☆       | `Reasoning` | `Fast`     | Proven reasoning workhorse — 68.4% SWE-bench. Deep multi-file analysis without losing context.                       |
-| `deepseek-ai/DeepSeek-V3.1-Terminus`   | ★★★★☆       | `Reasoning` | `Fast`     | Specialized V3.1 variant — refined reasoning output for complex multi-step analysis.                                 |
-| `deepseek-ai/DeepSeek-V3.2`            | ★★★★☆       | `Reasoning` | `Fast`     | Latest V3 release — 73.1% SWE-bench. Refined reasoning with cleaner output than prior versions.                      |
-| `deepseek-ai/DeepSeek-V3.2-Exp`        | ★★★★☆       | `Reasoning` | `Fast`     | Experimental V3.2 — 67.8% SWE-bench. Nearly matches V3.1 despite the experimental label.                             |
-| `MiniMaxAI/MiniMax-M2.5`               | ★★★★☆       | `General`   | `Fast`     | Mid-range MiniMax MoE — strong reasoning between the M2 and M3 generations.                                          |
-| `moonshotai/Kimi-K2.6`                 | ★★★★☆       | `Reasoning` | `Fast`     | 1T multimodal MoE for long-horizon coding and agentic tool use.                                                      |
-| `moonshotai/Kimi-K2.7-Code`            | ★★★★☆       | `Code`      | `Fast`     | Coding-specialized 1T MoE — no independent SWE-bench scores yet. Good but not at DeepSeek/Qwen frontier level.       |
-| `openai/gpt-oss-120b`                  | ★★★★☆       | `General`   | `Moderate` | The same 120B reliable flagship. Clean output across every coding task — 5.47s latency with SWE-bench 62.4%.         |
-| `openai/gpt-oss-20b`                   | ★★★★☆       | `General`   | `Blazing`  | Same reliable DNA as the 120B in a lighter package. Lightning-fast responses.                                        |
-| `Qwen/Qwen3-30B-A3B-Instruct-2507`     | ★★★★☆       | `General`   | `Fast`     | Updated Qwen 3 30B MoE — refined 2507 checkpoint with cleaner instruction following.                                 |
-| `Qwen/Qwen3-32B`                       | ★★★★☆       | `General`   | `Fast`     | Solid mid-size Qwen. Handles daily coding without drama.                                                             |
-| `Qwen/Qwen3-Coder-30B-A3B-Instruct`    | ★★★★☆       | `Code`      | `Fast`     | Compact 30B MoE coder with 3B active params — ~70% SWE-bench. Efficient for everyday coding.                         |
-| `Qwen/Qwen3.5-122B-A10B`               | ★★★★☆       | `Code`      | `Fast`     | 122B MoE with Qwen's elite coding quality. Strong reasoning at efficient active param count.                         |
-| `Qwen/Qwen3.5-35B-A3B`                 | ★★★★☆       | `Code`      | `Fast`     | Efficient 35B MoE — 70.0% SWE-bench. Responsive and accurate for everyday coding loops.                              |
-| `Qwen/Qwen3.6-35B-A3B`                 | ★★★★☆       | `Code`      | `Blazing`  | Latest Qwen 3.6 — 73.4% SWE-bench. Efficient MoE with strong reasoning density per token.                            |
-| `stepfun-ai/Step-3.5-Flash`            | ★★★★☆       | `Agentic`   | `Blazing`  | Agentic powerhouse — 74.4% SWE-bench, 86.4% LiveCodeBench. Tiny 11B active params deliver shocking strength.         |
-| `zai-org/GLM-5`                        | ★★★★☆       | `General`   | `Fast`     | GLM 5 general flagship — clean output with solid reasoning for everyday coding.                                      |
-| `zai-org/GLM-5.1`                      | ★★★★☆       | `Code`      | `Fast`     | GLM's strongest coding model. Vendor claims 81.3% SWE-bench. Clean structured output for agentic tool-use pipelines. |
-| `zai-org/GLM-5.2`                      | ★★★★☆       | `General`   | `Fast`     | Latest GLM release — refined generation over 5.1 with consistent, clean responses.                                   |
-| `deepseek-ai/DeepSeek-V3`              | ★★★☆☆       | `Fallback`  | `Fast`     | Original V3 — 42.0% SWE-bench. Still capable but surpassed by V3.1 and V3.2.                                         |
-| `google/gemma-4-31B-it`                | ★★★☆☆       | `General`   | `Fast`     | Google's 31B dense — only 52.0% SWE-bench. Decent generalist but well behind other models here for coding.           |
-| `Qwen/Qwen2.5-72B-Instruct`            | ★★★☆☆       | `Fallback`  | `Fast`     | Proven workhorse from 2024 — now outdated for coding tasks. Fallback choice only.                                    |
-| `Qwen/Qwen3.6-27B`                     | ★★★☆☆       | `General`   | `Blazing`  | Fast 27B Qwen 3.6 — good for quick edits, shallow for complex architecture.                                          |
 
 ### [Z.AI (Zhipu AI)](https://z.ai) Models
 
