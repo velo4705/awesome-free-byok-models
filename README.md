@@ -73,8 +73,8 @@ Agnes AI offers flash-tier models with generous daily limits but slow inference 
 
 | Free Model        | Star Rating | Best For   | Speed  | Opinion                                                                                          |
 | :---------------- | :---------- | :--------- | :----- | :----------------------------------------------------------------------------------------------- |
-| `agnes-2.0-flash` | ★★★☆☆       | `General`  | `Slow` | Latest flash variant with decent reasoning. The 7s latency is the main bottleneck for daily use. |
 | `agnes-1.5-flash` | ★★★☆☆       | `Fallback` | `Slow` | Older flash model — works but well behind current frontier models in both speed and quality.     |
+| `agnes-2.0-flash` | ★★★☆☆       | `General`  | `Slow` | Latest flash variant with decent reasoning. The 7s latency is the main bottleneck for daily use. |
 
 ### [AnyAPI AI](https://anyapi.ai) Models
 
@@ -86,8 +86,8 @@ AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Ant
 
 | Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                                 |
 | :--------------------------------------------------- | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------------- |
-| `poolside/laguna-m.1:free`                           | ★★★★★       | `Code`      | `Fast`     | Same elite 225B Poolside coding flagship. Clean output with zero preamble noise.        |
 | `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★★       | `Vision`    | `Fast`     | Handles text and vision in one call. Strong general coding with multimodal flexibility. |
+| `poolside/laguna-m.1:free`                           | ★★★★★       | `Code`      | `Fast`     | Same elite 225B Poolside coding flagship. Clean output with zero preamble noise.        |
 | `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | `General`   | `Fast`     | Google's compact 26B Gemma. Clean, structured output for daily coding.                  |
 | `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | `General`   | `Fast`     | Efficient 30B MoE — clean responses with no preamble.                                   |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | `Reasoning` | `Moderate` | Shows step-by-step reasoning. Useful for verification, verbose for quick answers.       |
@@ -117,51 +117,51 @@ Auriko is a unified API gateway providing access to 100+ models from top provide
 
 | Free Model                           | Star Rating | Best For    | Speed      | Opinion                                                                                                     |
 | :----------------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------------------------- |
-| `o3-2025-04-16`                      | ★★★★★       | `Reasoning` | `Moderate` | Top-tier reasoning — handles multi-file architecture without preamble. The strongest coding pick on Auriko. |
-| `claude-opus-4-8`                    | ★★★★★       | `Code`      | `Blazing`  | Latest Claude Opus. Deep reasoning and code generation with zero preamble.                                  |
-| `claude-opus-4-7`                    | ★★★★★       | `Code`      | `Blazing`  | Fastest Claude Opus variant. Deep reasoning and code generation with zero preamble.                         |
-| `claude-opus-4-5-20251101`           | ★★★★★       | `Code`      | `Blazing`  | Polished mid-cycle Opus — strong reasoning with clean, structured code output.                              |
 | `claude-opus-4-1-20250805`           | ★★★★★       | `Code`      | `Blazing`  | Earlier Opus 4.1 — established baseline for the Opus 4 series. Still elite for daily coding.                |
+| `claude-opus-4-5-20251101`           | ★★★★★       | `Code`      | `Blazing`  | Polished mid-cycle Opus — strong reasoning with clean, structured code output.                              |
 | `claude-opus-4-6`                    | ★★★★★       | `Code`      | `Blazing`  | Slightly older Opus but still elite — handles complex architecture with zero preamble.                      |
-| `deepseek-v3.2`                      | ★★★★★       | `Reasoning` | `Fast`     | Elite reasoning workhorse trusted across every provider. Clean output for multi-file analysis.              |
-| `deepseek-v3.2-exp`                  | ★★★★★       | `Reasoning` | `Fast`     | Experimental variant of V3.2 — bleeding-edge reasoning with deeper chain-of-thought.                        |
-| `deepseek-v3.1`                      | ★★★★★       | `Reasoning` | `Fast`     | The best provider for V3.1 — 5,000 RPD and 5M TPD with zero quota stress. Elite reasoning at blazing speed. |
-| `deepseek-v3.1-terminus`             | ★★★★★       | `Reasoning` | `Fast`     | Specialized V3.1 variant — refined reasoning output for complex multi-step analysis.                        |
-| `deepseek-v4-pro`                    | ★★★★★       | `Reasoning` | `Fast`     | Pro variant of DeepSeek V4 — extra headroom for the hardest multi-file problems.                            |
-| `qwen-3-coder-480b-a35b-instruct`    | ★★★★★       | `Code`      | `Moderate` | Purpose-built 480B code model — tackles the hardest debugging sessions.                                     |
-| `qwen-3-coder-30b-a3b-instruct`      | ★★★★★       | `Code`      | `Fast`     | Focused 30B coder from Qwen — efficient and responsive for everyday coding.                                 |
-| `qwen-3-235b-a22b-instruct-2507-fp8` | ★★★★★       | `General`   | `Fast`     | 235B at FP8 precision. Elite reasoning without the full-weight latency.                                     |
-| `qwen-2.5-72b-instruct`              | ★★★★★       | `General`   | `Fast`     | Proven workhorse trusted across every setup. Reliable and consistent.                                       |
-| `qwen-3.5-397b-a17b`                 | ★★★★★       | `Reasoning` | `Moderate` | 397B MoE (17B active) — immense capacity for the most complex multi-file prompts.                           |
-| `qwen-3.7-max`                       | ★★★★★       | `General`   | `Fast`     | Latest Qwen max generation — elite general intelligence with clean, reliable output.                        |
-| `gpt-5-2025-08-07`                   | ★★★★★       | `General`   | `Fast`     | GPT-5 flagship — handles every coding task with zero preamble. Elite intelligence without friction.         |
-| `hermes-3-llama-3.1-405b`            | ★★★★★       | `Reasoning` | `Moderate` | 405B of raw Llama capability. Feels unfair for a free tier.                                                 |
+| `claude-opus-4-7`                    | ★★★★★       | `Code`      | `Blazing`  | Fastest Claude Opus variant. Deep reasoning and code generation with zero preamble.                         |
+| `claude-opus-4-8`                    | ★★★★★       | `Code`      | `Blazing`  | Latest Claude Opus. Deep reasoning and code generation with zero preamble.                                  |
 | `deepseek-r1-0528`                   | ★★★★★       | `Reasoning` | `Moderate` | Elite reasoning model — walks through complex problems step by step. Clean chain-of-thought output.         |
+| `deepseek-v3.1-terminus`             | ★★★★★       | `Reasoning` | `Fast`     | Specialized V3.1 variant — refined reasoning output for complex multi-step analysis.                        |
+| `deepseek-v3.1`                      | ★★★★★       | `Reasoning` | `Fast`     | The best provider for V3.1 — 5,000 RPD and 5M TPD with zero quota stress. Elite reasoning at blazing speed. |
+| `deepseek-v3.2-exp`                  | ★★★★★       | `Reasoning` | `Fast`     | Experimental variant of V3.2 — bleeding-edge reasoning with deeper chain-of-thought.                        |
+| `deepseek-v3.2`                      | ★★★★★       | `Reasoning` | `Fast`     | Elite reasoning workhorse trusted across every provider. Clean output for multi-file analysis.              |
+| `deepseek-v4-pro`                    | ★★★★★       | `Reasoning` | `Fast`     | Pro variant of DeepSeek V4 — extra headroom for the hardest multi-file problems.                            |
+| `glm-5.1`                            | ★★★★★       | `Code`      | `Fast`     | GLM's strongest coding model. Clean structured output for multi-file agentic work.                          |
+| `gpt-5-2025-08-07`                   | ★★★★★       | `General`   | `Fast`     | GPT-5 flagship — handles every coding task with zero preamble. Elite intelligence without friction.         |
 | `gpt-5.5-2026-04-23`                 | ★★★★★       | `General`   | `Fast`     | Latest GPT generation. Best general intelligence on Auriko with zero preamble.                              |
-| `gpt-oss-120b`                       | ★★★★★       | `General`   | `Blazing`  | Reliable 120B general model — clean output across every coding task at blazing speed.                       |
 | `gpt-oss-120b-turbo`                 | ★★★★★       | `General`   | `Blazing`  | Turbo variant of OSS 120B — extra throughput for rapid-fire agentic loops.                                  |
+| `gpt-oss-120b`                       | ★★★★★       | `General`   | `Blazing`  | Reliable 120B general model — clean output across every coding task at blazing speed.                       |
 | `grok-4.20-0309-reasoning`           | ★★★★★       | `Reasoning` | `Fast`     | xAI's reasoning variant — strong chain-of-thought for complex multi-step debugging.                         |
+| `hermes-3-llama-3.1-405b`            | ★★★★★       | `Reasoning` | `Moderate` | 405B of raw Llama capability. Feels unfair for a free tier.                                                 |
 | `minimax-m3`                         | ★★★★★       | `General`   | `Blazing`  | 80.5% SWE-bench Verified with 1M context. Frontier-class coding at blazing speed.                           |
 | `nex-n2-pro`                         | ★★★★★       | `Code`      | `Fast`     | Strong coder with deep reasoning. Proven across daily agentic workflows.                                    |
-| `glm-5.1`                            | ★★★★★       | `Code`      | `Fast`     | GLM's strongest coding model. Clean structured output for multi-file agentic work.                          |
-| `deepseek-v4-flash`                  | ★★★★☆       | `Reasoning` | `Fast`     | Latest DeepSeek flash variant — strong reasoning depth with clean inference.                                |
-| `o4-mini-2025-04-16`                 | ★★★★☆       | `Reasoning` | `Fast`     | Latest reasoning model from OpenAI — compact but capable. Handles logic-heavy tasks cleanly.                |
-| `gpt-4.1-2025-04-14`                 | ★★★★☆       | `Code`      | `Blazing`  | Blazing fast with strong general coding capability. A solid daily driver.                                   |
-| `gpt-5.2-2025-12-11`                 | ★★★★☆       | `General`   | `Fast`     | Latest GPT-5 point release. Fast and reliable across every coding task.                                     |
-| `gpt-5-chat-latest`                  | ★★★★☆       | `Chat`      | `Fast`     | Chat-optimized GPT-5 variant. Handles conversational coding naturally and cleanly.                          |
-| `gpt-5.4-2026-03-05`                 | ★★★★☆       | `General`   | `Fast`     | Latest GPT generation. Strong general intelligence with clean output.                                       |
+| `o3-2025-04-16`                      | ★★★★★       | `Reasoning` | `Moderate` | Top-tier reasoning — handles multi-file architecture without preamble. The strongest coding pick on Auriko. |
+| `qwen-2.5-72b-instruct`              | ★★★★★       | `General`   | `Fast`     | Proven workhorse trusted across every setup. Reliable and consistent.                                       |
+| `qwen-3-235b-a22b-instruct-2507-fp8` | ★★★★★       | `General`   | `Fast`     | 235B at FP8 precision. Elite reasoning without the full-weight latency.                                     |
+| `qwen-3-coder-30b-a3b-instruct`      | ★★★★★       | `Code`      | `Fast`     | Focused 30B coder from Qwen — efficient and responsive for everyday coding.                                 |
+| `qwen-3-coder-480b-a35b-instruct`    | ★★★★★       | `Code`      | `Moderate` | Purpose-built 480B code model — tackles the hardest debugging sessions.                                     |
+| `qwen-3.5-397b-a17b`                 | ★★★★★       | `Reasoning` | `Moderate` | 397B MoE (17B active) — immense capacity for the most complex multi-file prompts.                           |
+| `qwen-3.7-max`                       | ★★★★★       | `General`   | `Fast`     | Latest Qwen max generation — elite general intelligence with clean, reliable output.                        |
+| `claude-haiku-4-5-20251001`          | ★★★★☆       | `General`   | `Blazing`  | Fast and focused. Handles daily coding without fanfare.                                                     |
 | `claude-sonnet-4-6`                  | ★★★★☆       | `Code`      | `Fast`     | Latest Sonnet 4.6 — handles creative coding with Anthropic's clear response style.                          |
+| `deepseek-v4-flash`                  | ★★★★☆       | `Reasoning` | `Fast`     | Latest DeepSeek flash variant — strong reasoning depth with clean inference.                                |
+| `gemini-3.1-flash-lite`              | ★★★★☆       | `General`   | `Blazing`  | Google's fastest flash variant. Uncapped daily usage through Auriko's quota pool.                           |
+| `gemma-4-31b-it-turbo`               | ★★★★☆       | `General`   | `Fast`     | Turbocharged Gemma 4. Fast responses with clean, structured output.                                         |
+| `gpt-4.1-2025-04-14`                 | ★★★★☆       | `Code`      | `Blazing`  | Blazing fast with strong general coding capability. A solid daily driver.                                   |
+| `gpt-4o-mini-2024-07-18`             | ★★★★☆       | `Code`      | `Fast`     | OpenAI's compact classic. Reliable daily coding with broad language support.                                |
+| `gpt-5-chat-latest`                  | ★★★★☆       | `Chat`      | `Fast`     | Chat-optimized GPT-5 variant. Handles conversational coding naturally and cleanly.                          |
+| `gpt-5.2-2025-12-11`                 | ★★★★☆       | `General`   | `Fast`     | Latest GPT-5 point release. Fast and reliable across every coding task.                                     |
+| `gpt-5.4-2026-03-05`                 | ★★★★☆       | `General`   | `Fast`     | Latest GPT generation. Strong general intelligence with clean output.                                       |
 | `gpt-5.4-mini-2026-03-17`            | ★★★★☆       | `General`   | `Fast`     | Compact GPT-5.4 — handles lightweight tasks efficiently.                                                    |
 | `gpt-5.4-nano-2026-03-17`            | ★★★★☆       | `General`   | `Blazing`  | The nano tier — syntax checks and quick edits return almost instantly.                                      |
 | `grok-4.20-0309-non-reasoning`       | ★★★★☆       | `Agent`     | `Blazing`  | xAI's fastest — clean output for rapid-fire coding loops where speed is everything.                         |
-| `phi-4`                              | ★★★★☆       | `Code`      | `Blazing`  | Microsoft's compact powerhouse. Surprising coding depth for its size.                                       |
-| `gemma-4-31b-it-turbo`               | ★★★★☆       | `General`   | `Fast`     | Turbocharged Gemma 4. Fast responses with clean, structured output.                                         |
-| `seed-2.0-code`                      | ★★★★☆       | `Code`      | `Fast`     | Coding-specialized from Seed. Handles multi-file refactors without rambling.                                |
-| `gpt-4o-mini-2024-07-18`             | ★★★★☆       | `Code`      | `Fast`     | OpenAI's compact classic. Reliable daily coding with broad language support.                                |
-| `claude-haiku-4-5-20251001`          | ★★★★☆       | `General`   | `Blazing`  | Fast and focused. Handles daily coding without fanfare.                                                     |
 | `llama-3.3-70b-instruct-fp8`         | ★★★★☆       | `General`   | `Fast`     | Strong instruction following with edge-friendly speed. Clean and dependable.                                |
+| `o4-mini-2025-04-16`                 | ★★★★☆       | `Reasoning` | `Fast`     | Latest reasoning model from OpenAI — compact but capable. Handles logic-heavy tasks cleanly.                |
+| `phi-4`                              | ★★★★☆       | `Code`      | `Blazing`  | Microsoft's compact powerhouse. Surprising coding depth for its size.                                       |
 | `qwen-3.6-35b-a3b`                   | ★★★★☆       | `Code`      | `Blazing`  | Latest Qwen 3.6 — efficient MoE architecture with strong reasoning density per token.                       |
-| `gemini-3.1-flash-lite`              | ★★★★☆       | `General`   | `Blazing`  | Google's fastest flash variant. Uncapped daily usage through Auriko's quota pool.                           |
+| `seed-2.0-code`                      | ★★★★☆       | `Code`      | `Fast`     | Coding-specialized from Seed. Handles multi-file refactors without rambling.                                |
 
 ### [Cerebras AI](https://cloud.cerebras.ai) Models
 
@@ -189,27 +189,27 @@ Cloudflare Workers AI runs models on Cloudflare's global edge network using serv
 | Free Model                                     | Star Rating | Best For    | Speed      | Opinion                                                                                                         |
 | :--------------------------------------------- | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------------------------------------- |
 | `@cf/qwen/qwen2.5-coder-32b-instruct`          | ★★★★★       | `Code`      | `Fast`     | The only dedicated code model on Cloudflare's edge network — responds instantly with clean, no-preamble output. |
-| `@cf/meta/llama-3.3-70b-instruct-fp8-fast`     | ★★★★☆       | `Reasoning` | `Fast`     | Strong instruction-following at edge speed with good depth.                                                     |
-| `@cf/openai/gpt-oss-120b`                      | ★★★★☆       | `Code`      | `Fast`     | The 120B headroom shows on hard problems — smaller models tap out, this keeps digging.                          |
-| `@cf/qwen/qwen3-30b-a3b-fp8`                   | ★★★★☆       | `General`   | `Fast`     | Feels like a full-size model despite the tiny active footprint.                                                 |
+| `@cf/aisingapore/gemma-sea-lion-v4-27b-it`     | ★★★★☆       | `General`   | `Fast`     | Punchy multilingual model with surprising competence for its size.                                              |
 | `@cf/google/gemma-4-26b-a4b-it`                | ★★★★☆       | `General`   | `Fast`     | Clean, thoughtful responses that don't waste your time.                                                         |
-| `@cf/zai-org/glm-4.7-flash`                    | ★★★★☆       | `Agent`     | `Fast`     | Snappy under heavy use — coding calls return before you notice the lag.                                         |
-| `@cf/zai-org/glm-5.2`                          | ★★★★☆       | `General`   | `Fast`     | Latest GLM release — refined generation over 5.1 with consistent, clean edge responses.                         |
+| `@cf/meta/llama-3.2-1b-instruct`               | ★★★★☆       | `Fallback`  | `Blazing`  | The tiniest model that still passes verification — use it when every resource counts.                           |
+| `@cf/meta/llama-3.2-3b-instruct`               | ★★★★☆       | `Fallback`  | `Blazing`  | Syntax checks finish before you finish typing — the instant-sanity-check model.                                 |
+| `@cf/meta/llama-3.3-70b-instruct-fp8-fast`     | ★★★★☆       | `Reasoning` | `Fast`     | Strong instruction-following at edge speed with good depth.                                                     |
 | `@cf/meta/llama-4-scout-17b-16e-instruct`      | ★★★★☆       | `General`   | `Fast`     | Direct answers without the overhead of a full-parameter model.                                                  |
 | `@cf/moonshotai/kimi-k2.6`                     | ★★★★☆       | `Reasoning` | `Fast`     | 1T multimodal MoE for long-horizon coding and agentic tool use with edge speed.                                 |
 | `@cf/moonshotai/kimi-k2.7-code`                | ★★★★☆       | `Reasoning` | `Moderate` | The one that actually reads your whole codebase for project-wide refactors.                                     |
 | `@cf/nvidia/nemotron-3-120b-a12b`              | ★★★★☆       | `Reasoning` | `Moderate` | Keeps reasoning until it hits something useful — depth over speed.                                              |
-| `@cf/aisingapore/gemma-sea-lion-v4-27b-it`     | ★★★★☆       | `General`   | `Fast`     | Punchy multilingual model with surprising competence for its size.                                              |
-| `@cf/meta/llama-3.2-3b-instruct`               | ★★★★☆       | `Fallback`  | `Blazing`  | Syntax checks finish before you finish typing — the instant-sanity-check model.                                 |
+| `@cf/openai/gpt-oss-120b`                      | ★★★★☆       | `Code`      | `Fast`     | The 120B headroom shows on hard problems — smaller models tap out, this keeps digging.                          |
 | `@cf/openai/gpt-oss-20b`                       | ★★★★☆       | `General`   | `Fast`     | The guilt-free daily driver that handles most tasks without complaint.                                          |
-| `@cf/meta/llama-3.2-1b-instruct`               | ★★★★☆       | `Fallback`  | `Blazing`  | The tiniest model that still passes verification — use it when every resource counts.                           |
-| `@cf/mistralai/mistral-small-3.1-24b-instruct` | ★★★☆☆       | `General`   | `Slow`     | Feels sluggish for tight coding loops — fine for conversation, frustrating for quick edits.                     |
-| `@cf/meta/llama-3.1-8b-instruct-fp8`           | ★★★☆☆       | `General`   | `Moderate` | Gets the job done but wraps answers in unnecessary preamble.                                                    |
-| `@cf/qwen/qwq-32b`                             | ★★★☆☆       | `Reasoning` | `Moderate` | Good at logic puzzles, but chain-of-thought preamble makes you wait.                                            |
+| `@cf/qwen/qwen3-30b-a3b-fp8`                   | ★★★★☆       | `General`   | `Fast`     | Feels like a full-size model despite the tiny active footprint.                                                 |
+| `@cf/zai-org/glm-4.7-flash`                    | ★★★★☆       | `Agent`     | `Fast`     | Snappy under heavy use — coding calls return before you notice the lag.                                         |
+| `@cf/zai-org/glm-5.2`                          | ★★★★☆       | `General`   | `Fast`     | Latest GLM release — refined generation over 5.1 with consistent, clean edge responses.                         |
 | `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b` | ★★★☆☆       | `Reasoning` | `Slow`     | Useful for debugging with visible reasoning, annoying when speed matters.                                       |
-| `@cf/meta/llama-3.2-11b-vision-instruct`       | ★★★☆☆       | `Vision`    | `Moderate` | Multimodal but verbose — overkill for text-only coding.                                                         |
-| `@cf/ibm-granite/granite-4.0-h-micro`          | ★★★☆☆       | `General`   | `Slow`     | You'll trim its output constantly — only worth it if you need IBM Granite.                                      |
 | `@cf/google/gemma-7b-it-lora`                  | ★★★☆☆       | `General`   | `Moderate` | Feels dated next to Gemma v4 — more verbose, less polished.                                                     |
+| `@cf/ibm-granite/granite-4.0-h-micro`          | ★★★☆☆       | `General`   | `Slow`     | You'll trim its output constantly — only worth it if you need IBM Granite.                                      |
+| `@cf/meta/llama-3.1-8b-instruct-fp8`           | ★★★☆☆       | `General`   | `Moderate` | Gets the job done but wraps answers in unnecessary preamble.                                                    |
+| `@cf/meta/llama-3.2-11b-vision-instruct`       | ★★★☆☆       | `Vision`    | `Moderate` | Multimodal but verbose — overkill for text-only coding.                                                         |
+| `@cf/mistralai/mistral-small-3.1-24b-instruct` | ★★★☆☆       | `General`   | `Slow`     | Feels sluggish for tight coding loops — fine for conversation, frustrating for quick edits.                     |
+| `@cf/qwen/qwq-32b`                             | ★★★☆☆       | `Reasoning` | `Moderate` | Good at logic puzzles, but chain-of-thought preamble makes you wait.                                            |
 
 ### [Cohere AI](https://dashboard.cohere.com) Models
 
@@ -222,15 +222,15 @@ Cohere focuses on enterprise-grade NLP with their Command model family — built
 | Free Model                    | Star Rating | Best For    | Speed      | Opinion                                                                                                      |
 | :---------------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------------------- |
 | `command-a-03-2025`           | ★★★★★       | `Agent`     | `Blazing`  | Cohere's flagship. Blazing fast with clean, direct command execution — ideal for agentic tool-use pipelines. |
-| `command-r-plus-08-2024`      | ★★★★☆       | `Reasoning` | `Moderate` | High-capability reasoning engine. Reliable for complex multi-step logic and architectural analysis.          |
-| `command-r-08-2024`           | ★★★★☆       | `General`   | `Fast`     | Fast general-purpose workhorse. Handles scripting, terminal commands, and single-file edits.                 |
 | `c4ai-aya-vision-32b`         | ★★★★☆       | `Vision`    | `Moderate` | 32B vision-language model. Handles both code and visual context for UI-to-code workflows.                    |
 | `command-a-vision-07-2025`    | ★★★★☆       | `Vision`    | `Fast`     | Vision variant of Command A. Process screenshots and diagrams alongside code.                                |
+| `command-r-08-2024`           | ★★★★☆       | `General`   | `Fast`     | Fast general-purpose workhorse. Handles scripting, terminal commands, and single-file edits.                 |
+| `command-r-plus-08-2024`      | ★★★★☆       | `Reasoning` | `Moderate` | High-capability reasoning engine. Reliable for complex multi-step logic and architectural analysis.          |
 | `command-r7b-12-2024`         | ★★★★☆       | `Code`      | `Fast`     | Compact 7B for rapid-fire completions with minimal overhead.                                                 |
 | `command-r7b-arabic-02-2025`  | ★★★★☆       | `General`   | `Fast`     | Arabic-optimized 7B variant. Clean responses for Arabic technical documentation.                             |
-| `command-a-translate-08-2025` | ★★★☆☆       | `Fallback`  | `Fast`     | Translation-optimized model. Works for code but limited general coding utility.                              |
-| `command-a-reasoning-08-2025` | ★★★☆☆       | `Reasoning` | `Moderate` | Reasoning-focused variant. Minimal outputs suit internal chain-of-thought.                                   |
 | `c4ai-aya-expanse-32b`        | ★★★☆☆       | `General`   | `Moderate` | 32B multilingual model that over-answers — adds noise in prompt chains.                                      |
+| `command-a-reasoning-08-2025` | ★★★☆☆       | `Reasoning` | `Moderate` | Reasoning-focused variant. Minimal outputs suit internal chain-of-thought.                                   |
+| `command-a-translate-08-2025` | ★★★☆☆       | `Fallback`  | `Fast`     | Translation-optimized model. Works for code but limited general coding utility.                              |
 
 ### [ElectronHub](https://electronhub.ai) Models
 
@@ -245,14 +245,14 @@ ElectronHub is a credit-based inference hub offering an enormous catalog of mode
 | `gpt-oss-120b`                       | ★★★★★       | `General`   | `Blazing`  | The same reliable 120B flagship. Sub-second responses stretch your $0.25 weekly credit further. |
 | `mistral-large-3-675b-instruct-2512` | ★★★★★       | `General`   | `Blazing`  | Mistral's 675B monster — elite reasoning at sub-second speed. Best model on ElectronHub.        |
 | `nemotron-3-ultra-550b-a55b`         | ★★★★★       | `General`   | `Moderate` | NVIDIA's 550B flagship. Raw horsepower for the hardest prompts when credits allow.              |
+| `codestral-latest`                   | ★★★★☆       | `Code`      | `Blazing`  | Mistral's coding specialist. Fast completions with strong multi-file awareness.                 |
+| `gemini-2.5-flash`                   | ★★★★☆       | `General`   | `Fast`     | Google's reliable flash model. Steady throughput for background coding tasks.                   |
 | `gpt-4.1`                            | ★★★★☆       | `General`   | `Fast`     | Reliable workhorse — handles daily coding with consistent, efficient output.                    |
 | `gpt-4o`                             | ★★★★☆       | `General`   | `Fast`     | Proven workhorse. Efficient token usage helps stretch your weekly credit budget.                |
-| `gpt-oss-20b`                        | ★★★★☆       | `Code`      | `Blazing`  | Same reliable DNA as the 120B, lighter and faster. Best value for the weekly credit cap.        |
 | `gpt-5.1-codex-mini`                 | ★★★★☆       | `Code`      | `Fast`     | Purpose-built codex variant. Clean code generation with efficient token consumption.            |
-| `codestral-latest`                   | ★★★★☆       | `Code`      | `Blazing`  | Mistral's coding specialist. Fast completions with strong multi-file awareness.                 |
-| `mistral-large-latest`               | ★★★★☆       | `General`   | `Fast`     | Mistral's 123B flagship. Strong reasoning with clean instruction following.                     |
-| `gemini-2.5-flash`                   | ★★★★☆       | `General`   | `Fast`     | Google's reliable flash model. Steady throughput for background coding tasks.                   |
+| `gpt-oss-20b`                        | ★★★★☆       | `Code`      | `Blazing`  | Same reliable DNA as the 120B, lighter and faster. Best value for the weekly credit cap.        |
 | `llama-3.3-70b-instruct`             | ★★★★☆       | `General`   | `Blazing`  | Meta's benchmark engine. Fast and reliable for daily coding within the weekly budget.           |
+| `mistral-large-latest`               | ★★★★☆       | `General`   | `Fast`     | Mistral's 123B flagship. Strong reasoning with clean instruction following.                     |
 | `o3-mini`                            | ★★★★☆       | `Reasoning` | `Moderate` | OpenAI's reasoning specialist. Strong chain-of-thought for complex debugging sessions.          |
 | `phi-4`                              | ★★★★☆       | `General`   | `Blazing`  | Microsoft's compact 14B — punches above its weight. Efficient and responsive for quick tasks.   |
 | `qwen-2.5-coder-32b-instruct`        | ★★★★☆       | `Code`      | `Blazing`  | Qwen's coding specialist. Strong code generation at sub-second speed with efficient token use.  |
@@ -269,8 +269,8 @@ GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and
 | Free Model                     | Star Rating | Best For    | Speed      | Opinion                                                                                                                          |
 | :----------------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | `Meta-Llama-3.1-405B-Instruct` | ★★★★★       | `Reasoning` | `Moderate` | The best model on GitHub Models. 405B of deep reasoning at zero cost — add system prompt "no markdown" for clean agentic output. |
-| `gpt-4o`                       | ★★★★☆       | `General`   | `Moderate` | Full OpenAI flagship. Adds markdown by default, but a simple system prompt fixes it — strong all-around for chat and coding.     |
 | `gpt-4o-mini`                  | ★★★★☆       | `General`   | `Fast`     | Compact, fast, and clean. Reliable fallback when your bigger model quota runs low for the day.                                   |
+| `gpt-4o`                       | ★★★★☆       | `General`   | `Moderate` | Full OpenAI flagship. Adds markdown by default, but a simple system prompt fixes it — strong all-around for chat and coding.     |
 
 ### [Google Gemini](https://aistudio.google.com) Models
 
@@ -285,10 +285,10 @@ Gemini offers large context windows on paper, but the free tier's **rate limits 
 | `models/gemini-3.1-flash-lite`                           | ★★★★★       | `General`   | `Blazing` | Lightning-fast, no-fuss outputs. Handles daily coding comfortably with ~500 RPD.                    |
 | `models/gemma-4-31b-it`                                  | ★★★★☆       | `General`   | `Fast`    | Highly responsive and incredibly smart. Occasionally overthinks simple instructions.                |
 | `models/gemini-2.5-flash-lite`                           | ★★★☆☆       | `Fallback`  | `Blazing` | Fast bare-bones lite variant. Useful as a lightweight backup for simple tasks.                      |
-| `models/gemini-3.5-flash` / `models/gemini-flash-latest` | ★★★☆☆       | `Code`      | `Fast`    | Improved reasoning over prior flash variants. ~20 RPD prevents sustained agentic use.               |
-| `models/gemini-3.1-flash-lite-preview`                   | ★★★☆☆       | `Fallback`  | `Blazing` | Preview of the BEST model. Nearly identical speed and quality, but experimental.                    |
-| `models/gemini-3-flash-preview`                          | ★★★☆☆       | `Reasoning` | `Fast`    | Outstanding intelligence. Deep reasoning with large contexts, but tight ~20 RPD limits.             |
 | `models/gemini-2.5-flash`                                | ★★★☆☆       | `Fallback`  | `Fast`    | Solid backup for standard context sizes. Newer Gemini 3 leaves it behind on complex logic.          |
+| `models/gemini-3-flash-preview`                          | ★★★☆☆       | `Reasoning` | `Fast`    | Outstanding intelligence. Deep reasoning with large contexts, but tight ~20 RPD limits.             |
+| `models/gemini-3.1-flash-lite-preview`                   | ★★★☆☆       | `Fallback`  | `Blazing` | Preview of the BEST model. Nearly identical speed and quality, but experimental.                    |
+| `models/gemini-3.5-flash` / `models/gemini-flash-latest` | ★★★☆☆       | `Code`      | `Fast`    | Improved reasoning over prior flash variants. ~20 RPD prevents sustained agentic use.               |
 | `models/gemini-flash-lite-latest`                        | ★★★☆☆       | `General`   | `Blazing` | **LIGHT SCRIPTING ONLY.** Incredibly fast bare-bones lite variant. Lacks depth for multi-file work. |
 
 ### [Groq API](https://console.groq.com) Models
@@ -302,13 +302,13 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 | Free Model                                  | Star Rating | Best For  | Speed      | Opinion                                                                                          |
 | :------------------------------------------ | :---------- | :-------- | :--------- | :----------------------------------------------------------------------------------------------- |
 | `openai/gpt-oss-120b`                       | ★★★★★       | `Code`    | `Blazing`  | The undisputed champion. Rarely gets confused by tricky code logic, never hits rate-limit walls. |
-| `qwen/qwen3-32b`                            | ★★★★☆       | `Code`    | `Moderate` | Phenomenal for complex code blocks. Briefly thinks out loud before responding.                   |
 | `llama-3.3-70b-versatile`                   | ★★★★☆       | `Chat`    | `Fast`     | Dependable for developer conversations and brainstorming.                                        |
 | `openai/gpt-oss-20b`                        | ★★★★☆       | `Code`    | `Blazing`  | Same coding DNA as the 120b. Lightning-fast for standard tasks.                                  |
+| `qwen/qwen3-32b`                            | ★★★★☆       | `Code`    | `Moderate` | Phenomenal for complex code blocks. Briefly thinks out loud before responding.                   |
 | `qwen/qwen3.6-27b`                          | ★★★★☆       | `Code`    | `Blazing`  | Fast 27B Qwen 3.6. Brief `<think>` preamble but clean output and blazing speed.                  |
-| `meta-llama/llama-4-scout-17b-16e-instruct` | ★★★☆☆       | `Chat`    | `Fast`     | Handles medium tasks. Overthinks simple prompts.                                                 |
 | `groq/compound`                             | ★★★☆☆       | `General` | `Fast`     | Great for single-turn terminal questions. Lacks depth for multi-file projects.                   |
 | `llama-3.1-8b-instant`                      | ★★★☆☆       | `Code`    | `Blazing`  | Fun for tiny, rapid-fire edits — tends to cut off on long scripts.                               |
+| `meta-llama/llama-4-scout-17b-16e-instruct` | ★★★☆☆       | `Chat`    | `Fast`     | Handles medium tasks. Overthinks simple prompts.                                                 |
 
 ### [HelixMind](https://helixmind.online) Models
 
@@ -321,8 +321,8 @@ HelixMind is a lightweight inference hub offering a small set of free models fro
 | Free Model             | Star Rating | Best For    | Speed     | Opinion                                                                                            |
 | :--------------------- | :---------- | :---------- | :-------- | :------------------------------------------------------------------------------------------------- |
 | `deepseek-v3.2`        | ★★★★☆       | `Reasoning` | `Fast`    | 73.1% SWE-bench. The best model on HelixMind — make each of your 50 daily requests count.          |
-| `llama-4-maverick`     | ★★★★☆       | `General`   | `Blazing` | Meta's 17B MoE. Fast and responsive for quick edits within the tight daily limit.                  |
 | `gpt-oss-20b`          | ★★★★☆       | `Code`      | `Fast`    | Reliable light flagship. Best value for the restrictive 50 RPD — efficient token usage.            |
+| `llama-4-maverick`     | ★★★★☆       | `General`   | `Blazing` | Meta's 17B MoE. Fast and responsive for quick edits within the tight daily limit.                  |
 | `llama-4-scout`        | ★★★★☆       | `General`   | `Fast`    | Meta's scout variant. Solid fallback when Maverick is rate-limited.                                |
 | `mistral-large-latest` | ★★★★☆       | `General`   | `Slow`    | Mistral's 123B flagship with strong reasoning, but 27s latency makes it impractical for daily use. |
 
@@ -336,33 +336,33 @@ Hugging Face's free Inference API gives you access to thousands of community-hos
 
 | Free Model                                          | Star Rating | Best For    | Speed      | Opinion                                                                                            |
 | :-------------------------------------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------------- |
-| `Qwen/Qwen3-Coder-Next`                             | ★★★★★       | `Code`      | `Blazing`  | Generation, completion, debugging — no preamble noise. The strongest coding model on Hugging Face. |
-| `Qwen/Qwen3-Coder-480B-A35B-Instruct`               | ★★★★★       | `Code`      | `Moderate` | Tackles the hardest debugging and architecture problems. The largest purpose-built code model.     |
-| `Qwen/Qwen3-Coder-30B-A3B-Instruct`                 | ★★★★★       | `Code`      | `Fast`     | Deep, structured reasoning at 30B quality on a 3B budget.                                          |
-| `google/gemma-4-31B-it`                             | ★★★★★       | `General`   | `Fast`     | Gemma 4 at full 31B. Cleaner and smarter than the 26B. Follows instructions on the first try.      |
-| `Qwen/Qwen2.5-Coder-32B-Instruct`                   | ★★★★★       | `Code`      | `Fast`     | Purpose-built 32B coder with focused output. Drops code without preamble.                          |
-| `EssentialAI/rnj-1-instruct`                        | ★★★★★       | `General`   | `Blazing`  | Responds before you finish typing. Uncanny speed for an 8B-class model.                            |
-| `meta-llama/Llama-3.3-70B-Instruct`                 | ★★★★★       | `General`   | `Fast`     | Follows complex instructions precisely on the first try.                                           |
-| `meta-llama/Llama-3.1-70B-Instruct`                 | ★★★★★       | `General`   | `Fast`     | The workhorse that keeps delivering under heavy use.                                               |
-| `nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4`    | ★★★★★       | `Reasoning` | `Moderate` | Clean, precise output on every turn — feels too big to be free.                                    |
-| `deepseek-ai/DeepSeek-V3.2`                         | ★★★★★       | `Reasoning` | `Fast`     | Multi-file architecture work where it never loses the thread.                                      |
-| `deepseek-ai/DeepSeek-V3.1`                         | ★★★★★       | `Reasoning` | `Fast`     | Solid alternative to Auriko for V3.1 — 1,000 RPD with the same elite quality.                      |
-| `deepcogito/cogito-671b-v2.1`                       | ★★★★★       | `Reasoning` | `Slow`     | An unfair advantage. The sheer reasoning depth is shocking.                                        |
-| `google/gemma-4-26B-A4B-it`                         | ★★★★★       | `General`   | `Fast`     | Responds faster than its size suggests with clean, direct output.                                  |
-| `Qwen/Qwen2.5-72B-Instruct`                         | ★★★★★       | `Fallback`  | `Fast`     | A reliable fallback that handles most coding tasks competently.                                    |
-| `Qwen/Qwen3-235B-A22B-Instruct-2507`                | ★★★★★       | `Code`      | `Fast`     | 235B capacity with snappy response times — immense power without the wait.                         |
 | `CohereLabs/c4ai-command-a-03-2025`                 | ★★★★★       | `Agent`     | `Fast`     | Reliable tool-calling workflows that follow structured instructions.                               |
-| `inclusionAI/Ling-2.6-1T`                           | ★★★★★       | `Reasoning` | `Slow`     | A trillion-parameter model for free — immense knowledge and reasoning.                             |
-| `swiss-ai/Apertus-70B-Instruct-2509`                | ★★★★★       | `General`   | `Moderate` | Llama-class reasoning quality without the attitude. Solid and dependable.                          |
+| `deepcogito/cogito-671b-v2.1`                       | ★★★★★       | `Reasoning` | `Slow`     | An unfair advantage. The sheer reasoning depth is shocking.                                        |
 | `deepseek-ai/DeepSeek-R1`                           | ★★★★★       | `Reasoning` | `Moderate` | Walks through reasoning step by step without cluttering the output.                                |
-| `openai/gpt-oss-120b`                               | ★★★★☆       | `General`   | `Fast`     | Proven across every provider — reliable as ever with clean output.                                 |
+| `deepseek-ai/DeepSeek-V3.1`                         | ★★★★★       | `Reasoning` | `Fast`     | Solid alternative to Auriko for V3.1 — 1,000 RPD with the same elite quality.                      |
+| `deepseek-ai/DeepSeek-V3.2`                         | ★★★★★       | `Reasoning` | `Fast`     | Multi-file architecture work where it never loses the thread.                                      |
+| `EssentialAI/rnj-1-instruct`                        | ★★★★★       | `General`   | `Blazing`  | Responds before you finish typing. Uncanny speed for an 8B-class model.                            |
+| `google/gemma-4-26B-A4B-it`                         | ★★★★★       | `General`   | `Fast`     | Responds faster than its size suggests with clean, direct output.                                  |
+| `google/gemma-4-31B-it`                             | ★★★★★       | `General`   | `Fast`     | Gemma 4 at full 31B. Cleaner and smarter than the 26B. Follows instructions on the first try.      |
+| `inclusionAI/Ling-2.6-1T`                           | ★★★★★       | `Reasoning` | `Slow`     | A trillion-parameter model for free — immense knowledge and reasoning.                             |
+| `meta-llama/Llama-3.1-70B-Instruct`                 | ★★★★★       | `General`   | `Fast`     | The workhorse that keeps delivering under heavy use.                                               |
+| `meta-llama/Llama-3.3-70B-Instruct`                 | ★★★★★       | `General`   | `Fast`     | Follows complex instructions precisely on the first try.                                           |
 | `MiniMaxAI/MiniMax-M3`                              | ★★★★★       | `General`   | `Blazing`  | MiniMax M3 — 80.5% SWE-bench Verified with 1M context. Frontier-class coding at blazing speed.     |
-| `zai-org/GLM-4.7`                                   | ★★★★☆       | `General`   | `Fast`     | Optimized for throughput — hammer it all day and it keeps responding.                              |
-| `Qwen/Qwen3.6-35B-A3B`                              | ★★★★☆       | `Code`      | `Fast`     | The most efficient model on the list. Modern Qwen quality for rapid iteration.                     |
-| `moonshotai/Kimi-K2.5`                              | ★★★★☆       | `Reasoning` | `Moderate` | Deep reasoning with chain-of-thought. Strong for logic-heavy debugging.                            |
+| `nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4`    | ★★★★★       | `Reasoning` | `Moderate` | Clean, precise output on every turn — feels too big to be free.                                    |
+| `Qwen/Qwen2.5-72B-Instruct`                         | ★★★★★       | `Fallback`  | `Fast`     | A reliable fallback that handles most coding tasks competently.                                    |
+| `Qwen/Qwen2.5-Coder-32B-Instruct`                   | ★★★★★       | `Code`      | `Fast`     | Purpose-built 32B coder with focused output. Drops code without preamble.                          |
+| `Qwen/Qwen3-235B-A22B-Instruct-2507`                | ★★★★★       | `Code`      | `Fast`     | 235B capacity with snappy response times — immense power without the wait.                         |
+| `Qwen/Qwen3-Coder-30B-A3B-Instruct`                 | ★★★★★       | `Code`      | `Fast`     | Deep, structured reasoning at 30B quality on a 3B budget.                                          |
+| `Qwen/Qwen3-Coder-480B-A35B-Instruct`               | ★★★★★       | `Code`      | `Moderate` | Tackles the hardest debugging and architecture problems. The largest purpose-built code model.     |
+| `Qwen/Qwen3-Coder-Next`                             | ★★★★★       | `Code`      | `Blazing`  | Generation, completion, debugging — no preamble noise. The strongest coding model on Hugging Face. |
+| `swiss-ai/Apertus-70B-Instruct-2509`                | ★★★★★       | `General`   | `Moderate` | Llama-class reasoning quality without the attitude. Solid and dependable.                          |
 | `meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8` | ★★★★☆       | `General`   | `Fast`     | Llama 4's strongest instruct variant. Clean and dependable for daily coding.                       |
+| `moonshotai/Kimi-K2.5`                              | ★★★★☆       | `Reasoning` | `Moderate` | Deep reasoning with chain-of-thought. Strong for logic-heavy debugging.                            |
+| `openai/gpt-oss-120b`                               | ★★★★☆       | `General`   | `Fast`     | Proven across every provider — reliable as ever with clean output.                                 |
 | `pearl-ai/Gemma-4-31B-it-pearl`                     | ★★★★☆       | `General`   | `Fast`     | Fine-tuned Gemma 4 variant. Slightly different flavor with the same clean base quality.            |
 | `Qwen/Qwen2.5-Coder-7B-Instruct`                    | ★★★★☆       | `Code`      | `Blazing`  | Compact 7B coder for rapid-fire completions. Small enough to hammer all day.                       |
+| `Qwen/Qwen3.6-35B-A3B`                              | ★★★★☆       | `Code`      | `Fast`     | The most efficient model on the list. Modern Qwen quality for rapid iteration.                     |
+| `zai-org/GLM-4.7`                                   | ★★★★☆       | `General`   | `Fast`     | Optimized for throughput — hammer it all day and it keeps responding.                              |
 
 ### [Kilo Code](https://app.kilo.ai) Models
 
@@ -410,20 +410,20 @@ MNN AI is a credit-based inference hub offering models from OpenAI, Google, Deep
 
 | Free Model           | Star Rating | Best For    | Speed      | Opinion                                                                                      |
 | :------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------- |
-| `gpt-5.3-chat`       | ★★★★★       | `General`   | `Fast`     | Latest GPT chat variant with polished output. Top pick on MNN for daily coding tasks.        |
 | `deepseek-v4-flash`  | ★★★★★       | `Reasoning` | `Blazing`  | Elite flash variant with 79.0% SWE-bench. Blazing speed for the hardest reasoning prompts.   |
-| `qwen-3.5-397b-a17b` | ★★★★★       | `General`   | `Moderate` | 397B MoE flagship — 76.4% SWE-bench. Immense capacity for complex multi-file architecture.   |
-| `qwen-3-235b-a22b`   | ★★★★★       | `General`   | `Fast`     | 235B Qwen3 flagship — deep multi-file reasoning at competitive speed.                        |
-| `gpt-oss-120b`       | ★★★★★       | `General`   | `Blazing`  | The same reliable 120B flagship. Sub-second responses that stretch your $1 credit further.   |
 | `gpt-5.2`            | ★★★★★       | `General`   | `Fast`     | Proven GPT generation model. Clean, direct output with no preamble noise.                    |
-| `gpt-4.1`            | ★★★★☆       | `General`   | `Fast`     | Reliable workhorse — handles daily coding with consistent, structured output.                |
-| `gpt-4o`             | ★★★★☆       | `General`   | `Fast`     | Proven workhorse. Efficient token usage helps stretch the $1 monthly credit cap.             |
-| `qwen-3-coder-plus`  | ★★★★☆       | `Code`      | `Fast`     | Qwen's coding-specialized variant. Clean code output with strong instruction following.      |
-| `gpt-oss-20b`        | ★★★★☆       | `Code`      | `Blazing`  | Same reliable DNA as the 120B, lighter and faster. Best value for the monthly credit budget. |
+| `gpt-5.3-chat`       | ★★★★★       | `General`   | `Fast`     | Latest GPT chat variant with polished output. Top pick on MNN for daily coding tasks.        |
+| `gpt-oss-120b`       | ★★★★★       | `General`   | `Blazing`  | The same reliable 120B flagship. Sub-second responses that stretch your $1 credit further.   |
+| `qwen-3-235b-a22b`   | ★★★★★       | `General`   | `Fast`     | 235B Qwen3 flagship — deep multi-file reasoning at competitive speed.                        |
+| `qwen-3.5-397b-a17b` | ★★★★★       | `General`   | `Moderate` | 397B MoE flagship — 76.4% SWE-bench. Immense capacity for complex multi-file architecture.   |
 | `gemini-3.5-flash`   | ★★★★☆       | `General`   | `Fast`     | Google's latest flash variant — capable reasoning at efficient token cost.                   |
 | `gemma-4-31b-it`     | ★★★★☆       | `General`   | `Fast`     | Google's 31B dense model. Strong generalist for daily coding without overhead.               |
-| `llama-4-maverick`   | ★★★★☆       | `General`   | `Blazing`  | Meta's latest 17B MoE. Responsive and reliable for lightweight coding tasks.                 |
+| `gpt-4.1`            | ★★★★☆       | `General`   | `Fast`     | Reliable workhorse — handles daily coding with consistent, structured output.                |
+| `gpt-4o`             | ★★★★☆       | `General`   | `Fast`     | Proven workhorse. Efficient token usage helps stretch the $1 monthly credit cap.             |
+| `gpt-oss-20b`        | ★★★★☆       | `Code`      | `Blazing`  | Same reliable DNA as the 120B, lighter and faster. Best value for the monthly credit budget. |
 | `kimi-k2.5`          | ★★★★☆       | `Reasoning` | `Fast`     | Moonshot's strong reasoning model. Solid for complex multi-step analysis.                    |
+| `llama-4-maverick`   | ★★★★☆       | `General`   | `Blazing`  | Meta's latest 17B MoE. Responsive and reliable for lightweight coding tasks.                 |
+| `qwen-3-coder-plus`  | ★★★★☆       | `Code`      | `Fast`     | Qwen's coding-specialized variant. Clean code output with strong instruction following.      |
 | `step-3.5-flash`     | ★★★★☆       | `Agentic`   | `Blazing`  | Agentic powerhouse — 74.4% SWE-bench. Tiny 11B active params punch far above weight.         |
 
 ### [Mistral AI](https://console.mistral.ai) Models
@@ -438,17 +438,17 @@ Mistral AI is highly regarded for building models that punch far above their **p
 | :-------------------------------------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------------------------- |
 | `mistral-code-agent-latest`                         | ★★★★★       | `Agent`     | `Fast`     | **BEST FOR AGENTS.** Purpose-built for autonomous agents with native tool use.                                     |
 | `codestral-latest` / `codestral-2508`               | ★★★★☆       | `Code`      | `Fast`     | **CODE COMPLETION ONLY.** Built for programmers. Flies through auto-completions and inline edits.                  |
-| `mistral-large-latest` / `mistral-large-2512`       | ★★★★☆       | `Reasoning` | `Fast`     | Strong multi-lingual reasoning but lacks code-specific architecture. The 50k TPM shared pool limits sustained use. |
-| `mistral-code-latest`                               | ★★★★☆       | `Code`      | `Fast`     | **CODE COMPLETION ONLY.** Fast, precise completions across dozens of languages.                                    |
+| `devstral-medium-latest`                            | ★★★★☆       | `Agent`     | `Moderate` | **AGENT ROUTING ONLY.** Streamlined Medium optimized for automated developer task loops.                           |
+| `magistral-medium-latest` / `magistral-medium-2509` | ★★★★☆       | `Reasoning` | `Fast`     | Medium-tier Magistral. Strong reasoning with clean, structured output.                                             |
+| `magistral-small-latest` / `magistral-small-2509`   | ★★★★☆       | `General`   | `Fast`     | New Mistral line. Clean responses with solid depth. A pleasant surprise.                                           |
 | `mistral-code-fim-latest`                           | ★★★★☆       | `Code`      | `Fast`     | **CODE COMPLETION ONLY.** Fill-in-Middle specialist for smart inline insertion.                                    |
+| `mistral-code-latest`                               | ★★★★☆       | `Code`      | `Fast`     | **CODE COMPLETION ONLY.** Fast, precise completions across dozens of languages.                                    |
+| `mistral-large-latest` / `mistral-large-2512`       | ★★★★☆       | `Reasoning` | `Fast`     | Strong multi-lingual reasoning but lacks code-specific architecture. The 50k TPM shared pool limits sustained use. |
+| `mistral-medium-2604`                               | ★★★★☆       | `General`   | `Fast`     | Responsive Medium iteration with predictable execution and strong structural debugging.                            |
 | `mistral-medium-3.5` / `mistral-medium-3-5`         | ★★★★☆       | `General`   | `Fast`     | Exceptional price-to-performance. Highly responsive for structural software layouts.                               |
 | `mistral-medium-3`                                  | ★★★★☆       | `General`   | `Fast`     | Trusted, stable Medium line. Clean boilerplate code without empty chatter.                                         |
-| `mistral-medium-2604`                               | ★★★★☆       | `General`   | `Fast`     | Responsive Medium iteration with predictable execution and strong structural debugging.                            |
-| `devstral-medium-latest`                            | ★★★★☆       | `Agent`     | `Moderate` | **AGENT ROUTING ONLY.** Streamlined Medium optimized for automated developer task loops.                           |
 | `mistral-medium-latest` / `mistral-medium`          | ★★★★☆       | `General`   | `Fast`     | The classic production model. Dependable for everyday scripting.                                                   |
 | `mistral-small-latest` / `mistral-small-2603`       | ★★★★☆       | `General`   | `Blazing`  | Incredible lightweight architecture. Punchy, direct tone with surprising depth.                                    |
-| `magistral-small-latest` / `magistral-small-2509`   | ★★★★☆       | `General`   | `Fast`     | New Mistral line. Clean responses with solid depth. A pleasant surprise.                                           |
-| `magistral-medium-latest` / `magistral-medium-2509` | ★★★★☆       | `Reasoning` | `Fast`     | Medium-tier Magistral. Strong reasoning with clean, structured output.                                             |
 | `devstral-latest` / `devstral-2512`                 | ★★★☆☆       | `Agent`     | `Moderate` | **AGENT ROUTING ONLY.** Tailored for programmatic tool use.                                                        |
 | `ministral-14b-latest` / `ministral-14b-2512`       | ★★★☆☆       | `General`   | `Fast`     | Nimble, edge-focused model. Remarkably capable for its tight memory footprint.                                     |
 | `ministral-8b-latest` / `ministral-8b-2512`         | ★★★☆☆       | `General`   | `Fast`     | 8B ministral. Nimble and responsive for lightweight coding tasks.                                                  |
@@ -483,9 +483,9 @@ Naga AI is a lightweight inference hub offering a small set of free models from 
 
 | Free Model                            | Star Rating | Best For  | Speed     | Opinion                                                                                      |
 | :------------------------------------ | :---------- | :-------- | :-------- | :------------------------------------------------------------------------------------------- |
-| `nemotron-3-super-120b-a12b:free`     | ★★★★☆       | `General` | `Fast`    | Strong 120B mid-range from NVIDIA. Steps in when smaller models need more headroom.          |
 | `llama-3.3-70b-instruct:free`         | ★★★★☆       | `General` | `Fast`    | The traditional benchmark engine. Reliable, well-rounded output for daily coding.            |
 | `llama-4-scout-17b-16e-instruct:free` | ★★★★☆       | `General` | `Blazing` | Meta's latest 17B MoE scout — fast and responsive, but the 100 RPD cap limits sustained use. |
+| `nemotron-3-super-120b-a12b:free`     | ★★★★☆       | `General` | `Fast`    | Strong 120B mid-range from NVIDIA. Steps in when smaller models need more headroom.          |
 
 ### [Navy API](https://api.navy) Models
 
@@ -497,23 +497,23 @@ Navy API is a high-volume inference hub offering an extensive catalog of models 
 
 | Free Model             | Star Rating | Best For    | Speed      | Opinion                                                                                          |
 | :--------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------- |
-| `gpt-5.4`              | ★★★★★       | `General`   | `Fast`     | Latest GPT flagship — frontier reasoning with clean, direct output. Top-tier daily driver.       |
 | `deepseek-v4-flash`    | ★★★★★       | `Reasoning` | `Blazing`  | Elite flash variant with 79.0% SWE-bench. Blazing speed with no daily cap on Navy.               |
 | `deepseek-v4-pro`      | ★★★★★       | `Reasoning` | `Fast`     | Pro variant of V4 — 80.6% SWE-bench. Extra headroom over Flash for the hardest prompts.          |
-| `qwen3.5-397b-a17b`    | ★★★★★       | `General`   | `Moderate` | 397B MoE flagship — 76.4% SWE-bench. Immense capacity for complex multi-file architecture.       |
+| `gpt-5.2`              | ★★★★★       | `General`   | `Fast`     | Proven GPT generation model. Reliable output without preamble noise.                             |
+| `gpt-5.3-chat-latest`  | ★★★★★       | `General`   | `Fast`     | Latest GPT chat variant. Strong all-rounder for both coding and conversation.                    |
+| `gpt-5.4`              | ★★★★★       | `General`   | `Fast`     | Latest GPT flagship — frontier reasoning with clean, direct output. Top-tier daily driver.       |
 | `gpt-oss-120b`         | ★★★★★       | `General`   | `Blazing`  | The same reliable 120B flagship. Clean output across every coding task at sub-second speed.      |
 | `grok-4.20-reasoning`  | ★★★★★       | `Reasoning` | `Moderate` | xAI's strongest reasoning model. Deep chain-of-thought for the hardest logic problems.           |
-| `gpt-5.3-chat-latest`  | ★★★★★       | `General`   | `Fast`     | Latest GPT chat variant. Strong all-rounder for both coding and conversation.                    |
-| `gpt-5.2`              | ★★★★★       | `General`   | `Fast`     | Proven GPT generation model. Reliable output without preamble noise.                             |
-| `gpt-4.1`              | ★★★★☆       | `General`   | `Fast`     | Reliable workhorse — handles daily coding with consistent, structured output.                    |
-| `deepseek-v3.2`        | ★★★★☆       | `Reasoning` | `Fast`     | 73.1% SWE-bench. Refined V3 release with clean reasoning and strong coding capability.           |
+| `qwen3.5-397b-a17b`    | ★★★★★       | `General`   | `Moderate` | 397B MoE flagship — 76.4% SWE-bench. Immense capacity for complex multi-file architecture.       |
 | `codestral-latest`     | ★★★★☆       | `Code`      | `Blazing`  | Mistral's coding specialist — fast completions with strong multi-file awareness.                 |
 | `command-a-plus`       | ★★★★☆       | `General`   | `Fast`     | Cohere's flagship — clean instruction following with solid coding chops.                         |
-| `gpt-5.4-nano`         | ★★★★☆       | `Code`      | `Blazing`  | Lightning-fast GPT variant. Ideal for quick edits and inline completions.                        |
-| `mistral-large-latest` | ★★★★☆       | `General`   | `Fast`     | Mistral's 123B flagship — strong reasoning with exceptionally clean instruction following.       |
+| `deepseek-v3.2`        | ★★★★☆       | `Reasoning` | `Fast`     | 73.1% SWE-bench. Refined V3 release with clean reasoning and strong coding capability.           |
 | `gemma-4-31b-it`       | ★★★★☆       | `General`   | `Fast`     | Google's 31B dense model. Strong generalist for daily coding without the overhead.               |
-| `kimi-k2.6`            | ★★★★☆       | `Reasoning` | `Fast`     | 1T multimodal MoE from Moonshot. Strong long-horizon reasoning for complex projects.             |
+| `gpt-4.1`              | ★★★★☆       | `General`   | `Fast`     | Reliable workhorse — handles daily coding with consistent, structured output.                    |
+| `gpt-5.4-nano`         | ★★★★☆       | `Code`      | `Blazing`  | Lightning-fast GPT variant. Ideal for quick edits and inline completions.                        |
 | `gpt-oss-20b`          | ★★★★☆       | `Code`      | `Blazing`  | Same reliable DNA as the 120B in a lighter package. Lightning-fast responses for everyday tasks. |
+| `kimi-k2.6`            | ★★★★☆       | `Reasoning` | `Fast`     | 1T multimodal MoE from Moonshot. Strong long-horizon reasoning for complex projects.             |
+| `mistral-large-latest` | ★★★★☆       | `General`   | `Fast`     | Mistral's 123B flagship — strong reasoning with exceptionally clean instruction following.       |
 
 ### [NVIDIA NIM](https://build.nvidia.com) Models
 
@@ -542,8 +542,8 @@ NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta
 | `mistralai/mistral-nemotron`                    | ★★★★☆       | `General`   | `Fast`     | Mistral × Nemotron collab — balanced reasoning and speed for general use.                                  |
 | `mistralai/mistral-small-4-119b-2603`           | ★★★★☆       | `Code`      | `Fast`     | Hybrid MoE unifying instruct, reasoning, and coding with 256K context.                                     |
 | `moonshotai/kimi-k2.6`                          | ★★★★☆       | `Reasoning` | `Fast`     | 1T multimodal MoE for long-horizon coding and agentic tool use.                                            |
-| `nvidia/llama-3.3-nemotron-super-49b-v1`        | ★★★★☆       | `General`   | `Fast`     | 49B Nemotron with clean, direct responses. Solid for daily coding without overhead.                        |
 | `nvidia/llama-3.3-nemotron-super-49b-v1.5`      | ★★★★☆       | `General`   | `Fast`     | Updated v1.5 with cleaner output. Solid mid-range daily driver.                                            |
+| `nvidia/llama-3.3-nemotron-super-49b-v1`        | ★★★★☆       | `General`   | `Fast`     | 49B Nemotron with clean, direct responses. Solid for daily coding without overhead.                        |
 | `nvidia/nemotron-3-nano-30b-a3b`                | ★★★★☆       | `General`   | `Fast`     | 30B MoE (3B active) — efficient and responsive for lightweight daily tasks.                                |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning` | ★★★★☆       | `Reasoning` | `Moderate` | Reasoning-focused variant of the 30B nano. Shows thorough chain-of-thought.                                |
 | `nvidia/nemotron-3-super-120b-a12b`             | ★★★★☆       | `Reasoning` | `Fast`     | Strong 120B mid-range with 1M context. Steps in when smaller models need headroom.                         |
@@ -563,25 +563,25 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 
 | Free Model             | Star Rating | Best For    | Speed      | Opinion                                                                                                    |
 | :--------------------- | :---------- | :---------- | :--------- | :--------------------------------------------------------------------------------------------------------- |
-| `qwen3-coder-next`     | ★★★★★       | `Code`      | `Blazing`  | Zero preamble, instant answers. Reads terminal logs to fix its own bugs. Uncapped usage.                   |
-| `qwen3-coder:480b`     | ★★★★★       | `Code`      | `Moderate` | 480B of pure coding muscle. Makes the toughest debugging sessions feel like a chat with a senior engineer. |
 | `devstral-2:123b`      | ★★★★★       | `Agent`     | `Fast`     | Purpose-built for agent pipelines — structured tool-use without drift or hallucination.                    |
-| `gemma4:31b`           | ★★★★★       | `General`   | `Fast`     | Google's latest 31B. Clean, responsive, and punches above its weight class.                                |
-| `gpt-oss:120b`         | ★★★★★       | `General`   | `Blazing`  | Consistent as gravity. Same quality across every provider, same clean output.                              |
-| `nemotron-3-nano:30b`  | ★★★★★       | `Reasoning` | `Fast`     | Fast, direct, and efficient. Answers without chain-of-thought fluff.                                       |
-| `rnj-1:8b`             | ★★★★★       | `General`   | `Blazing`  | Don't let the 8B fool you — responds faster than most with surprising depth.                               |
 | `devstral-small-2:24b` | ★★★★★       | `Code`      | `Fast`     | Lean and responsive for everyday coding. Does 90% of what the 123B does.                                   |
 | `gemma3:12b`           | ★★★★★       | `General`   | `Fast`     | Google's compact powerhouse. Follows complex instructions without rambling.                                |
 | `gemma3:27b`           | ★★★★★       | `General`   | `Fast`     | Everything the 12B does well with more breathing room. The sweet spot.                                     |
 | `gemma3:4b`            | ★★★★★       | `General`   | `Blazing`  | Blink-and-you-miss-it speed. Perfect for syntax checks.                                                    |
+| `gemma4:31b`           | ★★★★★       | `General`   | `Fast`     | Google's latest 31B. Clean, responsive, and punches above its weight class.                                |
+| `glm-4.7`              | ★★★★★       | `Reasoning` | `Moderate` | Takes a beat longer but the extra thought shows. Thorough answers when correctness beats speed.            |
+| `gpt-oss:120b`         | ★★★★★       | `General`   | `Blazing`  | Consistent as gravity. Same quality across every provider, same clean output.                              |
 | `minimax-m2.5`         | ★★★★★       | `General`   | `Fast`     | Consistent output that doesn't make you second-guess.                                                      |
 | `minimax-m3`           | ★★★★★       | `General`   | `Fast`     | The most polished MiniMax yet. Clean, dependable for whatever your day throws at it.                       |
-| `glm-4.7`              | ★★★★★       | `Reasoning` | `Moderate` | Takes a beat longer but the extra thought shows. Thorough answers when correctness beats speed.            |
+| `nemotron-3-nano:30b`  | ★★★★★       | `Reasoning` | `Fast`     | Fast, direct, and efficient. Answers without chain-of-thought fluff.                                       |
+| `qwen3-coder-next`     | ★★★★★       | `Code`      | `Blazing`  | Zero preamble, instant answers. Reads terminal logs to fix its own bugs. Uncapped usage.                   |
+| `qwen3-coder:480b`     | ★★★★★       | `Code`      | `Moderate` | 480B of pure coding muscle. Makes the toughest debugging sessions feel like a chat with a senior engineer. |
+| `rnj-1:8b`             | ★★★★★       | `General`   | `Blazing`  | Don't let the 8B fool you — responds faster than most with surprising depth.                               |
 | `gpt-oss:20b`          | ★★★★☆       | `Reasoning` | `Fast`     | Smaller GPT-OSS variant. Solid reasoning at a fraction of the 120B latency.                                |
 | `nemotron-3-ultra`     | ★★★★☆       | `Reasoning` | `Blazing`  | 550B of raw power at blazing speed. Impressive when you can reach past the preamble.                       |
+| `minimax-m2.1`         | ★★★☆☆       | `General`   | `Slow`     | Earlier MiniMax release. Empty clean output but noticeably slower than m2.5.                               |
 | `ministral-3:14b`      | ★★★☆☆       | `General`   | `Fast`     | Nimble Mistral ministral. Compact but responsive for lightweight coding tasks.                             |
 | `ministral-3:8b`       | ★★★☆☆       | `General`   | `Fast`     | 8B ministral variant. Reliable for quick edits and syntax checks.                                          |
-| `minimax-m2.1`         | ★★★☆☆       | `General`   | `Slow`     | Earlier MiniMax release. Empty clean output but noticeably slower than m2.5.                               |
 | `nemotron-3-super`     | ★★★☆☆       | `Reasoning` | `Slow`     | Deep reasoning with significant latency. Capable but you'll wait for every answer.                         |
 
 ### [OpenCode Zen](https://opencode.ai/zen) Models
@@ -610,13 +610,13 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 
 | Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                                   |
 | :--------------------------------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------- |
-| `openai/gpt-oss-120b:free`                           | ★★★★★       | `General`   | `Blazing`  | The same reliable gpt-oss every provider carries. The safest five-star bet on OpenRouter. |
 | `google/gemma-4-31b-it:free`                         | ★★★★★       | `General`   | `Fast`     | Extra headroom over the 26B without sacrificing speed.                                    |
+| `liquid/lfm-2.5-1.2b-instruct:free`                  | ★★★★★       | `General`   | `Blazing`  | The smallest model that actually answers usefully. Insane response times.                 |
 | `nex-agi/nex-n2-pro:free`                            | ★★★★★       | `General`   | `Fast`     | Genuine dark horse. Strength that catches you off guard.                                  |
-| `openai/gpt-oss-20b:free`                            | ★★★★★       | `Code`      | `Fast`     | Same reliable output as the 120B but lighter. The everyday driver.                        |
 | `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★★       | `General`   | `Moderate` | The 550B nemotron flagship — raw horsepower for the hardest prompts on OpenRouter.        |
 | `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★★       | `Vision`    | `Fast`     | Does text and vision in one call without the bloat.                                       |
-| `liquid/lfm-2.5-1.2b-instruct:free`                  | ★★★★★       | `General`   | `Blazing`  | The smallest model that actually answers usefully. Insane response times.                 |
+| `openai/gpt-oss-120b:free`                           | ★★★★★       | `General`   | `Blazing`  | The same reliable gpt-oss every provider carries. The safest five-star bet on OpenRouter. |
+| `openai/gpt-oss-20b:free`                            | ★★★★★       | `Code`      | `Fast`     | Same reliable output as the 120B but lighter. The everyday driver.                        |
 | `cohere/north-mini-code:free`                        | ★★★★☆       | `Code`      | `Blazing`  | Efficient coding model from Cohere. Lightweight enough for rapid iteration loops.         |
 | `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | `General`   | `Fast`     | Google's compact 26B Gemma. Clean output for daily coding at a generous weight tier.      |
 | `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | `Reasoning` | `Moderate` | Tiny 1.2B that thinks aloud. Good for logic, verbose for quick code edits.                |
@@ -639,11 +639,11 @@ Routeway is a unified API gateway offering free models through a `:free` model s
 | :----------------------------- | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------- |
 | `deepseek-v4-flash:free`       | ★★★★★       | `Reasoning` | `Blazing`  | Elite 284B MoE reasoning at blazing speed. The strongest model on Routeway.       |
 | `poolside/laguna-m.1:free`     | ★★★★★       | `Code`      | `Fast`     | Same elite Poolside 225B coding model — best pick on Routeway. Fast and focused.  |
-| `step-3.5-flash:free`          | ★★★★☆       | `Agentic`   | `Moderate` | Stepfun's 11B active-param agentic powerhouse. Proven quality at 74.4% SWE-bench. |
-| `nemotron-3-nano-30b-a3b:free` | ★★★★☆       | `General`   | `Fast`     | NVIDIA's efficient 30B MoE — clean responses with no preamble.                    |
 | `laguna-xs.2:free`             | ★★★★☆       | `Code`      | `Blazing`  | Poolside's 33B coder. Sub-second response time for inline completions.            |
-| `nemotron-nano-9b-v2:free`     | ★★★★☆       | `Fallback`  | `Fast`     | Reliable NVIDIA nano — punches above its 9B weight for quick edits.               |
 | `llama-3.3-70b-instruct:free`  | ★★★★☆       | `General`   | `Fast`     | The 70B workhorse. Complex instruction following without drama.                   |
+| `nemotron-3-nano-30b-a3b:free` | ★★★★☆       | `General`   | `Fast`     | NVIDIA's efficient 30B MoE — clean responses with no preamble.                    |
+| `nemotron-nano-9b-v2:free`     | ★★★★☆       | `Fallback`  | `Fast`     | Reliable NVIDIA nano — punches above its 9B weight for quick edits.               |
+| `step-3.5-flash:free`          | ★★★★☆       | `Agentic`   | `Moderate` | Stepfun's 11B active-param agentic powerhouse. Proven quality at 74.4% SWE-bench. |
 
 ### [Pollinations AI](https://pollinations.ai) Models
 
@@ -655,31 +655,31 @@ Pollinations AI is a free, no-signup inference provider serving a wide variety o
 
 | Free Model            | Star Rating | Best For    | Speed      | Opinion                                                                       |
 | :-------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------- |
-| `qwen-coder`          | ★★★★★       | `Code`      | `Fast`     | Focused code output without the fluff.                                        |
-| `openai`              | ★★★★★       | `General`   | `Fast`     | Predictable. Drop it into any workflow and get clean answers.                 |
-| `openai-large`        | ★★★★★       | `Reasoning` | `Fast`     | Extra headroom when the reasoning gets thorny.                                |
-| `gpt-5.4-mini`        | ★★★★★       | `General`   | `Blazing`  | Snappy to the point of feeling instant.                                       |
 | `gemma`               | ★★★★★       | `General`   | `Fast`     | Punches above its weight class. Follows complex instructions with precision.  |
-| `grok`                | ★★★★★       | `Chat`      | `Fast`     | Surprisingly polished at code. Switches between chat and coding effortlessly. |
+| `gpt-5.4-mini`        | ★★★★★       | `General`   | `Blazing`  | Snappy to the point of feeling instant.                                       |
 | `grok-4-20-reasoning` | ★★★★★       | `General`   | `Fast`     | Tighter than base Grok. Fewer surprises, more consistency.                    |
-| `perplexity`          | ★★★★★       | `General`   | `Moderate` | Research-backed answers to coding questions.                                  |
-| `nova-fast`           | ★★★★★       | `Code`      | `Blazing`  | For rapid-fire coding loops where waiting isn't an option.                    |
+| `grok`                | ★★★★★       | `Chat`      | `Fast`     | Surprisingly polished at code. Switches between chat and coding effortlessly. |
 | `llama`               | ★★★★★       | `General`   | `Fast`     | The workhorse. No-nonsense output, zero chatter.                              |
-| `qwen-vision`         | ★★★★★       | `Vision`    | `Fast`     | Clean multimodal responses. Screenshots and code mix without the rambling.    |
+| `nova-fast`           | ★★★★★       | `Code`      | `Blazing`  | For rapid-fire coding loops where waiting isn't an option.                    |
+| `openai-large`        | ★★★★★       | `Reasoning` | `Fast`     | Extra headroom when the reasoning gets thorny.                                |
+| `openai`              | ★★★★★       | `General`   | `Fast`     | Predictable. Drop it into any workflow and get clean answers.                 |
+| `perplexity`          | ★★★★★       | `General`   | `Moderate` | Research-backed answers to coding questions.                                  |
+| `qwen-coder`          | ★★★★★       | `Code`      | `Fast`     | Focused code output without the fluff.                                        |
 | `qwen-vision-pro`     | ★★★★★       | `Vision`    | `Fast`     | Polished vision experience. Sharper answers for text and images.              |
-| `openai-fast`         | ★★★★☆       | `General`   | `Blazing`  | Built for speed. Quick tasks handled instantly.                               |
+| `qwen-vision`         | ★★★★★       | `Vision`    | `Fast`     | Clean multimodal responses. Screenshots and code mix without the rambling.    |
 | `gpt-5.4`             | ★★★★☆       | `General`   | `Fast`     | Reliable daily coding, though outputs sometimes need a second try.            |
+| `grok-large`          | ★★★★☆       | `General`   | `Fast`     | Extra Grok headroom for heavier reasoning tasks.                              |
 | `kimi-code`           | ★★★★☆       | `Code`      | `Fast`     | Strong on code — use it for programming-specific work.                        |
 | `minimax-m2.7`        | ★★★★☆       | `General`   | `Fast`     | Solid and frictionless for everyday tasks.                                    |
-| `step-3.5-flash`      | ★★★★☆       | `General`   | `Fast`     | Keeps pace with daily edits and scripts.                                      |
-| `qwen-large`          | ★★★★☆       | `General`   | `Moderate` | More parameters, more context. Slightly less direct but more headroom.        |
-| `step-flash`          | ★★★★☆       | `Fallback`  | `Fast`     | Dependable fallback — keeps quality up when main model hits limits.           |
-| `nova`                | ★★★★☆       | `Agent`     | `Fast`     | Clean output for agent pipelines. Straightforward coding without noise.       |
-| `mistral`             | ★★★★☆       | `General`   | `Fast`     | Clean Mistral responses without the full API quota drain.                     |
 | `mistral-large`       | ★★★★☆       | `General`   | `Fast`     | Strong Mistral flagship. Crisp output with strong instruction following.      |
-| `grok-large`          | ★★★★☆       | `General`   | `Fast`     | Extra Grok headroom for heavier reasoning tasks.                              |
-| `perplexity-fast`     | ★★★☆☆       | `General`   | `Blazing`  | Research-backed answers at the speed of light.                                |
+| `mistral`             | ★★★★☆       | `General`   | `Fast`     | Clean Mistral responses without the full API quota drain.                     |
+| `nova`                | ★★★★☆       | `Agent`     | `Fast`     | Clean output for agent pipelines. Straightforward coding without noise.       |
+| `openai-fast`         | ★★★★☆       | `General`   | `Blazing`  | Built for speed. Quick tasks handled instantly.                               |
+| `qwen-large`          | ★★★★☆       | `General`   | `Moderate` | More parameters, more context. Slightly less direct but more headroom.        |
+| `step-3.5-flash`      | ★★★★☆       | `General`   | `Fast`     | Keeps pace with daily edits and scripts.                                      |
+| `step-flash`          | ★★★★☆       | `Fallback`  | `Fast`     | Dependable fallback — keeps quality up when main model hits limits.           |
 | `midijourney-large`   | ★★★☆☆       | `General`   | `Fast`     | Clean empty responses for frictionless automation.                            |
+| `perplexity-fast`     | ★★★☆☆       | `General`   | `Blazing`  | Research-backed answers at the speed of light.                                |
 
 ### [Poolside](https://poolside.ai) Models
 
@@ -720,18 +720,18 @@ Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSee
 
 | Free Model                       | Star Rating | Best For    | Speed      | Opinion                                                                                          |
 | :------------------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------- |
-| `gpt-5.5`                        | ★★★★★       | `General`   | `Fast`     | Latest GPT release — frontier reasoning at high speed. Top pick on Void AI for daily coding.     |
-| `gpt-5.4`                        | ★★★★★       | `General`   | `Fast`     | Flagship GPT with polished output. Elite general coding at 100 RPM — the best quota in class.    |
 | `deepseek-v4-flash`              | ★★★★★       | `Reasoning` | `Blazing`  | Elite flash variant with 79.0% SWE-bench. Blazing speed paired with Void's 100 RPM is unmatched. |
-| `qwen3-coder-480b-a35b-instruct` | ★★★★★       | `Code`      | `Moderate` | Massive 480B coder with 35B active params. Elite architecture-level reasoning for big projects.  |
-| `qwen3-235b-a22b-instruct`       | ★★★★★       | `General`   | `Fast`     | 235B Qwen3 flagship — native 119-language support with deep multi-file reasoning.                |
-| `gpt-oss-120b`                   | ★★★★★       | `General`   | `Blazing`  | The same reliable 120B flagship. Sub-second responses at 100 RPM make this a daily driver.       |
 | `gpt-5.3-chat-latest`            | ★★★★★       | `General`   | `Fast`     | Latest GPT chat variant. Strong all-rounder for coding and conversation alike.                   |
-| `gpt-5-codex`                    | ★★★★☆       | `Code`      | `Blazing`  | GPT codex variant — purpose-built for code generation at blazing speed.                          |
-| `gpt-5.3-codex`                  | ★★★★☆       | `Code`      | `Fast`     | Latest codex variant. Clean, direct code output with strong multi-file awareness.                |
-| `gpt-4o`                         | ★★★★☆       | `General`   | `Fast`     | Proven workhorse. Handles daily coding with consistent, structured output.                       |
+| `gpt-5.4`                        | ★★★★★       | `General`   | `Fast`     | Flagship GPT with polished output. Elite general coding at 100 RPM — the best quota in class.    |
+| `gpt-5.5`                        | ★★★★★       | `General`   | `Fast`     | Latest GPT release — frontier reasoning at high speed. Top pick on Void AI for daily coding.     |
+| `gpt-oss-120b`                   | ★★★★★       | `General`   | `Blazing`  | The same reliable 120B flagship. Sub-second responses at 100 RPM make this a daily driver.       |
+| `qwen3-235b-a22b-instruct`       | ★★★★★       | `General`   | `Fast`     | 235B Qwen3 flagship — native 119-language support with deep multi-file reasoning.                |
+| `qwen3-coder-480b-a35b-instruct` | ★★★★★       | `Code`      | `Moderate` | Massive 480B coder with 35B active params. Elite architecture-level reasoning for big projects.  |
 | `deepseek-v3.2`                  | ★★★★☆       | `Reasoning` | `Fast`     | 73.1% SWE-bench. Refined V3 release — reliable reasoning for complex coding tasks.               |
 | `gemini-3.1-flash-lite`          | ★★★★☆       | `General`   | `Fast`     | Google's efficient flash-lite. Steady throughput for background tasks at 100 RPM.                |
+| `gpt-4o`                         | ★★★★☆       | `General`   | `Fast`     | Proven workhorse. Handles daily coding with consistent, structured output.                       |
+| `gpt-5-codex`                    | ★★★★☆       | `Code`      | `Blazing`  | GPT codex variant — purpose-built for code generation at blazing speed.                          |
+| `gpt-5.3-codex`                  | ★★★★☆       | `Code`      | `Fast`     | Latest codex variant. Clean, direct code output with strong multi-file awareness.                |
 | `gpt-oss-20b`                    | ★★★★☆       | `Code`      | `Blazing`  | Same reliable DNA as the 120B, lighter and faster. Perfect for rapid iteration loops.            |
 | `kimi-k2.6`                      | ★★★★☆       | `Reasoning` | `Fast`     | 1T multimodal MoE. Strong long-horizon reasoning for complex multi-step analysis.                |
 | `umbra`                          | ★★★★☆       | `General`   | `Blazing`  | Mystery model with sub-second responses. Surprisingly capable for its speed — a solid wildcard.  |
