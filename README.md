@@ -1,12 +1,12 @@
 # Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> **Last Verified: June 23, 2026** - All models tested live across 31 providers.
+> ⏰ **Last Verified: June 23, 2026** - All models tested live across 38 providers.
 
-Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and BYOK agents.
+Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
-By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API keys directly into coding tools like **VS Code extensions, terminal assistants, or code editors**, or use them in your **coding projects**. It doesn't even require a **credit card** for the best models!
+By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API keys into **coding tools**, **custom projects**, or **AI-powered apps** — no credit card required. Every model listed here is rated for coding capability, but most work just as well for general conversation.
 
-> **Pro tip:** Free tiers rotate often. If a model hits rate limits, switch to another — there's always a backup in this list.
+> 💡 **Pro tip:** Free tiers rotate often. If a model hits rate limits, switch to another — there's always a backup in this list.
 > **Always verify** current quotas on the provider's console before building workflows.
 
 ## Contents
@@ -19,17 +19,17 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 
 If you are signing up for free accounts to get API keys, these are the **top platforms** to look at first.
 
-| Provider          | The Simple Vibe     | Why It Matters For You                                                                                                                                              |
-| :---------------- | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Ollama Cloud**  | Uncapped & Reliable | Time-based compute allocation with no daily request cap — the only provider where you can code all day without counting requests. Home to the #1 ranked free model. |
-| **Google Gemini** | Infinite Battery    | 1,500 free requests per day on flash-lite with a massive context window. Lighter on reasoning but unstoppable for continuous background tasks.                      |
-| **LLM7.IO**       | Heavy Lifter        | 128 RPM with 5M daily tokens and replenishable credits — hosts the #3 ranked model. No hard daily cap, ideal for sustained coding sessions.                         |
+| Provider          | The Simple Vibe     | Why It Matters For You                                                                                                                                                      |
+| :---------------- | :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Ollama Cloud**  | Uncapped & Reliable | Time-based compute allocation with no daily request cap — the only provider where you can code or chat all day without counting requests. Home to the #1 ranked free model. |
+| **Google Gemini** | Infinite Battery    | 1,500 free requests per day on flash-lite with a massive context window. Lighter on reasoning but unstoppable for continuous background tasks.                              |
+| **LLM7.IO**       | Heavy Lifter        | 128 RPM with 5M daily tokens and replenishable credits — hosts the #3 ranked model. No hard daily cap, ideal for sustained coding and general-purpose use.                  |
 
 ---
 
 ## Top Free Models
 
-The absolute best free models available right now, ranked by how well they handle **daily coding tasks** and **projects that require a working model**. This does **NOT** include vision models — all models here are text-only.
+The absolute best free models available right now, ranked by how well they handle **daily coding tasks** and **projects that require a working model**. While this leaderboard ranks models for coding, every provider in the full list below also works great for general chat and creative tasks. This does **NOT** include vision models — all models here are text-only.
 
 | Rank   | Model                          | Host Provider       | The Simple Reason to Choose It                                                                                                                                                                                                                                                |
 | :----- | :----------------------------- | :------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,39 +50,82 @@ The absolute best free models available right now, ranked by how well they handl
 
 These tables break down notable free models from each provider's ecosystem, **capped at ★★★☆☆ or above for providers and ★★★★☆ or above for hubs**. Ratings are based on how well they handle real-world development demands — typing speed, instruction following, and large projects — evaluated against each provider's quota, rate limits, and context windows.
 
-### [AION Labs](https://www.aionlabs.ai) Models
+<strong>Jump to a provider or hub:</strong>
+
+<ul>
+  <li><a href="#aion-labs">AION Labs</a></li>
+  <li><a href="#agnes-ai">Agnes AI</a></li>
+  <li><a href="#anyapi-ai">AnyAPI AI</a></li>
+  <li><a href="#api-airforce">API Airforce</a></li>
+  <li><a href="#auriko">Auriko</a></li>
+  <li><a href="#blazeapi">BlazeAPI</a></li>
+  <li><a href="#cerebras-ai">Cerebras AI</a></li>
+  <li><a href="#cloudflare-workers-ai">Cloudflare Workers AI</a></li>
+  <li><a href="#cohere-ai">Cohere AI</a></li>
+  <li><a href="#electronhub">ElectronHub</a></li>
+  <li><a href="#fastrouter">FastRouter</a></li>
+  <li><a href="#github-models">GitHub Models</a></li>
+  <li><a href="#google-gemini">Google Gemini</a></li>
+  <li><a href="#groq-api">Groq API</a></li>
+  <li><a href="#helixmind">HelixMind</a></li>
+  <li><a href="#hugging-face-inference-api">Hugging Face Inference API</a></li>
+  <li><a href="#kilo-code">Kilo Code</a></li>
+  <li><a href="#llm7io">LLM7.IO</a></li>
+  <li><a href="#llmgateway">LLMGateway</a></li>
+  <li><a href="#literouter">LiteRouter</a></li>
+  <li><a href="#mnn-ai">MNN AI</a></li>
+  <li><a href="#meganova-ai">MegaNova AI</a></li>
+  <li><a href="#mistral-ai">Mistral AI</a></li>
+  <li><a href="#mixlayer">Mixlayer</a></li>
+  <li><a href="#naga-ai">Naga AI</a></li>
+  <li><a href="#navy-api">Navy API</a></li>
+  <li><a href="#nvidia-nim">NVIDIA NIM</a></li>
+  <li><a href="#ollama-cloud">Ollama Cloud</a></li>
+  <li><a href="#opencode-zen">OpenCode Zen</a></li>
+  <li><a href="#openrouter">OpenRouter</a></li>
+  <li><a href="#paxsenix">PaxSenix</a></li>
+  <li><a href="#pollinations-ai">Pollinations AI</a></li>
+  <li><a href="#poolside">Poolside</a></li>
+  <li><a href="#routeway-ai">Routeway AI</a></li>
+  <li><a href="#sambanova-ai">SambaNova AI</a></li>
+  <li><a href="#tokenreply">TokenReply</a></li>
+  <li><a href="#void-ai">Void AI</a></li>
+  <li><a href="#zai-zhipu-ai">Z.AI (Zhipu AI)</a></li>
+</ul>
+
+### [AION Labs](https://www.aionlabs.ai)
 
 AION Labs provides storytelling-optimized models through an OpenAI-compatible API. The free tier offers 20,000 tokens/day and 15 RPM with no credit card required — a solid option if you need a daily token allowance for lightweight coding and creative tasks. AION Labs currently has 2 models verified.
 
-**Free Tier Quota:** 15 RPM / 500 RPD / 5,000,000 TPD
+🎁 **Free Tier Quota:** 15 RPM / 500 RPD / 5,000,000 TPD
 
-**Base URL:** `https://api.aionlabs.ai/v1`
+🔗 **Base URL:** `https://api.aionlabs.ai/v1`
 
 | Free Model                       | Star Rating | Best For   | Speed     | Opinion                                                                           |
 | :------------------------------- | :---------- | :--------- | :-------- | :-------------------------------------------------------------------------------- |
 | `aion-labs/aion-2.5`             | ★★★★★       | `Code`     | `Fast`    | Clean, direct output with no preamble. The top pick on AION Labs.                 |
 | `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | `Fallback` | `Blazing` | Fastest AION model. Handles lightweight tasks instantly, but 8B cap limits depth. |
 
-### [Agnes AI](https://www.agnes.ai) Models
+### [Agnes AI](https://www.agnes.ai)
 
 Agnes AI offers flash-tier models with generous daily limits but slow inference speed. The free tier provides 1,000 requests per day at 20 RPM — enough volume for background jobs, but ~7s latency makes interactive use frustrating. No credit card required. Agnes AI currently has 2 models verified.
 
-**Free Tier Quota:** 20 RPM / 1,000 RPD
+🎁 **Free Tier Quota:** 20 RPM / 1,000 RPD
 
-**Base URL:** `https://api.agnes.ai/v1`
+🔗 **Base URL:** `https://api.agnes.ai/v1`
 
 | Free Model        | Star Rating | Best For   | Speed  | Opinion                                                                                          |
 | :---------------- | :---------- | :--------- | :----- | :----------------------------------------------------------------------------------------------- |
 | `agnes-1.5-flash` | ★★★☆☆       | `Fallback` | `Slow` | Older flash model — works but well behind current frontier models in both speed and quality.     |
 | `agnes-2.0-flash` | ★★★☆☆       | `General`  | `Slow` | Latest flash variant with decent reasoning. The 7s latency is the main bottleneck for daily use. |
 
-### [AnyAPI AI](https://anyapi.ai) Models
+### [AnyAPI AI](https://anyapi.ai)
 
 AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, Cohere, and more through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with access to free and basic models — no credit card required. AnyAPI currently has 10 models verified — 8 are ★★★★☆ or above.
 
-**Free Tier Quota:** 100,000 tokens/day / No Credit Card
+🎁 **Free Tier Quota:** 100,000 tokens/day / No Credit Card
 
-**Base URL:** `https://api.anyapi.ai/v1`
+🔗 **Base URL:** `https://api.anyapi.ai/v1`
 
 | Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                                 |
 | :--------------------------------------------------- | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------------- |
@@ -95,25 +138,25 @@ AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Ant
 | `openrouter/fusion`                                  | ★★★★☆       | `General`   | `Moderate` | OpenRouter's multi-model fusion — aggregates outputs for balanced responses.            |
 | `poolside/laguna-xs.2:free`                          | ★★★★☆       | `Code`      | `Blazing`  | Poolside's 33B coder. Sub-second responses for inline completions.                      |
 
-### [API Airforce](https://www.apiairforce.com) Models
+### [API Airforce](https://www.apiairforce.com)
 
 API Airforce is a lightweight inference provider with a single model offering — a free DeepSeek V3.2 variant. The free tier gives you 1,000 requests per day at 1 RPM, suitable for occasional queries and quick debugging. No identity verification required. API Airforce currently has 1 model verified.
 
-**Free Tier Quota:** 1 RPM / 1,000 RPD
+🎁 **Free Tier Quota:** 1 RPM / 1,000 RPD
 
-**Base URL:** `https://api.apiairforce.com/v1`
+🔗 **Base URL:** `https://api.apiairforce.com/v1`
 
 | Free Model           | Star Rating | Best For   | Speed      | Opinion                                                                                                      |
 | :------------------- | :---------- | :--------- | :--------- | :----------------------------------------------------------------------------------------------------------- |
 | `deepseek-v3.2-free` | ★★★☆☆       | `Fallback` | `Moderate` | DeepSeek V3.2 at no cost — strong reasoning but 1 RPM limits it to occasional queries, not sustained coding. |
 
-### [Auriko](https://www.auriko.ai) Models
+### [Auriko](https://www.auriko.ai)
 
 Auriko is a unified API gateway providing access to 100+ models from top providers (OpenAI, Anthropic, DeepSeek, Google, xAI, Moonshot, and more) through a single OpenAI-compatible endpoint. The free tier offers 1,000 Platform RPM and 500 BYOK RPM with a 1M token monthly cap and zero inference markup — no credit card required. Access to every model on the platform at provider cost. Auriko currently has 166 models verified — 45 are ★★★★☆ or above.
 
-**Free Tier Quota:** 500 RPM (BYOK) / 1,000 RPM (Platform) / 1,000,000 tokens/month (BYOK)
+🎁 **Free Tier Quota:** 500 RPM (BYOK) / 1,000 RPM (Platform) / 1,000,000 tokens/month (BYOK)
 
-**Base URL:** `https://api.auriko.ai/v1`
+🔗 **Base URL:** `https://api.auriko.ai/v1`
 
 | Free Model                           | Star Rating | Best For    | Speed      | Opinion                                                                                                     |
 | :----------------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------------------------- |
@@ -163,26 +206,39 @@ Auriko is a unified API gateway providing access to 100+ models from top provide
 | `qwen-3.6-35b-a3b`                   | ★★★★☆       | `Code`      | `Blazing`  | Latest Qwen 3.6 — efficient MoE architecture with strong reasoning density per token.                       |
 | `seed-2.0-code`                      | ★★★★☆       | `Code`      | `Fast`     | Coding-specialized from Seed. Handles multi-file refactors without rambling.                                |
 
-### [Cerebras AI](https://cloud.cerebras.ai) Models
+### [BlazeAPI](https://blazeai.boxu.dev)
+
+BlazeAPI is a lightweight inference hub serving models from Moonshot and Z.AI through an OpenAI-compatible endpoint. The free tier provides 20 RPM with 1,000 requests per day — a solid quota for daily coding and occasional heavy queries. No credit card required. BlazeAPI currently has 2 models verified — both at ★★★★☆ or above.
+
+🎁 **Free Tier Quota:** 20 RPM / 1,000 RPD
+
+🔗 **Base URL:** `https://blazeai.boxu.dev/api`
+
+| Free Model             | Star Rating | Best For    | Speed  | Opinion                                                                                |
+| :--------------------- | :---------- | :---------- | :----- | :------------------------------------------------------------------------------------- |
+| `moonshotai/kimi-k2.6` | ★★★★☆       | `Reasoning` | `Fast` | 1T multimodal MoE with strong long-horizon reasoning. Solid daily driver at 1,000 RPD. |
+| `z-ai/glm-5.1`         | ★★★★☆       | `General`   | `Fast` | GLM 5.1 — clean output with solid reasoning for everyday coding tasks.                 |
+
+### [Cerebras AI](https://cloud.cerebras.ai)
 
 Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, integrating memory, compute, and interconnects onto a single silicon wafer — solving the "memory wall" that throttles inference speed. The free tier offers replenishable credits with industry-leading throughput (2,500+ tokens/second). Cerebras AI currently has 2 models verified.
 
-**Free Tier Quota:** 5 RPM / 250 RPD / 30,000 TPM
+🎁 **Free Tier Quota:** 5 RPM / 250 RPD / 30,000 TPM
 
-**Base URL:** `https://api.cerebras.ai/v1`
+🔗 **Base URL:** `https://api.cerebras.ai/v1`
 
 | Free Model     | Star Rating | Best For  | Speed     | Opinion                                                                                                        |
 | :------------- | :---------- | :-------- | :-------- | :------------------------------------------------------------------------------------------------------------- |
 | `gpt-oss-120b` | ★★★★☆       | `General` | `Blazing` | The same 117B MoE flagship that dominates on Groq. Sub-second responses on Cerebras' wafer-scale architecture. |
 | `zai-glm-4.7`  | ★★★★☆       | `Agent`   | `Blazing` | 131K context window optimized for rapid agentic coding. Efficient at blazing speeds.                           |
 
-### [Cloudflare Workers AI](https://dash.cloudflare.com) Models
+### [Cloudflare Workers AI](https://dash.cloudflare.com)
 
 Cloudflare Workers AI runs models on Cloudflare's global edge network using serverless GPUs. The free tier offers 10,000 requests/day shared across all models with near-zero latency from edge locations worldwide. Cloudflare Workers AI currently has 27 models verified — 22 are ★★★☆☆ or above.
 
-**Free Tier Quota:** 150 to 1,500 RPM / 100,000 RPD / 13,000 TPD
+🎁 **Free Tier Quota:** 150 to 1,500 RPM / 100,000 RPD / 13,000 TPD
 
-**Base URL:** `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1/chat/completions` (replace `{account_id}` with your Cloudflare account ID)
+🔗 **Base URL:** `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1/chat/completions` (replace `{account_id}` with your Cloudflare account ID)
 
 > ⚠️ **Two API paths:** The `/chat/completions` endpoint takes standard `"messages"` (OpenAI-compatible). The legacy `/run/{model}` endpoint uses `"prompt"` instead — make sure your tool targets the right one.
 
@@ -211,13 +267,13 @@ Cloudflare Workers AI runs models on Cloudflare's global edge network using serv
 | `@cf/mistralai/mistral-small-3.1-24b-instruct` | ★★★☆☆       | `General`   | `Slow`     | Feels sluggish for tight coding loops — fine for conversation, frustrating for quick edits.                     |
 | `@cf/qwen/qwq-32b`                             | ★★★☆☆       | `Reasoning` | `Moderate` | Good at logic puzzles, but chain-of-thought preamble makes you wait.                                            |
 
-### [Cohere AI](https://dashboard.cohere.com) Models
+### [Cohere AI](https://dashboard.cohere.com)
 
 Cohere focuses on enterprise-grade NLP with their Command model family — built for RAG, tool use, and coding workflows. The free API tier offers replenishable credits with daily resets, and nearly every model delivers sub-second responses. Cohere AI currently has 10 models verified.
 
-**Free Tier Quota:** 20 RPM / 1,000 API calls per month
+🎁 **Free Tier Quota:** 20 RPM / 1,000 API calls per month
 
-**Base URL:** `https://api.cohere.com/v2`
+🔗 **Base URL:** `https://api.cohere.com/v2`
 
 | Free Model                    | Star Rating | Best For    | Speed      | Opinion                                                                                                      |
 | :---------------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------------------- |
@@ -232,13 +288,13 @@ Cohere focuses on enterprise-grade NLP with their Command model family — built
 | `command-a-reasoning-08-2025` | ★★★☆☆       | `Reasoning` | `Moderate` | Reasoning-focused variant. Minimal outputs suit internal chain-of-thought.                                   |
 | `command-a-translate-08-2025` | ★★★☆☆       | `Fallback`  | `Fast`     | Translation-optimized model. Works for code but limited general coding utility.                              |
 
-### [ElectronHub](https://electronhub.ai) Models
+### [ElectronHub](https://electronhub.ai)
 
 ElectronHub is a credit-based inference hub offering an enormous catalog of models from OpenAI, Google, Meta, Mistral, Cohere, DeepSeek, Qwen, Microsoft, and more through an OpenAI-compatible endpoint. The free tier provides 5 RPM with $0.25 in weekly credits — replenishes every week, but the dollar cap limits heavy usage. Best for targeted queries and efficient coding. No credit card required. ElectronHub currently has roughly 55 verified coding-relevant models — all at ★★★★☆ or above.
 
-**Free Tier Quota:** 5 RPM / $0.25 Weekly Credits
+🎁 **Free Tier Quota:** 5 RPM / $0.25 Weekly Credits
 
-**Base URL:** `https://api.electronhub.ai/v1`
+🔗 **Base URL:** `https://api.electronhub.ai/v1`
 
 | Free Model                           | Star Rating | Best For    | Speed      | Opinion                                                                                         |
 | :----------------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------------- |
@@ -258,13 +314,26 @@ ElectronHub is a credit-based inference hub offering an enormous catalog of mode
 | `qwen-2.5-coder-32b-instruct`        | ★★★★☆       | `Code`      | `Blazing`  | Qwen's coding specialist. Strong code generation at sub-second speed with efficient token use.  |
 | `step-3.5-flash`                     | ★★★★☆       | `Agentic`   | `Blazing`  | Agentic powerhouse — 74.4% SWE-bench. Tiny 11B active params deliver shocking value.            |
 
+### [FastRouter](https://fastrouter.ai)
+
+FastRouter is a lightweight inference hub offering Sarvam AI models with a `:free` suffix through an OpenAI-compatible endpoint. The free tier provides 10 requests per day per model with no billing credits required — a tight cap suited for occasional queries and model evaluation. No credit card required. FastRouter currently has 2 models verified — all at ★★★★☆ or above.
+
+🎁 **Free Tier Quota:** 10 RPD per model / No Billing Credits Required
+
+🔗 **Base URL:** `https://api.fastrouter.ai/api/v1`
+
+| Free Model                | Star Rating | Best For  | Speed     | Opinion                                                                                        |
+| :------------------------ | :---------- | :-------- | :-------- | :--------------------------------------------------------------------------------------------- |
+| `sarvam/sarvam-105b:free` | ★★★★☆       | `General` | `Fast`    | Sarvam's 105B flagship — strong multilingual reasoning with solid general coding capability.   |
+| `sarvam/sarvam-30b:free`  | ★★★★☆       | `General` | `Blazing` | Compact 30B variant. Faster responses for lighter tasks, the 105B is better for complex logic. |
+
 ### [GitHub Models](https://github.com/marketplace/models)
 
 GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and others using your existing GitHub account — no new signup needed. Free tier quotas are modest (request-based limits), making it best for prototyping and personal projects. GitHub Models currently has 3 models verified.
 
-**Free Tier Quota:** 10 to 15 RPM / 50 to 150 RPD
+🎁 **Free Tier Quota:** 10 to 15 RPM / 50 to 150 RPD
 
-**Base URL:** `https://models.inference.ai.azure.com`
+🔗 **Base URL:** `https://models.inference.ai.azure.com`
 
 | Free Model                     | Star Rating | Best For    | Speed      | Opinion                                                                                                                          |
 | :----------------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------------------------------------------- |
@@ -272,13 +341,13 @@ GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and
 | `gpt-4o-mini`                  | ★★★★☆       | `General`   | `Fast`     | Compact, fast, and clean. Reliable fallback when your bigger model quota runs low for the day.                                   |
 | `gpt-4o`                       | ★★★★☆       | `General`   | `Moderate` | Full OpenAI flagship. Adds markdown by default, but a simple system prompt fixes it — strong all-around for chat and coding.     |
 
-### [Google Gemini](https://aistudio.google.com) Models
+### [Google Gemini](https://aistudio.google.com)
 
 Gemini offers large context windows on paper, but the free tier's **rate limits vary by model** — Flash-lite variants enjoy ~500 RPD, while standard models can be as low as 20 RPD. Use Gemini for quick, targeted tasks and single-file edits — not marathon sessions. Google Gemini currently has 8 models verified.
 
-**Free Tier Quota:** 15–30 RPM / 1,500 RPD / 1M TPM / Uncapped TPD
+🎁 **Free Tier Quota:** 15–30 RPM / 1,500 RPD / 1M TPM / Uncapped TPD
 
-**Base URL:** `https://generativelanguage.googleapis.com/v1beta`
+🔗 **Base URL:** `https://generativelanguage.googleapis.com/v1beta`
 
 | Free Model                                               | Star Rating | Best For    | Speed     | Opinion                                                                                             |
 | :------------------------------------------------------- | :---------- | :---------- | :-------- | :-------------------------------------------------------------------------------------------------- |
@@ -291,13 +360,13 @@ Gemini offers large context windows on paper, but the free tier's **rate limits 
 | `models/gemini-3.5-flash` / `models/gemini-flash-latest` | ★★★☆☆       | `Code`      | `Fast`    | Improved reasoning over prior flash variants. ~20 RPD prevents sustained agentic use.               |
 | `models/gemini-flash-lite-latest`                        | ★★★☆☆       | `General`   | `Blazing` | **LIGHT SCRIPTING ONLY.** Incredibly fast bare-bones lite variant. Lacks depth for multi-file work. |
 
-### [Groq API](https://console.groq.com) Models
+### [Groq API](https://console.groq.com)
 
 Groq is famous for providing the **absolute lowest streaming latency** in the API market, outrunning traditional cloud providers by a massive margin. The free tier offers 30 RPM with replenishable daily credits — no credit card needed. If you want a setup where your terminal files patch instantly without the typical spinning wheel delay, this is your go-to. Groq API currently has 8 models verified.
 
-**Free Tier Quota:** 30 RPM / 14,400 RPD / 18,000 TPM
+🎁 **Free Tier Quota:** 30 RPM / 14,400 RPD / 18,000 TPM
 
-**Base URL:** `https://api.groq.com/openai/v1`
+🔗 **Base URL:** `https://api.groq.com/openai/v1`
 
 | Free Model                                  | Star Rating | Best For  | Speed      | Opinion                                                                                          |
 | :------------------------------------------ | :---------- | :-------- | :--------- | :----------------------------------------------------------------------------------------------- |
@@ -310,13 +379,13 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 | `llama-3.1-8b-instant`                      | ★★★☆☆       | `Code`    | `Blazing`  | Fun for tiny, rapid-fire edits — tends to cut off on long scripts.                               |
 | `meta-llama/llama-4-scout-17b-16e-instruct` | ★★★☆☆       | `Chat`    | `Fast`     | Handles medium tasks. Overthinks simple prompts.                                                 |
 
-### [HelixMind](https://helixmind.online) Models
+### [HelixMind](https://helixmind.online)
 
 HelixMind is a lightweight inference hub offering a small set of free models from Meta, OpenAI, Mistral, and DeepSeek through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 50 requests per day — the tightest cap on this list, strictly for occasional queries and quick tests. No credit card required. HelixMind currently has 5 models verified — all at ★★★★☆ or above.
 
-**Free Tier Quota:** 3 RPM / 50 RPD
+🎁 **Free Tier Quota:** 3 RPM / 50 RPD
 
-**Base URL:** `https://helixmind.online/v1`
+🔗 **Base URL:** `https://helixmind.online/v1`
 
 | Free Model             | Star Rating | Best For    | Speed     | Opinion                                                                                            |
 | :--------------------- | :---------- | :---------- | :-------- | :------------------------------------------------------------------------------------------------- |
@@ -326,13 +395,13 @@ HelixMind is a lightweight inference hub offering a small set of free models fro
 | `llama-4-scout`        | ★★★★☆       | `General`   | `Fast`    | Meta's scout variant. Solid fallback when Maverick is rate-limited.                                |
 | `mistral-large-latest` | ★★★★☆       | `General`   | `Slow`    | Mistral's 123B flagship with strong reasoning, but 27s latency makes it impractical for daily use. |
 
-### [Hugging Face Inference API](https://huggingface.co/inference-api) Models
+### [Hugging Face Inference API](https://huggingface.co/inference-api)
 
 Hugging Face's free Inference API gives you access to thousands of community-hosted models with OpenAI-compatible endpoints. The free tier offers $0.10/month in credits — enough for light experimentation, not sustained coding. The real strength is model diversity: 19 ★★★★★ models ranging from 3B to 1T parameters. Hugging Face currently has approximately 80 models verified — 27 are ★★★★☆ or above.
 
-**Free Tier Quota:** $0.10/month credits (~650K tokens)
+🎁 **Free Tier Quota:** $0.10/month credits (~650K tokens)
 
-**Base URL:** `https://router.huggingface.co/v1`
+🔗 **Base URL:** `https://router.huggingface.co/v1`
 
 | Free Model                                          | Star Rating | Best For    | Speed      | Opinion                                                                                            |
 | :-------------------------------------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------------- |
@@ -364,13 +433,13 @@ Hugging Face's free Inference API gives you access to thousands of community-hos
 | `Qwen/Qwen3.6-35B-A3B`                              | ★★★★☆       | `Code`      | `Fast`     | The most efficient model on the list. Modern Qwen quality for rapid iteration.                     |
 | `zai-org/GLM-4.7`                                   | ★★★★☆       | `General`   | `Fast`     | Optimized for throughput — hammer it all day and it keeps responding.                              |
 
-### [Kilo Code](https://app.kilo.ai) Models
+### [Kilo Code](https://app.kilo.ai)
 
 Kilo Code is a coding-agent platform that proxies free models from OpenRouter, NVIDIA, Poolside, and others through a single API key. The free tier offers generous replenishable credits with no hard daily cap — a solid Swiss-army-knife provider that gives you access to a diverse model pool through one endpoint. Kilo Code currently has 11 models verified.
 
-**Free Tier Quota:** 5 RPM / 200 RPD
+🎁 **Free Tier Quota:** 5 RPM / 200 RPD
 
-**Base URL:** `https://api.kilo.ai/api/gateway`
+🔗 **Base URL:** `https://api.kilo.ai/api/gateway`
 
 | Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                           |
 | :--------------------------------------------------- | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------- |
@@ -386,13 +455,13 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 | `poolside/laguna-xs.2:free`                          | ★★★★☆       | `Code`      | `Blazing`  | Built for inline edits — stays out of your way and finishes before you blink.     |
 | `stepfun/step-3.7-flash:free`                        | ★★★★☆       | `General`   | `Fast`     | Dependable and drama-free. Perfect for everyday edits.                            |
 
-### [LLM7.IO](https://llm7.io) Models
+### [LLM7.IO](https://llm7.io)
 
 LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp server with OpenAI-compatible endpoints. The free tier offers replenishable credits with no daily hard cap — a solid option if you want to test heavyweight models (up to 235B) on a simple API without commitment. LLM7.IO currently has 3 models verified.
 
-**Free Tier Quota:** 128 RPM / ~7,200 RPD / 5M TPD (Free Token Users Only)
+🎁 **Free Tier Quota:** 128 RPM / ~7,200 RPD / 5M TPD (Free Token Users Only)
 
-**Base URL:** `https://api.llm7.io/v1`
+🔗 **Base URL:** `https://api.llm7.io/v1`
 
 | Free Model          | Star Rating | Best For  | Speed      | Opinion                                                                                        |
 | :------------------ | :---------- | :-------- | :--------- | :--------------------------------------------------------------------------------------------- |
@@ -400,13 +469,40 @@ LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp 
 | `codestral-latest`  | ★★★★☆       | `Code`    | `Fast`     | Strongest coding option here after Qwen. Adds a brief preamble but completions are solid.      |
 | `mistral-small-3.2` | ★★★☆☆       | `General` | `Moderate` | Adequate for chat and scripting, but the verbose preamble kills the flow.                      |
 
-### [MNN AI](https://mnnai.ru) Models
+### [LLMGateway](https://llmgateway.io)
+
+LLMGateway is a lightweight inference hub serving models from Zhipu AI and more through its gateway at $0 per 1M tokens — a genuinely free per-token pricing model with no credit cap. The free tier offers 5 requests per 10 minutes with no daily token limit, making it practical for light coding and scripting tasks. No credit card required. LLMGateway currently has 2 models verified — both at ★★★★☆ or above.
+
+🎁 **Free Tier Quota:** 5 requests per 10 minutes / $0 per 1M tokens
+
+🔗 **Base URL:** `https://api.llmgateway.io/v1`
+
+| Free Model       | Star Rating | Best For   | Speed     | Opinion                                                                                            |
+| :--------------- | :---------- | :--------- | :-------- | :------------------------------------------------------------------------------------------------- |
+| `glm-4.5-flash`  | ★★★★☆       | `Fallback` | `Fast`    | Older flash variant. Handles basic scripting and text tasks with direct output — no wasted tokens. |
+| `glm-4.6v-flash` | ★★★★☆       | `General`  | `Blazing` | Newer flash variant with vision support. Fast, clean responses with no token-wasting preamble.     |
+
+### [LiteRouter](https://literouter.com)
+
+LiteRouter is a lightweight inference hub offering free models from OpenAI, DeepSeek, Mistral, Meta, and more through an OpenAI-compatible endpoint with a `:free` suffix. The free tier provides uncapped daily requests with 1 concurrent request and 15,000 tokens per day — enough for light scripting and targeted queries. No credit card required. LiteRouter currently has 3 models verified — all at ★★★★☆ or above.
+
+🎁 **Free Tier Quota:** 1 Concurrent Request / 15,000 TPD / Uncapped RPD
+
+🔗 **Base URL:** `https://api.literouter.com/v1`
+
+| Free Model           | Star Rating | Best For    | Speed      | Opinion                                                                                       |
+| :------------------- | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------------------- |
+| `gpt-oss-120b:free`  | ★★★★★       | `General`   | `Fast`     | The same reliable 120B flagship. Make each of your 15k daily tokens count with efficient use. |
+| `deepseek-v3.2:free` | ★★★★☆       | `Reasoning` | `Moderate` | 73.1% SWE-bench. Strong reasoning for complex debugging within the tight token budget.        |
+| `gpt-oss-20b:free`   | ★★★★☆       | `Code`      | `Blazing`  | Reliable light flagship. Best value for the 15k TPD cap — efficient token usage per response. |
+
+### [MNN AI](https://mnnai.ru)
 
 MNN AI is a credit-based inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Meta, Mistral, Moonshot, Stepfun, and more through an OpenAI-compatible endpoint. The free tier provides 10 RPM with $1 in monthly credits — replenishable each month, but the dollar cap limits heavy usage. Best suited for light daily coding and targeted queries. No credit card required. MNN AI currently has roughly 25 verified coding-relevant models — all at ★★★★☆ or above.
 
-**Free Tier Quota:** 10 RPM / $1 Monthly Credits
+🎁 **Free Tier Quota:** 10 RPM / $1 Monthly Credits
 
-**Base URL:** `https://api2.mnnai.ru/v1`
+🔗 **Base URL:** `https://api2.mnnai.ru/v1`
 
 | Free Model           | Star Rating | Best For    | Speed      | Opinion                                                                                      |
 | :------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------- |
@@ -426,13 +522,30 @@ MNN AI is a credit-based inference hub offering models from OpenAI, Google, Deep
 | `qwen-3-coder-plus`  | ★★★★☆       | `Code`      | `Fast`     | Qwen's coding-specialized variant. Clean code output with strong instruction following.      |
 | `step-3.5-flash`     | ★★★★☆       | `Agentic`   | `Blazing`  | Agentic powerhouse — 74.4% SWE-bench. Tiny 11B active params punch far above weight.         |
 
-### [Mistral AI](https://console.mistral.ai) Models
+### [MegaNova AI](https://meganova.ai)
+
+MegaNova AI is a community-model inference hub offering fine-tuned variants of Llama, Mistral, and its own Manta series through an OpenAI-compatible endpoint. The free tier provides 60 RPM with 550 requests per day and 200,000 tokens per minute — generous throughput for a community model hub. No credit card required. MegaNova AI currently has 6 models verified — all at ★★★★☆ or above.
+
+🎁 **Free Tier Quota:** 60 RPM / 550 RPD / 200,000 TPM
+
+🔗 **Base URL:** `https://api.meganova.ai/v1`
+
+| Free Model                                      | Star Rating | Best For  | Speed     | Opinion                                                                                           |
+| :---------------------------------------------- | :---------- | :-------- | :-------- | :------------------------------------------------------------------------------------------------ |
+| `BruhzWater/Sapphira-L3.3-70b-0.1`              | ★★★★☆       | `General` | `Fast`    | Llama 3.3 70B fine-tune — strong reasoning depth with polished instruction following.             |
+| `meganova-ai/manta-flash-1.0`                   | ★★★★☆       | `General` | `Blazing` | MegaNova's own flash variant — fast, clean responses with solid general coding capability.        |
+| `meganova-ai/manta-mini-1.0`                    | ★★★★☆       | `General` | `Blazing` | Compact Manta variant. Efficient for lightweight tasks and quick edits at blazing speed.          |
+| `mistralai/Mistral-Small-3.2-24B-Instruct-2506` | ★★★★☆       | `General` | `Fast`    | Official Mistral 24B — clean instruction following at a strong quality-to-speed ratio.            |
+| `Sao10K/L3-70B-Euryale-v2.1`                    | ★★★★☆       | `General` | `Fast`    | Community Llama 3 70B fine-tune. Solid general-purpose coding with consistent output.             |
+| `Steelskull/L3.3-MS-Nevoria-70b`                | ★★★★☆       | `General` | `Fast`    | Another 70B community fine-tune. Reliable output for daily coding with good structural awareness. |
+
+### [Mistral AI](https://console.mistral.ai)
 
 Mistral AI is highly regarded for building models that punch far above their **parameter weight class**, with exceptionally clean instruction following and compact execution. The free tier offers replenishable credits with generous RPM limits. Mistral AI currently has 42 models verified (with aliases) — 24 are ★★★☆☆ or above.
 
-**Free Tier Quota:** ~2–30 RPM / 50,000 TPM shared pool
+🎁 **Free Tier Quota:** ~2–30 RPM / 50,000 TPM shared pool
 
-**Base URL:** `https://api.mistral.ai/v1`
+🔗 **Base URL:** `https://api.mistral.ai/v1`
 
 | Free Model                                          | Star Rating | Best For    | Speed      | Opinion                                                                                                            |
 | :-------------------------------------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------------------------- |
@@ -461,25 +574,25 @@ Mistral AI is highly regarded for building models that punch far above their **p
 | `mistral-vibe-cli-with-tools`                       | ★★★☆☆       | `Agent`     | `Fast`     | **TERMINAL HELPER.** Returns raw executable bash tokens with zero conversational prefix.                           |
 | `open-mistral-nemo` / `open-mistral-nemo-2407`      | ★★★☆☆       | `Fallback`  | `Fast`     | Fast and flexible for low-complexity text filtering.                                                               |
 
-### [Mixlayer](https://www.mixlayer.com) Models
+### [Mixlayer](https://www.mixlayer.com)
 
 Mixlayer is an inference platform for open-source AI models with an OpenAI-compatible API. The free tier offers `qwen/qwen3.5-4b-free` for prototyping with rate limits — no credit card required for the free model. A focused Qwen 3.5/3.6 catalog with tool calling and reasoning support. Mixlayer currently has 1 model verified.
 
-**Free Tier Quota:** 20 RPM / Can be rate-limited (daily usage)
+🎁 **Free Tier Quota:** 20 RPM / Can be rate-limited (daily usage)
 
-**Base URL:** `https://models.mixlayer.ai/v1`
+🔗 **Base URL:** `https://models.mixlayer.ai/v1`
 
 | Free Model             | Star Rating | Best For  | Speed     | Opinion                                                                                                                              |
 | :--------------------- | :---------- | :-------- | :-------- | :----------------------------------------------------------------------------------------------------------------------------------- |
 | `qwen/qwen3.5-4b-free` | ★★★★★       | `General` | `Blazing` | The only free model on Mixlayer — handles prototyping and lightweight tasks at blazing speed. Clean, direct output with no preamble. |
 
-### [Naga AI](https://naga.ac) Models
+### [Naga AI](https://naga.ac)
 
 Naga AI is a lightweight inference hub offering a small set of free models from NVIDIA and Meta through an OpenAI-compatible endpoint. The free tier provides 10 RPM with 100 requests per day — a very tight cap that limits it to occasional queries and quick debugging. No credit card required. Naga AI currently has 3 models verified — all at ★★★★☆ or above.
 
-**Free Tier Quota:** 10 RPM / 100 RPD
+🎁 **Free Tier Quota:** 10 RPM / 100 RPD
 
-**Base URL:** `https://api.naga.ac/v1`
+🔗 **Base URL:** `https://api.naga.ac/v1`
 
 | Free Model                            | Star Rating | Best For  | Speed     | Opinion                                                                                      |
 | :------------------------------------ | :---------- | :-------- | :-------- | :------------------------------------------------------------------------------------------- |
@@ -487,13 +600,13 @@ Naga AI is a lightweight inference hub offering a small set of free models from 
 | `llama-4-scout-17b-16e-instruct:free` | ★★★★☆       | `General` | `Blazing` | Meta's latest 17B MoE scout — fast and responsive, but the 100 RPD cap limits sustained use. |
 | `nemotron-3-super-120b-a12b:free`     | ★★★★☆       | `General` | `Fast`    | Strong 120B mid-range from NVIDIA. Steps in when smaller models need more headroom.          |
 
-### [Navy API](https://api.navy) Models
+### [Navy API](https://api.navy)
 
 Navy API is a high-volume inference hub offering an extensive catalog of models from OpenAI, DeepSeek, Grok, Google, Mistral, Cohere, Meta, and more through an OpenAI-compatible endpoint. The free tier provides 20 RPM with 250,000 daily tokens — enough throughput for serious coding sessions. No credit card required. Navy API currently has roughly 60 verified coding-relevant models — all at ★★★★☆ or above.
 
-**Free Tier Quota:** 20 RPM / 250,000 TPD
+🎁 **Free Tier Quota:** 20 RPM / 250,000 TPD
 
-**Base URL:** `https://api.navy/v1`
+🔗 **Base URL:** `https://api.navy/v1`
 
 | Free Model             | Star Rating | Best For    | Speed      | Opinion                                                                                          |
 | :--------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------- |
@@ -515,13 +628,13 @@ Navy API is a high-volume inference hub offering an extensive catalog of models 
 | `kimi-k2.6`            | ★★★★☆       | `Reasoning` | `Fast`     | 1T multimodal MoE from Moonshot. Strong long-horizon reasoning for complex projects.             |
 | `mistral-large-latest` | ★★★★☆       | `General`   | `Fast`     | Mistral's 123B flagship — strong reasoning with exceptionally clean instruction following.       |
 
-### [NVIDIA NIM](https://build.nvidia.com) Models
+### [NVIDIA NIM](https://build.nvidia.com)
 
 NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta, Mistral, Google, Qwen, and more through OpenAI-compatible endpoints — no credit card required. The largest free model library on the list, but 40 RPM per model caps it as a backup pool rather than a daily driver. Only models tagged as **Free Endpoint** (hosted on NVIDIA's own infrastructure) are listed below. NVIDIA NIM currently has 56 models verified — 27 are ★★★★☆ or above.
 
-**Free Tier Quota:** 40 RPM / Uncapped TPD
+🎁 **Free Tier Quota:** 40 RPM / Uncapped TPD
 
-**Base URL:** `https://integrate.api.nvidia.com/v1`
+🔗 **Base URL:** `https://integrate.api.nvidia.com/v1`
 
 | Free Model                                      | Star Rating | Best For    | Speed      | Opinion                                                                                                    |
 | :---------------------------------------------- | :---------- | :---------- | :--------- | :--------------------------------------------------------------------------------------------------------- |
@@ -553,13 +666,13 @@ NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta
 | `stepfun-ai/step-3.5-flash`                     | ★★★★☆       | `Agentic`   | `Blazing`  | Agentic powerhouse at 11B active params. Strong reasoning for daily coding.                                |
 | `stepfun-ai/step-3.7-flash`                     | ★★★★☆       | `Agentic`   | `Blazing`  | Latest Step flash variant. Improved agentic coding with fast response times.                               |
 
-### [Ollama Cloud](https://ollama.com) Models
+### [Ollama Cloud](https://ollama.com)
 
 Ollama Cloud is a cloud-hosted inference service running Ollama behind the scenes, offering a vast model registry without the need to run locally. The free tier provides replenishable credits with generous rate limits — most models respond cleanly and quickly, making it one of the strongest free providers for coding. Ollama Cloud currently has 21 models verified — 20 are ★★★☆☆ or above.
 
-**Free Tier Quota:** 1 Instance / 5-Hour Session Usage / 7-day Weekly Usage
+🎁 **Free Tier Quota:** 1 Instance / 5-Hour Session Usage / 7-day Weekly Usage
 
-**Base URL:** `https://api.ollama.com`
+🔗 **Base URL:** `https://api.ollama.com`
 
 | Free Model             | Star Rating | Best For    | Speed      | Opinion                                                                                                    |
 | :--------------------- | :---------- | :---------- | :--------- | :--------------------------------------------------------------------------------------------------------- |
@@ -584,13 +697,13 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 | `ministral-3:8b`       | ★★★☆☆       | `General`   | `Fast`     | 8B ministral variant. Reliable for quick edits and syntax checks.                                          |
 | `nemotron-3-super`     | ★★★☆☆       | `Reasoning` | `Slow`     | Deep reasoning with significant latency. Capable but you'll wait for every answer.                         |
 
-### [OpenCode Zen](https://opencode.ai/zen) Models
+### [OpenCode Zen](https://opencode.ai/zen)
 
 OpenCode Zen is a curated set of AI models tested and optimized for coding agents by the OpenCode team. The free tier offers 5 models at zero cost through an OpenAI-compatible API — no credit card required for free models (requires adding billing details for API key).
 
-**Free Tier Quota:** 30 RPM / 500 RPD / 1,000,000 TPD
+🎁 **Free Tier Quota:** 30 RPM / 500 RPD / 1,000,000 TPD
 
-**Base URL:** `https://opencode.ai/zen/v1`
+🔗 **Base URL:** `https://opencode.ai/zen/v1`
 
 | Free Model               | Star Rating | Best For      | Speed      | Opinion                                                                                                                                              |
 | :----------------------- | :---------- | :------------ | :--------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -600,13 +713,13 @@ OpenCode Zen is a curated set of AI models tested and optimized for coding agent
 | `mimo-v2.5-free`         | ★★★★☆       | `Code`        | `Moderate` | Lightweight model best kept for small tasks where brief patches matter more than deep logic.                                                         |
 | `north-mini-code-free`   | ★★★★☆       | `Fallback`    | `Blazing`  | Micro-scale utility model suited for inline autocomplete or basic regex conversions.                                                                 |
 
-### [OpenRouter](https://openrouter.ai) Models
+### [OpenRouter](https://openrouter.ai)
 
 OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 13 models verified — all at ★★★★☆ or above.
 
-**Free Tier Quota:** 20 RPM / 50 RPD
+🎁 **Free Tier Quota:** 20 RPM / 50 RPD
 
-**Base URL:** `https://openrouter.ai/api/v1`
+🔗 **Base URL:** `https://openrouter.ai/api/v1`
 
 | Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                                   |
 | :--------------------------------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------- |
@@ -624,13 +737,13 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | `poolside/laguna-m.1:free`                           | ★★★★☆       | `Code`      | `Fast`     | Built by devs for devs. Inline completions that feel like they read your mind.            |
 | `poolside/laguna-xs.2:free`                          | ★★★★☆       | `Code`      | `Blazing`  | Snappier than M.1, slightly less depth. Perfect for fast suggestions.                     |
 
-### [Routeway AI](https://routeway.ai) Models
+### [Routeway AI](https://routeway.ai)
 
 Routeway is a unified API gateway offering free models through a `:free` model suffix — a pattern shared with OpenRouter and Kilo Code. Models are drawn from Stepfun, NVIDIA, Poolside, Meta, and others, all accessed through a single OpenAI-compatible endpoint with no credit card required. The tight 5 RPM cap makes Routeway a fallback hub rather than a daily driver. Routeway currently has 7 models verified — all at ★★★★☆ or above.
 
-**Free Tier Quota:** 5 RPM / 200 RPD / 300,000 TPD
+🎁 **Free Tier Quota:** 5 RPM / 200 RPD / 300,000 TPD
 
-**Base URL:** `https://api.routeway.ai/v1`
+🔗 **Base URL:** `https://api.routeway.ai/v1`
 
 | Free Model                     | Star Rating | Best For    | Speed      | Opinion                                                                           |
 | :----------------------------- | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------- |
@@ -642,13 +755,39 @@ Routeway is a unified API gateway offering free models through a `:free` model s
 | `nemotron-nano-9b-v2:free`     | ★★★★☆       | `Fallback`  | `Fast`     | Reliable NVIDIA nano — punches above its 9B weight for quick edits.               |
 | `step-3.5-flash:free`          | ★★★★☆       | `Agentic`   | `Moderate` | Stepfun's 11B active-param agentic powerhouse. Proven quality at 74.4% SWE-bench. |
 
-### [Pollinations AI](https://pollinations.ai) Models
+### [PaxSenix](https://api.paxsenix.org)
+
+PaxSenix is a high-volume inference hub offering an enormous catalog of models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, xAI, and more through an OpenAI-compatible endpoint. The free tier provides 1,000 requests per day with 500,000 daily tokens — among the most generous quotas on this list, ideal for sustained coding sessions. No credit card required. PaxSenix currently has roughly 50 verified coding-relevant models — all at ★★★★☆ or above.
+
+🎁 **Free Tier Quota:** 1,000 RPD / 500,000 TPD
+
+🔗 **Base URL:** `https://api.paxsenix.org/v1`
+
+| Free Model          | Star Rating | Best For    | Speed      | Opinion                                                                                             |
+| :------------------ | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------------------------- |
+| `claude-sonnet-4-6` | ★★★★★       | `Code`      | `Blazing`  | Latest Claude Sonnet — frontier reasoning at blazing speed. The top pick on PaxSenix for coding.    |
+| `deepseek-v4-flash` | ★★★★★       | `Reasoning` | `Blazing`  | Elite flash variant with 79.0% SWE-bench. Blazing speed at 1,000 RPD — unmatched throughput.        |
+| `deepseek-v4-pro`   | ★★★★★       | `Reasoning` | `Fast`     | Pro variant of V4 — 80.6% SWE-bench. Extra headroom over Flash for the hardest prompts.             |
+| `gemini-3-pro`      | ★★★★★       | `General`   | `Moderate` | Google's pro-tier flagship. Deep reasoning with a massive context window for big projects.          |
+| `gpt-5.4`           | ★★★★★       | `General`   | `Fast`     | Flagship GPT with polished output. Elite general coding at 1k daily requests — best quota in class. |
+| `gpt-5.5`           | ★★★★★       | `General`   | `Blazing`  | Latest GPT release — frontier reasoning with clean, direct output at sub-second speed.              |
+| `gpt-oss-120b`      | ★★★★★       | `General`   | `Blazing`  | The same reliable 120B flagship. Sub-second responses that stretch your daily budget further.       |
+| `codestral-latest`  | ★★★★☆       | `Code`      | `Blazing`  | Mistral's coding specialist — fast completions with strong multi-file awareness.                    |
+| `deepseek-r1`       | ★★★★☆       | `Reasoning` | `Moderate` | Reasoning specialist with visible chain-of-thought. Excellent for math and logic-heavy debugging.   |
+| `deepseek-v3.2`     | ★★★★☆       | `Reasoning` | `Fast`     | 73.1% SWE-bench. Refined V3 release — reliable reasoning for complex coding tasks.                  |
+| `gemini-2.5-flash`  | ★★★★☆       | `General`   | `Fast`     | Google's reliable flash model. Steady throughput for background coding tasks at 1k RPD.             |
+| `gemma-4-31b`       | ★★★★☆       | `General`   | `Fast`     | Google's 31B dense model. Strong generalist for daily coding without the overhead.                  |
+| `gpt-4.1`           | ★★★★☆       | `General`   | `Fast`     | Reliable workhorse — handles daily coding with consistent, structured output.                       |
+| `llama-3.3-70b`     | ★★★★☆       | `General`   | `Blazing`  | Meta's 70B workhorse. Fast and reliable for daily coding with strong instruction following.         |
+| `step-3.5-flash`    | ★★★★☆       | `Agentic`   | `Blazing`  | Agentic powerhouse — 74.4% SWE-bench. Tiny 11B active params deliver shocking strength.             |
+
+### [Pollinations AI](https://pollinations.ai)
 
 Pollinations AI is a free, no-signup inference provider serving a wide variety of models — from OpenAI and Grok to Qwen, Perplexity, and niche music/safety models. No API key needed, no account required — the only truly zero-friction provider on this list. Pollinations AI currently has 38 models verified — 25 are ★★★☆☆ or above.
 
-**Free Tier Quota:** 60 RPM / Unlimited RPD For Secret Keys; 8 RPM / 11,500 RPD For Publishable Keys
+🎁 **Free Tier Quota:** 60 RPM / Unlimited RPD For Secret Keys; 8 RPM / 11,500 RPD For Publishable Keys
 
-**Base URL:** `https://gen.pollinations.ai/v1` (OpenAI-compatible)
+🔗 **Base URL:** `https://gen.pollinations.ai/v1` (OpenAI-compatible)
 
 | Free Model            | Star Rating | Best For    | Speed      | Opinion                                                                       |
 | :-------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------- |
@@ -678,26 +817,26 @@ Pollinations AI is a free, no-signup inference provider serving a wide variety o
 | `midijourney-large`   | ★★★☆☆       | `General`   | `Fast`     | Clean empty responses for frictionless automation.                            |
 | `perplexity-fast`     | ★★★☆☆       | `General`   | `Blazing`  | Research-backed answers at the speed of light.                                |
 
-### [Poolside](https://poolside.ai) Models
+### [Poolside](https://poolside.ai)
 
 Poolside is a foundation model lab building purpose-built coding models from scratch. Their Laguna series — M.1 (225B-A23B MoE) and XS.2 (33B-A3B MoE) — are trained on 30T tokens exclusively for agentic software engineering with tool calling and 256K context. Both models are free while in preview — the same "use it while it lasts" uncertainty as any free provider. Poolside currently has 2 models verified.
 
-**Free Tier Quota:** 20 RPM / 200 RPD / 150,000 TPM / 1,000,000 TPD
+🎁 **Free Tier Quota:** 20 RPM / 200 RPD / 150,000 TPM / 1,000,000 TPD
 
-**Base URL:** `https://inference.poolside.ai/v1`
+🔗 **Base URL:** `https://inference.poolside.ai/v1`
 
 | Free Model             | Star Rating | Best For | Speed     | Opinion                                                                                                      |
 | :--------------------- | :---------- | :------- | :-------- | :----------------------------------------------------------------------------------------------------------- |
 | `poolside/laguna-m.1`  | ★★★★★       | `Code`   | `Fast`    | Purpose-built 225B MoE for agentic coding. Strong SWE-bench scores with tool calling — elite coding quality. |
 | `poolside/laguna-xs.2` | ★★★★☆       | `Code`   | `Blazing` | Open-weight 33B (Apache 2.0). Impressive depth for its size at 0.55s response time.                          |
 
-### [SambaNova AI](https://cloud.sambanova.ai) Models
+### [SambaNova AI](https://cloud.sambanova.ai)
 
 SambaNova AI is a **hardware-driven inference provider** utilizing proprietary Reconfigurable Dataflow Units (RDUs) rather than standard GPUs, removing the traditional hardware-decode bottleneck for incredibly high throughput. The free tier is limited to 20 requests and 200k tokens per day — tight for sustained use. Preview models (DeepSeek-V3.2, Gemma-4-31B-it) require a one-time $5 signup credit that does not replenish. SambaNova AI currently has 5 models verified.
 
-**Free Tier Quota:** 20 RPM / 20 RPD / 200,000 TPD
+🎁 **Free Tier Quota:** 20 RPM / 20 RPD / 200,000 TPD
 
-**Base URL:** `https://api.sambanova.ai/v1`
+🔗 **Base URL:** `https://api.sambanova.ai/v1`
 
 | Free Model                    | Star Rating | Best For    | Speed      | Opinion                                                                                                                                         |
 | :---------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -707,13 +846,31 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 | `gemma-4-31B-it`              | ★★★☆☆       | `General`   | `Blazing`  | **Preview** — Google's newest runs fast but dies with the $5 credit. Stops working once the bonus is drained.                                   |
 | `gpt-oss-120b`                | ★★★☆☆       | `Fallback`  | `Moderate` | The same 117B MoE flagship that dominates on Groq. Available on SambaNova but with noticeably higher latency (~3.5s).                           |
 
-### [Void AI](https://voidai.app) Models
+### [TokenReply](https://tokenreply.com)
+
+TokenReply is a lightweight inference hub offering models from Google, DeepSeek, OpenAI, Qwen, Moonshot, Stepfun, and more through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 40 weekly model calls — a very tight cap suited for lightweight evaluation and occasional queries, not sustained coding. Free models only. No credit card required. TokenReply currently has 7 models verified — all at ★★★★☆ or above.
+
+🎁 **Free Tier Quota:** 3 RPM / 40 Weekly Model Calls / Free Models Only
+
+🔗 **Base URL:** `https://api.tokenreply.com/v1`
+
+| Free Model                    | Star Rating | Best For    | Speed      | Opinion                                                                                               |
+| :---------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------------------- |
+| `deepseek-ai/deepseek-v4-pro` | ★★★★★       | `Reasoning` | `Fast`     | Pro variant of V4 — 80.6% SWE-bench. Make each of your 40 weekly calls count with top-tier reasoning. |
+| `openai/gpt-oss-120b`         | ★★★★★       | `General`   | `Moderate` | The same reliable 120B flagship. Best value for the tight weekly cap — efficient and dependable.      |
+| `qwen/qwen3.5-397b-a17b`      | ★★★★★       | `General`   | `Moderate` | 397B MoE flagship — 76.4% SWE-bench. Immense capacity for your most critical prompts.                 |
+| `google/gemma-4-31b-it`       | ★★★★☆       | `General`   | `Fast`     | Google's 31B dense model. Strong generalist for daily coding without overhead.                        |
+| `moonshotai/kimi-k2.6`        | ★★★★☆       | `Reasoning` | `Blazing`  | 1T multimodal MoE with strong long-horizon reasoning. Solid pick for complex analysis.                |
+| `stepfun-ai/step-3.5-flash`   | ★★★★☆       | `Agentic`   | `Blazing`  | Agentic powerhouse — 74.4% SWE-bench. Tiny 11B active params punch far above their weight.            |
+| `stepfun-ai/step-3.7-flash`   | ★★★★☆       | `Agentic`   | `Blazing`  | Latest Stepfun flash — refined agentic reasoning with blazing speed.                                  |
+
+### [Void AI](https://voidai.app)
 
 Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Moonshot, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 100 RPM with 125,000 daily credits — the highest RPM of any hub on this list, ideal for high-throughput coding sessions. No credit card required. Void AI currently has roughly 30 verified coding-relevant models — all at ★★★★☆ or above.
 
-**Free Tier Quota:** 100 RPM / 125,000 Daily Credits
+🎁 **Free Tier Quota:** 100 RPM / 125,000 Daily Credits
 
-**Base URL:** `https://api.voidai.app/v1`
+🔗 **Base URL:** `https://api.voidai.app/v1`
 
 | Free Model                       | Star Rating | Best For    | Speed      | Opinion                                                                                          |
 | :------------------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------------------- |
@@ -733,13 +890,13 @@ Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSee
 | `kimi-k2.6`                      | ★★★★☆       | `Reasoning` | `Fast`     | 1T multimodal MoE. Strong long-horizon reasoning for complex multi-step analysis.                |
 | `umbra`                          | ★★★★☆       | `General`   | `Blazing`  | Mystery model with sub-second responses. Surprisingly capable for its speed — a solid wildcard.  |
 
-### [Z.AI (Zhipu AI)](https://z.ai) Models
+### [Z.AI (Zhipu AI)](https://z.ai)
 
 Zhipu AI is a Chinese AI company developing the GLM family of foundation models. The free tier offers two flash-variant models with a concurrency limit of 1 request at a time and unlimited daily tokens — practical for lightweight scripting and quick edits, but the single-concurrent cap makes sustained coding sessions impractical. Z.AI currently has 2 models verified.
 
-**Free Tier Quota:** 1 Concurrent Request / Uncapped TPD
+🎁 **Free Tier Quota:** 1 Concurrent Request / Uncapped TPD
 
-**Base URL:** `https://api.z.ai/api/paas/v4`
+🔗 **Base URL:** `https://api.z.ai/api/paas/v4`
 
 | Free Model      | Star Rating | Best For   | Speed     | Opinion                                                                      |
 | :-------------- | :---------- | :--------- | :-------- | :--------------------------------------------------------------------------- |
