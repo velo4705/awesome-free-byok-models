@@ -1,6 +1,6 @@
 # Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> **Last Verified: June 22, 2026** - All models tested live across 31 providers.
+> **Last Verified: June 23, 2026** - All models tested live across 31 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and BYOK agents.
 
@@ -602,7 +602,7 @@ OpenCode Zen is a curated set of AI models tested and optimized for coding agent
 
 ### [OpenRouter](https://openrouter.ai) Models
 
-OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 16 models verified — all at ★★★★☆ or above.
+OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 13 models verified — all at ★★★★☆ or above.
 
 **Free Tier Quota:** 20 RPM / 50 RPD
 
@@ -612,13 +612,10 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | :--------------------------------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------- |
 | `google/gemma-4-31b-it:free`                         | ★★★★★       | `General`   | `Fast`     | Extra headroom over the 26B without sacrificing speed.                                    |
 | `liquid/lfm-2.5-1.2b-instruct:free`                  | ★★★★★       | `General`   | `Blazing`  | The smallest model that actually answers usefully. Insane response times.                 |
-| `nex-agi/nex-n2-pro:free`                            | ★★★★★       | `General`   | `Fast`     | Genuine dark horse. Strength that catches you off guard.                                  |
-| `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★★       | `General`   | `Moderate` | The 550B nemotron flagship — raw horsepower for the hardest prompts on OpenRouter.        |
 | `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★★       | `Vision`    | `Fast`     | Does text and vision in one call without the bloat.                                       |
 | `openai/gpt-oss-120b:free`                           | ★★★★★       | `General`   | `Blazing`  | The same reliable gpt-oss every provider carries. The safest five-star bet on OpenRouter. |
 | `openai/gpt-oss-20b:free`                            | ★★★★★       | `Code`      | `Fast`     | Same reliable output as the 120B but lighter. The everyday driver.                        |
 | `cohere/north-mini-code:free`                        | ★★★★☆       | `Code`      | `Blazing`  | Efficient coding model from Cohere. Lightweight enough for rapid iteration loops.         |
-| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | `General`   | `Fast`     | Google's compact 26B Gemma. Clean output for daily coding at a generous weight tier.      |
 | `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | `Reasoning` | `Moderate` | Tiny 1.2B that thinks aloud. Good for logic, verbose for quick code edits.                |
 | `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | `General`   | `Fast`     | Efficient 30B MoE — clean responses with no preamble for lightweight daily tasks.         |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | `Reasoning` | `Moderate` | Shows its work step by step. Useful for verification, noisy for quick answers.            |
