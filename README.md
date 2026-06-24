@@ -1,6 +1,6 @@
 # Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> ⏰ **Last Verified: June 23, 2026** - All models tested live across 38 providers.
+> ⏰ **Last Verified: June 24, 2026** - All models tested live across 38 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -636,6 +636,8 @@ NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta
 
 🔗 **Base URL:** `https://integrate.api.nvidia.com/v1`
 
+> ⚠️ May require **Phone verification** to generate an API Key.
+
 | Free Model                                      | Star Rating | Best For    | Speed      | Opinion                                                                                                    |
 | :---------------------------------------------- | :---------- | :---------- | :--------- | :--------------------------------------------------------------------------------------------------------- |
 | `deepseek-ai/deepseek-v4-flash`                 | ★★★★★       | `Code`      | `Blazing`  | Elite 284B MoE reasoning at blazing speed. The strongest coding model on NVIDIA NIM.                       |
@@ -699,9 +701,9 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 
 ### [OpenCode Zen](https://opencode.ai/zen)
 
-OpenCode Zen is a curated set of AI models tested and optimized for coding agents by the OpenCode team. The free tier offers 5 models at zero cost through an OpenAI-compatible API — no credit card required for free models (requires adding billing details for API key).
+OpenCode Zen is a curated set of AI models tested and optimized for coding agents by the OpenCode team. The free tier offers 5 models at zero cost through an OpenAI-compatible API — no credit card or billing required for free models.
 
-🎁 **Free Tier Quota:** 30 RPM / 500 RPD / 1,000,000 TPD
+🎁 **Free Tier Quota:** 30 RPM / 500 RPD / 1,000,000 TPD / Daily Limits
 
 🔗 **Base URL:** `https://opencode.ai/zen/v1`
 
