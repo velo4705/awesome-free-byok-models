@@ -214,6 +214,8 @@ BlazeAPI is a lightweight inference hub serving models from Moonshot and Z.AI th
 
 🔗 **Base URL:** `https://blazeai.boxu.dev/api`
 
+> ⚠️ **BlazeAPI may be shutting down soon.** Service continues working until full retirement.
+
 | Free Model             | Star Rating | Best For    | Speed  | Opinion                                                                                |
 | :--------------------- | :---------- | :---------- | :----- | :------------------------------------------------------------------------------------- |
 | `moonshotai/kimi-k2.6` | ★★★★☆       | `Reasoning` | `Fast` | 1T multimodal MoE with strong long-horizon reasoning. Solid daily driver at 1,000 RPD. |
@@ -334,6 +336,8 @@ GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and
 🎁 **Free Tier Quota:** 10 to 15 RPM / 50 to 150 RPD
 
 🔗 **Base URL:** `https://models.inference.ai.azure.com`
+
+> ⚠️ **GitHub Models is being retired.** As of June 16, 2026, new customers can no longer use GitHub Models. Existing GitHub users can continue using the API until full retirement. See the [GitHub announcement.](https://github.blog/changelog/2026-06-16-github-models-is-no-longer-available-to-new-customers/)
 
 | Free Model                     | Star Rating | Best For    | Speed      | Opinion                                                                                                                          |
 | :----------------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------------------------------------------- |
