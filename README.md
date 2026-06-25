@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/velo4705/awesome-free-byok-models">
-    <img src="media/awesome-free-byok-models.svg" alt="Awesome Free BYOK Models" width="400">
+    <img src="media/awesome-free-byok-models.svg" alt="Awesome Free BYOK Models" width="750">
   </a>
 </h1>
 
