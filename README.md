@@ -1,6 +1,6 @@
 # Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> ⏰ **Last Verified: June 24, 2026** - All models tested live across 38 providers.
+> ⏰ **Last Verified: June 25, 2026** - All models tested live across 38 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -331,7 +331,7 @@ FastRouter is a lightweight inference hub offering Sarvam AI models with a `:fre
 
 ### [GitHub Models](https://github.com/marketplace/models)
 
-GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and others using your existing GitHub account — no new signup needed. Free tier quotas are modest (request-based limits), making it best for prototyping and personal projects. GitHub Models currently has 3 models verified.
+GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and others using your existing GitHub account — no new signup needed. Free tier quotas are modest (request-based limits), making it best for prototyping and personal projects. GitHub Models currently has 2 models verified.
 
 🎁 **Free Tier Quota:** 10 to 15 RPM / 50 to 150 RPD
 
@@ -339,11 +339,10 @@ GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and
 
 > ⚠️ **GitHub Models is being retired.** As of June 16, 2026, new customers can no longer use GitHub Models. Existing GitHub users can continue using the API until full retirement. See the [GitHub announcement.](https://github.blog/changelog/2026-06-16-github-models-is-no-longer-available-to-new-customers/)
 
-| Free Model                     | Star Rating | Best For    | Speed      | Opinion                                                                                                                          |
-| :----------------------------- | :---------- | :---------- | :--------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `Meta-Llama-3.1-405B-Instruct` | ★★★★★       | `Reasoning` | `Moderate` | The best model on GitHub Models. 405B of deep reasoning at zero cost — add system prompt "no markdown" for clean agentic output. |
-| `gpt-4o-mini`                  | ★★★★☆       | `General`   | `Fast`     | Compact, fast, and clean. Reliable fallback when your bigger model quota runs low for the day.                                   |
-| `gpt-4o`                       | ★★★★☆       | `General`   | `Moderate` | Full OpenAI flagship. Adds markdown by default, but a simple system prompt fixes it — strong all-around for chat and coding.     |
+| Free Model    | Star Rating | Best For  | Speed      | Opinion                                                                                                                      |
+| :------------ | :---------- | :-------- | :--------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| `gpt-4o-mini` | ★★★★☆       | `General` | `Fast`     | Compact, fast, and clean. Reliable fallback when your bigger model quota runs low for the day.                               |
+| `gpt-4o`      | ★★★★☆       | `General` | `Moderate` | Full OpenAI flagship. Adds markdown by default, but a simple system prompt fixes it — strong all-around for chat and coding. |
 
 ### [Google Gemini](https://aistudio.google.com)
 
