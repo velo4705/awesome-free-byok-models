@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 170">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;display=swap');
+    .title { font: 600 30px/1 'Montserrat', system-ui, -apple-system, sans-serif; fill: #00C853; }
+    .letter { font: 700 44px/1 'Montserrat', system-ui, -apple-system, sans-serif; fill: #00C853; }
+    .models { font: 600 30px/1 'Montserrat', system-ui, -apple-system, sans-serif; fill: #00C853; }
+  </style>
+
+  <!-- "Awesome Free" -->
+  <text x="300" y="45" text-anchor="middle" class="title">Awesome Free</text>
+
+  <!-- "B" -->
+  <text x="217" y="105" text-anchor="middle" class="letter">B</text>
+
+  <!-- "Y" -->
+  <text x="263" y="105" text-anchor="middle" class="letter">Y</text>
+
+  <!-- Loop symbol (arrows rotated 100°, key stays upright) -->
+  <g transform="rotate(100, 323, 88)">
+    <path d="M 314 103.59 A 18 18 0 0 1 318.03 70.70" fill="none" stroke="#00C853" stroke-width="4.5" stroke-linecap="butt"/>
+    <polygon points="325.03,70.70 318.03,63.70 318.03,77.70" fill="#00C853"/>
+    <path d="M 332 72.41 A 18 18 0 0 1 327.36 105.46" fill="none" stroke="#00C853" stroke-width="4.5" stroke-linecap="butt"/>
+    <polygon points="320.36,105.46 327.36,98.46 327.36,112.46" fill="#00C853"/>
+  </g>
+
+  <!-- Key inside, tilted 30 degrees right -->
+  <g transform="rotate(30, 323, 88)">
+    <circle cx="323" cy="81.5" r="3" fill="none" stroke="#00C853" stroke-width="2.5"/>
+    <rect x="321" y="84.5" width="3.5" height="12" rx="1.5" fill="#00C853"/>
+    <rect x="324.5" y="91" width="3" height="2" rx="1" fill="#00C853"/>
+    <rect x="324.5" y="94.5" width="2" height="2" rx="1" fill="#00C853"/>
+  </g>
+
+  <!-- "K" -->
+  <text x="383" y="105" text-anchor="middle" class="letter">K</text>
+
+  <!-- "Models" -->
+  <text x="300" y="150" text-anchor="middle" class="models">Models</text>
+</svg>

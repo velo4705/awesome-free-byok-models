@@ -1,4 +1,14 @@
-# Awesome Free BYOK Models [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
+<h1 align="center">
+  <a href="https://github.com/velo4705/awesome-free-byok-models">
+    <img src="media/awesome-free-byok-models.svg" alt="Awesome Free BYOK Models" width="400">
+  </a>
+</h1>
+
+<p align="center">
+  <a href="https://awesome.re">
+    <img src="https://awesome.re/badge.svg" alt="Awesome">
+  </a>
+</p>
 
 > ⏰ **Last Verified: June 25, 2026** - All models tested live across 38 providers.
 
@@ -462,7 +472,7 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 
 LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp server with OpenAI-compatible endpoints. The free tier offers replenishable credits with no daily hard cap — a solid option if you want to test heavyweight models (up to 235B) on a simple API without commitment. LLM7.IO currently has 3 models verified.
 
-🎁 **Free Tier Quota:** 128 RPM / ~7,200 RPD / 5M TPD (Free Token Users Only)
+🎁 **Free Tier Quota:** 40 RPM / 2,400 RPD / 128,000 Characters per Request / 1,000,000 TPD
 
 🔗 **Base URL:** `https://api.llm7.io/v1`
 
