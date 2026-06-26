@@ -31,9 +31,9 @@ If you are signing up for free accounts to get API keys, these are the **top pla
 
 | Provider            | The Simple Vibe | Why It Matters For You                                                                                                                                                           |
 | :------------------ | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Pollinations AI** | Volume King     | 60 RPM with 7,200 daily requests and zero PII. Qwen-coder and Grok-4.20 anchor the #1 and #2 top models. 38 models total.                                                      |
+| **Pollinations AI** | Volume King     | 60 RPM with 7,200 daily requests and zero PII. Qwen-coder and Grok-4.20 anchor the #1 and #2 top models. 38 models total.                                                        |
 | **Google Gemini**   | High Volume     | 1,500 free requests a day on flash-lite with 1M context. Light on reasoning but you can run it all day without watching the count.                                               |
-| **Groq API**        | Speed Demon     | Sub-300ms at 14,400 RPD with no PII. The 18k TPM keeps it tight for rapid-fire edits. Best pick for speed.                                                                         |
+| **Groq API**        | Speed Demon     | Sub-300ms at 14,400 RPD with no PII. The 18k TPM keeps it tight for rapid-fire edits. Best pick for speed.                                                                       |
 
 ---
 
@@ -43,16 +43,16 @@ The absolute best free models available right now, ranked by how well they handl
 
 | Rank   | Model                                 | Host Provider             | The Simple Reason to Choose It                                                                                              |
 | :----- | :------------------------------------ | :------------------------ | :-------------------------------------------------------------------------------------------------------------------------- |
-| **1**  | `qwen-coder`                   | **Pollinations AI** | Stays focused on code without rambling. 60 RPM with 7,200 daily requests, answers directly every time.                     |
-| **2**  | `grok-4-20-reasoning`          | **Pollinations AI** | Tighter than base Grok with reasoning depth. Same 7,200 daily pool — swap between both without watching the meter.          |
-| **3**  | `models/gemini-3.1-flash-lite` | **Google Gemini**   | 1,500 free requests a day with 1M context. Light on deep reasoning but you can run it all day without checking the meter.  |
-| **4**  | `openai/gpt-oss-120b`          | **Groq API**        | Sub-300ms at 14,400 daily requests. The 18k TPM keeps it tight but nothing beats this speed for rapid-fire edits.          |
-| **5**  | `mistral-code-agent-latest`    | **Mistral AI**      | Built for multi-step agent actions with tool-calling at sub-second. The 50k TPM pool keeps it at single-file scope though. |
-| **6**  | `deepseek-v4-flash-free`       | **OpenCode Zen**    | 30 RPM with 500 daily requests and 1M token pool. Strong reasoning that handles multi-turn without losing the thread.      |
-| **7**  | `devstral-small-2:24b`         | **LLM7.IO**         | 40 RPM with 2,400 daily requests and 1M TPD. Lean 24B coder with clean direct output, reliable all day.                    |
-| **8**  | `deepseek-v4-flash`            | **Navy API**        | Strong reasoning with 250k daily tokens. Fast and consistent for coding without surprises.                                 |
-| **9**  | `deepseek-v3.2`                | **MNN AI**          | Refined DeepSeek reasoning with $1 monthly credits. Solid for light daily coding and targeted queries.                     |
-| **10** | `gpt-5.5`                      | **Void AI**         | Latest GPT at 100 RPM with 125k daily credits. Clean output, faster than 5.4, best GPT pick on Void.                       |
+| **1**  | `qwen-coder`                          | **Pollinations AI**       | Stays focused on code without rambling. 60 RPM with 7,200 daily requests, answers directly every time.                      |
+| **2**  | `grok-4-20-reasoning`                 | **Pollinations AI**       | Tighter than base Grok with reasoning depth. Same 7,200 daily pool — swap between both without watching the meter.          |
+| **3**  | `models/gemini-3.1-flash-lite`        | **Google Gemini**         | 1,500 free requests a day with 1M context. Light on deep reasoning but you can run it all day without checking the meter.   |
+| **4**  | `openai/gpt-oss-120b`                 | **Groq API**              | Sub-300ms at 14,400 daily requests. The 18k TPM keeps it tight but nothing beats this speed for rapid-fire edits.           |
+| **5**  | `mistral-code-agent-latest`           | **Mistral AI**            | Built for multi-step agent actions with tool-calling at sub-second. The 50k TPM pool keeps it at single-file scope though.  |
+| **6**  | `deepseek-v4-flash-free`              | **OpenCode Zen**          | 30 RPM with 500 daily requests and 1M token pool. Strong reasoning that handles multi-turn without losing the thread.       |
+| **7**  | `devstral-small-2:24b`                | **LLM7.IO**               | 40 RPM with 2,400 daily requests and 1M TPD. Lean 24B coder with clean direct output, reliable all day.                     |
+| **8**  | `deepseek-v4-flash`                   | **Navy API**              | Strong reasoning with 250k daily tokens. Fast and consistent for coding without surprises.                                  |
+| **9**  | `deepseek-v3.2`                       | **MNN AI**                | Refined DeepSeek reasoning with $1 monthly credits. Solid for light daily coding and targeted queries.                      |
+| **10** | `gpt-5.5`                             | **Void AI**               | Latest GPT at 100 RPM with 125k daily credits. Clean output, faster than 5.4, best GPT pick on Void.                        |
 
 ---
 
@@ -156,10 +156,9 @@ API Airforce is a lightweight inference provider with a single model offering �
 
 🔗 **Base URL:** `https://api.apiairforce.com/v1`
 
-| Free Model | Star Rating | Context | Best For | Latency | Opinion |
-| :--------- | :---------- | :------ | :------- | :------ | :------ |
-
-| `deepseek-v3.2-free` | ★★★☆☆ | 128K | `Fallback` | ~2.4s | Normal speed, but with 1 RPM, its having a big context window to allow coding during minute breaks. |
+| Free Model           | Star Rating | Context | Best For    | Latency   | Opinion                                                                                                 |
+| :------------------- | :---------- | :------ | :---------- | :-------- | :------------------------------------------------------------------------------------------------------ |
+| `deepseek-v3.2-free` | ★★★☆☆       | 128K    | `Fallback`  | ~2.4s     | Normal speed, but with 1 RPM, its having a big context window to allow coding during minute breaks.     |
 
 ### [Auriko](https://www.auriko.ai)
 
