@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/velo4705/awesome-free-byok-models">
-    <img src="media/awesome-free-byok-models.svg" alt="Awesome Free BYOK Models" width="750">
+    <img src="media/awesome-free-byok-models.svg" alt="Awesome Free BYOK Models" width="90%">
   </a>
 </h1>
 
@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: June 25, 2026** - All models tested live across 38 providers.
+> ⏰ **Last Verified: June 26, 2026** - All models tested live across 38 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -29,11 +29,11 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 
 If you are signing up for free accounts to get API keys, these are the **top platforms** to look at first.
 
-| Provider          | The Simple Vibe     | Why It Matters For You                                                                                                                                                      |
-| :---------------- | :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Ollama Cloud**  | Uncapped & Reliable | Time-based compute allocation with no daily request cap — the only provider where you can code or chat all day without counting requests. Home to the #1 ranked free model. |
-| **Google Gemini** | Infinite Battery    | 1,500 free requests per day on flash-lite with a massive context window. Lighter on reasoning but unstoppable for continuous background tasks.                              |
-| **LLM7.IO**       | Heavy Lifter        | 40 RPM with 1M daily tokens and replenishable credits — hosts the #3 ranked model. No hard daily cap, ideal for sustained coding and general-purpose use.                  |
+| Provider            | The Simple Vibe     | Why It Matters For You                                                                                                                                                      |
+| :------------------ | :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Ollama Cloud**    | Uncapped & Reliable | Time-based compute allocation with no daily request cap — the only provider where you can code or chat all day without counting requests. Home to the #1 ranked free model. |
+| **Google Gemini**   | Infinite Battery    | 1,500 free requests per day on flash-lite with a massive context window. Lighter on reasoning but unstoppable for continuous background tasks.                              |
+| **Pollinations AI** | Variety Pack        | 60 RPM with unlimited daily requests on secret keys (free sign-up) — 38 models from OpenAI, Grok, Qwen, Perplexity, and more. Home to the #3 ranked model.                  |
 
 ---
 
@@ -45,14 +45,14 @@ The absolute best free models available right now, ranked by how well they handl
 | :----- | :----------------------------- | :------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **1**  | `qwen3-coder-next`             | **Ollama Cloud**    | Scores over 70% on SWE-bench Verified. Native 256K context with sandbox reinforcement learning — if it writes broken code, it reads your terminal logs and fixes its own bugs. Uncapped usage via time-based compute allocation. The best overall assistant for daily coding. |
 | **2**  | `models/gemini-3.1-flash-lite` | **Google Gemini**   | 1,500 free daily requests with a massive context window. Lighter on deep reasoning, but unstoppable for background triaging, test iterations, and log file analysis all day. The infinite workhorse.                                                                          |
-| **3**  | `qwen3-235b`                   | **LLM7.IO**         | Native support for 119 programming languages at 40 RPM with a 1M daily token pool. Elite reasoning depth for cross-language refactoring.                                                                                                                                     |
-| **4**  | `qwen-coder`                   | **Pollinations AI** | Stays focused on code without rambling. You can hammer it all day with 60 RPM and unlimited requests — it answers directly every time.                                                                                                                                        |
-| **5**  | `deepseek-v4-flash-free`       | **OpenCode Zen**    | The strongest model on OpenCode Zen for coding with 30 RPM, 500 RPD, and 1M TPD — a quota profile that outlasts everything below this rank. Handles multi-turn context tracking smoothly at rapid generation speeds.                                                          |
-| **6**  | `mistral-code-agent-latest`    | **Mistral AI**      | Purpose-built for multi-step agent actions with reliable tool-calling and structured JSON outputs. Mistral's 50k TPM shared pool limits it to single-file scope in practice.                                                                                                  |
-| **7**  | `openai/gpt-oss-120b`          | **Groq API**        | Elite algorithmic reasoning, but Groq's 18k TPM cap is a trap — one multi-file prompt triggers a 429. Use it sparingly for targeted debugging of the hardest bugs.                                                                                                            |
-| **8**  | `qwen/qwen3-32b`               | **Groq API**        | Dumps clean code into your IDE at blazing speed. Same 18k TPM handcuffs as rank 7 — ideal for short snippets, unusable for sustained sessions.                                                                                                                                |
+| **3**  | `qwen-coder`                   | **Pollinations AI** | Stays focused on code without rambling. You can hammer it all day with 60 RPM and unlimited requests — it answers directly every time.                                                                                                                                        |
+| **4**  | `deepseek-v4-flash-free`       | **OpenCode Zen**    | The strongest model on OpenCode Zen for coding with 30 RPM, 500 RPD, and 1M TPD — a quota profile that outlasts everything below this rank. Handles multi-turn context tracking smoothly at rapid generation speeds.                                                          |
+| **5**  | `mistral-code-agent-latest`    | **Mistral AI**      | Purpose-built for multi-step agent actions with reliable tool-calling and structured JSON outputs. Mistral's 50k TPM shared pool limits it to single-file scope in practice.                                                                                                  |
+| **6**  | `openai/gpt-oss-120b`          | **Groq API**        | Elite algorithmic reasoning, but Groq's 18k TPM cap is a trap — one multi-file prompt triggers a 429. Use it sparingly for targeted debugging of the hardest bugs.                                                                                                            |
+| **7**  | `devstral-small-2:24b`         | **LLM7.IO**         | Lean 24B coding specialist with clean, direct output. 40 RPM / 1M TPD outlasts everything below this rank — no hard daily cap, no preamble, just reliable code.                                                                                                               |
+| **8**  | `qwen/qwen3-32b`               | **Groq API**        | Dumps clean code into your IDE at blazing speed. Same 18k TPM handcuffs as rank 6 — ideal for short snippets, unusable for sustained sessions.                                                                                                                                |
 | **9**  | `DeepSeek-V3.1`                | **SambaNova AI**    | The 671B flagship — unmatched structural planning and algorithm generation, but crippled by 20 RPD and 200k TPD caps. A single comprehensive prompt drains your entire 24-hour token allowance on your first call.                                                            |
-| **10** | `codestral-latest`             | **LLM7.IO**         | Strongest Mistral-based coding model with 40 RPM and a 1M daily token pool. Fast, clean completions — solid backup when Qwen is busy.                                                                                                                                        |
+| **10** | `codestral-latest`             | **LLM7.IO**         | Strongest Mistral-based coding model with 40 RPM and a 1M daily token pool. Fast, clean completions — solid daily backup.                                                                                                                                                     |
 
 ---
 
@@ -131,22 +131,22 @@ Agnes AI offers flash-tier models with generous daily limits but slow inference 
 
 ### [AnyAPI AI](https://anyapi.ai)
 
-AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, Cohere, and more through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with access to free and basic models — no credit card required. AnyAPI currently has 10 models verified — 8 are ★★★★☆ or above.
+AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, Cohere, and more through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with access to free and basic models — no credit card required. AnyAPI currently has 8 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 100,000 tokens/day / No Credit Card
 
 🔗 **Base URL:** `https://api.anyapi.ai/v1`
 
-| Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                                 |
-| :--------------------------------------------------- | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------------- |
-| `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★★       | `Vision`    | `Fast`     | Handles text and vision in one call. Strong general coding with multimodal flexibility. |
-| `poolside/laguna-m.1:free`                           | ★★★★★       | `Code`      | `Fast`     | Same elite 225B Poolside coding flagship. Clean output with zero preamble noise.        |
-| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | `General`   | `Fast`     | Google's compact 26B Gemma. Clean, structured output for daily coding.                  |
-| `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | `General`   | `Fast`     | Efficient 30B MoE — clean responses with no preamble.                                   |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | `Reasoning` | `Moderate` | Shows step-by-step reasoning. Useful for verification, verbose for quick answers.       |
-| `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | `Fallback`  | `Fast`     | Reliable NVIDIA nano. Punches above its 9B weight for quick edits.                      |
-| `openrouter/fusion`                                  | ★★★★☆       | `General`   | `Moderate` | OpenRouter's multi-model fusion — aggregates outputs for balanced responses.            |
-| `poolside/laguna-xs.2:free`                          | ★★★★☆       | `Code`      | `Blazing`  | Poolside's 33B coder. Sub-second responses for inline completions.                      |
+| Free Model                                           | Star Rating | Best For    | Speed      | Opinion                                                                              |
+| :--------------------------------------------------- | :---------- | :---------- | :--------- | :----------------------------------------------------------------------------------- |
+| `liquid/lfm-2.5-1.2b-instruct:free`                  | ★★★★★       | `General`   | `Blazing`  | Insanely fast 1.2B instruct — answers usefully before larger models finish thinking. |
+| `poolside/laguna-m.1:free`                           | ★★★★★       | `Code`      | `Fast`     | Same elite 225B Poolside coding flagship. Clean output with zero preamble noise.     |
+| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | `General`   | `Fast`     | Google's compact 26B Gemma. Clean, structured output for daily coding.               |
+| `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | `Reasoning` | `Moderate` | Tiny 1.2B that thinks aloud. Good for logic, verbose for quick code edits.           |
+| `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | `General`   | `Fast`     | Efficient 30B MoE — clean responses with no preamble.                                |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | `Reasoning` | `Moderate` | Shows step-by-step reasoning. Useful for verification, verbose for quick answers.    |
+| `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | `Fallback`  | `Fast`     | Reliable NVIDIA nano. Punches above its 9B weight for quick edits.                   |
+| `poolside/laguna-xs.2:free`                          | ★★★★☆       | `Code`      | `Blazing`  | Poolside's 33B coder. Sub-second responses for inline completions.                   |
 
 ### [API Airforce](https://www.apiairforce.com)
 
@@ -470,17 +470,16 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 
 ### [LLM7.IO](https://llm7.io)
 
-LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp server with OpenAI-compatible endpoints. The free tier offers replenishable credits with no daily hard cap — a solid option if you want to test heavyweight models (up to 235B) on a simple API without commitment. LLM7.IO currently has 3 models verified.
+LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp server with OpenAI-compatible endpoints. The Turbo Tier (Free tier) offers replenishable credits with no daily hard cap — a solid option for consistent daily coding on a simple API without commitment. LLM7.IO currently has 2 models verified — all at Turbo Tier (Free tier).
 
 🎁 **Free Tier Quota:** 40 RPM / 2,400 RPD / 128,000 Characters per Request / 1,000,000 TPD
 
 🔗 **Base URL:** `https://api.llm7.io/v1`
 
-| Free Model          | Star Rating | Best For  | Speed      | Opinion                                                                                        |
-| :------------------ | :---------- | :-------- | :--------- | :--------------------------------------------------------------------------------------------- |
-| `qwen3-235b`        | ★★★★★       | `Code`    | `Fast`     | Handles multi-file architecture cleanly with zero preamble. Remarkably fluid for a 235B model. |
-| `codestral-latest`  | ★★★★☆       | `Code`    | `Fast`     | Strongest coding option here after Qwen. Adds a brief preamble but completions are solid.      |
-| `mistral-small-3.2` | ★★★☆☆       | `General` | `Moderate` | Adequate for chat and scripting, but the verbose preamble kills the flow.                      |
+| Free Model             | Star Rating | Best For | Speed  | Opinion                                                                                            |
+| :--------------------- | :---------- | :------- | :----- | :------------------------------------------------------------------------------------------------- |
+| `devstral-small-2:24b` | ★★★★★       | `Code`   | `Fast` | Punchy 24B coding model with clean output. Handles multi-file edits without the preamble overhead. |
+| `codestral-latest`     | ★★★★☆       | `Code`   | `Fast` | Strongest coding option here. Adds a brief preamble but completions are solid.                     |
 
 ### [LLMGateway](https://llmgateway.io)
 
@@ -683,7 +682,7 @@ NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta
 
 ### [Ollama Cloud](https://ollama.com)
 
-Ollama Cloud is a cloud-hosted inference service running Ollama behind the scenes, offering a vast model registry without the need to run locally. The free tier provides replenishable credits with generous rate limits — most models respond cleanly and quickly, making it one of the strongest free providers for coding. Ollama Cloud currently has 21 models verified — 20 are ★★★☆☆ or above.
+Ollama Cloud is a cloud-hosted inference service running Ollama behind the scenes, offering a vast model registry without the need to run locally. The free tier provides replenishable credits with generous rate limits — most models respond cleanly and quickly, making it one of the strongest free providers for coding. Ollama Cloud currently has 20 models verified — all at ★★★☆☆ or above.
 
 🎁 **Free Tier Quota:** 1 Instance / 5-Hour Session Usage / 7-day Weekly Usage
 
@@ -706,9 +705,9 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 | `qwen3-coder:480b`     | ★★★★★       | `Code`      | `Moderate` | 480B of pure coding muscle. Makes the toughest debugging sessions feel like a chat with a senior engineer. |
 | `rnj-1:8b`             | ★★★★★       | `General`   | `Blazing`  | Don't let the 8B fool you — responds faster than most with surprising depth.                               |
 | `gpt-oss:20b`          | ★★★★☆       | `Reasoning` | `Fast`     | Smaller GPT-OSS variant. Solid reasoning at a fraction of the 120B latency.                                |
-| `nemotron-3-ultra`     | ★★★★☆       | `Reasoning` | `Blazing`  | 550B of raw power at blazing speed. Impressive when you can reach past the preamble.                       |
 | `minimax-m2.1`         | ★★★☆☆       | `General`   | `Slow`     | Earlier MiniMax release. Empty clean output but noticeably slower than m2.5.                               |
 | `ministral-3:14b`      | ★★★☆☆       | `General`   | `Fast`     | Nimble Mistral ministral. Compact but responsive for lightweight coding tasks.                             |
+| `ministral-3:3b`       | ★★★☆☆       | `General`   | `Blazing`  | The tiniest ministral. Sub-second responses for quick lookups and syntax validation.                       |
 | `ministral-3:8b`       | ★★★☆☆       | `General`   | `Fast`     | 8B ministral variant. Reliable for quick edits and syntax checks.                                          |
 | `nemotron-3-super`     | ★★★☆☆       | `Reasoning` | `Slow`     | Deep reasoning with significant latency. Capable but you'll wait for every answer.                         |
 
@@ -754,21 +753,20 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 
 ### [Routeway AI](https://routeway.ai)
 
-Routeway is a unified API gateway offering free models through a `:free` model suffix — a pattern shared with OpenRouter and Kilo Code. Models are drawn from Stepfun, NVIDIA, Poolside, Meta, and others, all accessed through a single OpenAI-compatible endpoint with no credit card required. The tight 5 RPM cap makes Routeway a fallback hub rather than a daily driver. Routeway currently has 7 models verified — all at ★★★★☆ or above.
+Routeway is a unified API gateway offering free models through a `:free` model suffix — a pattern shared with OpenRouter and Kilo Code. Models are drawn from Stepfun, NVIDIA, Poolside, Meta, and others, all accessed through a single OpenAI-compatible endpoint with no credit card required. The tight 5 RPM cap makes Routeway a fallback hub rather than a daily driver. Routeway currently has 6 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 5 RPM / 200 RPD / 300,000 TPD
 
 🔗 **Base URL:** `https://api.routeway.ai/v1`
 
-| Free Model                     | Star Rating | Best For    | Speed      | Opinion                                                                           |
-| :----------------------------- | :---------- | :---------- | :--------- | :-------------------------------------------------------------------------------- |
-| `deepseek-v4-flash:free`       | ★★★★★       | `Reasoning` | `Blazing`  | Elite 284B MoE reasoning at blazing speed. The strongest model on Routeway.       |
-| `poolside/laguna-m.1:free`     | ★★★★★       | `Code`      | `Fast`     | Same elite Poolside 225B coding model — best pick on Routeway. Fast and focused.  |
-| `laguna-xs.2:free`             | ★★★★☆       | `Code`      | `Blazing`  | Poolside's 33B coder. Sub-second response time for inline completions.            |
-| `llama-3.3-70b-instruct:free`  | ★★★★☆       | `General`   | `Fast`     | The 70B workhorse. Complex instruction following without drama.                   |
-| `nemotron-3-nano-30b-a3b:free` | ★★★★☆       | `General`   | `Fast`     | NVIDIA's efficient 30B MoE — clean responses with no preamble.                    |
-| `nemotron-nano-9b-v2:free`     | ★★★★☆       | `Fallback`  | `Fast`     | Reliable NVIDIA nano — punches above its 9B weight for quick edits.               |
-| `step-3.5-flash:free`          | ★★★★☆       | `Agentic`   | `Moderate` | Stepfun's 11B active-param agentic powerhouse. Proven quality at 74.4% SWE-bench. |
+| Free Model                     | Star Rating | Best For   | Speed      | Opinion                                                                           |
+| :----------------------------- | :---------- | :--------- | :--------- | :-------------------------------------------------------------------------------- |
+| `poolside/laguna-m.1:free`     | ★★★★★       | `Code`     | `Fast`     | Same elite Poolside 225B coding model — best pick on Routeway. Fast and focused.  |
+| `laguna-xs.2:free`             | ★★★★☆       | `Code`     | `Blazing`  | Poolside's 33B coder. Sub-second response time for inline completions.            |
+| `llama-3.3-70b-instruct:free`  | ★★★★☆       | `General`  | `Fast`     | The 70B workhorse. Complex instruction following without drama.                   |
+| `nemotron-3-nano-30b-a3b:free` | ★★★★☆       | `General`  | `Fast`     | NVIDIA's efficient 30B MoE — clean responses with no preamble.                    |
+| `nemotron-nano-9b-v2:free`     | ★★★★☆       | `Fallback` | `Fast`     | Reliable NVIDIA nano — punches above its 9B weight for quick edits.               |
+| `step-3.5-flash:free`          | ★★★★☆       | `Agentic`  | `Moderate` | Stepfun's 11B active-param agentic powerhouse. Proven quality at 74.4% SWE-bench. |
 
 ### [PaxSenix](https://api.paxsenix.org)
 
@@ -798,9 +796,11 @@ PaxSenix is a high-volume inference hub offering an enormous catalog of models f
 
 ### [Pollinations AI](https://pollinations.ai)
 
-Pollinations AI is a free, no-signup inference provider serving a wide variety of models — from OpenAI and Grok to Qwen, Perplexity, and niche music/safety models. No API key needed, no account required — the only truly zero-friction provider on this list. Pollinations AI currently has 38 models verified — 25 are ★★★☆☆ or above.
+Pollinations AI is a free inference provider serving a wide variety of models — from OpenAI and Grok to Qwen, Perplexity, and niche music/safety models. Sign up for a free account to unlock secret key access with 60 RPM and unlimited daily requests. A publishable key (no sign-up) option exists at 8 RPM / 11,500 RPD for quick tests. Pollinations AI currently has 38 models verified — 25 are ★★★☆☆ or above.
 
 🎁 **Free Tier Quota:** 60 RPM / Unlimited RPD For Secret Keys; 8 RPM / 11,500 RPD For Publishable Keys
+
+🧪 **Anonymous Tier Quota:** Sign-up Not Required / 1 request per 15 seconds / Basic Models
 
 🔗 **Base URL:** `https://gen.pollinations.ai/v1` (OpenAI-compatible)
 
@@ -863,21 +863,24 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 
 ### [TokenReply](https://tokenreply.com)
 
-TokenReply is a lightweight inference hub offering models from Google, DeepSeek, OpenAI, Qwen, Moonshot, Stepfun, and more through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 40 weekly model calls — a very tight cap suited for lightweight evaluation and occasional queries, not sustained coding. Free models only. No credit card required. TokenReply currently has 7 models verified — all at ★★★★☆ or above.
+TokenReply is a lightweight inference hub offering models from Google, DeepSeek, OpenAI, Qwen, Moonshot, Stepfun, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 40 weekly model calls — a very tight cap suited for lightweight evaluation and occasional queries, not sustained coding. Free models only. No credit card required. TokenReply currently has 10 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 3 RPM / 40 Weekly Model Calls / Free Models Only
 
 🔗 **Base URL:** `https://api.tokenreply.com/v1`
 
-| Free Model                    | Star Rating | Best For    | Speed      | Opinion                                                                                               |
-| :---------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------------------- |
-| `deepseek-ai/deepseek-v4-pro` | ★★★★★       | `Reasoning` | `Fast`     | Pro variant of V4 — 80.6% SWE-bench. Make each of your 40 weekly calls count with top-tier reasoning. |
-| `openai/gpt-oss-120b`         | ★★★★★       | `General`   | `Moderate` | The same reliable 120B flagship. Best value for the tight weekly cap — efficient and dependable.      |
-| `qwen/qwen3.5-397b-a17b`      | ★★★★★       | `General`   | `Moderate` | 397B MoE flagship — 76.4% SWE-bench. Immense capacity for your most critical prompts.                 |
-| `google/gemma-4-31b-it`       | ★★★★☆       | `General`   | `Fast`     | Google's 31B dense model. Strong generalist for daily coding without overhead.                        |
-| `moonshotai/kimi-k2.6`        | ★★★★☆       | `Reasoning` | `Blazing`  | 1T multimodal MoE with strong long-horizon reasoning. Solid pick for complex analysis.                |
-| `stepfun-ai/step-3.5-flash`   | ★★★★☆       | `Agentic`   | `Blazing`  | Agentic powerhouse — 74.4% SWE-bench. Tiny 11B active params punch far above their weight.            |
-| `stepfun-ai/step-3.7-flash`   | ★★★★☆       | `Agentic`   | `Blazing`  | Latest Stepfun flash — refined agentic reasoning with blazing speed.                                  |
+| Free Model                  | Star Rating | Best For    | Speed      | Opinion                                                                                                                 |
+| :-------------------------- | :---------- | :---------- | :--------- | :---------------------------------------------------------------------------------------------------------------------- |
+| `deepseek-v4-flash`         | ★★★★★       | `Reasoning` | `Blazing`  | Elite 284B MoE reasoning at blazing speed. The strongest model on TokenReply — make each of your 40 weekly calls count. |
+| `openai/gpt-oss-120b`       | ★★★★★       | `General`   | `Moderate` | The same reliable 120B flagship. Best value for the tight weekly cap — efficient and dependable.                        |
+| `qwen/qwen3.5-397b-a17b`    | ★★★★★       | `General`   | `Moderate` | 397B MoE flagship — 76.4% SWE-bench. Immense capacity for your most critical prompts.                                   |
+| `glm-5`                     | ★★★★☆       | `General`   | `Fast`     | Latest GLM flagship from Zhipu. Strong generalist with balanced output for coding and chat.                             |
+| `google/gemma-3n-e2b-it`    | ★★★★☆       | `General`   | `Fast`     | Efficient Gemma 3N variant. Clean responses for daily coding without the overhead.                                      |
+| `google/gemma-4-31b-it`     | ★★★★☆       | `General`   | `Fast`     | Google's 31B dense model. Strong generalist for daily coding without overhead.                                          |
+| `kimi-k2.6`                 | ★★★★☆       | `Reasoning` | `Blazing`  | Moonshot's 1T MoE kimi. Blazing reasoning speed for complex analysis on tight quota.                                    |
+| `moonshotai/kimi-k2.6`      | ★★★★☆       | `Reasoning` | `Blazing`  | 1T multimodal MoE with strong long-horizon reasoning. Solid pick for complex analysis.                                  |
+| `stepfun-ai/step-3.5-flash` | ★★★★☆       | `Agentic`   | `Blazing`  | Agentic powerhouse — 74.4% SWE-bench. Tiny 11B active params punch far above their weight.                              |
+| `stepfun-ai/step-3.7-flash` | ★★★★☆       | `Agentic`   | `Blazing`  | Latest Stepfun flash — refined agentic reasoning with blazing speed.                                                    |
 
 ### [Void AI](https://voidai.app)
 
