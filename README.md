@@ -448,9 +448,9 @@ Hugging Face's free Inference API gives you access to thousands of community-hos
 
 ### [Intern AI](https://internlm.intern-ai.org.cn)
 
-Intern AI is the official API provided by Shanghai AI Laboratory, the developers behind the InternLM model family. The free tier offers 90 million tokens monthly with 1M TPM — the most generous token quota of any provider on this list. Requires phone verification for sign-up. Intern AI currently has 8 models verified — all at ★★★★☆ or above.
+Intern AI is the official API provided by Shanghai AI Laboratory, the developers behind the InternLM model family. The free tier offers 90 million tokens monthly — the most generous token quota of any provider on this list. Intern AI currently has 8 models verified — all at ★★★★☆ or above.
 
-🎁 **Free Tier Quota:** 90,000,000 tokens/month / 1,000,000 TPM
+🎁 **Free Tier Quota:** 30 RPM / 300,000 TPM / 90,000,000 Tokens per month (3,000,000 TPD)
 
 🔗 **Base URL:** `https://chat.intern-ai.org.cn/api/v1/`
 
