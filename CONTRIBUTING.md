@@ -1,18 +1,22 @@
 # Contributing to awesome-free-byok-models
 
-Contributions are welcome as long as the endpoint works. This list only exists because people test things before adding them — please do the same.
+We welcome contributions to this list. It only exists because people test things before adding them — please do the same.
 
 ## How to Contribute
 
-1. **Test the model yourself** before opening anything.
-2. **Open an Issue** if you are not sure whether a model fits.
+1. **Test the provider yourself** — check that endpoints work and models respond before opening anything.
+2. **Open an Issue** if you are not sure whether a provider or model fits.
 3. **Submit a PR** once you have confirmed it works.
 
 ## Before You Submit
 
 ### 1. Make Sure It Is Actually Free
 
-No credit card required. No trial credits that run out. No "join the waitlist." The endpoint should work every day without paying.
+The provider must be genuinely free and stay that way without paying. That means:
+- No paywalls
+- No trial credits that run out with no free tier underneath
+- No one-time credits
+- No "Join the waitlist" walls
 
 **Pass:** The model responds without asking for money.
 
@@ -20,19 +24,19 @@ No credit card required. No trial credits that run out. No "join the waitlist." 
 
 ### 2. Test 3 Times in a Row
 
-Send the same `"State the word READY."` prompt 3 times. All 3 must come back with a valid response.
+Send `"State the word READY."` to a model 3 times across the provider's catalog. This catches hidden hard limits that require an upgrade. At least one model must pass for the provider to be listed.
 
-**Pass:** All 3 return `"READY"` or something useful within a reasonable time.
+**Pass:** One or more models return `READY` 3 times, or something useful within a reasonable time.
 
-**Fail:** Any one of them times out, returns `404`, `5xx`, or drops the connection.
+**Fail:** Every model times out, returns `404`, `5xx`, or drops the connection.
 
-A single `"READY"` could be luck. Three in a row means the endpoint is stable enough to use.
+A single `"READY"` could be luck. Three in a row means the endpoint is stable enough.
 
 ### 3. No Reverse-Engineered Access
 
-The provider must not rely on reverse engineering or unauthorized scraping of third-party APIs. Proxy and gateway services that aggregate models through official channels are allowed — the line is drawn at open admission of reverse engineering.
+The provider must not rely on reverse engineering or unauthorized scraping of third-party APIs. Proxy and gateway services that route through official channels are fine — the line is drawn at open admission of reverse engineering.
 
-**Pass:** The provider operates their own inference stack, has an official partnership or reseller agreement, or develops their own models.
+**Pass:** The provider runs their own inference stack, has an official partnership or reseller agreement, or builds their own models.
 
 **Fail:** The provider openly states their endpoints rely on "reverse engineering" or "public web scraping" of third-party APIs without authorization.
 
@@ -46,18 +50,22 @@ The model must accept OpenAI-compatible chat completion payloads or have a docum
 
 ## How We Test Internally
 
-We do not maintain a hardcoded list of models. Instead:
+We don't use a hardcoded model list. Instead:
+
+0. Grab an API key from the provider and figure out their endpoint format.
 
 1. Fetch all model IDs from the provider's `GET /v1/models` endpoint.
-2. Test every model with the same `"State the word READY."` prompt in parallel. Non-chat models (embeddings, rerankers, etc.) will fail this prompt — that is expected.
+2. Hit every model with `"State the word READY."` in parallel. Non-chat models (embeddings, rerankers, etc.) will fail — that is expected.
 3. Split results into three buckets:
-   - **Passed** — responded with valid output. Done.
+   - **Passed** — responded with valid output or an empty string (`""`). Still working. Done.
    - **Failed permanently** — returned `402`, `403`, `404`, `503`, or similar. Done.
    - **Retryable** — returned `429` or a connection error. These go to the retry pass.
-4. Retry the retryable group up to 5 more times with exponential backoff (1s → 2s → 4s delay). Each pass narrows the set as models start working. Any model still failing after all retries is rate-limited.
-5. Re-run the whole thing after a minute to confirm at least 3 consecutive successful rounds pass for every stable model.
+4. Retry the retryable group up to 3 more times with exponential backoff (1s → 2s → 4s delay). Any model still failing after all retries is rate-limited.
+5. Re-run after a minute to confirm at least 3 consecutive rounds pass for every stable model.
 
 This catches dead endpoints, renamed models, and quota changes automatically.
+
+If a model is rate-limited, wait a day or two for its quota to refill. If it still fails, drop it until it passes again.
 
 ## Formatting
 
@@ -72,10 +80,26 @@ This catches dead endpoints, renamed models, and quota changes automatically.
 ### Per-Provider Table
 
 ```
-| Free Model | Star Rating | Best For | Speed | Opinion |
-| :--- | :--- | :--- | :--- | :--- |
-| `model-id` | ★★★★★ | `Code` | `Fast` | One punchy sentence. |
+| Free Model | Star Rating | Context | Best For | Latency | Opinion |
+| :--- | :--- | :--- | :--- | :--- | :------ |
+| `model-id` | ★★★★★ | 128K | `Code` | `Fast` | One punchy sentence. |
 ```
+
+For the Context column, note the model's input/output context window.
+
+## Star Rating Guide
+
+Ratings evaluate how well a model handles real-world development demands — typing speed, instruction following, and project scope — balanced against the provider's quota, rate limits, and context window.
+
+| Rating | Meaning | When to Use It |
+| :----- | :------ | :------------- |
+| ★★★★★ | Excellent | Fast, accurate, follows instructions cleanly, enough context for medium-to-large projects. No major downsides. |
+| ★★★★☆ | Good | Solid performance with minor quirks — slightly slow, limited context, or occasional rambling. Reliable daily driver. |
+| ★★★☆☆ | Decent | Works but has clear trade-offs. Good as a fallback or for light tasks. Slow speed, small context, or tight quota hold it back. |
+| ★★☆☆☆ | Poor | Usable in a pinch but not recommended for regular coding. Frequent issues with speed, accuracy, or availability. |
+| ★☆☆☆☆ | Unacceptable | Fails our standards. Should not be listed. |
+
+Star ratings are **provider-specific**, not absolute — a model may earn ★★★★★ on one provider and ★★★☆☆ on another if quota or latency differs.
 
 ## Quality Standards
 
@@ -97,4 +121,4 @@ Include this in your PR description:
 
 ## Thank You
 
-Every contribution helps keep this list from filling up with broken endpoints.
+Every contribution helps keep this list freshly updated.
