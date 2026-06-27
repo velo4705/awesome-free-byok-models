@@ -28,7 +28,15 @@ Send the same `"State the word READY."` prompt 3 times. All 3 must come back wit
 
 A single `"READY"` could be luck. Three in a row means the endpoint is stable enough to use.
 
-### 3. Use a Standard API Format
+### 3. No Reverse-Engineered Access
+
+The provider must not rely on reverse engineering or unauthorized scraping of third-party APIs. Proxy and gateway services that aggregate models through official channels are allowed — the line is drawn at open admission of reverse engineering.
+
+**Pass:** The provider operates their own inference stack, has an official partnership or reseller agreement, or develops their own models.
+
+**Fail:** The provider openly states their endpoints rely on "reverse engineering" or "public web scraping" of third-party APIs without authorization.
+
+### 4. Use a Standard API Format
 
 The model must accept OpenAI-compatible chat completion payloads or have a documented REST API.
 

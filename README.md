@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: June 26, 2026** - All models tested live across 38 providers.
+> ⏰ **Last Verified: June 27, 2026** - All models tested live across 37 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -93,7 +93,7 @@ These tables break down notable free models from each provider's ecosystem, **ca
   <li><a href="#ollama-cloud">Ollama Cloud</a></li>
   <li><a href="#opencode-zen">OpenCode Zen</a></li>
   <li><a href="#openrouter">OpenRouter</a></li>
-  <li><a href="#paxsenix">PaxSenix</a></li>
+<!-- PaxSenix removed pending legal clarity on reverse-engineered API provisioning -->
   <li><a href="#pollinations-ai">Pollinations AI</a></li>
   <li><a href="#poolside">Poolside</a></li>
   <li><a href="#routeway-ai">Routeway AI</a></li>
@@ -113,8 +113,8 @@ AION Labs provides storytelling-optimized models through an OpenAI-compatible AP
 
 | Free Model                       | Star Rating | Context | Best For   | Latency | Opinion                                                                                   |
 | :------------------------------- | :---------- | :------ | :--------- | :------ | :---------------------------------------------------------------------------------------- |
-| `aion-labs/aion-2.5`             | ★★★★★       | 128K    | `Code`     | ~1.9s   | Strong at coding, Responds normally and has a good context window.                        |
-| `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | 32K     | `Fallback` | ~0.9s   | Very fast, but despite the context window, can be good for light coding or just chatting. |
+| `aion-labs/aion-2.5`             | ★★★★★       | 128K    | `Code`     | ~1.9s   | Strong at coding, responds cleanly without rambling, good context window.                 |
+| `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | 32K     | `Fallback` | ~0.9s   | Very fast, but despite the small 32K window, still decent for light coding or chatting.   |
 
 ### [Agnes AI](https://www.agnes.ai)
 
@@ -140,9 +140,9 @@ AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Ant
 | Free Model                                           | Star Rating | Context | Best For    | Latency | Opinion                                                                         |
 | :--------------------------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------------ |
 | `poolside/laguna-m.1:free`                           | ★★★★★       | 128K    | `Code`      | ~1.9s   | Fast, fit for medium-sized projects.                                            |
-| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | 32K     | `General`   | ~6.6s   | Slow, but is only good for simple projects..                                    |
+| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | 32K     | `General`   | ~6.6s   | Slow, but is only good for simple projects.                                    |
 | `liquid/lfm-2.5-1.2b-instruct:free`                  | ★★★★☆       | 32K     | `General`   | ~1.1s   | While it is fast, it is only useful for chatting or light coding.               |
-| `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | 32K     | `Reasoning` | ~3.7s   | The speed is noticeable, but it also adds Reasoning. Great for Simple projects. |
+| `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | 32K     | `Reasoning` | ~3.7s   | The speed is noticeable, but it also adds reasoning. Great for simple projects. |
 | `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | 128K    | `General`   | ~9.3s   | Slow, but having a big context window opens access to medium-scale projects.    |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | 128K    | `Reasoning` | ~8.8s   | Faster than Nano, but slower, this adds Reasoning to think better in coding.    |
 | `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | 128K    | `Fallback`  | ~9.6s   | Slowest of them, but enough as a fallback with a reasonable context window.     |
@@ -158,7 +158,7 @@ API Airforce is a lightweight inference provider with a single model offering �
 
 | Free Model           | Star Rating | Context | Best For    | Latency   | Opinion                                                                                                 |
 | :------------------- | :---------- | :------ | :---------- | :-------- | :------------------------------------------------------------------------------------------------------ |
-| `deepseek-v3.2-free` | ★★★☆☆       | 128K    | `Fallback`  | ~2.4s     | Normal speed, but with 1 RPM, its having a big context window to allow coding during minute breaks.     |
+| `deepseek-v3.2-free` | ★★★☆☆       | 128K    | `Fallback`  | ~2.4s     | Normal speed, but with 1 RPM, it has a big context window allowing coding during minute breaks.     |
 
 ### [Auriko](https://www.auriko.ai)
 
@@ -227,7 +227,7 @@ BlazeAPI is a lightweight inference hub serving models from Moonshot and Z.AI th
 
 | Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                      |
 | :--------------------- | :---------- | :------ | :---------- | :------ | :--------------------------------------------------------------------------- |
-| `moonshotai/kimi-k2.6` | ★★★☆☆       | 128K    | `Reasoning` | ~7.9s   | Slow but capable. 1T model for reasoning, enough for a few deep dives a day. |
+| `moonshotai/kimi-k2.6` | ★★★☆☆       | 128K    | `Reasoning` | ~7.9s   | Slow but capable. A 1T model for reasoning, enough for a few deep dives a day. |
 | `z-ai/glm-5.1`         | ★★★☆☆       | 128K    | `General`   | ~7.6s   | Also slow. GLM 5.1 puts out clean code when you have time to wait.           |
 
 ### [Cerebras AI](https://cloud.cerebras.ai)
@@ -768,32 +768,7 @@ Routeway is a unified API gateway offering free models through a `:free` model s
 | `nemotron-nano-9b-v2:free`     | ★★★★☆       | 128K    | `Fallback` | ~1.5s   | Reliable NVIDIA nano, punches above its 9B weight for quick edits.    |
 | `step-3.5-flash:free`          | ★★★★☆       | 128K    | `Agentic`  | ~3.8s   | Stepfun's 11B active-param, quality agentic coding but slow.          |
 
-### [PaxSenix](https://api.paxsenix.org)
-
-PaxSenix is a high-volume inference hub offering an enormous catalog of models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, xAI, and more through an OpenAI-compatible endpoint. The free tier provides 1,000 requests per day with 500,000 daily tokens — among the most generous quotas on this list, ideal for sustained coding sessions. No credit card required. PaxSenix currently has roughly 50 verified coding-relevant models — all at ★★★★☆ or above.
-
-🎁 **Free Tier Quota:** 1,000 RPD / 500,000 TPD
-
-🔗 **Base URL:** `https://api.paxsenix.org/v1`
-
-| Free Model          | Star Rating | Context | Best For    | Latency | Opinion                                                             |
-| :------------------ | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------ |
-| `claude-sonnet-4-6` | ★★★★★       | 200K    | `Code`      | ~0.2s   | Claude at sub-second, coding is what it does best.                  |
-| `deepseek-v4-flash` | ★★★★★       | 128K    | `Reasoning` | ~1.9s   | Fast flash at 1k daily calls, chews through code.                   |
-| `deepseek-v4-pro`   | ★★★★★       | 128K    | `Reasoning` | ~1.8s   | Slower deeper sibling of Flash, extra headroom for hard problems.   |
-| `gemini-3-pro`      | ★★★★★       | 2M      | `General`   | ~0.2s   | Two million context at sub-second, feed it an entire repository.    |
-| `gpt-5.4`           | ★★★★★       | 128K    | `General`   | ~0.2s   | Fast, polished, tons of quota. The daily driver.                    |
-| `gpt-5.5`           | ★★★★★       | 128K    | `General`   | ~0.2s   | Latest GPT at sub-second, answers before you finish typing.         |
-| `gpt-oss-120b`      | ★★★★★       | 128K    | `General`   | ~0.4s   | Same gpt-oss at 0.4s, shows up everywhere for a reason.             |
-| `codestral-latest`  | ★★★★☆       | 256K    | `Code`      | ~1.8s   | Mistral's coding model, handles multi-file without breaking stride. |
-| `deepseek-r1`       | ★★★★☆       | 128K    | `Reasoning` | ~0.3s   | Shows CoT at 0.3s, best for math-heavy debugging.                   |
-| `deepseek-v3.2`     | ★★★★☆       | 128K    | `Reasoning` | ~1.4s   | Solid reasoning that doesnt waffle.                                 |
-| `gemini-2.5-flash`  | ★★★★☆       | 1M      | `General`   | ~2.0s   | Google's steady flash with 1M context, good for background work.    |
-| `gemma-4-31b`       | ★★★★☆       | 32K     | `General`   | ~0.2s   | Sub-second 31B dense, Google's newest runs fast here.               |
-| `gpt-4.1`           | ★★★★☆       | 1M      | `General`   | ~2.1s   | 1M context GPT, consistent for daily coding across a whole project. |
-| `llama-3.3-70b`     | ★★★★☆       | 128K    | `General`   | ~0.3s   | Meta's 70B at 0.3s, reliable for anything you throw at it.          |
-| `step-3.5-flash`    | ★★★★☆       | 128K    | `Agentic`   | ~0.3s   | 11B active params doing work 70Bs should do.                        |
-
+<!-- PaxSenix removed pending legal clarity — reverse-engineered API provisioning does not meet our trust/replenishability criteria. May return if legality is confirmed. -->
 ### [Pollinations AI](https://pollinations.ai)
 
 Pollinations AI is a free inference provider serving a wide variety of models — from OpenAI and Grok to Qwen, Perplexity, and niche music/safety models. Sign up for a free account to unlock secret key access with 60 RPM and unlimited daily requests. A publishable key (no sign-up) option exists at 8 RPM / 11,500 RPD for quick tests. Pollinations AI currently has 38 models verified — 25 are ★★★☆☆ or above.
