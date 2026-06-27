@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: June 27, 2026** - All models tested live across 37 providers.
+> ⏰ **Last Verified: June 27, 2026** - All models tested live across 38 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -29,11 +29,11 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 
 If you are signing up for free accounts to get API keys, these are the **top platforms** to look at first.
 
-| Provider            | The Simple Vibe | Why It Matters For You                                                                                                                                                           |
-| :------------------ | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Pollinations AI** | Volume King     | 60 RPM with 7,200 daily requests and zero PII. Qwen-coder and Grok-4.20 anchor the #1 and #2 top models. 38 models total.                                                        |
-| **Google Gemini**   | High Volume     | 1,500 free requests a day on flash-lite with 1M context. Light on reasoning but you can run it all day without watching the count.                                               |
-| **Groq API**        | Speed Demon     | Sub-300ms at 14,400 RPD with no PII. The 18k TPM keeps it tight for rapid-fire edits. Best pick for speed.                                                                       |
+| Provider            | The Simple Vibe  | Why It Matters For You                                                                                                                                                           |
+| :------------------ | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Groq API**        | Speed Demon      | Sub-300ms at 14,400 RPD with no PII. The 18k TPM keeps it tight for rapid-fire edits. Best pick for speed.                                                                       |
+| **Google Gemini**   | High Volume      | 1,500 free requests a day on flash-lite with 1M context. Light on reasoning but you can run it all day without watching the count.                                               |
+| **OpenCode Zen**    | Strong Reasoning | 30 RPM with 500 daily requests and 1M token pool. DeepSeek-v4-flash-free handles multi-turn without losing the thread.                                                           |
 
 ---
 
@@ -43,16 +43,16 @@ The absolute best free models available right now, ranked by how well they handl
 
 | Rank   | Model                                 | Host Provider             | The Simple Reason to Choose It                                                                                              |
 | :----- | :------------------------------------ | :------------------------ | :-------------------------------------------------------------------------------------------------------------------------- |
-| **1**  | `qwen-coder`                          | **Pollinations AI**       | Stays focused on code without rambling. 60 RPM with 7,200 daily requests, answers directly every time.                      |
-| **2**  | `grok-4-20-reasoning`                 | **Pollinations AI**       | Tighter than base Grok with reasoning depth. Same 7,200 daily pool — swap between both without watching the meter.          |
-| **3**  | `models/gemini-3.1-flash-lite`        | **Google Gemini**         | 1,500 free requests a day with 1M context. Light on deep reasoning but you can run it all day without checking the meter.   |
-| **4**  | `openai/gpt-oss-120b`                 | **Groq API**              | Sub-300ms at 14,400 daily requests. The 18k TPM keeps it tight but nothing beats this speed for rapid-fire edits.           |
-| **5**  | `mistral-code-agent-latest`           | **Mistral AI**            | Built for multi-step agent actions with tool-calling at sub-second. The 50k TPM pool keeps it at single-file scope though.  |
-| **6**  | `deepseek-v4-flash-free`              | **OpenCode Zen**          | 30 RPM with 500 daily requests and 1M token pool. Strong reasoning that handles multi-turn without losing the thread.       |
-| **7**  | `devstral-small-2:24b`                | **LLM7.IO**               | 40 RPM with 2,400 daily requests and 1M TPD. Lean 24B coder with clean direct output, reliable all day.                     |
-| **8**  | `deepseek-v4-flash`                   | **Navy API**              | Strong reasoning with 250k daily tokens. Fast and consistent for coding without surprises.                                  |
-| **9**  | `deepseek-v3.2`                       | **MNN AI**                | Refined DeepSeek reasoning with $1 monthly credits. Solid for light daily coding and targeted queries.                      |
-| **10** | `gpt-5.5`                             | **Void AI**               | Latest GPT at 100 RPM with 125k daily credits. Clean output, faster than 5.4, best GPT pick on Void.                        |
+| **1**  | `openai/gpt-oss-120b`                 | **Groq API**              | 120B at sub-300ms with 14,400 daily requests. Best overall package of speed, quality, and volume for daily coding.          |
+| **2**  | `models/gemini-3.1-flash-lite`        | **Google Gemini**         | 1,500 free requests a day with 1M context. Lets you feed it an entire repository and run all day.                           |
+| **3**  | `deepseek-v4-flash-free`              | **OpenCode Zen**          | 30 RPM with 500 daily requests and 1M token pool. Strong reasoning that handles multi-turn without losing the thread.       |
+| **4**  | `qwen/qwen3-32b`                      | **Groq API**              | 256K context at sub-300ms on the same 14,400 RPD pool. A second Groq pick for extra context when gpt-oss needs headroom.    |
+| **5**  | `intern-latest`                       | **Intern AI**             | Sub-second at 256K context with 90M tokens monthly. Points to the newest model, always the latest.                          |
+| **6**  | `mistral-code-agent-latest`           | **Mistral AI**            | Agentic coding with tool-calling at sub-second. 50k TPM works for small apps but chokes on large systems.                   |
+| **7**  | `deepseek-v4-flash`                   | **Navy API**              | Strong reasoning with 250k daily tokens. Fast and consistent for coding without surprises.                                  |
+| **8**  | `deepseek-v3.2`                       | **MNN AI**                | Refined DeepSeek reasoning with $1 monthly credits. Solid for light daily coding and targeted queries.                      |
+| **9**  | `gpt-5.5`                             | **Void AI**               | Latest GPT at 100 RPM with 125k daily credits. Clean output, faster than 5.4, best GPT pick on Void.                        |
+| **10** | `gpt-5.4`                             | **Navy API**              | Latest GPT at 250k daily tokens with 20 RPM. Clean direct output, no preamble, no surprises for daily coding.               |
 
 ---
 
@@ -79,6 +79,7 @@ These tables break down notable free models from each provider's ecosystem, **ca
   <li><a href="#groq-api">Groq API</a></li>
   <li><a href="#helixmind">HelixMind</a></li>
   <li><a href="#hugging-face-inference-api">Hugging Face Inference API</a></li>
+  <li><a href="#intern-ai">Intern AI</a></li>
   <li><a href="#kilo-code">Kilo Code</a></li>
   <li><a href="#llm7io">LLM7.IO</a></li>
   <li><a href="#llmgateway">LLMGateway</a></li>
@@ -93,8 +94,7 @@ These tables break down notable free models from each provider's ecosystem, **ca
   <li><a href="#ollama-cloud">Ollama Cloud</a></li>
   <li><a href="#opencode-zen">OpenCode Zen</a></li>
   <li><a href="#openrouter">OpenRouter</a></li>
-<!-- PaxSenix removed pending legal clarity on reverse-engineered API provisioning -->
-  <li><a href="#pollinations-ai">Pollinations AI</a></li>
+  <li><a href="#poixe-ai">Poixe AI</a></li>
   <li><a href="#poolside">Poolside</a></li>
   <li><a href="#routeway-ai">Routeway AI</a></li>
   <li><a href="#sambanova-ai">SambaNova AI</a></li>
@@ -446,6 +446,25 @@ Hugging Face's free Inference API gives you access to thousands of community-hos
 | `Qwen/Qwen3.6-35B-A3B`                              | ★★★★☆       | 256K    | `Code`      | ~1.0s   | Most efficient Qwen, stretches the $0.10 further for medium projects.      |
 | `zai-org/GLM-4.7`                                   | ★★★★☆       | 128K    | `General`   | ~1.3s   | Keeps responding under heavy use, but how much heavy can $0.10 buy?        |
 
+### [Intern AI](https://internlm.intern-ai.org.cn)
+
+Intern AI is the official API provided by Shanghai AI Laboratory, the developers behind the InternLM model family. The free tier offers 90 million tokens monthly with 1M TPM — the most generous token quota of any provider on this list. Requires phone verification for sign-up. Intern AI currently has 8 models verified — all at ★★★★☆ or above.
+
+🎁 **Free Tier Quota:** 90,000,000 tokens/month / 1,000,000 TPM
+
+🔗 **Base URL:** `https://chat.intern-ai.org.cn/api/v1/`
+
+| Free Model          | Star Rating | Context | Best For    | Latency | Opinion                                                         |
+| :------------------ | :---------- | :------ | :---------- | :------ | :-------------------------------------------------------------- |
+| `intern-latest`     | ★★★★★       | 256K    | `Code`      | ~0.6s   | Points to the newest Intern model. Sub-second at 256K context.  |
+| `intern-pro`        | ★★★★★       | 256K    | `Reasoning` | ~0.9s   | Extra headroom for complex reasoning without preamble.          |
+| `intern-v7.1`       | ★★★★★       | 128K    | `Code`      | ~0.5s   | Fast response with decent coding output.                        |
+| `intern-v7.5`       | ★★★★★       | 256K    | `Reasoning` | ~0.8s   | Strong reasoning with 256K context. Best value for tough logic. |
+| `intern-v7-flash`   | ★★★★★       | 128K    | `General`   | ~0.4s   | Blazing speed, handles light coding without the overhead.       |
+| `internlm3-latest`  | ★★★★☆       | 128K    | `General`   | ~0.5s   | Balanced InternLM 3, good daily driver.                         |
+| `intern-v7-8b`      | ★★★★☆       | 128K    | `Fallback`  | ~0.5s   | Compact 8B, efficient for lightweight tasks.                    |
+| `pro-intern-latest` | ★★★☆☆       | 256K    | `General`   | ~1.4s   | Older pro model, feels dated next to the others.                |
+
 ### [Kilo Code](https://app.kilo.ai)
 
 Kilo Code is a coding-agent platform that proxies free models from OpenRouter, NVIDIA, Poolside, and others through a single API key. The free tier offers generous replenishable credits with no hard daily cap — a solid Swiss-army-knife provider that gives you access to a diverse model pool through one endpoint. Kilo Code currently has 11 models verified.
@@ -768,44 +787,31 @@ Routeway is a unified API gateway offering free models through a `:free` model s
 | `nemotron-nano-9b-v2:free`     | ★★★★☆       | 128K    | `Fallback` | ~1.5s   | Reliable NVIDIA nano, punches above its 9B weight for quick edits.    |
 | `step-3.5-flash:free`          | ★★★★☆       | 128K    | `Agentic`  | ~3.8s   | Stepfun's 11B active-param, quality agentic coding but slow.          |
 
-<!-- PaxSenix removed pending legal clarity — reverse-engineered API provisioning does not meet our trust/replenishability criteria. May return if legality is confirmed. -->
-### [Pollinations AI](https://pollinations.ai)
+### [Poixe AI](https://poixe.com)
 
-Pollinations AI is a free inference provider serving a wide variety of models — from OpenAI and Grok to Qwen, Perplexity, and niche music/safety models. Sign up for a free account to unlock secret key access with 60 RPM and unlimited daily requests. A publishable key (no sign-up) option exists at 8 RPM / 11,500 RPD for quick tests. Pollinations AI currently has 38 models verified — 25 are ★★★☆☆ or above.
+Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 24 models verified — all at ★★★★☆ or above.
 
-🎁 **Free Tier Quota:** 60 RPM / Unlimited RPD For Secret Keys; 8 RPM / 11,500 RPD For Publishable Keys
+🎁 **Free Tier Quota:** 10,000 RPD / 10,000,000 TPD
 
-🧪 **Anonymous Tier Quota:** Sign-up Not Required / 1 request per 15 seconds / Basic Models
+🔗 **Base URL:** `https://api.poixe.com/v1/`
 
-🔗 **Base URL:** `https://gen.pollinations.ai/v1` (OpenAI-compatible)
-
-| Free Model            | Star Rating | Context | Best For    | Latency | Opinion                                                                 |
-| :-------------------- | :---------- | :------ | :---------- | :------ | :---------------------------------------------------------------------- |
-| `gemma`               | ★★★★★       | 128K    | `General`   | ~1.1s   | Punches above its weight, follows complex instructions with precision.  |
-| `gpt-5.4-mini`        | ★★★★★       | 128K    | `General`   | ~1.2s   | Snappy to the point of feeling instant.                                 |
-| `grok`                | ★★★★★       | 128K    | `Chat`      | ~1.1s   | Surprisingly polished at code, switches between chat and coding.        |
-| `grok-4-20-reasoning` | ★★★★★       | 128K    | `General`   | ~1.1s   | Tighter than base Grok, fewer surprises more consistency.               |
-| `llama`               | ★★★★★       | 128K    | `General`   | ~1.2s   | No-nonsense output, zero chatter.                                       |
-| `nova-fast`           | ★★★★★       | 128K    | `Code`      | ~1.1s   | For rapid-fire coding loops where waiting isnt an option.               |
-| `openai`              | ★★★★★       | 128K    | `General`   | ~1.1s   | Predictable, drop it into any workflow and get clean answers.           |
-| `openai-large`        | ★★★★★       | 128K    | `Reasoning` | ~1.2s   | Extra headroom when the reasoning gets thorny.                          |
-| `perplexity`          | ★★★★★       | 128K    | `General`   | ~1.1s   | Research-backed answers to coding questions.                            |
-| `qwen-coder`          | ★★★★★       | 128K    | `Code`      | ~0.8s   | Focused code output without the fluff.                                  |
-| `qwen-vision`         | ★★★★★       | 128K    | `Vision`    | ~1.2s   | Clean multimodal, screenshots and code mix without rambling.            |
-| `qwen-vision-pro`     | ★★★★★       | 128K    | `Vision`    | ~1.0s   | Good vision, sharper answers for text and images.                       |
-| `gpt-5.4`             | ★★★★☆       | 128K    | `General`   | ~1.1s   | Reliable for daily coding, though sometimes needs a second try.         |
-| `grok-large`          | ★★★★☆       | 128K    | `General`   | ~1.1s   | Extra Grok headroom for heavier reasoning tasks.                        |
-| `kimi-code`           | ★★★★☆       | 128K    | `Code`      | ~1.1s   | Strong on code, use it for programming-specific work.                   |
-| `minimax-m2.7`        | ★★★★☆       | 1M      | `General`   | ~1.1s   | Solid and frictionless for everyday tasks.                              |
-| `mistral`             | ★★★★☆       | 128K    | `General`   | ~1.4s   | Clean Mistral responses without the full quota drain.                   |
-| `mistral-large`       | ★★★★☆       | 128K    | `General`   | ~1.0s   | Good Mistral quality, crisp and strong instruction following.           |
-| `nova`                | ★★★★☆       | 128K    | `Agent`     | ~1.2s   | Clean output for agent pipelines, straightforward coding without noise. |
-| `openai-fast`         | ★★★★☆       | 128K    | `General`   | ~1.1s   | Built for speed, quick tasks handled instantly.                         |
-| `qwen-large`          | ★★★★☆       | 128K    | `General`   | ~1.2s   | More parameters more context, slightly less direct but more headroom.   |
-| `step-3.5-flash`      | ★★★★☆       | 128K    | `General`   | ~1.1s   | Keeps pace with daily edits and scripts.                                |
-| `step-flash`          | ★★★★☆       | 128K    | `Fallback`  | ~1.3s   | Dependable fallback, keeps quality up when main model hits limits.      |
-| `midijourney-large`   | ★★★☆☆       | 128K    | `General`   | ~1.0s   | Clean empty responses for frictionless automation.                      |
-| `perplexity-fast`     | ★★★☆☆       | 128K    | `General`   | ~1.3s   | Research-backed answers at high speed.                                  |
+| Free Model                                   | Star Rating | Context | Best For    | Latency | Opinion                                                                   |
+| :------------------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------ |
+| `claude-sonnet-4-5-20250929:free`            | ★★★★★       | 200K    | `Code`      | ~2.4s   | Claude Sonnet for coding at 10k daily calls. Hard to beat this combo.     |
+| `gemini-2.5-flash:free`                      | ★★★★★       | 1M      | `General`   | ~1.5s   | Sub-2s with 1M context and 10k daily requests. Daily driver material.     |
+| `kimi-k2-0711-preview:free`                  | ★★★★★       | 128K    | `Reasoning` | ~1.6s   | 1T reasoning model at 1.6s. Deep dives without the wait.                  |
+| `qwen3-coder-480b-a35b-instruct:free`        | ★★★★★       | 256K    | `Code`      | ~3.2s   | 480B coder for architecture-level problems. Worth the extra seconds.      |
+| `qwen-plus-latest:free`                      | ★★★★☆       | 128K    | `General`   | ~1.8s   | Reliable Qwen, handles daily coding without surprises.                    |
+| `qwen3-235b-a22b-instruct-2507:free`         | ★★★★☆       | 256K    | `Reasoning` | ~1.8s   | 235B reasoning at 256K. Good for multi-file context.                      |
+| `grok-3-mini:free`                           | ★★★★☆       | 128K    | `Reasoning` | ~2.9s   | xAI reasoning, solid for debugging sessions.                              |
+| `gemini-2.5-pro:free`                        | ★★★★☆       | 1M      | `Reasoning` | ~4.2s   | Deep reasoning at 1M, slow but thorough for hard problems.                |
+| `gpt-5-mini-2025-08-07:free`                 | ★★★★☆       | 128K    | `General`   | ~3.1s   | Latest GPT mini. Clean output, steady for everyday edits.                 |
+| `doubao-seed-1-6-flash-250615:free`          | ★★★★☆       | 128K    | `General`   | ~2.5s   | ByteDance flash model, fast for a Chinese gateway.                        |
+| `gpt-4.1-nano-2025-04-14:free`               | ★★★★☆       | 1M      | `Code`      | ~2.0s   | 1M context nano, great for feeding it a whole project.                    |
+| `qwen-turbo:free`                            | ★★★★☆       | 128K    | `Fallback`  | ~1.5s   | Fast lightweight Qwen, good fallback when others are capped.              |
+| `kimi-k2:free`                               | ★★★★☆       | 128K    | `General`   | ~1.8s   | Solid Kimi general model, dependable daily output.                        |
+| `qwen-long:free`                             | ★★★★☆       | 128K    | `General`   | ~1.8s   | Long-context Qwen variant, keeps multi-turn conversations coherent.       |
+| `doubao-1-5-lite-32k-250115:free`            | ★★★★☆       | 32K     | `Fallback`  | ~1.6s   | Lightweight Doubao. Fast but small context, use for quick scripts.        |
 
 ### [Poolside](https://poolside.ai)
 
