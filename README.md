@@ -140,7 +140,7 @@ AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Ant
 | Free Model                                           | Star Rating | Context | Best For    | Latency | Opinion                                                                         |
 | :--------------------------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------------ |
 | `poolside/laguna-m.1:free`                           | ★★★★★       | 128K    | `Code`      | ~1.9s   | Fast, fit for medium-sized projects.                                            |
-| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | 32K     | `General`   | ~6.6s   | Slow, but is only good for simple projects.                                    |
+| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | 32K     | `General`   | ~6.6s   | Slow, but is only good for simple projects.                                     |
 | `liquid/lfm-2.5-1.2b-instruct:free`                  | ★★★★☆       | 32K     | `General`   | ~1.1s   | While it is fast, it is only useful for chatting or light coding.               |
 | `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | 32K     | `Reasoning` | ~3.7s   | The speed is noticeable, but it also adds reasoning. Great for simple projects. |
 | `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | 128K    | `General`   | ~9.3s   | Slow, but having a big context window opens access to medium-scale projects.    |
@@ -158,7 +158,7 @@ API Airforce is a lightweight inference provider with a single model offering �
 
 | Free Model           | Star Rating | Context | Best For    | Latency   | Opinion                                                                                                 |
 | :------------------- | :---------- | :------ | :---------- | :-------- | :------------------------------------------------------------------------------------------------------ |
-| `deepseek-v3.2-free` | ★★★☆☆       | 128K    | `Fallback`  | ~2.4s     | Normal speed, but with 1 RPM, it has a big context window allowing coding during minute breaks.     |
+| `deepseek-v3.2-free` | ★★★☆☆       | 128K    | `Fallback`  | ~2.4s     | Normal speed, but with 1 RPM, it has a big context window allowing coding during minute breaks.         |
 
 ### [Auriko](https://www.auriko.ai)
 
@@ -225,10 +225,10 @@ BlazeAPI is a lightweight inference hub serving models from Moonshot and Z.AI th
 
 > ⚠️ **BlazeAPI may be shutting down soon.** Service continues working until full retirement.
 
-| Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                      |
-| :--------------------- | :---------- | :------ | :---------- | :------ | :--------------------------------------------------------------------------- |
+| Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                        |
+| :--------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------------------- |
 | `moonshotai/kimi-k2.6` | ★★★☆☆       | 128K    | `Reasoning` | ~7.9s   | Slow but capable. A 1T model for reasoning, enough for a few deep dives a day. |
-| `z-ai/glm-5.1`         | ★★★☆☆       | 128K    | `General`   | ~7.6s   | Also slow. GLM 5.1 puts out clean code when you have time to wait.           |
+| `z-ai/glm-5.1`         | ★★★☆☆       | 128K    | `General`   | ~7.6s   | Also slow. GLM 5.1 puts out clean code when you have time to wait.             |
 
 ### [Cerebras AI](https://cloud.cerebras.ai)
 
