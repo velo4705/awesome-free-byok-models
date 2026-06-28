@@ -115,13 +115,13 @@ AION Labs provides storytelling-optimized models through an OpenAI-compatible AP
 | `aion-labs/aion-2.5`             | ★★★★★       | 128K    | `Code`     | ~1.9s   | Strong at coding, responds cleanly without rambling, good context window.                 |
 | `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | 32K     | `Fallback` | ~0.9s   | Very fast, but despite the small 32K window, still decent for light coding or chatting.   |
 
-### [Agnes AI](https://www.agnes.ai)
+### [Agnes AI](https://www.agnes-ai.com)
 
 Agnes AI offers flash-tier models with generous daily limits but slow inference speed. The free tier provides 1,000 requests per day at 20 RPM — enough volume for background jobs, but ~7s latency makes interactive use frustrating. No credit card required. Agnes AI currently has 2 models verified.
 
 🎁 **Free Tier Quota:** 20 RPM / 1,000 RPD
 
-🔗 **Base URL:** `https://api.agnes.ai/v1`
+🔗 **Base URL:** `https://apihub.agnes-ai.com/v1`
 
 | Free Model        | Star Rating | Context | Best For   | Latency | Opinion                                  |
 | :---------------- | :---------- | :------ | :--------- | :------ | :--------------------------------------- |
@@ -149,58 +149,18 @@ AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Ant
 
 ### [Auriko](https://www.auriko.ai)
 
-Auriko is a unified API gateway providing access to 100+ models from top providers (OpenAI, Anthropic, DeepSeek, Google, xAI, Moonshot, and more) through a single OpenAI-compatible endpoint. The free tier offers 1,000 Platform RPM and 500 BYOK RPM with a 1M token monthly cap and zero inference markup — no credit card required. Access to every model on the platform at provider cost. Auriko currently has 166 models verified — 45 are ★★★★☆ or above.
+Auriko is a unified API gateway providing access to 100+ models from top providers through a single OpenAI-compatible endpoint. The free tier offers 1,000 Platform RPM and 500 BYOK RPM with a 1M token monthly cap — but most models run on a credit system ($1 usage), not truly free. Only 4 models are genuinely free and replenishable without credits. Auriko currently has 4 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 500 RPM (BYOK) / 1,000 RPM (Platform) / 1,000,000 tokens/month (BYOK)
 
 🔗 **Base URL:** `https://api.auriko.ai/v1`
 
-| Free Model                           | Star Rating | Context | Best For    | Latency | Opinion                                                                    |
-| :----------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------- |
-| `claude-opus-4-1-20250805`           | ★★★★★       | 200K    | `Code`      | ~2.8s   | Good context window, enough for medium-large projects.                     |
-| `claude-opus-4-5-20251101`           | ★★★★★       | 200K    | `Code`      | ~2.0s   | Faster than 4.1, gives a better coding experience.                         |
-| `claude-opus-4-6`                    | ★★★★★       | 200K    | `Code`      | ~2.1s   | Similar to 4.5, slightly different style. Handles complex code.            |
-| `claude-opus-4-7`                    | ★★★★★       | 200K    | `Code`      | ~1.4s   | Fastest Opus here. Deep reasoning but keeps outputs direct.                |
-| `claude-opus-4-8`                    | ★★★★★       | 200K    | `Code`      | ~2.3s   | Latest Opus. Slower but quality shows in big refactors.                    |
-| `deepseek-r1-0528`                   | ★★★★★       | 128K    | `Reasoning` | ~1.7s   | Steps through problems. Good for debugging when you need to see the logic. |
-| `deepseek-v3.1`                      | ★★★★★       | 128K    | `Reasoning` | ~1.8s   | Fast with 5M tokens/month quota. Handles complex prompts.                  |
-| `deepseek-v3.1-terminus`             | ★★★★★       | 128K    | `Reasoning` | ~1.5s   | Specialized variant. Digs deeper than base V3.1.                           |
-| `deepseek-v3.2`                      | ★★★★★       | 128K    | `Reasoning` | ~1.2s   | Fast and clean, good for daily reasoning tasks.                            |
-| `deepseek-v3.2-exp`                  | ★★★★★       | 128K    | `Reasoning` | ~2.2s   | Experimental. Thinking goes deeper for thorough CoT.                       |
-| `deepseek-v4-pro`                    | ★★★★★       | 128K    | `Reasoning` | ~1.4s   | Extra headroom over flash for the hardest multi-file problems.             |
-| `glm-5.1`                            | ★★★★★       | 128K    | `Code`      | ~1.9s   | GLM's top coder, structured output works for agentic workflows.            |
-| `gpt-5-2025-08-07`                   | ★★★★★       | 128K    | `General`   | ~1.1s   | Handles every coding task with no preamble nonsense.                       |
-| `gpt-5.5-2026-04-23`                 | ★★★★★       | 128K    | `General`   | ~3.1s   | Smarter than 5.0 but slower. Worth it for hard prompts.                    |
-| `gpt-oss-120b`                       | ★★★★★       | 128K    | `General`   | ~1.8s   | Reliable 120B. Clean across every task, consistent with other providers.   |
-| `gpt-oss-120b-turbo`                 | ★★★★★       | 128K    | `General`   | ~1.4s   | Turbo variant. Extra throughput for rapid agentic loops.                   |
-| `grok-4.20-0309-reasoning`           | ★★★★★       | 128K    | `Reasoning` | ~2.8s   | xAI reasoning. CoT is solid for debugging sessions.                        |
-| `hermes-3-llama-3.1-405b`            | ★★★★★       | 128K    | `Reasoning` | ~1.7s   | 405B for free, honestly feels unfair.                                      |
-| `minimax-m3`                         | ★★★★★       | 1M      | `General`   | ~3.6s   | Good scores with 1M context. Slow but quality is high.                     |
-| `nex-n2-pro`                         | ★★★★★       | 128K    | `Code`      | ~1.9s   | Good coder with reasoning. Reliable for daily work.                        |
-| `o3-2025-04-16`                      | ★★★★★       | 200K    | `Reasoning` | ~1.0s   | Fast reasoning with 200K context. Top pick here for architecture work.     |
-| `qwen-2.5-72b-instruct`              | ★★★★★       | 128K    | `General`   | ~1.2s   | Fast consistent 72B, trusted across every provider.                        |
-| `qwen-3-235b-a22b-instruct-2507-fp8` | ★★★★★       | 256K    | `General`   | ~1.4s   | 235B at FP8. Strong reasoning without the full latency tax.                |
-| `qwen-3-coder-30b-a3b-instruct`      | ★★★★★       | 256K    | `Code`      | ~2.2s   | Focused 30B coder. Efficient without the bloat.                            |
-| `qwen-3-coder-480b-a35b-instruct`    | ★★★★★       | 256K    | `Code`      | ~1.1s   | 480B coder, handles the hardest debugging sessions.                        |
-| `qwen-3.5-397b-a17b`                 | ★★★★★       | 256K    | `Reasoning` | ~2.4s   | 397B model with 17B active. Immense capacity for complex prompts.          |
-| `claude-haiku-4-5-20251001`          | ★★★★☆       | 200K    | `General`   | ~1.1s   | Fast Haiku with 200K context. Handles daily coding fine.                   |
-| `claude-sonnet-4-6`                  | ★★★★☆       | 200K    | `Code`      | ~1.5s   | Good creative coding with clear response style.                            |
-| `deepseek-v4-flash`                  | ★★★★☆       | 128K    | `Reasoning` | ~1.7s   | Flash variant. Strong reasoning depth with clean inference.                |
-| `gemini-3.1-flash-lite`              | ★★★★☆       | 1M      | `General`   | ~2.1s   | Google's fastest flash with 1M context. Uncapped daily usage.              |
-| `gemma-4-31b-it-turbo`               | ★★★★☆       | 32K     | `General`   | ~1.2s   | Fast responses, but the 32K window limits big context.                     |
-| `gpt-4.1-2025-04-14`                 | ★★★★☆       | 1M      | `Code`      | ~0.9s   | Fast with 1M context. A solid choice for daily coding.                     |
-| `gpt-4o-mini-2024-07-18`             | ★★★★☆       | 128K    | `Code`      | ~1.3s   | Compact option. Reliable for daily coding.                                 |
-| `gpt-5-chat-latest`                  | ★★★★☆       | 128K    | `Chat`      | ~1.3s   | Chat-optimized. Handles conversational coding naturally.                   |
-| `gpt-5.2-2025-12-11`                 | ★★★★☆       | 128K    | `General`   | ~1.2s   | Solid point release. Fast and reliable.                                    |
-| `gpt-5.4-2026-03-05`                 | ★★★★☆       | 128K    | `General`   | ~1.8s   | Latest GPT gen. Clean output, no preamble.                                 |
-| `gpt-5.4-mini-2026-03-17`            | ★★★★☆       | 128K    | `General`   | ~1.4s   | Compact 5.4. Efficient for lightweight tasks.                              |
-| `gpt-5.4-nano-2026-03-17`            | ★★★★☆       | 128K    | `General`   | ~0.9s   | Nano tier. Syntax checks and quick edits are instant.                      |
-| `grok-4.20-0309-non-reasoning`       | ★★★★☆       | 128K    | `Agent`     | ~0.9s   | Fastest xAI. Clean output for rapid coding loops.                          |
-| `llama-3.3-70b-instruct-fp8`         | ★★★★☆       | 128K    | `General`   | ~1.6s   | Meta's 70B at FP8. Solid instruction following.                            |
-| `o4-mini-2025-04-16`                 | ★★★★☆       | 200K    | `Reasoning` | ~1.1s   | Compact reasoner. Handles logic-heavy tasks for daily use.                 |
-| `phi-4`                              | ★★★★☆       | 128K    | `Code`      | ~0.7s   | Microsoft's 14B. Surprising coding depth for its size.                     |
-| `qwen-3.6-35b-a3b`                   | ★★★★☆       | 256K    | `Code`      | ~2.3s   | Latest Qwen 3.6. Efficient model with strong reasoning.                    |
-| `seed-2.0-code`                      | ★★★★☆       | 128K    | `Code`      | ~3.6s   | Coding-specialized. Handles multi-file refactors but slower.               |
+| Free Model       | Star Rating | Context | Best For    | Latency | Opinion                                                                  |
+| :--------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------------- |
+| `nex-n2-pro`     | ★★★★★       | 128K    | `Code`      | ~2.5s   | Good coder with reasoning. Reliable for daily work on 1M monthly tokens. |
+| `glm-4.5-flash`  | ★★★★☆       | 128K    | `General`   | ~2.8s   | Zhipu flash at 2.8s, reliable for general coding on the 1M token pool.   |
+| `glm-4.6v-flash` | ★★★★☆       | 128K    | `General`   | ~3.0s   | Zhipu flash with vision support, fast for general coding.                |
+| `glm-4.7-flash`  | ★★★★☆       | 128K    | `General`   | ~2.8s   | Latest Zhipu flash, snappy and consistent on the 1M token pool.          |
 
 ### [BlazeAPI](https://blazeai.boxu.dev)
 
