@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: June 29, 2026** - All models tested live across 37 providers.
+> ⏰ **Last Verified: June 30, 2026** - All models tested live across 37 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -453,21 +453,19 @@ LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp 
 
 ### [LLMGateway](https://llmgateway.io)
 
-LLMGateway is a lightweight inference hub serving models from Zhipu AI and more at $0 per 1M tokens — a genuinely free per-token pricing model with no credit cap. The free tier offers 5 requests per 10 minutes with no daily token limit, making it practical for light coding and scripting tasks. No credit card required. LLMGateway currently has 3 models verified — all at ★★★★☆ or above.
+LLMGateway is a lightweight inference hub serving models from Zhipu AI and more at $0 per 1M tokens — a genuinely free per-token pricing model with no credit cap. The free tier offers 5 requests per 10 minutes with no daily token limit, making it practical for light coding and scripting tasks. No credit card required. LLMGateway currently has 1 model verified.
 
 🎁 **Free Tier Quota:** 5 requests per 10 minutes / $0 per 1M tokens
 
 🔗 **Base URL:** `https://api.llmgateway.io/v1`
 
-| Free Model           | Star Rating | Context | Best For   | Latency | Opinion                                                  |
-| :------------------- | :---------- | :------ | :--------- | :------ | :------------------------------------------------------- |
-| `glm-4.5-flash`      | ★★★★☆       | 128K    | `Fallback` | ~2.4s   | Older flash, handles basic scripting with direct output. |
-| `glm-4.6v-flash`     | ★★★★☆       | 128K    | `General`  | ~1.1s   | Newer flash with vision, fast and clean no preamble.     |
-| `glm-4.7-flash-free` | ★★★★☆       | 128K    | `General`  | ~1.2s   | Latest GLM flash, snappy and clean for daily coding.     |
+| Free Model              | Star Rating | Context | Best For  | Latency | Opinion                                            |
+| :---------------------- | :---------- | :------ | :-------- | :------ | :------------------------------------------------- |
+| `claude-haiku-4-5-free` | ★★★★☆       | 200K    | `General` | ~1.2s   | Claude Haiku 4.5, fast and clean for daily coding. |
 
 ### [LiteRouter](https://literouter.com)
 
-LiteRouter is a lightweight inference hub offering free models from OpenAI, DeepSeek, Mistral, Meta, and more through an OpenAI-compatible endpoint with a `:free` suffix. The free tier provides uncapped daily requests with 1 concurrent request and 15,000 tokens per day — enough for light scripting and targeted queries. No credit card required. LiteRouter currently has 40 models verified — 37 at ★★★★☆ or above.
+LiteRouter is a lightweight inference hub offering free models from OpenAI, DeepSeek, Mistral, Meta, and more through an OpenAI-compatible endpoint with a `:free` suffix. The free tier provides uncapped daily requests with 1 concurrent request and 15,000 tokens per day — enough for light scripting and targeted queries. No credit card required. LiteRouter currently has 42 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 1 Concurrent Request / 15,000 TPD / Uncapped RPD
 
@@ -475,44 +473,48 @@ LiteRouter is a lightweight inference hub offering free models from OpenAI, Deep
 
 | Free Model                             | Star Rating | Context | Best For    | Latency | Opinion                                                         |
 | :------------------------------------- | :---------- | :------ | :---------- | :------ | :-------------------------------------------------------------- |
-| `deepseek-v3.1:free`                   | ★★★★★       | 128K    | `Reasoning` | ~3.3s   | V3.1 reasoning, reliable for complex multi-file debugging.      |
-| `deepseek-v3.1-terminus:free`          | ★★★★★       | 128K    | `Reasoning` | ~2.5s   | Terminus variant of V3.1, refined for complex logic.            |
-| `deepseek-v4-flash:free`               | ★★★★★       | 128K    | `Reasoning` | ~3.6s   | Fast reasoning, best use of 15k daily tokens.                   |
-| `gemini-2.5-flash:free`                | ★★★★★       | 1M      | `General`   | ~3.0s   | Google's strong flash with 1M context on LiteRouter.            |
-| `gpt-oss-120b:free`                    | ★★★★★       | 128K    | `General`   | ~4.5s   | Reliable 120B. Make each of your 15k daily tokens count.        |
-| `grok-4.1-fast-reasoning:free`         | ★★★★★       | 128K    | `Reasoning` | ~5.2s   | xAI's fast reasoning, strong for logic.                         |
-| `claude-haiku-4.5-cheap:free`          | ★★★★☆       | 200K    | `General`   | ~2.7s   | Claude 4.5 Haiku via cheap route, fast for daily coding.        |
-| `deepseek-v3-0324:free`                | ★★★★☆       | 128K    | `Reasoning` | ~3.4s   | Older V3 snapshot, solid reasoning on LiteRouter.               |
-| `deepseek-v3.2:free`                   | ★★★★☆       | 128K    | `Reasoning` | ~4.0s   | Strong reasoning for complex debugging, but tight token budget. |
-| `devstral-small-2507:free`             | ★★★★☆       | 128K    | `Code`      | ~1.2s   | Mistral agent model, fast for light scripting.                  |
-| `gemini-2.5-flash-lite:free`           | ★★★★☆       | 1M      | `General`   | ~1.5s   | Google's flash-lite, efficient at 1.5s.                         |
-| `gemma-3-27b-it:free`                  | ★★★★☆       | 128K    | `General`   | ~7.0s   | Gemma 3 at 27B, slow but solid responses.                       |
-| `gemma-4-31b:free`                     | ★★★★☆       | 128K    | `General`   | ~6.6s   | Google's 31B, good generalist on tight budget.                  |
-| `glm-4.7-flash-cheap:free`             | ★★★★☆       | 128K    | `General`   | ~4.4s   | Zhipu flash, cheap on tokens for the budget.                    |
-| `glm-5-cheap:free`                     | ★★★★☆       | 128K    | `General`   | ~4.5s   | Zhipu's GLM-5, solid generalist.                                |
-| `glm-5.1-cheap:free`                   | ★★★★☆       | 128K    | `General`   | ~2.2s   | Updated GLM-5 at good speed.                                    |
-| `glm-5.2-cheap:free`                   | ★★★★☆       | 128K    | `General`   | ~6.4s   | Latest GLM, capable but slow.                                   |
-| `gpt-4.1-mini:free`                    | ★★★★☆       | 1M      | `General`   | ~3.8s   | OpenAI compact with 1M context.                                 |
-| `gpt-4.1-nano:free`                    | ★★★★☆       | 1M      | `Code`      | ~2.6s   | Fast GPT nano for quick code edits.                             |
-| `gpt-4o-mini:free`                     | ★★★★☆       | 128K    | `General`   | ~1.7s   | Compact GPT-4o, efficient for the 15k daily token budget.       |
-| `gpt-5-nano:free`                      | ★★★★☆       | 128K    | `Code`      | ~3.0s   | GPT nano for light coding tasks.                                |
-| `gpt-oss-20b:free`                     | ★★★★☆       | 128K    | `Code`      | ~2.7s   | Lighter 120B, best value for the 15k TPD cap.                   |
-| `kimi-k2.5:free`                       | ★★★★☆       | 128K    | `Reasoning` | ~4.3s   | Moonshot's 1T model for complex multi-step.                     |
+| `deepseek-v3.1:free`                   | ★★★★★       | 128K    | `Reasoning` | ~6.3s   | V3.1 reasoning, reliable for complex multi-file debugging.      |
+| `deepseek-v3.1-terminus:free`          | ★★★★★       | 128K    | `Reasoning` | ~4.0s   | Terminus variant of V3.1, refined for complex logic.            |
+| `deepseek-v4-flash:free`               | ★★★★★       | 128K    | `Reasoning` | ~5.9s   | Fast reasoning, best use of 15k daily tokens.                   |
+| `gemini-2.5-flash:free`                | ★★★★★       | 1M      | `General`   | ~3.2s   | Google's strong flash with 1M context on LiteRouter.            |
+| `gpt-oss-120b:free`                    | ★★★★★       | 128K    | `General`   | ~2.8s   | Reliable 120B. Make each of your 15k daily tokens count.        |
+| `grok-4.1-fast-reasoning:free`         | ★★★★★       | 128K    | `Reasoning` | ~5.5s   | xAI's fast reasoning, strong for logic.                         |
+| `claude-haiku-4.5-cheap:free`          | ★★★★☆       | 200K    | `General`   | ~4.4s   | Claude 4.5 Haiku via cheap route, fast for daily coding.        |
+| `deepseek-r1:free`                     | ★★★★☆       | 128K    | `Reasoning` | ~4.8s   | DeepSeek R1 reasoning, strong logic on tight budget.            |
+| `deepseek-r1-0528:free`                | ★★★★☆       | 128K    | `Reasoning` | ~8.6s   | R1 variant, deep reasoning but slow for the quota.              |
+| `deepseek-reasoner:free`               | ★★★★☆       | 128K    | `Reasoning` | ~6.0s   | DeepSeek reasoner, solid for complex debugging.                 |
+| `deepseek-v3-0324:free`                | ★★★★☆       | 128K    | `Reasoning` | ~4.4s   | Older V3 snapshot, solid reasoning on LiteRouter.               |
+| `deepseek-v3.2:free`                   | ★★★★☆       | 128K    | `Reasoning` | ~3.4s   | Strong reasoning for complex debugging, but tight token budget. |
+| `devstral-small-2507:free`             | ★★★★☆       | 128K    | `Code`      | ~2.5s   | Mistral agent model, fast for light scripting.                  |
+| `gemini-2.5-flash-lite:free`           | ★★★★☆       | 1M      | `General`   | ~1.7s   | Google's flash-lite, efficient at 1.7s.                         |
+| `gemma-3-27b-it:free`                  | ★★★★☆       | 128K    | `General`   | ~2.8s   | Gemma 3 at 27B, solid responses.                                |
+| `gemma-4-31b:free`                     | ★★★★☆       | 128K    | `General`   | ~2.1s   | Google's 31B, good generalist on tight budget.                  |
+| `glm-4.7-flash-cheap:free`             | ★★★★☆       | 128K    | `General`   | ~3.6s   | Zhipu flash, cheap on tokens for the budget.                    |
+| `glm-5-cheap:free`                     | ★★★★☆       | 128K    | `General`   | ~3.6s   | Zhipu's GLM-5, solid generalist.                                |
+| `glm-5.1-cheap:free`                   | ★★★★☆       | 128K    | `General`   | ~3.3s   | Updated GLM-5 at good speed.                                    |
+| `glm-5.2-cheap:free`                   | ★★★★☆       | 128K    | `General`   | ~2.8s   | Latest GLM, capable and responsive.                             |
+| `gpt-4.1-mini:free`                    | ★★★★☆       | 1M      | `General`   | ~2.2s   | OpenAI compact with 1M context.                                 |
+| `gpt-4.1-nano:free`                    | ★★★★☆       | 1M      | `Code`      | ~4.1s   | Fast GPT nano for quick code edits.                             |
+| `gpt-4o-mini:free`                     | ★★★★☆       | 128K    | `General`   | ~3.5s   | Compact GPT-4o, efficient for the 15k daily token budget.       |
+| `gpt-5-nano:free`                      | ★★★★☆       | 128K    | `Code`      | ~2.2s   | GPT nano for light coding tasks.                                |
+| `gpt-oss-20b:free`                     | ★★★★☆       | 128K    | `Code`      | ~2.2s   | Lighter 120B, best value for the 15k TPD cap.                   |
+| `kimi-k2.5:free`                       | ★★★★☆       | 128K    | `Reasoning` | ~3.5s   | Moonshot's 1T model for complex multi-step.                     |
 | `l3-8b-lunaris:free`                   | ★★★★☆       | 128K    | `General`   | ~1.3s   | Llama 3 8B community tune, fast and lightweight.                |
-| `llama-3-8b-instruct:free`             | ★★★★☆       | 128K    | `Code`      | ~2.7s   | Meta's 8B, fast for syntax validation on tight budget.          |
-| `llama-3.1-8b-instruct:free`           | ★★★★☆       | 128K    | `Code`      | ~2.1s   | Updated 8B, solid for quick code edits.                         |
-| `llama-3.1-8b-instruct-turbo:free`     | ★★★★☆       | 128K    | `Code`      | ~2.2s   | Turbo 8B, faster variant for rapid iteration.                   |
-| `llama-3.3-70b-instruct-turbo:free`    | ★★★★☆       | 128K    | `General`   | ~2.3s   | Turbo 70B, strong instruction following at speed.               |
-| `llama-4-scout:free`                   | ★★★★☆       | 256K    | `General`   | ~1.4s   | Latest Llama 4 Scout, responsive at 1.4s.                       |
-| `minimax-m2.5:free`                    | ★★★★☆       | 1M      | `General`   | ~6.3s   | MiniMax with 1M context, capable but slow.                      |
+| `llama-3-8b-instruct:free`             | ★★★★☆       | 128K    | `Code`      | ~2.6s   | Meta's 8B, fast for syntax validation on tight budget.          |
+| `llama-3.1-8b-instruct:free`           | ★★★★☆       | 128K    | `Code`      | ~3.4s   | Updated 8B, solid for quick code edits.                         |
+| `llama-3.1-8b-instruct-turbo:free`     | ★★★★☆       | 128K    | `Code`      | ~3.3s   | Turbo 8B, faster variant for rapid iteration.                   |
+| `llama-3.3-70b-instruct-turbo:free`    | ★★★★☆       | 128K    | `General`   | ~1.5s   | Turbo 70B, strong instruction following at speed.               |
+| `llama-4-scout:free`                   | ★★★★☆       | 256K    | `General`   | ~4.6s   | Latest Llama 4 Scout with 256K context.                         |
+| `minimax-m2.5:free`                    | ★★★★☆       | 1M      | `General`   | ~4.0s   | MiniMax with 1M context, capable but deliberate.                |
 | `minimax-m2.7:free`                    | ★★★★☆       | 1M      | `General`   | ~3.6s   | Updated MiniMax, better speed than M2.5.                        |
-| `mistral-large-3:free`                 | ★★★★☆       | 128K    | `General`   | ~3.5s   | Mistral's 123B for balanced daily coding.                       |
-| `mistral-nemo-instruct-2407:free`      | ★★★★☆       | 128K    | `General`   | ~2.5s   | Mistral Nemo 12B, balanced for daily scripting.                 |
-| `mistral-small-24b-instruct-2501:free` | ★★★★☆       | 32K     | `General`   | ~1.7s   | Mistral small 24B, punchy with good depth.                      |
-| `mythomax-l2-13b:free`                 | ★★★★☆       | 128K    | `General`   | ~2.0s   | Community 13B fine-tune, creative but capable for coding.       |
-| `openrouter:free:full-context`         | ★★★★☆       | 128K    | `General`   | ~2.3s   | Meta-model for full context access on LiteRouter.               |
-| `owl-alpha:free:full-context`          | ★★★★☆       | 128K    | `General`   | ~2.9s   | Community owl model, decent for general coding.                 |
-
+| `mistral-large-3:free`                 | ★★★★☆       | 128K    | `General`   | ~3.3s   | Mistral's 123B for balanced daily coding.                       |
+| `mistral-nemo-instruct-2407:free`      | ★★★★☆       | 128K    | `General`   | ~2.4s   | Mistral Nemo 12B, balanced for daily scripting.                 |
+| `mistral-small-24b-instruct-2501:free` | ★★★★☆       | 32K     | `General`   | ~2.5s   | Mistral small 24B, punchy with good depth.                      |
+| `mythomax-l2-13b:free`                 | ★★★★☆       | 128K    | `General`   | ~3.0s   | Community 13B fine-tune, creative but capable for coding.       |
+| `nemotron-3-nano:free`                 | ★★★★☆       | 128K    | `General`   | ~1.9s   | NVIDIA nano, efficient and fast for daily coding.               |
+| `openrouter:free:full-context`         | ★★★★☆       | 128K    | `General`   | ~4.2s   | Meta-model for full context access on LiteRouter.               |
+| `owl-alpha:free:full-context`          | ★★★★☆       | 128K    | `General`   | ~5.1s   | Community owl model, decent for general coding.                 |
+| `qwen3.5:free`                         | ★★★★☆       | 128K    | `General`   | ~5.1s   | Qwen 3.5, solid general model for daily coding.                 |
 ### [MNN AI](https://mnnai.ru)
 
 MNN AI is a credit-based inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Meta, Mistral, Moonshot, Stepfun, and more through an OpenAI-compatible endpoint. The free tier provides 10 RPM with $1 in monthly credits — replenishable each month, but the dollar cap limits heavy usage. Best suited for light daily coding and targeted queries. No credit card required. MNN AI currently has 45 verified coding-relevant models — 42 at ★★★★☆ or above.
@@ -821,30 +823,44 @@ Routeway is a unified API gateway offering free models through a `:free` model s
 
 ### [Poixe AI](https://poixe.com)
 
-Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 24 models verified — all at ★★★★☆ or above.
+Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 32 models verified — 30 at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 10,000 RPD / 10,000,000 TPD
 
 🔗 **Base URL:** `https://api.poixe.com/v1/`
 
-| Free Model                            | Star Rating | Context | Best For    | Latency | Opinion                                                               |
-| :------------------------------------ | :---------- | :------ | :---------- | :------ | :-------------------------------------------------------------------- |
-| `claude-sonnet-4-5-20250929:free`     | ★★★★★       | 200K    | `Code`      | ~2.4s   | Claude Sonnet for coding at 10k daily calls. Hard to beat this combo. |
-| `gemini-2.5-flash:free`               | ★★★★★       | 1M      | `General`   | ~1.5s   | Sub-2s with 1M context and 10k daily requests. Daily driver material. |
-| `kimi-k2-0711-preview:free`           | ★★★★★       | 128K    | `Reasoning` | ~1.6s   | 1T reasoning model at 1.6s. Deep dives without the wait.              |
-| `qwen3-coder-480b-a35b-instruct:free` | ★★★★★       | 256K    | `Code`      | ~3.2s   | 480B coder for architecture-level problems. Worth the extra seconds.  |
-| `doubao-1-5-lite-32k-250115:free`     | ★★★★☆       | 32K     | `Fallback`  | ~1.6s   | Lightweight Doubao. Fast but small context, use for quick scripts.    |
-| `doubao-seed-1-6-flash-250615:free`   | ★★★★☆       | 128K    | `General`   | ~2.5s   | ByteDance flash model, fast for a Chinese gateway.                    |
-| `gemini-2.5-pro:free`                 | ★★★★☆       | 1M      | `Reasoning` | ~4.2s   | Deep reasoning at 1M, slow but thorough for hard problems.            |
-| `gpt-4.1-nano-2025-04-14:free`        | ★★★★☆       | 1M      | `Code`      | ~2.0s   | 1M context nano, great for feeding it a whole project.                |
-| `gpt-5-mini-2025-08-07:free`          | ★★★★☆       | 128K    | `General`   | ~3.1s   | Latest GPT mini. Clean output, steady for everyday edits.             |
-| `grok-3-mini:free`                    | ★★★★☆       | 128K    | `Reasoning` | ~2.9s   | xAI reasoning, solid for debugging sessions.                          |
-| `kimi-k2:free`                        | ★★★★☆       | 128K    | `General`   | ~1.8s   | Solid Kimi general model, dependable daily output.                    |
-| `qwen-long:free`                      | ★★★★☆       | 128K    | `General`   | ~1.8s   | Long-context Qwen variant, keeps multi-turn conversations coherent.   |
-| `qwen-plus-latest:free`               | ★★★★☆       | 128K    | `General`   | ~1.8s   | Reliable Qwen, handles daily coding without surprises.                |
-| `qwen-turbo:free`                     | ★★★★☆       | 128K    | `Fallback`  | ~1.5s   | Fast lightweight Qwen, good fallback when others are capped.          |
-| `qwen3-235b-a22b-instruct-2507:free`  | ★★★★☆       | 256K    | `Reasoning` | ~1.8s   | 235B reasoning at 256K. Good for multi-file context.                  |
-
+| Free Model                            | Star Rating | Context | Best For    | Latency | Opinion                                                |
+| :------------------------------------ | :---------- | :------ | :---------- | :------ | :----------------------------------------------------- |
+| `gpt-oss-120b:free`                   | ★★★★★       | 128K    | `General`   | ~1.3s   | Reliable 120B, fast on Poixe with huge quota.          |
+| `grok-4:free`                         | ★★★★★       | 128K    | `General`   | ~2.7s   | xAI flagship, strong generalist with clean output.     |
+| `kimi-k2-0711-preview:free`           | ★★★★★       | 128K    | `Reasoning` | ~1.7s   | 1T reasoning model at 1.7s with 10k daily calls.       |
+| `qwen-max:free`                       | ★★★★★       | 128K    | `General`   | ~1.0s   | Qwen's top model, sub-second with big quota.           |
+| `qwen3-235b-a22b-instruct-2507:free`  | ★★★★★       | 256K    | `Reasoning` | ~1.3s   | 235B reasoning at 256K, strong for multi-file work.    |
+| `qwen3-coder-480b-a35b-instruct:free` | ★★★★★       | 256K    | `Code`      | ~1.2s   | 480B coder, best for architecture-level problems.      |
+| `doubao-1-5-lite-32k-250115:free`     | ★★★★☆       | 32K     | `Fallback`  | ~1.2s   | Lightweight Doubao, fast but 32K limits scope.         |
+| `doubao-1-5-pro-32k-250115:free`      | ★★★★☆       | 32K     | `General`   | ~4.5s   | Doubao pro, verbose but capable at 32K.                |
+| `doubao-seed-1-6-250615:free`         | ★★★★☆       | 128K    | `General`   | ~3.9s   | Doubao seed, solid generalist at moderate speed.       |
+| `doubao-seed-1-6-flash-250615:free`   | ★★★★☆       | 128K    | `General`   | ~1.2s   | Doubao flash, fast and clean for daily coding.         |
+| `gpt-4.1-mini:free`                   | ★★★★☆       | 1M      | `General`   | ~1.7s   | Same 1M context mini, consistent for daily work.       |
+| `gpt-4.1-mini-2025-04-14:free`        | ★★★★☆       | 1M      | `General`   | ~1.6s   | OpenAI mini with 1M context, strong daily driver.      |
+| `gpt-4.1-nano:free`                   | ★★★★☆       | 1M      | `Code`      | ~1.7s   | Nano with 1M context, solid for quick edits.           |
+| `gpt-4.1-nano-2025-04-14:free`        | ★★★★☆       | 1M      | `Code`      | ~0.9s   | Fast nano with 1M context, great for scripting.        |
+| `gpt-4o-mini:free`                    | ★★★★☆       | 128K    | `General`   | ~1.8s   | Latest GPT-4o mini, efficient daily coding.            |
+| `gpt-4o-mini-2024-07-18:free`         | ★★★★☆       | 128K    | `General`   | ~2.2s   | Compact GPT-4o, steady fallback on big quota.          |
+| `gpt-oss-20b:free`                    | ★★★★☆       | 128K    | `Code`      | ~0.8s   | Lighter 120B at sub-second, great value.               |
+| `grok-3-beta:free`                    | ★★★★☆       | 128K    | `Reasoning` | ~3.7s   | xAI reasoning, solid for debugging sessions.           |
+| `grok-3-mini:free`                    | ★★★★☆       | 128K    | `Reasoning` | ~3.4s   | xAI reasoning, solid for debugging.                    |
+| `grok-3-mini-beta:free`               | ★★★★☆       | 128K    | `Reasoning` | ~3.4s   | Grok mini beta, good reasoning at decent speed.        |
+| `kimi-k2:free`                        | ★★★★☆       | 128K    | `General`   | ~1.5s   | Solid Kimi general model, dependable daily output.     |
+| `qwen-long:free`                      | ★★★★☆       | 128K    | `General`   | ~1.1s   | Long-context Qwen, reliable for extended sessions.     |
+| `qwen-long-2025-01-25:free`           | ★★★★☆       | 128K    | `General`   | ~1.2s   | Long-context Qwen, keeps multi-turn coherent.          |
+| `qwen-long-latest:free`               | ★★★★☆       | 128K    | `General`   | ~1.2s   | Latest Qwen long variant, fast and consistent.         |
+| `qwen-plus:free`                      | ★★★★☆       | 128K    | `General`   | ~1.3s   | Qwen general model, consistent for daily work.         |
+| `qwen-plus-2025-04-28:free`           | ★★★★☆       | 128K    | `General`   | ~1.1s   | Qwen plus snapshot, fast and reliable.                 |
+| `qwen-plus-latest:free`               | ★★★★☆       | 128K    | `General`   | ~1.3s   | Reliable Qwen, handles daily coding without surprises. |
+| `qwen-turbo:free`                     | ★★★★☆       | 128K    | `Fallback`  | ~1.0s   | Fast lightweight Qwen, good fallback.                  |
+| `qwen3-14b:free`                      | ★★★★☆       | 128K    | `General`   | ~2.0s   | Compact 14B Qwen, decent for light coding.             |
+| `qwen3-235b-a22b:free`                | ★★★★☆       | 256K    | `Reasoning` | ~5.6s   | 235B reasoning, capable but slow on Poixe.             |
 ### [Poolside](https://poolside.ai)
 
 Poolside is a foundation model lab building purpose-built coding models from scratch. Their Laguna series — M.1 (225B-A23B Model) and XS.2 (33B-A3B Model) — are trained on 30T tokens exclusively for agentic software engineering with tool calling and 256K context. Both models are free while in preview — the same "use it while it lasts" uncertainty as any free provider. Poolside currently has 2 models verified.
