@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: June 30, 2026** - All models tested live across 37 providers.
+> ⏰ **Last Verified: July 1, 2026** - All models tested live across 37 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -104,16 +104,19 @@ These tables break down notable free models from each provider's ecosystem, **ca
 
 ### [AION Labs](https://www.aionlabs.ai)
 
-AION Labs provides storytelling-optimized models through an OpenAI-compatible API. The free tier offers 20,000 tokens/day and 15 RPM with no credit card required — a solid option if you need a daily token allowance for lightweight coding and creative tasks. AION Labs currently has 2 models verified.
+AION Labs provides storytelling-optimized models through an OpenAI-compatible API. The free tier offers 20,000 tokens/day and 15 RPM with no credit card required — a solid option if you need a daily token allowance for lightweight coding and creative tasks. AION Labs currently has 5 models verified.
 
 🎁 **Free Tier Quota:** 15 RPM / 20,000 TPD
 
 🔗 **Base URL:** `https://api.aionlabs.ai/v1`
 
-| Free Model                       | Star Rating | Context | Best For   | Latency | Opinion                                                                                 |
-| :------------------------------- | :---------- | :------ | :--------- | :------ | :-------------------------------------------------------------------------------------- |
-| `aion-labs/aion-2.5`             | ★★★★★       | 128K    | `Code`     | ~1.9s   | Strong at coding, responds cleanly without rambling, good context window.               |
-| `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | 32K     | `Fallback` | ~0.9s   | Very fast, but despite the small 32K window, still decent for light coding or chatting. |
+| Free Model                       | Star Rating | Context | Best For   | Latency | Opinion                                                                   |
+| :------------------------------- | :---------- | :------ | :--------- | :------ | :------------------------------------------------------------------------ |
+| `aion-labs/aion-2.5`             | ★★★★★       | 128K    | `Code`     | ~3.6s   | Strong at coding, responds cleanly without rambling, good context window. |
+| `aion-labs/aion-1.0`             | ★★★★☆       | 128K    | `General`  | ~1.7s   | Solid 1.0, capable output with moderate latency for daily tasks.          |
+| `aion-labs/aion-2.0`             | ★★★★☆       | 128K    | `General`  | ~1.2s   | 2.0 variant, fast and clean for daily coding without the preamble.        |
+| `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | 32K     | `Fallback` | ~1.4s   | Despite the small 32K window, still decent for light coding or chatting.  |
+| `aion-labs/aion-1.0-mini`        | ★★★☆☆       | 128K    | `Fallback` | ~1.7s   | Light 1.0 mini, usable for simple queries at modest speed.                |
 
 ### [Agnes AI](https://www.agnes-ai.com)
 
@@ -181,16 +184,17 @@ BlazeAPI is a lightweight inference hub serving models from Moonshot and Z.AI th
 
 ### [Cerebras AI](https://cloud.cerebras.ai)
 
-Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, integrating memory, compute, and interconnects onto a single silicon wafer — solving the "memory wall" that throttles inference speed. The free tier offers replenishable credits with industry-leading throughput (2,500+ tokens/second). Cerebras AI currently has 2 models verified.
+Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, integrating memory, compute, and interconnects onto a single silicon wafer — solving the "memory wall" that throttles inference speed. The free tier offers replenishable credits with industry-leading throughput (2,500+ tokens/second). Cerebras AI currently has 3 models verified.
 
 🎁 **Free Tier Quota:** 5 RPM / 250 RPD / 30,000 TPM
 
 🔗 **Base URL:** `https://api.cerebras.ai/v1`
 
-| Free Model     | Star Rating | Context | Best For  | Latency | Opinion                                                |
-| :------------- | :---------- | :------ | :-------- | :------ | :----------------------------------------------------- |
-| `gpt-oss-120b` | ★★★★★       | 128K    | `General` | ~0.5s   | Sub-second on Cerebras. Same 120B you know, just fast. |
-| `zai-glm-4.7`  | ★★★★★       | 128K    | `Agent`   | ~0.5s   | Also fast. Optimized for quick agentic coding loops.   |
+| Free Model     | Star Rating | Context | Best For  | Latency | Opinion                                                     |
+| :------------- | :---------- | :------ | :-------- | :------ | :---------------------------------------------------------- |
+| `gpt-oss-120b` | ★★★★★       | 128K    | `General` | ~0.5s   | Sub-second on Cerebras. Same 120B you know, just fast.      |
+| `gemma-4-31b`  | ★★★★☆       | 32K     | `General` | ~0.5s   | Capable 31B model, fast inference keeps coding loops tight. |
+| `zai-glm-4.7`  | ★★★★★       | 128K    | `Agent`   | ~0.5s   | Also fast. Optimized for quick agentic coding loops.        |
 
 ### [Cloudflare Workers AI](https://dash.cloudflare.com)
 
@@ -351,13 +355,13 @@ HelixMind is a lightweight inference hub offering a small set of free models fro
 
 🔗 **Base URL:** `https://helixmind.online/v1`
 
-| Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                   |
-| :--------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------ |
-| `deepseek-v3.2`        | ★★★★☆       | 128K    | `Reasoning` | ~1.6s   | Fast reasoning, good for complex debugging. Best pick with the tight cap. |
-| `gpt-oss-20b`          | ★★★★☆       | 128K    | `Code`      | ~3.1s   | Lighter and fast, good value for the restrictive daily cap.               |
-| `llama-4-maverick`     | ★★★★☆       | 256K    | `General`   | ~1.5s   | Fast for a 17B model, good for quick edits within the limit.              |
-| `llama-4-scout`        | ★★★★☆       | 256K    | `General`   | ~2.8s   | Scout is slower but a solid backup when Maverick hits the limit.          |
-| `mistral-large-latest` | ★★★★☆       | 128K    | `General`   | ~27.9s  | Good reasoning but Too slow, only if you have time.                       |
+| Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                    |
+| :--------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------- |
+| `deepseek-v3.2`        | ★★★★☆       | 128K    | `Reasoning` | ~1.6s   | Fast reasoning, good for complex debugging. Best pick with the tight cap.  |
+| `gpt-oss-20b`          | ★★★★☆       | 128K    | `Code`      | ~3.1s   | Lighter and fast, good value for the restrictive daily cap.                |
+| `llama-4-maverick`     | ★★★★☆       | 256K    | `General`   | ~1.5s   | Fast for a 17B model, good for quick edits within the limit.               |
+| `llama-4-scout`        | ★★★★☆       | 256K    | `General`   | ~2.8s   | Scout is slower but a solid backup when Maverick hits the limit.           |
+| `mistral-large-latest` | ★★★★☆       | 128K    | `General`   | ~1.5s   | Good reasoning, Fast but can take time for larger projects.                |
 
 ### [Hugging Face Inference API](https://huggingface.co/inference-api)
 
@@ -405,16 +409,16 @@ Intern AI is the official API provided by Shanghai AI Laboratory, the developers
 
 🔗 **Base URL:** `https://chat.intern-ai.org.cn/api/v1/`
 
-| Free Model          | Star Rating | Context | Best For    | Latency | Opinion                                                         |
-| :------------------ | :---------- | :------ | :---------- | :------ | :-------------------------------------------------------------- |
-| `intern-latest`     | ★★★★★       | 256K    | `Code`      | ~0.6s   | Points to the newest Intern model. Sub-second at 256K context.  |
-| `intern-pro`        | ★★★★★       | 256K    | `Reasoning` | ~0.9s   | Extra headroom for complex reasoning without preamble.          |
-| `intern-v7.1`       | ★★★★★       | 128K    | `Code`      | ~0.5s   | Fast response with decent coding output.                        |
-| `intern-v7.5`       | ★★★★★       | 256K    | `Reasoning` | ~0.8s   | Strong reasoning with 256K context. Best value for tough logic. |
-| `intern-v7-flash`   | ★★★★★       | 128K    | `General`   | ~0.4s   | Blazing speed, handles light coding without the overhead.       |
-| `internlm3-latest`  | ★★★★☆       | 128K    | `General`   | ~0.5s   | Balanced InternLM 3, good daily driver.                         |
-| `intern-v7-8b`      | ★★★★☆       | 128K    | `Fallback`  | ~0.5s   | Compact 8B, efficient for lightweight tasks.                    |
-| `pro-intern-latest` | ★★★☆☆       | 256K    | `General`   | ~1.4s   | Older pro model, feels dated next to the others.                |
+| Free Model              | Star Rating | Context | Best For    | Latency | Opinion                                                            |
+| :---------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------- |
+| `intern-latest`         | ★★★★★       | 256K    | `General`   | ~1.0s   | Current flagship pointer, sub-second with massive token quota.     |
+| `intern-s2-preview`     | ★★★★★       | 256K    | `Reasoning` | ~1.0s   | S2 preview, strongest Intern yet. Fast reasoning at 256K.          |
+| `internvl3.5-241b-a28b` | ★★★★★       | 128K    | `Vision`    | ~1.1s   | 241B MoE VL, sees images and code. One of the strongest VL models. |
+| `internvl3.5-latest`    | ★★★★★       | 128K    | `Vision`    | ~1.2s   | Latest VL variant, fast multimodal at solid context.               |
+| `intern-s1`             | ★★★★★       | 128K    | `General`   | ~1.2s   | Solid base S1, dependable output with good context.                |
+| `intern-s1-pro`         | ★★★★★       | 128K    | `Reasoning` | ~1.5s   | Pro reasoning variant, handles complex logic capably.              |
+| `intern-s1-mini`        | ★★★★☆       | 128K    | `Fallback`  | ~1.0s   | Compact S1, fast and efficient for daily coding sessions.          |
+| `internvl-latest`       | ★★★★☆       | 128K    | `Vision`    | ~1.2s   | Older VL model, still capable for multimodal tasks.                |
 
 ### [Kilo Code](https://app.kilo.ai)
 
@@ -892,27 +896,28 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 
 ### [TokenReply](https://tokenreply.com)
 
-TokenReply is a lightweight inference hub offering models from Google, DeepSeek, OpenAI, Qwen, Moonshot, Stepfun, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 40 weekly model calls — a very tight cap suited for lightweight evaluation and occasional queries, not sustained coding. Free models only. No credit card required. TokenReply currently has 13 models verified — all at ★★★★☆ or above.
+TokenReply is a lightweight inference hub offering models from Google, DeepSeek, OpenAI, Qwen, Moonshot, Stepfun, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 40 weekly model calls — a very tight cap suited for lightweight evaluation and occasional queries, not sustained coding. Free models only. No credit card required. TokenReply currently has 14 models verified — 13 at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 3 RPM / 40 Weekly Model Calls / Free Models Only
 
 🔗 **Base URL:** `https://api.tokenreply.com/v1`
 
-| Free Model                          | Star Rating | Context | Best For    | Latency | Opinion                                                       |
-| :---------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------ |
-| `deepseek-v4-flash`                 | ★★★★★       | 128K    | `Reasoning` | ~2.0s   | Fast reasoning, the strongest model for your 40 weekly calls. |
-| `deepseek-v4-flash-free`            | ★★★★★       | 128K    | `Reasoning` | ~2.0s   | Free variant of V4 Flash, same quality with no token cost.    |
-| `openai/gpt-oss-120b`               | ★★★★★       | 128K    | `General`   | ~4.0s   | Same reliable 120B at 4s, best value for the tight quota.     |
-| `z-ai/glm-5.1`                      | ★★★★★       | 128K    | `Code`      | ~3.0s   | Latest GLM-5, strong agentic coding on tight quota.           |
-| `glm-5`                             | ★★★★☆       | 128K    | `General`   | ~2.0s   | Latest GLM from Zhipu, balanced chat and coding at 2s.        |
-| `google/gemma-3n-e2b-it`            | ★★★★☆       | 32K     | `General`   | ~1.0s   | Efficient Gemma 3N, clean daily coding without overhead.      |
-| `google/gemma-4-26b-a4b-it`         | ★★★★☆       | 32K     | `General`   | ~1.5s   | Lighter Gemma 4, efficient for coding without overthinking.   |
-| `kimi-k2.6`                         | ★★★★☆       | 128K    | `Reasoning` | ~0.8s   | 1T model at 0.8s, complex reasoning fits your budget better.  |
-| `minimaxai/minimax-m2.7`            | ★★★★☆       | 1M      | `General`   | ~1.5s   | 230B MiniMax, balanced for daily coding on tight quota.       |
-| `moonshotai/kimi-k2.6`              | ★★★★☆       | 128K    | `Reasoning` | ~0.8s   | Duplicate with full prefix, same speed for tough analysis.    |
-| `nvidia/nemotron-3-ultra-550b-a55b` | ★★★★☆       | 128K    | `General`   | ~2.5s   | 550B raw power, use for the one critical prompt a week.       |
-| `stepfun-ai/step-3.5-flash`         | ★★★★☆       | 128K    | `Agentic`   | ~0.8s   | 11B active params punching above their weight.                |
-| `stepfun-ai/step-3.7-flash`         | ★★★★☆       | 128K    | `Agentic`   | ~2.8s   | Latest Stepfun flash, slower but sharper than 3.5.            |
+| Free Model                          | Star Rating | Context | Best For    | Latency | Opinion                                                            |
+| :---------------------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------- |
+| `deepseek-v4-flash`                 | ★★★★★       | 128K    | `Reasoning` | ~1.8s   | Fast reasoning, best use of your 40 weekly calls on TokenReply.    |
+| `deepseek-v4-flash-free`            | ★★★★★       | 128K    | `Reasoning` | ~3.0s   | Free variant of V4 Flash, same quality without token cost.         |
+| `grok-4.3`                          | ★★★★★       | 128K    | `General`   | ~4.6s   | Latest xAI grok, strong generalist worth burning a weekly call on. |
+| `grok-4.3-high`                     | ★★★★★       | 128K    | `Reasoning` | ~3.2s   | Higher quality grok, sharper output for the tougher problems.      |
+| `openai/gpt-oss-120b`               | ★★★★★       | 128K    | `General`   | ~4.3s   | Same reliable 120B, use for the one critical prompt a week.        |
+| `glm-5`                             | ★★★★☆       | 128K    | `General`   | ~6.7s   | Latest Zhipu GLM, capable but slow at 6.7s on tight quota.         |
+| `google/gemma-3n-e2b-it`            | ★★★★☆       | 32K     | `General`   | ~0.8s   | Fast Gemma 3N, efficient sub-second for lightweight queries.       |
+| `google/gemma-4-31b-it`             | ★★★★☆       | 32K     | `General`   | ~2.9s   | Newer 31B Gemma, solid all-rounder at moderate speed.              |
+| `grok-4.3-medium`                   | ★★★★☆       | 128K    | `General`   | ~5.3s   | Medium grok variant, decent but slow for the tight budget.         |
+| `kimi-k2.6`                         | ★★★★☆       | 128K    | `Reasoning` | ~2.0s   | 1T reasoning model at 2s, complex logic fits your budget better.   |
+| `minimaxai/minimax-m2.7`            | ★★★★☆       | 1M      | `General`   | ~1.8s   | 230B MiniMax with 1M context, balanced for daily use.              |
+| `nvidia/nemotron-3-ultra-550b-a55b` | ★★★★☆       | 128K    | `General`   | ~1.3s   | 550B at 1.3s, massive power for a critical prompt.                 |
+| `stepfun-ai/step-3.7-flash`         | ★★★★☆       | 128K    | `Agentic`   | ~1.8s   | Latest Stepfun flash, fast and sharp for agentic tasks.            |
+| `stepfun-ai/step-3.5-flash`         | ★★★☆☆       | 128K    | `Agentic`   | ~9.9s   | 11B active params but painfully slow at 10s. Use only if you must. |
 
 ### [Void AI](https://voidai.app)
 
