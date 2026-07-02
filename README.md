@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 1, 2026** - All models tested live across 37 providers.
+> ⏰ **Last Verified: July 2, 2026** - All models tested live across 37 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -300,7 +300,7 @@ GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and
 
 🔗 **Base URL:** `https://models.inference.ai.azure.com`
 
-> ⚠️ **GitHub Models is being retired.** As of June 16, 2026, new customers can no longer use GitHub Models. Existing GitHub users can continue using the API until full retirement. See the [GitHub announcement.](https://github.blog/changelog/2026-06-16-github-models-is-no-longer-available-to-new-customers/)
+> ⚠️ **GitHub Models is being fully retired.** Incoming July 30, 2026, all customers (including Existing users) can no longer use GitHub Models. See the [GitHub announcement.](https://github.blog/changelog/2026-07-01-github-models-is-being-fully-retired-on-july-30-2026/)
 
 | Free Model    | Star Rating | Context | Best For  | Latency | Opinion                                                          |
 | :------------ | :---------- | :------ | :-------- | :------ | :--------------------------------------------------------------- |
