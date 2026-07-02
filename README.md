@@ -355,51 +355,56 @@ HelixMind is a lightweight inference hub offering a small set of free models fro
 
 🔗 **Base URL:** `https://helixmind.online/v1`
 
-| Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                    |
-| :--------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------- |
-| `deepseek-v3.2`        | ★★★★☆       | 128K    | `Reasoning` | ~1.6s   | Fast reasoning, good for complex debugging. Best pick with the tight cap.  |
-| `gpt-oss-20b`          | ★★★★☆       | 128K    | `Code`      | ~3.1s   | Lighter and fast, good value for the restrictive daily cap.                |
-| `llama-4-maverick`     | ★★★★☆       | 256K    | `General`   | ~1.5s   | Fast for a 17B model, good for quick edits within the limit.               |
-| `llama-4-scout`        | ★★★★☆       | 256K    | `General`   | ~2.8s   | Scout is slower but a solid backup when Maverick hits the limit.           |
-| `mistral-large-latest` | ★★★★☆       | 128K    | `General`   | ~1.5s   | Good reasoning, Fast but can take time for larger projects.                |
+| Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                   |
+| :--------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------ |
+| `deepseek-v3.2`        | ★★★★☆       | 128K    | `Reasoning` | ~1.6s   | Fast reasoning, good for complex debugging. Best pick with the tight cap. |
+| `gpt-oss-20b`          | ★★★★☆       | 128K    | `Code`      | ~3.1s   | Lighter and fast, good value for the restrictive daily cap.               |
+| `llama-4-maverick`     | ★★★★☆       | 256K    | `General`   | ~1.5s   | Fast for a 17B model, good for quick edits within the limit.              |
+| `llama-4-scout`        | ★★★★☆       | 256K    | `General`   | ~2.8s   | Scout is slower but a solid backup when Maverick hits the limit.          |
+| `mistral-large-latest` | ★★★★☆       | 128K    | `General`   | ~1.5s   | Good reasoning, Fast but can take time for larger projects.               |
 
 ### [Hugging Face Inference API](https://huggingface.co/inference-api)
 
-Hugging Face's free Inference API gives you access to thousands of community-hosted models with OpenAI-compatible endpoints. The free tier offers only $0.10/month in credits — barely enough for light experimentation, not sustained coding. The real strength is model diversity, but the tight quota keeps most models at ★★★★☆. Hugging Face currently has approximately 80 models verified — 27 are ★★★★☆ or above.
+Hugging Face's free Inference API gives you access to thousands of community-hosted models with OpenAI-compatible endpoints. The free tier offers only $0.10/month in credits — barely enough for light experimentation, not sustained coding. The real strength is model diversity, but the tight quota keeps most models at ★★★★☆. Hugging Face currently has 97 models verified — 32 are ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** $0.10/month credits (~650K tokens)
 
 🔗 **Base URL:** `https://router.huggingface.co/v1`
 
-| Free Model                                          | Star Rating | Context | Best For    | Latency | Opinion                                                                    |
-| :-------------------------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------- |
-| `EssentialAI/rnj-1-instruct`                        | ★★★★★       | 8K      | `General`   | ~0.4s   | Responds before you finish typing. Only 8K but the cheapest on the quota.  |
-| `Qwen/Qwen3-Coder-30B-A3B-Instruct`                 | ★★★★★       | 256K    | `Code`      | ~1.3s   | 30B quality on a 3B budget, efficient for the quota.                       |
-| `swiss-ai/Apertus-70B-Instruct-2509`                | ★★★★★       | 128K    | `General`   | ~1.3s   | Solid and dependable, Llama-class without the hype. Budget-friendly.       |
-| `CohereLabs/c4ai-command-a-03-2025`                 | ★★★★☆       | 128K    | `Agent`     | ~0.6s   | Fast tool-calling, follows instructions cleanly but the quota burns quick. |
-| `deepcogito/cogito-671b-v2.1`                       | ★★★★☆       | 128K    | `Reasoning` | ~1.3s   | 671B reasoning for free. Feels unfair.                                     |
-| `deepseek-ai/DeepSeek-R1`                           | ★★★★☆       | 128K    | `Reasoning` | ~1.3s   | Shows its reasoning chain, good for debugging but eats into the $0.10 cap. |
-| `deepseek-ai/DeepSeek-V3.1`                         | ★★★★☆       | 128K    | `Reasoning` | ~1.3s   | Solid V3.1, same quality. Good daily driver if the quota lasts.            |
-| `deepseek-ai/DeepSeek-V3.2`                         | ★★★★☆       | 128K    | `Reasoning` | ~1.7s   | Multi-file work, keeps context across edits, but thats a lot of tokens.    |
-| `google/gemma-4-26B-A4B-it`                         | ★★★★☆       | 32K     | `General`   | ~1.3s   | Fast and direct, good for straightforward tasks without draining credits.  |
-| `google/gemma-4-31B-it`                             | ★★★★☆       | 32K     | `General`   | ~0.9s   | Full 31B, cleaner and smarter, but burns the $0.10 faster.                 |
-| `inclusionAI/Ling-2.6-1T`                           | ★★★★☆       | 128K    | `Reasoning` | ~1.3s   | A trillion parameters for free, feels wrong. Immense but eats the credits. |
-| `meta-llama/Llama-3.1-70B-Instruct`                 | ★★★★☆       | 128K    | `General`   | ~1.3s   | Reliable and steady, but the $0.10 cap limits how much you can use it.     |
-| `meta-llama/Llama-3.3-70B-Instruct`                 | ★★★★☆       | 128K    | `General`   | ~0.5s   | Follows complex instructions first try, and fast. The credits wont last.   |
-| `meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8` | ★★★★☆       | 256K    | `General`   | ~0.9s   | Llama 4's strongest instruct, clean and daily-usable within the cap.       |
-| `MiniMaxAI/MiniMax-M3`                              | ★★★★☆       | 1M      | `General`   | ~0.7s   | 1M context at 0.7s, but one big prompt eats half your monthly quota.       |
-| `moonshotai/Kimi-K2.5`                              | ★★★★☆       | 128K    | `Reasoning` | ~1.2s   | Deep CoT reasoning, good for debugging but verbose on tokens.              |
-| `nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4`    | ★★★★☆       | 128K    | `Reasoning` | ~0.6s   | Clean precise output. Feels too big to be free, and the quota agrees.      |
-| `openai/gpt-oss-120b`                               | ★★★★☆       | 128K    | `General`   | ~1.3s   | Reliable 120B, safe pick but the $0.10 cap is the real limit.              |
-| `pearl-ai/Gemma-4-31B-it-pearl`                     | ★★★★☆       | 32K     | `General`   | ~1.0s   | Different flavor of Gemma 4, same clean quality, same quota concern.       |
-| `Qwen/Qwen2.5-72B-Instruct`                         | ★★★★☆       | 128K    | `Fallback`  | ~1.3s   | Reliable fallback, handles most tasks but the $0.10 cap bites.             |
-| `Qwen/Qwen2.5-Coder-32B-Instruct`                   | ★★★★☆       | 128K    | `Code`      | ~0.7s   | Drops straight to code, good for refactoring within the tight budget.      |
-| `Qwen/Qwen2.5-Coder-7B-Instruct`                    | ★★★★☆       | 128K    | `Code`      | ~0.9s   | Compact 7B, small enough to hammer all day and cheap on the budget.        |
-| `Qwen/Qwen3-235B-A22B-Instruct-2507`                | ★★★★☆       | 256K    | `Code`      | ~1.3s   | 235B with 256K at 1.3s, immense but youll feel it in the credits.          |
-| `Qwen/Qwen3-Coder-480B-A35B-Instruct`               | ★★★★☆       | 256K    | `Code`      | ~1.3s   | The largest coder here, for big projects but expensive on the $0.10.       |
-| `Qwen/Qwen3-Coder-Next`                             | ★★★★☆       | 256K    | `Code`      | ~1.3s   | No noise, straight to code. The best coder on HF, but watch the quota.     |
-| `Qwen/Qwen3.6-35B-A3B`                              | ★★★★☆       | 256K    | `Code`      | ~1.0s   | Most efficient Qwen, stretches the $0.10 further for medium projects.      |
-| `zai-org/GLM-4.7`                                   | ★★★★☆       | 128K    | `General`   | ~1.3s   | Keeps responding under heavy use, but how much heavy can $0.10 buy?        |
+| Free Model                                          | Star Rating | Context | Best For    | Latency | Opinion                                                                   |
+| :-------------------------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------ |
+| `deepcogito/cogito-671b-v2.1`                       | ★★★★★       | 128K    | `Reasoning` | ~0.7s   | 671B reasoning at sub-second. Best value on HF right now.                 |
+| `deepseek-ai/DeepSeek-R1`                           | ★★★★★       | 128K    | `Reasoning` | ~1.9s   | Shows its reasoning chain, good for debugging complex logic.              |
+| `deepseek-ai/DeepSeek-V3.1`                         | ★★★★★       | 128K    | `Reasoning` | ~1.8s   | Solid V3.1, great daily driver for reasoning-heavy coding.                |
+| `deepseek-ai/DeepSeek-V3.2`                         | ★★★★★       | 128K    | `Reasoning` | ~1.1s   | Latest V3, fast and sharp for multi-file work.                            |
+| `deepseek-ai/DeepSeek-V4-Flash`                     | ★★★★★       | 128K    | `Reasoning` | ~1.2s   | V4 flash reasoning, efficient for the tight quota.                        |
+| `deepseek-ai/DeepSeek-V4-Pro`                       | ★★★★★       | 128K    | `Reasoning` | ~0.9s   | V4 pro, stronger reasoning than Flash at sub-second.                      |
+| `meta-llama/Llama-3.3-70B-Instruct`                 | ★★★★★       | 128K    | `General`   | ~0.6s   | Follows complex instructions first try, fast on the $0.10 budget.         |
+| `moonshotai/Kimi-K2.7-Code`                         | ★★★★★       | 128K    | `Code`      | ~0.7s   | Latest Kimi code model, clean output without preamble.                    |
+| `nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4`    | ★★★★★       | 128K    | `Reasoning` | ~0.7s   | 550B at sub-second, immense reasoning for a critical prompt.              |
+| `Qwen/Qwen3-235B-A22B-Instruct-2507`                | ★★★★★       | 256K    | `Code`      | ~0.5s   | 235B at 0.5s with 256K. Best value coder on HF.                           |
+| `Qwen/Qwen3-Coder-30B-A3B-Instruct`                 | ★★★★★       | 256K    | `Code`      | ~0.8s   | 30B on a 3B budget, efficient for the quota.                              |
+| `Qwen/Qwen3-Coder-480B-A35B-Instruct`               | ★★★★★       | 256K    | `Code`      | ~2.1s   | The largest coder, for the one big project your $0.10 can afford.         |
+| `Qwen/Qwen3-Coder-Next`                             | ★★★★★       | 256K    | `Code`      | ~0.8s   | Pure code output, no fluff. Best coder on HF for the budget.              |
+| `zai-org/GLM-5.2`                                   | ★★★★★       | 128K    | `General`   | ~0.8s   | Latest GLM, strong generalist that stretches the $0.10 further.           |
+| `google/gemma-4-26B-A4B-it`                         | ★★★★☆       | 32K     | `General`   | ~0.6s   | Fast and direct, good for straightforward tasks without draining credits. |
+| `google/gemma-4-31B-it`                             | ★★★★☆       | 32K     | `General`   | ~0.5s   | Full 31B, cleaner than the 26B, but 32K limits multi-file scope.          |
+| `inclusionAI/Ling-2.6-1T`                           | ★★★★☆       | 128K    | `Reasoning` | ~1.2s   | A trillion params for free, immense but burns credits fast.               |
+| `meta-llama/Llama-3.1-70B-Instruct`                 | ★★★★☆       | 128K    | `General`   | ~0.7s   | Reliable and steady, the $0.10 cap is the real bottleneck.                |
+| `meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8` | ★★★★☆       | 256K    | `General`   | ~0.7s   | Llama 4's strongest, clean and daily-usable within the cap.               |
+| `meta-llama/Llama-4-Scout-17B-16E-Instruct`         | ★★★★☆       | 256K    | `General`   | ~0.6s   | Lighter Maverick, efficient for the budget with 256K context.             |
+| `microsoft/phi-4`                                   | ★★★★☆       | 128K    | `Code`      | ~0.7s   | Compact Phi-4, punches well above its size for the quota.                 |
+| `MiniMaxAI/MiniMax-M3`                              | ★★★★☆       | 1M      | `General`   | ~1.5s   | 1M context at 1.5s, one big prompt eats half your monthly cap.            |
+| `moonshotai/Kimi-K2.5`                              | ★★★★☆       | 128K    | `Reasoning` | ~0.7s   | Deep CoT reasoning, good for debugging but verbose on tokens.             |
+| `openai/gpt-oss-120b`                               | ★★★★☆       | 128K    | `General`   | ~0.6s   | Reliable 120B, safe pick that respects the $0.10 limit.                   |
+| `pearl-ai/Gemma-4-31B-it-pearl`                     | ★★★★☆       | 32K     | `General`   | ~2.4s   | Different Gemma 4 flavor, same clean quality at moderate speed.           |
+| `Qwen/Qwen2.5-Coder-32B-Instruct`                   | ★★★★☆       | 128K    | `Code`      | ~0.7s   | Drops straight to code, good for refactoring within the tight budget.     |
+| `Qwen/Qwen2.5-VL-72B-Instruct`                      | ★★★★☆       | 128K    | `Vision`    | ~0.9s   | 72B vision model, handles screenshots without eating all your credits.    |
+| `Qwen/Qwen3-235B-A22B`                              | ★★★★☆       | 256K    | `Reasoning` | ~1.0s   | 235B base at 1s, strong reasoning that respects the tight quota.          |
+| `Qwen/Qwen3-VL-30B-A3B-Instruct`                    | ★★★★☆       | 128K    | `Vision`    | ~1.0s   | 30B VL on a 3B budget, multimodal without blowing the $0.10.              |
+| `Qwen/Qwen3.6-27B`                                  | ★★★★☆       | 256K    | `General`   | ~1.0s   | Latest Qwen 3.6, balanced and efficient for the budget.                   |
+| `Qwen/Qwen3.6-35B-A3B`                              | ★★★★☆       | 256K    | `Code`      | ~0.6s   | Most efficient Qwen, stretches the $0.10 further for medium projects.     |
+| `zai-org/GLM-4.7`                                   | ★★★★☆       | 128K    | `General`   | ~4.7s   | Slow but steady, keeps responding when other models time out.             |
 
 ### [Intern AI](https://internlm.intern-ai.org.cn)
 
