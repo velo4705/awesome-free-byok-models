@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 2, 2026** - All models tested live across 37 providers.
+> ⏰ **Last Verified: July 3, 2026** - All models tested live across 37 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
