@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 3, 2026** - All models tested live across 37 providers.
+> ⏰ **Last Verified: July 4, 2026** - All models tested live across 37 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -169,7 +169,7 @@ Auriko is a unified API gateway providing access to 100+ models from top provide
 
 ### [BlazeAPI](https://blazeai.boxu.dev)
 
-BlazeAPI is a lightweight inference hub serving models from Moonshot and Z.AI through an OpenAI-compatible endpoint. The free tier provides 20 RPM with 1,000 requests per day — a solid quota for daily coding and occasional heavy queries. No credit card required. BlazeAPI currently has 2 models verified — both at ★★★☆☆ or above.
+BlazeAPI is a lightweight inference hub serving models from Moonshot and Z.AI through an OpenAI-compatible endpoint. The free tier provides 20 RPM with 1,000 requests per day — a solid quota for daily coding and occasional heavy queries. No credit card required. BlazeAPI currently has 2 models verified — 1 at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 20 RPM / 1,000 RPD
 
@@ -177,10 +177,9 @@ BlazeAPI is a lightweight inference hub serving models from Moonshot and Z.AI th
 
 > ⚠️ **BlazeAPI may be shutting down soon.** Service continues working until full retirement.
 
-| Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                        |
-| :--------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------------------- |
-| `moonshotai/kimi-k2.6` | ★★★☆☆       | 128K    | `Reasoning` | ~7.9s   | Slow but capable. A 1T model for reasoning, enough for a few deep dives a day. |
-| `z-ai/glm-5.1`         | ★★★☆☆       | 128K    | `General`   | ~7.6s   | Also slow. GLM 5.1 puts out clean code when you have time to wait.             |
+| Free Model               | Star Rating | Context | Best For    | Latency | Opinion                                                                    |
+| :----------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------- |
+| `moonshotai/kimi-k2.6`   | ★★★★☆       | 128K    | `Reasoning` | ~1.8s   | 1T model at sub-2s, solid reasoning for deep dives within the daily quota. |
 
 ### [Cerebras AI](https://cloud.cerebras.ai)
 
@@ -330,22 +329,24 @@ Gemini offers large context windows on paper, but the free tier's **rate limits 
 
 ### [Groq API](https://console.groq.com)
 
-Groq is famous for providing the **absolute lowest streaming latency** in the API market, outrunning traditional cloud providers by a massive margin. The free tier offers 30 RPM with replenishable daily credits — no credit card needed. If you want a setup where your terminal files patch instantly without the typical spinning wheel delay, this is your go-to. Groq API currently has 8 models verified.
+Groq is famous for providing the **absolute lowest streaming latency** in the API market, outrunning traditional cloud providers by a massive margin. The free tier offers 30 RPM with replenishable daily credits — no credit card needed. If you want a setup where your terminal files patch instantly without the typical spinning wheel delay, this is your go-to. Groq API currently has 10 models verified — all at ★★★☆☆ or above.
 
 🎁 **Free Tier Quota:** 30 RPM / 14,400 RPD / 18,000 TPM
 
 🔗 **Base URL:** `https://api.groq.com/openai/v1`
 
-| Free Model                                  | Star Rating | Context | Best For  | Latency | Opinion                                                                          |
-| :------------------------------------------ | :---------- | :------ | :-------- | :------ | :------------------------------------------------------------------------------- |
-| `openai/gpt-oss-120b`                       | ★★★★★       | 128K    | `Code`    | ~0.2s   | Never hits rate limits. The best pick on Groq.                                   |
-| `llama-3.3-70b-versatile`                   | ★★★★☆       | 128K    | `Chat`    | ~0.2s   | Dependable for dev conversations.                                                |
-| `openai/gpt-oss-20b`                        | ★★★★☆       | 128K    | `Code`    | ~0.2s   | Same DNA as the 120B, lighter. Lightning-fast for standard coding.               |
-| `qwen/qwen3-32b`                            | ★★★★☆       | 256K    | `Code`    | ~0.2s   | Fast at 256K context window. Briefly thinks out loud but great for complex code. |
-| `qwen/qwen3.6-27b`                          | ★★★★☆       | 256K    | `Code`    | ~0.3s   | Fast with a 27B model. Short think preamble but clean output.                    |
-| `groq/compound`                             | ★★★☆☆       | 128K    | `General` | ~0.6s   | Good for quick terminal questions. Lacks depth for multi-file projects.          |
-| `llama-3.1-8b-instant`                      | ★★★☆☆       | 128K    | `Code`    | ~0.3s   | Fun for tiny rapid-fire edits. Tends to cut off on long scripts.                 |
-| `meta-llama/llama-4-scout-17b-16e-instruct` | ★★★☆☆       | 256K    | `Chat`    | ~0.2s   | With 256K context, it overthinks simple prompts but handles medium tasks fine.   |
+| Free Model                                  | Star Rating | Context | Best For   | Latency | Opinion                                                                          |
+| :------------------------------------------ | :---------- | :------ | :--------- | :------ | :------------------------------------------------------------------------------- |
+| `openai/gpt-oss-120b`                       | ★★★★★       | 128K    | `Code`     | ~0.4s   | Never hits rate limits. The best pick on Groq.                                   |
+| `llama-3.3-70b-versatile`                   | ★★★★☆       | 128K    | `Chat`     | ~0.2s   | Dependable for dev conversations.                                                |
+| `openai/gpt-oss-20b`                        | ★★★★☆       | 128K    | `Code`     | ~0.6s   | Same DNA as the 120B, lighter. Lightning-fast for standard coding.               |
+| `qwen/qwen3-32b`                            | ★★★★☆       | 256K    | `Code`     | ~0.2s   | Fast at 256K context window. Briefly thinks out loud but great for complex code. |
+| `qwen/qwen3.6-27b`                          | ★★★★☆       | 256K    | `Code`     | ~0.2s   | Fast with a 27B model. Short think preamble but clean output.                    |
+| `allam-2-7b`                                | ★★★☆☆       | 128K    | `Fallback` | ~0.2s   | Tiny 7B at sub-0.2s, fun for rapid-fire edits but limited depth.                 |
+| `groq/compound`                             | ★★★☆☆       | 128K    | `General`  | ~0.7s   | Good for quick terminal questions. Lacks depth for multi-file projects.          |
+| `groq/compound-mini`                        | ★★★☆☆       | 128K    | `General`  | ~0.7s   | Smaller compound, even lighter. Use when you need faster responses.              |
+| `llama-3.1-8b-instant`                      | ★★★☆☆       | 128K    | `Code`     | ~0.2s   | Fun for tiny rapid-fire edits. Tends to cut off on long scripts.                 |
+| `meta-llama/llama-4-scout-17b-16e-instruct` | ★★★☆☆       | 256K    | `Chat`     | ~0.4s   | With 256K context, it overthinks simple prompts but handles medium tasks fine.   |
 
 ### [HelixMind](https://helixmind.online)
 
@@ -872,32 +873,31 @@ Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Goo
 | `qwen3-235b-a22b:free`                | ★★★★☆       | 256K    | `Reasoning` | ~5.6s   | 235B reasoning, capable but slow on Poixe.             |
 ### [Poolside](https://poolside.ai)
 
-Poolside is a foundation model lab building purpose-built coding models from scratch. Their Laguna series — M.1 (225B-A23B Model) and XS.2 (33B-A3B Model) — are trained on 30T tokens exclusively for agentic software engineering with tool calling and 256K context. Both models are free while in preview — the same "use it while it lasts" uncertainty as any free provider. Poolside currently has 2 models verified.
+Poolside is a foundation model lab building purpose-built coding models from scratch. Their Laguna series — M.1 (225B-A23B Model) and XS.2 (33B-A3B Model) — are trained on 30T tokens exclusively for agentic software engineering with tool calling and 256K context. Both models are free while in preview — the same "use it while it lasts" uncertainty as any free provider. Poolside currently has 3 models verified.
 
 🎁 **Free Tier Quota:** 20 RPM / 200 RPD / 150,000 TPM / 1,000,000 TPD
 
 🔗 **Base URL:** `https://inference.poolside.ai/v1`
 
-| Free Model             | Star Rating | Context | Best For | Latency | Opinion                                                                    |
-| :--------------------- | :---------- | :------ | :------- | :------ | :------------------------------------------------------------------------- |
-| `poolside/laguna-m.1`  | ★★★★★       | 128K    | `Code`   | ~1.1s   | 225B model built from scratch for agentic code. Pure software engineering. |
-| `poolside/laguna-xs.2` | ★★★★☆       | 128K    | `Code`   | ~0.6s   | Open-weight 33B at 0.6s, impressive depth for its size.                    |
+| Free Model               | Star Rating | Context | Best For | Latency | Opinion                                                                    |
+| :----------------------- | :---------- | :------ | :------- | :------ | :------------------------------------------------------------------------- |
+| `poolside/laguna-m.1`    | ★★★★★       | 128K    | `Code`   | ~1.0s   | 225B model built from scratch for agentic code. Pure software engineering. |
+| `poolside/laguna-xs-2.1` | ★★★★★       | 128K    | `Code`   | ~0.7s   | Newest XS variant, fast and sharp for agentic loops.                       |
+| `poolside/laguna-xs.2`   | ★★★★☆       | 128K    | `Code`   | ~1.0s   | Open-weight 33B, impressive depth for its size.                            |
 
 ### [SambaNova AI](https://cloud.sambanova.ai)
 
-SambaNova AI is a **hardware-driven inference provider** utilizing proprietary Reconfigurable Dataflow Units (RDUs) rather than standard GPUs, removing the traditional hardware-decode bottleneck for incredibly high throughput. The free tier is limited to 20 requests and 200k tokens per day — tight for sustained use. Preview models (DeepSeek-V3.2, Gemma-4-31B-it) require a one-time $5 signup credit that does not replenish. SambaNova AI currently has 5 models verified.
+SambaNova AI is a **hardware-driven inference provider** utilizing proprietary Reconfigurable Dataflow Units (RDUs) rather than standard GPUs, removing the traditional hardware-decode bottleneck for incredibly high throughput. The free tier is limited to 20 requests and 200k tokens per day — tight for sustained use. SambaNova AI currently has 3 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 20 RPM / 20 RPD / 200,000 TPD
 
 🔗 **Base URL:** `https://api.sambanova.ai/v1`
 
-| Free Model                    | Star Rating | Context | Best For    | Latency | Opinion                                                                  |
-| :---------------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------------- |
-| `DeepSeek-V3.1`               | ★★★★☆       | 128K    | `Agent`     | ~1.0s   | Good reasoning at 1s but 20 RPD hurts, better quota elsewhere.           |
-| `DeepSeek-V3.2`               | ★★★★☆       | 128K    | `Reasoning` | ~1.8s   | **Preview** — Fast on RDUs but requires $5 credit that doesnt replenish. |
-| `Meta-Llama-3.3-70B-Instruct` | ★★★★☆       | 128K    | `General`   | ~2.0s   | The 70B, reads complex instructions and holds them together.             |
-| `gemma-4-31B-it`              | ★★★☆☆       | 32K     | `General`   | ~1.4s   | **Preview** — Google's newest runs fast but dies with the $5 credit.     |
-| `gpt-oss-120b`                | ★★★☆☆       | 128K    | `Fallback`  | ~0.9s   | Same gpt-oss, slower on RDUs. Use when other fallbacks are tapped.       |
+| Free Model                    | Star Rating | Context | Best For  | Latency | Opinion                                                        |
+| :---------------------------- | :---------- | :------ | :-------- | :------ | :------------------------------------------------------------- |
+| `DeepSeek-V3.1`               | ★★★★☆       | 128K    | `Agent`   | ~1.0s   | Good reasoning at 1s but 20 RPD hurts, better quota elsewhere. |
+| `Meta-Llama-3.3-70B-Instruct` | ★★★★☆       | 128K    | `General` | ~2.0s   | The 70B, reads complex instructions and holds them together.   |
+| `gpt-oss-120b`                | ★★★★☆       | 128K    | `General` | ~0.9s   | Same reliable 120B, fast on RDUs. Best value on SambaNova now. |
 
 ### [TokenReply](https://tokenreply.com)
 
@@ -926,7 +926,7 @@ TokenReply is a lightweight inference hub offering models from Google, DeepSeek,
 
 ### [Void AI](https://voidai.app)
 
-Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Moonshot, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 100 RPM with 125,000 daily credits — the highest RPM of any hub on this list, ideal for high-throughput coding sessions. No credit card required. Void AI currently has 29 verified coding-relevant models — all at ★★★★☆ or above.
+Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Moonshot, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 100 RPM with 125,000 daily credits — the highest RPM of any hub on this list, ideal for high-throughput coding sessions. No credit card required. Void AI currently has 33 verified coding-relevant models — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 100 RPM / 125,000 Daily Credits
 
@@ -934,26 +934,30 @@ Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSee
 
 | Free Model                       | Star Rating | Context | Best For    | Latency | Opinion                                                     |
 | :------------------------------- | :---------- | :------ | :---------- | :------ | :---------------------------------------------------------- |
-| `deepseek-v3.1`                  | ★★★★★       | 128K    | `Reasoning` | ~2.2s   | Reliable for complex multi-file debugging.                  |
 | `deepseek-v4-flash`              | ★★★★★       | 128K    | `Reasoning` | ~1.5s   | Fast reasoning, great value on high credits.                |
 | `deepseek-v4-pro`                | ★★★★★       | 128K    | `Reasoning` | ~1.6s   | Extra headroom over Flash for hard problems.                |
-| `glm-4.7`                        | ★★★★★       | 128K    | `Reasoning` | ~4.9s   | Takes a beat but the extra thought shows.                   |
+| `gemini-2.5-flash`               | ★★★★★       | 128K    | `General`   | -       | Fast Gemini flash, solid generalist on high credits.        |
+| `gemini-2.5-pro`                 | ★★★★★       | 128K    | `Reasoning` | -       | Stronger Gemini pro, great for complex reasoning.           |
+| `gemini-3-flash-preview`         | ★★★★★       | 128K    | `General`   | -       | Latest Gemini 3 flash preview, fast and capable.            |
+| `gemini-3.1-pro-preview`         | ★★★★★       | 128K    | `Reasoning` | -       | Pro preview, strongest Gemini for tough problems.           |
+| `gemini-3.5-flash`               | ★★★★★       | 128K    | `General`   | -       | Latest flash variant, clean and fast daily driver.          |
 | `gpt-5.1`                        | ★★★★★       | 128K    | `General`   | ~1.2s   | Strong generalist, balanced across the board.               |
 | `gpt-5.2`                        | ★★★★★       | 128K    | `General`   | ~1.4s   | Clean output, no preamble to wade through.                  |
 | `gpt-5.3-codex`                  | ★★★★★       | 128K    | `Code`      | ~1.5s   | Code-focused GPT, sharp on complex implementations.         |
 | `gpt-5.4`                        | ★★★★★       | 128K    | `General`   | ~1.3s   | Latest GPT, clean and direct.                               |
-| `gpt-oss-120b`                   | ★★★★★       | 128K    | `General`   | ~0.8s   | Reliable 120B at sub-second speed for daily coding.         |
-| `qwen3-235b-a22b-instruct`       | ★★★★★       | 128K    | `Reasoning` | ~2.5s   | Big Qwen, strong reasoning for complex tasks.               |
-| `qwen3-coder-480b-a35b-instruct` | ★★★★★       | 128K    | `Code`      | ~3.0s   | Massive coder, best when you need serious muscle.           |
+| `qwen3-235b-a22b-instruct`       | ★★★★★       | 256K    | `Reasoning` | ~2.5s   | Big Qwen, strong reasoning for complex tasks.               |
+| `qwen3-coder-480b-a35b-instruct` | ★★★★★       | 256K    | `Code`      | ~3.0s   | Massive coder, best when you need serious muscle.           |
 | `sonar-reasoning-pro`            | ★★★★★       | 128K    | `Reasoning` | ~3.0s   | Perplexity reasoning, deep research-augmented answers.      |
 | `umbra`                          | ★★★★★       | 128K    | `General`   | ~2.0s   | Solid all-rounder, handles daily coding without drama.      |
 | `deepseek-v3.2`                  | ★★★★☆       | 128K    | `Reasoning` | ~2.0s   | Refined reasoning, a solid backup to V4.                    |
-| `glm-5`                          | ★★★★☆       | 128K    | `General`   | ~2.0s   | Latest GLM, balanced chat and coding at 2s.                 |
+| `gemini-3.1-flash-lite`          | ★★★★☆       | 128K    | `Fallback`  | -       | Lite Gemini flash, efficient for lightweight tasks.         |
+| `gemma-4-31b-it`                 | ★★★★☆       | 32K     | `General`   | -       | 31B Gemma, reliable coding with 32K context.                |
 | `glm-5.1`                        | ★★★★☆       | 128K    | `General`   | ~2.0s   | Slightly newer GLM, same solid general performance.         |
 | `glm-5.2`                        | ★★★★☆       | 128K    | `General`   | ~2.0s   | Latest GLM refresh, consistent across tasks.                |
 | `gpt-4.1`                        | ★★★★☆       | 1M      | `General`   | ~2.4s   | 1M context, good for big projects that need the extra room. |
 | `gpt-4.1-mini`                   | ★★★★☆       | 1M      | `General`   | ~1.5s   | Compact with 1M context, efficient daily driver.            |
 | `gpt-4.1-nano`                   | ★★★★☆       | 1M      | `Code`      | ~1.0s   | Fast nano with 1M context, snappy for quick scripting.      |
+| `gpt-4o`                         | ★★★★☆       | 128K    | `General`   | -       | Classic GPT-4o, balanced generalist with 128K context.      |
 | `gpt-4o-mini`                    | ★★★★☆       | 128K    | `General`   | ~1.2s   | Compact GPT-4o, efficient on the credit budget.             |
 | `gpt-5.4-mini`                   | ★★★★☆       | 128K    | `General`   | ~1.2s   | Lighter 5.4, same clean output at lower cost.               |
 | `gpt-5.4-nano`                   | ★★★★☆       | 128K    | `Code`      | ~1.0s   | Fastest GPT variant, ideal for lightweight tasks.           |
@@ -963,7 +967,6 @@ Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSee
 | `kimi-k2.7-code`                 | ★★★★☆       | 128K    | `Code`      | ~1.5s   | Code-tuned Kimi, good for implementation work.              |
 | `sonar`                          | ★★★★☆       | 128K    | `Search`    | ~1.5s   | Perplexity search, useful for research-augmented coding.    |
 | `sonar-pro`                      | ★★★★☆       | 128K    | `Search`    | ~2.0s   | Deeper search results, better for research-heavy sessions.  |
-
 
 ### [Z.AI (Zhipu AI)](https://z.ai)
 
