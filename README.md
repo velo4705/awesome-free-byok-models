@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 4, 2026** - All models tested live across 37 providers.
+> ⏰ **Last Verified: July 5, 2026** - All models tested live across 37 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -133,7 +133,7 @@ Agnes AI offers flash-tier models with generous daily limits but slow inference 
 
 ### [AnyAPI AI](https://anyapi.ai)
 
-AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, Cohere, and more through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with access to free and basic models — no credit card required. AnyAPI currently has 10 models verified — all at ★★★★☆ or above.
+AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, Cohere, and more through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with access to free and basic models — no credit card required. AnyAPI currently has 11 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 100,000 tokens/day / No Credit Card
 
@@ -150,6 +150,7 @@ AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Ant
 | `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★☆       | 128K    | `Reasoning` | ~9.1s   | 550B of raw reasoning, good for hard debugging but churns through the token cap. |
 | `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★☆       | 32K     | `Vision`    | ~8.9s   | Vision-capable Nano, handles code with screenshots but at a crawl.               |
 | `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | 128K    | `Fallback`  | ~9.6s   | Slowest of them, but enough as a fallback with a reasonable context window.      |
+| `openrouter/fusion`                                  | ★★★★☆       | 128K    | `General`   | ~5.9s   | OpenRouter's own fusion model, a decent mid-range all-rounder.                   |
 | `poolside/laguna-xs.2:free`                          | ★★★★☆       | 128K    | `Code`      | ~1.6s   | Very fast model suitable for normal projects of this size.                       |
 
 ### [Auriko](https://www.auriko.ai)
@@ -177,9 +178,9 @@ BlazeAPI is a lightweight inference hub serving models from Moonshot and Z.AI th
 
 > ⚠️ **BlazeAPI may be shutting down soon.** Service continues working until full retirement.
 
-| Free Model               | Star Rating | Context | Best For    | Latency | Opinion                                                                    |
-| :----------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------- |
-| `moonshotai/kimi-k2.6`   | ★★★★☆       | 128K    | `Reasoning` | ~1.8s   | 1T model at sub-2s, solid reasoning for deep dives within the daily quota. |
+| Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                    |
+| :--------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------- |
+| `moonshotai/kimi-k2.6` | ★★★★☆       | 128K    | `Reasoning` | ~1.8s   | 1T model at sub-2s, solid reasoning for deep dives within the daily quota. |
 
 ### [Cerebras AI](https://cloud.cerebras.ai)
 
@@ -192,8 +193,8 @@ Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, integrati
 | Free Model     | Star Rating | Context | Best For  | Latency | Opinion                                                     |
 | :------------- | :---------- | :------ | :-------- | :------ | :---------------------------------------------------------- |
 | `gpt-oss-120b` | ★★★★★       | 128K    | `General` | ~0.5s   | Sub-second on Cerebras. Same 120B you know, just fast.      |
-| `gemma-4-31b`  | ★★★★☆       | 32K     | `General` | ~0.5s   | Capable 31B model, fast inference keeps coding loops tight. |
 | `zai-glm-4.7`  | ★★★★★       | 128K    | `Agent`   | ~0.5s   | Also fast. Optimized for quick agentic coding loops.        |
+| `gemma-4-31b`  | ★★★★☆       | 32K     | `General` | ~0.5s   | Capable 31B model, fast inference keeps coding loops tight. |
 
 ### [Cloudflare Workers AI](https://dash.cloudflare.com)
 
@@ -303,8 +304,8 @@ GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and
 
 | Free Model    | Star Rating | Context | Best For  | Latency | Opinion                                                          |
 | :------------ | :---------- | :------ | :-------- | :------ | :--------------------------------------------------------------- |
-| `gpt-4o-mini` | ★★★★☆       | 128K    | `General` | ~3.0s   | Compact and fast. Good fallback when quota runs low.             |
 | `gpt-4o`      | ★★★★☆       | 128K    | `General` | ~2.4s   | Full GPT-4o. Adds markdown by default, a system prompt fixes it. |
+| `gpt-4o-mini` | ★★★★☆       | 128K    | `General` | ~3.0s   | Compact and fast. Good fallback when quota runs low.             |
 
 ### [Google Gemini](https://aistudio.google.com)
 
@@ -418,11 +419,11 @@ Intern AI is the official API provided by Shanghai AI Laboratory, the developers
 | Free Model              | Star Rating | Context | Best For    | Latency | Opinion                                                            |
 | :---------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------- |
 | `intern-latest`         | ★★★★★       | 256K    | `General`   | ~1.0s   | Current flagship pointer, sub-second with massive token quota.     |
+| `intern-s1`             | ★★★★★       | 128K    | `General`   | ~1.2s   | Solid base S1, dependable output with good context.                |
+| `intern-s1-pro`         | ★★★★★       | 128K    | `Reasoning` | ~1.5s   | Pro reasoning variant, handles complex logic capably.              |
 | `intern-s2-preview`     | ★★★★★       | 256K    | `Reasoning` | ~1.0s   | S2 preview, strongest Intern yet. Fast reasoning at 256K.          |
 | `internvl3.5-241b-a28b` | ★★★★★       | 128K    | `Vision`    | ~1.1s   | 241B MoE VL, sees images and code. One of the strongest VL models. |
 | `internvl3.5-latest`    | ★★★★★       | 128K    | `Vision`    | ~1.2s   | Latest VL variant, fast multimodal at solid context.               |
-| `intern-s1`             | ★★★★★       | 128K    | `General`   | ~1.2s   | Solid base S1, dependable output with good context.                |
-| `intern-s1-pro`         | ★★★★★       | 128K    | `Reasoning` | ~1.5s   | Pro reasoning variant, handles complex logic capably.              |
 | `intern-s1-mini`        | ★★★★☆       | 128K    | `Fallback`  | ~1.0s   | Compact S1, fast and efficient for daily coding sessions.          |
 | `internvl-latest`       | ★★★★☆       | 128K    | `Vision`    | ~1.2s   | Older VL model, still capable for multimodal tasks.                |
 
@@ -764,8 +765,8 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 | `minimax-m2.5`         | ★★★★★       | 1M      | `General`   | ~3.2s   | Consistent output, doesnt make you second-guess.                         |
 | `minimax-m3`           | ★★★★★       | 1M      | `General`   | ~2.0s   | Most polished MiniMax yet, clean and dependable.                         |
 | `nemotron-3-nano:30b`  | ★★★★★       | 128K    | `Reasoning` | ~1.1s   | Fast and direct, answers without CoT fluff.                              |
-| `qwen3-coder-next`     | ★★★★★       | 256K    | `Code`      | ~0.8s   | Zero preamble, instant answers, reads logs to fix its own bugs.          |
 | `qwen3-coder:480b`     | ★★★★★       | 256K    | `Code`      | ~1.8s   | 480B of coding muscle, makes tough debugging feel like a chat.           |
+| `qwen3-coder-next`     | ★★★★★       | 256K    | `Code`      | ~0.8s   | Zero preamble, instant answers, reads logs to fix its own bugs.          |
 | `gpt-oss:20b`          | ★★★★☆       | 128K    | `Reasoning` | ~1.2s   | Smaller GPT-OSS, solid reasoning at fraction of the latency.             |
 | `nemotron-3-ultra`     | ★★★★☆       | 1M      | `Reasoning` | ~1.5s   | Largest Nemotron with 1M context, capable for complex reasoning.         |
 | `minimax-m2.1`         | ★★★☆☆       | 1M      | `General`   | ~1.2s   | Earlier MiniMax, clean but slower than m2.5.                             |
@@ -805,15 +806,15 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | `openai/gpt-oss-120b:free`                           | ★★★★★       | 128K    | `General`   | ~2.1s   | Same gpt-oss every provider carries, the safest five-star bet.            |
 | `openai/gpt-oss-20b:free`                            | ★★★★★       | 128K    | `Code`      | ~2.0s   | Same output as the 120B but lighter, the everyday driver.                 |
 | `cohere/north-mini-code:free`                        | ★★★★☆       | 128K    | `Code`      | ~2.1s   | Efficient coding model from Cohere, lightweight for rapid iteration.      |
-| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | 32K     | `General`   | ~1.3s   | Lighter Gemma 4 variant, fast direct responses without the bloat.         |
 | `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | 32K     | `Reasoning` | ~4.0s   | Tiny 1.2B that thinks aloud, good for logic but verbose for quick edits.  |
 | `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | 128K    | `General`   | ~0.7s   | Efficient 30B model with a big window for coding.                         |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | 128K    | `Reasoning` | ~0.7s   | Shows work step by step, useful for verification but noisy.               |
 | `nvidia/nemotron-3-super-120b-a12b:free`             | ★★★★☆       | 1M      | `General`   | ~2.7s   | Strong 120B mid-range, steps in when the 30Bs need more headroom.         |
 | `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★☆       | 128K    | `Reasoning` | ~1.3s   | 550B ultra, deep reasoning for the toughest multi-file problems.          |
-| `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | 128K    | `Fallback`  | ~6.2s   | Reliable fallback that punches above its 9B weight.                       |
 | `poolside/laguna-m.1:free`                           | ★★★★☆       | 128K    | `Code`      | ~2.2s   | Built by devs for devs, inline completions that feel intuitive.           |
+| `poolside/laguna-xs-2.1:free`                        | ★★★★☆       | 128K    | `Code`      | -       | Newest Poolside XS, sharp and fast for agentic coding loops.              |
 | `poolside/laguna-xs.2:free`                          | ★★★★☆       | 128K    | `Code`      | ~1.1s   | Snappier than M.1, slightly less depth, good for fast suggestions.        |
+| `qwen/qwen3-next-80b-a3b-instruct:free`              | ★★★★☆       | 128K    | `Code`      | -       | 80B MoE with 3B active, efficient and sharp for coding tasks.             |
 
 ### [Routeway AI](https://routeway.ai)
 
@@ -896,8 +897,8 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 | Free Model                    | Star Rating | Context | Best For  | Latency | Opinion                                                        |
 | :---------------------------- | :---------- | :------ | :-------- | :------ | :------------------------------------------------------------- |
 | `DeepSeek-V3.1`               | ★★★★☆       | 128K    | `Agent`   | ~1.0s   | Good reasoning at 1s but 20 RPD hurts, better quota elsewhere. |
-| `Meta-Llama-3.3-70B-Instruct` | ★★★★☆       | 128K    | `General` | ~2.0s   | The 70B, reads complex instructions and holds them together.   |
 | `gpt-oss-120b`                | ★★★★☆       | 128K    | `General` | ~0.9s   | Same reliable 120B, fast on RDUs. Best value on SambaNova now. |
+| `Meta-Llama-3.3-70B-Instruct` | ★★★★☆       | 128K    | `General` | ~2.0s   | The 70B, reads complex instructions and holds them together.   |
 
 ### [TokenReply](https://tokenreply.com)
 
