@@ -10,14 +10,16 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 5, 2026** - All models tested live across 37 providers.
+> ⏰ **Last Verified: July 6, 2026** - All models tested live across 37 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
 By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API keys into **coding tools**, **custom projects**, or **AI-powered apps** — no credit card required. Every model listed here is rated for coding capability, but most work just as well for general conversation.
 
 > 💡 **Pro tip:** Free tiers rotate often. If a model hits rate limits, switch to another — there's always a backup in this list.
-> **Always verify** current quotas on the provider's console before building workflows.
+
+> 📝 **Note:** Always verify current quotas on the provider's console before building workflows.
+> **Use responsibly.** This list is for developers, not for scraping, reselling, or bulk harvesting.
 
 ## Contents
 
@@ -104,7 +106,7 @@ These tables break down notable free models from each provider's ecosystem, **ca
 
 ### [AION Labs](https://www.aionlabs.ai)
 
-AION Labs provides storytelling-optimized models through an OpenAI-compatible API. The free tier offers 20,000 tokens/day and 15 RPM with no credit card required — a solid option if you need a daily token allowance for lightweight coding and creative tasks. AION Labs currently has 5 models verified.
+AION Labs provides storytelling-optimized models through an OpenAI-compatible API. The free tier offers 20,000 tokens/day and 15 RPM with no credit card required — a solid option if you need a daily token allowance for lightweight coding and creative tasks. AION Labs currently has 3 models verified.
 
 🎁 **Free Tier Quota:** 15 RPM / 20,000 TPD
 
@@ -112,11 +114,9 @@ AION Labs provides storytelling-optimized models through an OpenAI-compatible AP
 
 | Free Model                       | Star Rating | Context | Best For   | Latency | Opinion                                                                   |
 | :------------------------------- | :---------- | :------ | :--------- | :------ | :------------------------------------------------------------------------ |
-| `aion-labs/aion-2.5`             | ★★★★★       | 128K    | `Code`     | ~3.6s   | Strong at coding, responds cleanly without rambling, good context window. |
-| `aion-labs/aion-1.0`             | ★★★★☆       | 128K    | `General`  | ~1.7s   | Solid 1.0, capable output with moderate latency for daily tasks.          |
-| `aion-labs/aion-2.0`             | ★★★★☆       | 128K    | `General`  | ~1.2s   | 2.0 variant, fast and clean for daily coding without the preamble.        |
-| `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | 32K     | `Fallback` | ~1.4s   | Despite the small 32K window, still decent for light coding or chatting.  |
-| `aion-labs/aion-1.0-mini`        | ★★★☆☆       | 128K    | `Fallback` | ~1.7s   | Light 1.0 mini, usable for simple queries at modest speed.                |
+| `aion-labs/aion-2.5`             | ★★★★★       | 128K    | `Code`     | ~2.5s   | Strong at coding, responds cleanly without rambling, good context window. |
+| `aion-labs/aion-2.0`             | ★★★★☆       | 128K    | `General`  | ~3.9s   | 2.0 variant, clean for daily coding but latency crept up.                 |
+| `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | 32K     | `Fallback` | ~1.0s   | Despite the small 32K window, still decent for light coding or chatting.  |
 
 ### [Agnes AI](https://www.agnes-ai.com)
 
@@ -198,7 +198,7 @@ Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, integrati
 
 ### [Cloudflare Workers AI](https://dash.cloudflare.com)
 
-Cloudflare Workers AI runs models on Cloudflare's global edge network using serverless GPUs. The free tier offers 10,000 requests/day shared across all models with near-zero latency from edge locations worldwide. Cloudflare Workers AI currently has 27 models verified — 22 are ★★★☆☆ or above.
+Cloudflare Workers AI runs models on Cloudflare's global edge network using serverless GPUs. The free tier offers 10,000 requests/day shared across all models with near-zero latency from edge locations worldwide. Cloudflare Workers AI currently has 24 models verified — all at ★★★☆☆ or above.
 
 🎁 **Free Tier Quota:** 150 to 1,500 RPM / 100,000 RPD / 13,000 TPD
 
@@ -210,12 +210,14 @@ Cloudflare Workers AI runs models on Cloudflare's global edge network using serv
 | :--------------------------------------------- | :---------- | :------ | :---------- | :------ | :--------------------------------------------------------------------------------- |
 | `@cf/qwen/qwen2.5-coder-32b-instruct`          | ★★★★★       | 128K    | `Code`      | ~0.7s   | Fast edge coder. Clean output at sub-second speed without the preamble.            |
 | `@cf/aisingapore/gemma-sea-lion-v4-27b-it`     | ★★★★☆       | 32K     | `General`   | ~0.5s   | Surprisingly good multilingual model for its size. Fast from the edge.             |
+| `@cf/google/gemma-2b-it-lora`                  | ★★★☆☆       | 8K      | `Fallback`  | -       | 2B with LoRA, barely useful beyond syntax checks. Skip unless desperate.           |
 | `@cf/google/gemma-4-26b-a4b-it`                | ★★★★☆       | 32K     | `General`   | ~0.5s   | Quick and thoughtful. Doesnt waste tokens with fluff.                              |
 | `@cf/meta/llama-3.2-1b-instruct`               | ★★★★☆       | 128K    | `Fallback`  | ~0.6s   | Tiny but passes verification. Use when every resource counts.                      |
 | `@cf/meta/llama-3.2-3b-instruct`               | ★★★★☆       | 128K    | `Fallback`  | ~0.5s   | Sanity-checks your syntax instantly. Returns before you finish typing.             |
 | `@cf/meta/llama-3.3-70b-instruct-fp8-fast`     | ★★★★☆       | 128K    | `Reasoning` | ~0.9s   | Meta's 70B at edge speed. Good depth for reasoning without lag.                    |
 | `@cf/meta/llama-4-scout-17b-16e-instruct`      | ★★★★☆       | 256K    | `General`   | ~0.6s   | 256K context at blazing speed. Direct answers without overhead.                    |
 | `@cf/moonshotai/kimi-k2.6`                     | ★★★★☆       | 128K    | `Reasoning` | ~1.0s   | 1T model for reasoning at edge speed. Good for agentic tool use.                   |
+| `@cf/mistral/mistral-7b-instruct-v0.2-lora`    | ★★★☆☆       | 8K      | `Fallback`  | -       | Mistral v0.2 with LoRA, older but still handles simple tasks acceptably.           |
 | `@cf/moonshotai/kimi-k2.7-code`                | ★★★★☆       | 128K    | `Reasoning` | ~0.9s   | Reads your whole codebase. Project-wide refactors made fast.                       |
 | `@cf/nvidia/nemotron-3-120b-a12b`              | ★★★★☆       | 128K    | `Reasoning` | ~0.7s   | Keeps reasoning until it finds something useful. Depth over speed.                 |
 | `@cf/openai/gpt-oss-120b`                      | ★★★★☆       | 128K    | `Code`      | ~0.7s   | 120B headroom on the edge. Smaller models tap out, this keeps digging.             |
@@ -793,7 +795,7 @@ OpenCode Zen is a curated set of AI models tested and optimized for coding agent
 
 ### [OpenRouter](https://openrouter.ai)
 
-OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 14 models verified — all at ★★★★☆ or above.
+OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 15 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 20 RPM / 50 RPD
 
@@ -806,6 +808,8 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | `openai/gpt-oss-120b:free`                           | ★★★★★       | 128K    | `General`   | ~2.1s   | Same gpt-oss every provider carries, the safest five-star bet.            |
 | `openai/gpt-oss-20b:free`                            | ★★★★★       | 128K    | `Code`      | ~2.0s   | Same output as the 120B but lighter, the everyday driver.                 |
 | `cohere/north-mini-code:free`                        | ★★★★☆       | 128K    | `Code`      | ~2.1s   | Efficient coding model from Cohere, lightweight for rapid iteration.      |
+| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | 32K     | `General`   | ~1.3s   | Lighter Gemma 4 variant, fast direct responses without the bloat.         |
+| `google/gemma-4-31b-it:free`                         | ★★★★☆       | 32K     | `General`   | -       | Capable 31B Gemma, solid for coding and general tasks.                    |
 | `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | 32K     | `Reasoning` | ~4.0s   | Tiny 1.2B that thinks aloud, good for logic but verbose for quick edits.  |
 | `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | 128K    | `General`   | ~0.7s   | Efficient 30B model with a big window for coding.                         |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | 128K    | `Reasoning` | ~0.7s   | Shows work step by step, useful for verification but noisy.               |
@@ -814,7 +818,6 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | `poolside/laguna-m.1:free`                           | ★★★★☆       | 128K    | `Code`      | ~2.2s   | Built by devs for devs, inline completions that feel intuitive.           |
 | `poolside/laguna-xs-2.1:free`                        | ★★★★☆       | 128K    | `Code`      | -       | Newest Poolside XS, sharp and fast for agentic coding loops.              |
 | `poolside/laguna-xs.2:free`                          | ★★★★☆       | 128K    | `Code`      | ~1.1s   | Snappier than M.1, slightly less depth, good for fast suggestions.        |
-| `qwen/qwen3-next-80b-a3b-instruct:free`              | ★★★★☆       | 128K    | `Code`      | -       | 80B MoE with 3B active, efficient and sharp for coding tasks.             |
 
 ### [Routeway AI](https://routeway.ai)
 
@@ -834,44 +837,42 @@ Routeway is a unified API gateway offering free models through a `:free` model s
 
 ### [Poixe AI](https://poixe.com)
 
-Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 32 models verified — 30 at ★★★★☆ or above.
+Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 28 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 10,000 RPD / 10,000,000 TPD
 
 🔗 **Base URL:** `https://api.poixe.com/v1/`
 
-| Free Model                            | Star Rating | Context | Best For    | Latency | Opinion                                                |
-| :------------------------------------ | :---------- | :------ | :---------- | :------ | :----------------------------------------------------- |
-| `gpt-oss-120b:free`                   | ★★★★★       | 128K    | `General`   | ~1.3s   | Reliable 120B, fast on Poixe with huge quota.          |
-| `grok-4:free`                         | ★★★★★       | 128K    | `General`   | ~2.7s   | xAI flagship, strong generalist with clean output.     |
-| `kimi-k2-0711-preview:free`           | ★★★★★       | 128K    | `Reasoning` | ~1.7s   | 1T reasoning model at 1.7s with 10k daily calls.       |
-| `qwen-max:free`                       | ★★★★★       | 128K    | `General`   | ~1.0s   | Qwen's top model, sub-second with big quota.           |
-| `qwen3-235b-a22b-instruct-2507:free`  | ★★★★★       | 256K    | `Reasoning` | ~1.3s   | 235B reasoning at 256K, strong for multi-file work.    |
-| `qwen3-coder-480b-a35b-instruct:free` | ★★★★★       | 256K    | `Code`      | ~1.2s   | 480B coder, best for architecture-level problems.      |
-| `doubao-1-5-lite-32k-250115:free`     | ★★★★☆       | 32K     | `Fallback`  | ~1.2s   | Lightweight Doubao, fast but 32K limits scope.         |
-| `doubao-1-5-pro-32k-250115:free`      | ★★★★☆       | 32K     | `General`   | ~4.5s   | Doubao pro, verbose but capable at 32K.                |
-| `doubao-seed-1-6-250615:free`         | ★★★★☆       | 128K    | `General`   | ~3.9s   | Doubao seed, solid generalist at moderate speed.       |
-| `doubao-seed-1-6-flash-250615:free`   | ★★★★☆       | 128K    | `General`   | ~1.2s   | Doubao flash, fast and clean for daily coding.         |
-| `gpt-4.1-mini:free`                   | ★★★★☆       | 1M      | `General`   | ~1.7s   | Same 1M context mini, consistent for daily work.       |
-| `gpt-4.1-mini-2025-04-14:free`        | ★★★★☆       | 1M      | `General`   | ~1.6s   | OpenAI mini with 1M context, strong daily driver.      |
-| `gpt-4.1-nano:free`                   | ★★★★☆       | 1M      | `Code`      | ~1.7s   | Nano with 1M context, solid for quick edits.           |
-| `gpt-4.1-nano-2025-04-14:free`        | ★★★★☆       | 1M      | `Code`      | ~0.9s   | Fast nano with 1M context, great for scripting.        |
-| `gpt-4o-mini:free`                    | ★★★★☆       | 128K    | `General`   | ~1.8s   | Latest GPT-4o mini, efficient daily coding.            |
-| `gpt-4o-mini-2024-07-18:free`         | ★★★★☆       | 128K    | `General`   | ~2.2s   | Compact GPT-4o, steady fallback on big quota.          |
-| `gpt-oss-20b:free`                    | ★★★★☆       | 128K    | `Code`      | ~0.8s   | Lighter 120B at sub-second, great value.               |
-| `grok-3-beta:free`                    | ★★★★☆       | 128K    | `Reasoning` | ~3.7s   | xAI reasoning, solid for debugging sessions.           |
-| `grok-3-mini:free`                    | ★★★★☆       | 128K    | `Reasoning` | ~3.4s   | xAI reasoning, solid for debugging.                    |
-| `grok-3-mini-beta:free`               | ★★★★☆       | 128K    | `Reasoning` | ~3.4s   | Grok mini beta, good reasoning at decent speed.        |
-| `kimi-k2:free`                        | ★★★★☆       | 128K    | `General`   | ~1.5s   | Solid Kimi general model, dependable daily output.     |
-| `qwen-long:free`                      | ★★★★☆       | 128K    | `General`   | ~1.1s   | Long-context Qwen, reliable for extended sessions.     |
-| `qwen-long-2025-01-25:free`           | ★★★★☆       | 128K    | `General`   | ~1.2s   | Long-context Qwen, keeps multi-turn coherent.          |
-| `qwen-long-latest:free`               | ★★★★☆       | 128K    | `General`   | ~1.2s   | Latest Qwen long variant, fast and consistent.         |
-| `qwen-plus:free`                      | ★★★★☆       | 128K    | `General`   | ~1.3s   | Qwen general model, consistent for daily work.         |
-| `qwen-plus-2025-04-28:free`           | ★★★★☆       | 128K    | `General`   | ~1.1s   | Qwen plus snapshot, fast and reliable.                 |
-| `qwen-plus-latest:free`               | ★★★★☆       | 128K    | `General`   | ~1.3s   | Reliable Qwen, handles daily coding without surprises. |
-| `qwen-turbo:free`                     | ★★★★☆       | 128K    | `Fallback`  | ~1.0s   | Fast lightweight Qwen, good fallback.                  |
-| `qwen3-14b:free`                      | ★★★★☆       | 128K    | `General`   | ~2.0s   | Compact 14B Qwen, decent for light coding.             |
-| `qwen3-235b-a22b:free`                | ★★★★☆       | 256K    | `Reasoning` | ~5.6s   | 235B reasoning, capable but slow on Poixe.             |
+| Free Model                              | Star Rating | Context | Best For    | Latency | Opinion                                                |
+| :-------------------------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------- |
+| `gpt-oss-120b:free`                     | ★★★★★       | 128K    | `General`   | ~1.3s   | Reliable 120B, fast on Poixe with huge quota.          |
+| `kimi-k2-0711-preview:free`             | ★★★★★       | 128K    | `Reasoning` | ~1.7s   | 1T reasoning model at 1.7s with 10k daily calls.       |
+| `qwen3-235b-a22b-instruct-2507:free`    | ★★★★★       | 256K    | `Reasoning` | ~1.3s   | 235B reasoning at 256K, strong for multi-file work.    |
+| `qwen3-coder-480b-a35b-instruct:free`   | ★★★★★       | 256K    | `Code`      | ~1.2s   | 480B coder, best for architecture-level problems.      |
+| `doubao-1-5-lite-32k-250115:free`       | ★★★★☆       | 32K     | `Fallback`  | ~1.2s   | Lightweight Doubao, fast but 32K limits scope.         |
+| `doubao-1-5-pro-32k-250115:free`        | ★★★★☆       | 32K     | `General`   | ~4.5s   | Doubao pro, verbose but capable at 32K.                |
+| `doubao-1-5-vision-pro-32k-250115:free` | ★★★★☆       | 32K     | `Vision`    | -       | Doubao vision pro, multimodal at 32K context.          |
+| `doubao-seed-1-6-250615:free`           | ★★★★☆       | 128K    | `General`   | ~3.9s   | Doubao seed, solid generalist at moderate speed.       |
+| `doubao-seed-1-6-flash-250615:free`     | ★★★★☆       | 128K    | `General`   | ~1.2s   | Doubao flash, fast and clean for daily coding.         |
+| `gemini-2.5-flash:free`                 | ★★★★☆       | 1M      | `General`   | -       | Google's strong flash with 1M context on Poixe.        |
+| `gemini-2.5-flash-lite:free`            | ★★★★☆       | 1M      | `General`   | -       | Google's flash-lite, efficient for daily tasks.        |
+| `gemini-3-flash-preview:free`           | ★★★★☆       | 1M      | `General`   | -       | Gemini 3 preview, fast reasoning with 1M context.      |
+| `gpt-4.1-mini:free`                     | ★★★★☆       | 1M      | `General`   | ~1.7s   | Same 1M context mini, consistent for daily work.       |
+| `gpt-4.1-mini-2025-04-14:free`          | ★★★★☆       | 1M      | `General`   | ~1.6s   | OpenAI mini with 1M context, strong daily driver.      |
+| `gpt-4.1-nano:free`                     | ★★★★☆       | 1M      | `Code`      | ~1.7s   | Nano with 1M context, solid for quick edits.           |
+| `gpt-4.1-nano-2025-04-14:free`          | ★★★★☆       | 1M      | `Code`      | ~0.9s   | Fast nano with 1M context, great for scripting.        |
+| `gpt-4o-mini:free`                      | ★★★★☆       | 128K    | `General`   | ~1.8s   | Latest GPT-4o mini, efficient daily coding.            |
+| `gpt-4o-mini-2024-07-18:free`           | ★★★★☆       | 128K    | `General`   | ~2.2s   | Compact GPT-4o, steady fallback on big quota.          |
+| `gpt-oss-20b:free`                      | ★★★★☆       | 128K    | `Code`      | ~0.8s   | Lighter 120B at sub-second, great value.               |
+| `grok-3-mini:free`                      | ★★★★☆       | 128K    | `Reasoning` | ~3.4s   | xAI reasoning, solid for debugging.                    |
+| `grok-3-mini-beta:free`                 | ★★★★☆       | 128K    | `Reasoning` | ~3.4s   | Grok mini beta, good reasoning at decent speed.        |
+| `kimi-k2:free`                          | ★★★★☆       | 128K    | `General`   | ~1.5s   | Solid Kimi general model, dependable daily output.     |
+| `qwen-long-latest:free`                 | ★★★★☆       | 128K    | `General`   | ~1.2s   | Latest Qwen long variant, fast and consistent.         |
+| `qwen-plus-2025-04-28:free`             | ★★★★☆       | 128K    | `General`   | ~1.1s   | Qwen plus snapshot, fast and reliable.                 |
+| `qwen-plus-latest:free`                 | ★★★★☆       | 128K    | `General`   | ~1.3s   | Reliable Qwen, handles daily coding without surprises. |
+| `qwen-turbo:free`                       | ★★★★☆       | 128K    | `Fallback`  | ~1.0s   | Fast lightweight Qwen, good fallback.                  |
+| `qwen3-14b:free`                        | ★★★★☆       | 128K    | `General`   | ~2.0s   | Compact 14B Qwen, decent for light coding.             |
+| `qwen3-235b-a22b:free`                  | ★★★★☆       | 256K    | `Reasoning` | ~5.6s   | 235B reasoning, capable but slow on Poixe.             |
 ### [Poolside](https://poolside.ai)
 
 Poolside is a foundation model lab building purpose-built coding models from scratch. Their Laguna series — M.1 (225B-A23B Model) and XS.2 (33B-A3B Model) — are trained on 30T tokens exclusively for agentic software engineering with tool calling and 256K context. Both models are free while in preview — the same "use it while it lasts" uncertainty as any free provider. Poolside currently has 3 models verified.
