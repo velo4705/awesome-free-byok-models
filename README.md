@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 7, 2026** - All models tested live across 37 providers.
+> ⏰ **Last Verified: July 8, 2026** - All models tested live across 37 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -106,7 +106,7 @@ These tables break down notable free models from each provider's ecosystem, **ca
 
 ### [AION Labs](https://www.aionlabs.ai)
 
-AION Labs provides storytelling-optimized models through an OpenAI-compatible API. The free tier offers 20,000 tokens/day and 15 RPM with no credit card required — a solid option if you need a daily token allowance for lightweight coding and creative tasks. AION Labs currently has 3 models verified.
+AION Labs provides storytelling-optimized models through an OpenAI-compatible API. The free tier offers 20,000 tokens/day and 15 RPM with no credit card required — a solid option if you need a daily token allowance for lightweight coding and creative tasks. AION Labs currently has 5 models verified.
 
 🎁 **Free Tier Quota:** 15 RPM / 20,000 TPD
 
@@ -114,9 +114,11 @@ AION Labs provides storytelling-optimized models through an OpenAI-compatible AP
 
 | Free Model                       | Star Rating | Context | Best For   | Latency | Opinion                                                                   |
 | :------------------------------- | :---------- | :------ | :--------- | :------ | :------------------------------------------------------------------------ |
-| `aion-labs/aion-2.5`             | ★★★★★       | 128K    | `Code`     | ~2.5s   | Strong at coding, responds cleanly without rambling, good context window. |
-| `aion-labs/aion-2.0`             | ★★★★☆       | 128K    | `General`  | ~3.9s   | 2.0 variant, clean for daily coding but latency crept up.                 |
-| `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | 32K     | `Fallback` | ~1.0s   | Despite the small 32K window, still decent for light coding or chatting.  |
+| `aion-labs/aion-3.0`             | ★★★★★       | 128K    | `Code`     | ~2.2s   | Successor to 2.5, GLM-based collaborative system. Strong at coding.       |
+| `aion-labs/aion-2.5`             | ★★★★★       | 128K    | `Code`     | ~2.3s   | Strong at coding, responds cleanly without rambling, good context window. |
+| `aion-labs/aion-3.0-mini`        | ★★★★☆       | 128K    | `General`  | ~2.1s   | DeepSeek-based variant, collaborative generation at a fraction of cost.   |
+| `aion-labs/aion-2.0`             | ★★★★☆       | 128K    | `General`  | ~2.3s   | 2.0 variant, clean for daily coding at decent speed.                      |
+| `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | 32K     | `Fallback` | ~7.3s   | Despite the small 32K window, still decent for light coding or chatting.  |
 
 ### [Agnes AI](https://www.agnes-ai.com)
 
@@ -779,7 +781,7 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 
 ### [OpenCode Zen](https://opencode.ai/zen)
 
-OpenCode Zen is a curated set of AI models tested and optimized for coding agents by the OpenCode team. The free tier offers 5 models at zero cost through an OpenAI-compatible API — no credit card or billing required for free models.
+OpenCode Zen is a curated set of AI models tested and optimized for coding agents by the OpenCode team. The free tier offers 6 models at zero cost through an OpenAI-compatible API — no credit card or billing required for free models.
 
 🎁 **Free Tier Quota:** 30 RPM / 500 RPD / 1,000,000 TPD / Daily Limits
 
@@ -790,6 +792,7 @@ OpenCode Zen is a curated set of AI models tested and optimized for coding agent
 | `deepseek-v4-flash-free` | ★★★★★       | 128K    | `Code`        | ~1.8s   | Strongest here for coding, handles multi-turn smoothly.        |
 | `nemotron-3-ultra-free`  | ★★★★★       | 128K    | `Code Review` | ~1.6s   | Good for code review, pedantic and precise.                    |
 | `big-pickle`             | ★★★★☆       | 128K    | `Fallback`    | ~1.9s   | Strong versatile fallback, reliable for single-file scripting. |
+| `hy3-free`               | ★★★★☆       | 128K    | `General`     | ~3.7s   | Tencent's Hy3, solid generalist with decent reasoning.         |
 | `mimo-v2.5-free`         | ★★★★☆       | 128K    | `Code`        | ~1.8s   | Lightweight, best for small tasks where brief patches matter.  |
 | `north-mini-code-free`   | ★★★★☆       | 128K    | `Fallback`    | ~0.9s   | Micro-scale utility, good for inline autocomplete or regex.    |
 
