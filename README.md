@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 8, 2026** - All models tested live across 37 providers.
+> ⏰ **Last Verified: July 9, 2026** - All models tested live across 38 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -79,6 +79,7 @@ These tables break down notable free models from each provider's ecosystem, **ca
   <li><a href="#google-gemini">Google Gemini</a></li>
   <li><a href="#groq-api">Groq API</a></li>
   <li><a href="#helixmind">HelixMind</a></li>
+  <li><a href="#helyxai">HelyxAI</a></li>
   <li><a href="#hugging-face-inference-api">Hugging Face Inference API</a></li>
   <li><a href="#intern-ai">Intern AI</a></li>
   <li><a href="#kilo-code">Kilo Code</a></li>
@@ -369,6 +370,20 @@ HelixMind is a lightweight inference hub offering a small set of free models fro
 | `llama-4-scout`        | ★★★★☆       | 256K    | `General`   | ~2.8s   | Scout is slower but a solid backup when Maverick hits the limit.          |
 | `mistral-large-latest` | ★★★★☆       | 128K    | `General`   | ~1.5s   | Good reasoning, Fast but can take time for larger projects.               |
 
+### [HelyxAI](https://helyxai.space)
+
+HelyxAI is a unified API gateway providing access to proprietary and open-weight models through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with no credit card required — self-replenishing every 24 hours. HelyxAI currently has 5 models verified — 3 at ★★★★☆ or above.
+
+🎁 **Free Tier Quota:** 100,000 TPD / 1,000,000 Monthly Tokens
+
+🔗 **Base URL:** `https://helyxai.space/v1`
+
+| Free Model              | Star Rating | Context | Best For    | Latency | Opinion                                           |
+| :---------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------ |
+| `DeepSeek-V4-Flash`     | ★★★★★       | 1M      | `Reasoning` | ~1.7s   | Fast DeepSeek V4, strong reasoning at 1M context. |
+| `gemini-3.1-flash-lite` | ★★★★★       | 1M      | `General`   | ~0.8s   | Fastest here, Google's efficient lite model.      |
+| `gemma-4-31B-it`        | ★★★★☆       | 256K    | `General`   | ~1.4s   | Solid 31B, but shows thinking tokens in output.   |
+
 ### [Hugging Face Inference API](https://huggingface.co/inference-api)
 
 Hugging Face's free Inference API gives you access to thousands of community-hosted models with OpenAI-compatible endpoints. The free tier offers only $0.10/month in credits — barely enough for light experimentation, not sustained coding. The real strength is model diversity, but the tight quota keeps most models at ★★★★☆. Hugging Face currently has 97 models verified — 32 are ★★★★☆ or above.
@@ -439,19 +454,19 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 
 🔗 **Base URL:** `https://api.kilo.ai/api/gateway`
 
-| Free Model                                           | Star Rating | Context | Best For    | Latency | Opinion                                                                     |
-| :--------------------------------------------------- | :---------- | :------ | :---------- | :------ | :-------------------------------------------------------------------------- |
-| `kilo-auto/small`                                    | ★★★★★       | 128K    | `General`   | ~2.5s   | Auto-routes to the best model, no-brainer for quick work.                   |
-| `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★★       | 128K    | `General`   | ~2.0s   | 550B raw power, good for hard prompts. Overkill for simple queries.         |
-| `openrouter/owl-alpha`                               | ★★★★★       | 128K    | `Agent`     | ~2.7s   | Zero preamble, straight to the point. Good safe pick.                       |
-| `cohere/north-mini-code:free`                        | ★★★★☆       | 128K    | `Code`      | ~1.9s   | Compact coder, lightweight for rapid iteration. Good for quick scripting.   |
-| `kilo-auto/free`                                     | ★★★★☆       | 128K    | `Fallback`  | ~1.8s   | Fallback router, always lands on something functional. Keeps things moving. |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | 128K    | `Reasoning` | ~0.7s   | Fast reasoning, shows work step by step. A bit noisy for simple questions.  |
-| `nvidia/nemotron-3-super-120b-a12b:free`             | ★★★★☆       | 1M      | `General`   | ~7.2s   | 1M context at 7.2s, good for big projects but slow.                         |
-| `openrouter/free`                                    | ★★★★☆       | 128K    | `Fallback`  | ~1.2s   | Routes through OpenRouter's free pool, decent backup when others cap.       |
-| `poolside/laguna-m.1:free`                           | ★★★★☆       | 128K    | `Code`      | ~1.4s   | More headroom than XS, good for trickier edits and fast.                    |
-| `poolside/laguna-xs.2:free`                          | ★★★★☆       | 128K    | `Code`      | ~0.6s   | Finishes at a Fast response, perfect for inline edits.                      |
-| `stepfun/step-3.7-flash:free`                        | ★★★★☆       | 128K    | `General`   | ~1.1s   | Dependable and steady, good for everyday edits without surprises.           |
+| Free Model                               | Star Rating | Context | Best For   | Latency | Opinion                                                                     |
+| :--------------------------------------- | :---------- | :------ | :--------- | :------ | :-------------------------------------------------------------------------- |
+| `kilo-auto/small`                        | ★★★★★       | 128K    | `General`  | ~2.5s   | Auto-routes to the best model, no-brainer for quick work.                   |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | ★★★★★       | 128K    | `General`  | ~2.0s   | 550B raw power, good for hard prompts. Overkill for simple queries.         |
+| `cohere/north-mini-code:free`            | ★★★★☆       | 128K    | `Code`     | ~1.9s   | Compact coder, lightweight for rapid iteration. Good for quick scripting.   |
+| `kilo-auto/free`                         | ★★★★☆       | 128K    | `Fallback` | ~1.8s   | Fallback router, always lands on something functional. Keeps things moving. |
+| `nvidia/nemotron-3-super-120b-a12b:free` | ★★★★☆       | 1M      | `General`  | ~7.2s   | 1M context at 7.2s, good for big projects but slow.                         |
+| `openrouter/free`                        | ★★★★☆       | 128K    | `Fallback` | ~1.2s   | Routes through OpenRouter's free pool, decent backup when others cap.       |
+| `poolside/laguna-m.1:free`               | ★★★★☆       | 128K    | `Code`     | ~1.4s   | More headroom than XS, good for trickier edits and fast.                    |
+| `poolside/laguna-xs-2.1:free`            | ★★★★☆       | 128K    | `Code`     | -       | Newest Poolside XS, sharp and fast for agentic coding loops.                |
+| `poolside/laguna-xs.2:free`              | ★★★★☆       | 128K    | `Code`     | ~0.6s   | Finishes at a Fast response, perfect for inline edits.                      |
+| `stepfun/step-3.7-flash:free`            | ★★★★☆       | 128K    | `General`  | ~1.1s   | Dependable and steady, good for everyday edits without surprises.           |
+| `tencent/hy3:free`                       | ★★★★☆       | 128K    | `General`  | ~2.0s   | Tencent's Hy3, solid generalist with good reasoning.                        |
 
 ### [LLM7.IO](https://llm7.io)
 
@@ -781,7 +796,7 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 
 ### [OpenCode Zen](https://opencode.ai/zen)
 
-OpenCode Zen is a curated set of AI models tested and optimized for coding agents by the OpenCode team. The free tier offers 6 models at zero cost through an OpenAI-compatible API — no credit card or billing required for free models.
+OpenCode Zen is a curated set of AI models tested and optimized for coding agents by the OpenCode team. The free tier offers 6 models at zero cost through an OpenAI-compatible API — no credit card or billing required for free models. OpenCode Zen currently has 6 models verified.
 
 🎁 **Free Tier Quota:** 30 RPM / 500 RPD / 1,000,000 TPD / Daily Limits
 
