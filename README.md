@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 9, 2026** - All models tested live across 38 providers.
+> ⏰ **Last Verified: July 10, 2026** - All models tested live across 38 providers.
 
 Text‑generation APIs that are permanently free and self‑replenishing, stress‑tested for coding tools and versatile enough for everyday chat.
 
@@ -618,7 +618,7 @@ MegaNova AI is a community-model inference hub offering fine-tuned variants of L
 
 ### [Mistral AI](https://console.mistral.ai)
 
-Mistral AI is highly regarded for building models that punch far above their **parameter weight class**, with exceptionally clean instruction following and compact execution. The free tier offers replenishable credits with generous RPM limits. Mistral AI currently has 42 models verified (with aliases) — 24 are ★★★☆☆ or above.
+Mistral AI is highly regarded for building models that punch far above their **parameter weight class**, with exceptionally clean instruction following and compact execution. The free tier offers replenishable credits with generous RPM limits. Mistral AI currently has 40 models verified (with aliases) — 24 are ★★★☆☆ or above.
 
 🎁 **Free Tier Quota:** ~2–30 RPM / 50,000 TPM shared pool
 
@@ -901,9 +901,8 @@ Poolside is a foundation model lab building purpose-built coding models from scr
 
 | Free Model               | Star Rating | Context | Best For | Latency | Opinion                                                                    |
 | :----------------------- | :---------- | :------ | :------- | :------ | :------------------------------------------------------------------------- |
-| `poolside/laguna-m.1`    | ★★★★★       | 128K    | `Code`   | ~1.0s   | 225B model built from scratch for agentic code. Pure software engineering. |
+| `poolside/laguna-m.1`    | ★★★★★       | 128K    | `Code`   | ~1.5s   | 225B model built from scratch for agentic code. Pure software engineering. |
 | `poolside/laguna-xs-2.1` | ★★★★★       | 128K    | `Code`   | ~0.7s   | Newest XS variant, fast and sharp for agentic loops.                       |
-| `poolside/laguna-xs.2`   | ★★★★☆       | 128K    | `Code`   | ~1.0s   | Open-weight 33B, impressive depth for its size.                            |
 
 ### [SambaNova AI](https://cloud.sambanova.ai)
 
