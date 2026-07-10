@@ -69,7 +69,6 @@ These tables break down notable free models from each provider's ecosystem, **ca
   <li><a href="#agnes-ai">Agnes AI</a></li>
   <li><a href="#anyapi-ai">AnyAPI AI</a></li>
   <li><a href="#auriko">Auriko</a></li>
-  <li><a href="#blazeapi">BlazeAPI</a></li>
   <li><a href="#cerebras-ai">Cerebras AI</a></li>
   <li><a href="#cloudflare-workers-ai">Cloudflare Workers AI</a></li>
   <li><a href="#cohere-ai">Cohere AI</a></li>
@@ -101,6 +100,7 @@ These tables break down notable free models from each provider's ecosystem, **ca
   <li><a href="#routeway-ai">Routeway AI</a></li>
   <li><a href="#sambanova-ai">SambaNova AI</a></li>
   <li><a href="#tokenreply">TokenReply</a></li>
+  <li><a href="#unorouter">UnoRouter</a></li>
   <li><a href="#void-ai">Void AI</a></li>
   <li><a href="#zai-zhipu-ai">Z.AI (Zhipu AI)</a></li>
 </ul>
@@ -170,20 +170,6 @@ Auriko is a unified API gateway providing access to 100+ models from top provide
 | `glm-4.5-flash`  | ★★★★☆       | 128K    | `General` | ~2.8s   | Zhipu flash at 2.8s, reliable for general coding on the 1M token pool.   |
 | `glm-4.6v-flash` | ★★★★☆       | 128K    | `General` | ~3.0s   | Zhipu flash with vision support, fast for general coding.                |
 | `glm-4.7-flash`  | ★★★★☆       | 128K    | `General` | ~2.8s   | Latest Zhipu flash, snappy and consistent on the 1M token pool.          |
-
-### [BlazeAPI](https://blazeai.boxu.dev)
-
-BlazeAPI is a lightweight inference hub serving models from Moonshot and Z.AI through an OpenAI-compatible endpoint. The free tier provides 20 RPM with 1,000 requests per day — a solid quota for daily coding and occasional heavy queries. No credit card required. BlazeAPI currently has 2 models verified — 1 at ★★★★☆ or above.
-
-🎁 **Free Tier Quota:** 20 RPM / 1,000 RPD
-
-🔗 **Base URL:** `https://blazeai.boxu.dev/api`
-
-> ⚠️ **BlazeAPI may be shutting down soon.** Service continues working until full retirement.
-
-| Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                    |
-| :--------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------- |
-| `moonshotai/kimi-k2.6` | ★★★★☆       | 128K    | `Reasoning` | ~1.8s   | 1T model at sub-2s, solid reasoning for deep dives within the daily quota. |
 
 ### [Cerebras AI](https://cloud.cerebras.ai)
 
@@ -942,6 +928,49 @@ TokenReply is a lightweight inference hub offering models from Google, DeepSeek,
 | `nvidia/nemotron-3-ultra-550b-a55b` | ★★★★☆       | 128K    | `General`   | ~1.3s   | 550B at 1.3s, massive power for a critical prompt.                 |
 | `stepfun-ai/step-3.7-flash`         | ★★★★☆       | 128K    | `Agentic`   | ~1.8s   | Latest Stepfun flash, fast and sharp for agentic tasks.            |
 | `stepfun-ai/step-3.5-flash`         | ★★★☆☆       | 128K    | `Agentic`   | ~9.9s   | 11B active params but painfully slow at 10s. Use only if you must. |
+
+### [UnoRouter](https://unorouter.com)
+
+UnoRouter is a unified API gateway providing access to models from OpenAI, Google, Meta, Mistral, Qwen, DeepSeek, Cohere, NVIDIA, Poolside, and more through a single OpenAI-compatible endpoint. The free tier offers 1 request per minute per model with no credit card required — rate limits are per-model, so you can use different models in parallel. UnoRouter currently has 89 models verified — 32 at ★★★★☆ or above.
+
+🎁 **Free Tier Quota:** 1 RPM per unique model / Upstream rate limits apply
+
+🔗 **Base URL:** `https://api.unorouter.com/v1`
+
+| Free Model                                | Star Rating | Context | Best For    | Latency | Opinion                                                        |
+| ----------------------------------------- | ----------- | ------- | ----------- | ------- | -------------------------------------------------------------- |
+| `qwen3-coder-next:free`                   | ★★★★★       | 256K    | `Code`      | ~0.5s   | Fastest coder on UnoRouter, zero preamble, instant answers.    |
+| `mistral-large-3-675b-instruct-2512:free` | ★★★★★       | 128K    | `General`   | ~0.6s   | Mistral's 675B at sub-second, top general pick.                |
+| `qwen3-next-80b-a3b-instruct:free`        | ★★★★★       | 256K    | `Code`      | ~0.8s   | 80B Qwen at 256K, strong coder at good speed.                  |
+| `laguna-xs-2.1:free`                      | ★★★★★       | 128K    | `Code`      | ~0.8s   | Poolside's XS, fast and sharp for agentic coding loops.        |
+| `gpt-5-chat-latest:free`                  | ★★★★★       | 128K    | `General`   | ~0.9s   | Latest GPT chat, clean generation.                             |
+| `nemotron-3-ultra-550b-a55b:free`         | ★★★★★       | 128K    | `General`   | ~0.9s   | 550B raw power, massive reasoning for a critical prompt.       |
+| `gpt-5.2:free`                            | ★★★★★       | 128K    | `General`   | ~1.3s   | Clean GPT generation, reliable without preamble.               |
+| `gpt-5.4-mini:free`                       | ★★★★★       | 128K    | `General`   | ~1.3s   | Lighter 5.4, same clean output at lower cost.                  |
+| `gpt-5.1:free`                            | ★★★★★       | 128K    | `General`   | ~1.4s   | Strong generalist, balanced across the board.                  |
+| `gpt-5.4:free`                            | ★★★★★       | 128K    | `General`   | ~1.5s   | Latest GPT, clean and direct.                                  |
+| `cohere-command-a:free`                   | ★★★★★       | 128K    | `Agent`     | ~1.9s   | Cohere's flagship, strong agentic tool use.                    |
+| `deepseek-v4-flash:free`                  | ★★★★★       | 128K    | `Reasoning` | ~2.0s   | Fast DeepSeek reasoning, strong for complex logic.             |
+| `laguna-m.1:free`                         | ★★★★★       | 128K    | `Code`      | ~3.0s   | Poolside's 225B, pure software engineering muscle (slow here). |
+| `llama-3.3-nemotron-super-49b-v1:free`    | ★★★★☆       | 128K    | `General`   | ~0.6s   | Clean responses for daily coding.                              |
+| `mistral-small-4-119b-2603:free`          | ★★★★☆       | 32K     | `General`   | ~0.7s   | Fast Mistral, punchy with surprising depth.                    |
+| `dracarys-llama-3.1-70b-instruct:free`    | ★★★★☆       | 128K    | `Code`      | ~0.7s   | Coding fine-tune of Llama 3.1, focused for agentic workflows.  |
+| `qwen3.6-27b:free`                        | ★★★★☆       | 256K    | `Code`      | ~0.8s   | Fast 27B coder with 256K context.                              |
+| `gemini-2.5-flash-lite:free`              | ★★★★☆       | 1M      | `General`   | ~0.8s   | Google's flash-lite, efficient at 1M context.                  |
+| `llama-4-scout:free`                      | ★★★★☆       | 256K    | `General`   | ~0.8s   | Latest Llama 4, solid daily driver.                            |
+| `gemini-flash-lite-latest:free`           | ★★★★☆       | 1M      | `General`   | ~0.9s   | Fast bare-bones lite, good backup.                             |
+| `codestral-latest:free`                   | ★★★★☆       | 256K    | `Code`      | ~0.9s   | Mistral's code specialist, 256K at good speed.                 |
+| `llama-3.1-70b-instruct:free`             | ★★★★☆       | 128K    | `General`   | ~0.9s   | Reliable 70B, steady daily output.                             |
+| `deepseek-r1-distill-llama-70b:free`      | ★★★★☆       | 128K    | `Reasoning` | ~0.9s   | Reasoning chain, good for debugging complex logic.             |
+| `qwen-coder-plus:free`                    | ★★★★☆       | 256K    | `Code`      | ~0.9s   | Clean code output with solid instruction following.            |
+| `qwen-plus:free`                          | ★★★★☆       | 128K    | `General`   | ~1.1s   | Reliable Qwen, handles daily coding without surprises.         |
+| `qwen3-32b:free`                          | ★★★★☆       | 256K    | `Code`      | ~1.1s   | Solid 32B coder with 256K context.                             |
+| `phi-4:free`                              | ★★★★☆       | 128K    | `General`   | ~1.3s   | Compact Phi-4, punches above its size.                         |
+| `gpt-4.1-mini:free`                       | ★★★★☆       | 1M      | `General`   | ~1.4s   | Compact OpenAI with 1M context.                                |
+| `gpt-4.1-nano:free`                       | ★★★★☆       | 1M      | `Code`      | ~1.4s   | Fast nano with 1M context, snappy for quick scripting.         |
+| `gemini-2.5-flash:free`                   | ★★★★☆       | 1M      | `General`   | ~1.5s   | Google's strong flash with 1M context.                         |
+| `gpt-4.1:free`                            | ★★★★☆       | 1M      | `General`   | ~1.9s   | 1M context, good for big projects.                             |
+| `gpt-4o:free`                             | ★★★★☆       | 128K    | `General`   | ~1.9s   | Classic GPT-4o, balanced generalist.                           |
 
 ### [Void AI](https://voidai.app)
 
