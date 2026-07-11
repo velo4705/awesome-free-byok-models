@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 10, 2026** - All models tested live across 38 providers.
+> ⏰ **Last Verified: July 11, 2026** - All models tested live across 38 providers.
 
 Text‑generation LLM API models that are permanently free and self‑replenishing from their API providers, stress‑tested for coding and for everyday chat.
 
@@ -892,7 +892,7 @@ Poolside is a foundation model lab building purpose-built coding models from scr
 
 ### [SambaNova AI](https://cloud.sambanova.ai)
 
-SambaNova AI is a **hardware-driven inference provider** utilizing proprietary Reconfigurable Dataflow Units (RDUs) rather than standard GPUs, removing the traditional hardware-decode bottleneck for incredibly high throughput. The free tier is limited to 20 requests and 200k tokens per day — tight for sustained use. SambaNova AI currently has 3 models verified — all at ★★★★☆ or above.
+SambaNova AI is a **hardware-driven inference provider** utilizing proprietary Reconfigurable Dataflow Units (RDUs) rather than standard GPUs, removing the traditional hardware-decode bottleneck for incredibly high throughput. The free tier is limited to 20 requests and 200k tokens per day — tight for sustained use. SambaNova AI currently has 4 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 20 RPM / 20 RPD / 200,000 TPD
 
@@ -901,6 +901,7 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 | Free Model                    | Star Rating | Context | Best For  | Latency | Opinion                                                        |
 | :---------------------------- | :---------- | :------ | :-------- | :------ | :------------------------------------------------------------- |
 | `DeepSeek-V3.1`               | ★★★★☆       | 128K    | `Agent`   | ~1.0s   | Good reasoning at 1s but 20 RPD hurts, better quota elsewhere. |
+| `MiniMax-M2.7`                | ★★★★☆       | 128K    | `General` | ~1.7s   | A model with fast speed for General purposes.                  |
 | `gpt-oss-120b`                | ★★★★☆       | 128K    | `General` | ~0.9s   | Same reliable 120B, fast on RDUs. Best value on SambaNova now. |
 | `Meta-Llama-3.3-70B-Instruct` | ★★★★☆       | 128K    | `General` | ~2.0s   | The 70B, reads complex instructions and holds them together.   |
 
