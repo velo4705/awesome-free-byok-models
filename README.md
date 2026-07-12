@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 11, 2026** - All models tested live across 38 providers.
+> ⏰ **Last Verified: July 12, 2026** - All models tested live across 38 providers.
 
 Text‑generation LLM API models that are permanently free and self‑replenishing from their API providers, stress‑tested for coding and for everyday chat.
 
@@ -158,7 +158,7 @@ AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Ant
 
 ### [Auriko](https://www.auriko.ai)
 
-Auriko is a unified API gateway providing access to 100+ models from top providers through a single OpenAI-compatible endpoint. The free tier offers 1,000 Platform RPM and 500 BYOK RPM with a 1M token monthly cap — but most models run on a credit system ($1 usage), not truly free. Only 4 models are genuinely free and replenishable without credits. Auriko currently has 4 models verified — all at ★★★★☆ or above.
+Auriko is a unified API gateway providing access to 100+ models from top providers through a single OpenAI-compatible endpoint. The free tier offers 1,000 Platform RPM and 500 BYOK RPM with a 1M token monthly cap — but most models run on a credit system ($1 usage), not truly free. Only 3 models are genuinely free and replenishable without credits. Auriko currently has 3 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 500 RPM (BYOK) / 1,000 RPM (Platform) / 1,000,000 tokens/month (BYOK)
 
@@ -166,7 +166,6 @@ Auriko is a unified API gateway providing access to 100+ models from top provide
 
 | Free Model       | Star Rating | Context | Best For  | Latency | Opinion                                                                  |
 | :--------------- | :---------- | :------ | :-------- | :------ | :----------------------------------------------------------------------- |
-| `nex-n2-pro`     | ★★★★★       | 128K    | `Code`    | ~2.5s   | Good coder with reasoning. Reliable for daily work on 1M monthly tokens. |
 | `glm-4.5-flash`  | ★★★★☆       | 128K    | `General` | ~2.8s   | Zhipu flash at 2.8s, reliable for general coding on the 1M token pool.   |
 | `glm-4.6v-flash` | ★★★★☆       | 128K    | `General` | ~3.0s   | Zhipu flash with vision support, fast for general coding.                |
 | `glm-4.7-flash`  | ★★★★☆       | 128K    | `General` | ~2.8s   | Latest Zhipu flash, snappy and consistent on the 1M token pool.          |
@@ -440,19 +439,19 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 
 🔗 **Base URL:** `https://api.kilo.ai/api/gateway`
 
-| Free Model                               | Star Rating | Context | Best For   | Latency | Opinion                                                                     |
-| :--------------------------------------- | :---------- | :------ | :--------- | :------ | :-------------------------------------------------------------------------- |
-| `kilo-auto/small`                        | ★★★★★       | 128K    | `General`  | ~2.5s   | Auto-routes to the best model, no-brainer for quick work.                   |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | ★★★★★       | 128K    | `General`  | ~2.0s   | 550B raw power, good for hard prompts. Overkill for simple queries.         |
-| `cohere/north-mini-code:free`            | ★★★★☆       | 128K    | `Code`     | ~1.9s   | Compact coder, lightweight for rapid iteration. Good for quick scripting.   |
-| `kilo-auto/free`                         | ★★★★☆       | 128K    | `Fallback` | ~1.8s   | Fallback router, always lands on something functional. Keeps things moving. |
-| `nvidia/nemotron-3-super-120b-a12b:free` | ★★★★☆       | 1M      | `General`  | ~7.2s   | 1M context at 7.2s, good for big projects but slow.                         |
-| `openrouter/free`                        | ★★★★☆       | 128K    | `Fallback` | ~1.2s   | Routes through OpenRouter's free pool, decent backup when others cap.       |
-| `poolside/laguna-m.1:free`               | ★★★★☆       | 128K    | `Code`     | ~1.4s   | More headroom than XS, good for trickier edits and fast.                    |
-| `poolside/laguna-xs-2.1:free`            | ★★★★☆       | 128K    | `Code`     | -       | Newest Poolside XS, sharp and fast for agentic coding loops.                |
-| `poolside/laguna-xs.2:free`              | ★★★★☆       | 128K    | `Code`     | ~0.6s   | Finishes at a Fast response, perfect for inline edits.                      |
-| `stepfun/step-3.7-flash:free`            | ★★★★☆       | 128K    | `General`  | ~1.1s   | Dependable and steady, good for everyday edits without surprises.           |
-| `tencent/hy3:free`                       | ★★★★☆       | 128K    | `General`  | ~2.0s   | Tencent's Hy3, solid generalist with good reasoning.                        |
+| Free Model                                           | Star Rating | Context | Best For    | Latency | Opinion                                                                     |
+| :--------------------------------------------------- | :---------- | :------ | :---------- | :------ | :-------------------------------------------------------------------------- |
+| `kilo-auto/small`                                    | ★★★★★       | 128K    | `General`   | ~2.5s   | Auto-routes to the best model, no-brainer for quick work.                   |
+| `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★★       | 128K    | `General`   | ~2.0s   | 550B raw power, good for hard prompts. Overkill for simple queries.         |
+| `cohere/north-mini-code:free`                        | ★★★★☆       | 128K    | `Code`      | ~1.9s   | Compact coder, lightweight for rapid iteration. Good for quick scripting.   |
+| `kilo-auto/free`                                     | ★★★★☆       | 128K    | `Fallback`  | ~1.8s   | Fallback router, always lands on something functional. Keeps things moving. |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | 128K    | `Reasoning` | ~1.9s   | NVIDIA reasoning, shows CoT for deeper multi-step debugging.                |
+| `nvidia/nemotron-3-super-120b-a12b:free`             | ★★★★☆       | 1M      | `General`   | ~7.2s   | 1M context at 7.2s, good for big projects but slow.                         |
+| `openrouter/free`                                    | ★★★★☆       | 128K    | `Fallback`  | ~1.2s   | Routes through OpenRouter's free pool, decent backup when others cap.       |
+| `poolside/laguna-m.1:free`                           | ★★★★☆       | 128K    | `Code`      | ~1.4s   | More headroom than XS, good for trickier edits and fast.                    |
+| `poolside/laguna-xs-2.1:free`                        | ★★★★☆       | 128K    | `Code`      | -       | Newest Poolside XS, sharp and fast for agentic coding loops.                |
+| `stepfun/step-3.7-flash:free`                        | ★★★★☆       | 128K    | `General`   | ~1.1s   | Dependable and steady, good for everyday edits without surprises.           |
+| `tencent/hy3:free`                                   | ★★★★☆       | 128K    | `General`   | ~2.0s   | Tencent's Hy3, solid generalist with good reasoning.                        |
 
 ### [LLM7.IO](https://llm7.io)
 
@@ -462,10 +461,10 @@ LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp 
 
 🔗 **Base URL:** `https://api.llm7.io/v1`
 
-| Free Model             | Star Rating | Context | Best For | Latency | Opinion                                                           |
-| :--------------------- | :---------- | :------ | :------- | :------ | :---------------------------------------------------------------- |
-| `devstral-small-2:24b` | ★★★★★       | 128K    | `Code`   | ~2.9s   | 24B coder with clean output, handles multi-file without preamble. |
-| `codestral-latest`     | ★★★★☆       | 256K    | `Code`   | ~2.2s   | Strongest coding option here, 256K context and solid completions. |
+| Free Model         | Star Rating | Context | Best For  | Latency | Opinion                                                           |
+| :----------------- | :---------- | :------ | :-------- | :------ | :---------------------------------------------------------------- |
+| `codestral-latest` | ★★★★☆       | 256K    | `Code`    | ~2.2s   | Strongest coding option here, 256K context and solid completions. |
+| `minimax-m2.7`     | ★★★★☆       | 128K    | `General` | ~2.0s   | Updated MiniMax, solid generalist with decent reasoning.          |
 
 ### [LLMGateway](https://llmgateway.io)
 
@@ -799,7 +798,7 @@ OpenCode Zen is a curated set of AI models tested and optimized for coding agent
 
 ### [OpenRouter](https://openrouter.ai)
 
-OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 17 models verified — all at ★★★★☆ or above.
+OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 15 models verified — all at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 20 RPM / 50 RPD
 
@@ -807,12 +806,11 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 
 | Free Model                                           | Star Rating | Context | Best For    | Latency | Opinion                                                                   |
 | :--------------------------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------ |
-| `liquid/lfm-2.5-1.2b-instruct:free`                  | ★★★★★       | 32K     | `General`   | ~0.7s   | The smallest model that actually answers usefully, insane response times. |
 | `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★★       | 32K     | `Vision`    | ~1.3s   | Does text and vision in one call without the bloat.                       |
 | `openai/gpt-oss-20b:free`                            | ★★★★★       | 128K    | `Code`      | ~2.0s   | Same output as the 120B but lighter, the everyday driver.                 |
 | `cohere/north-mini-code:free`                        | ★★★★☆       | 128K    | `Code`      | ~2.1s   | Efficient coding model from Cohere, lightweight for rapid iteration.      |
+| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | 32K     | `General`   | -       | Lighter Gemma 4, efficient for coding without overthinking.               |
 | `google/gemma-4-31b-it:free`                         | ★★★★☆       | 32K     | `General`   | -       | Capable 31B Gemma, solid for coding and general tasks.                    |
-| `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | 32K     | `Reasoning` | ~4.0s   | Tiny 1.2B that thinks aloud, good for logic but verbose for quick edits.  |
 | `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | 128K    | `General`   | ~0.7s   | Efficient 30B model with a big window for coding.                         |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | 128K    | `Reasoning` | ~0.7s   | Shows work step by step, useful for verification but noisy.               |
 | `nvidia/nemotron-3-super-120b-a12b:free`             | ★★★★☆       | 1M      | `General`   | ~2.7s   | Strong 120B mid-range, steps in when the 30Bs need more headroom.         |
@@ -820,7 +818,6 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | 128K    | `Fallback`  | ~6.2s   | Reliable fallback that punches above its 9B weight.                       |
 | `poolside/laguna-m.1:free`                           | ★★★★☆       | 128K    | `Code`      | ~2.2s   | Built by devs for devs, inline completions that feel intuitive.           |
 | `poolside/laguna-xs-2.1:free`                        | ★★★★☆       | 128K    | `Code`      | -       | Newest Poolside XS, sharp and fast for agentic coding loops.              |
-| `poolside/laguna-xs.2:free`                          | ★★★★☆       | 128K    | `Code`      | ~1.1s   | Snappier than M.1, slightly less depth, good for fast suggestions.        |
 | `tencent/hy3:free`                                   | ★★★★☆       | 128K    | `General`   | -       | Tencent's Hy3, solid generalist with good reasoning.                      |
 
 ### [Routeway AI](https://routeway.ai)
@@ -934,7 +931,7 @@ TokenReply is a lightweight inference hub offering models from Google, DeepSeek,
 
 UnoRouter is a unified API gateway providing access to models from OpenAI, Google, Meta, Mistral, Qwen, DeepSeek, Cohere, NVIDIA, Poolside, and more through a single OpenAI-compatible endpoint. The free tier offers 1 request per minute per model with no credit card required — rate limits are per-model, so you can use different models in parallel. UnoRouter currently has 89 models verified — 32 at ★★★★☆ or above.
 
-🎁 **Free Tier Quota:** 1 RPM per unique model / Upstream rate limits apply
+🎁 **Free Tier Quota:** 1 RPM per grouped model / Upstream rate limits apply
 
 🔗 **Base URL:** `https://api.unorouter.com/v1`
 
