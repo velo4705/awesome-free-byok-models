@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 13, 2026** - All models tested live across 42 providers.
+> ⏰ **Last Verified: July 14, 2026** - All models tested live across 42 providers.
 
 Text‑generation LLM API models that are permanently free and self‑replenishing from their API providers, stress‑tested for coding and for everyday chat.
 
