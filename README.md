@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 15, 2026** - All models tested live across 42 providers.
+> ⏰ **Last Verified: July 16, 2026** - All models tested live across 42 providers.
 
 Text‑generation LLM API models that are permanently free and self‑replenishing from their API providers, stress‑tested for coding and for everyday chat.
 
@@ -253,6 +253,10 @@ Cloudflare Workers AI runs models on Cloudflare's global edge network using serv
 
 Cohere focuses on enterprise-grade NLP with their Command model family — built for RAG, tool use, and coding workflows. The free API tier offers replenishable credits with daily resets, and nearly every model delivers sub-second responses. Cohere AI currently has 11 models verified.
 
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
+
 🎁 **Free Tier Quota:** 20 RPM / 1,000 API calls per month
 
 🔗 **Base URL:** `https://api.cohere.com/v2`
@@ -358,6 +362,10 @@ GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and
 ### [Google Gemini](https://aistudio.google.com)
 
 Gemini offers large context windows on paper, but the free tier's **rate limits vary by model** — Flash-lite variants enjoy ~500 RPD, while standard models can be as low as 20 RPD. Use Gemini for quick, targeted tasks and single-file edits — not marathon sessions. Google Gemini currently has 10 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
 
 🎁 **Free Tier Quota:** 15–30 RPM / 1,500 RPD / 1M TPM / Uncapped TPD
 
@@ -549,7 +557,7 @@ LLM.Kiwi is a Cloudflare-edge inference provider offering an auto-routing endpoi
 
 ### [LLM7.IO](https://llm7.io)
 
-LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp server with OpenAI-compatible endpoints. The Turbo Tier (Free tier) offers replenishable credits with no daily hard cap — a solid option for consistent daily coding on a simple API without commitment. LLM7.IO currently has 2 models verified — all at Turbo Tier (Free tier).
+LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp server with OpenAI-compatible endpoints. The Turbo Tier (Free tier) offers replenishable credits with no daily hard cap — a solid option for consistent daily coding on a simple API without commitment. LLM7.IO currently has 1 model verified — all at Turbo Tier (Free tier).
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -561,8 +569,7 @@ LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp 
 
 | Free Model          | Star Rating  | Context  | Best For   | Latency  | Opinion                                                            |
 | :------------------ | :----------- | :------- | :--------- | :------- | :----------------------------------------------------------------- |
-| `codestral-latest`  | ★★★★☆        | 256K     | `Code`     | ~2.2s    | Strongest coding option here, 256K context and solid completions.  |
-| `gemma3:27b`        | ★★★★☆        | 32K      | `General`  | ~1.3s    | Google's 27B Gemma 3, fast at 1.3s on LLM7.IO.                     |
+| `codestral-latest`  | ★★★★☆        | 256K     | `Code`     | ~0.6s    | Fastest coding here, 256K context at sub-second on LLM7.IO.        |
 
 ### [LLMGateway](https://llmgateway.io)
 
@@ -584,7 +591,9 @@ LLMGateway is a lightweight inference hub serving models from Zhipu AI and more 
 
 LiteRouter is a lightweight inference hub offering free models from OpenAI, DeepSeek, Mistral, Meta, and more through an OpenAI-compatible endpoint with a `:free` suffix. The free tier provides uncapped daily requests with 1 concurrent request and 15,000 tokens per day — enough for light scripting and targeted queries. No credit card required. LiteRouter currently has 42 models verified — all at ★★★★☆ or above.
 
-🎁 **Free Tier Quota:** 1 Concurrent Request / 15,000 TPD / Uncapped RPD
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ❌      | ✅              | ⚠️              |
 
 🔗 **Base URL:** `https://api.literouter.com/v1`
 
@@ -692,6 +701,10 @@ MNN AI is a credit-based inference hub offering models from OpenAI, Google, Deep
 ### [MegaNova AI](https://meganova.ai)
 
 MegaNova AI is a community-model inference hub offering fine-tuned variants of Llama, Mistral, and its own Manta series through an OpenAI-compatible endpoint. The free tier provides 60 RPM with 550 requests per day and 200,000 tokens per minute — generous throughput for a community model hub. No credit card required. MegaNova AI currently has 7 models verified — all at ★★★★☆ or above.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
 
 🎁 **Free Tier Quota:** 60 RPM / 550 RPD / 200,000 TPM
 
@@ -876,7 +889,11 @@ NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta
 
 ### [Ollama Cloud](https://ollama.com)
 
-Ollama Cloud is a cloud-hosted inference service running Ollama behind the scenes, offering a vast model registry without the need to run locally. The free tier gives you a 5-hour session window that resets weekly — uncapped during that window but limited by the weekly refresh. Models respond cleanly and quickly, making it one of the stronger free providers for coding if you plan around the session. Ollama Cloud currently has 20 models verified — all at ★★★☆☆ or above.
+Ollama Cloud is a cloud-hosted inference service running Ollama behind the scenes, offering a vast model registry without the need to run locally. The free tier gives you a 5-hour session window that resets weekly — uncapped during that window but limited by the weekly refresh. Models respond cleanly and quickly, making it one of the stronger free providers for coding if you plan around the session. Ollama Cloud currently has 8 models verified — all at ★★★★☆ or above.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
 
 🎁 **Free Tier Quota:** 1 Instance / 5-Hour Session Usage / 7-day Weekly Usage
 
@@ -884,26 +901,14 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 
 | Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                  |
 | :--------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------------- |
-| `devstral-2:123b`      | ★★★★★       | 128K    | `Agent`     | ~1.0s   | Built for agent pipelines, structured tool-use without drift.            |
-| `devstral-small-2:24b` | ★★★★★       | 128K    | `Code`      | ~1.0s   | Lean and responsive, does 90% of what the 123B does.                     |
-| `gemma3:12b`           | ★★★★★       | 32K     | `General`   | ~0.9s   | Google's compact 12B, follows complex instructions cleanly.              |
-| `gemma3:27b`           | ★★★★★       | 32K     | `General`   | ~1.0s   | Same as 12B with more breathing room, the sweet spot.                    |
-| `gemma3:4b`            | ★★★★★       | 8K      | `General`   | ~1.0s   | Blink-and-you-miss-it, good for syntax checks.                           |
-| `gemma4:31b`           | ★★★★★       | 32K     | `General`   | ~0.8s   | Google's latest 31B, clean and punches above its weight.                 |
-| `glm-4.7`              | ★★★★★       | 128K    | `Reasoning` | ~4.9s   | Takes a beat but the extra thought shows, good when correctness matters. |
-| `gpt-oss:120b`         | ★★★★★       | 128K    | `General`   | ~1.2s   | Consistent across every provider, same quality everywhere.               |
-| `minimax-m2.5`         | ★★★★★       | 1M      | `General`   | ~3.2s   | Consistent output, doesnt make you second-guess.                         |
-| `minimax-m3`           | ★★★★★       | 1M      | `General`   | ~2.0s   | Most polished MiniMax yet, clean and dependable.                         |
-| `nemotron-3-nano:30b`  | ★★★★★       | 128K    | `Reasoning` | ~1.1s   | Fast and direct, answers without CoT fluff.                              |
-| `qwen3-coder:480b`     | ★★★★★       | 256K    | `Code`      | ~1.8s   | 480B of coding muscle, makes tough debugging feel like a chat.           |
-| `qwen3-coder-next`     | ★★★★★       | 256K    | `Code`      | ~0.8s   | Zero preamble, instant answers, reads logs to fix its own bugs.          |
-| `gpt-oss:20b`          | ★★★★☆       | 128K    | `Reasoning` | ~1.2s   | Smaller GPT-OSS, solid reasoning at fraction of the latency.             |
-| `nemotron-3-ultra`     | ★★★★☆       | 1M      | `Reasoning` | ~1.5s   | Largest Nemotron with 1M context, capable for complex reasoning.         |
-| `minimax-m2.1`         | ★★★☆☆       | 1M      | `General`   | ~1.2s   | Earlier MiniMax, clean but slower than m2.5.                             |
-| `ministral-3:14b`      | ★★★☆☆       | 128K    | `General`   | ~1.0s   | Nimble Mistral ministral, compact but responsive.                        |
-| `ministral-3:3b`       | ★★★☆☆       | 128K    | `General`   | ~2.3s   | Tiniest ministral, good for quick lookups and syntax validation.         |
-| `ministral-3:8b`       | ★★★☆☆       | 128K    | `General`   | ~2.3s   | 8B ministral, reliable for quick edits and syntax checks.                |
-| `nemotron-3-super`     | ★★★☆☆       | 1M      | `Reasoning` | ~1.3s   | Deep reasoning with 1M context, capable but youll wait for every answer. |
+| `gpt-oss:120b`         | ★★★★★       | 128K    | `General`   | ~1.3s   | Consistent across every provider, same quality everywhere.               |
+| `minimax-m2.5`         | ★★★★★       | 1M      | `General`   | ~1.1s   | Fast MiniMax with 1M context, clean output for daily coding.             |
+| `gemma4:31b`           | ★★★★☆       | 32K     | `General`   | ~3.8s   | Google's latest 31B, solid but slow at 3.8s on Ollama.                   |
+| `gpt-oss:20b`          | ★★★★☆       | 128K    | `Reasoning` | ~1.3s   | Smaller GPT-OSS, solid reasoning at fraction of the latency.             |
+| `minimax-m3`           | ★★★★☆       | 1M      | `General`   | ~3.9s   | Latest MiniMax, 1M context but moderate speed on Ollama.                 |
+| `nemotron-3-nano:30b`  | ★★★★☆       | 128K    | `Reasoning` | ~2.1s   | Efficient 30B reasoning, steady but slower than before.                  |
+| `nemotron-3-super`     | ★★★★☆       | 1M      | `Reasoning` | ~1.1s   | Fast reasoning with 1M context, strong value on Ollama.                  |
+| `nemotron-3-ultra`     | ★★★★☆       | 1M      | `Reasoning` | ~2.1s   | Largest Nemotron with 1M context, capable for complex reasoning.         |
 
 ### [OpenCode Zen](https://opencode.ai/zen)
 
@@ -971,6 +976,10 @@ Routeway is a unified API gateway offering free models through a `:free` model s
 ### [Poixe AI](https://poixe.com)
 
 Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 28 models verified — all at ★★★★☆ or above.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ⚠️     | ✅              | ⚠️              |
 
 🎁 **Free Tier Quota:** 10,000 RPD / 10,000,000 TPD
 
@@ -1063,7 +1072,7 @@ Speka AI is a credit-based inference hub offering competitive per-token pricing 
 
 ### [TokenReply](https://tokenreply.com)
 
-TokenReply is a lightweight inference hub offering models from Google, DeepSeek, OpenAI, Qwen, Moonshot, Stepfun, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 40 weekly model calls — a very tight cap suited for lightweight evaluation and occasional queries, not sustained coding. Free models only. No credit card required. TokenReply currently has 14 models verified — 13 at ★★★★☆ or above.
+TokenReply is a lightweight inference hub offering models from Google, DeepSeek, OpenAI, Qwen, Moonshot, Stepfun, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 40 weekly model calls — a very tight cap suited for lightweight evaluation and occasional queries, not sustained coding. Free models only. No credit card required. TokenReply currently has 12 models verified — 11 at ★★★★☆ or above.
 
 🎁 **Free Tier Quota:** 3 RPM / 40 Weekly Model Calls / Free Models Only
 
@@ -1072,14 +1081,12 @@ TokenReply is a lightweight inference hub offering models from Google, DeepSeek,
 | Free Model                          | Star Rating | Context | Best For    | Latency | Opinion                                                            |
 | :---------------------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------- |
 | `deepseek-v4-flash`                 | ★★★★★       | 128K    | `Reasoning` | ~1.8s   | Fast reasoning, best use of your 40 weekly calls on TokenReply.    |
-| `deepseek-v4-flash-free`            | ★★★★★       | 128K    | `Reasoning` | ~3.0s   | Free variant of V4 Flash, same quality without token cost.         |
-| `grok-4.3`                          | ★★★★★       | 128K    | `General`   | ~4.6s   | Latest xAI grok, strong generalist worth burning a weekly call on. |
-| `grok-4.3-high`                     | ★★★★★       | 128K    | `Reasoning` | ~3.2s   | Higher quality grok, sharper output for the tougher problems.      |
 | `openai/gpt-oss-120b`               | ★★★★★       | 128K    | `General`   | ~4.3s   | Same reliable 120B, use for the one critical prompt a week.        |
 | `glm-5`                             | ★★★★☆       | 128K    | `General`   | ~6.7s   | Latest Zhipu GLM, capable but slow at 6.7s on tight quota.         |
+| `glm-5.1`                           | ★★★★☆       | 128K    | `General`   | ~5.5s   | Updated GLM 5.1, smoother output at slightly better speed.         |
 | `google/gemma-3n-e2b-it`            | ★★★★☆       | 32K     | `General`   | ~0.8s   | Fast Gemma 3N, efficient sub-second for lightweight queries.       |
-| `google/gemma-4-31b-it`             | ★★★★☆       | 32K     | `General`   | ~2.9s   | Newer 31B Gemma, solid all-rounder at moderate speed.              |
-| `grok-4.3-medium`                   | ★★★★☆       | 128K    | `General`   | ~5.3s   | Medium grok variant, decent but slow for the tight budget.         |
+| `google/gemma-3n-e4b-it`            | ★★★★☆       | 32K     | `General`   | ~1.5s   | Larger Gemma 3N, more capable than e2b at moderate speed.          |
+| `google/gemma-4-26b-a4b-it`         | ★★★★☆       | 32K     | `General`   | ~2.3s   | Lighter Gemma 4, efficient for coding without overthinking.        |
 | `kimi-k2.6`                         | ★★★★☆       | 128K    | `Reasoning` | ~2.0s   | 1T reasoning model at 2s, complex logic fits your budget better.   |
 | `minimaxai/minimax-m2.7`            | ★★★★☆       | 1M      | `General`   | ~1.8s   | 230B MiniMax with 1M context, balanced for daily use.              |
 | `nvidia/nemotron-3-ultra-550b-a55b` | ★★★★☆       | 128K    | `General`   | ~1.3s   | 550B at 1.3s, massive power for a critical prompt.                 |
@@ -1149,6 +1156,10 @@ Yolo-Auto is a bare-metal inference provider running a single Qwen3.6-35B-A3B mo
 ### [Z.AI (Zhipu AI)](https://z.ai)
 
 Zhipu AI is a Chinese AI company developing the GLM family of foundation models. The free tier offers two flash-variant models with a concurrency limit of 1 request at a time and unlimited daily tokens — practical for lightweight scripting and quick edits, but the single-concurrent cap makes sustained coding sessions impractical. Z.AI currently has 2 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
 
 🎁 **Free Tier Quota:** 1 Concurrent Request / Uncapped TPD
 
