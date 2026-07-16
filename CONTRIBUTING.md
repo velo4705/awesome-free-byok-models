@@ -80,26 +80,12 @@ If a model is rate-limited, wait a day or two for its quota to refill. If it sti
 ### Per-Provider Table
 
 ```
-| Free Model | Star Rating | Context | Best For | Latency | Opinion |
-| :--- | :--- | :--- | :--- | :--- | :------ |
-| `model-id` | ★★★★★ | 128K | `Code` | `Fast` | One punchy sentence. |
+| Free Model | Context | Best For | Latency |
+| :--------- | :------ | :------- | :------ |
+| `model-id` | 128K    | `Code`   | `Fast`  |
 ```
 
 For the Context column, note the model's input/output context window.
-
-## Star Rating Guide
-
-Ratings evaluate how well a model handles real-world development demands — typing speed, instruction following, and project scope — balanced against the provider's quota, rate limits, and context window.
-
-| Rating | Meaning | When to Use It |
-| :----- | :------ | :------------- |
-| ★★★★★ | Excellent | Fast, accurate, follows instructions cleanly, enough context for medium-to-large projects. No major downsides. |
-| ★★★★☆ | Good | Solid performance with minor quirks — slightly slow, limited context, or occasional rambling. Reliable daily driver. |
-| ★★★☆☆ | Decent | Works but has clear trade-offs. Good as a fallback or for light tasks. Slow speed, small context, or tight quota hold it back. |
-| ★★☆☆☆ | Poor | Usable in a pinch but not recommended for regular coding. Frequent issues with speed, accuracy, or availability. |
-| ★☆☆☆☆ | Unacceptable | Fails our standards. Should not be listed. |
-
-Star ratings are **provider-specific**, not absolute — a model may earn ★★★★★ on one provider and ★★★☆☆ on another if quota or latency differs.
 
 ## Quality Standards
 

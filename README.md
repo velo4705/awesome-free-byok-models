@@ -10,8 +10,6 @@
   </a>
 </p>
 
-> ⏰ **Last Verified: July 16, 2026** - All models tested live across 42 providers.
-
 Text‑generation LLM API models that are permanently free and self‑replenishing from their API providers, stress‑tested for coding and for everyday chat.
 
 By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API keys into **coding tools**, **custom projects**, or **AI-powered apps** — no credit card required. Every model listed here is rated for coding capability, but most work just as well for general conversation.
@@ -60,7 +58,7 @@ The absolute best free models available right now, ranked by how well they handl
 
 ## Provider Showcases
 
-These tables break down notable free models from each provider's ecosystem, **capped at ★★★☆☆ or above for providers and ★★★★☆ or above for hubs**. Ratings are based on how well they handle real-world development demands — typing speed, instruction following, and large projects — evaluated against each provider's quota, rate limits, and context windows.
+Filtered for coding and general chat capability across all providers.
 
 <strong>Jump to a provider or hub:</strong>
 
@@ -121,13 +119,13 @@ AION Labs provides storytelling-optimized models through an OpenAI-compatible AP
 
 🔗 **Base URL:** `https://api.aionlabs.ai/v1`
 
-| Free Model                       | Star Rating | Context | Best For   | Latency | Opinion                                                                   |
-| :------------------------------- | :---------- | :------ | :--------- | :------ | :------------------------------------------------------------------------ |
-| `aion-labs/aion-3.0`             | ★★★★★       | 128K    | `Code`     | ~2.2s   | Successor to 2.5, GLM-based collaborative system. Strong at coding.       |
-| `aion-labs/aion-2.5`             | ★★★★★       | 128K    | `Code`     | ~2.3s   | Strong at coding, responds cleanly without rambling, good context window. |
-| `aion-labs/aion-3.0-mini`        | ★★★★☆       | 128K    | `General`  | ~2.1s   | DeepSeek-based variant, collaborative generation at a fraction of cost.   |
-| `aion-labs/aion-2.0`             | ★★★★☆       | 128K    | `General`  | ~2.3s   | 2.0 variant, clean for daily coding at decent speed.                      |
-| `aion-labs/aion-rp-llama-3.1-8b` | ★★★★☆       | 32K     | `Fallback` | ~7.3s   | Despite the small 32K window, still decent for light coding or chatting.  |
+| Free Model                       | Context | Best For   | Latency |
+| :------------------------------- | ------- | ---------- | ------- |
+| `aion-labs/aion-3.0`             | 128K    | `Code`     | ~2.2s   |
+| `aion-labs/aion-2.5`             | 128K    | `Code`     | ~2.3s   |
+| `aion-labs/aion-3.0-mini`        | 128K    | `General`  | ~2.1s   |
+| `aion-labs/aion-2.0`             | 128K    | `General`  | ~2.3s   |
+| `aion-labs/aion-rp-llama-3.1-8b` | 32K     | `Fallback` | ~7.3s   |
 
 ### [Agnes AI](https://www.agnes-ai.com)
 
@@ -141,14 +139,14 @@ Agnes AI offers flash-tier models with generous daily limits but slow inference 
 
 🔗 **Base URL:** `https://apihub.agnes-ai.com/v1`
 
-| Free Model        | Star Rating | Context | Best For   | Latency | Opinion                                  |
-| :---------------- | :---------- | :------ | :--------- | :------ | :--------------------------------------- |
-| `agnes-1.5-flash` | ★★★☆☆       | 32K     | `Fallback` | ~7.3s   | Slow, and is better for chatting.        |
-| `agnes-2.0-flash` | ★★★☆☆       | 32K     | `General`  | ~7.3s   | Slow, and is better than 1.5 in general. |
+| Free Model        | Context | Best For   | Latency |
+| :---------------- | ------- | ---------- | ------- |
+| `agnes-1.5-flash` | 32K     | `Fallback` | ~7.3s   |
+| `agnes-2.0-flash` | 32K     | `General`  | ~7.3s   |
 
 ### [AnyAPI AI](https://anyapi.ai)
 
-AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, Cohere, and more through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with access to free and basic models — no credit card required. AnyAPI currently has 11 models verified — all at ★★★★☆ or above.
+AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, Cohere, and more through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with access to free and basic models — no credit card required. AnyAPI currently has 11 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -158,23 +156,23 @@ AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Ant
 
 🔗 **Base URL:** `https://api.anyapi.ai/v1`
 
-| Free Model                                           | Star Rating | Context | Best For    | Latency | Opinion                                                                          |
-| :--------------------------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------------- |
-| `poolside/laguna-m.1:free`                           | ★★★★★       | 128K    | `Code`      | ~1.9s   | Fast, fit for medium-sized projects.                                             |
-| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | 32K     | `General`   | ~6.6s   | Slow, but is only good for simple projects.                                      |
-| `liquid/lfm-2.5-1.2b-instruct:free`                  | ★★★★☆       | 32K     | `General`   | ~1.1s   | While it is fast, it is only useful for chatting or light coding.                |
-| `liquid/lfm-2.5-1.2b-thinking:free`                  | ★★★★☆       | 32K     | `Reasoning` | ~3.7s   | The speed is noticeable, but it also adds reasoning. Great for simple projects.  |
-| `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | 128K    | `General`   | ~9.3s   | Slow, but having a big context window opens access to medium-scale projects.     |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | 128K    | `Reasoning` | ~8.8s   | Faster than Nano, but slower, this adds Reasoning to think better in coding.     |
-| `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★☆       | 128K    | `Reasoning` | ~9.1s   | 550B of raw reasoning, good for hard debugging but churns through the token cap. |
-| `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★☆       | 32K     | `Vision`    | ~8.9s   | Vision-capable Nano, handles code with screenshots but at a crawl.               |
-| `nvidia/nemotron-nano-9b-v2:free`                    | ★★★★☆       | 128K    | `Fallback`  | ~9.6s   | Slowest of them, but enough as a fallback with a reasonable context window.      |
-| `openrouter/fusion`                                  | ★★★★☆       | 128K    | `General`   | ~5.9s   | OpenRouter's own fusion model, a decent mid-range all-rounder.                   |
-| `poolside/laguna-xs.2:free`                          | ★★★★☆       | 128K    | `Code`      | ~1.6s   | Very fast model suitable for normal projects of this size.                       |
+| Free Model                                           | Context | Best For    | Latency |
+| :--------------------------------------------------- | ------- | ----------- | ------- |
+| `poolside/laguna-m.1:free`                           | 128K    | `Code`      | ~1.9s   |
+| `google/gemma-4-26b-a4b-it:free`                     | 32K     | `General`   | ~6.6s   |
+| `liquid/lfm-2.5-1.2b-instruct:free`                  | 32K     | `General`   | ~1.1s   |
+| `liquid/lfm-2.5-1.2b-thinking:free`                  | 32K     | `Reasoning` | ~3.7s   |
+| `nvidia/nemotron-3-nano-30b-a3b:free`                | 128K    | `General`   | ~9.3s   |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | 128K    | `Reasoning` | ~8.8s   |
+| `nvidia/nemotron-3-ultra-550b-a55b:free`             | 128K    | `Reasoning` | ~9.1s   |
+| `nvidia/nemotron-nano-12b-v2-vl:free`                | 32K     | `Vision`    | ~8.9s   |
+| `nvidia/nemotron-nano-9b-v2:free`                    | 128K    | `Fallback`  | ~9.6s   |
+| `openrouter/fusion`                                  | 128K    | `General`   | ~5.9s   |
+| `poolside/laguna-xs.2:free`                          | 128K    | `Code`      | ~1.6s   |
 
 ### [Auriko](https://www.auriko.ai)
 
-Auriko is a unified API gateway providing access to 100+ models from top providers through a single OpenAI-compatible endpoint. The free tier offers 1,000 Platform RPM and 500 BYOK RPM with a 1M token monthly cap — but most models run on a credit system ($1 usage), not truly free. Only 3 models are genuinely free and replenishable without credits. Auriko currently has 3 models verified — all at ★★★★☆ or above.
+Auriko is a unified API gateway providing access to 100+ models from top providers through a single OpenAI-compatible endpoint. The free tier offers 1,000 Platform RPM and 500 BYOK RPM with a 1M token monthly cap — but most models run on a credit system ($1 usage), not truly free. Only 3 models are genuinely free and replenishable without credits. Auriko currently has 3 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -184,11 +182,11 @@ Auriko is a unified API gateway providing access to 100+ models from top provide
 
 🔗 **Base URL:** `https://api.auriko.ai/v1`
 
-| Free Model       | Star Rating | Context | Best For  | Latency | Opinion                                                                  |
-| :--------------- | :---------- | :------ | :-------- | :------ | :----------------------------------------------------------------------- |
-| `glm-4.5-flash`  | ★★★★☆       | 128K    | `General` | ~2.8s   | Zhipu flash at 2.8s, reliable for general coding on the 1M token pool.   |
-| `glm-4.6v-flash` | ★★★★☆       | 128K    | `General` | ~3.0s   | Zhipu flash with vision support, fast for general coding.                |
-| `glm-4.7-flash`  | ★★★★☆       | 128K    | `General` | ~2.8s   | Latest Zhipu flash, snappy and consistent on the 1M token pool.          |
+| Free Model       | Context | Best For  | Latency |
+| :--------------- | ------- | --------- | ------- |
+| `glm-4.5-flash`  | 128K    | `General` | ~2.8s   |
+| `glm-4.6v-flash` | 128K    | `General` | ~3.0s   |
+| `glm-4.7-flash`  | 128K    | `General` | ~2.8s   |
 
 ### [Cerebras AI](https://cloud.cerebras.ai)
 
@@ -202,15 +200,15 @@ Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, integrati
 
 🔗 **Base URL:** `https://api.cerebras.ai/v1`
 
-| Free Model     | Star Rating | Context | Best For  | Latency | Opinion                                                     |
-| :------------- | :---------- | :------ | :-------- | :------ | :---------------------------------------------------------- |
-| `gpt-oss-120b` | ★★★★★       | 128K    | `General` | ~0.5s   | Sub-second on Cerebras. Same 120B you know, just fast.      |
-| `zai-glm-4.7`  | ★★★★★       | 128K    | `Agent`   | ~0.5s   | Also fast. Optimized for quick agentic coding loops.        |
-| `gemma-4-31b`  | ★★★★☆       | 32K     | `General` | ~0.5s   | Capable 31B model, fast inference keeps coding loops tight. |
+| Free Model     | Context | Best For  | Latency |
+| :------------- | ------- | --------- | ------- |
+| `gpt-oss-120b` | 128K    | `General` | ~0.5s   |
+| `zai-glm-4.7`  | 128K    | `Agent`   | ~0.5s   |
+| `gemma-4-31b`  | 32K     | `General` | ~0.5s   |
 
 ### [Cloudflare Workers AI](https://dash.cloudflare.com)
 
-Cloudflare Workers AI runs models on Cloudflare's global edge network using serverless GPUs. The free tier offers 10,000 requests/day shared across all models with near-zero latency from edge locations worldwide. Cloudflare Workers AI currently has 24 models verified — all at ★★★☆☆ or above.
+Cloudflare Workers AI runs models on Cloudflare's global edge network using serverless GPUs. The free tier offers 10,000 requests/day shared across all models with near-zero latency from edge locations worldwide. Cloudflare Workers AI currently has 24 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -222,32 +220,32 @@ Cloudflare Workers AI runs models on Cloudflare's global edge network using serv
 
 > ⚠️ **Two API paths:** The `/chat/completions` endpoint takes standard `"messages"` (OpenAI-compatible). The legacy `/run/{model}` endpoint uses `"prompt"` instead — make sure your tool targets the right one.
 
-| Free Model                                     | Star Rating | Context | Best For    | Latency | Opinion                                                                            |
-| :--------------------------------------------- | :---------- | :------ | :---------- | :------ | :--------------------------------------------------------------------------------- |
-| `@cf/qwen/qwen2.5-coder-32b-instruct`          | ★★★★★       | 128K    | `Code`      | ~0.7s   | Fast edge coder. Clean output at sub-second speed without the preamble.            |
-| `@cf/aisingapore/gemma-sea-lion-v4-27b-it`     | ★★★★☆       | 32K     | `General`   | ~0.5s   | Surprisingly good multilingual model for its size. Fast from the edge.             |
-| `@cf/google/gemma-2b-it-lora`                  | ★★★☆☆       | 8K      | `Fallback`  | ~0.5s   | 2B with LoRA, barely useful beyond syntax checks. Skip unless desperate.           |
-| `@cf/google/gemma-4-26b-a4b-it`                | ★★★★☆       | 32K     | `General`   | ~0.5s   | Quick and thoughtful. Doesnt waste tokens with fluff.                              |
-| `@cf/meta/llama-3.2-1b-instruct`               | ★★★★☆       | 128K    | `Fallback`  | ~0.6s   | Tiny but passes verification. Use when every resource counts.                      |
-| `@cf/meta/llama-3.2-3b-instruct`               | ★★★★☆       | 128K    | `Fallback`  | ~0.5s   | Sanity-checks your syntax instantly. Returns before you finish typing.             |
-| `@cf/meta/llama-3.3-70b-instruct-fp8-fast`     | ★★★★☆       | 128K    | `Reasoning` | ~0.9s   | Meta's 70B at edge speed. Good depth for reasoning without lag.                    |
-| `@cf/meta/llama-4-scout-17b-16e-instruct`      | ★★★★☆       | 256K    | `General`   | ~0.6s   | 256K context at blazing speed. Direct answers without overhead.                    |
-| `@cf/moonshotai/kimi-k2.6`                     | ★★★★☆       | 128K    | `Reasoning` | ~1.0s   | 1T model for reasoning at edge speed. Good for agentic tool use.                   |
-| `@cf/mistral/mistral-7b-instruct-v0.2-lora`    | ★★★☆☆       | 8K      | `Fallback`  | ~0.7s   | Mistral v0.2 with LoRA, older but still handles simple tasks acceptably.           |
-| `@cf/moonshotai/kimi-k2.7-code`                | ★★★★☆       | 128K    | `Reasoning` | ~0.9s   | Reads your whole codebase. Project-wide refactors made fast.                       |
-| `@cf/nvidia/nemotron-3-120b-a12b`              | ★★★★☆       | 128K    | `Reasoning` | ~0.7s   | Keeps reasoning until it finds something useful. Depth over speed.                 |
-| `@cf/openai/gpt-oss-120b`                      | ★★★★☆       | 128K    | `Code`      | ~0.7s   | 120B headroom on the edge. Smaller models tap out, this keeps digging.             |
-| `@cf/openai/gpt-oss-20b`                       | ★★★★☆       | 128K    | `General`   | ~0.6s   | Guilt-free daily driver. Handles most tasks without complaint.                     |
-| `@cf/qwen/qwen3-30b-a3b-fp8`                   | ★★★★☆       | 256K    | `General`   | ~0.9s   | Feels like a full-size model despite small active params. 256K context too.        |
-| `@cf/zai-org/glm-4.7-flash`                    | ★★★★☆       | 128K    | `Agent`     | ~0.5s   | Snappy under heavy use. Returns before you notice the lag.                         |
-| `@cf/zai-org/glm-5.2`                          | ★★★★☆       | 128K    | `General`   | ~0.8s   | Latest GLM. Clean edge responses with consistent generation.                       |
-| `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b` | ★★★☆☆       | 128K    | `Reasoning` | ~0.7s   | Shows its thinking, helpful for debugging. Annoying when you just want the answer. |
-| `@cf/google/gemma-7b-it-lora`                  | ★★★☆☆       | 8K      | `General`   | ~1.1s   | Feels dated next to Gemma 4. More verbose about everything.                        |
-| `@cf/ibm-granite/granite-4.0-h-micro`          | ★★★☆☆       | 128K    | `General`   | ~0.9s   | Only worth it if you specifically need IBM Granite. Otherwise skip.                |
-| `@cf/meta/llama-3.1-8b-instruct-fp8`           | ★★★☆☆       | 128K    | `General`   | ~0.9s   | Gets the job done but wraps answers in unnecessary preamble.                       |
-| `@cf/meta/llama-3.2-11b-vision-instruct`       | ★★★☆☆       | 128K    | `Vision`    | ~0.9s   | Multimodal but verbose. Overkill if you're just coding.                            |
-| `@cf/mistralai/mistral-small-3.1-24b-instruct` | ★★★☆☆       | 32K     | `General`   | ~0.8s   | Fine for chatting but feels slow in tight coding loops.                            |
-| `@cf/qwen/qwq-32b`                             | ★★★☆☆       | 128K    | `Reasoning` | ~0.8s   | Good at logic puzzles. CoT preamble makes you wait for the answer.                 |
+| Free Model                                     | Context | Best For    | Latency |
+| :--------------------------------------------- | ------- | ----------- | ------- |
+| `@cf/qwen/qwen2.5-coder-32b-instruct`          | 128K    | `Code`      | ~0.7s   |
+| `@cf/aisingapore/gemma-sea-lion-v4-27b-it`     | 32K     | `General`   | ~0.5s   |
+| `@cf/google/gemma-2b-it-lora`                  | 8K      | `Fallback`  | ~0.5s   |
+| `@cf/google/gemma-4-26b-a4b-it`                | 32K     | `General`   | ~0.5s   |
+| `@cf/meta/llama-3.2-1b-instruct`               | 128K    | `Fallback`  | ~0.6s   |
+| `@cf/meta/llama-3.2-3b-instruct`               | 128K    | `Fallback`  | ~0.5s   |
+| `@cf/meta/llama-3.3-70b-instruct-fp8-fast`     | 128K    | `Reasoning` | ~0.9s   |
+| `@cf/meta/llama-4-scout-17b-16e-instruct`      | 256K    | `General`   | ~0.6s   |
+| `@cf/moonshotai/kimi-k2.6`                     | 128K    | `Reasoning` | ~1.0s   |
+| `@cf/mistral/mistral-7b-instruct-v0.2-lora`    | 8K      | `Fallback`  | ~0.7s   |
+| `@cf/moonshotai/kimi-k2.7-code`                | 128K    | `Reasoning` | ~0.9s   |
+| `@cf/nvidia/nemotron-3-120b-a12b`              | 128K    | `Reasoning` | ~0.7s   |
+| `@cf/openai/gpt-oss-120b`                      | 128K    | `Code`      | ~0.7s   |
+| `@cf/openai/gpt-oss-20b`                       | 128K    | `General`   | ~0.6s   |
+| `@cf/qwen/qwen3-30b-a3b-fp8`                   | 256K    | `General`   | ~0.9s   |
+| `@cf/zai-org/glm-4.7-flash`                    | 128K    | `Agent`     | ~0.5s   |
+| `@cf/zai-org/glm-5.2`                          | 128K    | `General`   | ~0.8s   |
+| `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b` | 128K    | `Reasoning` | ~0.7s   |
+| `@cf/google/gemma-7b-it-lora`                  | 8K      | `General`   | ~1.1s   |
+| `@cf/ibm-granite/granite-4.0-h-micro`          | 128K    | `General`   | ~0.9s   |
+| `@cf/meta/llama-3.1-8b-instruct-fp8`           | 128K    | `General`   | ~0.9s   |
+| `@cf/meta/llama-3.2-11b-vision-instruct`       | 128K    | `Vision`    | ~0.9s   |
+| `@cf/mistralai/mistral-small-3.1-24b-instruct` | 32K     | `General`   | ~0.8s   |
+| `@cf/qwen/qwq-32b`                             | 128K    | `Reasoning` | ~0.8s   |
 
 ### [Cohere AI](https://dashboard.cohere.com)
 
@@ -261,49 +259,49 @@ Cohere focuses on enterprise-grade NLP with their Command model family — built
 
 🔗 **Base URL:** `https://api.cohere.com/v2`
 
-| Free Model                    | Star Rating | Context | Best For    | Latency | Opinion                                                                   |
-| :---------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------ |
-| `command-a-03-2025`           | ★★★★★       | 128K    | `Agent`     | ~0.5s   | Sub-second and direct. Good for agentic tool-use pipelines.               |
-| `c4ai-aya-vision-32b`         | ★★★★☆       | 128K    | `Vision`    | ~0.6s   | 32B vision-language. Handles code and visual together for UI workflows.   |
-| `command-a-plus-05-2026`      | ★★★★☆       | 128K    | `Agent`     | ~0.5s   | Latest Command A. Polished agentic performance at the same fast speed.    |
-| `command-a-vision-07-2025`    | ★★★★☆       | 128K    | `Vision`    | ~0.5s   | Vision variant. Process screenshots with code at sub-second speed.        |
-| `command-r-08-2024`           | ★★★★☆       | 128K    | `General`   | ~0.5s   | Fast general model. Handles scripting and terminal commands without fuss. |
-| `command-r-plus-08-2024`      | ★★★★☆       | 128K    | `Reasoning` | ~0.6s   | Good reasoning engine. Reliable for multi-step logic.                     |
-| `command-r7b-12-2024`         | ★★★★☆       | 128K    | `Code`      | ~0.5s   | Compact 7B. Rapid-fire completions with minimal overhead.                 |
-| `command-r7b-arabic-02-2025`  | ★★★★☆       | 128K    | `General`   | ~0.5s   | Arabic-optimized. Clean responses for Arabic technical docs.              |
-| `c4ai-aya-expanse-32b`        | ★★★☆☆       | 128K    | `General`   | ~0.7s   | Multilingual but over-answers. Skip if you can.                           |
-| `command-a-reasoning-08-2025` | ★★★☆☆       | 128K    | `Reasoning` | ~0.6s   | Reasoning-focused. Minimal output suits internal CoT.                     |
-| `command-a-translate-08-2025` | ★★★☆☆       | 128K    | `Fallback`  | ~0.6s   | Translation model. Works for code but not its primary use case.           |
+| Free Model                    | Context | Best For    | Latency |
+| :---------------------------- | ------- | ----------- | ------- |
+| `command-a-03-2025`           | 128K    | `Agent`     | ~0.5s   |
+| `c4ai-aya-vision-32b`         | 128K    | `Vision`    | ~0.6s   |
+| `command-a-plus-05-2026`      | 128K    | `Agent`     | ~0.5s   |
+| `command-a-vision-07-2025`    | 128K    | `Vision`    | ~0.5s   |
+| `command-r-08-2024`           | 128K    | `General`   | ~0.5s   |
+| `command-r-plus-08-2024`      | 128K    | `Reasoning` | ~0.6s   |
+| `command-r7b-12-2024`         | 128K    | `Code`      | ~0.5s   |
+| `command-r7b-arabic-02-2025`  | 128K    | `General`   | ~0.5s   |
+| `c4ai-aya-expanse-32b`        | 128K    | `General`   | ~0.7s   |
+| `command-a-reasoning-08-2025` | 128K    | `Reasoning` | ~0.6s   |
+| `command-a-translate-08-2025` | 128K    | `Fallback`  | ~0.6s   |
 
 ### [ElectronHub](https://electronhub.ai)
 
-ElectronHub is a credit-based inference hub offering an enormous catalog of models from OpenAI, Google, Meta, Mistral, Cohere, DeepSeek, Qwen, Microsoft, and more through an OpenAI-compatible endpoint. The free tier provides 5 RPM with $0.25 in weekly credits — replenishes every week, but the dollar cap limits heavy usage. Best for targeted queries and efficient coding. No credit card required. ElectronHub currently has roughly 55 verified coding-relevant models — all at ★★★★☆ or above.
+ElectronHub is a credit-based inference hub offering an enormous catalog of models from OpenAI, Google, Meta, Mistral, Cohere, DeepSeek, Qwen, Microsoft, and more through an OpenAI-compatible endpoint. The free tier provides 5 RPM with $0.25 in weekly credits — replenishes every week, but the dollar cap limits heavy usage. Best for targeted queries and efficient coding. No credit card required. ElectronHub currently has roughly 55 verified coding-relevant models
 
 🎁 **Free Tier Quota:** 5 RPM / $0.25 Weekly Credits
 
 🔗 **Base URL:** `https://api.electronhub.ai/v1`
 
-| Free Model                           | Star Rating | Context | Best For    | Latency | Opinion                                                                               |
-| :----------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------------------ |
-| `gpt-oss-120b`                       | ★★★★★       | 128K    | `General`   | ~3.4s   | Fast enough, good for coding. Consistent across providers.                            |
-| `codestral-latest`                   | ★★★★☆       | 256K    | `Code`      | ~3.2s   | Having 256K context opens the door to larger projects. Good for coding.               |
-| `gemini-2.5-flash`                   | ★★★★☆       | 1M      | `General`   | ~1.5s   | Fast and has 1M context. Actually really good for the price here.                     |
-| `gpt-4.1`                            | ★★★★☆       | 1M      | `General`   | ~2.5s   | Also having 1M context but slower. Good for big projects that need the extra context. |
-| `gpt-4o`                             | ★★★★☆       | 128K    | `General`   | ~3.4s   | The standard option, fast enough for most daily tasks.                                |
-| `gpt-5.1-codex-mini`                 | ★★★★☆       | 128K    | `Code`      | ~1.8s   | Fast and good for small scripts. Fits the credit limit well.                          |
-| `gpt-oss-20b`                        | ★★★★☆       | 128K    | `Code`      | ~2.0s   | Lighter, faster, and enough for standard coding without eating credits.               |
-| `llama-3.3-70b-instruct`             | ★★★★☆       | 128K    | `General`   | ~2.3s   | Fast and reliable, no surprises. A solid mid-range option.                            |
-| `mistral-large-3-675b-instruct-2512` | ★★★★☆       | 128K    | `General`   | ~3.2s   | Strong model, but the budget cap makes it tricky to use for big projects.             |
-| `mistral-large-latest`               | ★★★★☆       | 128K    | `General`   | ~3.2s   | Good reasoning without being too heavy. Standard Mistral quality.                     |
-| `nemotron-3-ultra-550b-a55b`         | ★★★★☆       | 128K    | `General`   | ~3.2s   | Big model with good reasoning, but heavy on the credit system so use it sparingly.    |
-| `o3-mini`                            | ★★★★☆       | 200K    | `Reasoning` | ~3.8s   | Great for debugging, 200K context helps, but its slower.                              |
-| `phi-4`                              | ★★★★☆       | 128K    | `General`   | ~3.2s   | Small model that still works well. Good as a fallback.                                |
-| `qwen-2.5-coder-32b-instruct`        | ★★★★☆       | 128K    | `Code`      | ~3.2s   | Good coding model for medium projects. Fits the budget.                               |
-| `step-3.5-flash`                     | ★★★★☆       | 128K    | `Agentic`   | ~3.2s   | Punching above its weight at 11B active.                                              |
+| Free Model                           | Context | Best For    | Latency |
+| :----------------------------------- | ------- | ----------- | ------- |
+| `gpt-oss-120b`                       | 128K    | `General`   | ~3.4s   |
+| `codestral-latest`                   | 256K    | `Code`      | ~3.2s   |
+| `gemini-2.5-flash`                   | 1M      | `General`   | ~1.5s   |
+| `gpt-4.1`                            | 1M      | `General`   | ~2.5s   |
+| `gpt-4o`                             | 128K    | `General`   | ~3.4s   |
+| `gpt-5.1-codex-mini`                 | 128K    | `Code`      | ~1.8s   |
+| `gpt-oss-20b`                        | 128K    | `Code`      | ~2.0s   |
+| `llama-3.3-70b-instruct`             | 128K    | `General`   | ~2.3s   |
+| `mistral-large-3-675b-instruct-2512` | 128K    | `General`   | ~3.2s   |
+| `mistral-large-latest`               | 128K    | `General`   | ~3.2s   |
+| `nemotron-3-ultra-550b-a55b`         | 128K    | `General`   | ~3.2s   |
+| `o3-mini`                            | 200K    | `Reasoning` | ~3.8s   |
+| `phi-4`                              | 128K    | `General`   | ~3.2s   |
+| `qwen-2.5-coder-32b-instruct`        | 128K    | `Code`      | ~3.2s   |
+| `step-3.5-flash`                     | 128K    | `Agentic`   | ~3.2s   |
 
 ### [FastRouter](https://fastrouter.ai)
 
-FastRouter is a lightweight inference hub offering Sarvam AI models with a `:free` suffix through an OpenAI-compatible endpoint. The free tier provides 10 requests per day per model with no billing credits required — a tight cap suited for occasional queries and model evaluation. No credit card required. FastRouter currently has 2 models verified — all at ★★★★☆ or above.
+FastRouter is a lightweight inference hub offering Sarvam AI models with a `:free` suffix through an OpenAI-compatible endpoint. The free tier provides 10 requests per day per model with no billing credits required — a tight cap suited for occasional queries and model evaluation. No credit card required. FastRouter currently has 2 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -313,14 +311,14 @@ FastRouter is a lightweight inference hub offering Sarvam AI models with a `:fre
 
 🔗 **Base URL:** `https://api.fastrouter.ai/api/v1`
 
-| Free Model                | Star Rating | Context | Best For  | Latency | Opinion                                                      |
-| :------------------------ | :---------- | :------ | :-------- | :------ | :----------------------------------------------------------- |
-| `sarvam/sarvam-105b:free` | ★★★★☆       | 128K    | `General` | ~1.6s   | Sarvam's 105B. Good multilingual reasoning at a decent pace. |
-| `sarvam/sarvam-30b:free`  | ★★★★☆       | 128K    | `General` | ~1.5s   | Lighter 30B. Faster than the 105B but less capable.          |
+| Free Model                | Context | Best For  | Latency |
+| :------------------------ | ------- | --------- | ------- |
+| `sarvam/sarvam-105b:free` | 128K    | `General` | ~1.6s   |
+| `sarvam/sarvam-30b:free`  | 128K    | `General` | ~1.5s   |
 
 ### [FreeInference](https://freeinference.org)
 
-FreeInference is a research-backed inference hub providing access to models from GLM, MiniMax, Qwen, and DeepSeek through an OpenAI-compatible endpoint. The free tier offers $20 in daily credits with 2 concurrent requests. FreeInference currently has 5 models verified — all at ★★★★☆ or above.
+FreeInference is a research-backed inference hub providing access to models from GLM, MiniMax, Qwen, and DeepSeek through an OpenAI-compatible endpoint. The free tier offers $20 in daily credits with 2 concurrent requests. FreeInference currently has 5 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -332,13 +330,13 @@ FreeInference is a research-backed inference hub providing access to models from
 
 > ⚠️ **Non-Harvard users:** new accounts go through a manual review before they're ready to use.
 
-| Free Model          | Star Rating | Context | Best For    | Latency | Opinion                                             |
-| :------------------ | :---------- | :------ | :---------- | :------ | :-------------------------------------------------- |
-| `qwen3.6-35b`       | ★★★★★       | 256K    | `Code`      | ~1.0s   | Fast Qwen 3.6, strong coder with 256K context.      |
-| `deepseek-v4-flash` | ★★★★★       | 128K    | `Reasoning` | ~1.1s   | Fast DeepSeek reasoning, solid for complex logic.   |
-| `glm-5-turbo`       | ★★★★☆       | 128K    | `General`   | ~1.5s   | Zhipu turbo variant, snappy for general coding.     |
-| `minimax-m3`        | ★★★★☆       | 1M      | `General`   | ~1.6s   | MiniMax M3 at 1M context, capable but thinks aloud. |
-| `glm-5.1`           | ★★★★☆       | 128K    | `General`   | ~3.8s   | Latest GLM, capable but slower on FreeInference.    |
+| Free Model          | Context | Best For    | Latency |
+| :------------------ | ------- | ----------- | ------- |
+| `qwen3.6-35b`       | 256K    | `Code`      | ~1.0s   |
+| `deepseek-v4-flash` | 128K    | `Reasoning` | ~1.1s   |
+| `glm-5-turbo`       | 128K    | `General`   | ~1.5s   |
+| `minimax-m3`        | 1M      | `General`   | ~1.6s   |
+| `glm-5.1`           | 128K    | `General`   | ~3.8s   |
 
 ### [GitHub Models](https://github.com/marketplace/models)
 
@@ -354,10 +352,10 @@ GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and
 
 > ⚠️ **GitHub Models is being fully retired.** Incoming July 30, 2026, all customers (including Existing users) can no longer use GitHub Models. See the [GitHub announcement.](https://github.blog/changelog/2026-07-01-github-models-is-being-fully-retired-on-july-30-2026/)
 
-| Free Model    | Star Rating | Context | Best For  | Latency | Opinion                                                          |
-| :------------ | :---------- | :------ | :-------- | :------ | :--------------------------------------------------------------- |
-| `gpt-4o`      | ★★★★☆       | 128K    | `General` | ~2.4s   | Full GPT-4o. Adds markdown by default, a system prompt fixes it. |
-| `gpt-4o-mini` | ★★★★☆       | 128K    | `General` | ~3.0s   | Compact and fast. Good fallback when quota runs low.             |
+| Free Model    | Context | Best For  | Latency |
+| :------------ | ------- | --------- | ------- |
+| `gpt-4o`      | 128K    | `General` | ~2.4s   |
+| `gpt-4o-mini` | 128K    | `General` | ~3.0s   |
 
 ### [Google Gemini](https://aistudio.google.com)
 
@@ -371,22 +369,22 @@ Gemini offers large context windows on paper, but the free tier's **rate limits 
 
 🔗 **Base URL:** `https://generativelanguage.googleapis.com/v1beta`
 
-| Free Model                                               | Star Rating | Context | Best For    | Latency | Opinion                                                                      |
-| :------------------------------------------------------- | :---------- | :------ | :---------- | :------ | :--------------------------------------------------------------------------- |
-| `models/gemini-3.1-flash-lite`                           | ★★★★★       | 1M      | `General`   | ~0.7s   | Fast and no-fuss. 500 RPD with 1M context, handles daily coding.             |
-| `models/gemma-4-26b-a4b-it`                              | ★★★★☆       | 32K     | `General`   | ~2.1s   | Lighter Gemma 4, efficient for coding without overthinking.                  |
-| `models/gemma-4-31b-it`                                  | ★★★★☆       | 32K     | `General`   | ~2.3s   | Responsive and smart. Occasionally overthinks simple instructions.           |
-| `models/gemini-2.5-flash`                                | ★★★☆☆       | 1M      | `Fallback`  | ~1.1s   | Solid backup. Newer Gemini 3 leaves it behind.                               |
-| `models/gemini-2.5-flash-lite`                           | ★★★☆☆       | 1M      | `Fallback`  | ~0.9s   | Fast bare-bones lite. Good backup for simple tasks.                          |
-| `models/gemini-3-flash-preview`                          | ★★★☆☆       | 1M      | `Reasoning` | ~2.2s   | Deep reasoning with 1M context. ~20 RPD limits it to occasional use.         |
-| `models/gemini-3.1-flash-lite-preview`                   | ★★★☆☆       | 1M      | `Fallback`  | ~1.0s   | Preview of the latest. Nearly identical speed but experimental.              |
-| `models/gemini-3.5-flash` / `models/gemini-flash-latest` | ★★★☆☆       | 1M      | `Code`      | ~1.7s   | Better reasoning than earlier flash. ~20 RPD prevents sustained agentic use. |
-| `models/gemini-flash-lite-latest`                        | ★★★☆☆       | 1M      | `General`   | ~0.9s   | Light scripting only. Fast but lacks depth for multi-file work.              |
-| `models/gemini-robotics-er-1.6-preview`                  | ★★★☆☆       | 256K    | `Reasoning` | ~2.5s   | Niche robotics reasoning model. Large context but narrow use case.           |
+| Free Model                                               | Context | Best For    | Latency |
+| :------------------------------------------------------- | ------- | ----------- | ------- |
+| `models/gemini-3.1-flash-lite`                           | 1M      | `General`   | ~0.7s   |
+| `models/gemma-4-26b-a4b-it`                              | 32K     | `General`   | ~2.1s   |
+| `models/gemma-4-31b-it`                                  | 32K     | `General`   | ~2.3s   |
+| `models/gemini-2.5-flash`                                | 1M      | `Fallback`  | ~1.1s   |
+| `models/gemini-2.5-flash-lite`                           | 1M      | `Fallback`  | ~0.9s   |
+| `models/gemini-3-flash-preview`                          | 1M      | `Reasoning` | ~2.2s   |
+| `models/gemini-3.1-flash-lite-preview`                   | 1M      | `Fallback`  | ~1.0s   |
+| `models/gemini-3.5-flash` / `models/gemini-flash-latest` | 1M      | `Code`      | ~1.7s   |
+| `models/gemini-flash-lite-latest`                        | 1M      | `General`   | ~0.9s   |
+| `models/gemini-robotics-er-1.6-preview`                  | 256K    | `Reasoning` | ~2.5s   |
 
 ### [Groq API](https://console.groq.com)
 
-Groq is famous for providing the **absolute lowest streaming latency** in the API market, outrunning traditional cloud providers by a massive margin. The free tier offers 30 RPM with replenishable daily credits — no credit card needed. If you want a setup where your terminal files patch instantly without the typical spinning wheel delay, this is your go-to. Groq API currently has 10 models verified — all at ★★★☆☆ or above.
+Groq is famous for providing the **absolute lowest streaming latency** in the API market, outrunning traditional cloud providers by a massive margin. The free tier offers 30 RPM with replenishable daily credits — no credit card needed. If you want a setup where your terminal files patch instantly without the typical spinning wheel delay, this is your go-to. Groq API currently has 10 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -396,22 +394,22 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 
 🔗 **Base URL:** `https://api.groq.com/openai/v1`
 
-| Free Model                                  | Star Rating | Context | Best For   | Latency | Opinion                                                                          |
-| :------------------------------------------ | :---------- | :------ | :--------- | :------ | :------------------------------------------------------------------------------- |
-| `openai/gpt-oss-120b`                       | ★★★★★       | 128K    | `Code`     | ~0.4s   | Never hits rate limits. The best pick on Groq.                                   |
-| `llama-3.3-70b-versatile`                   | ★★★★☆       | 128K    | `Chat`     | ~0.2s   | Dependable for dev conversations.                                                |
-| `openai/gpt-oss-20b`                        | ★★★★☆       | 128K    | `Code`     | ~0.6s   | Same DNA as the 120B, lighter. Lightning-fast for standard coding.               |
-| `qwen/qwen3-32b`                            | ★★★★☆       | 256K    | `Code`     | ~0.2s   | Fast at 256K context window. Briefly thinks out loud but great for complex code. |
-| `qwen/qwen3.6-27b`                          | ★★★★☆       | 256K    | `Code`     | ~0.2s   | Fast with a 27B model. Short think preamble but clean output.                    |
-| `allam-2-7b`                                | ★★★☆☆       | 128K    | `Fallback` | ~0.2s   | Tiny 7B at sub-0.2s, fun for rapid-fire edits but limited depth.                 |
-| `groq/compound`                             | ★★★☆☆       | 128K    | `General`  | ~0.7s   | Good for quick terminal questions. Lacks depth for multi-file projects.          |
-| `groq/compound-mini`                        | ★★★☆☆       | 128K    | `General`  | ~0.7s   | Smaller compound, even lighter. Use when you need faster responses.              |
-| `llama-3.1-8b-instant`                      | ★★★☆☆       | 128K    | `Code`     | ~0.2s   | Fun for tiny rapid-fire edits. Tends to cut off on long scripts.                 |
-| `meta-llama/llama-4-scout-17b-16e-instruct` | ★★★☆☆       | 256K    | `Chat`     | ~0.4s   | With 256K context, it overthinks simple prompts but handles medium tasks fine.   |
+| Free Model                                  | Context | Best For   | Latency |
+| :------------------------------------------ | ------- | ---------- | ------- |
+| `openai/gpt-oss-120b`                       | 128K    | `Code`     | ~0.4s   |
+| `llama-3.3-70b-versatile`                   | 128K    | `Chat`     | ~0.2s   |
+| `openai/gpt-oss-20b`                        | 128K    | `Code`     | ~0.6s   |
+| `qwen/qwen3-32b`                            | 256K    | `Code`     | ~0.2s   |
+| `qwen/qwen3.6-27b`                          | 256K    | `Code`     | ~0.2s   |
+| `allam-2-7b`                                | 128K    | `Fallback` | ~0.2s   |
+| `groq/compound`                             | 128K    | `General`  | ~0.7s   |
+| `groq/compound-mini`                        | 128K    | `General`  | ~0.7s   |
+| `llama-3.1-8b-instant`                      | 128K    | `Code`     | ~0.2s   |
+| `meta-llama/llama-4-scout-17b-16e-instruct` | 256K    | `Chat`     | ~0.4s   |
 
 ### [HelixMind](https://helixmind.online)
 
-HelixMind is a lightweight inference hub offering a small set of free models from Meta, OpenAI, Mistral, and DeepSeek through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 50 requests per day — the tightest cap on this list, strictly for occasional queries and quick tests. No credit card required. HelixMind currently has 5 models verified — all at ★★★★☆ or above.
+HelixMind is a lightweight inference hub offering a small set of free models from Meta, OpenAI, Mistral, and DeepSeek through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 50 requests per day — the tightest cap on this list, strictly for occasional queries and quick tests. No credit card required. HelixMind currently has 5 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -421,77 +419,77 @@ HelixMind is a lightweight inference hub offering a small set of free models fro
 
 🔗 **Base URL:** `https://helixmind.online/v1`
 
-| Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                   |
-| :--------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------ |
-| `deepseek-v3.2`        | ★★★★☆       | 128K    | `Reasoning` | ~1.6s   | Fast reasoning, good for complex debugging. Best pick with the tight cap. |
-| `gpt-oss-20b`          | ★★★★☆       | 128K    | `Code`      | ~3.1s   | Lighter and fast, good value for the restrictive daily cap.               |
-| `llama-4-maverick`     | ★★★★☆       | 256K    | `General`   | ~1.5s   | Fast for a 17B model, good for quick edits within the limit.              |
-| `llama-4-scout`        | ★★★★☆       | 256K    | `General`   | ~2.8s   | Scout is slower but a solid backup when Maverick hits the limit.          |
-| `mistral-large-latest` | ★★★★☆       | 128K    | `General`   | ~1.5s   | Good reasoning, Fast but can take time for larger projects.               |
+| Free Model             | Context | Best For    | Latency |
+| :--------------------- | ------- | ----------- | ------- |
+| `deepseek-v3.2`        | 128K    | `Reasoning` | ~1.6s   |
+| `gpt-oss-20b`          | 128K    | `Code`      | ~3.1s   |
+| `llama-4-maverick`     | 256K    | `General`   | ~1.5s   |
+| `llama-4-scout`        | 256K    | `General`   | ~2.8s   |
+| `mistral-large-latest` | 128K    | `General`   | ~1.5s   |
 
 ### [HelyxAI](https://helyxai.space)
 
-HelyxAI is a unified API gateway providing access to proprietary and open-weight models through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with no credit card required — self-replenishing every 24 hours. HelyxAI currently has 6 models verified — all at ★★★★☆ or above.
+HelyxAI is a unified API gateway providing access to proprietary and open-weight models through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with no credit card required — self-replenishing every 24 hours. HelyxAI currently has 6 models verified
 
 🎁 **Free Tier Quota:** 100,000 TPD / 1,000,000 Monthly Tokens
 
 🔗 **Base URL:** `https://helyxai.space/v1`
 
-| Free Model               | Star Rating | Context | Best For    | Latency | Opinion                                                     |
-| :----------------------- | :---------- | :------ | :---------- | :------ | :---------------------------------------------------------- |
-| `DeepSeek-V4-Flash`      | ★★★★★       | 1M      | `Reasoning` | ~1.7s   | Fast DeepSeek V4, strong reasoning at 1M context.           |
-| `gemini-3.1-flash-lite`  | ★★★★★       | 1M      | `General`   | ~0.8s   | Fastest here, Google's efficient lite model.                |
-| `gpt-oss-120b`           | ★★★★★       | 128K    | `Code`      | ~2.0s   | Reliable 120B for coding, stretches the daily token budget. |
-| `gemma-4-31B-it`         | ★★★★☆       | 256K    | `General`   | ~1.4s   | Solid 31B, but shows thinking tokens in output.             |
-| `MiniMax-M3`             | ★★★★☆       | 1M      | `General`   | ~1.8s   | Latest MiniMax with 1M context, strong for large codebases. |
-| `Qwen3-32B`              | ★★★★☆       | 128K    | `General`   | ~1.5s   | Solid 32B all-rounder, fast and consistent on HelyxAI.      |
+| Free Model              | Context | Best For    | Latency |
+| :---------------------- | ------- | ----------- | ------- |
+| `DeepSeek-V4-Flash`     | 1M      | `Reasoning` | ~1.7s   |
+| `gemini-3.1-flash-lite` | 1M      | `General`   | ~0.8s   |
+| `gpt-oss-120b`          | 128K    | `Code`      | ~2.0s   |
+| `gemma-4-31B-it`        | 256K    | `General`   | ~1.4s   |
+| `MiniMax-M3`            | 1M      | `General`   | ~1.8s   |
+| `Qwen3-32B`             | 128K    | `General`   | ~1.5s   |
 
 ### [Hugging Face Inference API](https://huggingface.co/inference-api)
 
-Hugging Face's free Inference API gives you access to thousands of community-hosted models with OpenAI-compatible endpoints. The free tier offers only $0.10/month in credits — barely enough for light experimentation, not sustained coding. The real strength is model diversity, but the tight quota keeps most models at ★★★★☆. Hugging Face currently has 97 models verified — 32 are ★★★★☆ or above.
+Hugging Face's free Inference API gives you access to thousands of community-hosted models with OpenAI-compatible endpoints. The free tier offers only $0.10/month in credits — barely enough for light experimentation, not sustained coding. The real strength is model diversity across thousands of community models. Hugging Face currently has 97 models verified.
 
 🎁 **Free Tier Quota:** $0.10/month credits (~650K tokens)
 
 🔗 **Base URL:** `https://router.huggingface.co/v1`
 
-| Free Model                                          | Star Rating | Context | Best For    | Latency | Opinion                                                                   |
-| :-------------------------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------ |
-| `deepcogito/cogito-671b-v2.1`                       | ★★★★★       | 128K    | `Reasoning` | ~0.7s   | 671B reasoning at sub-second. Best value on HF right now.                 |
-| `deepseek-ai/DeepSeek-R1`                           | ★★★★★       | 128K    | `Reasoning` | ~1.9s   | Shows its reasoning chain, good for debugging complex logic.              |
-| `deepseek-ai/DeepSeek-V3.1`                         | ★★★★★       | 128K    | `Reasoning` | ~1.8s   | Solid V3.1, great daily driver for reasoning-heavy coding.                |
-| `deepseek-ai/DeepSeek-V3.2`                         | ★★★★★       | 128K    | `Reasoning` | ~1.1s   | Latest V3, fast and sharp for multi-file work.                            |
-| `deepseek-ai/DeepSeek-V4-Flash`                     | ★★★★★       | 128K    | `Reasoning` | ~1.2s   | V4 flash reasoning, efficient for the tight quota.                        |
-| `deepseek-ai/DeepSeek-V4-Pro`                       | ★★★★★       | 128K    | `Reasoning` | ~0.9s   | V4 pro, stronger reasoning than Flash at sub-second.                      |
-| `meta-llama/Llama-3.3-70B-Instruct`                 | ★★★★★       | 128K    | `General`   | ~0.6s   | Follows complex instructions first try, fast on the $0.10 budget.         |
-| `moonshotai/Kimi-K2.7-Code`                         | ★★★★★       | 128K    | `Code`      | ~0.7s   | Latest Kimi code model, clean output without preamble.                    |
-| `nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4`    | ★★★★★       | 128K    | `Reasoning` | ~0.7s   | 550B at sub-second, immense reasoning for a critical prompt.              |
-| `Qwen/Qwen3-235B-A22B-Instruct-2507`                | ★★★★★       | 256K    | `Code`      | ~0.5s   | 235B at 0.5s with 256K. Best value coder on HF.                           |
-| `Qwen/Qwen3-Coder-30B-A3B-Instruct`                 | ★★★★★       | 256K    | `Code`      | ~0.8s   | 30B on a 3B budget, efficient for the quota.                              |
-| `Qwen/Qwen3-Coder-480B-A35B-Instruct`               | ★★★★★       | 256K    | `Code`      | ~2.1s   | The largest coder, for the one big project your $0.10 can afford.         |
-| `Qwen/Qwen3-Coder-Next`                             | ★★★★★       | 256K    | `Code`      | ~0.8s   | Pure code output, no fluff. Best coder on HF for the budget.              |
-| `zai-org/GLM-5.2`                                   | ★★★★★       | 128K    | `General`   | ~0.8s   | Latest GLM, strong generalist that stretches the $0.10 further.           |
-| `google/gemma-4-26B-A4B-it`                         | ★★★★☆       | 32K     | `General`   | ~0.6s   | Fast and direct, good for straightforward tasks without draining credits. |
-| `google/gemma-4-31B-it`                             | ★★★★☆       | 32K     | `General`   | ~0.5s   | Full 31B, cleaner than the 26B, but 32K limits multi-file scope.          |
-| `inclusionAI/Ling-2.6-1T`                           | ★★★★☆       | 128K    | `Reasoning` | ~1.2s   | A trillion params for free, immense but burns credits fast.               |
-| `meta-llama/Llama-3.1-70B-Instruct`                 | ★★★★☆       | 128K    | `General`   | ~0.7s   | Reliable and steady, the $0.10 cap is the real bottleneck.                |
-| `meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8` | ★★★★☆       | 256K    | `General`   | ~0.7s   | Llama 4's strongest, clean and daily-usable within the cap.               |
-| `meta-llama/Llama-4-Scout-17B-16E-Instruct`         | ★★★★☆       | 256K    | `General`   | ~0.6s   | Lighter Maverick, efficient for the budget with 256K context.             |
-| `microsoft/phi-4`                                   | ★★★★☆       | 128K    | `Code`      | ~0.7s   | Compact Phi-4, punches well above its size for the quota.                 |
-| `MiniMaxAI/MiniMax-M3`                              | ★★★★☆       | 1M      | `General`   | ~1.5s   | 1M context at 1.5s, one big prompt eats half your monthly cap.            |
-| `moonshotai/Kimi-K2.5`                              | ★★★★☆       | 128K    | `Reasoning` | ~0.7s   | Deep CoT reasoning, good for debugging but verbose on tokens.             |
-| `openai/gpt-oss-120b`                               | ★★★★☆       | 128K    | `General`   | ~0.6s   | Reliable 120B, safe pick that respects the $0.10 limit.                   |
-| `pearl-ai/Gemma-4-31B-it-pearl`                     | ★★★★☆       | 32K     | `General`   | ~2.4s   | Different Gemma 4 flavor, same clean quality at moderate speed.           |
-| `Qwen/Qwen2.5-Coder-32B-Instruct`                   | ★★★★☆       | 128K    | `Code`      | ~0.7s   | Drops straight to code, good for refactoring within the tight budget.     |
-| `Qwen/Qwen2.5-VL-72B-Instruct`                      | ★★★★☆       | 128K    | `Vision`    | ~0.9s   | 72B vision model, handles screenshots without eating all your credits.    |
-| `Qwen/Qwen3-235B-A22B`                              | ★★★★☆       | 256K    | `Reasoning` | ~1.0s   | 235B base at 1s, strong reasoning that respects the tight quota.          |
-| `Qwen/Qwen3-VL-30B-A3B-Instruct`                    | ★★★★☆       | 128K    | `Vision`    | ~1.0s   | 30B VL on a 3B budget, multimodal without blowing the $0.10.              |
-| `Qwen/Qwen3.6-27B`                                  | ★★★★☆       | 256K    | `General`   | ~1.0s   | Latest Qwen 3.6, balanced and efficient for the budget.                   |
-| `Qwen/Qwen3.6-35B-A3B`                              | ★★★★☆       | 256K    | `Code`      | ~0.6s   | Most efficient Qwen, stretches the $0.10 further for medium projects.     |
-| `zai-org/GLM-4.7`                                   | ★★★★☆       | 128K    | `General`   | ~4.7s   | Slow but steady, keeps responding when other models time out.             |
+| Free Model                                          | Context | Best For    | Latency |
+| :-------------------------------------------------- | ------- | ----------- | ------- |
+| `deepcogito/cogito-671b-v2.1`                       | 128K    | `Reasoning` | ~0.7s   |
+| `deepseek-ai/DeepSeek-R1`                           | 128K    | `Reasoning` | ~1.9s   |
+| `deepseek-ai/DeepSeek-V3.1`                         | 128K    | `Reasoning` | ~1.8s   |
+| `deepseek-ai/DeepSeek-V3.2`                         | 128K    | `Reasoning` | ~1.1s   |
+| `deepseek-ai/DeepSeek-V4-Flash`                     | 128K    | `Reasoning` | ~1.2s   |
+| `deepseek-ai/DeepSeek-V4-Pro`                       | 128K    | `Reasoning` | ~0.9s   |
+| `meta-llama/Llama-3.3-70B-Instruct`                 | 128K    | `General`   | ~0.6s   |
+| `moonshotai/Kimi-K2.7-Code`                         | 128K    | `Code`      | ~0.7s   |
+| `nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4`    | 128K    | `Reasoning` | ~0.7s   |
+| `Qwen/Qwen3-235B-A22B-Instruct-2507`                | 256K    | `Code`      | ~0.5s   |
+| `Qwen/Qwen3-Coder-30B-A3B-Instruct`                 | 256K    | `Code`      | ~0.8s   |
+| `Qwen/Qwen3-Coder-480B-A35B-Instruct`               | 256K    | `Code`      | ~2.1s   |
+| `Qwen/Qwen3-Coder-Next`                             | 256K    | `Code`      | ~0.8s   |
+| `zai-org/GLM-5.2`                                   | 128K    | `General`   | ~0.8s   |
+| `google/gemma-4-26B-A4B-it`                         | 32K     | `General`   | ~0.6s   |
+| `google/gemma-4-31B-it`                             | 32K     | `General`   | ~0.5s   |
+| `inclusionAI/Ling-2.6-1T`                           | 128K    | `Reasoning` | ~1.2s   |
+| `meta-llama/Llama-3.1-70B-Instruct`                 | 128K    | `General`   | ~0.7s   |
+| `meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8` | 256K    | `General`   | ~0.7s   |
+| `meta-llama/Llama-4-Scout-17B-16E-Instruct`         | 256K    | `General`   | ~0.6s   |
+| `microsoft/phi-4`                                   | 128K    | `Code`      | ~0.7s   |
+| `MiniMaxAI/MiniMax-M3`                              | 1M      | `General`   | ~1.5s   |
+| `moonshotai/Kimi-K2.5`                              | 128K    | `Reasoning` | ~0.7s   |
+| `openai/gpt-oss-120b`                               | 128K    | `General`   | ~0.6s   |
+| `pearl-ai/Gemma-4-31B-it-pearl`                     | 32K     | `General`   | ~2.4s   |
+| `Qwen/Qwen2.5-Coder-32B-Instruct`                   | 128K    | `Code`      | ~0.7s   |
+| `Qwen/Qwen2.5-VL-72B-Instruct`                      | 128K    | `Vision`    | ~0.9s   |
+| `Qwen/Qwen3-235B-A22B`                              | 256K    | `Reasoning` | ~1.0s   |
+| `Qwen/Qwen3-VL-30B-A3B-Instruct`                    | 128K    | `Vision`    | ~1.0s   |
+| `Qwen/Qwen3.6-27B`                                  | 256K    | `General`   | ~1.0s   |
+| `Qwen/Qwen3.6-35B-A3B`                              | 256K    | `Code`      | ~0.6s   |
+| `zai-org/GLM-4.7`                                   | 128K    | `General`   | ~4.7s   |
 
 ### [Intern AI](https://internlm.intern-ai.org.cn)
 
-Intern AI is the official API provided by Shanghai AI Laboratory, the developers behind the InternLM model family. The free tier offers 90 million tokens monthly — the most generous token quota of any provider on this list. Intern AI currently has 8 models verified — all at ★★★★☆ or above.
+Intern AI is the official API provided by Shanghai AI Laboratory, the developers behind the InternLM model family. The free tier offers 90 million tokens monthly — the most generous token quota of any provider on this list. Intern AI currently has 8 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -501,16 +499,16 @@ Intern AI is the official API provided by Shanghai AI Laboratory, the developers
 
 🔗 **Base URL:** `https://chat.intern-ai.org.cn/api/v1/`
 
-| Free Model              | Star Rating | Context | Best For    | Latency | Opinion                                                            |
-| :---------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------- |
-| `intern-latest`         | ★★★★★       | 256K    | `General`   | ~1.0s   | Current flagship pointer, sub-second with massive token quota.     |
-| `intern-s1`             | ★★★★★       | 128K    | `General`   | ~1.2s   | Solid base S1, dependable output with good context.                |
-| `intern-s1-pro`         | ★★★★★       | 128K    | `Reasoning` | ~1.5s   | Pro reasoning variant, handles complex logic capably.              |
-| `intern-s2-preview`     | ★★★★★       | 256K    | `Reasoning` | ~1.0s   | S2 preview, strongest Intern yet. Fast reasoning at 256K.          |
-| `internvl3.5-241b-a28b` | ★★★★★       | 128K    | `Vision`    | ~1.1s   | 241B MoE VL, sees images and code. One of the strongest VL models. |
-| `internvl3.5-latest`    | ★★★★★       | 128K    | `Vision`    | ~1.2s   | Latest VL variant, fast multimodal at solid context.               |
-| `intern-s1-mini`        | ★★★★☆       | 128K    | `Fallback`  | ~1.0s   | Compact S1, fast and efficient for daily coding sessions.          |
-| `internvl-latest`       | ★★★★☆       | 128K    | `Vision`    | ~1.2s   | Older VL model, still capable for multimodal tasks.                |
+| Free Model              | Context | Best For    | Latency |
+| :---------------------- | ------- | ----------- | ------- |
+| `intern-latest`         | 256K    | `General`   | ~1.0s   |
+| `intern-s1`             | 128K    | `General`   | ~1.2s   |
+| `intern-s1-pro`         | 128K    | `Reasoning` | ~1.5s   |
+| `intern-s2-preview`     | 256K    | `Reasoning` | ~1.0s   |
+| `internvl3.5-241b-a28b` | 128K    | `Vision`    | ~1.1s   |
+| `internvl3.5-latest`    | 128K    | `Vision`    | ~1.2s   |
+| `intern-s1-mini`        | 128K    | `Fallback`  | ~1.0s   |
+| `internvl-latest`       | 128K    | `Vision`    | ~1.2s   |
 
 ### [Kilo Code](https://app.kilo.ai)
 
@@ -524,19 +522,19 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 
 🔗 **Base URL:** `https://api.kilo.ai/api/gateway`
 
-| Free Model                                           | Star Rating | Context | Best For    | Latency | Opinion                                                                     |
-| :--------------------------------------------------- | :---------- | :------ | :---------- | :------ | :-------------------------------------------------------------------------- |
-| `kilo-auto/small`                                    | ★★★★★       | 128K    | `General`   | ~2.5s   | Auto-routes to the best model, no-brainer for quick work.                   |
-| `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★★       | 128K    | `General`   | ~2.0s   | 550B raw power, good for hard prompts. Overkill for simple queries.         |
-| `cohere/north-mini-code:free`                        | ★★★★☆       | 128K    | `Code`      | ~1.9s   | Compact coder, lightweight for rapid iteration. Good for quick scripting.   |
-| `kilo-auto/free`                                     | ★★★★☆       | 128K    | `Fallback`  | ~1.8s   | Fallback router, always lands on something functional. Keeps things moving. |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | 128K    | `Reasoning` | ~1.9s   | NVIDIA reasoning, shows CoT for deeper multi-step debugging.                |
-| `nvidia/nemotron-3-super-120b-a12b:free`             | ★★★★☆       | 1M      | `General`   | ~7.2s   | 1M context at 7.2s, good for big projects but slow.                         |
-| `openrouter/free`                                    | ★★★★☆       | 128K    | `Fallback`  | ~1.2s   | Routes through OpenRouter's free pool, decent backup when others cap.       |
-| `poolside/laguna-m.1:free`                           | ★★★★☆       | 128K    | `Code`      | ~1.4s   | More headroom than XS, good for trickier edits and fast.                    |
-| `poolside/laguna-xs-2.1:free`                        | ★★★★☆       | 128K    | `Code`      | ~1.6s   | Newest Poolside XS, sharp and fast for agentic coding loops.                |
-| `stepfun/step-3.7-flash:free`                        | ★★★★☆       | 128K    | `General`   | ~1.1s   | Dependable and steady, good for everyday edits without surprises.           |
-| `tencent/hy3:free`                                   | ★★★★☆       | 128K    | `General`   | ~2.0s   | Tencent's Hy3, solid generalist with good reasoning.                        |
+| Free Model                                           | Context | Best For    | Latency |
+| :--------------------------------------------------- | ------- | ----------- | ------- |
+| `kilo-auto/small`                                    | 128K    | `General`   | ~2.5s   |
+| `nvidia/nemotron-3-ultra-550b-a55b:free`             | 128K    | `General`   | ~2.0s   |
+| `cohere/north-mini-code:free`                        | 128K    | `Code`      | ~1.9s   |
+| `kilo-auto/free`                                     | 128K    | `Fallback`  | ~1.8s   |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | 128K    | `Reasoning` | ~1.9s   |
+| `nvidia/nemotron-3-super-120b-a12b:free`             | 1M      | `General`   | ~7.2s   |
+| `openrouter/free`                                    | 128K    | `Fallback`  | ~1.2s   |
+| `poolside/laguna-m.1:free`                           | 128K    | `Code`      | ~1.4s   |
+| `poolside/laguna-xs-2.1:free`                        | 128K    | `Code`      | ~1.6s   |
+| `stepfun/step-3.7-flash:free`                        | 128K    | `General`   | ~1.1s   |
+| `tencent/hy3:free`                                   | 128K    | `General`   | ~2.0s   |
 
 ### [LLM.Kiwi](https://llm.kiwi)
 
@@ -550,10 +548,10 @@ LLM.Kiwi is a Cloudflare-edge inference provider offering an auto-routing endpoi
 
 🔗 **Base URL:** `https://api.llm.kiwi/v1`
 
-| Free Model | Star Rating | Context      | Best For  | Latency | Opinion                                                              |
-| :--------- | :---------- | :----------- | :-------- | :------ | :------------------------------------------------------------------- |
-| `auto`     | ★★★★☆       | Varied       | `General` | ~1.4s   | Smart router, always picks the best lane. Good for daily coding.     |
-| `hrllm`    | ★★★☆☆       | Varied       | `General` | ~0.9s   | Croatian-first model, fast but niche. Skip unless you need Croatian. |
+| Free Model | Context | Best For  | Latency |
+| :--------- | :------ | :-------- | ------- |
+| `auto`     | Varied  | `General` | ~1.4s   |
+| `hrllm`    | Varied  | `General` | ~0.9s   |
 
 ### [LLM7.IO](https://llm7.io)
 
@@ -567,9 +565,9 @@ LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp 
 
 🔗 **Base URL:** `https://api.llm7.io/v1`
 
-| Free Model          | Star Rating  | Context  | Best For   | Latency  | Opinion                                                            |
-| :------------------ | :----------- | :------- | :--------- | :------- | :----------------------------------------------------------------- |
-| `codestral-latest`  | ★★★★☆        | 256K     | `Code`     | ~0.6s    | Fastest coding here, 256K context at sub-second on LLM7.IO.        |
+| Free Model         | Context | Best For | Latency |
+| :----------------- | ------- | -------- | ------- |
+| `codestral-latest` | 256K    | `Code`   | ~0.6s   |
 
 ### [LLMGateway](https://llmgateway.io)
 
@@ -583,13 +581,13 @@ LLMGateway is a lightweight inference hub serving models from Zhipu AI and more 
 
 🔗 **Base URL:** `https://api.llmgateway.io/v1`
 
-| Free Model              | Star Rating | Context | Best For  | Latency | Opinion                                            |
-| :---------------------- | :---------- | :------ | :-------- | :------ | :------------------------------------------------- |
-| `claude-haiku-4-5-free` | ★★★★☆       | 200K    | `General` | ~1.2s   | Claude Haiku 4.5, fast and clean for daily coding. |
+| Free Model              | Context | Best For  | Latency |
+| :---------------------- | ------- | --------- | ------- |
+| `claude-haiku-4-5-free` | 200K    | `General` | ~1.2s   |
 
 ### [LiteRouter](https://literouter.com)
 
-LiteRouter is a lightweight inference hub offering free models from OpenAI, DeepSeek, Mistral, Meta, and more through an OpenAI-compatible endpoint with a `:free` suffix. The free tier provides uncapped daily requests with 1 concurrent request and 15,000 tokens per day — enough for light scripting and targeted queries. No credit card required. LiteRouter currently has 42 models verified — all at ★★★★☆ or above.
+LiteRouter is a lightweight inference hub offering free models from OpenAI, DeepSeek, Mistral, Meta, and more through an OpenAI-compatible endpoint with a `:free` suffix. The free tier provides uncapped daily requests with 1 concurrent request and 15,000 tokens per day — enough for light scripting and targeted queries. No credit card required. LiteRouter currently has 42 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -597,53 +595,53 @@ LiteRouter is a lightweight inference hub offering free models from OpenAI, Deep
 
 🔗 **Base URL:** `https://api.literouter.com/v1`
 
-| Free Model                             | Star Rating | Context | Best For    | Latency | Opinion                                                         |
-| :------------------------------------- | :---------- | :------ | :---------- | :------ | :-------------------------------------------------------------- |
-| `deepseek-v3.1:free`                   | ★★★★★       | 128K    | `Reasoning` | ~6.3s   | V3.1 reasoning, reliable for complex multi-file debugging.      |
-| `deepseek-v3.1-terminus:free`          | ★★★★★       | 128K    | `Reasoning` | ~4.0s   | Terminus variant of V3.1, refined for complex logic.            |
-| `deepseek-v4-flash:free`               | ★★★★★       | 128K    | `Reasoning` | ~5.9s   | Fast reasoning, best use of 15k daily tokens.                   |
-| `gemini-2.5-flash:free`                | ★★★★★       | 1M      | `General`   | ~3.2s   | Google's strong flash with 1M context on LiteRouter.            |
-| `gpt-oss-120b:free`                    | ★★★★★       | 128K    | `General`   | ~2.8s   | Reliable 120B. Make each of your 15k daily tokens count.        |
-| `grok-4.1-fast-reasoning:free`         | ★★★★★       | 128K    | `Reasoning` | ~5.5s   | xAI's fast reasoning, strong for logic.                         |
-| `claude-haiku-4.5-cheap:free`          | ★★★★☆       | 200K    | `General`   | ~4.4s   | Claude 4.5 Haiku via cheap route, fast for daily coding.        |
-| `deepseek-r1:free`                     | ★★★★☆       | 128K    | `Reasoning` | ~4.8s   | DeepSeek R1 reasoning, strong logic on tight budget.            |
-| `deepseek-r1-0528:free`                | ★★★★☆       | 128K    | `Reasoning` | ~8.6s   | R1 variant, deep reasoning but slow for the quota.              |
-| `deepseek-reasoner:free`               | ★★★★☆       | 128K    | `Reasoning` | ~6.0s   | DeepSeek reasoner, solid for complex debugging.                 |
-| `deepseek-v3-0324:free`                | ★★★★☆       | 128K    | `Reasoning` | ~4.4s   | Older V3 snapshot, solid reasoning on LiteRouter.               |
-| `deepseek-v3.2:free`                   | ★★★★☆       | 128K    | `Reasoning` | ~3.4s   | Strong reasoning for complex debugging, but tight token budget. |
-| `devstral-small-2507:free`             | ★★★★☆       | 128K    | `Code`      | ~2.5s   | Mistral agent model, fast for light scripting.                  |
-| `gemini-2.5-flash-lite:free`           | ★★★★☆       | 1M      | `General`   | ~1.7s   | Google's flash-lite, efficient at 1.7s.                         |
-| `gemma-3-27b-it:free`                  | ★★★★☆       | 128K    | `General`   | ~2.8s   | Gemma 3 at 27B, solid responses.                                |
-| `gemma-4-31b:free`                     | ★★★★☆       | 128K    | `General`   | ~2.1s   | Google's 31B, good generalist on tight budget.                  |
-| `glm-4.7-flash-cheap:free`             | ★★★★☆       | 128K    | `General`   | ~3.6s   | Zhipu flash, cheap on tokens for the budget.                    |
-| `glm-5-cheap:free`                     | ★★★★☆       | 128K    | `General`   | ~3.6s   | Zhipu's GLM-5, solid generalist.                                |
-| `glm-5.1-cheap:free`                   | ★★★★☆       | 128K    | `General`   | ~3.3s   | Updated GLM-5 at good speed.                                    |
-| `glm-5.2-cheap:free`                   | ★★★★☆       | 128K    | `General`   | ~2.8s   | Latest GLM, capable and responsive.                             |
-| `gpt-4.1-mini:free`                    | ★★★★☆       | 1M      | `General`   | ~2.2s   | OpenAI compact with 1M context.                                 |
-| `gpt-4.1-nano:free`                    | ★★★★☆       | 1M      | `Code`      | ~4.1s   | Fast GPT nano for quick code edits.                             |
-| `gpt-4o-mini:free`                     | ★★★★☆       | 128K    | `General`   | ~3.5s   | Compact GPT-4o, efficient for the 15k daily token budget.       |
-| `gpt-5-nano:free`                      | ★★★★☆       | 128K    | `Code`      | ~2.2s   | GPT nano for light coding tasks.                                |
-| `gpt-oss-20b:free`                     | ★★★★☆       | 128K    | `Code`      | ~2.2s   | Lighter 120B, best value for the 15k TPD cap.                   |
-| `kimi-k2.5:free`                       | ★★★★☆       | 128K    | `Reasoning` | ~3.5s   | Moonshot's 1T model for complex multi-step.                     |
-| `l3-8b-lunaris:free`                   | ★★★★☆       | 128K    | `General`   | ~1.3s   | Llama 3 8B community tune, fast and lightweight.                |
-| `llama-3-8b-instruct:free`             | ★★★★☆       | 128K    | `Code`      | ~2.6s   | Meta's 8B, fast for syntax validation on tight budget.          |
-| `llama-3.1-8b-instruct:free`           | ★★★★☆       | 128K    | `Code`      | ~3.4s   | Updated 8B, solid for quick code edits.                         |
-| `llama-3.1-8b-instruct-turbo:free`     | ★★★★☆       | 128K    | `Code`      | ~3.3s   | Turbo 8B, faster variant for rapid iteration.                   |
-| `llama-3.3-70b-instruct-turbo:free`    | ★★★★☆       | 128K    | `General`   | ~1.5s   | Turbo 70B, strong instruction following at speed.               |
-| `llama-4-scout:free`                   | ★★★★☆       | 256K    | `General`   | ~4.6s   | Latest Llama 4 Scout with 256K context.                         |
-| `minimax-m2.5:free`                    | ★★★★☆       | 1M      | `General`   | ~4.0s   | MiniMax with 1M context, capable but deliberate.                |
-| `minimax-m2.7:free`                    | ★★★★☆       | 1M      | `General`   | ~3.6s   | Updated MiniMax, better speed than M2.5.                        |
-| `mistral-large-3:free`                 | ★★★★☆       | 128K    | `General`   | ~3.3s   | Mistral's 123B for balanced daily coding.                       |
-| `mistral-nemo-instruct-2407:free`      | ★★★★☆       | 128K    | `General`   | ~2.4s   | Mistral Nemo 12B, balanced for daily scripting.                 |
-| `mistral-small-24b-instruct-2501:free` | ★★★★☆       | 32K     | `General`   | ~2.5s   | Mistral small 24B, punchy with good depth.                      |
-| `mythomax-l2-13b:free`                 | ★★★★☆       | 128K    | `General`   | ~3.0s   | Community 13B fine-tune, creative but capable for coding.       |
-| `nemotron-3-nano:free`                 | ★★★★☆       | 128K    | `General`   | ~1.9s   | NVIDIA nano, efficient and fast for daily coding.               |
-| `openrouter:free:full-context`         | ★★★★☆       | 128K    | `General`   | ~4.2s   | Meta-model for full context access on LiteRouter.               |
-| `owl-alpha:free:full-context`          | ★★★★☆       | 128K    | `General`   | ~5.1s   | Community owl model, decent for general coding.                 |
-| `qwen3.5:free`                         | ★★★★☆       | 128K    | `General`   | ~5.1s   | Qwen 3.5, solid general model for daily coding.                 |
+| Free Model                             | Context | Best For    | Latency |
+| :------------------------------------- | ------- | ----------- | ------- |
+| `deepseek-v3.1:free`                   | 128K    | `Reasoning` | ~6.3s   |
+| `deepseek-v3.1-terminus:free`          | 128K    | `Reasoning` | ~4.0s   |
+| `deepseek-v4-flash:free`               | 128K    | `Reasoning` | ~5.9s   |
+| `gemini-2.5-flash:free`                | 1M      | `General`   | ~3.2s   |
+| `gpt-oss-120b:free`                    | 128K    | `General`   | ~2.8s   |
+| `grok-4.1-fast-reasoning:free`         | 128K    | `Reasoning` | ~5.5s   |
+| `claude-haiku-4.5-cheap:free`          | 200K    | `General`   | ~4.4s   |
+| `deepseek-r1:free`                     | 128K    | `Reasoning` | ~4.8s   |
+| `deepseek-r1-0528:free`                | 128K    | `Reasoning` | ~8.6s   |
+| `deepseek-reasoner:free`               | 128K    | `Reasoning` | ~6.0s   |
+| `deepseek-v3-0324:free`                | 128K    | `Reasoning` | ~4.4s   |
+| `deepseek-v3.2:free`                   | 128K    | `Reasoning` | ~3.4s   |
+| `devstral-small-2507:free`             | 128K    | `Code`      | ~2.5s   |
+| `gemini-2.5-flash-lite:free`           | 1M      | `General`   | ~1.7s   |
+| `gemma-3-27b-it:free`                  | 128K    | `General`   | ~2.8s   |
+| `gemma-4-31b:free`                     | 128K    | `General`   | ~2.1s   |
+| `glm-4.7-flash-cheap:free`             | 128K    | `General`   | ~3.6s   |
+| `glm-5-cheap:free`                     | 128K    | `General`   | ~3.6s   |
+| `glm-5.1-cheap:free`                   | 128K    | `General`   | ~3.3s   |
+| `glm-5.2-cheap:free`                   | 128K    | `General`   | ~2.8s   |
+| `gpt-4.1-mini:free`                    | 1M      | `General`   | ~2.2s   |
+| `gpt-4.1-nano:free`                    | 1M      | `Code`      | ~4.1s   |
+| `gpt-4o-mini:free`                     | 128K    | `General`   | ~3.5s   |
+| `gpt-5-nano:free`                      | 128K    | `Code`      | ~2.2s   |
+| `gpt-oss-20b:free`                     | 128K    | `Code`      | ~2.2s   |
+| `kimi-k2.5:free`                       | 128K    | `Reasoning` | ~3.5s   |
+| `l3-8b-lunaris:free`                   | 128K    | `General`   | ~1.3s   |
+| `llama-3-8b-instruct:free`             | 128K    | `Code`      | ~2.6s   |
+| `llama-3.1-8b-instruct:free`           | 128K    | `Code`      | ~3.4s   |
+| `llama-3.1-8b-instruct-turbo:free`     | 128K    | `Code`      | ~3.3s   |
+| `llama-3.3-70b-instruct-turbo:free`    | 128K    | `General`   | ~1.5s   |
+| `llama-4-scout:free`                   | 256K    | `General`   | ~4.6s   |
+| `minimax-m2.5:free`                    | 1M      | `General`   | ~4.0s   |
+| `minimax-m2.7:free`                    | 1M      | `General`   | ~3.6s   |
+| `mistral-large-3:free`                 | 128K    | `General`   | ~3.3s   |
+| `mistral-nemo-instruct-2407:free`      | 128K    | `General`   | ~2.4s   |
+| `mistral-small-24b-instruct-2501:free` | 32K     | `General`   | ~2.5s   |
+| `mythomax-l2-13b:free`                 | 128K    | `General`   | ~3.0s   |
+| `nemotron-3-nano:free`                 | 128K    | `General`   | ~1.9s   |
+| `openrouter:free:full-context`         | 128K    | `General`   | ~4.2s   |
+| `owl-alpha:free:full-context`          | 128K    | `General`   | ~5.1s   |
+| `qwen3.5:free`                         | 128K    | `General`   | ~5.1s   |
 ### [MNN AI](https://mnnai.ru)
 
-MNN AI is a credit-based inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Meta, Mistral, Moonshot, Stepfun, and more through an OpenAI-compatible endpoint. The free tier provides 10 RPM with $1 in monthly credits — replenishable each month, but the dollar cap limits heavy usage. Best suited for light daily coding and targeted queries. No credit card required. MNN AI currently has 45 verified coding-relevant models — 42 at ★★★★☆ or above.
+MNN AI is a credit-based inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Meta, Mistral, Moonshot, Stepfun, and more through an OpenAI-compatible endpoint. The free tier provides 10 RPM with $1 in monthly credits — replenishable each month, but the dollar cap limits heavy usage. Best suited for light daily coding and targeted queries. No credit card required. MNN AI currently has 45 verified coding-relevant models.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -653,54 +651,54 @@ MNN AI is a credit-based inference hub offering models from OpenAI, Google, Deep
 
 🔗 **Base URL:** `https://api2.mnnai.ru/v1`
 
-| Free Model                | Star Rating | Context | Best For    | Latency | Opinion                                                    |
-| :------------------------ | :---------- | :------ | :---------- | :------ | :--------------------------------------------------------- |
-| `deepseek-v3.1`           | ★★★★★       | 128K    | `Reasoning` | ~2.2s   | V3.1 reasoning, reliable for complex multi-file debugging. |
-| `deepseek-v4-flash`       | ★★★★★       | 128K    | `Reasoning` | ~1.8s   | Fast reasoning for hard prompts, good value on MNN.        |
-| `gemini-2.5-flash`        | ★★★★★       | 1M      | `General`   | ~1.8s   | Google's strong flash with 1M context.                     |
-| `gpt-5`                   | ★★★★★       | 128K    | `General`   | ~2.5s   | GPT-5 general chat, clean generation for daily coding.     |
-| `gpt-5-chat`              | ★★★★★       | 128K    | `General`   | ~2.5s   | GPT chat variant, balanced for daily coding.               |
-| `gpt-5.1`                 | ★★★★★       | 128K    | `General`   | ~1.8s   | Latest GPT, strong generalist on MNN.                      |
-| `gpt-5.1-chat`            | ★★★★★       | 128K    | `General`   | ~2.0s   | GPT-5.1 chat variant, polished output on MNN.              |
-| `gpt-5.2`                 | ★★★★★       | 128K    | `General`   | ~2.3s   | Clean GPT generation, direct output with no preamble.      |
-| `gpt-5.3-chat`            | ★★★★★       | 128K    | `General`   | ~3.9s   | Latest GPT chat, polished output for daily coding.         |
-| `gpt-oss-120b`            | ★★★★★       | 128K    | `General`   | ~1.8s   | Reliable 120B, stretches your $1 monthly credit well.      |
-| `qwen-3-235b-a22b`        | ★★★★★       | 256K    | `General`   | ~4.9s   | 235B Qwen3 with 256K context, deep multi-file reasoning.   |
-| `qwen-3.5-397b-a17b`      | ★★★★★       | 256K    | `General`   | ~6.8s   | 397B model with immense capacity but slow.                 |
-| `deepseek-v3.2`           | ★★★★☆       | 128K    | `Reasoning` | ~2.0s   | Refined reasoning, a solid backup to V4.                   |
-| `gemma-3-12b-it`          | ★★★★☆       | 32K     | `General`   | ~1.5s   | Google's compact 12B, fast instruction following.          |
-| `gemma-3-27b-it`          | ★★★★☆       | 32K     | `General`   | ~2.2s   | Google's 27B, stronger reasoning than 12B.                 |
-| `gemma-4-26b-a4b-it`      | ★★★★☆       | 32K     | `General`   | ~3.0s   | Lighter Gemma 4, efficient for daily tasks.                |
-| `gemma-4-31b-it`          | ★★★★☆       | 32K     | `General`   | ~4.5s   | Strong generalist but 32K limits big context.              |
-| `glm-4.7-free`            | ★★★★☆       | 128K    | `General`   | ~1.5s   | Zhipu free flash, snappy and clean.                        |
-| `gpt-4.1`                 | ★★★★☆       | 1M      | `General`   | ~2.4s   | 1M context, consistent for daily coding.                   |
-| `gpt-4.1-mini`            | ★★★★☆       | 1M      | `General`   | ~1.5s   | Compact OpenAI with 1M context, efficient.                 |
-| `gpt-4.1-nano`            | ★★★★☆       | 1M      | `Code`      | ~1.0s   | Fast GPT nano, good for quick scripting.                   |
-| `gpt-4o`                  | ★★★★☆       | 128K    | `General`   | ~1.4s   | Efficient token usage stretches the monthly cap.           |
-| `gpt-4o-mini`             | ★★★★☆       | 128K    | `General`   | ~1.2s   | Compact GPT-4o, efficient on the credit budget.            |
-| `gpt-5-mini`              | ★★★★☆       | 128K    | `General`   | ~1.5s   | Compact GPT, light on the $1 credit budget.                |
-| `gpt-5-nano`              | ★★★★☆       | 128K    | `Code`      | ~1.2s   | Fast GPT nano for quick code edits.                        |
-| `gpt-oss-20b`             | ★★★★☆       | 128K    | `Code`      | ~1.5s   | Lighter 120B, best value for the credit budget.            |
-| `kimi-k2-thinking`        | ★★★★☆       | 128K    | `Reasoning` | ~3.0s   | Moonshot's thinking model for deep logic.                  |
-| `kimi-k2.5`               | ★★★★☆       | 128K    | `Reasoning` | ~4.8s   | Solid for complex multi-step but slower.                   |
-| `llama-3.3-70b`           | ★★★★☆       | 128K    | `General`   | ~2.0s   | Meta's 70B, reliable instruction following.                |
-| `llama-4-maverick`        | ★★★★☆       | 256K    | `General`   | ~1.2s   | Responsive for lightweight coding at 1.2s.                 |
-| `llama-4-scout`           | ★★★★☆       | 256K    | `General`   | ~1.5s   | Latest Llama 4, solid for daily use.                       |
-| `magistral-medium-latest` | ★★★★☆       | 128K    | `Reasoning` | ~1.2s   | Mistral magistral medium, clean structured output.         |
-| `mistral-large-latest`    | ★★★★☆       | 128K    | `Reasoning` | ~2.5s   | Mistral's 123B, good reasoning for complex tasks.          |
-| `mistral-medium-latest`   | ★★★★☆       | 32K     | `General`   | ~1.2s   | Solid Mistral medium for daily scripting.                  |
-| `mistral-small-latest`    | ★★★★☆       | 32K     | `General`   | ~0.8s   | Lightweight Mistral, punchy with surprising depth.         |
-| `nemotron-3-nano`         | ★★★★☆       | 128K    | `Code`      | ~1.5s   | NVIDIA nano, efficient for lightweight tasks.              |
-| `o3-mini`                 | ★★★★☆       | 200K    | `Reasoning` | ~2.0s   | OpenAI reasoning model for logic problems.                 |
-| `o4-mini`                 | ★★★★☆       | 200K    | `Reasoning` | ~1.8s   | OpenAI's latest reasoning, efficient.                      |
-| `qwen-3-235b-a22b-2507`   | ★★★★☆       | 256K    | `Reasoning` | ~3.0s   | 235B reasoning with 256K context, dated but capable.       |
-| `qwen-3-coder-plus`       | ★★★★☆       | 256K    | `Code`      | ~2.1s   | Clean code output with solid instruction following.        |
-| `sonar`                   | ★★★★☆       | 128K    | `Search`    | ~1.5s   | Perplexity search, useful for research-augmented coding.   |
-| `step-3.5-flash`          | ★★★★☆       | 128K    | `Agentic`   | ~2.2s   | 11B active params punching above its weight.               |
+| Free Model                | Context | Best For    | Latency |
+| :------------------------ | ------- | ----------- | ------- |
+| `deepseek-v3.1`           | 128K    | `Reasoning` | ~2.2s   |
+| `deepseek-v4-flash`       | 128K    | `Reasoning` | ~1.8s   |
+| `gemini-2.5-flash`        | 1M      | `General`   | ~1.8s   |
+| `gpt-5`                   | 128K    | `General`   | ~2.5s   |
+| `gpt-5-chat`              | 128K    | `General`   | ~2.5s   |
+| `gpt-5.1`                 | 128K    | `General`   | ~1.8s   |
+| `gpt-5.1-chat`            | 128K    | `General`   | ~2.0s   |
+| `gpt-5.2`                 | 128K    | `General`   | ~2.3s   |
+| `gpt-5.3-chat`            | 128K    | `General`   | ~3.9s   |
+| `gpt-oss-120b`            | 128K    | `General`   | ~1.8s   |
+| `qwen-3-235b-a22b`        | 256K    | `General`   | ~4.9s   |
+| `qwen-3.5-397b-a17b`      | 256K    | `General`   | ~6.8s   |
+| `deepseek-v3.2`           | 128K    | `Reasoning` | ~2.0s   |
+| `gemma-3-12b-it`          | 32K     | `General`   | ~1.5s   |
+| `gemma-3-27b-it`          | 32K     | `General`   | ~2.2s   |
+| `gemma-4-26b-a4b-it`      | 32K     | `General`   | ~3.0s   |
+| `gemma-4-31b-it`          | 32K     | `General`   | ~4.5s   |
+| `glm-4.7-free`            | 128K    | `General`   | ~1.5s   |
+| `gpt-4.1`                 | 1M      | `General`   | ~2.4s   |
+| `gpt-4.1-mini`            | 1M      | `General`   | ~1.5s   |
+| `gpt-4.1-nano`            | 1M      | `Code`      | ~1.0s   |
+| `gpt-4o`                  | 128K    | `General`   | ~1.4s   |
+| `gpt-4o-mini`             | 128K    | `General`   | ~1.2s   |
+| `gpt-5-mini`              | 128K    | `General`   | ~1.5s   |
+| `gpt-5-nano`              | 128K    | `Code`      | ~1.2s   |
+| `gpt-oss-20b`             | 128K    | `Code`      | ~1.5s   |
+| `kimi-k2-thinking`        | 128K    | `Reasoning` | ~3.0s   |
+| `kimi-k2.5`               | 128K    | `Reasoning` | ~4.8s   |
+| `llama-3.3-70b`           | 128K    | `General`   | ~2.0s   |
+| `llama-4-maverick`        | 256K    | `General`   | ~1.2s   |
+| `llama-4-scout`           | 256K    | `General`   | ~1.5s   |
+| `magistral-medium-latest` | 128K    | `Reasoning` | ~1.2s   |
+| `mistral-large-latest`    | 128K    | `Reasoning` | ~2.5s   |
+| `mistral-medium-latest`   | 32K     | `General`   | ~1.2s   |
+| `mistral-small-latest`    | 32K     | `General`   | ~0.8s   |
+| `nemotron-3-nano`         | 128K    | `Code`      | ~1.5s   |
+| `o3-mini`                 | 200K    | `Reasoning` | ~2.0s   |
+| `o4-mini`                 | 200K    | `Reasoning` | ~1.8s   |
+| `qwen-3-235b-a22b-2507`   | 256K    | `Reasoning` | ~3.0s   |
+| `qwen-3-coder-plus`       | 256K    | `Code`      | ~2.1s   |
+| `sonar`                   | 128K    | `Search`    | ~1.5s   |
+| `step-3.5-flash`          | 128K    | `Agentic`   | ~2.2s   |
 
 ### [MegaNova AI](https://meganova.ai)
 
-MegaNova AI is a community-model inference hub offering fine-tuned variants of Llama, Mistral, and its own Manta series through an OpenAI-compatible endpoint. The free tier provides 60 RPM with 550 requests per day and 200,000 tokens per minute — generous throughput for a community model hub. No credit card required. MegaNova AI currently has 7 models verified — all at ★★★★☆ or above.
+MegaNova AI is a community-model inference hub offering fine-tuned variants of Llama, Mistral, and its own Manta series through an OpenAI-compatible endpoint. The free tier provides 60 RPM with 550 requests per day and 200,000 tokens per minute — generous throughput for a community model hub. No credit card required. MegaNova AI currently has 7 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -710,19 +708,19 @@ MegaNova AI is a community-model inference hub offering fine-tuned variants of L
 
 🔗 **Base URL:** `https://api.meganova.ai/v1`
 
-| Free Model                         | Star Rating | Context | Best For  | Latency | Opinion                                                                   |
-| :--------------------------------- | :---------- | :------ | :-------- | :------ | :------------------------------------------------------------------------ |
-| `BruhzWater/Sapphira-L3.3-70b-0.1` | ★★★★☆       | 128K    | `General` | ~1.1s   | Llama 3.3 70B fine-tune, good reasoning with clean instruction following. |
-| `FallenMerick/MN-Violet-Lotus-12B` | ★★★★☆       | 32K     | `General` | ~1.3s   | Community 12B tune, thoughtful outputs at good speed.                     |
-| `meganova-ai/manta-flash-1.0`      | ★★★★☆       | 128K    | `General` | ~1.1s   | MegaNova's own flash, fast clean responses.                               |
-| `meganova-ai/manta-mini-1.0`       | ★★★★☆       | 128K    | `General` | ~1.3s   | Compact Manta, efficient for lightweight tasks.                           |
-| `Sao10K/L3-70B-Euryale-v2.1`       | ★★★★☆       | 128K    | `General` | ~1.3s   | Community Llama 3 70B fine-tune, solid general-purpose.                   |
-| `Sao10K/L3-8B-Stheno-v3.2`         | ★★★★☆       | 128K    | `General` | ~1.0s   | Compact 8B community tune, fast and direct for daily coding.              |
-| `Steelskull/L3.3-MS-Nevoria-70b`   | ★★★★☆       | 128K    | `General` | ~1.5s   | Another 70B community tune, reliable daily output.                        |
+| Free Model                         | Context | Best For  | Latency |
+| :--------------------------------- | ------- | --------- | ------- |
+| `BruhzWater/Sapphira-L3.3-70b-0.1` | 128K    | `General` | ~1.1s   |
+| `FallenMerick/MN-Violet-Lotus-12B` | 32K     | `General` | ~1.3s   |
+| `meganova-ai/manta-flash-1.0`      | 128K    | `General` | ~1.1s   |
+| `meganova-ai/manta-mini-1.0`       | 128K    | `General` | ~1.3s   |
+| `Sao10K/L3-70B-Euryale-v2.1`       | 128K    | `General` | ~1.3s   |
+| `Sao10K/L3-8B-Stheno-v3.2`         | 128K    | `General` | ~1.0s   |
+| `Steelskull/L3.3-MS-Nevoria-70b`   | 128K    | `General` | ~1.5s   |
 
 ### [Mistral AI](https://console.mistral.ai)
 
-Mistral AI is highly regarded for building models that punch far above their **parameter weight class**, with exceptionally clean instruction following and compact execution. The free tier offers replenishable credits with generous RPM limits. Mistral AI currently has 40 models verified (with aliases) — 24 are ★★★☆☆ or above.
+Mistral AI is highly regarded for building models that punch far above their **parameter weight class**, with exceptionally clean instruction following and compact execution. The free tier offers replenishable credits with generous RPM limits. Mistral AI currently has 40 models verified (with aliases).
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -732,32 +730,32 @@ Mistral AI is highly regarded for building models that punch far above their **p
 
 🔗 **Base URL:** `https://api.mistral.ai/v1`
 
-| Free Model                                          | Star Rating | Context | Best For    | Latency | Opinion                                                        |
-| :-------------------------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------- |
-| `mistral-code-agent-latest`                         | ★★★★★       | 128K    | `Agent`     | ~0.4s   | Built for autonomous agents, native tool use at sub-second.    |
-| `codestral-latest` / `codestral-2508`               | ★★★★☆       | 256K    | `Code`      | ~0.4s   | Code completion specialist with 256K at 0.4s.                  |
-| `devstral-medium-latest`                            | ★★★★☆       | 128K    | `Agent`     | ~0.9s   | Agent routing only, good for automated dev loops.              |
-| `magistral-medium-latest` / `magistral-medium-2509` | ★★★★☆       | 128K    | `Reasoning` | ~0.6s   | Medium reasoning, clean structured output at sub-second.       |
-| `magistral-small-latest` / `magistral-small-2509`   | ★★★★☆       | 128K    | `General`   | ~0.5s   | New Mistral line, clean with solid depth. A pleasant surprise. |
-| `mistral-code-fim-latest`                           | ★★★★☆       | 128K    | `Code`      | ~0.4s   | Fill-in-Middle specialist, smart inline at blazing speed.      |
-| `mistral-code-latest`                               | ★★★★☆       | 128K    | `Code`      | ~0.4s   | Fast precise completions across dozens of languages.           |
-| `mistral-large-latest` / `mistral-large-2512`       | ★★★★☆       | 128K    | `Reasoning` | ~0.7s   | Good multilingual reasoning, but 50k TPM limits sustained use. |
-| `mistral-medium-2604`                               | ★★★★☆       | 32K     | `General`   | ~0.5s   | Responsive Medium, predictable with structural debugging.      |
-| `mistral-medium-3`                                  | ★★★★☆       | 32K     | `General`   | ~0.5s   | Trusted Medium, clean boilerplate without empty chatter.       |
-| `mistral-medium-3.5` / `mistral-medium-3-5`         | ★★★★☆       | 32K     | `General`   | ~0.5s   | Great value, responsive for structural layouts.                |
-| `mistral-medium-latest` / `mistral-medium`          | ★★★★☆       | 32K     | `General`   | ~0.6s   | Classic production model, dependable for everyday scripting.   |
-| `mistral-small-latest` / `mistral-small-2603`       | ★★★★☆       | 32K     | `General`   | ~0.5s   | Lightweight, punchy tone with surprising depth.                |
-| `devstral-latest` / `devstral-2512`                 | ★★★☆☆       | 128K    | `Agent`     | ~0.5s   | Agent routing only, tailored for programmatic tool use.        |
-| `ministral-14b-latest` / `ministral-14b-2512`       | ★★★☆☆       | 128K    | `General`   | ~0.4s   | Edge-focused 14B, capable for its tight memory footprint.      |
-| `ministral-8b-latest` / `ministral-8b-2512`         | ★★★☆☆       | 128K    | `General`   | ~0.5s   | Nimble 8B, responsive for lightweight coding tasks.            |
-| `mistral-medium-2505`                               | ★★★☆☆       | 32K     | `Fallback`  | ~0.8s   | Early Medium build, tends to use full-sentence framing.        |
-| `mistral-medium-2508`                               | ★★★☆☆       | 32K     | `Fallback`  | ~0.8s   | Older Medium, clean output but not as optimized.               |
-| `mistral-small-2506`                                | ★★★☆☆       | 32K     | `Fallback`  | ~0.5s   | Earlier Small snapshot, slower than 2603.                      |
-| `mistral-tiny-latest` / `mistral-tiny-2407`         | ★★★☆☆       | 32K     | `Fallback`  | ~0.4s   | Fastest Mistral model, good for syntax checks and one-liners.  |
-| `mistral-vibe-cli-fast`                             | ★★★☆☆       | 32K     | `Agent`     | ~0.5s   | Terminal helper, blistering single-turn for flags.             |
-| `mistral-vibe-cli-latest`                           | ★★★☆☆       | 32K     | `Agent`     | ~0.5s   | Terminal helper, favors explicit sentence explanations.        |
-| `mistral-vibe-cli-with-tools`                       | ★★★☆☆       | 32K     | `Agent`     | ~1.4s   | Terminal helper, returns raw bash tokens with zero preamble.   |
-| `open-mistral-nemo` / `open-mistral-nemo-2407`      | ★★★☆☆       | 128K    | `Fallback`  | ~0.4s   | Fast and flexible for low-complexity text filtering.           |
+| Free Model                                          | Context | Best For    | Latency |
+| :-------------------------------------------------- | ------- | ----------- | ------- |
+| `mistral-code-agent-latest`                         | 128K    | `Agent`     | ~0.4s   |
+| `codestral-latest` / `codestral-2508`               | 256K    | `Code`      | ~0.4s   |
+| `devstral-medium-latest`                            | 128K    | `Agent`     | ~0.9s   |
+| `magistral-medium-latest` / `magistral-medium-2509` | 128K    | `Reasoning` | ~0.6s   |
+| `magistral-small-latest` / `magistral-small-2509`   | 128K    | `General`   | ~0.5s   |
+| `mistral-code-fim-latest`                           | 128K    | `Code`      | ~0.4s   |
+| `mistral-code-latest`                               | 128K    | `Code`      | ~0.4s   |
+| `mistral-large-latest` / `mistral-large-2512`       | 128K    | `Reasoning` | ~0.7s   |
+| `mistral-medium-2604`                               | 32K     | `General`   | ~0.5s   |
+| `mistral-medium-3`                                  | 32K     | `General`   | ~0.5s   |
+| `mistral-medium-3.5` / `mistral-medium-3-5`         | 32K     | `General`   | ~0.5s   |
+| `mistral-medium-latest` / `mistral-medium`          | 32K     | `General`   | ~0.6s   |
+| `mistral-small-latest` / `mistral-small-2603`       | 32K     | `General`   | ~0.5s   |
+| `devstral-latest` / `devstral-2512`                 | 128K    | `Agent`     | ~0.5s   |
+| `ministral-14b-latest` / `ministral-14b-2512`       | 128K    | `General`   | ~0.4s   |
+| `ministral-8b-latest` / `ministral-8b-2512`         | 128K    | `General`   | ~0.5s   |
+| `mistral-medium-2505`                               | 32K     | `Fallback`  | ~0.8s   |
+| `mistral-medium-2508`                               | 32K     | `Fallback`  | ~0.8s   |
+| `mistral-small-2506`                                | 32K     | `Fallback`  | ~0.5s   |
+| `mistral-tiny-latest` / `mistral-tiny-2407`         | 32K     | `Fallback`  | ~0.4s   |
+| `mistral-vibe-cli-fast`                             | 32K     | `Agent`     | ~0.5s   |
+| `mistral-vibe-cli-latest`                           | 32K     | `Agent`     | ~0.5s   |
+| `mistral-vibe-cli-with-tools`                       | 32K     | `Agent`     | ~1.4s   |
+| `open-mistral-nemo` / `open-mistral-nemo-2407`      | 128K    | `Fallback`  | ~0.4s   |
 
 ### [Mixlayer](https://www.mixlayer.com)
 
@@ -771,13 +769,13 @@ Mixlayer is an inference platform for open-source AI models with an OpenAI-compa
 
 🔗 **Base URL:** `https://models.mixlayer.ai/v1`
 
-| Free Model             | Star Rating | Context | Best For  | Latency | Opinion                                                          |
-| :--------------------- | :---------- | :------ | :-------- | :------ | :--------------------------------------------------------------- |
-| `qwen/qwen3.5-4b-free` | ★★★★★       | 256K    | `General` | ~1.0s   | Only free Mixlayer model. 256K at blazing speed for prototyping. |
+| Free Model             | Context | Best For  | Latency |
+| :--------------------- | ------- | --------- | ------- |
+| `qwen/qwen3.5-4b-free` | 256K    | `General` | ~1.0s   |
 
 ### [Naga AI](https://naga.ac)
 
-Naga AI is a lightweight inference hub offering a small set of free models from NVIDIA and Meta through an OpenAI-compatible endpoint. The free tier provides 10 RPM with 100 requests per day — a very tight cap that limits it to occasional queries and quick debugging. No credit card required. Naga AI currently has 3 models verified — all at ★★★★☆ or above.
+Naga AI is a lightweight inference hub offering a small set of free models from NVIDIA and Meta through an OpenAI-compatible endpoint. The free tier provides 10 RPM with 100 requests per day — a very tight cap that limits it to occasional queries and quick debugging. No credit card required. Naga AI currently has 3 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -787,15 +785,15 @@ Naga AI is a lightweight inference hub offering a small set of free models from 
 
 🔗 **Base URL:** `https://api.naga.ac/v1`
 
-| Free Model                            | Star Rating | Context | Best For  | Latency | Opinion                                            |
-| :------------------------------------ | :---------- | :------ | :-------- | :------ | :------------------------------------------------- |
-| `llama-3.3-70b-instruct:free`         | ★★★★☆       | 128K    | `General` | ~1.6s   | Reliable 70B for daily coding, but 100 RPD bites.  |
-| `llama-4-scout-17b-16e-instruct:free` | ★★★★☆       | 256K    | `General` | ~1.5s   | Fast with 256K, but 100 RPD limits sustained use.  |
-| `nemotron-3-super-120b-a12b:free`     | ★★★★☆       | 1M      | `General` | ~3.2s   | 1M context when smaller models need more headroom. |
+| Free Model                            | Context | Best For  | Latency |
+| :------------------------------------ | ------- | --------- | ------- |
+| `llama-3.3-70b-instruct:free`         | 128K    | `General` | ~1.6s   |
+| `llama-4-scout-17b-16e-instruct:free` | 256K    | `General` | ~1.5s   |
+| `nemotron-3-super-120b-a12b:free`     | 1M      | `General` | ~3.2s   |
 
 ### [Navy API](https://api.navy)
 
-Navy API is a high-volume inference hub offering an extensive catalog of models from OpenAI, DeepSeek, Grok, Google, Mistral, Cohere, Meta, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 20 RPM with 250,000 daily tokens — enough throughput for serious coding sessions. No credit card required. Navy API currently has 89 verified coding-relevant models — 28 at ★★★★★.
+Navy API is a high-volume inference hub offering an extensive catalog of models from OpenAI, DeepSeek, Grok, Google, Mistral, Cohere, Meta, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 20 RPM with 250,000 daily tokens — enough throughput for serious coding sessions. No credit card required. Navy API currently has 89 verified coding-relevant models.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -805,40 +803,40 @@ Navy API is a high-volume inference hub offering an extensive catalog of models 
 
 🔗 **Base URL:** `https://api.navy/v1`
 
-| Free Model                        | Star Rating | Context | Best For    | Latency | Opinion                                                      |
-| :-------------------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------- |
-| `command-a`                       | ★★★★★       | 128K    | `General`   | ~2.0s   | Cohere's flagship, strong output with 250k TPD.              |
-| `deepseek-reasoner`               | ★★★★★       | 128K    | `Reasoning` | ~3.5s   | DeepSeek's specialist, deep CoT for logic problems.          |
-| `deepseek-v3.1`                   | ★★★★★       | 128K    | `Reasoning` | ~2.4s   | Strong reasoning, reliable for complex multi-file debugging. |
-| `deepseek-v3.1-terminus`          | ★★★★★       | 128K    | `Reasoning` | ~2.6s   | Terminus variant, refined for complex logic.                 |
-| `deepseek-v4-flash`               | ★★★★★       | 128K    | `Reasoning` | ~1.5s   | Top-tier flash on Navy, fast with no daily cap.              |
-| `deepseek-v4-flash-venice`        | ★★★★★       | 128K    | `Reasoning` | ~3.0s   | Venice variant of V4 Flash, strong reasoning pipeline.       |
-| `deepseek-v4-pro`                 | ★★★★★       | 128K    | `Reasoning` | ~1.6s   | V4 Pro with extra headroom over Flash.                       |
-| `gemini-2.5-flash`                | ★★★★★       | 1M      | `General`   | ~1.5s   | Google's strong flash with 1M context at top speed.          |
-| `gemini-2.5-flash-thinking`       | ★★★★★       | 1M      | `Reasoning` | ~2.5s   | Gemini with CoT, strong 1M reasoning for complex projects.   |
-| `gemini-2.5-pro`                  | ★★★★★       | 1M      | `General`   | ~2.8s   | Google's top-tier, deep reasoning with 1M context.           |
-| `gemini-3-flash-preview-thinking` | ★★★★★       | 1M      | `Reasoning` | ~2.0s   | Preview thinking, fast CoT with 1M context.                  |
-| `gpt-5-chat-latest`               | ★★★★★       | 128K    | `General`   | ~1.5s   | Latest GPT chat, clean generation on Navy.                   |
-| `gpt-5-search-api`                | ★★★★★       | 128K    | `Search`    | ~1.8s   | Search-augmented GPT-5, powerful research tool.              |
-| `gpt-5.1`                         | ★★★★★       | 128K    | `General`   | ~1.2s   | OpenAI's strong generalist with balanced speed.              |
-| `gpt-5.2`                         | ★★★★★       | 128K    | `General`   | ~1.4s   | Clean GPT generation, reliable without preamble.             |
-| `gpt-5.4`                         | ★★★★★       | 128K    | `General`   | ~1.3s   | Latest GPT, clean direct output.                             |
-| `gpt-oss-120b`                    | ★★★★★       | 128K    | `General`   | ~0.8s   | Reliable 120B at sub-second speed.                           |
-| `grok-4`                          | ★★★★★       | 128K    | `General`   | ~2.5s   | xAI's flagship, strong generalist with clean output.         |
-| `grok-4-fast-reasoning`           | ★★★★★       | 128K    | `Reasoning` | ~2.0s   | Fast Grok with CoT, strong reasoning at speed.               |
-| `grok-4.1-fast-reasoning`         | ★★★★★       | 128K    | `Reasoning` | ~2.0s   | Updated fast Grok, strong reasoning chain.                   |
-| `grok-4.20-reasoning`             | ★★★★★       | 128K    | `Reasoning` | ~3.3s   | Deep CoT from xAI for hard logic problems.                   |
-| `grok-4.3`                        | ★★★★★       | 128K    | `Reasoning` | ~3.0s   | Latest Grok, refined reasoning with strong logic.            |
-| `grok-code-fast-1`                | ★★★★★       | 128K    | `Code`      | ~1.0s   | xAI's coding specialist, blazing fast code generation.       |
-| `hermes-4-405b`                   | ★★★★★       | 128K    | `General`   | ~3.5s   | Massive 405B Nous model, deep reasoning at scale.            |
-| `minimax-m2.5`                    | ★★★★★       | 128K    | `Reasoning` | ~3.0s   | MiniMax flagship, strong reasoning for complex tasks.        |
-| `o3`                              | ★★★★★       | 200K    | `Reasoning` | ~4.0s   | OpenAI's top reasoning, deep CoT for hardest problems.       |
-| `o4-mini`                         | ★★★★★       | 200K    | `Reasoning` | ~2.5s   | New OpenAI reasoning, strong CoT at 200K context.            |
-| `qwen3.5-397b-a17b`               | ★★★★★       | 256K    | `Reasoning` | ~4.5s   | Massive Qwen, deep reasoning at 256K for large codebases.    |
+| Free Model                        | Context | Best For    | Latency |
+| :-------------------------------- | ------- | ----------- | ------- |
+| `command-a`                       | 128K    | `General`   | ~2.0s   |
+| `deepseek-reasoner`               | 128K    | `Reasoning` | ~3.5s   |
+| `deepseek-v3.1`                   | 128K    | `Reasoning` | ~2.4s   |
+| `deepseek-v3.1-terminus`          | 128K    | `Reasoning` | ~2.6s   |
+| `deepseek-v4-flash`               | 128K    | `Reasoning` | ~1.5s   |
+| `deepseek-v4-flash-venice`        | 128K    | `Reasoning` | ~3.0s   |
+| `deepseek-v4-pro`                 | 128K    | `Reasoning` | ~1.6s   |
+| `gemini-2.5-flash`                | 1M      | `General`   | ~1.5s   |
+| `gemini-2.5-flash-thinking`       | 1M      | `Reasoning` | ~2.5s   |
+| `gemini-2.5-pro`                  | 1M      | `General`   | ~2.8s   |
+| `gemini-3-flash-preview-thinking` | 1M      | `Reasoning` | ~2.0s   |
+| `gpt-5-chat-latest`               | 128K    | `General`   | ~1.5s   |
+| `gpt-5-search-api`                | 128K    | `Search`    | ~1.8s   |
+| `gpt-5.1`                         | 128K    | `General`   | ~1.2s   |
+| `gpt-5.2`                         | 128K    | `General`   | ~1.4s   |
+| `gpt-5.4`                         | 128K    | `General`   | ~1.3s   |
+| `gpt-oss-120b`                    | 128K    | `General`   | ~0.8s   |
+| `grok-4`                          | 128K    | `General`   | ~2.5s   |
+| `grok-4-fast-reasoning`           | 128K    | `Reasoning` | ~2.0s   |
+| `grok-4.1-fast-reasoning`         | 128K    | `Reasoning` | ~2.0s   |
+| `grok-4.20-reasoning`             | 128K    | `Reasoning` | ~3.3s   |
+| `grok-4.3`                        | 128K    | `Reasoning` | ~3.0s   |
+| `grok-code-fast-1`                | 128K    | `Code`      | ~1.0s   |
+| `hermes-4-405b`                   | 128K    | `General`   | ~3.5s   |
+| `minimax-m2.5`                    | 128K    | `Reasoning` | ~3.0s   |
+| `o3`                              | 200K    | `Reasoning` | ~4.0s   |
+| `o4-mini`                         | 200K    | `Reasoning` | ~2.5s   |
+| `qwen3.5-397b-a17b`               | 256K    | `Reasoning` | ~4.5s   |
 
 ### [NVIDIA NIM](https://build.nvidia.com)
 
-NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta, Mistral, Google, Qwen, and more through OpenAI-compatible endpoints — no credit card required. The largest free model library on the list, but 40 RPM per model caps it as a backup pool rather than a daily driver. Only models tagged as **Free Endpoint** (hosted on NVIDIA's own infrastructure) are listed below. NVIDIA NIM currently has 68 models verified — 34 are ★★★★☆ or above.
+NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta, Mistral, Google, Qwen, and more through OpenAI-compatible endpoints — no credit card required. The largest free model library on the list, but 40 RPM per model caps it as a backup pool rather than a daily driver. Only models tagged as **Free Endpoint** (hosted on NVIDIA's own infrastructure) are listed below. NVIDIA NIM currently has 68 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -850,46 +848,46 @@ NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta
 
 > ⚠️ May require **Phone verification** to generate an API Key.
 
-| Free Model                                      | Star Rating | Context | Best For    | Latency | Opinion                                                             |
-| :---------------------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------ |
-| `deepseek-ai/deepseek-v4-flash`                 | ★★★★★       | 128K    | `Code`      | ~1.5s   | 284B model as the strongest coding model on NIM.                    |
-| `deepseek-ai/deepseek-v4-pro`                   | ★★★★★       | 128K    | `Reasoning` | ~1.7s   | V4 Pro, extra headroom for the hardest problems.                    |
-| `minimaxai/minimax-m3`                          | ★★★★★       | 1M      | `General`   | ~0.9s   | 1M context at 0.9s, hard to beat.                                   |
-| `mistralai/mistral-large-3-675b-instruct-2512`  | ★★★★★       | 128K    | `General`   | ~0.5s   | Mistral's 675B at sub-second, top general pick.                     |
-| `nvidia/nemotron-3-ultra-550b-a55b`             | ★★★★★       | 128K    | `General`   | ~2.5s   | 550B raw power for the hardest multi-file problems.                 |
-| `openai/gpt-oss-120b`                           | ★★★★★       | 128K    | `General`   | ~0.6s   | Same gpt-oss, clean across every task.                              |
-| `qwen/qwen3.5-397b-a17b`                        | ★★★★★       | 256K    | `Reasoning` | ~1.9s   | 397B model with 17B active, immense for hard prompts.               |
-| `z-ai/glm-5.1`                                  | ★★★★★       | 128K    | `Code`      | ~5.3s   | Good agentic coding but 5s wait tests patience.                     |
-| `abacusai/dracarys-llama-3.1-70b-instruct`      | ★★★★☆       | 128K    | `Code`      | ~0.5s   | Coding fine-tune of Llama 3.1, focused for agentic workflows.       |
-| `bytedance/seed-oss-36b-instruct`               | ★★★★☆       | 128K    | `General`   | ~1.1s   | ByteDance's 36B, clean instruct with solid coding.                  |
-| `google/gemma-4-31b-it`                         | ★★★★☆       | 32K     | `General`   | ~2.3s   | Google's 31B, responsive generalist for daily coding.               |
-| `meta/llama-3.1-70b-instruct`                   | ★★★★☆       | 128K    | `General`   | ~0.5s   | Reliable across every coding task.                                  |
-| `meta/llama-3.1-8b-instruct`                    | ★★★★☆       | 128K    | `Fallback`  | ~0.8s   | Meta's 8B, fast lightweight fallback for syntax checks.             |
-| `meta/llama-3.3-70b-instruct`                   | ★★★★☆       | 128K    | `General`   | ~0.7s   | Strong instruction following, complex prompts first try.            |
-| `meta/llama-4-maverick-17b-128e-instruct`       | ★★★★☆       | 256K    | `General`   | ~0.4s   | Latest Llama 4 at 0.4s, clean for daily coding.                     |
-| `microsoft/phi-4-mini-instruct`                 | ★★★★☆       | 128K    | `General`   | ~0.9s   | Microsoft's compact Phi, punchy answers for quick coding.           |
-| `minimaxai/minimax-m2.7`                        | ★★★★☆       | 1M      | `General`   | ~1.1s   | 230B model with 1M context, good daily driver.                      |
-| `mistralai/ministral-14b-instruct-2512`         | ★★★★☆       | 128K    | `General`   | ~0.8s   | Mini but capable 14B, edge-friendly daily driver.                   |
-| `mistralai/mistral-medium-3.5-128b`             | ★★★★☆       | 32K     | `General`   | ~0.4s   | Reliable mid-range for everyday scripting.                          |
-| `mistralai/mistral-nemotron`                    | ★★★★☆       | 128K    | `General`   | ~0.4s   | Mistral x Nemotron, balanced reasoning and speed.                   |
-| `mistralai/mistral-small-4-119b-2603`           | ★★★★☆       | 32K     | `Code`      | ~0.4s   | A Fast model for reasoning, and coding, despite the context window. |
-| `mistralai/mixtral-8x7b-instruct-v0.1`          | ★★★★☆       | 32K     | `General`   | ~0.7s   | Classic MoE 8x7B, fast and dependable on NIM.                       |
-| `moonshotai/kimi-k2.6`                          | ★★★★☆       | 128K    | `Reasoning` | ~0.7s   | 1T multimodal, good for long-horizon coding.                        |
-| `nvidia/llama-3.3-nemotron-super-49b-v1`        | ★★★★☆       | 128K    | `General`   | ~2.1s   | 49B Nemotron, clean responses for daily coding.                     |
-| `nvidia/llama-3.3-nemotron-super-49b-v1.5`      | ★★★★☆       | 128K    | `General`   | ~2.7s   | Updated 49B with cleaner output, solid mid-range.                   |
-| `nvidia/nemotron-3-nano-30b-a3b`                | ★★★★☆       | 128K    | `General`   | ~0.3s   | 30B model with 3B active, efficient for lightweight tasks.          |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning` | ★★★★☆       | 128K    | `Reasoning` | ~0.4s   | Reasoning variant of the 30B, shows thorough CoT.                   |
-| `nvidia/nemotron-3-super-120b-a12b`             | ★★★★☆       | 1M      | `Reasoning` | ~0.7s   | 120B with 1M context, steps in when smaller models run out.         |
-| `nvidia/nvidia-nemotron-nano-9b-v2`             | ★★★★☆       | 128K    | `Fallback`  | ~1.5s   | NVIDIA's 9B nano, reliable fallback for quick edits.                |
-| `openai/gpt-oss-20b`                            | ★★★★☆       | 128K    | `General`   | ~2.0s   | Lighter 120B, fast for everyday tasks.                              |
-| `qwen/qwen3-next-80b-a3b-instruct`              | ★★★★☆       | 256K    | `Code`      | ~1.1s   | Next-gen Qwen 3, 80B model at 256K, efficient.                      |
-| `qwen/qwen3.5-122b-a10b`                        | ★★★★☆       | 256K    | `Code`      | ~1.1s   | 122B model having good coding quality with strong reasoning.        |
-| `stepfun-ai/step-3.5-flash`                     | ★★★★☆       | 128K    | `Agentic`   | ~0.4s   | 11B active params, good for daily coding.                           |
-| `stepfun-ai/step-3.7-flash`                     | ★★★★☆       | 128K    | `Agentic`   | ~0.5s   | Latest Step flash, improved agentic coding at speed.                |
+| Free Model                                      | Context | Best For    | Latency |
+| :---------------------------------------------- | ------- | ----------- | ------- |
+| `deepseek-ai/deepseek-v4-flash`                 | 128K    | `Code`      | ~1.5s   |
+| `deepseek-ai/deepseek-v4-pro`                   | 128K    | `Reasoning` | ~1.7s   |
+| `minimaxai/minimax-m3`                          | 1M      | `General`   | ~0.9s   |
+| `mistralai/mistral-large-3-675b-instruct-2512`  | 128K    | `General`   | ~0.5s   |
+| `nvidia/nemotron-3-ultra-550b-a55b`             | 128K    | `General`   | ~2.5s   |
+| `openai/gpt-oss-120b`                           | 128K    | `General`   | ~0.6s   |
+| `qwen/qwen3.5-397b-a17b`                        | 256K    | `Reasoning` | ~1.9s   |
+| `z-ai/glm-5.1`                                  | 128K    | `Code`      | ~5.3s   |
+| `abacusai/dracarys-llama-3.1-70b-instruct`      | 128K    | `Code`      | ~0.5s   |
+| `bytedance/seed-oss-36b-instruct`               | 128K    | `General`   | ~1.1s   |
+| `google/gemma-4-31b-it`                         | 32K     | `General`   | ~2.3s   |
+| `meta/llama-3.1-70b-instruct`                   | 128K    | `General`   | ~0.5s   |
+| `meta/llama-3.1-8b-instruct`                    | 128K    | `Fallback`  | ~0.8s   |
+| `meta/llama-3.3-70b-instruct`                   | 128K    | `General`   | ~0.7s   |
+| `meta/llama-4-maverick-17b-128e-instruct`       | 256K    | `General`   | ~0.4s   |
+| `microsoft/phi-4-mini-instruct`                 | 128K    | `General`   | ~0.9s   |
+| `minimaxai/minimax-m2.7`                        | 1M      | `General`   | ~1.1s   |
+| `mistralai/ministral-14b-instruct-2512`         | 128K    | `General`   | ~0.8s   |
+| `mistralai/mistral-medium-3.5-128b`             | 32K     | `General`   | ~0.4s   |
+| `mistralai/mistral-nemotron`                    | 128K    | `General`   | ~0.4s   |
+| `mistralai/mistral-small-4-119b-2603`           | 32K     | `Code`      | ~0.4s   |
+| `mistralai/mixtral-8x7b-instruct-v0.1`          | 32K     | `General`   | ~0.7s   |
+| `moonshotai/kimi-k2.6`                          | 128K    | `Reasoning` | ~0.7s   |
+| `nvidia/llama-3.3-nemotron-super-49b-v1`        | 128K    | `General`   | ~2.1s   |
+| `nvidia/llama-3.3-nemotron-super-49b-v1.5`      | 128K    | `General`   | ~2.7s   |
+| `nvidia/nemotron-3-nano-30b-a3b`                | 128K    | `General`   | ~0.3s   |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning` | 128K    | `Reasoning` | ~0.4s   |
+| `nvidia/nemotron-3-super-120b-a12b`             | 1M      | `Reasoning` | ~0.7s   |
+| `nvidia/nvidia-nemotron-nano-9b-v2`             | 128K    | `Fallback`  | ~1.5s   |
+| `openai/gpt-oss-20b`                            | 128K    | `General`   | ~2.0s   |
+| `qwen/qwen3-next-80b-a3b-instruct`              | 256K    | `Code`      | ~1.1s   |
+| `qwen/qwen3.5-122b-a10b`                        | 256K    | `Code`      | ~1.1s   |
+| `stepfun-ai/step-3.5-flash`                     | 128K    | `Agentic`   | ~0.4s   |
+| `stepfun-ai/step-3.7-flash`                     | 128K    | `Agentic`   | ~0.5s   |
 
 ### [Ollama Cloud](https://ollama.com)
 
-Ollama Cloud is a cloud-hosted inference service running Ollama behind the scenes, offering a vast model registry without the need to run locally. The free tier gives you a 5-hour session window that resets weekly — uncapped during that window but limited by the weekly refresh. Models respond cleanly and quickly, making it one of the stronger free providers for coding if you plan around the session. Ollama Cloud currently has 8 models verified — all at ★★★★☆ or above.
+Ollama Cloud is a cloud-hosted inference service running Ollama behind the scenes, offering a vast model registry without the need to run locally. The free tier gives you a 5-hour session window that resets weekly — uncapped during that window but limited by the weekly refresh. Models respond cleanly and quickly, making it one of the stronger free providers for coding if you plan around the session. Ollama Cloud currently has 8 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -899,16 +897,16 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 
 🔗 **Base URL:** `https://api.ollama.com`
 
-| Free Model             | Star Rating | Context | Best For    | Latency | Opinion                                                                  |
-| :--------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------------- |
-| `gpt-oss:120b`         | ★★★★★       | 128K    | `General`   | ~1.3s   | Consistent across every provider, same quality everywhere.               |
-| `minimax-m2.5`         | ★★★★★       | 1M      | `General`   | ~1.1s   | Fast MiniMax with 1M context, clean output for daily coding.             |
-| `gemma4:31b`           | ★★★★☆       | 32K     | `General`   | ~3.8s   | Google's latest 31B, solid but slow at 3.8s on Ollama.                   |
-| `gpt-oss:20b`          | ★★★★☆       | 128K    | `Reasoning` | ~1.3s   | Smaller GPT-OSS, solid reasoning at fraction of the latency.             |
-| `minimax-m3`           | ★★★★☆       | 1M      | `General`   | ~3.9s   | Latest MiniMax, 1M context but moderate speed on Ollama.                 |
-| `nemotron-3-nano:30b`  | ★★★★☆       | 128K    | `Reasoning` | ~2.1s   | Efficient 30B reasoning, steady but slower than before.                  |
-| `nemotron-3-super`     | ★★★★☆       | 1M      | `Reasoning` | ~1.1s   | Fast reasoning with 1M context, strong value on Ollama.                  |
-| `nemotron-3-ultra`     | ★★★★☆       | 1M      | `Reasoning` | ~2.1s   | Largest Nemotron with 1M context, capable for complex reasoning.         |
+| Free Model            | Context | Best For    | Latency |
+| :-------------------- | ------- | ----------- | ------- |
+| `gpt-oss:120b`        | 128K    | `General`   | ~1.3s   |
+| `minimax-m2.5`        | 1M      | `General`   | ~1.1s   |
+| `gemma4:31b`          | 32K     | `General`   | ~3.8s   |
+| `gpt-oss:20b`         | 128K    | `Reasoning` | ~1.3s   |
+| `minimax-m3`          | 1M      | `General`   | ~3.9s   |
+| `nemotron-3-nano:30b` | 128K    | `Reasoning` | ~2.1s   |
+| `nemotron-3-super`    | 1M      | `Reasoning` | ~1.1s   |
+| `nemotron-3-ultra`    | 1M      | `Reasoning` | ~2.1s   |
 
 ### [OpenCode Zen](https://opencode.ai/zen)
 
@@ -922,18 +920,18 @@ OpenCode Zen is a curated set of AI models tested and optimized for coding agent
 
 🔗 **Base URL:** `https://opencode.ai/zen/v1`
 
-| Free Model               | Star Rating | Context | Best For      | Latency | Opinion                                                        |
-| :----------------------- | :---------- | :------ | :------------ | :------ | :------------------------------------------------------------- |
-| `deepseek-v4-flash-free` | ★★★★★       | 128K    | `Code`        | ~1.8s   | Strongest here for coding, handles multi-turn smoothly.        |
-| `nemotron-3-ultra-free`  | ★★★★★       | 128K    | `Code Review` | ~1.6s   | Good for code review, pedantic and precise.                    |
-| `big-pickle`             | ★★★★☆       | 128K    | `Fallback`    | ~1.9s   | Strong versatile fallback, reliable for single-file scripting. |
-| `hy3-free`               | ★★★★☆       | 128K    | `General`     | ~3.7s   | Tencent's Hy3, solid generalist with decent reasoning.         |
-| `mimo-v2.5-free`         | ★★★★☆       | 128K    | `Code`        | ~1.8s   | Lightweight, best for small tasks where brief patches matter.  |
-| `north-mini-code-free`   | ★★★★☆       | 128K    | `Fallback`    | ~0.9s   | Micro-scale utility, good for inline autocomplete or regex.    |
+| Free Model               | Context | Best For      | Latency |
+| :----------------------- | ------- | ------------- | ------- |
+| `deepseek-v4-flash-free` | 128K    | `Code`        | ~1.8s   |
+| `nemotron-3-ultra-free`  | 128K    | `Code Review` | ~1.6s   |
+| `big-pickle`             | 128K    | `Fallback`    | ~1.9s   |
+| `hy3-free`               | 128K    | `General`     | ~3.7s   |
+| `mimo-v2.5-free`         | 128K    | `Code`        | ~1.8s   |
+| `north-mini-code-free`   | 128K    | `Fallback`    | ~0.9s   |
 
 ### [OpenRouter](https://openrouter.ai)
 
-OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 11 models verified — all at ★★★★☆ or above.
+OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 11 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -943,39 +941,39 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 
 🔗 **Base URL:** `https://openrouter.ai/api/v1`
 
-| Free Model                                           | Star Rating | Context | Best For    | Latency | Opinion                                                                   |
-| :--------------------------------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------------ |
-| `nvidia/nemotron-nano-12b-v2-vl:free`                | ★★★★★       | 32K     | `Vision`    | ~1.3s   | Does text and vision in one call without the bloat.                       |
-| `openai/gpt-oss-20b:free`                            | ★★★★★       | 128K    | `Code`      | ~2.0s   | Same output as the 120B but lighter, the everyday driver.                 |
-| `cohere/north-mini-code:free`                        | ★★★★☆       | 128K    | `Code`      | ~2.1s   | Efficient coding model from Cohere, lightweight for rapid iteration.      |
-| `google/gemma-4-26b-a4b-it:free`                     | ★★★★☆       | 32K     | `General`   | ~1.3s   | Lighter Gemma 4, efficient for coding without overthinking.               |
-| `nvidia/nemotron-3-nano-30b-a3b:free`                | ★★★★☆       | 128K    | `General`   | ~0.7s   | Efficient 30B model with a big window for coding.                         |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | ★★★★☆       | 128K    | `Reasoning` | ~0.7s   | Shows work step by step, useful for verification but noisy.               |
-| `nvidia/nemotron-3-super-120b-a12b:free`             | ★★★★☆       | 1M      | `General`   | ~2.7s   | Strong 120B mid-range, steps in when the 30Bs need more headroom.         |
-| `nvidia/nemotron-3-ultra-550b-a55b:free`             | ★★★★☆       | 128K    | `Reasoning` | ~1.3s   | 550B ultra, deep reasoning for the toughest multi-file problems.          |
-| `poolside/laguna-m.1:free`                           | ★★★★☆       | 128K    | `Code`      | ~2.2s   | Built by devs for devs, inline completions that feel intuitive.           |
-| `poolside/laguna-xs-2.1:free`                        | ★★★★☆       | 128K    | `Code`      | ~1.9s   | Newest Poolside XS, sharp and fast for agentic coding loops.              |
-| `tencent/hy3:free`                                   | ★★★★☆       | 128K    | `General`   | ~2.1s   | Tencent's Hy3, solid generalist with good reasoning.                      |
+| Free Model                                           | Context | Best For    | Latency |
+| :--------------------------------------------------- | ------- | ----------- | ------- |
+| `nvidia/nemotron-nano-12b-v2-vl:free`                | 32K     | `Vision`    | ~1.3s   |
+| `openai/gpt-oss-20b:free`                            | 128K    | `Code`      | ~2.0s   |
+| `cohere/north-mini-code:free`                        | 128K    | `Code`      | ~2.1s   |
+| `google/gemma-4-26b-a4b-it:free`                     | 32K     | `General`   | ~1.3s   |
+| `nvidia/nemotron-3-nano-30b-a3b:free`                | 128K    | `General`   | ~0.7s   |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | 128K    | `Reasoning` | ~0.7s   |
+| `nvidia/nemotron-3-super-120b-a12b:free`             | 1M      | `General`   | ~2.7s   |
+| `nvidia/nemotron-3-ultra-550b-a55b:free`             | 128K    | `Reasoning` | ~1.3s   |
+| `poolside/laguna-m.1:free`                           | 128K    | `Code`      | ~2.2s   |
+| `poolside/laguna-xs-2.1:free`                        | 128K    | `Code`      | ~1.9s   |
+| `tencent/hy3:free`                                   | 128K    | `General`   | ~2.1s   |
 
 ### [Routeway AI](https://routeway.ai)
 
-Routeway is a unified API gateway offering free models through a `:free` model suffix — a pattern shared with OpenRouter and Kilo Code. Models are drawn from Stepfun, NVIDIA, Poolside, Meta, and others, all accessed through a single OpenAI-compatible endpoint with no credit card required. The tight 5 RPM cap makes Routeway a fallback hub rather than a daily driver. Routeway currently has 7 models verified — 4 at ★★★★☆ or above.
+Routeway is a unified API gateway offering free models through a `:free` model suffix — a pattern shared with OpenRouter and Kilo Code. Models are drawn from Stepfun, NVIDIA, Poolside, Meta, and others, all accessed through a single OpenAI-compatible endpoint with no credit card required. The tight 5 RPM cap makes Routeway a fallback hub rather than a daily driver. Routeway currently has 7 models verified.
 
 🎁 **Free Tier Quota:** 5 RPM / 200 RPD / 300,000 TPD
 
 🔗 **Base URL:** `https://api.routeway.ai/v1`
 
-| Free Model                     | Star Rating | Context | Best For   | Latency | Opinion                                                               |
-| :----------------------------- | :---------- | :------ | :--------- | :------ | :-------------------------------------------------------------------- |
-| `poolside/laguna-m.1:free`     | ★★★★★       | 128K    | `Code`     | ~1.5s   | Same Poolside 225B coding model, fast and focused.                    |
-| `laguna-xs.2:free`             | ★★★★☆       | 128K    | `Code`     | ~1.1s   | Poolside's 33B coder, sub-second for inline completions.              |
-| `nemotron-3-nano-30b-a3b:free` | ★★★★☆       | 128K    | `General`  | ~1.4s   | NVIDIA's efficient 30B model, good for general use as well as coding. |
-| `nemotron-nano-9b-v2:free`     | ★★★★☆       | 128K    | `Fallback` | ~1.5s   | Reliable NVIDIA nano, punches above its 9B weight for quick edits.    |
-| `step-3.5-flash:free`          | ★★★★☆       | 128K    | `Agentic`  | ~3.8s   | Stepfun's 11B active-param, quality agentic coding but slow.          |
+| Free Model                     | Context | Best For   | Latency |
+| :----------------------------- | ------- | ---------- | ------- |
+| `poolside/laguna-m.1:free`     | 128K    | `Code`     | ~1.5s   |
+| `laguna-xs.2:free`             | 128K    | `Code`     | ~1.1s   |
+| `nemotron-3-nano-30b-a3b:free` | 128K    | `General`  | ~1.4s   |
+| `nemotron-nano-9b-v2:free`     | 128K    | `Fallback` | ~1.5s   |
+| `step-3.5-flash:free`          | 128K    | `Agentic`  | ~3.8s   |
 
 ### [Poixe AI](https://poixe.com)
 
-Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 28 models verified — all at ★★★★☆ or above.
+Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 28 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -985,36 +983,36 @@ Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Goo
 
 🔗 **Base URL:** `https://api.poixe.com/v1/`
 
-| Free Model                              | Star Rating | Context | Best For    | Latency | Opinion                                                |
-| :-------------------------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------- |
-| `gpt-oss-120b:free`                     | ★★★★★       | 128K    | `General`   | ~1.3s   | Reliable 120B, fast on Poixe with huge quota.          |
-| `kimi-k2-0711-preview:free`             | ★★★★★       | 128K    | `Reasoning` | ~1.7s   | 1T reasoning model at 1.7s with 10k daily calls.       |
-| `qwen3-235b-a22b-instruct-2507:free`    | ★★★★★       | 256K    | `Reasoning` | ~1.3s   | 235B reasoning at 256K, strong for multi-file work.    |
-| `qwen3-coder-480b-a35b-instruct:free`   | ★★★★★       | 256K    | `Code`      | ~1.2s   | 480B coder, best for architecture-level problems.      |
-| `doubao-1-5-lite-32k-250115:free`       | ★★★★☆       | 32K     | `Fallback`  | ~1.2s   | Lightweight Doubao, fast but 32K limits scope.         |
-| `doubao-1-5-pro-32k-250115:free`        | ★★★★☆       | 32K     | `General`   | ~4.5s   | Doubao pro, verbose but capable at 32K.                |
-| `doubao-1-5-vision-pro-32k-250115:free` | ★★★★☆       | 32K     | `Vision`    | ~2.0s   | Doubao vision pro, multimodal at 32K context.          |
-| `doubao-seed-1-6-250615:free`           | ★★★★☆       | 128K    | `General`   | ~3.9s   | Doubao seed, solid generalist at moderate speed.       |
-| `doubao-seed-1-6-flash-250615:free`     | ★★★★☆       | 128K    | `General`   | ~1.2s   | Doubao flash, fast and clean for daily coding.         |
-| `gemini-2.5-flash:free`                 | ★★★★☆       | 1M      | `General`   | ~2.4s   | Google's strong flash with 1M context on Poixe.        |
-| `gemini-2.5-flash-lite:free`            | ★★★★☆       | 1M      | `General`   | ~2.1s   | Google's flash-lite, efficient for daily tasks.        |
-| `gemini-3-flash-preview:free`           | ★★★★☆       | 1M      | `General`   | ~2.4s   | Gemini 3 preview, fast reasoning with 1M context.      |
-| `gpt-4.1-mini:free`                     | ★★★★☆       | 1M      | `General`   | ~1.7s   | Same 1M context mini, consistent for daily work.       |
-| `gpt-4.1-mini-2025-04-14:free`          | ★★★★☆       | 1M      | `General`   | ~1.6s   | OpenAI mini with 1M context, strong daily driver.      |
-| `gpt-4.1-nano:free`                     | ★★★★☆       | 1M      | `Code`      | ~1.7s   | Nano with 1M context, solid for quick edits.           |
-| `gpt-4.1-nano-2025-04-14:free`          | ★★★★☆       | 1M      | `Code`      | ~0.9s   | Fast nano with 1M context, great for scripting.        |
-| `gpt-4o-mini:free`                      | ★★★★☆       | 128K    | `General`   | ~1.8s   | Latest GPT-4o mini, efficient daily coding.            |
-| `gpt-4o-mini-2024-07-18:free`           | ★★★★☆       | 128K    | `General`   | ~2.2s   | Compact GPT-4o, steady fallback on big quota.          |
-| `gpt-oss-20b:free`                      | ★★★★☆       | 128K    | `Code`      | ~0.8s   | Lighter 120B at sub-second, great value.               |
-| `grok-3-mini:free`                      | ★★★★☆       | 128K    | `Reasoning` | ~3.4s   | xAI reasoning, solid for debugging.                    |
-| `grok-3-mini-beta:free`                 | ★★★★☆       | 128K    | `Reasoning` | ~3.4s   | Grok mini beta, good reasoning at decent speed.        |
-| `kimi-k2:free`                          | ★★★★☆       | 128K    | `General`   | ~1.5s   | Solid Kimi general model, dependable daily output.     |
-| `qwen-long-latest:free`                 | ★★★★☆       | 128K    | `General`   | ~1.2s   | Latest Qwen long variant, fast and consistent.         |
-| `qwen-plus-2025-04-28:free`             | ★★★★☆       | 128K    | `General`   | ~1.1s   | Qwen plus snapshot, fast and reliable.                 |
-| `qwen-plus-latest:free`                 | ★★★★☆       | 128K    | `General`   | ~1.3s   | Reliable Qwen, handles daily coding without surprises. |
-| `qwen-turbo:free`                       | ★★★★☆       | 128K    | `Fallback`  | ~1.0s   | Fast lightweight Qwen, good fallback.                  |
-| `qwen3-14b:free`                        | ★★★★☆       | 128K    | `General`   | ~2.0s   | Compact 14B Qwen, decent for light coding.             |
-| `qwen3-235b-a22b:free`                  | ★★★★☆       | 256K    | `Reasoning` | ~5.6s   | 235B reasoning, capable but slow on Poixe.             |
+| Free Model                              | Context | Best For    | Latency |
+| :-------------------------------------- | ------- | ----------- | ------- |
+| `gpt-oss-120b:free`                     | 128K    | `General`   | ~1.3s   |
+| `kimi-k2-0711-preview:free`             | 128K    | `Reasoning` | ~1.7s   |
+| `qwen3-235b-a22b-instruct-2507:free`    | 256K    | `Reasoning` | ~1.3s   |
+| `qwen3-coder-480b-a35b-instruct:free`   | 256K    | `Code`      | ~1.2s   |
+| `doubao-1-5-lite-32k-250115:free`       | 32K     | `Fallback`  | ~1.2s   |
+| `doubao-1-5-pro-32k-250115:free`        | 32K     | `General`   | ~4.5s   |
+| `doubao-1-5-vision-pro-32k-250115:free` | 32K     | `Vision`    | ~2.0s   |
+| `doubao-seed-1-6-250615:free`           | 128K    | `General`   | ~3.9s   |
+| `doubao-seed-1-6-flash-250615:free`     | 128K    | `General`   | ~1.2s   |
+| `gemini-2.5-flash:free`                 | 1M      | `General`   | ~2.4s   |
+| `gemini-2.5-flash-lite:free`            | 1M      | `General`   | ~2.1s   |
+| `gemini-3-flash-preview:free`           | 1M      | `General`   | ~2.4s   |
+| `gpt-4.1-mini:free`                     | 1M      | `General`   | ~1.7s   |
+| `gpt-4.1-mini-2025-04-14:free`          | 1M      | `General`   | ~1.6s   |
+| `gpt-4.1-nano:free`                     | 1M      | `Code`      | ~1.7s   |
+| `gpt-4.1-nano-2025-04-14:free`          | 1M      | `Code`      | ~0.9s   |
+| `gpt-4o-mini:free`                      | 128K    | `General`   | ~1.8s   |
+| `gpt-4o-mini-2024-07-18:free`           | 128K    | `General`   | ~2.2s   |
+| `gpt-oss-20b:free`                      | 128K    | `Code`      | ~0.8s   |
+| `grok-3-mini:free`                      | 128K    | `Reasoning` | ~3.4s   |
+| `grok-3-mini-beta:free`                 | 128K    | `Reasoning` | ~3.4s   |
+| `kimi-k2:free`                          | 128K    | `General`   | ~1.5s   |
+| `qwen-long-latest:free`                 | 128K    | `General`   | ~1.2s   |
+| `qwen-plus-2025-04-28:free`             | 128K    | `General`   | ~1.1s   |
+| `qwen-plus-latest:free`                 | 128K    | `General`   | ~1.3s   |
+| `qwen-turbo:free`                       | 128K    | `Fallback`  | ~1.0s   |
+| `qwen3-14b:free`                        | 128K    | `General`   | ~2.0s   |
+| `qwen3-235b-a22b:free`                  | 256K    | `Reasoning` | ~5.6s   |
 ### [Poolside](https://poolside.ai)
 
 Poolside is a foundation model lab building purpose-built coding models from scratch. Their Laguna series — M.1 (225B-A23B Model) and XS.2 (33B-A3B Model) — are trained on 30T tokens exclusively for agentic software engineering with tool calling and 256K context. Both models are free while in preview — the same "use it while it lasts" uncertainty as any free provider. Poolside currently has 3 models verified.
@@ -1027,14 +1025,14 @@ Poolside is a foundation model lab building purpose-built coding models from scr
 
 🔗 **Base URL:** `https://inference.poolside.ai/v1`
 
-| Free Model               | Star Rating | Context | Best For | Latency | Opinion                                                                    |
-| :----------------------- | :---------- | :------ | :------- | :------ | :------------------------------------------------------------------------- |
-| `poolside/laguna-m.1`    | ★★★★★       | 128K    | `Code`   | ~1.5s   | 225B model built from scratch for agentic code. Pure software engineering. |
-| `poolside/laguna-xs-2.1` | ★★★★★       | 128K    | `Code`   | ~0.7s   | Newest XS variant, fast and sharp for agentic loops.                       |
+| Free Model               | Context | Best For | Latency |
+| :----------------------- | ------- | -------- | ------- |
+| `poolside/laguna-m.1`    | 128K    | `Code`   | ~1.5s   |
+| `poolside/laguna-xs-2.1` | 128K    | `Code`   | ~0.7s   |
 
 ### [SambaNova AI](https://cloud.sambanova.ai)
 
-SambaNova AI is a **hardware-driven inference provider** utilizing proprietary Reconfigurable Dataflow Units (RDUs) rather than standard GPUs, removing the traditional hardware-decode bottleneck for incredibly high throughput. The free tier is limited to 20 requests and 200k tokens per day — tight for sustained use. SambaNova AI currently has 4 models verified — all at ★★★★☆ or above.
+SambaNova AI is a **hardware-driven inference provider** utilizing proprietary Reconfigurable Dataflow Units (RDUs) rather than standard GPUs, removing the traditional hardware-decode bottleneck for incredibly high throughput. The free tier is limited to 20 requests and 200k tokens per day — tight for sustained use. SambaNova AI currently has 4 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -1044,58 +1042,58 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 
 🔗 **Base URL:** `https://api.sambanova.ai/v1`
 
-| Free Model                    | Star Rating | Context | Best For  | Latency | Opinion                                                        |
-| :---------------------------- | :---------- | :------ | :-------- | :------ | :------------------------------------------------------------- |
-| `DeepSeek-V3.1`               | ★★★★☆       | 128K    | `Agent`   | ~1.0s   | Good reasoning at 1s but 20 RPD hurts, better quota elsewhere. |
-| `MiniMax-M2.7`                | ★★★★☆       | 128K    | `General` | ~1.7s   | A model with fast speed for General purposes.                  |
-| `gpt-oss-120b`                | ★★★★☆       | 128K    | `General` | ~0.9s   | Same reliable 120B, fast on RDUs. Best value on SambaNova now. |
-| `Meta-Llama-3.3-70B-Instruct` | ★★★★☆       | 128K    | `General` | ~2.0s   | The 70B, reads complex instructions and holds them together.   |
+| Free Model                    | Context | Best For  | Latency |
+| :---------------------------- | ------- | --------- | ------- |
+| `DeepSeek-V3.1`               | 128K    | `Agent`   | ~1.0s   |
+| `MiniMax-M2.7`                | 128K    | `General` | ~1.7s   |
+| `gpt-oss-120b`                | 128K    | `General` | ~0.9s   |
+| `Meta-Llama-3.3-70B-Instruct` | 128K    | `General` | ~2.0s   |
 
 ### [Speka AI](https://speka.me)
 
-Speka AI is a credit-based inference hub offering competitive per-token pricing on models from DeepSeek, NVIDIA, Meta, Mistral, and Moonshot through an OpenAI-compatible endpoint. The free tier provides 10 RPM with $1 in monthly credits — replenishes each month, but the dollar cap limits heavy usage. Best suited for light daily coding and targeted queries. No credit card required. Speka AI currently has 8 models verified — all at ★★★★☆ or above.
+Speka AI is a credit-based inference hub offering competitive per-token pricing on models from DeepSeek, NVIDIA, Meta, Mistral, and Moonshot through an OpenAI-compatible endpoint. The free tier provides 10 RPM with $1 in monthly credits — replenishes each month, but the dollar cap limits heavy usage. Best suited for light daily coding and targeted queries. No credit card required. Speka AI currently has 8 models verified
 
 🎁 **Free Tier Quota:** 10 RPM / $1 Monthly Credits
 
 🔗 **Base URL:** `https://speka.me/v1`
 
-| Free Model                                      | Star Rating   | Context   | Best For      | Latency   | Opinion                                                                       |
-| :---------------------------------------------- | :------------ | :-------- | :------------ | :-------- | :---------------------------------------------------------------------------- |
-| `deepseek-ai/deepseek-v4-flash`                 | ★★★★★         | 128K      | `Reasoning`   | ~1.6s     | Fast reasoning at $0.27 input, best credit-per-query ratio on Speka.          |
-| `mistralai/mistral-large-3-675b-instruct-2512`  | ★★★★★         | 128K      | `Agentic`     | ~1.1s     | 675B at 1.1s, shockingly fast for its class.                                  |
-| `nvidia/llama-3.3-nemotron-super-49b-v1.5`      | ★★★★☆         | 128K      | `General`     | ~1.4s     | 49B MoE but output feels smaller than Mistral Large.                          |
-| `nvidia/nvidia-nemotron-nano-9b-v2`             | ★★★★☆         | 128K      | `General`     | ~1.3s     | 9B cheapie at $0.10, stretches the $1 monthly credit far.                     |
-| `meta/llama-3.1-8b-instruct`                    | ★★★★☆         | 128K      | `Chat`        | ~1.1s     | Basic 8B chat at $0.05, fastest but too light for real projects.              |
-| `mistralai/mistral-medium-3.5-128b`             | ★★★★☆         | 128K      | `General`     | ~1.2s     | $0.40 for 128B, decent mid-range on Speka.                                    |
-| `meta/llama-3.2-90b-vision-instruct`            | ★★★★☆         | 128K      | `Vision`      | ~1.3s     | 90B vision fast at 1.3s, solid pick if you need image input.                  |
-| `meta/llama-3.2-11b-vision-instruct`            | ★★★★☆         | 128K      | `Vision`      | ~1.2s     | 11B vision at $0.06, cheapest vision option on the list.                      |
+| Free Model                                     | Context | Best For    | Latency |
+| :--------------------------------------------- | ------- | ----------- | ------- |
+| `deepseek-ai/deepseek-v4-flash`                | 128K    | `Reasoning` | ~1.6s   |
+| `mistralai/mistral-large-3-675b-instruct-2512` | 128K    | `Agentic`   | ~1.1s   |
+| `nvidia/llama-3.3-nemotron-super-49b-v1.5`     | 128K    | `General`   | ~1.4s   |
+| `nvidia/nvidia-nemotron-nano-9b-v2`            | 128K    | `General`   | ~1.3s   |
+| `meta/llama-3.1-8b-instruct`                   | 128K    | `Chat`      | ~1.1s   |
+| `mistralai/mistral-medium-3.5-128b`            | 128K    | `General`   | ~1.2s   |
+| `meta/llama-3.2-90b-vision-instruct`           | 128K    | `Vision`    | ~1.3s   |
+| `meta/llama-3.2-11b-vision-instruct`           | 128K    | `Vision`    | ~1.2s   |
 
 ### [TokenReply](https://tokenreply.com)
 
-TokenReply is a lightweight inference hub offering models from Google, DeepSeek, OpenAI, Qwen, Moonshot, Stepfun, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 40 weekly model calls — a very tight cap suited for lightweight evaluation and occasional queries, not sustained coding. Free models only. No credit card required. TokenReply currently has 12 models verified — 11 at ★★★★☆ or above.
+TokenReply is a lightweight inference hub offering models from Google, DeepSeek, OpenAI, Qwen, Moonshot, Stepfun, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 40 weekly model calls — a very tight cap suited for lightweight evaluation and occasional queries, not sustained coding. Free models only. No credit card required. TokenReply currently has 12 models verified.
 
 🎁 **Free Tier Quota:** 3 RPM / 40 Weekly Model Calls / Free Models Only
 
 🔗 **Base URL:** `https://api.tokenreply.com/v1`
 
-| Free Model                          | Star Rating | Context | Best For    | Latency | Opinion                                                            |
-| :---------------------------------- | :---------- | :------ | :---------- | :------ | :----------------------------------------------------------------- |
-| `deepseek-v4-flash`                 | ★★★★★       | 128K    | `Reasoning` | ~1.8s   | Fast reasoning, best use of your 40 weekly calls on TokenReply.    |
-| `openai/gpt-oss-120b`               | ★★★★★       | 128K    | `General`   | ~4.3s   | Same reliable 120B, use for the one critical prompt a week.        |
-| `glm-5`                             | ★★★★☆       | 128K    | `General`   | ~6.7s   | Latest Zhipu GLM, capable but slow at 6.7s on tight quota.         |
-| `glm-5.1`                           | ★★★★☆       | 128K    | `General`   | ~5.5s   | Updated GLM 5.1, smoother output at slightly better speed.         |
-| `google/gemma-3n-e2b-it`            | ★★★★☆       | 32K     | `General`   | ~0.8s   | Fast Gemma 3N, efficient sub-second for lightweight queries.       |
-| `google/gemma-3n-e4b-it`            | ★★★★☆       | 32K     | `General`   | ~1.5s   | Larger Gemma 3N, more capable than e2b at moderate speed.          |
-| `google/gemma-4-26b-a4b-it`         | ★★★★☆       | 32K     | `General`   | ~2.3s   | Lighter Gemma 4, efficient for coding without overthinking.        |
-| `kimi-k2.6`                         | ★★★★☆       | 128K    | `Reasoning` | ~2.0s   | 1T reasoning model at 2s, complex logic fits your budget better.   |
-| `minimaxai/minimax-m2.7`            | ★★★★☆       | 1M      | `General`   | ~1.8s   | 230B MiniMax with 1M context, balanced for daily use.              |
-| `nvidia/nemotron-3-ultra-550b-a55b` | ★★★★☆       | 128K    | `General`   | ~1.3s   | 550B at 1.3s, massive power for a critical prompt.                 |
-| `stepfun-ai/step-3.7-flash`         | ★★★★☆       | 128K    | `Agentic`   | ~1.8s   | Latest Stepfun flash, fast and sharp for agentic tasks.            |
-| `stepfun-ai/step-3.5-flash`         | ★★★☆☆       | 128K    | `Agentic`   | ~9.9s   | 11B active params but painfully slow at 10s. Use only if you must. |
+| Free Model                          | Context | Best For    | Latency |
+| :---------------------------------- | ------- | ----------- | ------- |
+| `deepseek-v4-flash`                 | 128K    | `Reasoning` | ~1.8s   |
+| `openai/gpt-oss-120b`               | 128K    | `General`   | ~4.3s   |
+| `glm-5`                             | 128K    | `General`   | ~6.7s   |
+| `glm-5.1`                           | 128K    | `General`   | ~5.5s   |
+| `google/gemma-3n-e2b-it`            | 32K     | `General`   | ~0.8s   |
+| `google/gemma-3n-e4b-it`            | 32K     | `General`   | ~1.5s   |
+| `google/gemma-4-26b-a4b-it`         | 32K     | `General`   | ~2.3s   |
+| `kimi-k2.6`                         | 128K    | `Reasoning` | ~2.0s   |
+| `minimaxai/minimax-m2.7`            | 1M      | `General`   | ~1.8s   |
+| `nvidia/nemotron-3-ultra-550b-a55b` | 128K    | `General`   | ~1.3s   |
+| `stepfun-ai/step-3.7-flash`         | 128K    | `Agentic`   | ~1.8s   |
+| `stepfun-ai/step-3.5-flash`         | 128K    | `Agentic`   | ~9.9s   |
 
 ### [Void AI](https://voidai.app)
 
-Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Moonshot, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 100 RPM with 125,000 daily credits — the highest RPM of any hub on this list, ideal for high-throughput coding sessions. No credit card required. Void AI currently has 33 verified coding-relevant models — all at ★★★★☆ or above.
+Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Moonshot, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 100 RPM with 125,000 daily credits — the highest RPM of any hub on this list, ideal for high-throughput coding sessions. No credit card required. Void AI currently has 33 verified coding-relevant models
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -1105,41 +1103,41 @@ Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSee
 
 🔗 **Base URL:** `https://api.voidai.app/v1`
 
-| Free Model                       | Star Rating | Context | Best For    | Latency | Opinion                                                     |
-| :------------------------------- | :---------- | :------ | :---------- | :------ | :---------------------------------------------------------- |
-| `deepseek-v4-flash`              | ★★★★★       | 128K    | `Reasoning` | ~1.5s   | Fast reasoning, great value on high credits.                |
-| `deepseek-v4-pro`                | ★★★★★       | 128K    | `Reasoning` | ~1.6s   | Extra headroom over Flash for hard problems.                |
-| `gemini-2.5-flash`               | ★★★★★       | 128K    | `General`   | ~1.4s   | Fast Gemini flash, solid generalist on high credits.        |
-| `gemini-2.5-pro`                 | ★★★★★       | 128K    | `Reasoning` | ~1.6s   | Stronger Gemini pro, great for complex reasoning.           |
-| `gemini-3-flash-preview`         | ★★★★★       | 128K    | `General`   | ~1.3s   | Latest Gemini 3 flash preview, fast and capable.            |
-| `gemini-3.1-pro-preview`         | ★★★★★       | 128K    | `Reasoning` | ~1.6s   | Pro preview, strongest Gemini for tough problems.           |
-| `gemini-3.5-flash`               | ★★★★★       | 128K    | `General`   | ~1.5s   | Latest flash variant, clean and fast daily driver.          |
-| `gpt-5.1`                        | ★★★★★       | 128K    | `General`   | ~1.2s   | Strong generalist, balanced across the board.               |
-| `gpt-5.2`                        | ★★★★★       | 128K    | `General`   | ~1.4s   | Clean output, no preamble to wade through.                  |
-| `gpt-5.3-codex`                  | ★★★★★       | 128K    | `Code`      | ~1.5s   | Code-focused GPT, sharp on complex implementations.         |
-| `gpt-5.4`                        | ★★★★★       | 128K    | `General`   | ~1.3s   | Latest GPT, clean and direct.                               |
-| `qwen3-235b-a22b-instruct`       | ★★★★★       | 256K    | `Reasoning` | ~2.5s   | Big Qwen, strong reasoning for complex tasks.               |
-| `qwen3-coder-480b-a35b-instruct` | ★★★★★       | 256K    | `Code`      | ~3.0s   | Massive coder, best when you need serious muscle.           |
-| `sonar-reasoning-pro`            | ★★★★★       | 128K    | `Reasoning` | ~3.0s   | Perplexity reasoning, deep research-augmented answers.      |
-| `umbra`                          | ★★★★★       | 128K    | `General`   | ~2.0s   | Solid all-rounder, handles daily coding without drama.      |
-| `deepseek-v3.2`                  | ★★★★☆       | 128K    | `Reasoning` | ~2.0s   | Refined reasoning, a solid backup to V4.                    |
-| `gemini-3.1-flash-lite`          | ★★★★☆       | 128K    | `Fallback`  | ~1.3s   | Lite Gemini flash, efficient for lightweight tasks.         |
-| `gemma-4-31b-it`                 | ★★★★☆       | 32K     | `General`   | ~2.1s   | 31B Gemma, reliable coding with 32K context.                |
-| `glm-5.1`                        | ★★★★☆       | 128K    | `General`   | ~2.0s   | Slightly newer GLM, same solid general performance.         |
-| `glm-5.2`                        | ★★★★☆       | 128K    | `General`   | ~2.0s   | Latest GLM refresh, consistent across tasks.                |
-| `gpt-4.1`                        | ★★★★☆       | 1M      | `General`   | ~2.4s   | 1M context, good for big projects that need the extra room. |
-| `gpt-4.1-mini`                   | ★★★★☆       | 1M      | `General`   | ~1.5s   | Compact with 1M context, efficient daily driver.            |
-| `gpt-4.1-nano`                   | ★★★★☆       | 1M      | `Code`      | ~1.0s   | Fast nano with 1M context, snappy for quick scripting.      |
-| `gpt-4o`                         | ★★★★☆       | 128K    | `General`   | ~1.1s   | Classic GPT-4o, balanced generalist with 128K context.      |
-| `gpt-4o-mini`                    | ★★★★☆       | 128K    | `General`   | ~1.2s   | Compact GPT-4o, efficient on the credit budget.             |
-| `gpt-5.4-mini`                   | ★★★★☆       | 128K    | `General`   | ~1.2s   | Lighter 5.4, same clean output at lower cost.               |
-| `gpt-5.4-nano`                   | ★★★★☆       | 128K    | `Code`      | ~1.0s   | Fastest GPT variant, ideal for lightweight tasks.           |
-| `gpt-oss-20b`                    | ★★★★☆       | 128K    | `Code`      | ~1.5s   | Lighter 120B, best value for stretching credits.            |
-| `kimi-k2.5`                      | ★★★★☆       | 128K    | `Reasoning` | ~4.8s   | Solid for complex multi-step but on the slower side.        |
-| `kimi-k2.6`                      | ★★★★☆       | 128K    | `Reasoning` | ~0.8s   | 1T model at sub-second, complex reasoning fits your budget. |
-| `kimi-k2.7-code`                 | ★★★★☆       | 128K    | `Code`      | ~1.5s   | Code-tuned Kimi, good for implementation work.              |
-| `sonar`                          | ★★★★☆       | 128K    | `Search`    | ~1.5s   | Perplexity search, useful for research-augmented coding.    |
-| `sonar-pro`                      | ★★★★☆       | 128K    | `Search`    | ~2.0s   | Deeper search results, better for research-heavy sessions.  |
+| Free Model                       | Context | Best For    | Latency |
+| :------------------------------- | ------- | ----------- | ------- |
+| `deepseek-v4-flash`              | 128K    | `Reasoning` | ~1.5s   |
+| `deepseek-v4-pro`                | 128K    | `Reasoning` | ~1.6s   |
+| `gemini-2.5-flash`               | 128K    | `General`   | ~1.4s   |
+| `gemini-2.5-pro`                 | 128K    | `Reasoning` | ~1.6s   |
+| `gemini-3-flash-preview`         | 128K    | `General`   | ~1.3s   |
+| `gemini-3.1-pro-preview`         | 128K    | `Reasoning` | ~1.6s   |
+| `gemini-3.5-flash`               | 128K    | `General`   | ~1.5s   |
+| `gpt-5.1`                        | 128K    | `General`   | ~1.2s   |
+| `gpt-5.2`                        | 128K    | `General`   | ~1.4s   |
+| `gpt-5.3-codex`                  | 128K    | `Code`      | ~1.5s   |
+| `gpt-5.4`                        | 128K    | `General`   | ~1.3s   |
+| `qwen3-235b-a22b-instruct`       | 256K    | `Reasoning` | ~2.5s   |
+| `qwen3-coder-480b-a35b-instruct` | 256K    | `Code`      | ~3.0s   |
+| `sonar-reasoning-pro`            | 128K    | `Reasoning` | ~3.0s   |
+| `umbra`                          | 128K    | `General`   | ~2.0s   |
+| `deepseek-v3.2`                  | 128K    | `Reasoning` | ~2.0s   |
+| `gemini-3.1-flash-lite`          | 128K    | `Fallback`  | ~1.3s   |
+| `gemma-4-31b-it`                 | 32K     | `General`   | ~2.1s   |
+| `glm-5.1`                        | 128K    | `General`   | ~2.0s   |
+| `glm-5.2`                        | 128K    | `General`   | ~2.0s   |
+| `gpt-4.1`                        | 1M      | `General`   | ~2.4s   |
+| `gpt-4.1-mini`                   | 1M      | `General`   | ~1.5s   |
+| `gpt-4.1-nano`                   | 1M      | `Code`      | ~1.0s   |
+| `gpt-4o`                         | 128K    | `General`   | ~1.1s   |
+| `gpt-4o-mini`                    | 128K    | `General`   | ~1.2s   |
+| `gpt-5.4-mini`                   | 128K    | `General`   | ~1.2s   |
+| `gpt-5.4-nano`                   | 128K    | `Code`      | ~1.0s   |
+| `gpt-oss-20b`                    | 128K    | `Code`      | ~1.5s   |
+| `kimi-k2.5`                      | 128K    | `Reasoning` | ~4.8s   |
+| `kimi-k2.6`                      | 128K    | `Reasoning` | ~0.8s   |
+| `kimi-k2.7-code`                 | 128K    | `Code`      | ~1.5s   |
+| `sonar`                          | 128K    | `Search`    | ~1.5s   |
+| `sonar-pro`                      | 128K    | `Search`    | ~2.0s   |
 
 ### [Yolo-Auto](https://yolo-auto.com)
 
@@ -1149,9 +1147,9 @@ Yolo-Auto is a bare-metal inference provider running a single Qwen3.6-35B-A3B mo
 
 🔗 **Base URL:** `https://yolo-auto.com/v1`
 
-| Free Model             | Star Rating | Context | Best For  | Latency | Opinion                                                                       |
-| :--------------------- | :---------- | :------ | :-------- | :------ | :---------------------------------------------------------------------------- |
-| `qwen3.6-35b-a3b`      | ★★★★☆       | 128K    | `General` | ~5.2s   | 35B MoE at 5s, the rate limit alone is just enough for testing purposes.      |
+| Free Model        | Context | Best For  | Latency |
+| :---------------- | ------- | --------- | ------- |
+| `qwen3.6-35b-a3b` | 128K    | `General` | ~5.2s   |
 
 ### [Z.AI (Zhipu AI)](https://z.ai)
 
@@ -1165,32 +1163,32 @@ Zhipu AI is a Chinese AI company developing the GLM family of foundation models.
 
 🔗 **Base URL:** `https://api.z.ai/api/paas/v4`
 
-| Free Model      | Star Rating | Context | Best For   | Latency | Opinion                                                     |
-| :-------------- | :---------- | :------ | :--------- | :------ | :---------------------------------------------------------- |
-| `glm-4.7-flash` | ★★★★☆       | 128K    | `General`  | ~2.4s   | Newer GLM flash, sharper than 4.5 by a noticeable margin.   |
-| `glm-4.5-flash` | ★★★☆☆       | 128K    | `Fallback` | ~0.7s   | Older flash, snappy at 0.7s but shows age on complex logic. |
+| Free Model      | Context | Best For   | Latency |
+| :-------------- | ------- | ---------- | ------- |
+| `glm-4.7-flash` | 128K    | `General`  | ~2.4s   |
+| `glm-4.5-flash` | 128K    | `Fallback` | ~0.7s   |
 
 ### [Zylo API](https://zyloai.net)
 
-Zylo API is a unified inference hub providing access to models from DeepSeek, NVIDIA, Mistral, MiniMax, Qwen, GLM, and Google through an OpenAI-compatible endpoint. The free tier offers 10 RPM with 7,200 requests and 200,000 tokens per day — no credit card required. Zylo API currently has 11 models verified — all at ★★★★☆ or above.
+Zylo API is a unified inference hub providing access to models from DeepSeek, NVIDIA, Mistral, MiniMax, Qwen, GLM, and Google through an OpenAI-compatible endpoint. The free tier offers 10 RPM with 7,200 requests and 200,000 tokens per day — no credit card required. Zylo API currently has 11 models verified
 
 🎁 **Free Tier Quota:** 10 RPM / 7,200 RPD / 200,000 TPD
 
 🔗 **Base URL:** `https://api.zyloai.net/v1`
 
-| Free Model                  | Star Rating | Context | Best For    | Latency | Opinion                                                             |
-| :-------------------------- | :---------- | :------ | :---------- | :------ | :------------------------------------------------------------------ |
-| `deepseek-v4`               | ★★★★★       | 128K    | `Reasoning` | ~1.5s   | Fast DeepSeek reasoning, strong for complex logic on Zylo.          |
-| `deepseek-v4-pro`           | ★★★★★       | 128K    | `Reasoning` | ~7.0s   | Deeper reasoning but slow at 7s, use when you need extra depth.     |
-| `mistral-large-3`           | ★★★★★       | 128K    | `General`   | ~0.9s   | Mistral's 675B, fast and clean. Top pick on Zylo.                   |
-| `nemotron-3-ultra`          | ★★★★★       | 128K    | `General`   | ~2.1s   | 550B raw power, fast reasoning for hard problems.                   |
-| `gemma-4`                   | ★★★★☆       | 32K     | `General`   | ~10.1s  | Solid Gemma 4 but 10s is painful — reach for it only as a backup.   |
-| `gpt-oss-20b`               | ★★★★☆       | 128K    | `Code`      | ~0.9s   | Same 120B DNA, lighter. Fast for everyday coding.                   |
-| `minimax-m3`                | ★★★★☆       | 1M      | `General`   | ~1.1s   | 1M context at 1.1s, strong value for large codebase tasks.          |
-| `mistral-small-4`           | ★★★★☆       | 32K     | `General`   | ~1.9s   | Mistral small, punchy depth in a compact package.                   |
-| `nemotron-3-nano-30b-a3b`   | ★★★★☆       | 128K    | `General`   | ~1.0s   | Efficient MoE 30B, good balance of speed and capability.            |
-| `qwen-3.5`                  | ★★★★☆       | 128K    | `General`   | ~8.9s   | Qwen 3.5 capable but painfully slow at 9s on Zylo.                  |
-| `qwen-3.5-flash`            | ★★★★☆       | 128K    | `General`   | ~2.5s   | Flash variant at 2.5s, faster than base 3.5 for daily queries.      |
+| Free Model                | Context | Best For    | Latency |
+| :------------------------ | ------- | ----------- | ------- |
+| `deepseek-v4`             | 128K    | `Reasoning` | ~1.5s   |
+| `deepseek-v4-pro`         | 128K    | `Reasoning` | ~7.0s   |
+| `mistral-large-3`         | 128K    | `General`   | ~0.9s   |
+| `nemotron-3-ultra`        | 128K    | `General`   | ~2.1s   |
+| `gemma-4`                 | 32K     | `General`   | ~10.1s  |
+| `gpt-oss-20b`             | 128K    | `Code`      | ~0.9s   |
+| `minimax-m3`              | 1M      | `General`   | ~1.1s   |
+| `mistral-small-4`         | 32K     | `General`   | ~1.9s   |
+| `nemotron-3-nano-30b-a3b` | 128K    | `General`   | ~1.0s   |
+| `qwen-3.5`                | 128K    | `General`   | ~8.9s   |
+| `qwen-3.5-flash`          | 128K    | `General`   | ~2.5s   |
 
 ---
 
