@@ -38,13 +38,13 @@ PROVIDERS = [
     {
         "name": "Agnes AI",
         "chat_url": "https://apihub.agnes-ai.com/v1/chat/completions",
-        "model": "agnes-1.5-flash",
+        "model": "agnes-2.0-flash",
         "env_key": "AGNESAI_API_KEY",
     },
     {
         "name": "AnyAPI AI",
         "chat_url": "https://api.anyapi.ai/v1/chat/completions",
-        "model": "liquid/lfm-2.5-1.2b-instruct:free",
+        "model": "poolside/laguna-m.1:free",
         "env_key": "ANYAPI_API_KEY",
     },
     {
@@ -82,7 +82,7 @@ PROVIDERS = [
     {
         "name": "FastRouter",
         "chat_url": "https://api.fastrouter.ai/api/v1/chat/completions",
-        "model": "sarvam/sarvam-105b:free",
+        "model": "sarvam/sarvam-30b:free",
         "env_key": "FASTR_API_KEY",
     },
     {
@@ -173,7 +173,7 @@ PROVIDERS = [
     {
         "name": "MegaNova AI",
         "chat_url": "https://api.meganova.ai/v1/chat/completions",
-        "model": "BruhzWater/Sapphira-L3.3-70b-0.1",
+        "model": "meganova-ai/manta-flash-1.0",
         "env_key": "MEGANOVA_API_KEY",
     },
     {
@@ -240,7 +240,7 @@ PROVIDERS = [
     {
         "name": "Routeway AI",
         "chat_url": "https://api.routeway.ai/v1/chat/completions",
-        "model": "laguna-xs.2:free",
+        "model": "nemotron-3-nano-30b-a3b:free",
         "env_key": "ROUTEWAY_API_KEY",
     },
     {
@@ -320,16 +320,6 @@ def test_provider(provider):
             "Content-Type": "application/json",
             "Authorization": f"Bearer {api_key}",
         }
-    elif provider.get("is_cohere"):
-        body = json.dumps({
-            "model": provider["model"],
-            "message": "Respond with OK",
-            "max_tokens": 10,
-        }).encode()
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {api_key}",
-        }
     else:
         body = json.dumps({
             "model": provider["model"],
@@ -342,6 +332,7 @@ def test_provider(provider):
             "Authorization": f"Bearer {api_key}",
         }
 
+    headers["User-Agent"] = "Mozilla/5.0"
     req = urllib.request.Request(url, data=body, headers=headers, method="POST")
     start = time.time()
     try:
