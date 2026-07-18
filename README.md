@@ -969,7 +969,7 @@ OpenCode Zen is a curated set of AI models tested and optimized for coding agent
 
 ### [OpenRouter](https://openrouter.ai)
 
-OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 11 models verified
+OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 12 models verified
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -979,17 +979,18 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 
 🔗 **Base URL:** `https://openrouter.ai/api/v1`
 
-✅ **Verified:** July 17, 2026
+✅ **Verified:** July 18, 2026
 | Free Model                                           | Context | Best For    | Latency |
 | :--------------------------------------------------- | ------- | ----------- | ------- |
-| `nvidia/nemotron-nano-12b-v2-vl:free`                | 32K     | `Vision`    | ~1.3s   |
-| `openai/gpt-oss-20b:free`                            | 128K    | `Code`      | ~2.0s   |
 | `cohere/north-mini-code:free`                        | 128K    | `Code`      | ~2.1s   |
 | `google/gemma-4-26b-a4b-it:free`                     | 32K     | `General`   | ~1.3s   |
 | `nvidia/nemotron-3-nano-30b-a3b:free`                | 128K    | `General`   | ~0.7s   |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | 128K    | `Reasoning` | ~0.7s   |
 | `nvidia/nemotron-3-super-120b-a12b:free`             | 1M      | `General`   | ~2.7s   |
 | `nvidia/nemotron-3-ultra-550b-a55b:free`             | 128K    | `Reasoning` | ~1.3s   |
+| `nvidia/nemotron-nano-9b-v2:free`                    | 128K    | `General`   | ~0.9s   |
+| `nvidia/nemotron-nano-12b-v2-vl:free`                | 32K     | `Vision`    | ~1.3s   |
+| `openai/gpt-oss-20b:free`                            | 128K    | `Code`      | ~2.0s   |
 | `poolside/laguna-m.1:free`                           | 128K    | `Code`      | ~2.2s   |
 | `poolside/laguna-xs-2.1:free`                        | 128K    | `Code`      | ~1.9s   |
 | `tencent/hy3:free`                                   | 128K    | `General`   | ~2.1s   |
