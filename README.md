@@ -80,7 +80,6 @@ Filtered for coding and general chat capability across all providers.
   <li><a href="#electronhub">ElectronHub</a></li>
   <li><a href="#fastrouter">FastRouter</a></li>
   <li><a href="#freeinference">FreeInference</a></li>
-  <li><a href="#github-models">GitHub Models</a></li>
   <li><a href="#google-gemini">Google Gemini</a></li>
   <li><a href="#groq-api">Groq API</a></li>
   <li><a href="#helixmind">HelixMind</a></li>
@@ -350,26 +349,6 @@ FreeInference is a research-backed inference hub providing access to models from
 | `minimax-m2.5`      | 1M      | `General`   | ~1.89s  |
 | `minimax-m3`        | 1M      | `General`   | ~2.84s  |
 | `glm-5.1`           | 128K    | `General`   | ~3.68s  |
-
-### [GitHub Models](https://github.com/marketplace/models)
-
-GitHub Models provides free API access to models from OpenAI, Meta, Mistral, and others using your existing GitHub account — no new signup needed. Free tier quotas are modest (request-based limits), making it best for prototyping and personal projects. GitHub Models currently has 2 models verified.
-
-| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
-| :--------- | :--------- | :----- | :------------- | :-------------- |
-| **Status** | ✅          | ✅      | ✅              | ✅               |
-
-🎁 **Free Tier Quota:** 10 to 15 RPM / 50 to 150 RPD
-
-🔗 **Base URL:** `https://models.inference.ai.azure.com`
-
-✅ **Verified:** July 23, 2026
-> ⚠️ **GitHub Models is being fully retired.** Incoming July 30, 2026, all customers (including Existing users) can no longer use GitHub Models. See the [GitHub announcement.](https://github.blog/changelog/2026-07-01-github-models-is-being-fully-retired-on-july-30-2026/)
-
-| Free Model    | Context | Best For  | Latency |
-| :------------ | ------- | --------- | ------- |
-| `gpt-4o`      | 128K    | `General` | ~2.4s   |
-| `gpt-4o-mini` | 128K    | `General` | ~3.0s   |
 
 ### [Google Gemini](https://aistudio.google.com)
 
