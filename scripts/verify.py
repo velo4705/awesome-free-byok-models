@@ -90,6 +90,7 @@ PROVIDERS = [
         "chat_url": "https://freeinference.org/v1/chat/completions",
         "model": "deepseek-v4-flash",
         "env_key": "FREEINFERENCE_API_KEY",
+    },
     {
         "name": "Google Gemini",
         "chat_url": "https://generativelanguage.googleapis.com/v1beta",
