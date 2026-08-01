@@ -415,7 +415,7 @@ HelixMind is a lightweight inference hub offering a small set of free models fro
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
-| **Status** | ✅          | ⚠️     | ⚠️             | ❌               |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
 
 🎁 **Free Tier Quota:** 3 RPM / 50 RPD
 
@@ -432,6 +432,10 @@ HelixMind is a lightweight inference hub offering a small set of free models fro
 ### [HelyxAI](https://helyxai.space)
 
 HelyxAI is a unified API gateway providing access to proprietary and open-weight models through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with no credit card required — self-replenishing every 24 hours. HelyxAI currently has 6 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
 
 🎁 **Free Tier Quota:** 100,000 TPD / 1,000,000 Monthly Tokens
 
@@ -450,6 +454,10 @@ HelyxAI is a unified API gateway providing access to proprietary and open-weight
 ### [Hugging Face Inference API](https://huggingface.co/inference-api)
 
 Hugging Face's free Inference API gives you access to thousands of community-hosted models with OpenAI-compatible endpoints. The free tier offers only $0.10/month in credits — barely enough for light experimentation, not sustained coding. The real strength is model diversity across thousands of community models. Hugging Face currently has 98 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
 
 🎁 **Free Tier Quota:** $0.10/month credits (~650K tokens)
 
@@ -563,7 +571,7 @@ LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp 
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
-| **Status** | ✅          | ⚠️     | ✅              | ❌               |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
 
 🎁 **Free Tier Quota:** 40 RPM / 2,400 RPD / 128,000 Characters per Request / 1,000,000 TPD
 
@@ -935,7 +943,7 @@ Routeway is a unified API gateway offering free models through a `:free` model s
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
-| **Status** | ✅          | ✅      | ✅              | ❌               |
+| **Status** | ✅          | ⚠️     | ✅              | ⚠️              |
 
 🎁 **Free Tier Quota:** 5 RPM / 200 RPD / 300,000 TPD
 
@@ -1036,7 +1044,7 @@ Speka AI is a credit-based inference hub offering competitive per-token pricing 
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
-| **Status** | ❌          | ⚠️     | ✅              | ⚠️              |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
 
 🎁 **Free Tier Quota:** 10 RPM / $1 Monthly Credits
 
@@ -1066,6 +1074,10 @@ Speka AI is a credit-based inference hub offering competitive per-token pricing 
 ### [TokenReply](https://tokenreply.com)
 
 TokenReply is a lightweight inference hub offering models from Google, DeepSeek, OpenAI, Qwen, Moonshot, Stepfun, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 3 RPM with 40 weekly model calls — a very tight cap suited for lightweight evaluation and occasional queries, not sustained coding. Free models only. No credit card required. TokenReply currently has 12 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ⚠️     | ✅              | ⚠️              |
 
 🎁 **Free Tier Quota:** 3 RPM / 40 Weekly Model Calls / Free Models Only
 
@@ -1124,6 +1136,10 @@ Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSee
 
 Yolo-Auto is a bare-metal inference provider running a single Qwen3.6-35B-A3B model through an OpenAI-compatible endpoint. The free tier offers 15 requests per day for integration testing — enough to verify your tooling works before upgrading to the flat-rate unlimited plan. No credit card required. As they promised, more models are coming soon. Yolo-Auto currently has 1 model verified.
 
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ⚠️              |
+
 🎁 **Free Tier Quota:** 15 RPD
 
 🔗 **Base URL:** `https://yolo-auto.com/v1`
@@ -1154,6 +1170,10 @@ Zhipu AI is a Chinese AI company developing the GLM family of foundation models.
 ### [Zylo API](https://zyloai.net)
 
 Zylo API is a unified inference hub providing access to models from DeepSeek, NVIDIA, Mistral, MiniMax, Qwen, GLM, and Google through an OpenAI-compatible endpoint. The free tier offers 10 RPM with 7,200 requests and 200,000 tokens per day — no credit card required. Zylo API currently has 8 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
 
 🎁 **Free Tier Quota:** 10 RPM / 7,200 RPD / 200,000 TPD
 
