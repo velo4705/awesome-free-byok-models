@@ -285,6 +285,10 @@ Cohere focuses on enterprise-grade NLP with their Command model family — built
 
 ElectronHub is a credit-based inference hub offering an enormous catalog of models from OpenAI, Google, Meta, Mistral, Cohere, DeepSeek, Qwen, Microsoft, and more through an OpenAI-compatible endpoint. The free tier provides 5 RPM with $0.25 in weekly credits — replenishes every week, but the dollar cap limits heavy usage. Best for targeted queries and efficient coding. No credit card required. ElectronHub currently has roughly 55 verified coding-relevant models.
 
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ❌               |
+
 🎁 **Free Tier Quota:** 5 RPM / $0.25 Weekly Credits
 
 🔗 **Base URL:** `https://api.electronhub.ai/v1`
@@ -929,6 +933,10 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 
 Routeway is a unified API gateway offering free models through a `:free` model suffix — a pattern shared with OpenRouter and Kilo Code. Models are drawn from Stepfun, NVIDIA, Poolside, Meta, and others, all accessed through a single OpenAI-compatible endpoint with no credit card required. The tight 5 RPM cap makes Routeway a fallback hub rather than a daily driver. Routeway currently has 3 models verified.
 
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ❌               |
+
 🎁 **Free Tier Quota:** 5 RPM / 200 RPD / 300,000 TPD
 
 🔗 **Base URL:** `https://api.routeway.ai/v1`
@@ -1025,6 +1033,10 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 ### [Speka AI](https://speka.me)
 
 Speka AI is a credit-based inference hub offering competitive per-token pricing on models from DeepSeek, NVIDIA, Meta, Mistral, and Moonshot through an OpenAI-compatible endpoint. The free tier provides 10 RPM with $1 in monthly credits — replenishes each month, but the dollar cap limits heavy usage. Best suited for light daily coding and targeted queries. No credit card required. Speka AI currently has 17 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ❌          | ⚠️     | ✅              | ⚠️              |
 
 🎁 **Free Tier Quota:** 10 RPM / $1 Monthly Credits
 
