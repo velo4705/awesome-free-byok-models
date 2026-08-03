@@ -52,14 +52,14 @@ Ranked by **coding capability × daily volume × speed** using quantitative crit
 | ---    | ---                            | ---                                                           | ---                                                                      |
 | **1**  | `openai/gpt-oss-120b`          | [Groq API](https://console.groq.com/docs/models)              | 14,400 RPD, sub-300ms, 128K context, 120B params.                        |
 | **2**  | `models/gemini-3.5-flash-lite` | [Google Gemini](https://ai.google.dev/gemini-api/docs/models) | 15 RPM, 500 RPD, 1M context, highest daily cap on list.                  |
-| **3**  | `deepseek-v4-flash-free`       | [OpenCode Zen](https://opencode.ai/zen/models)                | 500 RPD, 30 RPM, 1M token pool, multi-turn reasoning.                    |
+| **3**  | `deepseek-v4-flash-free`       | [OpenCode Zen](https://opencode.ai/docs)                      | 500 RPD, 30 RPM, 1M token pool, multi-turn reasoning.                    |
 | **4**  | `qwen/qwen3.6-27b`             | [Groq API](https://console.groq.com/docs/overview)            | 256K context, sub-300ms, same 14,400 RPD pool as #1.                     |
-| **5**  | `mimo-v2.5-free`               | [OpenCode Zen](https://opencode.ai/zen/api)                   | Vision + Code, 500 RPD, 30 RPM, 128K context, slower but vision-capable. |
+| **5**  | `mimo-v2.5-free`               | [OpenCode Zen](https://opencode.ai/docs/models)               | Vision + Code, 500 RPD, 30 RPM, 128K context, ~6.5s latency.             |
 | **6**  | `intern-latest`                | [Intern AI](https://internlm.intern-ai.org.cn/api/docs)       | 90M tokens/month, sub-second, 256K context, auto-updates.                |
 | **7**  | `mistral-code-agent-latest`    | [Mistral AI](https://docs.mistral.ai/getting-started)         | Agentic tool-calling, sub-second, 50k TPM, 128K context.                 |
 | **8**  | `deepseek-v4-flash`            | [Navy API](https://api.navy/docs/models)                      | 250K TPD, 20 RPM, 128K context, reasoning model.                         |
-| **9**  | `deepseek-v3.2`                | [MNN AI](https://mnnai.ru/docs/models)                        | $1/month auto-replenishing, 128K context, reasoning model.               |
-| **10** | `deepseek-v4-pro`              | [Void AI](https://voidai.app/docs/models)                     | 100 RPM, 125K daily credits, 128K context, higher throughput than Flash. |
+| **9**  | `deepseek-v3.2`                | [MNN AI](https://mnnai.ru/docs#models)                        | $1/month auto-replenishing, 128K context, reasoning model.               |
+| **10** | `deepseek-v4-pro`              | [Void AI](https://docs.voidai.app/)                           | 100 RPM, 125K daily credits, 128K context, higher throughput than Flash. |
 
 ---
 
