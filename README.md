@@ -53,13 +53,13 @@ Ranked by **coding capability × daily volume × speed** using quantitative crit
 | **1**  | `openai/gpt-oss-120b`          | [Groq API](https://console.groq.com/docs/models)              | 14,400 RPD, sub-300ms, 128K context, 120B params.                        |
 | **2**  | `models/gemini-3.5-flash-lite` | [Google Gemini](https://ai.google.dev/gemini-api/docs/models) | 15 RPM, 500 RPD, 1M context, highest daily cap on list.                  |
 | **3**  | `deepseek-v4-flash-free`       | [OpenCode Zen](https://opencode.ai/zen/models)                | 500 RPD, 30 RPM, 1M token pool, multi-turn reasoning.                    |
-| **4**  | `qwen/qwen3-32b`               | [Groq API](https://console.groq.com/docs/overview)            | 256K context, sub-300ms, same 14,400 RPD pool as #1.                     |
-| **5**  | `intern-latest`                | [Intern AI](https://internlm.intern-ai.org.cn/api/docs)       | 90M tokens/month, sub-second, 256K context, auto-updates.                |
-| **6**  | `mistral-code-agent-latest`    | [Mistral AI](https://docs.mistral.ai/getting-started)         | Agentic tool-calling, sub-second, 50k TPM, 128K context.                 |
-| **7**  | `deepseek-v4-flash`            | [Navy API](https://api.navy/docs/models)                      | 250K TPD, 20 RPM, 128K context, reasoning model.                         |
-| **8**  | `deepseek-v3.2`                | [MNN AI](https://mnnai.ru/docs/models)                        | $1/month auto-replenishing, 128K context, reasoning model.               |
-| **9**  | `deepseek-v4-pro`              | [Void AI](https://voidai.app/docs/models)                     | 100 RPM, 125K daily credits, 128K context, higher throughput than Flash. |
-| **10** | `gpt-5.4`                      | [Navy API](https://api.navy/pricing)                          | 250K TPD, 20 RPM, 128K context, latest GPT-series.                       |
+| **4**  | `qwen/qwen3.6-27b`             | [Groq API](https://console.groq.com/docs/overview)            | 256K context, sub-300ms, same 14,400 RPD pool as #1.                     |
+| **5**  | `mimo-v2.5-free`               | [OpenCode Zen](https://opencode.ai/zen/api)                   | Vision + Code, 500 RPD, 30 RPM, 128K context, slower but vision-capable. |
+| **6**  | `intern-latest`                | [Intern AI](https://internlm.intern-ai.org.cn/api/docs)       | 90M tokens/month, sub-second, 256K context, auto-updates.                |
+| **7**  | `mistral-code-agent-latest`    | [Mistral AI](https://docs.mistral.ai/getting-started)         | Agentic tool-calling, sub-second, 50k TPM, 128K context.                 |
+| **8**  | `deepseek-v4-flash`            | [Navy API](https://api.navy/docs/models)                      | 250K TPD, 20 RPM, 128K context, reasoning model.                         |
+| **9**  | `deepseek-v3.2`                | [MNN AI](https://mnnai.ru/docs/models)                        | $1/month auto-replenishing, 128K context, reasoning model.               |
+| **10** | `deepseek-v4-pro`              | [Void AI](https://voidai.app/docs/models)                     | 100 RPM, 125K daily credits, 128K context, higher throughput than Flash. |
 
 ---
 
@@ -385,7 +385,7 @@ Gemini offers large context windows on paper, but the free tier's **rate limits 
 
 ### [Groq API](https://console.groq.com)
 
-Groq is famous for providing the **absolute lowest streaming latency** in the API market, outrunning traditional cloud providers by a massive margin. The free tier offers 30 RPM with replenishable daily credits — no credit card needed. If you want a setup where your terminal files patch instantly without the typical spinning wheel delay, this is your go-to. Groq API currently has 10 models verified.
+Groq is famous for providing the **absolute lowest streaming latency** in the API market, outrunning traditional cloud providers by a massive margin. The free tier offers 30 RPM with replenishable daily credits — no credit card needed. If you want a setup where your terminal files patch instantly without the typical spinning wheel delay, this is your go-to. Groq API currently has 8 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -401,13 +401,11 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 | `openai/gpt-oss-120b`                       | 128K    | `Code`     | ~0.4s   |
 | `llama-3.3-70b-versatile`                   | 128K    | `Chat`     | ~0.2s   |
 | `openai/gpt-oss-20b`                        | 128K    | `Code`     | ~0.6s   |
-| `qwen/qwen3-32b`                            | 256K    | `Code`     | ~0.2s   |
 | `qwen/qwen3.6-27b`                          | 256K    | `Code`     | ~0.2s   |
 | `allam-2-7b`                                | 128K    | `Fallback` | ~0.2s   |
 | `groq/compound`                             | 128K    | `General`  | ~0.7s   |
 | `groq/compound-mini`                        | 128K    | `General`  | ~0.7s   |
 | `llama-3.1-8b-instant`                      | 128K    | `Code`     | ~0.2s   |
-| `meta-llama/llama-4-scout-17b-16e-instruct` | 256K    | `Chat`     | ~0.4s   |
 
 ### [HelixMind](https://helixmind.online)
 
