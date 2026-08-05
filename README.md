@@ -36,11 +36,11 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 
 If you are signing up for free accounts to get API keys, these are the **top platforms** to look at first.
 
-| Provider                                                   | Profile     | Why It Matters For You                                                                                                 |
-| :--------------------------------------------------------- | :---------- | :--------------------------------------------------------------------------------------------------------------------- |
-| **[Groq API](https://console.groq.com/docs/quickstart)**   | Low Latency | Sub-300ms at 14,400 RPD with 18k TPM for rapid-fire edits. Highest throughput on the list.                             |
-| **[Google Gemini](https://ai.google.dev/gemini-api/docs)** | High Volume | 1,500 free requests a day on flash-lite with 1M context. High daily cap for sustained usage.                           |
-| **[OpenCode Zen](https://opencode.ai/zen/docs)**           | Reasoning   | 30 RPM with 500 daily requests and 1M token pool. DeepSeek-v4-flash-free handles multi-turn without losing the thread. |
+| Provider                                                   | Profile     | Why It Matters For You                                                                                                  |
+| :--------------------------------------------------------- | :---------- | :---------------------------------------------------------------------------------------------------------------------- |
+| **[OpenCode Zen](https://opencode.ai/docs/zen)**           | Reasoning   | 30 RPM with 500 daily requests and 1M token pool. DeepSeek-v4-flash-free handles multi-turn without losing the thread.  |
+| **[Groq API](https://console.groq.com/docs/quickstart)**   | Low Latency | Sub-300ms at 14,400 RPD with 18k TPM for rapid-fire edits. Highest throughput on the list.                              |
+| **[Void AI](https://docs.voidai.app/quickstart)**          | High RPM    | 100 RPM with 125K daily credits — highest RPM of any hub. 20 verified coding-relevant models across multiple providers. |
 
 ---
 
@@ -48,18 +48,18 @@ If you are signing up for free accounts to get API keys, these are the **top pla
 
 Ranked by **coding capability × daily volume × speed** using quantitative criteria derived from provider documentation and [`scripts/verify.py`](scripts/verify.py):
 
-| Rank   | Model                          | Host Provider                                                 | Why It Ranks Here                                                        |
-| ---    | ---                            | ---                                                           | ---                                                                      |
-| **1**  | `openai/gpt-oss-120b`          | [Groq API](https://console.groq.com/docs/models)              | 14,400 RPD, sub-300ms, 128K context, 120B params.                        |
-| **2**  | `models/gemini-3.5-flash-lite` | [Google Gemini](https://ai.google.dev/gemini-api/docs/models) | 15 RPM, 500 RPD, 1M context, highest daily cap on list.                  |
-| **3**  | `deepseek-v4-flash-free`       | [OpenCode Zen](https://opencode.ai/docs)                      | 500 RPD, 30 RPM, 1M token pool, multi-turn reasoning.                    |
-| **4**  | `qwen/qwen3.6-27b`             | [Groq API](https://console.groq.com/docs/overview)            | 256K context, sub-300ms, same 14,400 RPD pool as #1.                     |
-| **5**  | `mimo-v2.5-free`               | [OpenCode Zen](https://opencode.ai/docs/models)               | Vision + Code, 500 RPD, 30 RPM, 128K context, ~6.5s latency.             |
-| **6**  | `intern-latest`                | [Intern AI](https://internlm.intern-ai.org.cn/api/docs)       | 90M tokens/month, sub-second, 256K context, auto-updates.                |
-| **7**  | `mistral-code-agent-latest`    | [Mistral AI](https://docs.mistral.ai/getting-started)         | Agentic tool-calling, sub-second, 50k TPM, 128K context.                 |
-| **8**  | `deepseek-v4-flash`            | [Navy API](https://api.navy/docs/models)                      | 250K TPD, 20 RPM, 128K context, reasoning model.                         |
-| **9**  | `deepseek-v3.2`                | [MNN AI](https://mnnai.ru/docs#models)                        | $1/month auto-replenishing, 128K context, reasoning model.               |
-| **10** | `deepseek-v4-pro`              | [Void AI](https://docs.voidai.app/)                           | 100 RPM, 125K daily credits, 128K context, higher throughput than Flash. |
+| Rank   | Model                          | Host Provider                                                 | Why It Ranks Here                                                   |
+| ---    | ---                            | ---                                                           | ---                                                                 |
+| **1**  | `deepseek-v4-flash-free`       | [OpenCode Zen](https://opencode.ai/docs)                      | 500 RPD, 30 RPM, 128K context, DeepSeek V4 Flash reasoning model.   |
+| **2**  | `qwen/qwen3.6-27b`             | [Groq API](https://console.groq.com/docs/models)              | 256K context, sub-300ms latency, 14,400 RPD daily pool.             |
+| **3**  | `openai/gpt-oss-120b`          | [Groq API](https://console.groq.com/docs/overview)            | 128K context, sub-300ms latency, 14,400 RPD, 120B params.           |
+| **4**  | `gpt-5.3-codex`                | [Void AI](https://docs.voidai.app)                            | 128K context, ~1.5s latency, code-specialized model, 100 RPM.       |
+| **5**  | `mimo-v2.5-free`               | [OpenCode Zen](https://opencode.ai/docs/models)               | 128K context, ~6.5s latency, vision + code, 500 RPD.                |
+| **6**  | `intern-s2-preview`            | [Intern AI](https://internlm.intern-ai.org.cn/api)            | 256K context, ~1.0s latency, 90M tokens/month quota.                |
+| **7**  | `models/gemini-3.5-flash-lite` | [Google Gemini](https://ai.google.dev/gemini-api/docs/models) | 1M context, ~1.5s latency, 500 RPD, general-purpose model.          |
+| **8**  | `deepseek-v3.2`                | [MNN AI](https://mnnai.ru/docs)                               | 128K context, ~2.0s latency, $1/month auto-replenishing credits.    |
+| **9**  | `mistral-code-agent-latest`    | [Mistral AI](https://docs.mistral.ai)                         | 128K context, sub-1s latency, agentic tool-calling, 50K TPM.        |
+| **10** | `deepseek-v4-pro`              | [Void AI](https://docs.voidai.app/guides/credits)             | 128K context, ~1.6s latency, higher throughput than Flash, 100 RPM. |
 
 ---
 
@@ -331,7 +331,7 @@ FastRouter is a lightweight inference hub offering Sarvam AI models with a `:fre
 
 ### [FreeInference](https://freeinference.org)
 
-FreeInference is a research-backed inference hub providing access to models from GLM, MiniMax, Qwen, and DeepSeek through an OpenAI-compatible endpoint. The free tier offers $20 in daily credits with 2 concurrent requests. FreeInference currently has 6 models verified.
+FreeInference is a research-backed inference hub providing access to models from GLM, MiniMax, Qwen, and DeepSeek through an OpenAI-compatible endpoint. The free tier offers $20 in daily credits with 2 concurrent requests. FreeInference currently has 5 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -341,7 +341,7 @@ FreeInference is a research-backed inference hub providing access to models from
 
 🔗 **Base URL:** `https://freeinference.org/v1`
 
-✅ **Verified:** August 3, 2026
+✅ **Verified:** August 5, 2026
 > ⚠️ **Non-Harvard users:** new accounts go through a manual review before they're ready to use.
 
 | Free Model          | Context | Best For    | Latency |
@@ -350,7 +350,6 @@ FreeInference is a research-backed inference hub providing access to models from
 | `deepseek-v4-flash` | 128K    | `Reasoning` | ~4.76s  |
 | `diffusiongemma`    | 32K     | `General`   | ~1.79s  |
 | `minimax-m2.5`      | 1M      | `General`   | ~2.61s  |
-| `minimax-m3`        | 1M      | `General`   | ~1.45s  |
 | `glm-5.1`           | 128K    | `General`   | ~6.35s  |
 
 ### [Google Gemini](https://aistudio.google.com)
@@ -572,7 +571,7 @@ LLM.Kiwi is a Cloudflare-edge inference provider offering an auto-routing endpoi
 
 ### [LLM7.IO](https://llm7.io)
 
-LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp server with OpenAI-compatible endpoints. The Turbo Tier (Free tier) offers replenishable credits with no daily hard cap — a solid option for consistent daily coding on a simple API without commitment. LLM7.IO currently has 4 models verified — all at Turbo Tier (Free tier).
+LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp server with OpenAI-compatible endpoints. The Turbo Tier (Free tier) offers replenishable credits with no daily hard cap — a solid option for consistent daily coding on a simple API without commitment. LLM7.IO currently has 6 models verified — all at Turbo Tier (Free tier).
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -582,13 +581,15 @@ LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp 
 
 🔗 **Base URL:** `https://api.llm7.io/v1`
 
-✅ **Verified:** August 3, 2026
-| Free Model                           | Context | Best For    | Latency |
-| :----------------------------------- | ------- | ----------- | ------- |
-| `codestral-latest`                   | 256K    | `Code`      | ~0.67s  |
-| `gpt-oss:20b`                        | 128K    | `Code`      | ~2.0s   |
-| `meta-Llama-3.1-8B-Instruct-Turbo`   | 128K    | `General`   | ~1.2s   |
-| `minimax-m2.7`                       | 128K    | `Reasoning` | ~1.8s   |
+✅ **Verified:** August 5, 2026
+| Free Model                       | Context | Best For    | Latency |
+| :------------------------------- | ------- | ----------- | ------- |
+| `codestral-latest`               | 256K    | `Code`      | ~0.67s  |
+| `deepseek-v4-flash:0731`         | 128K    | `Reasoning` | ~1.5s   |
+| `gemini-3.1-flash-lite`          | 1M      | `General`   | ~0.7s   |
+| `gpt-oss:20b`                    | 128K    | `Code`      | ~2.0s   |
+| `minimax-m2.7`                   | 128K    | `Reasoning` | ~1.8s   |
+| `mistral-Nemo-Instruct-2407`     | 128K    | `General`   | ~3.1s   |
 
 ### [LLMGateway](https://llmgateway.io)
 
@@ -609,7 +610,7 @@ LLMGateway is a lightweight inference hub serving models from Zhipu AI and more 
 
 ### [LiteRouter](https://literouter.com)
 
-LiteRouter is a lightweight inference hub offering free models from OpenAI, DeepSeek, Mistral, Meta, and more through an OpenAI-compatible endpoint with a `:free` suffix. The free tier provides uncapped daily requests with 1 concurrent request and 15,000 tokens per day — enough for light scripting and targeted queries. No credit card required. LiteRouter currently has 23 models verified.
+LiteRouter is a lightweight inference hub offering free models from OpenAI, DeepSeek, Mistral, Meta, and more through an OpenAI-compatible endpoint with a `:free` suffix. The free tier provides uncapped daily requests with 1 concurrent request and 15,000 tokens per day — enough for light scripting and targeted queries. No credit card required. LiteRouter currently has 20 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -617,14 +618,13 @@ LiteRouter is a lightweight inference hub offering free models from OpenAI, Deep
 
 🔗 **Base URL:** `https://api.literouter.com/v1`
 
-✅ **Verified:** August 4, 2026
+✅ **Verified:** August 5, 2026
 | Free Model                             | Context | Best For    | Latency |
 | :------------------------------------- | ------- | ----------- | ------- |
 | `claude-haiku-4.5-cheap:free`          | 200K    | `General`   | ~4.8s   |
 | `deepseek-r1-0528:free`                | 128K    | `Reasoning` | ~4.6s   |
 | `deepseek-r1:free`                     | 128K    | `Reasoning` | ~2.6s   |
 | `deepseek-v3-0324:free`                | 128K    | `Reasoning` | ~5.0s   |
-| `deepseek-v3.1-terminus:free`          | 128K    | `Reasoning` | ~3.4s   |
 | `deepseek-v3.1:free`                   | 128K    | `Reasoning` | ~2.4s   |
 | `deepseek-v3.2:free`                   | 128K    | `Reasoning` | ~3.4s   |
 | `deepseek-v3:free`                     | 128K    | `Reasoning` | ~2.9s   |
@@ -634,18 +634,16 @@ LiteRouter is a lightweight inference hub offering free models from OpenAI, Deep
 | `gemma-4-31b:free`                     | 32K     | `General`   | ~2.3s   |
 | `gpt-4.1-mini:free`                    | 1M      | `General`   | ~2.2s   |
 | `gpt-4.1-nano:free`                    | 1M      | `Code`      | ~2.5s   |
-| `gpt-4o-mini:free`                     | 128K    | `General`   | ~2.6s   |
 | `gpt-5-nano:free`                      | 128K    | `Code`      | ~3.1s   |
 | `gpt-oss-120b:free`                    | 128K    | `General`   | ~2.0s   |
 | `gpt-oss-20b:free`                     | 128K    | `Code`      | ~2.7s   |
 | `grok-4.1-fast-reasoning:free`         | 128K    | `Reasoning` | ~4.2s   |
 | `llama-3.3-70b-instruct-turbo:free`    | 128K    | `General`   | ~2.7s   |
-| `llama-4-scout:free`                   | 256K    | `General`   | ~5.0s   |
-| `minimax-m2.7:free`                    | 1M      | `General`   | ~6.7s   |
 | `mistral-large-3:free`                 | 128K    | `Reasoning` | ~3.0s   |
+| `qwen3.5:free`                         | 1M      | `General`   | ~7.0s   |
 ### [MNN AI](https://mnnai.ru)
 
-MNN AI is a credit-based inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Meta, Mistral, Moonshot, Stepfun, and more through an OpenAI-compatible endpoint. The free tier provides 10 RPM with $1 in monthly credits — replenishable each month, but the dollar cap limits heavy usage. Best suited for light daily coding and targeted queries. No credit card required. MNN AI currently has 36 verified coding-relevant models.
+MNN AI is a credit-based inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Meta, Mistral, Moonshot, Stepfun, and more through an OpenAI-compatible endpoint. The free tier provides 10 RPM with $1 in monthly credits — replenishable each month, but the dollar cap limits heavy usage. Best suited for light daily coding and targeted queries. No credit card required. MNN AI currently has 20 verified coding-relevant models.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -655,7 +653,7 @@ MNN AI is a credit-based inference hub offering models from OpenAI, Google, Deep
 
 🔗 **Base URL:** `https://api2.mnnai.ru/v1`
 
-✅ **Verified:** August 3, 2026
+✅ **Verified:** August 5, 2026
 | Free Model                         | Context | Best For    | Latency |
 | :--------------------------------- | ------- | ----------- | ------- |
 | `deepseek-v3.1`                    | 128K    | `Reasoning` | ~2.2s   |
@@ -664,35 +662,19 @@ MNN AI is a credit-based inference hub offering models from OpenAI, Google, Deep
 | `gemini-3-flash-preview`           | 1M      | `General`   | ~2.0s   |
 | `gemini-3.1-flash-lite`            | 1M      | `General`   | ~1.5s   |
 | `gemini-3.5-flash`                 | 1M      | `Code`      | ~2.0s   |
-| `gemma-4-31b-it`                   | 32K     | `General`   | ~4.5s   |
-| `glm-4.7-free`                     | 128K    | `General`   | ~3.0s   |
-| `gpt-4.1`                          | 1M      | `General`   | ~2.4s   |
 | `gpt-4.1-mini`                     | 1M      | `General`   | ~1.5s   |
 | `gpt-4.1-nano`                     | 1M      | `Code`      | ~1.0s   |
-| `gpt-4o`                           | 128K    | `General`   | ~1.1s   |
-| `gpt-4o-mini`                      | 128K    | `General`   | ~1.2s   |
-| `gpt-4o-mini-transcribe`           | 128K    | `General`   | ~1.2s   |
-| `gpt-4o-transcribe`                | 128K    | `General`   | ~1.2s   |
-| `gpt-5`                            | 128K    | `General`   | ~2.5s   |
-| `gpt-5-mini`                       | 128K    | `General`   | ~1.5s   |
 | `gpt-5-nano`                       | 128K    | `Code`      | ~1.2s   |
 | `gpt-5.1`                          | 128K    | `General`   | ~1.8s   |
 | `gpt-5.2`                          | 128K    | `General`   | ~2.3s   |
 | `gpt-oss-120b`                     | 128K    | `General`   | ~1.8s   |
 | `gpt-oss-20b`                      | 128K    | `Code`      | ~1.5s   |
-| `magistral-medium-latest`          | 128K    | `Reasoning` | ~2.5s   |
 | `mistral-large-latest`             | 128K    | `Reasoning` | ~2.5s   |
-| `mistral-medium-latest`            | 128K    | `General`   | ~2.5s   |
-| `mistral-small-latest`             | 128K    | `General`   | ~2.0s   |
 | `nemotron-3-nano`                  | 128K    | `Code`      | ~1.5s   |
 | `o3-mini`                          | 200K    | `Reasoning` | ~2.0s   |
 | `o4-mini`                          | 200K    | `Reasoning` | ~1.8s   |
-| `pixtral-12b-2409`                 | 128K    | `Vision`    | ~3.0s   |
-| `qwen-3-235b-a22b`                 | 256K    | `Reasoning` | ~3.0s   |
-| `qwen-3-235b-a22b-2507`            | 256K    | `Reasoning` | ~3.0s   |
 | `qwen-3-coder-plus`                | 256K    | `Code`      | ~2.1s   |
-| `qwen-3.5-397b-a17b`               | 256K    | `General`   | ~6.8s   |
-| `sonar`                            | 128K    | `General`   | ~2.5s   |
+| `qwen-3-235b-a22b`                 | 256K    | `Reasoning` | ~3.0s   |
 | `step-3.7-flash`                   | 128K    | `Agentic`   | ~1.8s   |
 
 ### [MegaNova AI](https://meganova.ai)
@@ -795,7 +777,7 @@ Naga AI is a lightweight inference hub offering a small set of free models from 
 
 ### [Navy API](https://api.navy)
 
-Navy API is a high-volume inference hub offering an extensive catalog of models from OpenAI, DeepSeek, Grok, Google, Mistral, Cohere, Meta, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 20 RPM with 250,000 daily tokens — enough throughput for serious coding sessions. No credit card required. Navy API currently has 30 verified coding-relevant models.
+Navy API is a high-volume inference hub offering an extensive catalog of models from OpenAI, DeepSeek, Grok, Google, Mistral, Cohere, Meta, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 20 RPM with 250,000 daily tokens — enough throughput for serious coding sessions. No credit card required. Navy API currently has 20 verified coding-relevant models.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -805,39 +787,29 @@ Navy API is a high-volume inference hub offering an extensive catalog of models 
 
 🔗 **Base URL:** `https://api.navy/v1`
 
-✅ **Verified:** August 3, 2026
-| Free Model                        | Context | Best For    | Latency |
-| :-------------------------------- | ------- | ----------- | ------- |
-| `codestral-2508`                  | 256K    | `Code`      | ~1.0s   |
-| `codestral-latest`                | 256K    | `Code`      | ~0.8s   |
-| `command-a-plus`                  | 128K    | `Agent`     | ~1.5s   |
-| `command-a-reasoning`             | 128K    | `Reasoning` | ~2.0s   |
-| `deepseek-reasoner`               | 128K    | `Reasoning` | ~3.5s   |
-| `deepseek-v3.2`                   | 128K    | `Reasoning` | ~2.0s   |
-| `deepseek-v4-flash`               | 128K    | `Reasoning` | ~1.5s   |
-| `deepseek-v4-pro`                 | 128K    | `Reasoning` | ~1.6s   |
-| `gemini-2.5-flash`                | 1M      | `General`   | ~1.5s   |
-| `gemini-2.5-flash-lite`           | 1M      | `General`   | ~1.0s   |
-| `gemini-2.5-pro`                  | 1M      | `General`   | ~2.8s   |
-| `gemini-3-flash-preview-thinking` | 1M      | `Reasoning` | ~2.0s   |
-| `gemini-3.1-flash-lite`           | 1M      | `General`   | ~0.8s   |
-| `gemma-4-31b-it`                  | 32K     | `General`   | ~1.5s   |
-| `gpt-4.1-mini`                    | 1M      | `Code`      | ~1.0s   |
-| `gpt-4.1-nano`                    | 1M      | `Code`      | ~0.8s   |
-| `gpt-5.4`                         | 128K    | `General`   | ~1.3s   |
-| `gpt-oss-120b`                    | 128K    | `General`   | ~0.8s   |
-| `gpt-oss-20b`                     | 128K    | `Code`      | ~1.2s   |
-| `grok-4-fast-reasoning`           | 128K    | `Reasoning` | ~2.0s   |
-| `grok-4.1-fast-reasoning`         | 128K    | `Reasoning` | ~2.0s   |
-| `grok-4.20-reasoning`             | 128K    | `Reasoning` | ~3.3s   |
-| `kimi-k2.5`                       | 128K    | `Reasoning` | ~2.5s   |
-| `llama-3.3-70b-instruct`          | 128K    | `General`   | ~1.5s   |
-| `minimax-m2.5`                    | 128K    | `Reasoning` | ~3.0s   |
-| `minimax-m3`                      | 1M      | `General`   | ~2.0s   |
-| `mistral-large-2512`              | 128K    | `Reasoning` | ~2.0s   |
-| `mistral-small-2603`              | 32K     | `General`   | ~1.0s   |
-| `o4-mini`                         | 200K    | `Reasoning` | ~2.5s   |
-| `qwen3.5-397b-a17b`               | 256K    | `Reasoning` | ~4.5s   |
+✅ **Verified:** August 5, 2026
+| Free Model                             | Context | Best For    | Latency |
+| :------------------------------------- | ------- | ----------- | ------- |
+| `codestral-2508`                       | 256K    | `Code`      | ~1.0s   |
+| `codestral-latest`                     | 256K    | `Code`      | ~0.8s   |
+| `command-a-plus`                       | 128K    | `Agent`     | ~1.5s   |
+| `deepseek-v3.2`                        | 128K    | `Reasoning` | ~2.0s   |
+| `deepseek-v4-pro`                      | 128K    | `Reasoning` | ~1.6s   |
+| `gemini-2.5-flash`                     | 1M      | `General`   | ~1.5s   |
+| `gemini-3-flash-preview-thinking`      | 1M      | `Reasoning` | ~2.0s   |
+| `gemini-3.1-flash-lite`                | 1M      | `General`   | ~0.8s   |
+| `gpt-4.1-mini`                         | 1M      | `Code`      | ~1.0s   |
+| `gpt-4.1-nano`                         | 1M      | `Code`      | ~0.8s   |
+| `gpt-5.3-codex`                        | 128K    | `Code`      | ~1.5s   |
+| `gpt-5.4`                              | 128K    | `General`   | ~1.3s   |
+| `gpt-5.4-mini`                         | 128K    | `General`   | ~1.2s   |
+| `gpt-5.4-nano`                         | 128K    | `Code`      | ~1.0s   |
+| `gpt-oss-120b`                         | 128K    | `General`   | ~0.8s   |
+| `gpt-oss-20b`                          | 128K    | `Code`      | ~1.2s   |
+| `grok-code-fast-1`                     | 128K    | `Code`      | ~1.5s   |
+| `kimi-k2.6`                            | 128K    | `Reasoning` | ~1.0s   |
+| `kimi-k2.7-code`                       | 128K    | `Code`      | ~1.5s   |
+| `qwen3.6-27b`                          | 256K    | `Code`      | ~0.5s   |
 
 ### [NVIDIA NIM](https://build.nvidia.com)
 
@@ -977,7 +949,7 @@ Routeway is a unified API gateway offering free models through a `:free` model s
 
 ### [Poixe AI](https://poixe.com)
 
-Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 31 models verified.
+Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 15 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -987,38 +959,21 @@ Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Goo
 
 🔗 **Base URL:** `https://api.poixe.com/v1/`
 
-✅ **Verified:** August 3, 2026
+✅ **Verified:** August 5, 2026
 | Free Model                              | Context | Best For    | Latency |
 | :-------------------------------------- | ------- | ----------- | ------- |
-| `doubao-1-5-lite-32k-250115:free`       | 32K     | `Fallback`  | ~1.2s   |
-| `doubao-1-5-pro-32k-250115:free`        | 32K     | `General`   | ~4.5s   |
-| `doubao-1-5-vision-pro-32k-250115:free` | 32K     | `Vision`    | ~2.0s   |
+| `claude-sonnet-4-5-20250929:free`       | 200K    | `General`   | ~1.5s   |
 | `doubao-seed-1-6-250615:free`           | 128K    | `General`   | ~3.9s   |
 | `doubao-seed-1-6-flash-250615:free`     | 128K    | `General`   | ~1.2s   |
-| `gpt-3.5-turbo-0125:free`               | 16K     | `General`   | ~1.0s   |
-| `gpt-3.5-turbo:free`                    | 16K     | `General`   | ~1.0s   |
-| `gpt-4.1-mini:free`                     | 1M      | `General`   | ~1.7s   |
-| `gpt-4.1-mini-2025-04-14:free`          | 1M      | `General`   | ~1.6s   |
-| `gpt-4.1-nano:free`                     | 1M      | `Code`      | ~1.7s   |
-| `gpt-4.1-nano-2025-04-14:free`          | 1M      | `Code`      | ~0.9s   |
-| `gpt-4o-mini:free`                      | 128K    | `General`   | ~1.8s   |
-| `gpt-4o-mini-2024-07-18:free`           | 128K    | `General`   | ~2.2s   |
+| `gemini-2.5-flash:free`                 | 1M      | `General`   | ~1.5s   |
+| `gemini-2.5-flash-lite:free`            | 1M      | `General`   | ~1.0s   |
+| `gpt-4.1-nano:free`                     | 1M      | `Code`      | ~0.9s   |
 | `gpt-oss-120b:free`                     | 128K    | `General`   | ~1.3s   |
 | `gpt-oss-20b:free`                      | 128K    | `Code`      | ~0.8s   |
 | `grok-3:free`                           | 128K    | `Reasoning` | ~3.5s   |
-| `grok-3-beta:free`                      | 128K    | `Reasoning` | ~3.5s   |
 | `grok-3-mini:free`                      | 128K    | `Reasoning` | ~3.4s   |
-| `grok-3-mini-beta:free`                 | 128K    | `Reasoning` | ~3.4s   |
-| `grok-4:free`                           | 128K    | `Reasoning` | ~3.0s   |
-| `qwen-long:free`                        | 128K    | `General`   | ~1.2s   |
-| `qwen-long-2025-01-25:free`             | 128K    | `General`   | ~1.2s   |
-| `qwen-long-latest:free`                 | 128K    | `General`   | ~1.2s   |
-| `qwen-plus:free`                        | 128K    | `General`   | ~1.3s   |
-| `qwen-plus-2025-04-28:free`             | 128K    | `General`   | ~1.1s   |
 | `qwen-plus-latest:free`                 | 128K    | `General`   | ~1.3s   |
 | `qwen-turbo:free`                       | 128K    | `Fallback`  | ~1.0s   |
-| `qwen3-14b:free`                        | 128K    | `General`   | ~2.0s   |
-| `qwen3-235b-a22b:free`                  | 256K    | `Reasoning` | ~5.6s   |
 | `qwen3-235b-a22b-instruct-2507:free`    | 256K    | `Reasoning` | ~1.3s   |
 | `qwen3-coder-480b-a35b-instruct:free`   | 256K    | `Code`      | ~1.2s   |
 ### [Poolside](https://poolside.ai)
@@ -1112,7 +1067,7 @@ TokenReply is a lightweight inference hub offering models from Google, DeepSeek,
 
 ### [Void AI](https://voidai.app)
 
-Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Moonshot, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 100 RPM with 125,000 daily credits — the highest RPM of any hub on this list, ideal for high-throughput coding sessions. No credit card required. Void AI currently has 31 verified coding-relevant models.
+Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Moonshot, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 100 RPM with 125,000 daily credits — the highest RPM of any hub on this list, ideal for high-throughput coding sessions. No credit card required. Void AI currently has 20 verified coding-relevant models.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -1122,29 +1077,19 @@ Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSee
 
 🔗 **Base URL:** `https://api.voidai.app/v1`
 
-✅ **Verified:** August 3, 2026
+✅ **Verified:** August 5, 2026
 | Free Model                       | Context | Best For    | Latency |
 | :------------------------------- | ------- | ----------- | ------- |
 | `deepseek-v3.2`                  | 128K    | `Reasoning` | ~2.0s   |
 | `deepseek-v4-flash`              | 128K    | `Reasoning` | ~1.5s   |
 | `deepseek-v4-flash-0731`         | 128K    | `Reasoning` | ~1.5s   |
 | `deepseek-v4-pro`                | 128K    | `Reasoning` | ~1.6s   |
-| `gemini-2.5-flash`               | 128K    | `General`   | ~1.4s   |
-| `gemini-2.5-pro`                 | 128K    | `Reasoning` | ~1.6s   |
-| `gemini-3-flash-preview`         | 128K    | `General`   | ~1.3s   |
-| `gemini-3.1-flash-lite`          | 1M      | `General`   | ~1.5s   |
 | `gemini-3.1-pro-preview`         | 1M      | `Reasoning` | ~2.0s   |
 | `gemini-3.5-flash`               | 1M      | `Code`      | ~1.7s   |
 | `gemini-3.5-flash-lite`          | 1M      | `General`   | ~1.5s   |
-| `gemini-3.6-flash`               | 128K    | `General`   | ~1.5s   |
-| `gemma-4-31b-it`                 | 32K     | `General`   | ~2.1s   |
+| `gemini-3.6-flash`               | 128K    | `Code`      | ~1.5s   |
 | `glm-5.2`                        | 128K    | `General`   | ~2.0s   |
-| `gpt-4.1`                        | 1M      | `General`   | ~2.4s   |
 | `gpt-4.1-mini`                   | 1M      | `General`   | ~1.5s   |
-| `gpt-4o`                         | 128K    | `General`   | ~1.1s   |
-| `gpt-4o-mini`                    | 128K    | `General`   | ~1.2s   |
-| `gpt-5.1`                        | 128K    | `General`   | ~1.2s   |
-| `gpt-5.2`                        | 128K    | `General`   | ~1.4s   |
 | `gpt-5.3-codex`                  | 128K    | `Code`      | ~1.5s   |
 | `gpt-5.4`                        | 128K    | `General`   | ~1.3s   |
 | `gpt-5.4-mini`                   | 128K    | `General`   | ~1.2s   |
@@ -1155,7 +1100,6 @@ Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSee
 | `kimi-k3`                        | 128K    | `Reasoning` | ~1.5s   |
 | `qwen3-235b-a22b-instruct`       | 256K    | `Reasoning` | ~2.5s   |
 | `qwen3-coder-480b-a35b-instruct` | 256K    | `Code`      | ~3.0s   |
-| `umbra`                          | 128K    | `General`   | ~2.0s   |
 
 ### [Yolo-Auto](https://yolo-auto.com)
 
