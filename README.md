@@ -283,7 +283,7 @@ Cohere focuses on enterprise-grade NLP with their Command model family — built
 
 ### [ElectronHub](https://electronhub.ai)
 
-ElectronHub is a credit-based inference hub offering an enormous catalog of models from OpenAI, Google, Meta, Mistral, Cohere, DeepSeek, Qwen, Microsoft, and more through an OpenAI-compatible endpoint. The free tier provides 5 RPM with $0.25 in weekly credits — replenishes every week, but the dollar cap limits heavy usage. Best for targeted queries and efficient coding. No credit card required. ElectronHub currently has roughly 55 verified coding-relevant models.
+ElectronHub is a credit-based inference hub offering an enormous catalog of models from OpenAI, Google, Meta, Mistral, Cohere, DeepSeek, Qwen, Microsoft, and more through an OpenAI-compatible endpoint. The free tier provides 5 RPM with $0.25 in weekly credits — replenishes every week, but the dollar cap limits heavy usage. Best for targeted queries and efficient coding. No credit card required. ElectronHub currently has 30 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -294,23 +294,38 @@ ElectronHub is a credit-based inference hub offering an enormous catalog of mode
 🔗 **Base URL:** `https://api.electronhub.ai/v1`
 
 ✅ **Verified:** August 6, 2026
-| Free Model                           | Context | Best For    | Latency |
-| :----------------------------------- | ------- | ----------- | ------- |
-| `gpt-oss-120b`                       | 128K    | `General`   | ~3.4s   |
-| `codestral-latest`                   | 256K    | `Code`      | ~3.2s   |
-| `gemini-2.5-flash`                   | 1M      | `General`   | ~1.5s   |
-| `gpt-4.1`                            | 1M      | `General`   | ~2.5s   |
-| `gpt-4o`                             | 128K    | `General`   | ~3.4s   |
-| `gpt-5.1-codex-mini`                 | 128K    | `Code`      | ~1.8s   |
-| `gpt-oss-20b`                        | 128K    | `Code`      | ~2.0s   |
-| `llama-3.3-70b-instruct`             | 128K    | `General`   | ~2.3s   |
-| `mistral-large-3-675b-instruct-2512` | 128K    | `General`   | ~3.2s   |
-| `mistral-large-latest`               | 128K    | `General`   | ~3.2s   |
-| `nemotron-3-ultra-550b-a55b`         | 128K    | `General`   | ~3.2s   |
-| `o3-mini`                            | 200K    | `Reasoning` | ~3.8s   |
-| `phi-4`                              | 128K    | `General`   | ~3.2s   |
-| `qwen-2.5-coder-32b-instruct`        | 128K    | `Code`      | ~3.2s   |
-| `step-3.5-flash`                     | 128K    | `Agentic`   | ~3.2s   |
+| Free Model                         | Context | Best For    | Latency |
+| :--------------------------------- | ------- | ----------- | ------- |
+| `gemini-2.5-flash-lite`            | 1M      | `General`   | ~1.7s   |
+| `gemini-3.5-flash-lite`            | 1M      | `General`   | ~2.3s   |
+| `gemini-3.5-flash`                 | 1M      | `General`   | ~2.5s   |
+| `devstral-latest`                  | 128K    | `Code`      | ~1.8s   |
+| `codestral-latest`                 | 256K    | `Code`      | ~1.5s   |
+| `gpt-4.1-nano`                     | 1M      | `Code`      | ~1.6s   |
+| `gpt-4.1`                          | 1M      | `General`   | ~2.5s   |
+| `gpt-4o`                           | 128K    | `General`   | ~1.8s   |
+| `gpt-5`                            | 128K    | `General`   | ~2.6s   |
+| `deepseek-v4-flash`                | 128K    | `Reasoning` | ~2.3s   |
+| `deepseek-v4-pro`                  | 128K    | `Reasoning` | ~3.0s   |
+| `deepseek-v3.2`                    | 128K    | `Reasoning` | ~3.3s   |
+| `qwen3-coder-30-a3b-instruct`      | 128K    | `Code`      | ~2.2s   |
+| `qwen3.6-27b`                      | 128K    | `General`   | ~2.6s   |
+| `qwen3-30b-a3b`                    | 128K    | `Code`      | ~1.8s   |
+| `o3`                               | 200K    | `Reasoning` | ~3.1s   |
+| `o4-mini`                          | 200K    | `Reasoning` | ~3.1s   |
+| `claude-sonnet-5`                  | 200K    | `General`   | ~3.8s   |
+| `claude-opus-4-7`                  | 200K    | `Reasoning` | ~2.9s   |
+| `mistral-small-3.2-24b-instruct`   | 128K    | `Code`      | ~1.4s   |
+| `mistral-medium-2508`              | 128K    | `General`   | ~1.3s   |
+| `mistral-large-latest`             | 128K    | `General`   | ~1.6s   |
+| `llama-3.3-70b-instruct`           | 128K    | `General`   | ~2.3s   |
+| `gpt-oss-120b`                     | 128K    | `General`   | ~5.1s   |
+| `gpt-oss-20b`                      | 128K    | `Code`      | ~2.3s   |
+| `nemotron-3-ultra-550b-a55b`       | 128K    | `Reasoning` | ~6.6s   |
+| `phi-4`                            | 128K    | `General`   | ~1.9s   |
+| `grok-4.5`                         | 128K    | `Reasoning` | ~3.4s   |
+| `step-3.7-flash`                   | 128K    | `Agentic`   | ~3.3s   |
+| `laguna-s-2.1`                     | 128K    | `Code`      | ~3.4s   |
 
 ### [FastRouter](https://fastrouter.ai)
 
