@@ -952,27 +952,6 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | `poolside/laguna-s-2.1:free`                         | 128K    | `Code`      | ~2.0s   |
 | `poolside/laguna-xs-2.1:free`                        | 128K    | `Code`      | ~1.9s   |
 
-### [Routeway AI](https://routeway.ai)
-
-Routeway is a unified API gateway offering free models through a `:free` model suffix — a pattern shared with OpenRouter and Kilo Code. Models are drawn from Stepfun, NVIDIA, Poolside, Meta, and others, all accessed through a single OpenAI-compatible endpoint with no credit card required. The tight 5 RPM cap makes Routeway a fallback hub rather than a daily driver. Routeway currently has 5 models verified.
-
-| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
-| :--------- | :--------- | :----- | :------------- | :-------------- |
-| **Status** | ✅          | ⚠️     | ✅              | ⚠️              |
-
-🎁 **Free Tier Quota:** 5 RPM / 200 RPD / 300,000 TPD
-
-🔗 **Base URL:** `https://api.routeway.ai/v1`
-
-✅ **Verified:** August 7, 2026
-| Free Model                     | Context | Best For    | Latency |
-| :----------------------------- | ------- | ----------- | ------- |
-| `laguna-xs.2:free`             | 128K    | `Code`      | ~0.9s   |
-| `llama-3.2-3b-instruct:free`   | 8K      | `Fallback`  | ~0.7s   |
-| `nemotron-3-nano-30b-a3b:free` | 128K    | `Reasoning` | ~1.0s   |
-| `nemotron-nano-9b-v2:free`     | 128K    | `Code`      | ~0.8s   |
-| `step-3.7-flash:free`          | 128K    | `Agentic`   | ~2.5s   |
-
 ### [Poixe AI](https://poixe.com)
 
 Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 30 models verified.
@@ -1018,6 +997,7 @@ Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Goo
 | `qwen3-14b:free`                          | 128K    | `Reasoning` | ~1.2s   |
 | `qwen3-8b:free`                           | 128K    | `Code`      | ~1.0s   |
 | `qwen3-coder-480b-a35b-instruct:free`     | 256K    | `Code`      | ~1.2s   |
+
 ### [Poolside](https://poolside.ai)
 
 Poolside is a foundation model lab building purpose-built coding models from scratch. Their Laguna family — XS.2 (33B-A3B) and S.2 (131B-A13B) — are trained on 30T tokens exclusively for agentic software engineering with tool calling and 256K context. The models are free while in preview — the same "use it while it lasts" uncertainty as any free provider. Poolside currently has 2 models verified.
@@ -1035,6 +1015,27 @@ Poolside is a foundation model lab building purpose-built coding models from scr
 | :----------------------- | ------- | -------- | ------- |
 | `poolside/laguna-s-2.1`  | 256K    | `Code`   | ~1.3s   |
 | `poolside/laguna-xs-2.1` | 128K    | `Code`   | ~0.9s   |
+
+### [Routeway AI](https://routeway.ai)
+
+Routeway is a unified API gateway offering free models through a `:free` model suffix — a pattern shared with OpenRouter and Kilo Code. Models are drawn from Stepfun, NVIDIA, Poolside, Meta, and others, all accessed through a single OpenAI-compatible endpoint with no credit card required. The tight 5 RPM cap makes Routeway a fallback hub rather than a daily driver. Routeway currently has 5 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ⚠️     | ✅              | ⚠️              |
+
+🎁 **Free Tier Quota:** 5 RPM / 200 RPD / 300,000 TPD
+
+🔗 **Base URL:** `https://api.routeway.ai/v1`
+
+✅ **Verified:** August 7, 2026
+| Free Model                     | Context | Best For    | Latency |
+| :----------------------------- | ------- | ----------- | ------- |
+| `laguna-xs.2:free`             | 128K    | `Code`      | ~0.9s   |
+| `llama-3.2-3b-instruct:free`   | 8K      | `Fallback`  | ~0.7s   |
+| `nemotron-3-nano-30b-a3b:free` | 128K    | `Reasoning` | ~1.0s   |
+| `nemotron-nano-9b-v2:free`     | 128K    | `Code`      | ~0.8s   |
+| `step-3.7-flash:free`          | 128K    | `Agentic`   | ~2.5s   |
 
 ### [SambaNova AI](https://cloud.sambanova.ai)
 

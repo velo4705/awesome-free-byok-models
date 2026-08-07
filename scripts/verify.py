@@ -9,10 +9,9 @@ Set API keys in scripts/.env (templated from .env.example) or as env vars.
 
 import json
 import os
-import sys
 import time
-import urllib.request
 import urllib.error
+import urllib.request
 
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 for dotenv_path in (os.path.join(_SCRIPT_DIR, ".env"), os.path.join(os.getcwd(), ".env")):
@@ -44,7 +43,7 @@ PROVIDERS = [
     {
         "name": "AnyAPI AI",
         "chat_url": "https://api.anyapi.ai/v1/chat/completions",
-        "model": "poolside/laguna-m.1:free",
+        "model": "google/gemma-4-26b-a4b-it:free",
         "env_key": "ANYAPI_API_KEY",
     },
     {
@@ -82,7 +81,7 @@ PROVIDERS = [
     {
         "name": "FastRouter",
         "chat_url": "https://api.fastrouter.ai/api/v1/chat/completions",
-        "model": "sarvam/sarvam-30b:free",
+        "model": "sarvam/sarvam-105b:free",
         "env_key": "FASTR_API_KEY",
     },
     {
@@ -155,7 +154,7 @@ PROVIDERS = [
     {
         "name": "LiteRouter",
         "chat_url": "https://api.literouter.com/v1/chat/completions",
-        "model": "deepseek-v4-flash:free",
+        "model": "deepseek-r1:free",
         "env_key": "LITEROUTER_API_KEY",
     },
     {
@@ -185,7 +184,7 @@ PROVIDERS = [
     {
         "name": "Naga AI",
         "chat_url": "https://api.naga.ac/v1/chat/completions",
-        "model": "llama-4-scout-17b-16e-instruct:free",
+        "model": "llama-3.3-70b-instruct:free",
         "env_key": "NAGA_API_KEY",
     },
     {
@@ -197,7 +196,7 @@ PROVIDERS = [
     {
         "name": "NVIDIA NIM",
         "chat_url": "https://integrate.api.nvidia.com/v1/chat/completions",
-        "model": "deepseek-ai/deepseek-v4-flash",
+        "model": "openai/gpt-oss-20b",
         "env_key": "NVIDIA_API_KEY",
     },
     {
@@ -228,7 +227,7 @@ PROVIDERS = [
     {
         "name": "Poolside",
         "chat_url": "https://inference.poolside.ai/v1/chat/completions",
-        "model": "poolside/laguna-m.1",
+        "model": "poolside/laguna-s-2.1",
         "env_key": "POOLSIDE_API_KEY",
     },
     {
@@ -246,13 +245,13 @@ PROVIDERS = [
     {
         "name": "Speka AI",
         "chat_url": "https://speka.me/v1/chat/completions",
-        "model": "deepseek-ai/deepseek-v4-flash",
+        "model": "openai/gpt-oss-20b",
         "env_key": "SPEKA_API_KEY",
     },
     {
         "name": "TokenReply",
         "chat_url": "https://api.tokenreply.com/v1/chat/completions",
-        "model": "deepseek-v4-flash",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b",
         "env_key": "TOKENREP_API_KEY",
     },
     {
@@ -276,7 +275,7 @@ PROVIDERS = [
     {
         "name": "Zylo API",
         "chat_url": "https://api.zyloai.net/v1/chat/completions",
-        "model": "deepseek-v4",
+        "model": "gpt-oss-20b",
         "env_key": "ZYLO_API_KEY",
     },
 ]
@@ -338,7 +337,7 @@ def test_provider(provider):
     except urllib.error.HTTPError as e:
         elapsed = round(time.time() - start, 2)
         return f"HTTP {e.code}", elapsed
-    except Exception as e:
+    except (urllib.error.URLError, TimeoutError):
         elapsed = round(time.time() - start, 2)
         return "ERROR", elapsed
 
