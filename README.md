@@ -50,7 +50,7 @@ Ranked by **coding capability × daily volume × speed** using quantitative crit
 
 | Rank   | Model                          | Host Provider                                                 | Why It Ranks Here                                                   |
 | ---    | ---                            | ---                                                           | ---                                                                 |
-| **1**  | `deepseek-v4-flash-free`       | [OpenCode Zen](https://opencode.ai/docs)                      | 500 RPD, 30 RPM, 128K context, DeepSeek V4 Flash reasoning model.   |
+| **1**  | `deepseek-v4-flash-free`       | [OpenCode Zen](https://opencode.ai/docs)                      | 500 RPD, 30 RPM, 200K context, DeepSeek V4 Flash reasoning model.   |
 | **2**  | `qwen/qwen3.6-27b`             | [Groq API](https://console.groq.com/docs/models)              | 256K context, sub-300ms latency, 14,400 RPD daily pool.             |
 | **3**  | `openai/gpt-oss-120b`          | [Groq API](https://console.groq.com/docs/overview)            | 128K context, sub-300ms latency, 14,400 RPD, 120B params.           |
 | **4**  | `gpt-5.3-codex`                | [Void AI](https://docs.voidai.app)                            | 128K context, ~1.5s latency, code-specialized model, 100 RPM.       |
@@ -917,7 +917,7 @@ OpenCode Zen is a curated set of AI models tested and optimized for coding agent
 | Free Model               | Context | Best For      | Latency |
 | :----------------------- | ------- | ------------- | ------- |
 | `big-pickle`             | 128K    | `Fallback`    | ~1.87s  |
-| `deepseek-v4-flash-free` | 128K    | `Code`        | ~1.93s  |
+| `deepseek-v4-flash-free` | 200K    | `Code`        | ~1.93s  |
 | `laguna-s-2.1-free`      | 128K    | `Code`        | ~1.5s   |
 | `ling-3.0-flash-free`    | 128K    | `General`     | ~2.30s  |
 | `longcat-2.0-free`       | 128K    | `General`     | ~4.51s  |
