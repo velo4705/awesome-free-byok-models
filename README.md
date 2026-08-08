@@ -81,6 +81,7 @@ Filtered for coding and general chat capability across all providers.
   <li><a href="#fastrouter">FastRouter</a></li>
   <li><a href="#freeinference">FreeInference</a></li>
   <li><a href="#google-gemini">Google Gemini</a></li>
+  <li><a href="#gonka-broker">Gonka Broker</a></li>
   <li><a href="#groq-api">Groq API</a></li>
   <li><a href="#helixmind">HelixMind</a></li>
   <li><a href="#helyxai">HelyxAI</a></li>
@@ -395,6 +396,24 @@ Gemini offers large context windows on paper, but the free tier's **rate limits 
 | `models/gemini-robotics-er-2-preview`                    | 256K    | `Reasoning` | ~2.5s   |
 | `models/gemma-4-26b-a4b-it`                              | 32K     | `General`   | ~1.5s   |
 | `models/gemma-4-31b-it`                                  | 32K     | `General`   | ~2.3s   |
+
+### [Gonka Broker](https://gonkabroker.com/)
+
+Gonka Broker is a proxy gateway routing requests to providers through a single OpenAI-compatible endpoint. The free tier offers 6 RPM with 1M tokens per month — tight for sustained use, but the sub-second latencies make it a solid fallback for quick queries. No credit card required. Gonka Broker currently has 2 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
+
+🎁 **Free Tier Quota:** 6 RPM / ~1M tokens per month
+
+🔗 **Base URL:** `https://proxy.gonkabroker.com/v1/`
+
+✅ **Verified:** August 8, 2026
+| Free Model                | Context | Best For    | Latency |
+| :------------------------ | ------- | ----------- | ------- |
+| `MiniMaxAI/MiniMax-M2.7`  | 1M      | `Reasoning` | ~0.74s  |
+| `moonshotai/Kimi-K2.6`    | 128K    | `Reasoning` | ~0.62s  |
 
 ### [Groq API](https://console.groq.com)
 

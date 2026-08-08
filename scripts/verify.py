@@ -98,6 +98,12 @@ PROVIDERS = [
         "is_gemini": True,
     },
     {
+        "name": "Gonka Broker",
+        "chat_url": "https://proxy.gonkabroker.com/v1/chat/completions",
+        "model": "MiniMaxAI/MiniMax-M2.7",
+        "env_key": "GONKA_API_KEY",
+    },
+    {
         "name": "Groq API",
         "chat_url": "https://api.groq.com/openai/v1/chat/completions",
         "model": "llama-3.3-70b-versatile",
@@ -251,7 +257,7 @@ PROVIDERS = [
     {
         "name": "TokenReply",
         "chat_url": "https://api.tokenreply.com/v1/chat/completions",
-        "model": "nvidia/nemotron-3-ultra-550b-a55b",
+        "model": "google/gemma-4-26b-a4b-it",
         "env_key": "TOKENREP_API_KEY",
     },
     {
