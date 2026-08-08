@@ -403,7 +403,7 @@ Gonka Broker is a proxy gateway routing requests to providers through a single O
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
-| **Status** | ✅          | ✅      | ✅              | ✅               |
+| **Status** | ✅          | ✅      | ⚠️             | ✅               |
 
 🎁 **Free Tier Quota:** 6 RPM / ~1M tokens per month
 
