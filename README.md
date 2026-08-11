@@ -126,7 +126,7 @@ AION Labs provides storytelling-optimized models through an OpenAI-compatible AP
 
 🔗 **Base URL:** `https://api.aionlabs.ai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                       | Context | Best For   | Latency |
 | :------------------------------- | ------- | ---------- | ------- |
 | `aion-labs/aion-3.0`             | 128K    | `Code`     | ~2.2s   |
@@ -147,7 +147,7 @@ Agnes AI offers flash-tier models with generous daily limits but slow inference 
 
 🔗 **Base URL:** `https://apihub.agnes-ai.com/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model            | Context | Best For   | Latency |
 | :-------------------- | ------- | ---------- | ------- |
 | `agnes-2.0-flash`     | 32K     | `General`  | ~6.7s   |
@@ -157,7 +157,7 @@ Agnes AI offers flash-tier models with generous daily limits but slow inference 
 
 ### [AnyAPI AI](https://anyapi.ai)
 
-AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, Cohere, and more through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with access to free and basic models — no credit card required. AnyAPI currently has 6 models verified.
+AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Anthropic, Google, DeepSeek, Meta, Mistral, Cohere, and more through a single OpenAI-compatible endpoint. The free tier offers 100,000 tokens/day with access to free and basic models — no credit card required. AnyAPI currently has 5 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -167,13 +167,12 @@ AnyAPI is a unified API gateway providing access to 400+ models from OpenAI, Ant
 
 🔗 **Base URL:** `https://api.anyapi.ai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                                           | Context | Best For    | Latency |
 | :--------------------------------------------------- | ------- | ----------- | ------- |
 | `google/gemma-4-26b-a4b-it:free`                     | 32K     | `General`   | ~6.6s   |
 | `nvidia/nemotron-3-nano-30b-a3b:free`                | 128K    | `General`   | ~9.3s   |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | 128K    | `Reasoning` | ~8.8s   |
-| `nvidia/nemotron-3-ultra-550b-a55b:free`             | 128K    | `Reasoning` | ~9.1s   |
 | `nvidia/nemotron-nano-12b-v2-vl:free`                | 32K     | `Vision`    | ~8.9s   |
 | `nvidia/nemotron-nano-9b-v2:free`                    | 128K    | `Fallback`  | ~9.6s   |
 
@@ -189,7 +188,7 @@ Auriko is a unified API gateway providing access to 100+ models from top provide
 
 🔗 **Base URL:** `https://api.auriko.ai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model       | Context | Best For  | Latency |
 | :--------------- | ------- | --------- | ------- |
 | `glm-4.5-flash`  | 128K    | `General` | ~2.8s   |
@@ -208,7 +207,7 @@ Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, integrati
 
 🔗 **Base URL:** `https://api.cerebras.ai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model     | Context | Best For  | Latency |
 | :------------- | ------- | --------- | ------- |
 | `gpt-oss-120b` | 128K    | `General` | ~0.5s   |
@@ -227,7 +226,7 @@ Cloudflare Workers AI runs models on Cloudflare's global edge network using serv
 
 🔗 **Base URL:** `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1/chat/completions` (replace `{account_id}` with your Cloudflare account ID)
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 > ⚠️ **Two API paths:** The `/chat/completions` endpoint takes standard `"messages"` (OpenAI-compatible). The legacy `/run/{model}` endpoint uses `"prompt"` instead — make sure your tool targets the right one.
 
 | Free Model                                     | Context | Best For    | Latency |
@@ -267,7 +266,7 @@ Cohere focuses on enterprise-grade NLP with their Command model family — built
 
 🔗 **Base URL:** `https://api.cohere.com/v2`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                    | Context | Best For    | Latency |
 | :---------------------------- | ------- | ----------- | ------- |
 | `command-a-03-2025`           | 128K    | `Agent`     | ~0.55s  |
@@ -294,7 +293,7 @@ ElectronHub is a credit-based inference hub offering an enormous catalog of mode
 
 🔗 **Base URL:** `https://api.electronhub.ai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                         | Context | Best For    | Latency |
 | :--------------------------------- | ------- | ----------- | ------- |
 | `gemini-2.5-flash-lite`            | 1M      | `General`   | ~1.7s   |
@@ -340,7 +339,7 @@ FastRouter is a lightweight inference hub offering Sarvam AI models with a `:fre
 
 🔗 **Base URL:** `https://api.fastrouter.ai/api/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                | Context | Best For  | Latency |
 | :------------------------ | ------- | --------- | ------- |
 | `sarvam/sarvam-105b:free` | 128K    | `General` | ~2.79s  |
@@ -357,7 +356,7 @@ FreeInference is a research-backed inference hub providing access to models from
 
 🔗 **Base URL:** `https://freeinference.org/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 > ⚠️ **Non-Harvard users:** new accounts go through a manual review before they're ready to use.
 
 | Free Model          | Context | Best For    | Latency |
@@ -380,7 +379,7 @@ Gemini offers large context windows on paper, but the free tier's **rate limits 
 
 🔗 **Base URL:** `https://generativelanguage.googleapis.com/v1beta`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                                               | Context | Best For    | Latency |
 | :------------------------------------------------------- | ------- | ----------- | ------- |
 | `models/gemini-2.5-flash`                                | 1M      | `Fallback`  | ~1.1s   |
@@ -410,7 +409,7 @@ Gonka Broker is a proxy gateway routing requests to providers through a single O
 
 🔗 **Base URL:** `https://proxy.gonkabroker.com/v1/`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                | Context | Best For    | Latency |
 | :------------------------ | ------- | ----------- | ------- |
 | `MiniMaxAI/MiniMax-M2.7`  | 1M      | `Reasoning` | ~0.74s  |
@@ -428,7 +427,7 @@ Groq is famous for providing the **absolute lowest streaming latency** in the AP
 
 🔗 **Base URL:** `https://api.groq.com/openai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                                  | Context | Best For   | Latency |
 | :------------------------------------------ | ------- | ---------- | ------- |
 | `openai/gpt-oss-120b`                       | 128K    | `Code`     | ~0.4s   |
@@ -452,7 +451,7 @@ HelixMind is a lightweight inference hub offering a small set of free models fro
 
 🔗 **Base URL:** `https://helixmind.online/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                                | Context | Best For    | Latency |
 | :---------------------------------------- | ------- | ----------- | ------- |
 | `deepseek-v4-flash-0731-thinking`         | 128K    | `Reasoning` | ~2.6s   |
@@ -473,7 +472,7 @@ HelyxAI is a unified API gateway providing access to proprietary and open-weight
 
 🔗 **Base URL:** `https://helyxai.space/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                 | Context | Best For    | Latency |
 | :------------------------- | ------- | ----------- | ------- |
 | `DeepSeek-V4-Flash`        | 128K    | `Reasoning` | ~4.83s  |
@@ -501,7 +500,7 @@ Hugging Face's free Inference API gives you access to thousands of community-hos
 
 🔗 **Base URL:** `https://router.huggingface.co/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                                          | Context | Best For    | Latency |
 | :-------------------------------------------------- | ------- | ----------- | ------- |
 | `deepcogito/cogito-671b-v2.1`                       | 128K    | `Reasoning` | ~0.7s   |
@@ -550,7 +549,7 @@ Intern AI is the official API provided by Shanghai AI Laboratory, the developers
 
 🔗 **Base URL:** `https://chat.intern-ai.org.cn/api/v1/`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model               | Context | Best For    | Latency |
 | :----------------------- | ------- | ----------- | ------- |
 | `intern-latest`          | 256K    | `General`   | ~1.0s   |
@@ -576,7 +575,7 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 
 🔗 **Base URL:** `https://api.kilo.ai/api/gateway`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                                           | Context | Best For    | Latency |
 | :--------------------------------------------------- | ------- | ----------- | ------- |
 | `cohere/north-mini-code:free`                        | 128K    | `Code`      | ~1.5s   |
@@ -601,7 +600,7 @@ LLM.Kiwi is a Cloudflare-edge inference provider offering an auto-routing endpoi
 
 🔗 **Base URL:** `https://api.llm.kiwi/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model | Context | Best For  | Latency |
 | :--------- | :------ | :-------- | ------- |
 | `auto`     | Varied  | `General` | ~1.0s   |
@@ -619,7 +618,7 @@ LLM7.IO is a rising inference provider serving open-weight models via Llama.cpp 
 
 🔗 **Base URL:** `https://api.llm7.io/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                       | Context | Best For    | Latency |
 | :------------------------------- | ------- | ----------- | ------- |
 | `codestral-latest`               | 256K    | `Code`      | ~0.67s  |
@@ -640,14 +639,14 @@ LLMGateway is a lightweight inference hub serving models from Zhipu AI and more 
 
 🔗 **Base URL:** `https://api.llmgateway.io/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model              | Context | Best For  | Latency |
 | :---------------------- | ------- | --------- | ------- |
 | `claude-haiku-4-5-free` | 200K    | `General` | ~1.2s   |
 
 ### [LiteRouter](https://literouter.com)
 
-LiteRouter is a lightweight inference hub offering free models from OpenAI, DeepSeek, Mistral, Meta, and more through an OpenAI-compatible endpoint with a `:free` suffix. The free tier provides uncapped daily requests with 1 concurrent request and 15,000 tokens per day — enough for light scripting and targeted queries. No credit card required. LiteRouter currently has 32 models verified.
+LiteRouter is a lightweight inference hub offering free models from OpenAI, DeepSeek, Mistral, Meta, and more through an OpenAI-compatible endpoint with a `:free` suffix. The free tier provides uncapped daily requests with 1 concurrent request and 15,000 tokens per day — enough for light scripting and targeted queries. No credit card required. LiteRouter currently has 25 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -655,41 +654,35 @@ LiteRouter is a lightweight inference hub offering free models from OpenAI, Deep
 
 🔗 **Base URL:** `https://api.literouter.com/v1`
 
-✅ **Verified:** August 10, 2026
-| Free Model                             | Context | Best For    | Latency |
-| :------------------------------------- | ------- | ----------- | ------- |
-| `claude-haiku-4.5-cheap:free`          | 200K    | `General`   | ~4.8s   |
-| `deepseek-r1-0528:free`                | 128K    | `Reasoning` | ~4.6s   |
-| `deepseek-r1:free`                     | 128K    | `Reasoning` | ~2.6s   |
-| `deepseek-reasoner:free`               | 128K    | `Reasoning` | ~3.0s   |
-| `deepseek-v3-0324:free`                | 128K    | `Reasoning` | ~5.0s   |
-| `deepseek-v3.1-terminus:free`          | 128K    | `Reasoning` | ~2.8s   |
-| `deepseek-v3.1:free`                   | 128K    | `Reasoning` | ~2.4s   |
-| `deepseek-v3.2:free`                   | 128K    | `Reasoning` | ~3.4s   |
-| `deepseek-v3:free`                     | 128K    | `Reasoning` | ~2.9s   |
-| `gemini-2.5-flash-lite:free`           | 1M      | `General`   | ~2.0s   |
-| `gemini-2.5-flash:free`                | 1M      | `General`   | ~3.3s   |
-| `gemma-3-27b-it:free`                  | 32K     | `General`   | ~3.0s   |
-| `gemma-4-31b:free`                     | 32K     | `General`   | ~2.3s   |
-| `gpt-4.1-mini:free`                    | 1M      | `General`   | ~2.2s   |
-| `gpt-4.1-nano:free`                    | 1M      | `Code`      | ~2.5s   |
-| `gpt-4o-mini:free`                     | 128K    | `General`   | ~2.0s   |
-| `gpt-5-nano:free`                      | 128K    | `Code`      | ~3.1s   |
-| `gpt-oss-120b:free`                    | 128K    | `General`   | ~2.0s   |
-| `gpt-oss-20b:free`                     | 128K    | `Code`      | ~2.7s   |
-| `grok-4.1-fast-reasoning:free`         | 128K    | `Reasoning` | ~4.2s   |
-| `l3-8b-lunaris:free`                   | 8K      | `Fallback`  | ~2.1s   |
-| `llama-3-8b-instruct:free`             | 8K      | `General`   | ~2.5s   |
-| `llama-3.1-8b-instruct:free`           | 128K    | `General`   | ~2.5s   |
-| `llama-3.3-70b-instruct-turbo:free`    | 128K    | `General`   | ~2.7s   |
-| `minimax-m2.7:free`                    | 128K    | `Reasoning` | ~2.0s   |
-| `ministral-3b-2512:free`               | 128K    | `Code`      | ~1.4s   |
-| `mistral-large-3:free`                 | 128K    | `Reasoning` | ~3.0s   |
-| `mistral-nemo-instruct-2407:free`      | 128K    | `General`   | ~1.5s   |
-| `mistral-small-24b-instruct-2501:free` | 128K    | `Code`      | ~1.5s   |
-| `mythomax-l2-13b:free`                 | 13K     | `General`   | ~2.0s   |
-| `nemotron-3-nano:free`                 | 128K    | `General`   | ~1.5s   |
-| `qwen3.5:free`                         | 1M      | `General`   | ~7.0s   |
+✅ **Verified:** August 11, 2026
+| Free Model                                      | Context | Best For    | Latency |
+| :---------------------------------------------- | ------- | ----------- | ------- |
+| `claude-haiku-4.5-cheap:free`                   | 200K    | `General`   | ~4.8s   |
+| `deepseek-r1:free`                              | 128K    | `Reasoning` | ~2.6s   |
+| `deepseek-v3.1:free`                            | 128K    | `Reasoning` | ~2.4s   |
+| `deepseek-v3.2:free`                            | 128K    | `Reasoning` | ~3.4s   |
+| `deepseek-v4-flash-cheap:free:full-context`     | 128K    | `Reasoning` | ~2.8s   |
+| `gemini-2.5-flash-lite:free`                    | 1M      | `General`   | ~2.0s   |
+| `gemini-2.5-flash:free`                         | 1M      | `General`   | ~3.3s   |
+| `gemma-4-31b:free`                              | 32K     | `General`   | ~2.3s   |
+| `gpt-4.1-mini:free`                             | 1M      | `General`   | ~2.2s   |
+| `gpt-4.1-nano:free`                             | 1M      | `Code`      | ~2.5s   |
+| `gpt-4o-mini:free`                              | 128K    | `General`   | ~2.0s   |
+| `gpt-5-nano:free`                               | 128K    | `Code`      | ~3.1s   |
+| `gpt-oss-120b:free`                             | 128K    | `General`   | ~2.0s   |
+| `gpt-oss-20b:free`                              | 128K    | `Code`      | ~2.7s   |
+| `grok-4.1-fast-reasoning:free`                  | 128K    | `Reasoning` | ~4.2s   |
+| `llama-3.1-8b-instruct:free`                    | 128K    | `General`   | ~2.5s   |
+| `llama-3.3-70b-instruct-turbo:free`             | 128K    | `General`   | ~2.7s   |
+| `minimax-m2.7:free`                             | 128K    | `Reasoning` | ~2.0s   |
+| `ministral-3b-2512:free`                        | 128K    | `Code`      | ~1.4s   |
+| `mistral-large-3:free`                          | 128K    | `Reasoning` | ~3.0s   |
+| `mistral-nemo-instruct-2407:free`               | 128K    | `General`   | ~1.5s   |
+| `mistral-small-24b-instruct-2501:free`          | 128K    | `Code`      | ~1.5s   |
+| `nemotron-3-nano:free`                          | 128K    | `General`   | ~1.5s   |
+| `openrouter:free:full-context`                  | Varied  | `General`   | ~2.8s   |
+| `qwen3.5:free`                                  | 1M      | `General`   | ~7.0s   |
+
 ### [MNN AI](https://mnnai.ru)
 
 MNN AI is a credit-based inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Meta, Mistral, Moonshot, Stepfun, and more through an OpenAI-compatible endpoint. The free tier provides 10 RPM with $1 in monthly credits — replenishable each month, but the dollar cap limits heavy usage. Best suited for light daily coding and targeted queries. No credit card required. MNN AI currently has 20 verified coding-relevant models.
@@ -702,7 +695,7 @@ MNN AI is a credit-based inference hub offering models from OpenAI, Google, Deep
 
 🔗 **Base URL:** `https://api2.mnnai.ru/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                         | Context | Best For    | Latency |
 | :--------------------------------- | ------- | ----------- | ------- |
 | `deepseek-v3.1`                    | 128K    | `Reasoning` | ~2.2s   |
@@ -738,7 +731,7 @@ MegaNova AI is a community-model inference hub offering fine-tuned variants of L
 
 🔗 **Base URL:** `https://api.meganova.ai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                                              | Context | Best For  | Latency |
 | :------------------------------------------------------ | ------- | --------- | ------- |
 | `BruhzWater/Sapphira-L3.3-70b-0.1`                      | 128K    | `General` | ~1.5s   |
@@ -762,7 +755,7 @@ Mistral AI is highly regarded for building models that punch far above their **p
 
 🔗 **Base URL:** `https://api.mistral.ai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                                          | Context | Best For    | Latency |
 | :-------------------------------------------------- | ------- | ----------- | ------- |
 | `mistral-code-agent-latest`                         | 128K    | `Agent`     | ~0.4s   |
@@ -800,7 +793,7 @@ Mixlayer is an inference platform for open-source AI models with an OpenAI-compa
 
 🔗 **Base URL:** `https://models.mixlayer.ai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model             | Context | Best For  | Latency |
 | :--------------------- | ------- | --------- | ------- |
 | `qwen/qwen3.5-4b-free` | 256K    | `General` | ~1.0s   |
@@ -817,7 +810,7 @@ Naga AI is a lightweight inference hub offering a small set of free models from 
 
 🔗 **Base URL:** `https://api.naga.ac/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                            | Context | Best For    | Latency |
 | :------------------------------------ | ------- | ----------- | ------- |
 | `llama-3.3-70b-instruct:free`         | 128K    | `General`   | ~1.6s   |
@@ -837,7 +830,7 @@ Navy API is a high-volume inference hub offering an extensive catalog of models 
 
 🔗 **Base URL:** `https://api.navy/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                             | Context | Best For    | Latency |
 | :------------------------------------- | ------- | ----------- | ------- |
 | `codestral-2508`                       | 256K    | `Code`      | ~1.0s   |
@@ -883,7 +876,7 @@ NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta
 
 🔗 **Base URL:** `https://integrate.api.nvidia.com/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 > ⚠️ May require **Phone verification** to generate an API Key.
 
 | Free Model                                      | Context | Best For    | Latency |
@@ -909,7 +902,7 @@ NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta
 
 ### [Ollama Cloud](https://ollama.com)
 
-Ollama Cloud is a cloud-hosted inference service running Ollama behind the scenes, offering a vast model registry without the need to run locally. The free tier gives you a 5-hour session window that resets weekly — uncapped during that window but limited by the weekly refresh. Models respond cleanly and quickly, making it one of the stronger free providers for coding if you plan around the session. Ollama Cloud currently has 7 models verified.
+Ollama Cloud is a cloud-hosted inference service running Ollama behind the scenes, offering a vast model registry without the need to run locally. The free tier gives you a 5-hour session window that resets weekly — uncapped during that window but limited by the weekly refresh. Models respond cleanly and quickly, making it one of the stronger free providers for coding if you plan around the session. Ollama Cloud currently has 6 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -919,7 +912,7 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 
 🔗 **Base URL:** `https://api.ollama.com`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model            | Context | Best For    | Latency |
 | :-------------------- | ------- | ----------- | ------- |
 | `gemma4:31b`          | 32K     | `General`   | ~3.8s   |
@@ -927,7 +920,6 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 | `gpt-oss:20b`         | 128K    | `Reasoning` | ~1.3s   |
 | `minimax-m3`          | 1M      | `General`   | ~3.9s   |
 | `nemotron-3-nano:30b` | 128K    | `Reasoning` | ~2.1s   |
-| `nemotron-3-super`    | 1M      | `General`   | ~2.0s   |
 | `nemotron-3-ultra`    | 128K    | `General`   | ~1.5s   |
 
 ### [OpenCode Zen](https://opencode.ai/zen)
@@ -942,7 +934,7 @@ OpenCode Zen is a curated set of AI models tested and optimized for coding agent
 
 🔗 **Base URL:** `https://opencode.ai/zen/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model               | Context | Best For      | Latency |
 | :----------------------- | ------- | ------------- | ------- |
 | `big-pickle`             | 128K    | `Fallback`    | ~1.87s  |
@@ -967,7 +959,7 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 
 🔗 **Base URL:** `https://openrouter.ai/api/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                                           | Context | Best For    | Latency |
 | :--------------------------------------------------- | ------- | ----------- | ------- |
 | `cohere/north-mini-code:free`                        | 128K    | `Code`      | ~2.1s   |
@@ -995,7 +987,7 @@ Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Goo
 
 🔗 **Base URL:** `https://api.poixe.com/v1/`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                                | Context | Best For    | Latency |
 | :---------------------------------------- | ------- | ----------- | ------- |
 | `doubao-1-5-lite-32k-250115:free`         | 32K     | `General`   | ~1.0s   |
@@ -1040,7 +1032,7 @@ Poolside is a foundation model lab building purpose-built coding models from scr
 
 🔗 **Base URL:** `https://inference.poolside.ai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model               | Context | Best For | Latency |
 | :----------------------- | ------- | -------- | ------- |
 | `poolside/laguna-s-2.1`  | 256K    | `Code`   | ~1.3s   |
@@ -1058,7 +1050,7 @@ Routeway is a unified API gateway offering free models through a `:free` model s
 
 🔗 **Base URL:** `https://api.routeway.ai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                     | Context | Best For    | Latency |
 | :----------------------------- | ------- | ----------- | ------- |
 | `laguna-xs.2:free`             | 128K    | `Code`      | ~0.9s   |
@@ -1079,7 +1071,7 @@ SambaNova AI is a **hardware-driven inference provider** utilizing proprietary R
 
 🔗 **Base URL:** `https://api.sambanova.ai/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                    | Context | Best For  | Latency |
 | :---------------------------- | ------- | --------- | ------- |
 | `DeepSeek-V3.1`               | 128K    | `Agent`   | ~1.0s   |
@@ -1099,7 +1091,7 @@ Speka AI is a credit-based inference hub offering competitive per-token pricing 
 
 🔗 **Base URL:** `https://speka.me/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                                     | Context | Best For    | Latency |
 | :--------------------------------------------- | ------- | ----------- | ------- |
 | `deepseek-ai/deepseek-v4-flash`                | 128K    | `Reasoning` | ~2.3s   |
@@ -1133,7 +1125,7 @@ TokenReply is a lightweight inference hub offering models from Google, DeepSeek,
 
 🔗 **Base URL:** `https://api.tokenreply.com/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                          | Context | Best For    | Latency |
 | :---------------------------------- | ------- | ----------- | ------- |
 | `google/gemma-4-26b-a4b-it`         | 32K     | `General`   | ~2.3s   |
@@ -1154,7 +1146,7 @@ Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSee
 
 🔗 **Base URL:** `https://api.voidai.app/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                       | Context | Best For    | Latency |
 | :------------------------------- | ------- | ----------- | ------- |
 | `deepseek-v3.2`                  | 128K    | `Reasoning` | ~2.0s   |
@@ -1190,7 +1182,7 @@ Yolo-Auto is a bare-metal inference provider running a single Qwen3.6-35B-A3B mo
 
 🔗 **Base URL:** `https://yolo-auto.com/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model        | Context | Best For  | Latency |
 | :---------------- | ------- | --------- | ------- |
 | `qwen3.6-35b-a3b` | 128K    | `General` | ~3.6s   |
@@ -1207,7 +1199,7 @@ Zhipu AI is a Chinese AI company developing the GLM family of foundation models.
 
 🔗 **Base URL:** `https://api.z.ai/api/paas/v4`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model      | Context | Best For   | Latency |
 | :-------------- | ------- | ---------- | ------- |
 | `glm-4.7-flash` | 128K    | `General`  | ~2.4s   |
@@ -1225,7 +1217,7 @@ Zylo API is a unified inference hub providing access to models from DeepSeek, NV
 
 🔗 **Base URL:** `https://api.zyloai.net/v1`
 
-✅ **Verified:** August 10, 2026
+✅ **Verified:** August 11, 2026
 | Free Model                | Context | Best For    | Latency |
 | :------------------------ | ------- | ----------- | ------- |
 | `deepseek-v4-flash`       | 128K    | `Reasoning` | ~1.5s   |
