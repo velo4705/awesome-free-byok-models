@@ -468,7 +468,7 @@ HelyxAI is a unified API gateway providing access to proprietary and open-weight
 | :--------- | :--------- | :----- | :------------- | :-------------- |
 | **Status** | ✅          | ✅      | ✅              | ✅               |
 
-🎁 **Free Tier Quota:** 100,000 TPD / 1,000,000 Monthly Tokens
+🎁 **Free Tier Quota:** 2,000,000 TPD / Standard Models Only
 
 🔗 **Base URL:** `https://helyxai.space/v1`
 
@@ -563,7 +563,7 @@ Intern AI is the official API provided by Shanghai AI Laboratory, the developers
 
 ### [Kilo Code](https://app.kilo.ai)
 
-Kilo Code is a coding-agent platform that proxies free models from OpenRouter, NVIDIA, Poolside, and others through a single API key. The free tier offers generous replenishable credits with no hard daily cap — a solid Swiss-army-knife provider that gives you access to a diverse model pool through one endpoint. Kilo Code currently has 12 models verified.
+Kilo Code is a coding-agent platform that proxies free models from OpenRouter, NVIDIA, Poolside, and others through a single API key. The free tier offers generous replenishable credits with no hard daily cap — a solid Swiss-army-knife provider that gives you access to a diverse model pool through one endpoint. Kilo Code currently has 11 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -582,7 +582,6 @@ Kilo Code is a coding-agent platform that proxies free models from OpenRouter, N
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | 128K    | `Reasoning` | ~2.5s   |
 | `nvidia/nemotron-3-super-120b-a12b:free`             | 1M      | `General`   | ~0.8s   |
 | `nvidia/nemotron-3-ultra-550b-a55b:free`             | 128K    | `General`   | ~1.5s   |
-| `nvidia/nemotron-3.5-content-safety:free`            | 128K    | `General`   | ~1.6s   |
 | `nvidia/nemotron-3.5-lightning:free`                 | 128K    | `General`   | ~1.6s   |
 | `poolside/laguna-s-2.1:free`                         | 256K    | `Code`      | ~1.3s   |
 | `poolside/laguna-xs-2.1:free`                        | 128K    | `Code`      | ~0.9s   |
@@ -906,7 +905,7 @@ Ollama Cloud is a cloud-hosted inference service running Ollama behind the scene
 
 ### [OpenCode Zen](https://opencode.ai/zen)
 
-OpenCode Zen is a curated set of AI models tested and optimized for coding agents by the OpenCode team. The free tier offers 6 models at zero cost through an OpenAI-compatible API — no credit card or billing required for free models. OpenCode Zen currently has 7 models verified.
+OpenCode Zen is a curated set of AI models tested and optimized for coding agents by the OpenCode team. The free tier offers 6 models at zero cost through an OpenAI-compatible API — no credit card or billing required for free models. OpenCode Zen currently has 8 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -926,10 +925,11 @@ OpenCode Zen is a curated set of AI models tested and optimized for coding agent
 | `mimo-v2.5-free`              | 128K    | `Code`        | ~3.3s   |
 | `nemotron-3-ultra-free`       | 128K    | `Code Review` | ~1.7s   |
 | `nemotron-3.5-lightning-free` | 128K    | `General`     | ~1.4s   |
+| `hy3-free`                    | 128K    | `General`     | ~1.9s   |
 
 ### [OpenRouter](https://openrouter.ai)
 
-OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 15 models verified.
+OpenRouter is a unified API gateway providing access to hundreds of models from dozens of providers through a single endpoint. The free tier offers rate-limited access to community-hosted models (marked with `:free`) that changes often — no credit card required. A great backup when other providers are rate-limited. OpenRouter currently has 14 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -950,7 +950,6 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | 128K    | `Reasoning` | ~0.7s   |
 | `nvidia/nemotron-3-super-120b-a12b:free`             | 1M      | `General`   | ~2.7s   |
 | `nvidia/nemotron-3-ultra-550b-a55b:free`             | 128K    | `General`   | ~3.0s   |
-| `nvidia/nemotron-3.5-content-safety:free`            | 128K    | `General`   | ~1.6s   |
 | `nvidia/nemotron-3.5-lightning:free`                 | 128K    | `General`   | ~1.6s   |
 | `nvidia/nemotron-nano-12b-v2-vl:free`                | 32K     | `Vision`    | ~1.3s   |
 | `nvidia/nemotron-nano-9b-v2:free`                    | 128K    | `General`   | ~0.9s   |
