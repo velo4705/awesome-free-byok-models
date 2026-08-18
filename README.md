@@ -65,7 +65,7 @@ Ranked by **coding capability × daily volume × speed** using quantitative crit
 
 ## Provider Showcases
 
-Filtered for coding and general chat capability across all providers.
+Filtered for coding and general chat capability across all 39 providers.
 
 <strong>Jump to a provider or hub:</strong>
 
@@ -74,7 +74,6 @@ Filtered for coding and general chat capability across all providers.
   <li><a href="#agnes-ai">Agnes AI</a></li>
   <li><a href="#anyapi-ai">AnyAPI AI</a></li>
   <li><a href="#auriko">Auriko</a></li>
-  <li><a href="#cerebras-ai">Cerebras AI</a></li>
   <li><a href="#cloudflare-workers-ai">Cloudflare Workers AI</a></li>
   <li><a href="#cohere-ai">Cohere AI</a></li>
   <li><a href="#electronhub">ElectronHub</a></li>
@@ -104,7 +103,6 @@ Filtered for coding and general chat capability across all providers.
   <li><a href="#poixe-ai">Poixe AI</a></li>
   <li><a href="#poolside">Poolside</a></li>
   <li><a href="#routeway-ai">Routeway AI</a></li>
-  <li><a href="#sambanova-ai">SambaNova AI</a></li>
   <li><a href="#speka-ai">Speka AI</a></li>
   <li><a href="#tokenreply">TokenReply</a></li>
   <li><a href="#void-ai">Void AI</a></li>
@@ -192,25 +190,6 @@ Auriko is a unified API gateway providing access to 100+ models from top provide
 | `glm-4.5-flash`  | 128K    | `General` | ~2.8s   |
 | `glm-4.6v-flash` | 128K    | `General` | ~3.0s   |
 | `glm-4.7-flash`  | 128K    | `General` | ~2.8s   |
-
-### [Cerebras AI](https://cloud.cerebras.ai)
-
-Cerebras AI is defined by its **Wafer-Scale Engine (WSE) technology**, integrating memory, compute, and interconnects onto a single silicon wafer — solving the "memory wall" that throttles inference speed. The free tier offers replenishable credits with industry-leading throughput (2,500+ tokens/second). Cerebras AI currently has 3 models verified.
-
-| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
-| :--------- | :--------- | :----- | :------------- | :-------------- |
-| **Status** | ✅          | ✅      | ✅              | ❌               |
-
-🎁 **Free Tier Quota:** 5 RPM / 250 RPD / 30,000 TPM
-
-🔗 **Base URL:** `https://api.cerebras.ai/v1`
-
-✅ **Verified:** August 18, 2026
-| Free Model     | Context | Best For  | Latency |
-| :------------- | ------- | --------- | ------- |
-| `gpt-oss-120b` | 128K    | `General` | ~0.5s   |
-| `zai-glm-4.7`  | 128K    | `Agent`   | ~0.5s   |
-| `gemma-4-31b`  | 32K     | `General` | ~0.5s   |
 
 ### [Cloudflare Workers AI](https://dash.cloudflare.com)
 
@@ -1060,24 +1039,6 @@ Routeway is a unified API gateway offering free models through a `:free` model s
 | `nemotron-3-nano-30b-a3b:free` | 128K    | `Reasoning` | ~1.0s   |
 | `nemotron-nano-9b-v2:free`     | 128K    | `Code`      | ~0.8s   |
 | `step-3.7-flash:free`          | 128K    | `Agentic`   | ~2.5s   |
-
-### [SambaNova AI](https://cloud.sambanova.ai)
-
-SambaNova AI is a **hardware-driven inference provider** utilizing proprietary Reconfigurable Dataflow Units (RDUs) rather than standard GPUs, removing the traditional hardware-decode bottleneck for incredibly high throughput. The free tier is limited to 20 requests and 200k tokens per day — tight for sustained use. SambaNova AI currently has 2 models verified.
-
-| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
-| :--------- | :--------- | :----- | :------------- | :-------------- |
-| **Status** | ✅          | ✅      | ✅              | ✅               |
-
-🎁 **Free Tier Quota:** 20 RPM / 20 RPD / 200,000 TPD
-
-🔗 **Base URL:** `https://api.sambanova.ai/v1`
-
-✅ **Verified:** August 18, 2026
-| Free Model           | Context | Best For    | Latency |
-| :------------------- | ------- | ----------- | ------- |
-| `gemma-4-31B-it`     | 32K     | `General`   | ~1.5s   |
-| `MiniMax-M2.7`       | 1M      | `Reasoning` | ~1.3s   |
 
 ### [Speka AI](https://speka.me)
 
