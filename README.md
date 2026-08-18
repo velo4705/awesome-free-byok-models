@@ -14,9 +14,11 @@ Text‑generation LLM API models that are currently available as free and self�
 
 By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API keys into **coding tools**, **custom projects**, or **AI-powered apps** — no credit card required. Every model listed here is rated for coding capability, but most work just as well for general conversation.
 
-> 💡 **Pro tip:** Free tiers can change. If a model hits rate limits, switch to another — there's always a backup in this list.
+> [!TIP]
+> **Free tiers can change.** If a model hits rate limits, switch to another — there's always a backup in this list.
 
-> 📝 **Note:** Always verify current quotas on the provider's console before building workflows.
+> [!NOTE]
+> Always verify current quotas on the provider's console before building workflows.
 
 **Scope:** Text-generation LLM API models with a *currently available, self-replenishing free tier* — no credit card required at signup, the quota resets without manual top-up, and the endpoint is accessible via a standard API call (OpenAI-compatible or provider-native). This excludes image generation models, models behind a paywall after a trial, services requiring phone/PII verification, reverse-engineered access to gated models, and Chinese mainland gateways.
 
@@ -65,7 +67,7 @@ Ranked by **coding capability × daily volume × speed** using quantitative crit
 
 ## Provider Showcases
 
-Filtered for coding and general chat capability across all 39 providers.
+Filtered for coding and general chat capability across all 40 providers.
 
 <strong>Jump to a provider or hub:</strong>
 
@@ -97,6 +99,7 @@ Filtered for coding and general chat capability across all 39 providers.
   <li><a href="#naga-ai">Naga AI</a></li>
   <li><a href="#navy-api">Navy API</a></li>
   <li><a href="#nvidia-nim">NVIDIA NIM</a></li>
+  <li><a href="#odirouter">Odirouter</a></li>
   <li><a href="#ollama-cloud">Ollama Cloud</a></li>
   <li><a href="#opencode-zen">OpenCode Zen</a></li>
   <li><a href="#openrouter">OpenRouter</a></li>
@@ -204,7 +207,9 @@ Cloudflare Workers AI runs models on Cloudflare's global edge network using serv
 🔗 **Base URL:** `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1/chat/completions` (replace `{account_id}` with your Cloudflare account ID)
 
 ✅ **Verified:** August 18, 2026
-> ⚠️ **Two API paths:** The `/chat/completions` endpoint takes standard `"messages"` (OpenAI-compatible). The legacy `/run/{model}` endpoint uses `"prompt"` instead — make sure your tool targets the right one.
+
+> [!IMPORTANT]
+> **Two API paths:** The `/chat/completions` endpoint takes standard `"messages"` (OpenAI-compatible). The legacy `/run/{model}` endpoint uses `"prompt"` instead — make sure your tool targets the right one.
 
 | Free Model                                     | Context | Best For    | Latency |
 | :--------------------------------------------- | ------- | ----------- | ------- |
@@ -336,7 +341,9 @@ FreeInference is a research-backed inference hub providing access to models from
 🔗 **Base URL:** `https://freeinference.org/v1`
 
 ✅ **Verified:** August 18, 2026
-> ⚠️ **Non-Harvard users:** new accounts go through a manual review before they're ready to use.
+
+> [!IMPORTANT]
+> **Non-Harvard users:** new accounts go through a manual review before they're ready to use.
 
 | Free Model          | Context | Best For    | Latency |
 | :------------------ | ------- | ----------- | ------- |
@@ -847,7 +854,9 @@ NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta
 🔗 **Base URL:** `https://integrate.api.nvidia.com/v1`
 
 ✅ **Verified:** August 18, 2026
-> ⚠️ May require **Phone verification** to generate an API Key.
+
+> [!IMPORTANT]
+> May require **Phone verification** to generate an API Key.
 
 | Free Model                                      | Context | Best For      | Latency |
 | :---------------------------------------------- | ------- | ------------- | ------- |
@@ -878,6 +887,38 @@ NVIDIA NIM is NVIDIA's free API catalog offering 100+ models from DeepSeek, Meta
 | `stepfun-ai/step-3.7-flash`                     | 128K    | `Agentic`     | ~0.5s   |
 | `thinkingmachines/inkling`                      | 128K    | `General`     | ~2.7s   |
 | `z-ai/glm-5.2`                                  | 128K    | `General`     | ~1.3s   |
+
+### [Odirouter](https://odirouter.ai)
+
+Odirouter is an API router in Russia, providing a pool of free-tier models from Anthropic, Google, Qwen, MiniMax, and OpenAI through an OpenAI-compatible endpoint. Models are exposed with a `free-` prefix and verified end-to-end. No credit card required. Odirouter currently has 16 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling  | Rate Limit Safe |
+| :--------- | :--------- | :----- | :-------------- | :-------------- |
+| **Status** | ✅          | ✅      | ⚠️              | ⚠️              |
+
+🎁 **Free Tier Quota:** 100 RPD for Free Models
+
+🔗 **Base URL:** `https://api.odirouter.ai/v1`
+
+✅ **Verified:** August 18, 2026
+| Free Model                       | Context | Best For    | Latency |
+| :------------------------------- | ------- | ----------- | ------- |
+| `free-claude-haiku-4-5-20251001` | 200K    | `Code`      | ~2.46s  |
+| `free-claude-haiku-4.5`          | 200K    | `Code`      | ~2.21s  |
+| `free-gemini-2.5-flash`          | 1M      | `General`   | ~1.8s   |
+| `free-gemini-2.5-flash-lite`     | 1M      | `General`   | ~1.68s  |
+| `free-gemini-2.5-pro`            | 1M      | `Reasoning` | ~4.4s   |
+| `free-gemini-3-flash-preview`    | 1M      | `General`   | ~12.54s |
+| `free-gemini-3.1-flash-lite`     | 1M      | `General`   | ~6.83s  |
+| `free-gemini-3.1-pro-preview`    | 1M      | `Reasoning` | ~7.65s  |
+| `free-gpt-5.4-mini`              | 128K    | `General`   | ~1.71s  |
+| `free-gpt-5.6-luna`              | 128K    | `General`   | ~3.97s  |
+| `free-minimax-m2.5`              | 128K    | `Reasoning` | ~1.71s  |
+| `free-minimax-m2.7`              | 128K    | `Reasoning` | ~4.0s   |
+| `free-qwen-flash-character`      | 32K     | `General`   | ~0.9s   |
+| `free-qwen3.5-flash`             | 128K    | `General`   | ~2.59s  |
+| `free-qwen3.5-plus`              | 256K    | `Reasoning` | ~2.07s  |
+| `free-vclaude-haiku-4.5`         | 200K    | `Code`      | ~7.6s   |
 
 ### [Ollama Cloud](https://ollama.com)
 

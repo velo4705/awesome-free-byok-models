@@ -53,12 +53,6 @@ PROVIDERS = [
         "env_key": "AURIKO_API_KEY",
     },
     {
-        "name": "Cerebras AI",
-        "chat_url": "https://api.cerebras.ai/v1/chat/completions",
-        "model": "gemma-4-31b",
-        "env_key": "CEREBRAS_API_KEY",
-    },
-    {
         "name": "Cloudflare Workers AI",
         "chat_url": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1/chat/completions",
         "model": "@cf/google/gemma-2b-it-lora",
@@ -106,7 +100,7 @@ PROVIDERS = [
     {
         "name": "Groq API",
         "chat_url": "https://api.groq.com/openai/v1/chat/completions",
-        "model": "llama-3.3-70b-versatile",
+        "model": "openai/gpt-oss-120b",
         "env_key": "GROQ_API_KEY",
     },
     {
@@ -152,12 +146,6 @@ PROVIDERS = [
         "env_key": "LLM_API_KEY",
     },
     {
-        "name": "LLMGateway",
-        "chat_url": "https://api.llmgateway.io/v1/chat/completions",
-        "model": "claude-haiku-4-5-free",
-        "env_key": "LLMGATE_API_KEY",
-    },
-    {
         "name": "LiteRouter",
         "chat_url": "https://api.literouter.com/v1/chat/completions",
         "model": "deepseek-r1:free",
@@ -166,7 +154,7 @@ PROVIDERS = [
     {
         "name": "MNN AI",
         "chat_url": "https://api2.mnnai.ru/v1/chat/completions",
-        "model": "deepseek-v3.1",
+        "model": "gpt-4.1-nano",
         "env_key": "MNN_API_KEY",
     },
     {
@@ -206,6 +194,12 @@ PROVIDERS = [
         "env_key": "NVIDIA_API_KEY",
     },
     {
+        "name": "Odirouter",
+        "chat_url": "https://api.odirouter.ai/v1/chat/completions",
+        "model": "free-gpt-5.4-mini",
+        "env_key": "ODIROUTER_API_KEY",
+    },
+    {
         "name": "Ollama Cloud",
         "chat_url": "https://api.ollama.com/api/chat",
         "model": "gpt-oss:120b",
@@ -241,12 +235,6 @@ PROVIDERS = [
         "chat_url": "https://api.routeway.ai/v1/chat/completions",
         "model": "nemotron-3-nano-30b-a3b:free",
         "env_key": "ROUTEWAY_API_KEY",
-    },
-    {
-        "name": "SambaNova AI",
-        "chat_url": "https://api.sambanova.ai/v1/chat/completions",
-        "model": "DeepSeek-V3.1",
-        "env_key": "SAMBANOVA_API_KEY",
     },
     {
         "name": "Speka AI",
