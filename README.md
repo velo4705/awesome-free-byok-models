@@ -30,17 +30,17 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 
 ## Contents
 
-- [The Best API Providers](#the-best-api-providers)
+- [Highlighted API Providers](#highlighted-api-providers)
 - [Top Free Models](#top-free-models)
 - [Provider Showcases](#provider-showcases)
 
-## The Best API Providers
+## Highlighted API Providers
 
-| Provider                                                   | Profile     | Why It Matters For You                                                                                                  |
-| :--------------------------------------------------------- | :---------- | :---------------------------------------------------------------------------------------------------------------------- |
-| **[Groq API](https://console.groq.com/docs/quickstart)**   | Low Latency | Sub-300ms at 14,400 RPD with 18k TPM for rapid-fire edits.                                                              |
-| **[Void AI](https://docs.voidai.app/quickstart)**          | High RPM    | 100 RPM with 125K daily credits — highest RPM of any hub. 20 verified coding-relevant models across multiple providers. |
-| **[OpenCode Zen](https://opencode.ai/docs/zen)**           | Reasoning   | 30 RPM with 500 daily requests and 1M token pool.                                                                       |
+| Provider                                                   | Profile     | Why It Matters For You                                                                                         |
+| :--------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------- |
+| **[Groq API](https://console.groq.com/docs/quickstart)**   | Low Latency | Sub-300ms at 14,400 RPD with 18k TPM for rapid-fire edits.                                                     |
+| **[Void AI](https://docs.voidai.app/quickstart)**          | High RPM    | 100 RPM with 125K daily credits. 20 verified coding-relevant models across multiple providers.                 |
+| **[OpenCode Zen](https://opencode.ai/docs/zen)**           | Reasoning   | 30 RPM with 500 daily requests and 1M token pool.                                                              |
 
 ---
 
@@ -48,18 +48,18 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 
 Ranked by **coding capability × daily volume × speed** using quantitative criteria derived from provider documentation and [`scripts/verify.py`](scripts/verify.py):
 
-| Rank   | Model                          | Host Provider                                                 | Why It Ranks Here                                                   |
-| ---    | ---                            | ---                                                           | ---                                                                 |
-| **1**  | `qwen/qwen3.6-27b`             | [Groq API](https://console.groq.com/docs/models)              | 256K context, sub-300ms latency, 14,400 RPD daily pool.             |
-| **2**  | `openai/gpt-oss-120b`          | [Groq API](https://console.groq.com/docs/overview)            | 128K context, sub-300ms latency, 14,400 RPD, 120B params.           |
-| **3**  | `gpt-5.3-codex`                | [Void AI](https://docs.voidai.app)                            | 128K context, ~1.5s latency, code-specialized model, 100 RPM.       |
-| **4**  | `mimo-v2.5-free`               | [OpenCode Zen](https://opencode.ai/docs/models)               | 200K context, ~6.5s latency, vision + code, 500 RPD.                |
-| **5**  | `intern-s2-preview`            | [Intern AI](https://internlm.intern-ai.org.cn/api)            | 256K context, ~1.0s latency, 90M tokens/month quota.                |
-| **6**  | `models/gemini-3.5-flash-lite` | [Google Gemini](https://ai.google.dev/gemini-api/docs/models) | 1M context, ~1.5s latency, 500 RPD, general-purpose model.          |
-| **7**  | `mistral-code-agent-latest`    | [Mistral AI](https://docs.mistral.ai)                         | 128K context, sub-1s latency, agentic tool-calling, 50K TPM.        |
-| **8**  | `deepseek-v4-pro`              | [Void AI](https://docs.voidai.app/guides/credits)             | 128K context, ~1.6s latency, higher throughput than Flash, 100 RPM. |
-| **9**  | `hy3-free`                     | [OpenCode Zen](https://opencode.ai/docs)                      | 190K context, ~1.9s latency, strong general+coding model, 500 RPD.  |
-| **10** | `deepseek-v3.2`                | [Navy API](https://api.navy/docs)                             | 128K context, ~2.0s latency, 150,000 Daily tokens.                  |
+| Rank   | Model                             | Host Provider                                                 | Why It Ranks Here                                                   |
+| ---    | ---                               | ---                                                           | ---                                                                 |
+| **1**  | `qwen/qwen3.6-27b`                | [Groq API](https://console.groq.com/docs/models)              | 256K context, sub-300ms latency, 14,400 RPD daily pool.             |
+| **2**  | `openai/gpt-oss-120b`             | [Groq API](https://console.groq.com/docs/overview)            | 128K context, sub-300ms latency, 14,400 RPD, 120B params.           |
+| **3**  | `gpt-5.3-codex`                   | [Void AI](https://docs.voidai.app)                            | 128K context, ~1.5s latency, code-specialized model, 100 RPM.       |
+| **4**  | `muse-spark-1.2-contributor-free` | [OpenCode Zen](https://opencode.ai/docs)                      | 1M context, ~1.6s latency, 500 RPD, code model.                     |
+| **5**  | `intern-s2-preview`               | [Intern AI](https://internlm.intern-ai.org.cn/api)            | 256K context, ~1.0s latency, 90M tokens/month quota.                |
+| **6**  | `mimo-v2.5-free`                  | [OpenCode Zen](https://opencode.ai/docs/models)               | 200K context, ~6.5s latency, vision + code, 500 RPD.                |
+| **7**  | `models/gemini-3.5-flash-lite`    | [Google Gemini](https://ai.google.dev/gemini-api/docs/models) | 1M context, ~1.5s latency, 500 RPD, general-purpose model.          |
+| **8**  | `mistral-code-agent-latest`       | [Mistral AI](https://docs.mistral.ai)                         | 128K context, sub-1s latency, agentic tool-calling, 50K TPM.        |
+| **9**  | `deepseek-v4-pro`                 | [Void AI](https://docs.voidai.app/guides/credits)             | 128K context, ~1.6s latency, higher throughput than Flash, 100 RPM. |
+| **10** | `deepseek-v3.2`                   | [Navy API](https://api.navy/docs)                             | 128K context, ~2.0s latency, 150,000 Daily tokens.                  |
 
 ---
 
@@ -202,7 +202,7 @@ Cloudflare Workers AI runs models on Cloudflare's global edge network using serv
 
 🎁 **Free Tier Quota:** 150 to 1,500 RPM / 100,000 RPD / 13,000 TPD
 
-🔗 **Base URL:** `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1/chat/completions` (replace `{account_id}` with your Cloudflare account ID)
+🔗 **Base URL:** `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1` (replace `{account_id}` with your Cloudflare account ID)
 
 ✅ **Verified:** August 21, 2026
 
@@ -404,7 +404,7 @@ Gonka Broker is a proxy gateway routing requests to providers through a single O
 
 ### [Groq API](https://console.groq.com)
 
-Groq is famous for providing the **absolute lowest streaming latency** in the API market, outrunning traditional cloud providers by a massive margin. The free tier offers 30 RPM with replenishable daily credits — no credit card needed. If you want a setup where your terminal files patch instantly without the typical spinning wheel delay, this is your go-to. Groq API currently has 6 models verified.
+Groq provides low-latency inference. The free tier offers 30 RPM with replenishable daily credits — no credit card required. Verification measures sub-300ms latency. Groq API currently has 6 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -519,7 +519,7 @@ Hugging Face's free Inference API gives you access to thousands of community-hos
 
 ### [Intern AI](https://internlm.intern-ai.org.cn)
 
-Intern AI is the official API provided by Shanghai AI Laboratory, the developers behind the InternLM model family. The free tier offers 90 million tokens monthly — the most generous token quota of any provider on this list. Intern AI currently has 9 models verified.
+Intern AI is the official API from Shanghai AI Laboratory for the InternLM model family. The free tier offers 90 million tokens per month. Intern AI currently has 9 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -718,7 +718,7 @@ MegaNova AI is a community-model inference hub offering fine-tuned variants of L
 
 ### [Mistral AI](https://console.mistral.ai)
 
-Mistral AI is highly regarded for building models that punch far above their **parameter weight class**, with exceptionally clean instruction following and compact execution. The free tier offers replenishable credits with generous RPM limits. Mistral AI currently has 33 models verified (with aliases).
+Mistral AI provides models with a focus on instruction following and tool use. The free tier offers replenishable credits with per-model rate limits. Mistral AI currently has 33 models verified (with aliases).
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -995,7 +995,7 @@ OpenRouter is a unified API gateway providing access to hundreds of models from 
 
 ### [Poixe AI](https://poixe.com)
 
-Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens — one of the most generous quotas on this list. Append `:free` to any model name to access the free tier; May be rate-limited depending on model. Poixe AI currently has 30 models verified.
+Poixe AI is a unified API gateway aggregating models from OpenAI, Anthropic, Google, xAI, ByteDance, Alibaba, Moonshot, and more through a single OpenAI-compatible endpoint. The free tier offers 10,000 requests per day with 10 million daily tokens. Append `:free` to any model name to access the free tier; may be rate-limited depending on model. Poixe AI currently has 30 models verified.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -1129,7 +1129,7 @@ TokenReply is a lightweight inference hub offering models from Google, DeepSeek,
 
 ### [Void AI](https://voidai.app)
 
-Void AI is a high-RPM inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Moonshot, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 100 RPM with 125,000 daily credits — the highest RPM of any hub on this list, ideal for high-throughput coding sessions. No credit card required. Void AI currently has 24 verified coding-relevant models.
+Void AI is an inference hub offering models from OpenAI, Google, DeepSeek, Qwen, Moonshot, Zhipu, and more through an OpenAI-compatible endpoint. The free tier provides 100 RPM with 125,000 daily credits. No credit card required. Void AI currently has 24 verified coding-relevant models.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
@@ -1230,4 +1230,4 @@ Zylo API is a unified inference hub providing access to models from DeepSeek, NV
 
 We welcome contributions! Please see our [contributing guidelines](CONTRIBUTING.md) for details.
 
-[^1]: Models are verified through live API calls to each provider's free-tier endpoint. The `scripts/verify.py` script automates this check: set the provider's API key as an environment variable and run it to confirm the model responds. Latency figures are measured from request to first token under typical network conditions and may vary. A model is removed if its provider paywalls it, deprecates it, or changes its free-tier terms. This list is updated regularly but is not a guarantee of continued availability.
+[^1]: Models are verified through live API calls. `scripts/verify.py` discovers free models via the provider's `/v1/models` endpoint (or provider-specific listing), tests every discovered free model once with the prompt `State the word 'READY'.` (retries on 429/5xx with backoff), and records latency to first token. To reproduce: copy `scripts/.env.example` to `scripts/.env`, set `API_KEY` and `BASE_URL` (plus `ACCOUNT_ID` for Cloudflare), and run `python scripts/verify.py` — it writes `scripts/verified_models_YYYY-MM-DD.txt`. A model is removed if its free tier is paywalled, deprecated, or stops replenishing.

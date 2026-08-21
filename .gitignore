@@ -1,2 +1,4 @@
 scripts/.env
 __pycache__/
+
+verified_models_*.txt
