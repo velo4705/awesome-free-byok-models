@@ -38,9 +38,9 @@ By using a **Bring Your Own Key (BYOK)** approach, you can plug your free API ke
 
 | Provider                                                   | Profile     | Why It Matters For You                                                                                         |
 | :--------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------- |
+| **[OpenCode Zen](https://opencode.ai/docs)**               | Reasoning   | 30 RPM with 500 daily requests and 1M token pool.                                                              |
 | **[Groq API](https://console.groq.com/docs/quickstart)**   | Low Latency | Sub-300ms at 14,400 RPD with 18k TPM for rapid-fire edits.                                                     |
-| **[Void AI](https://docs.voidai.app/quickstart)**          | High RPM    | 100 RPM with 125K daily credits. 20 verified coding-relevant models across multiple providers.                 |
-| **[OpenCode Zen](https://opencode.ai/docs/zen)**           | Reasoning   | 30 RPM with 500 daily requests and 1M token pool.                                                              |
+| **[Void AI](https://docs.voidai.app/quickstart)**          | High RPM    | 100 RPM with 125K daily credits.                                                                               |
 
 ---
 
@@ -50,12 +50,12 @@ Ranked by **coding capability × daily volume × speed** using quantitative crit
 
 | Rank   | Model                             | Host Provider                                                 | Why It Ranks Here                                                   |
 | ---    | ---                               | ---                                                           | ---                                                                 |
-| **1**  | `qwen/qwen3.6-27b`                | [Groq API](https://console.groq.com/docs/models)              | 256K context, sub-300ms latency, 14,400 RPD daily pool.             |
-| **2**  | `openai/gpt-oss-120b`             | [Groq API](https://console.groq.com/docs/overview)            | 128K context, sub-300ms latency, 14,400 RPD, 120B params.           |
-| **3**  | `gpt-5.3-codex`                   | [Void AI](https://docs.voidai.app)                            | 128K context, ~1.5s latency, code-specialized model, 100 RPM.       |
-| **4**  | `muse-spark-1.2-contributor-free` | [OpenCode Zen](https://opencode.ai/docs)                      | 1M context, ~1.6s latency, 500 RPD, code model.                     |
-| **5**  | `intern-s2-preview`               | [Intern AI](https://internlm.intern-ai.org.cn/api)            | 256K context, ~1.0s latency, 90M tokens/month quota.                |
-| **6**  | `mimo-v2.5-free`                  | [OpenCode Zen](https://opencode.ai/docs/models)               | 200K context, ~6.5s latency, vision + code, 500 RPD.                |
+| **1**  | `x-preview-f-free`                | [OpenCode Zen](https://opencode.ai/docs/zen)                  | 1M context, ~1.6s latency, Unlimited usage, Multi-modal.            |
+| **2**  | `qwen/qwen3.6-27b`                | [Groq API](https://console.groq.com/docs/models)              | 256K context, sub-300ms latency, 14,400 RPD daily pool.             |
+| **3**  | `kimi-k2.7-code`                  | [Void AI](https://docs.voidai.app)                            | 128K context, ~1.5s latency, 100 RPM, code model.                   |
+| **4**  | `muse-spark-1.2-contributor-free` | [OpenCode Zen](https://opencode.ai/docs/providers)            | 1M context, ~1.6s latency, 500 RPD, code model.                     |
+| **5**  | `openai/gpt-oss-120b`             | [Groq API](https://console.groq.com/docs/overview)            | 128K context, sub-300ms latency, 14,400 RPD, 120B params.           |
+| **6**  | `intern-s2-preview`               | [Intern AI](https://internlm.intern-ai.org.cn/api)            | 256K context, ~1.0s latency, 90M tokens/month quota.                |
 | **7**  | `models/gemini-3.5-flash-lite`    | [Google Gemini](https://ai.google.dev/gemini-api/docs/models) | 1M context, ~1.5s latency, 500 RPD, general-purpose model.          |
 | **8**  | `mistral-code-agent-latest`       | [Mistral AI](https://docs.mistral.ai)                         | 128K context, sub-1s latency, agentic tool-calling, 50K TPM.        |
 | **9**  | `deepseek-v4-pro`                 | [Void AI](https://docs.voidai.app/guides/credits)             | 128K context, ~1.6s latency, higher throughput than Flash, 100 RPM. |
