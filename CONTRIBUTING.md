@@ -7,10 +7,12 @@ We welcome contributions to this list. It only exists because people test things
 ### 1. Make Sure It Is Actually Free
 
 The provider must be genuinely free and stay that way without paying. That means:
-- No paywalls
-- No trial credits that run out with no free tier underneath
-- No one-time credits
-- No "Join the waitlist" walls
+- No paywalls.
+- No trial credits that run out with no free tier underneath.
+- No one-time credits.
+- No "Join the waitlist" walls.
+
+It must also have an option to obtain an API Key (which is necessary for BYOK-supported providers).
 
 **Pass:** The model responds without asking for money.
 
@@ -22,7 +24,7 @@ Use the [Verifier](scripts/verify.py). For most providers you just set `API_KEY`
 
 1. Get the provider's API key and Base URL.
 2. Copy `scripts/.env.example` to your `.env` file and fill in `API_KEY` and `BASE_URL` (add `ACCOUNT_ID` too if your URL has `{account_id}`, like Cloudflare).
-3. `pip install requests python-dotenv`
+3. Install dependencies required for the Verifier: `pip install requests python-dotenv`.
 4. Run `python verify.py` — it detects the provider from your `BASE_URL`, tests every model, and retries rate-limits.
 5. Open `verified_models_YYYY-MM-DD.txt` — that's your proof. Paste it all into the PR.
 
@@ -86,4 +88,4 @@ Base URL:
 
 ## Thank You
 
-Every contribution helps keep this model catalog freshly updated.
+Every contribution helps keep the list freshly updated.
