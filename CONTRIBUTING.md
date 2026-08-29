@@ -11,6 +11,7 @@ The provider must be genuinely free and stay that way without paying. That means
 - No trial credits that run out with no free tier underneath.
 - No one-time credits.
 - No "Join the waitlist" walls.
+- No gated services that requires to join a server/group by force, just to enable core functionality (the free model access).
 
 It must also have an option to obtain an API Key (which is necessary for BYOK-supported providers).
 
@@ -28,7 +29,7 @@ Use the [Verifier](scripts/verify.py). For most providers you just set `API_KEY`
 4. Run `python verify.py` — it detects the provider from your `BASE_URL`, tests every model, and retries rate-limits.
 5. Open `verified_models_YYYY-MM-DD.txt` — that's your proof. Paste it all into the PR.
 
-If it finds more than 35 models, keep 35 for the README. Drop uncensored / roleplay / safety / guard models first, and double-check the rest are actually free in your dashboard.
+If it finds more than 40 models, keep 40 for the README. Drop uncensored / roleplay / safety / guard models first, and double-check the rest are actually free in your dashboard.
 
 ### 3. No Reverse-Engineered Access
 
