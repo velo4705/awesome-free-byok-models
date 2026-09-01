@@ -1043,7 +1043,7 @@ Requesty is an API router providing access to free models via an OpenAI-compatib
 | `nvidia/nemotron-3-super-120b-a12b`             | 128K    | `General`   | ~1.28s  |
 | `nvidia/nemotron-3-ultra-550b-a55b`             | 128K    | `General`   | ~0.93s  |
 | `nvidia/nemotron-3.5-lightning-30b-a3b`         | 128K    | `General`   | ~5.43s  |
-| `tensorx/deepseek-v4-pro-0813`                 | 128K    | `Reasoning` | ~0.95s  |
+| `tensorx/deepseek-v4-pro-0813`                  | 128K    | `Reasoning` | ~0.95s  |
 
 ### [Routeway AI](https://routeway.ai)
 
@@ -1246,9 +1246,9 @@ xKiro AI is an API gateway offering free models from DeepSeek, Qwen, Mistral, Mi
 | `qwen/qwen3.7-max:free`                  | 128K    | `General`   | ~2.55s  |
 | `qwen/qwen3.7-plus:free`                 | 128K    | `General`   | ~2.63s  |
 | `qwen/qwen3.8-max:free`                  | 128K    | `General`   | ~3.49s  |
-| `sensenova/sensenova-6.7-flash-lite`      | 128K    | `General`   | ~13.56s |
-| `sensenova/sensenova-6.8-flash-lite`      | 128K    | `General`   | ~4.13s  |
-| `qwen/qwen3.5-omni-plus:free`             | 128K    | `General`   | ~2.29s  |
+| `sensenova/sensenova-6.7-flash-lite`     | 128K    | `General`   | ~13.56s |
+| `sensenova/sensenova-6.8-flash-lite`     | 128K    | `General`   | ~4.13s  |
+| `qwen/qwen3.5-omni-plus:free`            | 128K    | `General`   | ~2.29s  |
 
 ### [Yolo-Auto](https://yolo-auto.com)
 
