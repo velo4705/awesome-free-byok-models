@@ -118,7 +118,7 @@ def discover_chat_endpoint(base, key):
 
 def test_openai_compatible(url, api_key, model_id, max_tokens=None):
     """Generic OpenAI-compatible chat test."""
-    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36", "x-opencode-session": "verifierid"}
     payload = {"model": model_id, "messages": [{"role": "user", "content": TEST_PROMPT}], "max_tokens": max_tokens or MAX_TOKENS}
     start = time.time()
     try:
@@ -148,26 +148,20 @@ def test_openai_compatible(url, api_key, model_id, max_tokens=None):
 def is_gemini_base(base):
     return "generativelanguage.googleapis.com" in base
 
-
 def is_cloudflare_base(base):
     return "cloudflare.com" in base
-
 
 def is_cohere_base(base):
     return "cohere.com" in base
 
-
 def is_ollama_base(base):
     return "ollama.com" in base
-
 
 def is_zai_base(base):
     return "z.ai" in base or "zai" in base
 
-
 def is_huggingface_base(base):
     return "huggingface.co" in base
-
 
 def is_routeway_base(base):
     return "routeway" in base
@@ -175,17 +169,11 @@ def is_routeway_base(base):
 def is_anyapi_base(base):
     return "anyapi" in base
 
-
 def is_poixe_base(base):
     return "poixe" in base
 
-
 def is_auriko_base(base):
     return "auriko" in base
-
-
-def is_helyx_base(base):
-    return "helyx" in base
 
 def is_zylo_base(base):
     return "zylo" in base
@@ -428,17 +416,6 @@ def fetch_auriko_models(api_key):
                         break
             return free_models
         return []
-    except Exception:
-        return []
-
-
-def fetch_helyx_models():
-    url = "https://helyxai.space/models-list"
-    try:
-        r = requests.get(url, timeout=10)
-        raw = r.content.decode("utf-8", errors="replace")
-        slugs = [s.strip("'\"") for s in re.findall(r'slug=([^\"&]+)', raw)]
-        return list(dict.fromkeys(s for s in slugs if s))
     except Exception:
         return []
 
@@ -726,12 +703,6 @@ def run():
         model_ids = fetch_auriko_models(api_key)
         eligible = [{"id": mid, "meta": {}} for mid in model_ids]
         test_fn = lambda mid: test_openai_compatible("https://api.auriko.ai/v1/chat/completions", api_key, mid)
-
-    # ================= Helyx =================
-    elif is_helyx_base(base_url):
-        model_ids = fetch_helyx_models()
-        eligible = [{"id": mid, "meta": {}} for mid in model_ids]
-        test_fn = lambda mid: test_openai_compatible("https://helyxai.space/v1/chat/completions", api_key, mid)
 
     # ================= Zylo AI =================
     elif is_zylo_base(base_url):
