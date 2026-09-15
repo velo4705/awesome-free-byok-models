@@ -15,6 +15,8 @@ The provider must be genuinely free and stay that way without paying. That means
 
 It must also have an option to obtain an API Key (which is necessary for BYOK-supported providers).
 
+If a provider is not replenishable, then it must have at least **one** free model available that works normally from post-testing, without requiring payments or without spending a dime (>=$0.0000001) from any prompt.
+
 **Pass:** The model responds without asking for money.
 
 **Fail:** You get `402 Payment Required`, `403 Forbidden`, or a message telling you to upgrade.
