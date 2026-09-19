@@ -63,7 +63,7 @@ Filtered for coding and general chat capability across 37 Replenishable provider
   <li><a href="#cohere-ai">Cohere AI</a></li>
   <li><a href="#electronhub">ElectronHub</a></li>
   <li><a href="#evolvex">EvolveX</a></li>
-  <li><a href="#free.ai">Free.ai</a></li>
+  <li><a href="#freeai">Free.ai</a></li>
   <li><a href="#freeinference">FreeInference</a></li>
   <li><a href="#google-gemini">Google Gemini</a></li>
   <li><a href="#gonka-broker">Gonka Broker</a></li>
@@ -73,8 +73,8 @@ Filtered for coding and general chat capability across 37 Replenishable provider
   <li><a href="#intern-ai">Intern AI</a></li>
   <li><a href="#kilo-gateway">Kilo Gateway</a></li>
   <li><a href="#literouter">LiteRouter</a></li>
-  <li><a href="#llm.kiwi">LLM.Kiwi</a></li>
-  <li><a href="#llm7.io">LLM7.IO</a></li>
+  <li><a href="#llmkiwi">LLM.Kiwi</a></li>
+  <li><a href="#llm7io">LLM7.IO</a></li>
   <li><a href="#meganova-ai">MegaNova AI</a></li>
   <li><a href="#mistral-ai">Mistral AI</a></li>
   <li><a href="#mixlayer">Mixlayer</a></li>
