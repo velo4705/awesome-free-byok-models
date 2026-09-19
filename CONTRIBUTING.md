@@ -1,6 +1,6 @@
 # Contributing to awesome-free-byok-models
 
-We welcome contributions to this list. It only exists because people test things before adding them — please do the same.
+We welcome contributions to this list. It only exists because people test things before adding them -- please do the same.
 
 ## Before You Submit A Pull Request
 
@@ -28,14 +28,14 @@ Use the [Verifier](scripts/verify.py). For most providers you just set `API_KEY`
 1. Get the provider's API key and Base URL.
 2. Copy `scripts/.env.example` to your `.env` file and fill in `API_KEY` and `BASE_URL` (add `ACCOUNT_ID` too if your URL has `{account_id}`, like Cloudflare).
 3. Install dependencies required for the Verifier: `pip install requests python-dotenv`.
-4. Run `python verify.py` — it detects the provider from your `BASE_URL`, tests every model, and retries rate-limits.
-5. Open `verified_models_YYYY-MM-DD.txt` — that's your proof. Paste it all into the PR.
+4. Run `python verify.py` -- it detects the provider from your `BASE_URL`, tests every model, and retries rate-limits.
+5. Open `verified_models_YYYY-MM-DD.txt` -- that's your proof. Paste it all into the PR.
 
 If it finds more than 40 models, keep 40 for the README. Drop uncensored / roleplay / safety / guard models first, and double-check the rest are actually free in your dashboard.
 
 ### 3. No Reverse-Engineered Access
 
-The provider must not rely on reverse engineering or unauthorized scraping of third-party APIs. Proxy and gateway services that route through official channels are fine — the line is drawn at open admission of reverse engineering.
+The provider must not rely on reverse engineering or unauthorized scraping of third-party APIs. Proxy and gateway services that route through official channels are fine -- the line is drawn at open admission of reverse engineering.
 
 **Pass:** The provider runs their own inference stack, has an official partnership or reseller agreement, or builds their own models.
 
@@ -50,14 +50,6 @@ The model must accept OpenAI-compatible chat completion payloads or have a docum
 **Fail:** Requires a custom SDK or proprietary format just to send a message.
 
 ## Formatting
-
-### Top 10 Table
-
-```
-| Rank  | Model Name | Host Provider | The Simple Reason to Choose It  |
-| :---- | :--------- | :------------ | :------------------------------ |
-| **X** | `model-id` | **Provider**  | Brief, punchy description.      |
-```
 
 ### Per-Provider Table
 
