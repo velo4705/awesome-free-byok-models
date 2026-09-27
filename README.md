@@ -1030,48 +1030,48 @@ xKiro AI is an API gateway offering free models from DeepSeek, Qwen, Mistral, Mi
 🔗 **Base URL:** `https://api.xkiro.com/v1`
 
 ✅ **Verified:** September 27, 2026
-| Free Model                              | Context | Best For    | Latency   |
-| :-------------------------------------- | ------- | ----------- | --------- |
-| `cohere/aya-expanse-32b`             | 256K    | `General`   | ~0.97s   |
-| `cohere/aya-vision-32b`              | 256K    | `Vision`    | ~0.8s    |
-| `cohere/command-a`                   | 256K    | `General`   | ~0.84s   |
-| `cohere/command-a-plus`              | 256K    | `General`   | ~0.85s   |
-| `cohere/command-a-reasoning`         | 256K    | `Reasoning` | ~0.8s    |
-| `cohere/command-a-translate`         | 256K    | `Translation` | ~0.88s |
-| `cohere/command-a-vision`            | 256K    | `Vision`    | ~0.73s   |
-| `cohere/command-r-plus-08-2024`      | 128K    | `General`   | ~1.22s   |
-| `cohere/command-r7b-12-2024`         | 128K    | `General`   | ~0.88s   |
-| `cohere/north-mini-code`             | 128K    | `Code`      | ~0.87s   |
-| `cohere/tiny-aya-earth`              | 32K     | `General`   | ~0.76s   |
-| `mistralai/codestral-2508`           | 256K    | `Code`      | ~0.62s   |
-| `mistralai/devstral-medium`          | 128K    | `Code`      | ~1.05s   |
-| `mistralai/ministral-14b`            | 128K    | `General`   | ~0.81s   |
-| `mistralai/ministral-3b`             | 128K    | `General`   | ~0.98s   |
-| `mistralai/ministral-8b`             | 128K    | `General`   | ~0.57s   |
-| `mistralai/mistral-large-2512`       | 262K    | `Reasoning` | ~0.62s   |
-| `mistralai/mistral-medium-3.5`       | 32K     | `General`   | ~0.76s   |
-| `mistralai/mistral-small-2603`       | 32K     | `General`   | ~0.6s    |
-| `qwen/qwen-plus-2025-07-28:free`     | 128K    | `General`   | ~3.15s   |
-| `qwen/qwen3-omni-flash:free`         | 128K    | `Vision`    | ~2.55s   |
-| `qwen/qwen3-coder-plus:free`         | 131K    | `Code`      | ~3.66s   |
-| `qwen/qwen3-vl-plus:free`            | 128K    | `Vision`    | ~2.94s   |
-| `qwen/qwen3-max:free`                | 262K    | `General`   | ~4.45s   |
-| `qwen/qwen3.5-397b-a17b:free`        | 128K    | `General`   | ~2.75s   |
-| `qwen/qwen3.5-flash:free`            | 128K    | `General`   | ~5.97s   |
-| `qwen/qwen3.5-omni-flash:free`       | 128K    | `Vision`    | ~2.58s   |
-| `qwen/qwen3.5-omni-plus:free`        | 128K    | `Vision`    | ~3.5s    |
-| `qwen/qwen3.5-plus:free`             | 256K    | `Reasoning` | ~3.36s   |
-| `qwen/qwen3.6-27b:free`              | 128K    | `General`   | ~2.97s   |
-| `qwen/qwen3.6-35b-a3b:free`          | 262K    | `General`   | ~2.7s    |
-| `qwen/qwen3.6-max-preview:free`      | 256K    | `General`   | ~3.26s   |
-| `qwen/qwen3.6-plus:free`             | 256K    | `General`   | ~3.44s   |
-| `qwen/qwen3.7-flash:free`            | 1M      | `General`   | ~2.8s    |
-| `qwen/qwen3.7-max:free`              | 262K    | `General`   | ~3.16s   |
-| `qwen/qwen3.7-plus:free`             | 256K    | `General`   | ~2.67s   |
-| `qwen/qwen3.8-max:free`              | 262K    | `General`   | ~3.15s   |
-| `qwen/qwen3.8-omni-flash:free`       | 128K    | `Vision`    | ~7.34s   |
-| `sensenova/sensenova-6.7-flash-lite` | 128K    | `General`   | ~1.14s   |
-| `sensenova/sensenova-6.8-flash-lite` | 128K    | `General`   | ~1.06s   |
+| Free Model                           | Context | Best For      | Latency  |
+| :----------------------------------- | ------- | ------------- | -------- |
+| `cohere/aya-expanse-32b`             | 256K    | `General`     | ~0.97s   |
+| `cohere/aya-vision-32b`              | 256K    | `Vision`      | ~0.8s    |
+| `cohere/command-a`                   | 256K    | `General`     | ~0.84s   |
+| `cohere/command-a-plus`              | 256K    | `General`     | ~0.85s   |
+| `cohere/command-a-reasoning`         | 256K    | `Reasoning`   | ~0.8s    |
+| `cohere/command-a-translate`         | 256K    | `Translation` | ~0.88s   |
+| `cohere/command-a-vision`            | 256K    | `Vision`      | ~0.73s   |
+| `cohere/command-r-plus-08-2024`      | 128K    | `General`     | ~1.22s   |
+| `cohere/command-r7b-12-2024`         | 128K    | `General`     | ~0.88s   |
+| `cohere/north-mini-code`             | 128K    | `Code`        | ~0.87s   |
+| `cohere/tiny-aya-earth`              | 32K     | `General`     | ~0.76s   |
+| `mistralai/codestral-2508`           | 256K    | `Code`        | ~0.62s   |
+| `mistralai/devstral-medium`          | 128K    | `Code`        | ~1.05s   |
+| `mistralai/ministral-14b`            | 128K    | `General`     | ~0.81s   |
+| `mistralai/ministral-3b`             | 128K    | `General`     | ~0.98s   |
+| `mistralai/ministral-8b`             | 128K    | `General`     | ~0.57s   |
+| `mistralai/mistral-large-2512`       | 262K    | `Reasoning`   | ~0.62s   |
+| `mistralai/mistral-medium-3.5`       | 32K     | `General`     | ~0.76s   |
+| `mistralai/mistral-small-2603`       | 32K     | `General`     | ~0.6s    |
+| `qwen/qwen-plus-2025-07-28:free`     | 128K    | `General`     | ~3.15s   |
+| `qwen/qwen3-omni-flash:free`         | 128K    | `Vision`      | ~2.55s   |
+| `qwen/qwen3-coder-plus:free`         | 131K    | `Code`        | ~3.66s   |
+| `qwen/qwen3-vl-plus:free`            | 128K    | `Vision`      | ~2.94s   |
+| `qwen/qwen3-max:free`                | 262K    | `General`     | ~4.45s   |
+| `qwen/qwen3.5-397b-a17b:free`        | 128K    | `General`     | ~2.75s   |
+| `qwen/qwen3.5-flash:free`            | 128K    | `General`     | ~5.97s   |
+| `qwen/qwen3.5-omni-flash:free`       | 128K    | `Vision`      | ~2.58s   |
+| `qwen/qwen3.5-omni-plus:free`        | 128K    | `Vision`      | ~3.5s    |
+| `qwen/qwen3.5-plus:free`             | 256K    | `Reasoning`   | ~3.36s   |
+| `qwen/qwen3.6-27b:free`              | 128K    | `General`     | ~2.97s   |
+| `qwen/qwen3.6-35b-a3b:free`          | 262K    | `General`     | ~2.7s    |
+| `qwen/qwen3.6-max-preview:free`      | 256K    | `General`     | ~3.26s   |
+| `qwen/qwen3.6-plus:free`             | 256K    | `General`     | ~3.44s   |
+| `qwen/qwen3.7-flash:free`            | 1M      | `General`     | ~2.8s    |
+| `qwen/qwen3.7-max:free`              | 262K    | `General`     | ~3.16s   |
+| `qwen/qwen3.7-plus:free`             | 256K    | `General`     | ~2.67s   |
+| `qwen/qwen3.8-max:free`              | 262K    | `General`     | ~3.15s   |
+| `qwen/qwen3.8-omni-flash:free`       | 128K    | `Vision`      | ~7.34s   |
+| `sensenova/sensenova-6.7-flash-lite` | 128K    | `General`     | ~1.14s   |
+| `sensenova/sensenova-6.8-flash-lite` | 128K    | `General`     | ~1.06s   |
 
 ### [Yolo-Auto](https://yolo-auto.com)
 
