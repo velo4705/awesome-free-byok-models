@@ -31,7 +31,7 @@ Use the [Verifier](scripts/verify.py). For most providers you just set `API_KEY`
 4. Run `python verify.py` -- it detects the provider from your `BASE_URL`, tests every model, and retries rate-limits.
 5. Open `verified_models_YYYY-MM-DD.txt` -- that's your proof. Paste it all into the PR.
 
-If it finds more than 40 models, keep 40 for the README. Drop uncensored / roleplay / safety / guard models first, and double-check the rest are actually free in your dashboard.
+If it finds more than 40 models, keep around 35 - 45 for the README. Drop uncensored / roleplay / safety / guard models first, and double-check the rest are actually free in your dashboard.
 
 ### 3. No Reverse-Engineered Access
 
