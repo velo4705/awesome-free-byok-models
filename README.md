@@ -52,7 +52,7 @@ Providers offering the strongest verified free tiers across different trade-offs
 
 Providers that replenish their free tier on a fixed cycle -- daily, weekly, or monthly quotas of credits or tokens.
 
-Filtered for coding and general chat capability across 40 Replenishable providers.
+Filtered for coding and general chat capability across 41 Replenishable providers.
 
 <strong>Jump to a provider or hub:</strong>
 
@@ -71,6 +71,7 @@ Filtered for coding and general chat capability across 40 Replenishable provider
   <li><a href="#helixmind">HelixMind</a></li>
   <li><a href="#intern-ai">Intern AI</a></li>
   <li><a href="#iteracompute">IteraCompute</a></li>
+  <li><a href="#kenari-ai">Kenari AI</a></li>
   <li><a href="#kilo-gateway">Kilo Gateway</a></li>
   <li><a href="#literouter">LiteRouter</a></li>
   <li><a href="#llmkiwi">LLM.Kiwi</a></li>
@@ -488,6 +489,39 @@ IteraCompute is an OpenAI-compatible inference hub currently offering a single f
 | :-------------------- | ------- | --------- | -------- |
 | `qwen/qwen3.8-27b`    | 128K    | `General` | ~58.47s  |
 
+### [Kenari AI](https://kenari.id)
+
+Kenari AI provides free access to a curated set of models through an OpenAI-compatible endpoint. The free tier offers 5 RPM with 50 requests per day, limited to free models only. Kenari AI currently has 17 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ⚠          | ❌      | ⚠              | ✅               |
+
+🎁 **Free Tier Quota:** 5 RPM / 50 RPD / Free Models only
+
+🔗 **Base URL:** `https://kenari.id/v1`
+
+✅ **Verified:** October 28, 2026
+| Free Model                                          | Context | Best For    | Latency |
+| :-------------------------------------------------- | ------- | ----------- | ------- |
+| `agnes-2-5-flash:free`                              | 128K    | `General`   | ~1.3s   |
+| `agnes-3-0-flash:free`                              | 128K    | `General`   | ~1.2s   |
+| `beam-1-0:free`                                     | 128K    | `General`   | ~2.6s   |
+| `dots-3-note-preview:free`                          | 32K     | `General`   | ~2.4s   |
+| `laguna-s-2-1:free`                                 | 262K    | `Code`      | ~2.8s   |
+| `nemotron-3-5-super-vl:free`                        | 262K    | `Vision`    | ~1.9s   |
+| `nemotron-3-nano-omni-30b-a3b-reasoning:free`       | 1M      | `Reasoning` | ~2.8s   |
+| `ornith-1-5-122b:free`                              | 128K    | `General`   | ~5.3s   |
+| `qwen3-8-omni-flash:free`                           | 128K    | `Vision`    | ~3.6s   |
+| `solar-mini4:free`                                  | 128K    | `General`   | ~1.5s   |
+| `flint-v1-0:free`                                   | 128K    | `General`   | ~6.5s   |
+| `nemotron-3-ultra-550b-a55b:free`                   | 1M      | `General`   | ~2.0s   |
+| `xing4-0-29b-a4b:free`                              | 32K     | `General`   | ~5.9s   |
+| `laguna-xs-2-1:free`                                | 262K    | `Code`      | ~1.4s   |
+| `muse-spark-1-3-contributor:free`                   | 128K    | `General`   | ~4.1s   |
+| `glm-4-7-flash:free`                                | 128K    | `General`   | ~1.0s   |
+| `nemotron-3-super-120b-a12b:free`                   | 1M      | `General`   | ~0.8s   |
+
 ### [Kilo Gateway](https://app.kilo.ai)
 
 Kilo Gateway is a coding-agent platform that proxies free models from OpenRouter, NVIDIA, Poolside, and others through a single API key. The free tier offers generous replenishable credits with no hard daily cap -- a solid Swiss-army-knife provider that gives you access to a diverse model pool through one endpoint. Kilo Gateway currently has 11 models verified.
@@ -660,7 +694,7 @@ Mixlayer is an inference platform for open-source AI models with an OpenAI-compa
 | :--------------------- | ------- | --------- | ------- |
 | `qwen/qwen3.5-4b-free` | 131K    | `General` | ~1.0s   |
 
-### [Merkium](https://chat.merkium.nl/api/v1)
+### [Merkium](https://merkium.nl)
 
 Merkium provides access to specialized models through an OpenAI-compatible endpoint. The free tier offers 30 RPM with model-specific rate limits. Merkium currently has 2 models verified.
 
@@ -701,8 +735,6 @@ Naga AI is a lightweight inference hub offering a small set of free models from 
 | `nemotron-3.5-lightning:free`        | 262K    | `General` | ~1.6s   |
 | `nemotron-3.5-super-vl:free`         | 262K    | `Vision`  | ~0.9s   |
 | `xing4.0-29b-a4b:free`               | 32K     | `General` | ~2.0s   |
-
-<!-- The Free tier for Navy API has been temporarily disabled. Will be re-added back to the list when it goes up. -->
 
 ### [NVIDIA NIM](https://build.nvidia.com)
 
@@ -1181,7 +1213,7 @@ Zylo API is a unified inference hub providing access to models from DeepSeek, NV
 
 Providers with no replenishing cycle -- use their free models as much as you want; the cost never rises above **$0**.
 
-Filtered for coding and general chat capability across 10 Non-Replenishable providers.
+Filtered for coding and general chat capability across 11 Non-Replenishable providers.
 
 <strong>Jump to a provider or hub:</strong>
 
@@ -1191,6 +1223,7 @@ Filtered for coding and general chat capability across 10 Non-Replenishable prov
   <li><a href="#auriko">Auriko</a></li>
   <li><a href="#bazaarlink">BazaarLink</a></li>
   <li><a href="#fastrouter">FastRouter</a></li>
+  <li><a href="#munito-ai">Munito AI</a></li>
   <li><a href="#odirouter">Odirouter</a></li>
   <li><a href="#openrouter">OpenRouter</a></li>
   <li><a href="#requesty">Requesty</a></li>
@@ -1299,6 +1332,30 @@ FastRouter is a lightweight inference hub offering models with a `:free` suffix 
 | `openai/gpt-oss-120b:free`         | 131K    | `General` | ~0.92s  |
 | `openai/gpt-oss-20b:free`          | 131K    | `Code`    | ~1.06s  |
 | `sarvam/sarvam-105b:free`          | 128K    | `General` | ~1.34s  |
+
+### [Munito AI](https://munito.ai)
+
+Munito AI is an EU-based LLM provider that provides access to a variety of specialized models through an OpenAI-compatible endpoint. The free tier offers flexible rate limits ranging from 10-400 RPM depending on the model and usage type. Munito AI currently has 8 models verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
+
+🎁 **Free Tier Quota:** 10 - 400 RPM / 30,000 - 400,000 Input TPM / 400 - 60,000 Output TPM
+
+🔗 **Base URL:** `https://api.munito.ai/inference/v1`
+
+✅ **Verified:** October 28, 2026
+| Free Model                                 | Context | Best For    | Latency |
+| :----------------------------------------- | ------- | ----------- | ------- |
+| `lightonai/lightonocr-2-1b`                | 32K     | `Vision`    | ~0.7s   |
+| `qwen/qwen3.8-27b`                         | 128K    | `General`   | ~0.8s   |
+| `zai-org/glm-5.3-flash`                    | 128K    | `General`   | ~0.8s   |
+| `aleph-alpha/kolibri-1`                    | 256K    | `General`   | ~0.8s   |
+| `blockbrain/cygnet`                        | 128K    | `General`   | ~0.6s   |
+| `deepseek-ai/deepseek-v4-flash`            | 128K    | `Reasoning` | ~1.5s   |
+| `google/gemma-4-12b`                       | 128K    | `General`   | ~0.7s   |
+| `deepseek-ai/deepseek-v4.1-flash-1017`     | 128K    | `Reasoning` | ~7.5s   |
 
 ### [Odirouter](https://odirouter.ai)
 
