@@ -79,7 +79,7 @@ Filtered for coding and general chat capability across 41 Replenishable provider
   <li><a href="#meganova-ai">MegaNova AI</a></li>
   <li><a href="#mistral-ai">Mistral AI</a></li>
   <li><a href="#mixlayer">Mixlayer</a></li>
-  <li><a href="#merkium-ai">Merkium AI</a></li>
+  <li><a href="#merkium">Merkium</a></li>
   <li><a href="#naga-ai">Naga AI</a></li>
   <li><a href="#nvidia-nim">NVIDIA NIM</a></li>
   <li><a href="#ollama-cloud">Ollama Cloud</a></li>
