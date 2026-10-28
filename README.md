@@ -52,7 +52,7 @@ Providers offering the strongest verified free tiers across different trade-offs
 
 Providers that replenish their free tier on a fixed cycle -- daily, weekly, or monthly quotas of credits or tokens.
 
-Filtered for coding and general chat capability across 41 Replenishable providers.
+Filtered for coding and general chat capability across 40 Replenishable providers.
 
 <strong>Jump to a provider or hub:</strong>
 
@@ -79,7 +79,6 @@ Filtered for coding and general chat capability across 41 Replenishable provider
   <li><a href="#meganova-ai">MegaNova AI</a></li>
   <li><a href="#mistral-ai">Mistral AI</a></li>
   <li><a href="#mixlayer">Mixlayer</a></li>
-  <li><a href="#merkium">Merkium</a></li>
   <li><a href="#naga-ai">Naga AI</a></li>
   <li><a href="#nvidia-nim">NVIDIA NIM</a></li>
   <li><a href="#ollama-cloud">Ollama Cloud</a></li>
@@ -693,24 +692,6 @@ Mixlayer is an inference platform for open-source AI models with an OpenAI-compa
 | Free Model             | Context | Best For  | Latency |
 | :--------------------- | ------- | --------- | ------- |
 | `qwen/qwen3.5-4b-free` | 131K    | `General` | ~1.0s   |
-
-### [Merkium](https://merkium.nl)
-
-Merkium provides access to specialized models through an OpenAI-compatible endpoint. The free tier offers 30 RPM with model-specific rate limits. Merkium currently has 2 models verified.
-
-| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
-| :--------- | :--------- | :----- | :------------- | :-------------- |
-| **Status** | ✅          | ✅      | ✅              | ✅               |
-
-🎁 **Free Tier Quota:** 30 RPM / Unspecified RPD
-
-🔗 **Base URL:** `https://chat.merkium.nl/api/v1`
-
-✅ **Verified:** October 28, 2026
-| Free Model            | Context | Best For    | Latency |
-| :-------------------- | ------- | ----------- | ------- |
-| `ceres-1.1`           | 128K    | `General`   | ~1.5s   |
-| `pluto-1.1-flash`     | 128K    | `Code`      | ~1.35s  |
 
 
 ### [Naga AI](https://naga.ac)
@@ -1346,6 +1327,10 @@ Munito AI is an EU-based LLM provider that provides access to a variety of speci
 🔗 **Base URL:** `https://api.munito.ai/inference/v1`
 
 ✅ **Verified:** October 28, 2026
+
+> [!IMPORTANT]
+> May require **Phone verification** to generate an API Key. Some country codes are not present from the Organization.
+
 | Free Model                                 | Context | Best For    | Latency |
 | :----------------------------------------- | ------- | ----------- | ------- |
 | `lightonai/lightonocr-2-1b`                | 32K     | `Vision`    | ~0.7s   |
