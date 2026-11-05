@@ -52,7 +52,7 @@ Providers offering the strongest verified free tiers across different trade-offs
 
 Providers that replenish their free tier on a fixed cycle -- daily, weekly, or monthly quotas of credits or tokens.
 
-Filtered for coding and general chat capability across 40 Replenishable providers.
+Filtered for coding and general chat capability across 41 Replenishable providers.
 
 <strong>Jump to a provider or hub:</strong>
 
@@ -681,21 +681,26 @@ MegaNova AI is a community-model inference hub offering fine-tuned variants of L
 | `Steelskull/L3.3-MS-Nevoria-70b`                        | 65K     | `General` | ~1.5s   |
 | `meganova-ai/manta-flash-1.0`                           | 16K     | `General` | ~1.1s   |
 | `meganova-ai/manta-mini-1.0`                            | 8K      | `General` | ~1.3s   |
+
 ### [Merkium](https://www.merkium.nl)
+
 Merkium is a small independent AI lab offering an OpenAI-compatible API with free access and no credit card required. API keys are issued through the console at chat.merkium.nl. The free tier is capped at 30 requests per minute per key; no daily quota is documented by the provider. Flagship model ganymede-1.1 is a general-reasoning model with 1M context and 16K output, tool calling, and image input.
 
 | Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
 | :--------- | :--------- | :----- | :------------- | :-------------- |
-| **Status** | ✅ | — | — | — |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
 
-🎁 **Free Tier Quota:** 30 RPM per key (no daily quota documented) 🔗 **Base URL:** `https://chat.merkium.nl/api/v1`
+🎁 **Free Tier Quota:** 30 RPM per key / One request per two seconds per key
 
-| Free Model | Context | Best For | Latency |
-| :--------- | :------ | :------- | :------ |
-| `ganymede-1.1` | 1M | `General` | - |
-| `pluto-1.2-flash` | - | - | - |
-| `pluto-1.2-pro` | - | - | - |
-| `ceres-1.0` | - | - | -  |
+🔗 **Base URL:** `https://chat.merkium.nl/api/v1`
+
+✅ **Verified:** November 05, 2026
+| Free Model        | Context | Best For  | Latency |
+| :---------------- | :------ | :-------- | :------ |
+| `ganymede-1.1`    | 1M      | `General` | ~1.9s   |
+| `pluto-1.1-flash` | 128K    | `General` | ~2.5s   |
+| `ceres-1.1`       | 256K    | `General` | ~2.7s   |
+
 ### [Mixlayer](https://www.mixlayer.com)
 
 Mixlayer is an inference platform for open-source AI models with an OpenAI-compatible API. The free tier offers `qwen/qwen3.5-4b-free` for prototyping with rate limits. A focused Qwen 3.5/3.6 catalog with tool calling and reasoning support. Mixlayer currently has 1 model verified.
