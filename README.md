@@ -52,7 +52,7 @@ Providers offering the strongest verified free tiers across different trade-offs
 
 Providers that replenish their free tier on a fixed cycle -- daily, weekly, or monthly quotas of credits or tokens.
 
-Filtered for coding and general chat capability across 41 Replenishable providers.
+Filtered for coding and general chat capability across 42 Replenishable providers.
 
 <strong>Jump to a provider or hub:</strong>
 
@@ -61,6 +61,7 @@ Filtered for coding and general chat capability across 41 Replenishable provider
   <li><a href="#ambient-ai">Ambient AI</a></li>
   <li><a href="#anyapi-ai">AnyAPI AI</a></li>
   <li><a href="#bee-by-heossi">Bee By HEOSSI</a></li>
+  <li><a href="#cheapllmshop">cheapllm.shop</a></li>
   <li><a href="#cloudflare-workers-ai">Cloudflare Workers AI</a></li>
   <li><a href="#cohere-ai">Cohere AI</a></li>
   <li><a href="#electronhub">ElectronHub</a></li>
@@ -178,6 +179,23 @@ Bee By HEOSSI provides free access to its cell models through an OpenAI-compatib
 | :------------------------ | ------- | --------- | ------- |
 | `bee-cell`                | 32K     | `General` | ~11.3s  |
 | `bee-cell-20260710-r1`    | 32K     | `General` | ~11.7s  |
+
+### [cheapllm.shop](https://cheapllm.shop)
+
+cheapllm.shop serves a single model, DeepSeek V4.1 Flash 1017, through OpenAI-compatible and Anthropic-compatible endpoints. It is currently in beta: free with no rate limit while the beta runs. After the beta every account keeps a free tier that replenishes every hour, with no card. When busy, requests queue instead of returning 429. cheapllm.shop currently has 1 model verified.
+
+| Capability | Tool Calls | Schema | Error Handling | Rate Limit Safe |
+| :--------- | :--------- | :----- | :------------- | :-------------- |
+| **Status** | ✅          | ✅      | ✅              | ✅               |
+
+🎁 **Free Tier Quota:** No rate limit during the beta / then 5,000 input + 1,000 output tokens per hour / No Credit Card
+
+🔗 **Base URL:** `https://cheapllm.shop/v1`
+
+✅ **Verified:** November 10, 2026
+| Free Model                 | Context | Best For    | Latency |
+| :------------------------- | ------- | ----------- | ------- |
+| `deepseek-v4.1-flash-1017` | —       | `Code`      | ~1.2s   |
 
 ### [Cloudflare Workers AI](https://dash.cloudflare.com)
 
